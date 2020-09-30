@@ -1,4 +1,7 @@
 #pragma once
+// Updated on Sep 30 2020
+// Dumped by KittenPopo
+
 namespace Offsets {
         namespace DT_TestTraceline {
                 auto m_clrRender = 0x70;
@@ -69,9 +72,9 @@ namespace Offsets {
                 auto m_nTintID = 0xa24;
                 auto m_flCreationTime = 0xa28;
                 auto m_nVersion = 0xa2c;
-        namespace m_ubSignature {
         }
 
+        namespace m_ubSignature {
                 auto m_ubSignature = 0xa2d;
         }
 
@@ -184,13 +187,15 @@ namespace Offsets {
         }
 
         namespace DT_TEEffectDispatch {
+        }
+
         namespace DT_EffectData {
-                auto m_vOrigin.x = 0x0;
-                auto m_vOrigin.y = 0x4;
-                auto m_vOrigin.z = 0x8;
-                auto m_vStart.x = 0xc;
-                auto m_vStart.y = 0x10;
-                auto m_vStart.z = 0x14;
+                auto m_vOrigin_x = 0x0;
+                auto m_vOrigin_y = 0x4;
+                auto m_vOrigin_z = 0x8;
+                auto m_vStart_x = 0xc;
+                auto m_vStart_y = 0x10;
+                auto m_vStart_z = 0x14;
                 auto m_vAngles = 0x24;
                 auto m_vNormal = 0x18;
                 auto m_fFlags = 0x30;
@@ -207,8 +212,6 @@ namespace Offsets {
                 auto m_nColor = 0x60;
                 auto m_flRadius = 0x44;
                 auto m_bPositionsAreRelativeToEntity = 0x61;
-        }
-
                 auto m_EffectData = 0x10;
         }
 
@@ -393,12 +396,12 @@ namespace Offsets {
                 auto m_flTwist = 0xb84;
                 auto m_flRollSpeed = 0xbc0;
                 auto m_iMaterialModel = 0xb88;
-                auto m_AmbientLight.m_vPos = 0xb34;
-                auto m_AmbientLight.m_vColor = 0xb40;
-                auto m_AmbientLight.m_flIntensity = 0xb4c;
-                auto m_DirLight.m_vPos = 0xb50;
-                auto m_DirLight.m_vColor = 0xb5c;
-                auto m_DirLight.m_flIntensity = 0xb68;
+                auto m_AmbientLight_m_vPos = 0xb34;
+                auto m_AmbientLight_m_vColor = 0xb40;
+                auto m_AmbientLight_m_flIntensity = 0xb4c;
+                auto m_DirLight_m_vPos = 0xb50;
+                auto m_DirLight_m_vColor = 0xb5c;
+                auto m_DirLight_m_flIntensity = 0xb68;
                 auto m_vWind = 0xb78;
         }
 
@@ -533,6 +536,8 @@ namespace Offsets {
         }
 
         namespace DT_EnvWind {
+        }
+
         namespace DT_EnvWindShared {
                 auto m_iMinWind = 0xc;
                 auto m_iMaxWind = 0x10;
@@ -546,8 +551,6 @@ namespace Offsets {
                 auto m_flInitialWindSpeed = 0x70;
                 auto m_flStartTime = 0x4;
                 auto m_flGustDuration = 0x28;
-        }
-
                 auto m_EnvWindShared = 0x9d8;
         }
 
@@ -574,10 +577,14 @@ namespace Offsets {
                 auto m_nFallbackSeed = 0x31cc;
                 auto m_flFallbackWear = 0x31d0;
                 auto m_nFallbackStatTrak = 0x31d4;
+        }
+
         namespace DT_AttributeContainer {
                 auto m_hOuter = 0x1c;
                 auto m_ProviderType = 0x24;
                 auto m_iReapplyProvisionParity = 0x18;
+        }
+
         namespace DT_ScriptCreatedItem {
                 auto m_iItemDefinitionIndex = 0x1ea;
                 auto m_iEntityLevel = 0x1f0;
@@ -587,24 +594,20 @@ namespace Offsets {
                 auto m_iEntityQuality = 0x1ec;
                 auto m_bInitialized = 0x214;
                 auto m_szCustomName = 0x27c;
+        }
+
         namespace DT_AttributeList {
+        }
+
         namespace _ST_m_Attributes_32 {
+        }
+
         namespace _LPT_m_Attributes_32 {
                 auto lengthprop32 = 0x0;
-        }
-
                 auto lengthproxy = 0x0;
-        }
-
                 auto m_Attributes = 0x0;
-        }
-
                 auto m_NetworkedDynamicAttributesForDemos = 0x260;
-        }
-
                 auto m_Item = 0x40;
-        }
-
                 auto m_AttributeManager = 0x2d80;
         }
 
@@ -615,10 +618,14 @@ namespace Offsets {
                 auto m_nFallbackSeed = 0x31cc;
                 auto m_flFallbackWear = 0x31d0;
                 auto m_nFallbackStatTrak = 0x31d4;
+        }
+
         namespace DT_AttributeContainer {
                 auto m_hOuter = 0x1c;
                 auto m_ProviderType = 0x24;
                 auto m_iReapplyProvisionParity = 0x18;
+        }
+
         namespace DT_ScriptCreatedItem {
                 auto m_iItemDefinitionIndex = 0x1ea;
                 auto m_iEntityLevel = 0x1f0;
@@ -628,24 +635,20 @@ namespace Offsets {
                 auto m_iEntityQuality = 0x1ec;
                 auto m_bInitialized = 0x214;
                 auto m_szCustomName = 0x27c;
+        }
+
         namespace DT_AttributeList {
+        }
+
         namespace _ST_m_Attributes_32 {
+        }
+
         namespace _LPT_m_Attributes_32 {
                 auto lengthprop32 = 0x0;
-        }
-
                 auto lengthproxy = 0x0;
-        }
-
                 auto m_Attributes = 0x0;
-        }
-
                 auto m_NetworkedDynamicAttributesForDemos = 0x260;
-        }
-
                 auto m_Item = 0x40;
-        }
-
                 auto m_AttributeManager = 0x2d80;
         }
 
@@ -1008,6 +1011,8 @@ namespace Offsets {
         namespace DT_Inferno {
                 auto m_nFireEffectTickBegin = 0x13b4;
                 auto m_fireCount = 0x13a8;
+        }
+
         namespace m_fireXDelta {
         }
 
@@ -1018,8 +1023,6 @@ namespace Offsets {
         }
 
         namespace m_bFireIsBurning {
-        }
-
                 auto m_fireXDelta = 0x9e4;
                 auto m_fireYDelta = 0xb74;
                 auto m_fireZDelta = 0xd04;
@@ -1049,6 +1052,8 @@ namespace Offsets {
         }
 
         namespace DT_CSGameRulesProxy {
+        }
+
         namespace DT_CSGameRules {
                 auto m_bFreezePeriod = 0x20;
                 auto m_bMatchWaitingForResume = 0x40;
@@ -1118,6 +1123,8 @@ namespace Offsets {
                 auto m_numBestOfMaps = 0x994;
                 auto m_iNumConsecutiveCTLoses = 0xc74;
                 auto m_iNumConsecutiveTerroristLoses = 0xc78;
+        }
+
         namespace m_iMatchStats_RoundResults {
         }
 
@@ -1174,6 +1181,8 @@ namespace Offsets {
                 auto m_flTabletHexOriginY = 0x20c;
                 auto m_flTabletHexSize = 0x210;
                 auto m_flSurvivalStartTime = 0x6a8;
+        }
+
         namespace m_iPlayerSpawnHexIndices {
         }
 
@@ -1193,8 +1202,6 @@ namespace Offsets {
         }
 
         namespace m_SurvivalGameRuleDecisionValues {
-        }
-
                 auto m_iPlayerSpawnHexIndices = 0x18;
                 auto m_SpawnTileState = 0x118;
                 auto m_roundData_playerXuids = 0x218;
@@ -1202,8 +1209,6 @@ namespace Offsets {
                 auto m_roundData_playerTeams = 0x524;
                 auto m_SurvivalGameRuleDecisionTypes = 0x628;
                 auto m_SurvivalGameRuleDecisionValues = 0x668;
-        }
-
                 auto m_iMatchStats_RoundResults = 0x9b0;
                 auto m_iMatchStats_PlayersAlive_T = 0xaa0;
                 auto m_iMatchStats_PlayersAlive_CT = 0xa28;
@@ -1220,8 +1225,6 @@ namespace Offsets {
                 auto m_arrProhibitedItemIndices = 0x8bc;
                 auto m_arrTournamentActiveCasterAccounts = 0x984;
                 auto m_SurvivalRules = 0xcf8;
-        }
-
                 auto cs_gamerules_data = 0x0;
         }
 
@@ -1277,6 +1280,8 @@ namespace Offsets {
                 auto m_bombsiteCenterA = 0x1664;
                 auto m_bombsiteCenterB = 0x1670;
                 auto m_bEndMatchNextMapAllVoted = 0x6b8c;
+        }
+
         namespace m_bHostageAlive {
         }
 
@@ -1425,8 +1430,6 @@ namespace Offsets {
         }
 
         namespace m_iMatchStats_EnemiesFlashed_Total {
-        }
-
                 auto m_bHostageAlive = 0x167c;
                 auto m_isHostageFollowingSomeone = 0x1688;
                 auto m_iHostageEntityIDs = 0x1694;
@@ -1574,6 +1577,8 @@ namespace Offsets {
                 auto m_hSurvivalAssassinationTarget = 0xa3c4;
                 auto m_flHealthShotBoostExpirationTime = 0xa3c8;
                 auto m_flLastExoJumpTime = 0x3ac0;
+        }
+
         namespace DT_CSLocalPlayerExclusive {
                 auto m_vecOrigin = 0x138;
                 auto m_vecOrigin_2_ = 0x140;
@@ -1585,6 +1590,8 @@ namespace Offsets {
                 auto m_flVelocityModifier = 0xa39c;
                 auto m_unActiveQuestId = 0xb328;
                 auto m_nQuestProgressReason = 0xb32c;
+        }
+
         namespace m_bPlayerDominated {
         }
 
@@ -1592,8 +1599,6 @@ namespace Offsets {
         }
 
         namespace m_iWeaponPurchasesThisRound {
-        }
-
                 auto m_bPlayerDominated = 0xb494;
                 auto m_bPlayerDominatingMe = 0xb4d5;
                 auto m_iWeaponPurchasesThisRound = 0xb518;
@@ -1605,12 +1610,12 @@ namespace Offsets {
         }
 
         namespace DT_CSTeamExclusive {
+        }
+
         namespace m_iWeaponPurchasesThisMatch {
         }
 
         namespace m_EquippedLoadoutItemDefIndices {
-        }
-
                 auto m_iWeaponPurchasesThisMatch = 0xaa7c;
                 auto m_EquippedLoadoutItemDefIndices = 0xb254;
         }
@@ -1661,8 +1666,6 @@ namespace Offsets {
         }
 
         namespace m_vecPlayerPatchEconIndices {
-        }
-
                 auto cslocaldata = 0x0;
                 auto csnonlocaldata = 0x0;
                 auto csteamdata = 0x0;
@@ -1744,6 +1747,8 @@ namespace Offsets {
         }
 
         namespace DT_TeamplayRoundBasedRulesProxy {
+        }
+
         namespace DT_TeamplayRoundBasedRules {
                 auto m_iRoundState = 0x28;
                 auto m_bInWaitingForPlayers = 0x38;
@@ -1755,6 +1760,8 @@ namespace Offsets {
                 auto m_flRestartRoundTime = 0x3c;
                 auto m_flMapResetTime = 0x40;
                 auto m_bStopWatch = 0xe4;
+        }
+
         namespace m_flNextRespawnWave {
         }
 
@@ -1762,13 +1769,9 @@ namespace Offsets {
         }
 
         namespace m_bTeamReady {
-        }
-
                 auto m_flNextRespawnWave = 0x44;
                 auto m_TeamRespawnWaveTimes = 0xe8;
                 auto m_bTeamReady = 0xc4;
-        }
-
                 auto teamplayroundbased_gamerules_data = 0x0;
         }
 
@@ -1834,12 +1837,12 @@ namespace Offsets {
                 auto m_fFModTimeOffset = 0xa04;
                 auto m_fFModRate = 0xa08;
                 auto m_fFModAmplitude = 0xa0c;
+        }
+
         namespace m_hProps {
         }
 
         namespace m_chPoseIndex {
-        }
-
                 auto m_hProps = 0x9d8;
                 auto m_chPoseIndex = 0x9e8;
         }
@@ -1888,12 +1891,12 @@ namespace Offsets {
                 auto m_vecEndGameCircleStart = 0x9dc;
                 auto m_vecEndGameCircleEnd = 0x9e8;
                 auto m_hTheFinalZone = 0xab8;
+        }
+
         namespace m_DangerZones {
         }
 
         namespace m_flWaveEndTimes {
-        }
-
                 auto m_DangerZones = 0x9fc;
                 auto m_flWaveEndTimes = 0xaa4;
         }
@@ -1934,9 +1937,9 @@ namespace Offsets {
                 auto m_iOnlyTeamToVote = 0x9e8;
                 auto m_nPotentialVotes = 0xa04;
                 auto m_bIsYesNoVote = 0xa0a;
-        namespace m_nVoteOptionCount {
         }
 
+        namespace m_nVoteOptionCount {
                 auto m_nVoteOptionCount = 0x9ec;
         }
 
@@ -1960,16 +1963,16 @@ namespace Offsets {
                 auto m_bExitAnimOn = 0x29fd;
                 auto m_bForceEyesToAttachment = 0x2a0c;
                 auto m_vecEyeExitEndpoint = 0x2a00;
-                auto m_vehicleView.bClampEyeAngles = 0x2a90;
-                auto m_vehicleView.flPitchCurveZero = 0x2a94;
-                auto m_vehicleView.flPitchCurveLinear = 0x2a98;
-                auto m_vehicleView.flRollCurveZero = 0x2a9c;
-                auto m_vehicleView.flRollCurveLinear = 0x2aa0;
-                auto m_vehicleView.flFOV = 0x2aa4;
-                auto m_vehicleView.flYawMin = 0x2aa8;
-                auto m_vehicleView.flYawMax = 0x2aac;
-                auto m_vehicleView.flPitchMin = 0x2ab0;
-                auto m_vehicleView.flPitchMax = 0x2ab4;
+                auto m_vehicleView_bClampEyeAngles = 0x2a90;
+                auto m_vehicleView_flPitchCurveZero = 0x2a94;
+                auto m_vehicleView_flPitchCurveLinear = 0x2a98;
+                auto m_vehicleView_flRollCurveZero = 0x2a9c;
+                auto m_vehicleView_flRollCurveLinear = 0x2aa0;
+                auto m_vehicleView_flFOV = 0x2aa4;
+                auto m_vehicleView_flYawMin = 0x2aa8;
+                auto m_vehicleView_flYawMax = 0x2aac;
+                auto m_vehicleView_flPitchMin = 0x2ab0;
+                auto m_vehicleView_flPitchMax = 0x2ab4;
         }
 
         namespace DT_TriggerSoundOperator {
@@ -1988,10 +1991,10 @@ namespace Offsets {
         }
 
         namespace DT_ProxyToggle {
-        namespace DT_ProxyToggle_ProxiedData {
-                auto m_WithProxy = 0x9d8;
         }
 
+        namespace DT_ProxyToggle_ProxiedData {
+                auto m_WithProxy = 0x9d8;
                 auto blah = 0x0;
         }
 
@@ -2012,6 +2015,8 @@ namespace Offsets {
                 auto m_iszWarnSound_0_ = 0x1304;
                 auto m_iszWarnSound = 0x0;
                 auto m_pszCapLayoutInHUD = 0x1cec;
+        }
+
         namespace m_bCPIsVisible {
         }
 
@@ -2064,8 +2069,6 @@ namespace Offsets {
         }
 
         namespace m_iOwner {
-        }
-
                 auto m_bCPIsVisible = 0xa54;
                 auto m_flLazyCapPerc = 0xa5c;
                 auto m_iTeamIcons = 0xa9c;
@@ -2158,9 +2161,9 @@ namespace Offsets {
                 auto m_fMaxSlideTime = 0xb0c;
                 auto m_iCycleType = 0xb14;
                 auto m_bNoListRepeats = 0xb18;
-        namespace m_chCurrentSlideLists {
         }
 
+        namespace m_chCurrentSlideLists {
                 auto m_chCurrentSlideLists = 0xaf0;
         }
 
@@ -2178,14 +2181,14 @@ namespace Offsets {
                 auto m_bPaused = 0x9dd;
                 auto m_bMultiplayer = 0x9de;
                 auto m_flForceClientTime = 0x9e4;
+        }
+
         namespace _ST_m_hActorList_16 {
+        }
+
         namespace _LPT_m_hActorList_16 {
                 auto lengthprop16 = 0x0;
-        }
-
                 auto lengthproxy = 0x0;
-        }
-
                 auto m_hActorList = 0x0;
         }
 
@@ -2254,9 +2257,9 @@ namespace Offsets {
 
         namespace DT_PostProcessController {
                 auto m_bMaster = 0xa04;
-        namespace m_flPostProcessParameters {
         }
 
+        namespace m_flPostProcessParameters {
                 auto m_flPostProcessParameters = 0x9d8;
         }
 
@@ -2290,6 +2293,8 @@ namespace Offsets {
         }
 
         namespace DT_PlayerResource {
+        }
+
         namespace m_iPing {
         }
 
@@ -2318,8 +2323,6 @@ namespace Offsets {
         }
 
         namespace m_iCoachingTeam {
-        }
-
                 auto m_iPing = 0xb28;
                 auto m_iKills = 0xc2c;
                 auto m_iAssists = 0xd30;
@@ -2374,6 +2377,8 @@ namespace Offsets {
                 auto m_nStopType = 0x9dc;
                 auto m_flStartTime = 0x9e4;
                 auto m_szSnapshotFileName = 0x9e8;
+        }
+
         namespace m_vServerControlPoints {
         }
 
@@ -2384,8 +2389,6 @@ namespace Offsets {
         }
 
         namespace m_iControlPointParents {
-        }
-
                 auto m_vServerControlPoints = 0xaec;
                 auto m_iServerControlPointAssignments = 0xb1c;
                 auto m_hControlPointEnts = 0xb30;
@@ -2466,6 +2469,8 @@ namespace Offsets {
                 auto m_Density = 0xbe0;
                 auto m_maxDrawDistance = 0xbe4;
                 auto m_spawnflags = 0xbe8;
+        }
+
         namespace DT_CollisionProperty {
                 auto m_vecMins = 0x8;
                 auto m_vecMaxs = 0x14;
@@ -2475,8 +2480,6 @@ namespace Offsets {
                 auto m_triggerBloat = 0x23;
                 auto m_vecSpecifiedSurroundingMins = 0x2c;
                 auto m_vecSpecifiedSurroundingMaxs = 0x38;
-        }
-
                 auto m_Collision = 0x320;
         }
 
@@ -2528,6 +2531,8 @@ namespace Offsets {
                 auto m_nModelIndex = 0x258;
                 auto m_FallSpeed = 0x9f8;
                 auto m_bAffectedByWind = 0x9fc;
+        }
+
         namespace DT_CollisionProperty {
                 auto m_vecMins = 0x8;
                 auto m_vecMaxs = 0x14;
@@ -2537,8 +2542,6 @@ namespace Offsets {
                 auto m_triggerBloat = 0x23;
                 auto m_vecSpecifiedSurroundingMins = 0x2c;
                 auto m_vecSpecifiedSurroundingMaxs = 0x38;
-        }
-
                 auto m_Collision = 0x320;
         }
 
@@ -2558,9 +2561,9 @@ namespace Offsets {
                 auto m_vCorner = 0x9f8;
                 auto m_bIsBroken = 0xa04;
                 auto m_nSurfaceType = 0xa08;
-        namespace m_RawPanelBitVec {
         }
 
+        namespace m_RawPanelBitVec {
                 auto m_RawPanelBitVec = 0xa2c;
         }
 
@@ -2651,24 +2654,24 @@ namespace Offsets {
         }
 
         namespace DT_FogController {
-                auto m_fog.enable = 0xa1c;
-                auto m_fog.blend = 0xa1d;
-                auto m_fog.dirPrimary = 0x9dc;
-                auto m_fog.colorPrimary = 0x9e8;
-                auto m_fog.colorSecondary = 0x9ec;
-                auto m_fog.start = 0x9f8;
-                auto m_fog.end = 0x9fc;
-                auto m_fog.farz = 0xa00;
-                auto m_fog.maxdensity = 0xa04;
-                auto m_fog.colorPrimaryLerpTo = 0x9f0;
-                auto m_fog.colorSecondaryLerpTo = 0x9f4;
-                auto m_fog.startLerpTo = 0xa08;
-                auto m_fog.endLerpTo = 0xa0c;
-                auto m_fog.maxdensityLerpTo = 0xa10;
-                auto m_fog.lerptime = 0xa14;
-                auto m_fog.duration = 0xa18;
-                auto m_fog.HDRColorScale = 0xa24;
-                auto m_fog.ZoomFogScale = 0xa20;
+                auto m_fog_enable = 0xa1c;
+                auto m_fog_blend = 0xa1d;
+                auto m_fog_dirPrimary = 0x9dc;
+                auto m_fog_colorPrimary = 0x9e8;
+                auto m_fog_colorSecondary = 0x9ec;
+                auto m_fog_start = 0x9f8;
+                auto m_fog_end = 0x9fc;
+                auto m_fog_farz = 0xa00;
+                auto m_fog_maxdensity = 0xa04;
+                auto m_fog_colorPrimaryLerpTo = 0x9f0;
+                auto m_fog_colorSecondaryLerpTo = 0x9f4;
+                auto m_fog_startLerpTo = 0xa08;
+                auto m_fog_endLerpTo = 0xa0c;
+                auto m_fog_maxdensityLerpTo = 0xa10;
+                auto m_fog_lerptime = 0xa14;
+                auto m_fog_duration = 0xa18;
+                auto m_fog_HDRColorScale = 0xa24;
+                auto m_fog_ZoomFogScale = 0xa20;
         }
 
         namespace DT_EnvDOFController {
@@ -2698,12 +2701,12 @@ namespace Offsets {
         namespace DT_EntityParticleTrail {
                 auto m_iMaterialName = 0xac0;
                 auto m_hConstraintEntity = 0xad8;
+        }
+
         namespace DT_EntityParticleTrailInfo {
                 auto m_flLifetime = 0x8;
                 auto m_flStartSize = 0xc;
                 auto m_flEndSize = 0x10;
-        }
-
                 auto m_Info = 0xac4;
         }
 
@@ -2711,9 +2714,9 @@ namespace Offsets {
                 auto m_vFreezingOrigin = 0x9d8;
                 auto m_flFrozen = 0xaac;
                 auto m_bFinishFreezing = 0xab0;
-        namespace m_flFrozenPerHitbox {
         }
 
+        namespace m_flFrozenPerHitbox {
                 auto m_flFrozenPerHitbox = 0x9e4;
         }
 
@@ -2827,13 +2830,15 @@ namespace Offsets {
                 auto m_ubEFNoInterpParity = 0x35d8;
                 auto m_hPostProcessCtrl = 0x37a8;
                 auto m_hColorCorrectionCtrl = 0x37ac;
-                auto m_PlayerFog.m_hCtrl = 0x37b4;
+                auto m_PlayerFog_m_hCtrl = 0x37b4;
                 auto m_vphysicsCollisionState = 0x325c;
                 auto m_hViewEntity = 0x333c;
                 auto m_bShouldDrawPlayerWhileUsingViewEntity = 0x3340;
                 auto m_flDuckAmount = 0x2fac;
                 auto m_flDuckSpeed = 0x2fb0;
                 auto m_nWaterLevel = 0x25e;
+        }
+
         namespace DT_LocalPlayerExclusive {
                 auto m_vecViewOffset_0_ = 0x108;
                 auto m_vecViewOffset_1_ = 0x10c;
@@ -2858,6 +2863,8 @@ namespace Offsets {
                 auto m_fForceTeam = 0x33cc;
                 auto m_flLaggedMovementValue = 0x3594;
                 auto m_hTonemapController = 0x31cc;
+        }
+
         namespace DT_Local {
                 auto m_iHideHUD = 0x48;
                 auto m_flFOVRate = 0x44;
@@ -2877,39 +2884,37 @@ namespace Offsets {
                 auto m_bPoisoned = 0x93;
                 auto m_flStepSize = 0x60;
                 auto m_bAllowAutoMovement = 0x94;
-                auto m_skybox3d.scale = 0x134;
-                auto m_skybox3d.origin = 0x138;
-                auto m_skybox3d.area = 0x144;
-                auto m_skybox3d.fog.enable = 0x18c;
-                auto m_skybox3d.fog.blend = 0x18d;
-                auto m_skybox3d.fog.dirPrimary = 0x14c;
-                auto m_skybox3d.fog.colorPrimary = 0x158;
-                auto m_skybox3d.fog.colorSecondary = 0x15c;
-                auto m_skybox3d.fog.start = 0x168;
-                auto m_skybox3d.fog.end = 0x16c;
-                auto m_skybox3d.fog.maxdensity = 0x174;
-                auto m_skybox3d.fog.HDRColorScale = 0x194;
-                auto m_audio.localSound_0_ = 0x19c;
-                auto m_audio.localSound_1_ = 0x1a8;
-                auto m_audio.localSound_2_ = 0x1b4;
-                auto m_audio.localSound_3_ = 0x1c0;
-                auto m_audio.localSound_4_ = 0x1cc;
-                auto m_audio.localSound_5_ = 0x1d8;
-                auto m_audio.localSound_6_ = 0x1e4;
-                auto m_audio.localSound_7_ = 0x1f0;
-                auto m_audio.soundscapeIndex = 0x1fc;
-                auto m_audio.localBits = 0x200;
-                auto m_audio.entIndex = 0x204;
+                auto m_skybox3d_scale = 0x134;
+                auto m_skybox3d_origin = 0x138;
+                auto m_skybox3d_area = 0x144;
+                auto m_skybox3d_fog_enable = 0x18c;
+                auto m_skybox3d_fog_blend = 0x18d;
+                auto m_skybox3d_fog_dirPrimary = 0x14c;
+                auto m_skybox3d_fog_colorPrimary = 0x158;
+                auto m_skybox3d_fog_colorSecondary = 0x15c;
+                auto m_skybox3d_fog_start = 0x168;
+                auto m_skybox3d_fog_end = 0x16c;
+                auto m_skybox3d_fog_maxdensity = 0x174;
+                auto m_skybox3d_fog_HDRColorScale = 0x194;
+                auto m_audio_localSound_0_ = 0x19c;
+                auto m_audio_localSound_1_ = 0x1a8;
+                auto m_audio_localSound_2_ = 0x1b4;
+                auto m_audio_localSound_3_ = 0x1c0;
+                auto m_audio_localSound_4_ = 0x1cc;
+                auto m_audio_localSound_5_ = 0x1d8;
+                auto m_audio_localSound_6_ = 0x1e4;
+                auto m_audio_localSound_7_ = 0x1f0;
+                auto m_audio_soundscapeIndex = 0x1fc;
+                auto m_audio_localBits = 0x200;
+                auto m_audio_entIndex = 0x204;
+        }
+
         namespace m_chAreaBits {
         }
 
         namespace m_chAreaPortalBits {
-        }
-
                 auto m_chAreaBits = 0x4;
                 auto m_chAreaPortalBits = 0x24;
-        }
-
                 auto m_Local = 0x2fbc;
         }
 
@@ -2918,8 +2923,6 @@ namespace Offsets {
         }
 
         namespace m_iAmmo {
-        }
-
                 auto localdata = 0x0;
                 auto pl = 0x31d0;
                 auto m_iAmmo = 0x2d78;
@@ -2928,9 +2931,9 @@ namespace Offsets {
         namespace DT_BaseFlex {
                 auto m_blinktoggle = 0x2bd4;
                 auto m_viewtarget = 0x29f0;
-        namespace m_flexWeight {
         }
 
+        namespace m_flexWeight {
                 auto m_flexWeight = 0x2a28;
         }
 
@@ -2976,6 +2979,8 @@ namespace Offsets {
                 auto m_flLastMadeNoiseTime = 0x20;
                 auto m_flMaxFallVelocity = 0xdc;
                 auto m_bEligibleForScreenHighlight = 0x9b9;
+        }
+
         namespace DT_AnimTimeMustBeFirst {
                 auto m_flAnimTime = 0x260;
         }
@@ -2995,8 +3000,6 @@ namespace Offsets {
         }
 
         namespace m_bSpottedByMask {
-        }
-
                 auto AnimTimeMustBeFirst = 0x0;
                 auto m_Collision = 0x320;
                 auto m_bSpottedBy = 0x93e;
@@ -3012,14 +3015,16 @@ namespace Offsets {
                 auto m_hActiveWeapon = 0x2ef8;
                 auto m_flTimeOfLastInjury = 0x2efc;
                 auto m_nRelativeDirectionOfLastInjury = 0x2f00;
+        }
+
         namespace DT_BCCLocalPlayerExclusive {
                 auto m_flNextAttack = 0x2d70;
         }
 
         namespace DT_BCCNonLocalPlayerExclusive {
-        namespace m_hMyWeapons {
         }
 
+        namespace m_hMyWeapons {
                 auto m_hMyWeapons = 0x2df8;
         }
 
@@ -3027,8 +3032,6 @@ namespace Offsets {
         }
 
         namespace m_hMyWearables {
-        }
-
                 auto bcc_localdata = 0x0;
                 auto bcc_nonlocaldata = 0x0;
                 auto m_hMyWeapons = 0x2df8;
@@ -3036,18 +3039,18 @@ namespace Offsets {
         }
 
         namespace DT_BaseAnimatingOverlay {
+        }
+
         namespace DT_OverlayVars {
+        }
+
         namespace _ST_m_AnimOverlay_15 {
+        }
+
         namespace _LPT_m_AnimOverlay_15 {
                 auto lengthprop15 = 0x0;
-        }
-
                 auto lengthproxy = 0x0;
-        }
-
                 auto m_AnimOverlay = 0x0;
-        }
-
                 auto overlay_vars = 0x0;
         }
 
@@ -3078,6 +3081,8 @@ namespace Offsets {
                 auto m_nHighlightColorR = 0xa38;
                 auto m_nHighlightColorG = 0xa3c;
                 auto m_nHighlightColorB = 0xa40;
+        }
+
         namespace m_flPoseParameter {
         }
 
@@ -3086,8 +3091,6 @@ namespace Offsets {
 
         namespace DT_ServerAnimationData {
                 auto m_flCycle = 0xa14;
-        }
-
                 auto m_flPoseParameter = 0x2774;
                 auto m_flEncodedController = 0xa54;
                 auto serveranimdata = 0x0;
@@ -3130,12 +3133,12 @@ namespace Offsets {
                 auto m_nModelIndex = 0x258;
                 auto m_vecOrigin = 0x138;
                 auto moveparent = 0x148;
+        }
+
         namespace m_hAttachEntity {
         }
 
         namespace m_nAttachIndex {
-        }
-
                 auto m_hAttachEntity = 0x9fc;
                 auto m_nAttachIndex = 0xa24;
         }
@@ -3181,6 +3184,8 @@ namespace Offsets {
                 auto m_iSecondaryReserveAmmoCount = 0x3270;
                 auto m_hWeaponWorldModel = 0x3254;
                 auto m_iNumEmptyAttacks = 0x3250;
+        }
+
         namespace DT_LocalWeaponData {
                 auto m_iPrimaryAmmoType = 0x325c;
                 auto m_iSecondaryAmmoType = 0x3260;
@@ -3195,8 +3200,6 @@ namespace Offsets {
                 auto m_flNextSecondaryAttack = 0x323c;
                 auto m_nNextThinkTick = 0xfc;
                 auto m_flTimeWeaponIdle = 0x3274;
-        }
-
                 auto LocalWeaponData = 0x0;
                 auto LocalActiveWeaponData = 0x0;
         }
@@ -3208,5 +3211,4 @@ namespace Offsets {
                 auto moveparent = 0x148;
                 auto m_hCombatWeaponParent = 0x29f0;
         }
-
 }
