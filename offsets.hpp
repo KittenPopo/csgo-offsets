@@ -3,7 +3,7 @@
 // Dumped by KittenPopo
 
 namespace Offsets {
-        namespace DT_TestTraceline {
+        namespace TestTraceline {
                 int m_clrRender = 0x70;
                 int m_vecOrigin = 0x138;
                 int m_angRotation_0_ = 0x12c;
@@ -12,12 +12,12 @@ namespace Offsets {
                 int moveparent = 0x148;
         }
 
-        namespace DT_TEWorldDecal {
+        namespace TEWorldDecal {
                 int m_vecOrigin = 0x10;
                 int m_nIndex = 0x1c;
         }
 
-        namespace DT_TESpriteSpray {
+        namespace TESpriteSpray {
                 int m_vecOrigin = 0x10;
                 int m_vecDirection = 0x1c;
                 int m_nModelIndex = 0x28;
@@ -26,38 +26,38 @@ namespace Offsets {
                 int m_nSpeed = 0x2c;
         }
 
-        namespace DT_TESprite {
+        namespace TESprite {
                 int m_vecOrigin = 0x10;
                 int m_nModelIndex = 0x1c;
                 int m_fScale = 0x20;
                 int m_nBrightness = 0x24;
         }
 
-        namespace DT_TESparks {
+        namespace TESparks {
                 int m_nMagnitude = 0x1c;
                 int m_nTrailLength = 0x20;
                 int m_vecDir = 0x24;
         }
 
-        namespace DT_TESmoke {
+        namespace TESmoke {
                 int m_vecOrigin = 0x10;
                 int m_nModelIndex = 0x1c;
                 int m_fScale = 0x20;
                 int m_nFrameRate = 0x24;
         }
 
-        namespace DT_TEShowLine {
+        namespace TEShowLine {
                 int m_vecEnd = 0x1c;
         }
 
-        namespace DT_TEProjectedDecal {
+        namespace TEProjectedDecal {
                 int m_vecOrigin = 0x10;
                 int m_angRotation = 0x1c;
                 int m_flDistance = 0x28;
                 int m_nIndex = 0x2c;
         }
 
-        namespace DT_FEPlayerDecal {
+        namespace FEPlayerDecal {
                 int m_nUniqueID = 0x9d8;
                 int m_unAccountID = 0x9dc;
                 int m_unTraceID = 0x9e0;
@@ -78,7 +78,7 @@ namespace Offsets {
                 int m_ubSignature = 0xa2d;
         }
 
-        namespace DT_TEPlayerDecal {
+        namespace TEPlayerDecal {
                 int m_vecOrigin = 0x14;
                 int m_vecStart = 0x20;
                 int m_vecRight = 0x2c;
@@ -87,7 +87,7 @@ namespace Offsets {
                 int m_nHitbox = 0x3c;
         }
 
-        namespace DT_TEPhysicsProp {
+        namespace TEPhysicsProp {
                 int m_vecOrigin = 0x10;
                 int m_angRotation_0_ = 0x1c;
                 int m_angRotation_1_ = 0x20;
@@ -100,36 +100,36 @@ namespace Offsets {
                 int m_clrRender = 0x44;
         }
 
-        namespace DT_TEParticleSystem {
+        namespace TEParticleSystem {
                 int m_vecOrigin_0_ = 0x10;
                 int m_vecOrigin_1_ = 0x14;
                 int m_vecOrigin_2_ = 0x18;
         }
 
-        namespace DT_TEMuzzleFlash {
+        namespace TEMuzzleFlash {
                 int m_vecOrigin = 0x10;
                 int m_vecAngles = 0x1c;
                 int m_flScale = 0x28;
                 int m_nType = 0x2c;
         }
 
-        namespace DT_TELargeFunnel {
+        namespace TELargeFunnel {
                 int m_nModelIndex = 0x1c;
                 int m_nReversed = 0x20;
         }
 
-        namespace DT_TEKillPlayerAttachments {
+        namespace TEKillPlayerAttachments {
                 int m_nPlayer = 0x10;
         }
 
-        namespace DT_TEImpact {
+        namespace TEImpact {
                 int m_vecOrigin = 0x10;
                 int m_vecNormal = 0x1c;
                 int m_iType = 0x28;
                 int m_ucFlags = 0x2c;
         }
 
-        namespace DT_TEGlowSprite {
+        namespace TEGlowSprite {
                 int m_vecOrigin = 0x10;
                 int m_nModelIndex = 0x1c;
                 int m_fScale = 0x20;
@@ -137,7 +137,7 @@ namespace Offsets {
                 int m_nBrightness = 0x28;
         }
 
-        namespace DT_TEShatterSurface {
+        namespace TEShatterSurface {
                 int m_vecOrigin = 0x10;
                 int m_vecAngles = 0x1c;
                 int m_vecForce = 0x28;
@@ -154,7 +154,7 @@ namespace Offsets {
                 int m_uchBackColor_2_ = 0x59;
         }
 
-        namespace DT_TEFootprintDecal {
+        namespace TEFootprintDecal {
                 int m_vecOrigin = 0x10;
                 int m_vecDirection = 0x1c;
                 int m_nEntity = 0x34;
@@ -162,14 +162,14 @@ namespace Offsets {
                 int m_chMaterialType = 0x3c;
         }
 
-        namespace DT_TEFizz {
+        namespace TEFizz {
                 int m_nEntity = 0x10;
                 int m_nModelIndex = 0x14;
                 int m_nDensity = 0x18;
                 int m_nCurrent = 0x1c;
         }
 
-        namespace DT_TEExplosion {
+        namespace TEExplosion {
                 int m_nModelIndex = 0x1c;
                 int m_fScale = 0x20;
                 int m_nFrameRate = 0x24;
@@ -180,13 +180,13 @@ namespace Offsets {
                 int m_nMagnitude = 0x40;
         }
 
-        namespace DT_TEEnergySplash {
+        namespace TEEnergySplash {
                 int m_vecPos = 0x10;
                 int m_vecDir = 0x1c;
                 int m_bExplosive = 0x28;
         }
 
-        namespace DT_TEDynamicLight {
+        namespace TEDynamicLight {
                 int m_vecOrigin = 0x10;
                 int r = 0x20;
                 int g = 0x24;
@@ -197,7 +197,7 @@ namespace Offsets {
                 int m_fDecay = 0x34;
         }
 
-        namespace DT_TEDecal {
+        namespace TEDecal {
                 int m_vecOrigin = 0x10;
                 int m_vecStart = 0x1c;
                 int m_nEntity = 0x28;
@@ -205,7 +205,7 @@ namespace Offsets {
                 int m_nIndex = 0x30;
         }
 
-        namespace DT_TEClientProjectile {
+        namespace TEClientProjectile {
                 int m_vecOrigin = 0x10;
                 int m_vecVelocity = 0x1c;
                 int m_nModelIndex = 0x28;
@@ -213,7 +213,7 @@ namespace Offsets {
                 int m_hOwner = 0x30;
         }
 
-        namespace DT_TEBubbleTrail {
+        namespace TEBubbleTrail {
                 int m_vecMins = 0x10;
                 int m_vecMaxs = 0x1c;
                 int m_nModelIndex = 0x2c;
@@ -222,7 +222,7 @@ namespace Offsets {
                 int m_fSpeed = 0x34;
         }
 
-        namespace DT_TEBubbles {
+        namespace TEBubbles {
                 int m_vecMins = 0x10;
                 int m_vecMaxs = 0x1c;
                 int m_nModelIndex = 0x2c;
@@ -231,13 +231,13 @@ namespace Offsets {
                 int m_fSpeed = 0x34;
         }
 
-        namespace DT_TEBSPDecal {
+        namespace TEBSPDecal {
                 int m_vecOrigin = 0x10;
                 int m_nEntity = 0x1c;
                 int m_nIndex = 0x20;
         }
 
-        namespace DT_TEBreakModel {
+        namespace TEBreakModel {
                 int m_vecOrigin = 0x10;
                 int m_angRotation_0_ = 0x1c;
                 int m_angRotation_1_ = 0x20;
@@ -251,7 +251,7 @@ namespace Offsets {
                 int m_nFlags = 0x50;
         }
 
-        namespace DT_TEBloodStream {
+        namespace TEBloodStream {
                 int m_vecDirection = 0x1c;
                 int r = 0x28;
                 int g = 0x2c;
@@ -260,7 +260,7 @@ namespace Offsets {
                 int m_nAmount = 0x38;
         }
 
-        namespace DT_TEBloodSprite {
+        namespace TEBloodSprite {
                 int m_vecOrigin = 0x10;
                 int m_vecDirection = 0x1c;
                 int r = 0x28;
@@ -272,50 +272,50 @@ namespace Offsets {
                 int m_nSize = 0x40;
         }
 
-        namespace DT_TEBeamSpline {
+        namespace TEBeamSpline {
                 int m_nPoints = 0xd0;
                 int m_vecPoints_0_ = 0x10;
                 int m_vecPoints = 0x0;
         }
 
-        namespace DT_TEBeamRingPoint {
+        namespace TEBeamRingPoint {
                 int m_vecCenter = 0x4c;
                 int m_flStartRadius = 0x58;
                 int m_flEndRadius = 0x5c;
         }
 
-        namespace DT_TEBeamRing {
+        namespace TEBeamRing {
                 int m_nStartEntity = 0x4c;
                 int m_nEndEntity = 0x50;
         }
 
-        namespace DT_TEBeamPoints {
+        namespace TEBeamPoints {
                 int m_vecStartPoint = 0x4c;
                 int m_vecEndPoint = 0x58;
         }
 
-        namespace DT_TEBeamLaser {
+        namespace TEBeamLaser {
                 int m_nStartEntity = 0x4c;
                 int m_nEndEntity = 0x50;
         }
 
-        namespace DT_TEBeamFollow {
+        namespace TEBeamFollow {
                 int m_iEntIndex = 0x4c;
         }
 
-        namespace DT_TEBeamEnts {
+        namespace TEBeamEnts {
                 int m_nStartEntity = 0x4c;
                 int m_nEndEntity = 0x50;
         }
 
-        namespace DT_TEBeamEntPoint {
+        namespace TEBeamEntPoint {
                 int m_nStartEntity = 0x4c;
                 int m_nEndEntity = 0x50;
                 int m_vecStartPoint = 0x54;
                 int m_vecEndPoint = 0x60;
         }
 
-        namespace DT_BaseBeam {
+        namespace BaseBeam {
                 int m_nModelIndex = 0x10;
                 int m_nHaloIndex = 0x14;
                 int m_nStartFrame = 0x18;
@@ -333,12 +333,12 @@ namespace Offsets {
                 int m_nFlags = 0x48;
         }
 
-        namespace DT_TEMetalSparks {
+        namespace TEMetalSparks {
                 int m_vecPos = 0x10;
                 int m_vecDir = 0x1c;
         }
 
-        namespace DT_SteamJet {
+        namespace SteamJet {
                 int m_SpreadSpeed = 0xac4;
                 int m_Speed = 0xac8;
                 int m_StartSize = 0xacc;
@@ -352,7 +352,7 @@ namespace Offsets {
                 int m_flRollSpeed = 0xaec;
         }
 
-        namespace DT_SmokeStack {
+        namespace SmokeStack {
                 int m_SpreadSpeed = 0xb14;
                 int m_Speed = 0xb18;
                 int m_StartSize = 0xb1c;
@@ -373,7 +373,7 @@ namespace Offsets {
                 int m_vWind = 0xb78;
         }
 
-        namespace DT_DustTrail {
+        namespace DustTrail {
                 int m_SpawnRate = 0xac4;
                 int m_Color = 0xac8;
                 int m_ParticleLifetime = 0xad8;
@@ -389,12 +389,12 @@ namespace Offsets {
                 int m_Opacity = 0xad4;
         }
 
-        namespace DT_FireTrail {
+        namespace FireTrail {
                 int m_nAttachment = 0xac4;
                 int m_flLifetime = 0xac8;
         }
 
-        namespace DT_SporeTrail {
+        namespace SporeTrail {
                 int m_flSpawnRate = 0xacc;
                 int m_vecEndColor = 0xac0;
                 int m_flParticleLifetime = 0xad0;
@@ -404,7 +404,7 @@ namespace Offsets {
                 int m_bEmit = 0xaec;
         }
 
-        namespace DT_SporeExplosion {
+        namespace SporeExplosion {
                 int m_flSpawnRate = 0xac4;
                 int m_flParticleLifetime = 0xac8;
                 int m_flStartSize = 0xacc;
@@ -414,7 +414,7 @@ namespace Offsets {
                 int m_bDontRemove = 0xadd;
         }
 
-        namespace DT_RocketTrail {
+        namespace RocketTrail {
                 int m_SpawnRate = 0xac4;
                 int m_StartColor = 0xac8;
                 int m_EndColor = 0xad4;
@@ -432,7 +432,7 @@ namespace Offsets {
                 int m_flFlareScale = 0xb20;
         }
 
-        namespace DT_SmokeTrail {
+        namespace SmokeTrail {
                 int m_SpawnRate = 0xac4;
                 int m_StartColor = 0xac8;
                 int m_EndColor = 0xad4;
@@ -450,7 +450,7 @@ namespace Offsets {
                 int m_Opacity = 0xae0;
         }
 
-        namespace DT_PropVehicleDriveable {
+        namespace PropVehicleDriveable {
                 int m_hPlayer = 0x2984;
                 int m_nSpeed = 0x2988;
                 int m_nRPM = 0x298c;
@@ -467,7 +467,7 @@ namespace Offsets {
                 int m_vecGunCrosshair = 0x29c8;
         }
 
-        namespace DT_ParticleSmokeGrenade {
+        namespace ParticleSmokeGrenade {
                 int m_flSpawnTime = 0xad4;
                 int m_FadeStartTime = 0xad8;
                 int m_FadeEndTime = 0xadc;
@@ -476,35 +476,35 @@ namespace Offsets {
                 int m_CurrentStage = 0xac4;
         }
 
-        namespace DT_ParticleFire {
+        namespace ParticleFire {
                 int m_vOrigin = 0xacc;
                 int m_vDirection = 0xad8;
         }
 
-        namespace DT_TEGaussExplosion {
+        namespace TEGaussExplosion {
                 int m_nType = 0x1c;
                 int m_vecDirection = 0x20;
         }
 
-        namespace DT_QuadraticBeam {
+        namespace QuadraticBeam {
                 int m_targetPosition = 0x9d8;
                 int m_controlPosition = 0x9e4;
                 int m_scrollRate = 0x9f0;
                 int m_flWidth = 0x9f4;
         }
 
-        namespace DT_Embers {
+        namespace Embers {
                 int m_nDensity = 0x9d8;
                 int m_nLifetime = 0x9dc;
                 int m_nSpeed = 0x9e0;
                 int m_bEmit = 0x9e4;
         }
 
-        namespace DT_Precipitation {
+        namespace Precipitation {
                 int m_nPrecipType = 0xa00;
         }
 
-        namespace DT_BaseAttributableItem {
+        namespace BaseAttributableItem {
                 int m_OriginalOwnerXuidLow = 0x31c0;
                 int m_OriginalOwnerXuidHigh = 0x31c4;
                 int m_nFallbackPaintKit = 0x31c8;
@@ -513,13 +513,13 @@ namespace Offsets {
                 int m_nFallbackStatTrak = 0x31d4;
         }
 
-        namespace DT_AttributeContainer {
+        namespace AttributeContainer {
                 int m_hOuter = 0x1c;
                 int m_ProviderType = 0x24;
                 int m_iReapplyProvisionParity = 0x18;
         }
 
-        namespace DT_ScriptCreatedItem {
+        namespace ScriptCreatedItem {
                 int m_iItemDefinitionIndex = 0x1ea;
                 int m_iEntityLevel = 0x1f0;
                 int m_iItemIDHigh = 0x200;
@@ -530,7 +530,7 @@ namespace Offsets {
                 int m_szCustomName = 0x27c;
         }
 
-        namespace DT_AttributeList {
+        namespace AttributeList {
         }
 
         namespace _ST_m_Attributes_32 {
@@ -545,7 +545,7 @@ namespace Offsets {
                 int m_AttributeManager = 0x2d80;
         }
 
-        namespace DT_EconEntity {
+        namespace EconEntity {
                 int m_OriginalOwnerXuidLow = 0x31c0;
                 int m_OriginalOwnerXuidHigh = 0x31c4;
                 int m_nFallbackPaintKit = 0x31c8;
@@ -554,13 +554,13 @@ namespace Offsets {
                 int m_nFallbackStatTrak = 0x31d4;
         }
 
-        namespace DT_AttributeContainer {
+        namespace AttributeContainer {
                 int m_hOuter = 0x1c;
                 int m_ProviderType = 0x24;
                 int m_iReapplyProvisionParity = 0x18;
         }
 
-        namespace DT_ScriptCreatedItem {
+        namespace ScriptCreatedItem {
                 int m_iItemDefinitionIndex = 0x1ea;
                 int m_iEntityLevel = 0x1f0;
                 int m_iItemIDHigh = 0x200;
@@ -571,7 +571,7 @@ namespace Offsets {
                 int m_szCustomName = 0x27c;
         }
 
-        namespace DT_AttributeList {
+        namespace AttributeList {
         }
 
         namespace _ST_m_Attributes_32 {
@@ -586,15 +586,15 @@ namespace Offsets {
                 int m_AttributeManager = 0x2d80;
         }
 
-        namespace DT_WeaponXM1014 {
+        namespace WeaponXM1014 {
                 int m_reloadState = 0x33d4;
         }
 
-        namespace DT_WeaponTaser {
+        namespace WeaponTaser {
                 int m_fFireTime = 0x33f0;
         }
 
-        namespace DT_WeaponTablet {
+        namespace WeaponTablet {
                 int m_flUpgradeExpirationTime_0_ = 0x33d8;
                 int m_flUpgradeExpirationTime = 0x0;
                 int m_vecLocalHexFlags_0_ = 0x33e8;
@@ -615,32 +615,32 @@ namespace Offsets {
                 int m_vecNearestMetalCratePos = 0x34a8;
         }
 
-        namespace DT_WeaponSawedoff {
+        namespace WeaponSawedoff {
                 int m_reloadState = 0x33d4;
         }
 
-        namespace DT_WeaponNOVA {
+        namespace WeaponNOVA {
                 int m_reloadState = 0x33d4;
         }
 
-        namespace DT_WeaponMelee {
+        namespace WeaponMelee {
                 int m_flThrowAt = 0x33d0;
         }
 
-        namespace DT_WeaponM3 {
+        namespace WeaponM3 {
                 int m_reloadState = 0x33d4;
         }
 
-        namespace DT_WeaponFists {
+        namespace WeaponFists {
                 int m_bPlayingUninterruptableAct = 0x33d0;
         }
 
-        namespace DT_WeaponCSBaseGun {
+        namespace WeaponCSBaseGun {
                 int m_zoomLevel = 0x33d0;
                 int m_iBurstShotsRemaining = 0x33d4;
         }
 
-        namespace DT_WeaponCSBase {
+        namespace WeaponCSBase {
                 int m_weaponMode = 0x3318;
                 int m_fAccuracyPenalty = 0x3330;
                 int m_fLastShotTime = 0x33a8;
@@ -656,7 +656,7 @@ namespace Offsets {
                 int m_iIronSightMode = 0x33c4;
         }
 
-        namespace DT_WeaponC4 {
+        namespace WeaponC4 {
                 int m_bStartedArming = 0x33f0;
                 int m_bBombPlacedAnimation = 0x33f8;
                 int m_fArmedTime = 0x33f4;
@@ -664,24 +664,24 @@ namespace Offsets {
                 int m_bIsPlantingViaUse = 0x33fa;
         }
 
-        namespace DT_BumpMineProjectile {
+        namespace BumpMineProjectile {
                 int m_nParentBoneIndex = 0x29d4;
                 int m_vecParentBonePos = 0x29d8;
                 int m_bArmed = 0x29e4;
         }
 
-        namespace DT_BreachChargeProjectile {
+        namespace BreachChargeProjectile {
                 int m_bShouldExplode = 0x29d0;
                 int m_weaponThatThrewMe = 0x29d4;
                 int m_nParentBoneIndex = 0x29d8;
                 int m_vecParentBonePos = 0x29dc;
         }
 
-        namespace DT_WeaponBaseItem {
+        namespace WeaponBaseItem {
                 int m_bRedraw = 0x33dc;
         }
 
-        namespace DT_BaseCSGrenade {
+        namespace BaseCSGrenade {
                 int m_bRedraw = 0x33d0;
                 int m_bIsHeldByPlayer = 0x33d1;
                 int m_bPinPulled = 0x33d2;
@@ -690,28 +690,28 @@ namespace Offsets {
                 int m_flThrowStrength = 0x33dc;
         }
 
-        namespace DT_SmokeGrenadeProjectile {
+        namespace SmokeGrenadeProjectile {
                 int m_bDidSmokeEffect = 0x2a14;
                 int m_nSmokeEffectTickBegin = 0x2a10;
         }
 
-        namespace DT_MolotovProjectile {
+        namespace MolotovProjectile {
                 int m_bIsIncGrenade = 0x2a10;
         }
 
-        namespace DT_ItemDogtags {
+        namespace ItemDogtags {
                 int m_OwningPlayer = 0x3440;
                 int m_KillingPlayer = 0x3444;
         }
 
-        namespace DT_PhysPropLootCrate {
+        namespace PhysPropLootCrate {
                 int m_bRenderInPSPM = 0x29f4;
                 int m_bRenderInTablet = 0x29f5;
                 int m_iHealth = 0x100;
                 int m_iMaxHealth = 0x29f8;
         }
 
-        namespace DT_EnvGasCanister {
+        namespace EnvGasCanister {
                 int m_flFlightSpeed = 0x29f4;
                 int m_flLaunchTime = 0x29f8;
                 int m_vecParabolaDirection = 0x2a0c;
@@ -737,35 +737,35 @@ namespace Offsets {
                 int m_vecOrigin_2_ = 0x140;
         }
 
-        namespace DT_Dronegun {
+        namespace Dronegun {
                 int m_vecAttentionTarget = 0x2980;
                 int m_vecTargetOffset = 0x298c;
                 int m_iHealth = 0x100;
                 int m_bHasTarget = 0x2998;
         }
 
-        namespace DT_ParadropChopper {
+        namespace ParadropChopper {
                 int m_vecOrigin = 0x138;
                 int m_vecOrigin_2_ = 0x140;
                 int m_hCallingPlayer = 0x2990;
         }
 
-        namespace DT_SurvivalSpawnChopper {
+        namespace SurvivalSpawnChopper {
                 int m_vecOrigin = 0x138;
                 int m_vecOrigin_2_ = 0x140;
         }
 
-        namespace DT_BRC4Target {
+        namespace BRC4Target {
                 int m_bBrokenOpen = 0x2984;
                 int m_flRadius = 0x2988;
         }
 
-        namespace DT_InfoMapRegion {
+        namespace InfoMapRegion {
                 int m_flRadius = 0x9d8;
                 int m_szLocToken = 0x9dc;
         }
 
-        namespace DT_Inferno {
+        namespace Inferno {
                 int m_nFireEffectTickBegin = 0x13b4;
                 int m_fireCount = 0x13a8;
         }
@@ -786,12 +786,12 @@ namespace Offsets {
                 int m_bFireIsBurning = 0xe94;
         }
 
-        namespace DT_CChicken {
+        namespace CChicken {
                 int m_jumpedThisFrame = 0x29e8;
                 int m_leader = 0x29ec;
         }
 
-        namespace DT_Drone {
+        namespace Drone {
                 int m_hMoveToThisEntity = 0x29d8;
                 int m_hDeliveryCargo = 0x29dc;
                 int m_bPilotTakeoverAllowed = 0x29e0;
@@ -803,18 +803,18 @@ namespace Offsets {
                 int m_vecTagIncrements = 0x0;
         }
 
-        namespace DT_FootstepControl {
+        namespace FootstepControl {
                 int m_source = 0xa10;
                 int m_destination = 0xa20;
         }
 
-        namespace DT_TEPlantBomb {
+        namespace TEPlantBomb {
                 int m_vecOrigin = 0x14;
                 int m_iPlayer = 0x10;
                 int m_option = 0x20;
         }
 
-        namespace DT_TEFireBullets {
+        namespace TEFireBullets {
                 int m_vecOrigin = 0x18;
                 int m_vecAngles_0_ = 0x24;
                 int m_vecAngles_1_ = 0x28;
@@ -830,11 +830,11 @@ namespace Offsets {
                 int m_flRecoilIndex = 0x44;
         }
 
-        namespace DT_TERadioIcon {
+        namespace TERadioIcon {
                 int m_iAttachToClient = 0x10;
         }
 
-        namespace DT_PlantedC4 {
+        namespace PlantedC4 {
                 int m_bBombTicking = 0x2980;
                 int m_nBombSite = 0x2984;
                 int m_flC4Blow = 0x2990;
@@ -845,7 +845,7 @@ namespace Offsets {
                 int m_hBombDefuser = 0x29b4;
         }
 
-        namespace DT_CSPlayerResource {
+        namespace CSPlayerResource {
                 int m_iPlayerC4 = 0x165c;
                 int m_iPlayerVIP = 0x1660;
                 int m_bombsiteCenterA = 0x1664;
@@ -1053,7 +1053,7 @@ namespace Offsets {
                 int m_iMatchStats_EnemiesFlashed_Total = 0x6940;
         }
 
-        namespace DT_CSPlayer {
+        namespace CSPlayer {
                 int m_angEyeAngles_0_ = 0xb37c;
                 int m_angEyeAngles_1_ = 0xb380;
                 int m_iAddonBits = 0xa374;
@@ -1150,7 +1150,7 @@ namespace Offsets {
                 int m_flLastExoJumpTime = 0x3ac0;
         }
 
-        namespace DT_CSLocalPlayerExclusive {
+        namespace CSLocalPlayerExclusive {
                 int m_vecOrigin = 0x138;
                 int m_vecOrigin_2_ = 0x140;
                 int m_flStamina = 0xa388;
@@ -1175,12 +1175,12 @@ namespace Offsets {
                 int m_iWeaponPurchasesThisRound = 0xb518;
         }
 
-        namespace DT_CSNonLocalPlayerExclusive {
+        namespace CSNonLocalPlayerExclusive {
                 int m_vecOrigin = 0x138;
                 int m_vecOrigin_2_ = 0x140;
         }
 
-        namespace DT_CSTeamExclusive {
+        namespace CSTeamExclusive {
         }
 
         namespace m_iWeaponPurchasesThisMatch {
@@ -1258,13 +1258,13 @@ namespace Offsets {
                 int m_vecPlayerPatchEconIndices = 0xb970;
         }
 
-        namespace DT_PlayerPing {
+        namespace PlayerPing {
                 int m_hPlayer = 0x9e4;
                 int m_hPingedEntity = 0x9e8;
                 int m_iType = 0x9ec;
         }
 
-        namespace DT_CSRagdoll {
+        namespace CSRagdoll {
                 int m_vecOrigin = 0x138;
                 int m_vecRagdollOrigin = 0x2a0c;
                 int m_hPlayer = 0x29f0;
@@ -1280,13 +1280,13 @@ namespace Offsets {
                 int m_flAbsYaw = 0x2a24;
         }
 
-        namespace DT_TEPlayerAnimEvent {
+        namespace TEPlayerAnimEvent {
                 int m_hPlayer = 0x10;
                 int m_iEvent = 0x14;
                 int m_nData = 0x18;
         }
 
-        namespace DT_CHostage {
+        namespace CHostage {
                 int m_isRescued = 0x2f30;
                 int m_jumpedThisFrame = 0x2f31;
                 int m_iHealth = 0x100;
@@ -1301,7 +1301,7 @@ namespace Offsets {
                 int m_leader = 0x2f20;
         }
 
-        namespace DT_BaseCSGrenadeProjectile {
+        namespace BaseCSGrenadeProjectile {
                 int m_vInitialVelocity = 0x29d0;
                 int m_nBounces = 0x29dc;
                 int m_nExplodeEffectIndex = 0x29e0;
@@ -1309,12 +1309,12 @@ namespace Offsets {
                 int m_vecExplodeEffectOrigin = 0x29e8;
         }
 
-        namespace DT_HandleTest {
+        namespace HandleTest {
                 int m_Handle = 0x9d8;
                 int m_bSendHandle = 0x9dc;
         }
 
-        namespace DT_SpriteTrail {
+        namespace SpriteTrail {
                 int m_flLifeTime = 0x1074;
                 int m_flStartWidth = 0x1078;
                 int m_flEndWidth = 0x107c;
@@ -1325,7 +1325,7 @@ namespace Offsets {
                 int m_flSkyboxScale = 0x1098;
         }
 
-        namespace DT_Sprite {
+        namespace Sprite {
                 int m_hAttachedToEntity = 0x9e8;
                 int m_nAttachment = 0x9ec;
                 int m_flScaleTime = 0xa08;
@@ -1339,14 +1339,14 @@ namespace Offsets {
                 int m_bWorldSpaceScale = 0xa0c;
         }
 
-        namespace DT_Ragdoll_Attached {
+        namespace Ragdoll_Attached {
                 int m_boneIndexAttached = 0x2cb8;
                 int m_ragdollAttachedObjectIndex = 0x2cb4;
                 int m_attachmentPointBoneSpace = 0x2c90;
                 int m_attachmentPointRagdollSpace = 0x2ca8;
         }
 
-        namespace DT_Ragdoll {
+        namespace Ragdoll {
                 int m_ragAngles_0_ = 0x2aa0;
                 int m_ragAngles = 0x0;
                 int m_ragPos_0_ = 0x2980;
@@ -1356,11 +1356,11 @@ namespace Offsets {
                 int m_nOverlaySequence = 0x2c88;
         }
 
-        namespace DT_PropCounter {
+        namespace PropCounter {
                 int m_flDisplayValue = 0x2980;
         }
 
-        namespace DT_PoseController {
+        namespace PoseController {
                 int m_bPoseValueParity = 0x9ec;
                 int m_fPoseValue = 0x9f0;
                 int m_fInterpolationTime = 0x9f4;
@@ -1380,27 +1380,27 @@ namespace Offsets {
                 int m_chPoseIndex = 0x9e8;
         }
 
-        namespace DT_GrassBurn {
+        namespace GrassBurn {
                 int m_flGrassBurnClearTime = 0x9d8;
         }
 
-        namespace DT_FuncLadder {
+        namespace FuncLadder {
                 int m_vecPlayerMountPositionTop = 0x9f8;
                 int m_vecPlayerMountPositionBottom = 0xa04;
                 int m_vecLadderDir = 0x9d8;
                 int m_bFakeLadder = 0xa11;
         }
 
-        namespace DT_TEFoundryHelpers {
+        namespace TEFoundryHelpers {
                 int m_iEntity = 0x10;
         }
 
-        namespace DT_DetailController {
+        namespace DetailController {
                 int m_flFadeStartDist = 0x9d8;
                 int m_flFadeEndDist = 0x9dc;
         }
 
-        namespace DT_DangerZone {
+        namespace DangerZone {
                 int m_vecDangerZoneOriginStartedAt = 0x9d8;
                 int m_flBombLaunchTime = 0x9e4;
                 int m_flExtraRadius = 0x9e8;
@@ -1410,7 +1410,7 @@ namespace Offsets {
                 int m_iWave = 0x9f8;
         }
 
-        namespace DT_DangerZoneController {
+        namespace DangerZoneController {
                 int m_bDangerZoneControllerEnabled = 0x9d8;
                 int m_bMissionControlledExplosions = 0x9d9;
                 int m_flStartTime = 0x9f4;
@@ -1428,7 +1428,7 @@ namespace Offsets {
                 int m_flWaveEndTimes = 0xaa4;
         }
 
-        namespace DT_WorldVguiText {
+        namespace WorldVguiText {
                 int m_bEnabled = 0x9d8;
                 int m_szDisplayText = 0x9d9;
                 int m_szDisplayTextOption = 0xbd9;
@@ -1437,7 +1437,7 @@ namespace Offsets {
                 int m_clrText = 0xd19;
         }
 
-        namespace DT_World {
+        namespace World {
                 int m_flWaveHeight = 0x9d8;
                 int m_WorldMins = 0x9dc;
                 int m_WorldMaxs = 0x9e8;
@@ -1451,12 +1451,12 @@ namespace Offsets {
                 int m_iTimeOfDay = 0xa0c;
         }
 
-        namespace DT_WaterLODControl {
+        namespace WaterLODControl {
                 int m_flCheapWaterStartDistance = 0x9d8;
                 int m_flCheapWaterEndDistance = 0x9dc;
         }
 
-        namespace DT_VoteController {
+        namespace VoteController {
                 int m_iActiveIssueIndex = 0x9e4;
                 int m_iOnlyTeamToVote = 0x9e8;
                 int m_nPotentialVotes = 0xa04;
@@ -1467,7 +1467,7 @@ namespace Offsets {
                 int m_nVoteOptionCount = 0x9ec;
         }
 
-        namespace DT_VGuiScreen {
+        namespace VGuiScreen {
                 int m_flWidth = 0x9e0;
                 int m_flHeight = 0x9e4;
                 int m_fScreenFlags = 0xa0c;
@@ -1477,11 +1477,11 @@ namespace Offsets {
                 int m_hPlayerOwner = 0xa68;
         }
 
-        namespace DT_PropJeep {
+        namespace PropJeep {
                 int m_bHeadlightIsOn = 0x2acc;
         }
 
-        namespace DT_PropVehicleChoreoGeneric {
+        namespace PropVehicleChoreoGeneric {
                 int m_hPlayer = 0x29f4;
                 int m_bEnterAnimOn = 0x29fc;
                 int m_bExitAnimOn = 0x29fd;
@@ -1499,21 +1499,21 @@ namespace Offsets {
                 int m_vehicleView_flPitchMax = 0x2ab4;
         }
 
-        namespace DT_TriggerSoundOperator {
+        namespace TriggerSoundOperator {
                 int m_nSoundOperator = 0xa10;
         }
 
-        namespace DT_BaseTrigger {
+        namespace BaseTrigger {
                 int m_bClientSidePredicted = 0xa08;
                 int m_spawnflags = 0x2c8;
         }
 
-        namespace DT_Tesla {
+        namespace Tesla {
                 int m_SoundName = 0xa00;
                 int m_iszSpriteName = 0xa40;
         }
 
-        namespace DT_BaseTeamObjectiveResource {
+        namespace BaseTeamObjectiveResource {
                 int m_iTimerToShowInHUD = 0x9d8;
                 int m_iStopWatchTimer = 0x9dc;
                 int m_iNumControlPoints = 0x9e0;
@@ -1599,7 +1599,7 @@ namespace Offsets {
                 int m_iOwner = 0x1c64;
         }
 
-        namespace DT_Team {
+        namespace Team {
                 int m_iTeamNum = 0xb68;
                 int m_bSurrendered = 0xb6c;
                 int m_scoreTotal = 0xb40;
@@ -1619,7 +1619,7 @@ namespace Offsets {
                 int "player_array" = 0x0;
         }
 
-        namespace DT_SunlightShadowControl {
+        namespace SunlightShadowControl {
                 int m_shadowDirection = 0x9d8;
                 int m_bEnabled = 0x9e4;
                 int m_TextureName = 0x9e5;
@@ -1632,7 +1632,7 @@ namespace Offsets {
                 int m_bEnableShadows = 0xb18;
         }
 
-        namespace DT_Sun {
+        namespace Sun {
                 int m_clrRender = 0x70;
                 int m_clrOverlay = 0xb38;
                 int m_vDirection = 0xb44;
@@ -1645,17 +1645,17 @@ namespace Offsets {
                 int glowDistanceScale = 0x0;
         }
 
-        namespace DT_ParticlePerformanceMonitor {
+        namespace ParticlePerformanceMonitor {
                 int m_bMeasurePerf = 0x9d9;
                 int m_bDisplayPerf = 0x9d8;
         }
 
-        namespace DT_SpotlightEnd {
+        namespace SpotlightEnd {
                 int m_flLightScale = 0x9d8;
                 int m_Radius = 0x9dc;
         }
 
-        namespace DT_SpatialEntity {
+        namespace SpatialEntity {
                 int m_vecOrigin = 0x9d8;
                 int m_minFalloff = 0x9e4;
                 int m_maxFalloff = 0x9e8;
@@ -1663,7 +1663,7 @@ namespace Offsets {
                 int m_bEnabled = 0xaf4;
         }
 
-        namespace DT_SlideshowDisplay {
+        namespace SlideshowDisplay {
                 int m_bEnabled = 0x9d8;
                 int m_szDisplayText = 0x9d9;
                 int m_szSlideshowDirectory = 0xa59;
@@ -1677,7 +1677,7 @@ namespace Offsets {
                 int m_chCurrentSlideLists = 0xaf0;
         }
 
-        namespace DT_ShadowControl {
+        namespace ShadowControl {
                 int m_shadowDirection = 0x9d8;
                 int m_shadowColor = 0x9e4;
                 int m_flShadowMaxDist = 0x9e8;
@@ -1685,7 +1685,7 @@ namespace Offsets {
                 int m_bEnableLocalLightShadows = 0x9ed;
         }
 
-        namespace DT_SceneEntity {
+        namespace SceneEntity {
                 int m_nSceneStringIndex = 0x9e8;
                 int m_bIsPlayingBack = 0x9dc;
                 int m_bPaused = 0x9dd;
@@ -1702,7 +1702,7 @@ namespace Offsets {
                 int m_hActorList = 0x0;
         }
 
-        namespace DT_RopeKeyframe {
+        namespace RopeKeyframe {
                 int m_nChangeCount = 0xccc;
                 int m_iRopeMaterialModelIndex = 0xa14;
                 int m_hStartPoint = 0xcac;
@@ -1729,23 +1729,23 @@ namespace Offsets {
                 int m_nMaxGPULevel = 0x98b;
         }
 
-        namespace DT_RagdollManager {
+        namespace RagdollManager {
                 int m_iCurrentMaxRagdollCount = 0x9d8;
         }
 
-        namespace DT_PhysicsPropMultiplayer {
+        namespace PhysicsPropMultiplayer {
                 int m_iPhysicsMode = 0x29c4;
                 int m_fMass = 0x29c8;
                 int m_collisionMins = 0x29cc;
                 int m_collisionMaxs = 0x29d8;
         }
 
-        namespace DT_PhysBoxMultiplayer {
+        namespace PhysBoxMultiplayer {
                 int m_iPhysicsMode = 0x9e4;
                 int m_fMass = 0x9e8;
         }
 
-        namespace DT_DynamicProp {
+        namespace DynamicProp {
                 int m_bUseHitboxesForRenderBox = 0x29a4;
                 int m_flGlowMaxDist = 0x29c4;
                 int m_bShouldGlow = 0x29c8;
@@ -1753,13 +1753,13 @@ namespace Offsets {
                 int m_nGlowStyle = 0x29d0;
         }
 
-        namespace DT_Prop_Hallucination {
+        namespace Prop_Hallucination {
                 int m_bEnabled = 0x2999;
                 int m_fVisibleTime = 0x299c;
                 int m_fRechargeTime = 0x29a0;
         }
 
-        namespace DT_PostProcessController {
+        namespace PostProcessController {
                 int m_bMaster = 0xa04;
         }
 
@@ -1767,13 +1767,13 @@ namespace Offsets {
                 int m_flPostProcessParameters = 0x9d8;
         }
 
-        namespace DT_PointWorldText {
+        namespace PointWorldText {
                 int m_szText = 0xa08;
                 int m_flTextSize = 0xb0c;
                 int m_textColor = 0xb10;
         }
 
-        namespace DT_PointCommentaryNode {
+        namespace PointCommentaryNode {
                 int m_bActive = 0x2980;
                 int m_flStartTime = 0x2984;
                 int m_iszCommentaryFile = 0x2988;
@@ -1784,7 +1784,7 @@ namespace Offsets {
                 int m_hViewPosition = 0x2c9c;
         }
 
-        namespace DT_PointCamera {
+        namespace PointCamera {
                 int m_FOV = 0x9d8;
                 int m_Resolution = 0x9dc;
                 int m_bFogEnable = 0x9e0;
@@ -1796,7 +1796,7 @@ namespace Offsets {
                 int m_bUseScreenAspectRatio = 0x9f5;
         }
 
-        namespace DT_Plasma {
+        namespace Plasma {
                 int m_flStartScale = 0x9d8;
                 int m_flScale = 0x9dc;
                 int m_flScaleTime = 0x9e0;
@@ -1806,12 +1806,12 @@ namespace Offsets {
                 int m_nGlowModelIndex = 0x9f0;
         }
 
-        namespace DT_PhysicsProp {
+        namespace PhysicsProp {
                 int m_bAwake = 0x29a0;
                 int m_spawnflags = 0x2c8;
         }
 
-        namespace DT_StatueProp {
+        namespace StatueProp {
                 int m_hInitBaseAnimating = 0x29c0;
                 int m_bShatter = 0x29c4;
                 int m_nShatterFlags = 0x29c8;
@@ -1819,11 +1819,11 @@ namespace Offsets {
                 int m_vShatterForce = 0x29d8;
         }
 
-        namespace DT_PhysBox {
+        namespace PhysBox {
                 int m_mass = 0x9d8;
         }
 
-        namespace DT_ParticleSystem {
+        namespace ParticleSystem {
                 int m_vecOrigin = 0x138;
                 int m_fEffects = 0xf0;
                 int m_hOwnerEntity = 0x14c;
@@ -1853,7 +1853,7 @@ namespace Offsets {
                 int m_iControlPointParents = 0xc2c;
         }
 
-        namespace DT_MovieDisplay {
+        namespace MovieDisplay {
                 int m_bEnabled = 0x9d8;
                 int m_bLooping = 0x9d9;
                 int m_szMovieFilename = 0x9da;
@@ -1867,7 +1867,7 @@ namespace Offsets {
                 int m_flVMax = 0xaec;
         }
 
-        namespace DT_MaterialModifyControl {
+        namespace MaterialModifyControl {
                 int m_szMaterialName = 0x9d8;
                 int m_szMaterialVar = 0xad7;
                 int m_szMaterialVarValue = 0xbd6;
@@ -1883,7 +1883,7 @@ namespace Offsets {
                 int m_nModifyMode = 0xd08;
         }
 
-        namespace DT_LightGlow {
+        namespace LightGlow {
                 int m_clrRender = 0x70;
                 int m_nHorizontalSize = 0x9d8;
                 int m_nVerticalSize = 0x9dc;
@@ -1898,21 +1898,21 @@ namespace Offsets {
                 int HDRColorScale = 0x0;
         }
 
-        namespace DT_ItemAssaultSuitUseable {
+        namespace ItemAssaultSuitUseable {
                 int m_nArmorValue = 0x3440;
                 int m_bIsHeavyAssaultSuit = 0x3444;
         }
 
-        namespace DT_Item {
+        namespace Item {
                 int m_bShouldGlow = 0x3230;
         }
 
-        namespace DT_InfoOverlayAccessor {
+        namespace InfoOverlayAccessor {
                 int m_iTextureFrameIndex = 0x98c;
                 int m_iOverlayID = 0x9d8;
         }
 
-        namespace DT_FuncSmokeVolume {
+        namespace FuncSmokeVolume {
                 int m_Color1 = 0xac4;
                 int m_Color2 = 0xac8;
                 int m_MaterialName = 0xacc;
@@ -1926,7 +1926,7 @@ namespace Offsets {
                 int m_spawnflags = 0xbe8;
         }
 
-        namespace DT_CollisionProperty {
+        namespace CollisionProperty {
                 int m_vecMins = 0x8;
                 int m_vecMaxs = 0x14;
                 int m_nSolidType = 0x22;
@@ -1938,7 +1938,7 @@ namespace Offsets {
                 int m_Collision = 0x320;
         }
 
-        namespace DT_FuncRotating {
+        namespace FuncRotating {
                 int m_vecOrigin = 0x138;
                 int m_angRotation_0_ = 0x12c;
                 int m_angRotation_1_ = 0x130;
@@ -1946,28 +1946,28 @@ namespace Offsets {
                 int m_flSimulationTime = 0x268;
         }
 
-        namespace DT_FuncOccluder {
+        namespace FuncOccluder {
                 int m_bActive = 0x9dc;
                 int m_nOccluderIndex = 0x9d8;
         }
 
-        namespace DT_FuncMoveLinear {
+        namespace FuncMoveLinear {
                 int m_vecVelocity = 0x114;
                 int m_fFlags = 0x104;
         }
 
-        namespace DT_Func_LOD {
+        namespace Func_LOD {
                 int m_nDisappearMinDist = 0x9d8;
                 int m_nDisappearMaxDist = 0x9dc;
         }
 
-        namespace DT_TEDust {
+        namespace TEDust {
                 int m_flSize = 0x1c;
                 int m_flSpeed = 0x20;
                 int m_vecDirection = 0x24;
         }
 
-        namespace DT_Func_Dust {
+        namespace Func_Dust {
                 int m_Color = 0x9d8;
                 int m_SpawnRate = 0x9dc;
                 int m_flSizeMin = 0x9e0;
@@ -1982,7 +1982,7 @@ namespace Offsets {
                 int m_bAffectedByWind = 0x9fc;
         }
 
-        namespace DT_CollisionProperty {
+        namespace CollisionProperty {
                 int m_vecMins = 0x8;
                 int m_vecMaxs = 0x14;
                 int m_nSolidType = 0x22;
@@ -1994,11 +1994,11 @@ namespace Offsets {
                 int m_Collision = 0x320;
         }
 
-        namespace DT_FuncConveyor {
+        namespace FuncConveyor {
                 int m_flConveyorSpeed = 0x9d8;
         }
 
-        namespace DT_BreakableSurface {
+        namespace BreakableSurface {
                 int m_nNumWide = 0x9dc;
                 int m_nNumHigh = 0x9e0;
                 int m_flPanelWidth = 0x9e4;
@@ -2013,14 +2013,14 @@ namespace Offsets {
                 int m_RawPanelBitVec = 0xa2c;
         }
 
-        namespace DT_FuncAreaPortalWindow {
+        namespace FuncAreaPortalWindow {
                 int m_flFadeStartDist = 0x9d8;
                 int m_flFadeDist = 0x9dc;
                 int m_flTranslucencyLimit = 0x9e0;
                 int m_iBackgroundModelIndex = 0x9e4;
         }
 
-        namespace DT_CFish {
+        namespace CFish {
                 int m_poolOrigin = 0x29e0;
                 int m_x = 0x29c8;
                 int m_y = 0x29cc;
@@ -2031,7 +2031,7 @@ namespace Offsets {
                 int m_waterLevel = 0x29ec;
         }
 
-        namespace DT_FireSmoke {
+        namespace FireSmoke {
                 int m_flStartScale = 0x9d8;
                 int m_flScale = 0x9dc;
                 int m_flScaleTime = 0x9e0;
@@ -2040,7 +2040,7 @@ namespace Offsets {
                 int m_nFlameFromAboveModelIndex = 0x9ec;
         }
 
-        namespace DT_EnvTonemapController {
+        namespace EnvTonemapController {
                 int m_bUseCustomAutoExposureMin = 0x9d8;
                 int m_bUseCustomAutoExposureMax = 0x9d9;
                 int m_bUseCustomBloomScale = 0x9da;
@@ -2056,12 +2056,12 @@ namespace Offsets {
                 int m_flTonemapRate = 0xa00;
         }
 
-        namespace DT_EnvScreenEffect {
+        namespace EnvScreenEffect {
                 int m_flDuration = 0x9d8;
                 int m_nType = 0x9dc;
         }
 
-        namespace DT_EnvScreenOverlay {
+        namespace EnvScreenOverlay {
                 int m_iszOverlayNames_0_ = 0x9d8;
                 int m_iszOverlayNames = 0x0;
                 int m_flOverlayTimes_0_ = 0x13d0;
@@ -2071,7 +2071,7 @@ namespace Offsets {
                 int m_bIsActive = 0x1400;
         }
 
-        namespace DT_EnvProjectedTexture {
+        namespace EnvProjectedTexture {
                 int m_hTargetEntity = 0x9dc;
                 int m_bState = 0x9e0;
                 int m_bAlwaysUpdate = 0x9e1;
@@ -2095,11 +2095,11 @@ namespace Offsets {
                 int m_iStyle = 0xb2c;
         }
 
-        namespace DT_EnvParticleScript {
+        namespace EnvParticleScript {
                 int m_flSequenceScale = 0x2a64;
         }
 
-        namespace DT_FogController {
+        namespace FogController {
                 int m_fog_enable = 0xa1c;
                 int m_fog_blend = 0xa1d;
                 int m_fog_dirPrimary = 0x9dc;
@@ -2120,7 +2120,7 @@ namespace Offsets {
                 int m_fog_ZoomFogScale = 0xa20;
         }
 
-        namespace DT_EnvDOFController {
+        namespace EnvDOFController {
                 int m_bDOFEnabled = 0x9d8;
                 int m_flNearBlurDepth = 0x9dc;
                 int m_flNearFocusDepth = 0x9e0;
@@ -2130,7 +2130,7 @@ namespace Offsets {
                 int m_flFarBlurRadius = 0x9f0;
         }
 
-        namespace DT_CascadeLight {
+        namespace CascadeLight {
                 int m_shadowDirection = 0x9d8;
                 int m_envLightShadowDirection = 0x9e4;
                 int m_bEnabled = 0x9f0;
@@ -2140,23 +2140,23 @@ namespace Offsets {
                 int m_flMaxShadowDist = 0x9fc;
         }
 
-        namespace DT_EnvAmbientLight {
+        namespace EnvAmbientLight {
                 int m_vecColor = 0xb00;
         }
 
-        namespace DT_EntityParticleTrail {
+        namespace EntityParticleTrail {
                 int m_iMaterialName = 0xac0;
                 int m_hConstraintEntity = 0xad8;
         }
 
-        namespace DT_EntityParticleTrailInfo {
+        namespace EntityParticleTrailInfo {
                 int m_flLifetime = 0x8;
                 int m_flStartSize = 0xc;
                 int m_flEndSize = 0x10;
                 int m_Info = 0xac4;
         }
 
-        namespace DT_EntityFreezing {
+        namespace EntityFreezing {
                 int m_vFreezingOrigin = 0x9d8;
                 int m_flFrozen = 0xaac;
                 int m_bFinishFreezing = 0xab0;
@@ -2166,12 +2166,12 @@ namespace Offsets {
                 int m_flFrozenPerHitbox = 0x9e4;
         }
 
-        namespace DT_EntityFlame {
+        namespace EntityFlame {
                 int m_hEntAttached = 0x9d8;
                 int m_bCheapEffect = 0x9ec;
         }
 
-        namespace DT_EntityDissolve {
+        namespace EntityDissolve {
                 int m_flStartTime = 0x9dc;
                 int m_flFadeOutStart = 0x9e0;
                 int m_flFadeOutLength = 0x9e4;
@@ -2184,7 +2184,7 @@ namespace Offsets {
                 int m_nMagnitude = 0xa0c;
         }
 
-        namespace DT_DynamicLight {
+        namespace DynamicLight {
                 int m_Flags = 0x9d8;
                 int m_LightStyle = 0x9d9;
                 int m_Radius = 0x9dc;
@@ -2194,7 +2194,7 @@ namespace Offsets {
                 int m_SpotRadius = 0x9ec;
         }
 
-        namespace DT_ColorCorrectionVolume {
+        namespace ColorCorrectionVolume {
                 int m_bEnabled = 0xa20;
                 int m_MaxWeight = 0xa24;
                 int m_FadeDuration = 0xa28;
@@ -2202,7 +2202,7 @@ namespace Offsets {
                 int m_lookupFilename = 0xa30;
         }
 
-        namespace DT_ColorCorrection {
+        namespace ColorCorrection {
                 int m_vecOrigin = 0x9d8;
                 int m_minFalloff = 0x9e4;
                 int m_maxFalloff = 0x9e8;
@@ -2217,12 +2217,12 @@ namespace Offsets {
                 int m_bExclusive = 0xb03;
         }
 
-        namespace DT_BreakableProp {
+        namespace BreakableProp {
                 int m_qPreferredPlayerCarryAngles = 0x2984;
                 int m_bClientPhysics = 0x2990;
         }
 
-        namespace DT_BeamSpotlight {
+        namespace BeamSpotlight {
                 int m_nHaloIndex = 0x9d8;
                 int m_bSpotlightOn = 0x9e4;
                 int m_bHasDynamicLight = 0x9e5;
@@ -2233,17 +2233,17 @@ namespace Offsets {
                 int m_flRotationSpeed = 0x9e0;
         }
 
-        namespace DT_BaseButton {
+        namespace BaseButton {
                 int m_usable = 0xa08;
         }
 
-        namespace DT_BaseToggle {
+        namespace BaseToggle {
                 int m_vecFinalDest = 0x9ec;
                 int m_movementType = 0x9f8;
                 int m_flMoveTargetTime = 0x9fc;
         }
 
-        namespace DT_BasePlayer {
+        namespace BasePlayer {
                 int m_iFOV = 0x31e4;
                 int m_iFOVStart = 0x31e8;
                 int m_flFOVTime = 0x3208;
@@ -2285,7 +2285,7 @@ namespace Offsets {
                 int m_nWaterLevel = 0x25e;
         }
 
-        namespace DT_LocalPlayerExclusive {
+        namespace LocalPlayerExclusive {
                 int m_vecViewOffset_0_ = 0x108;
                 int m_vecViewOffset_1_ = 0x10c;
                 int m_vecViewOffset_2_ = 0x110;
@@ -2311,7 +2311,7 @@ namespace Offsets {
                 int m_hTonemapController = 0x31cc;
         }
 
-        namespace DT_Local {
+        namespace Local {
                 int m_iHideHUD = 0x48;
                 int m_flFOVRate = 0x44;
                 int m_bDucked = 0x88;
@@ -2364,7 +2364,7 @@ namespace Offsets {
                 int m_Local = 0x2fbc;
         }
 
-        namespace DT_PlayerState {
+        namespace PlayerState {
                 int deadflag = 0x4;
         }
 
@@ -2374,7 +2374,7 @@ namespace Offsets {
                 int m_iAmmo = 0x2d78;
         }
 
-        namespace DT_BaseFlex {
+        namespace BaseFlex {
                 int m_blinktoggle = 0x2bd4;
                 int m_viewtarget = 0x29f0;
         }
@@ -2383,7 +2383,7 @@ namespace Offsets {
                 int m_flexWeight = 0x2a28;
         }
 
-        namespace DT_BaseEntity {
+        namespace BaseEntity {
                 int m_flSimulationTime = 0x268;
                 int m_cellbits = 0x74;
                 int m_cellX = 0x7c;
@@ -2427,11 +2427,11 @@ namespace Offsets {
                 int m_bEligibleForScreenHighlight = 0x9b9;
         }
 
-        namespace DT_AnimTimeMustBeFirst {
+        namespace AnimTimeMustBeFirst {
                 int m_flAnimTime = 0x260;
         }
 
-        namespace DT_CollisionProperty {
+        namespace CollisionProperty {
                 int m_vecMins = 0x8;
                 int m_vecMaxs = 0x14;
                 int m_nSolidType = 0x22;
@@ -2452,22 +2452,22 @@ namespace Offsets {
                 int m_bSpottedByMask = 0x980;
         }
 
-        namespace DT_BaseDoor {
+        namespace BaseDoor {
                 int m_flWaveHeight = 0xa08;
         }
 
-        namespace DT_BaseCombatCharacter {
+        namespace BaseCombatCharacter {
                 int m_LastHitGroup = 0x2d74;
                 int m_hActiveWeapon = 0x2ef8;
                 int m_flTimeOfLastInjury = 0x2efc;
                 int m_nRelativeDirectionOfLastInjury = 0x2f00;
         }
 
-        namespace DT_BCCLocalPlayerExclusive {
+        namespace BCCLocalPlayerExclusive {
                 int m_flNextAttack = 0x2d70;
         }
 
-        namespace DT_BCCNonLocalPlayerExclusive {
+        namespace BCCNonLocalPlayerExclusive {
         }
 
         namespace m_hMyWeapons {
@@ -2484,12 +2484,12 @@ namespace Offsets {
                 int m_hMyWearables = 0x2f04;
         }
 
-        namespace DT_BoneFollower {
+        namespace BoneFollower {
                 int m_modelIndex = 0x9d8;
                 int m_solidIndex = 0x9dc;
         }
 
-        namespace DT_BaseAnimating {
+        namespace BaseAnimating {
                 int m_nSequence = 0x28bc;
                 int m_nForceBone = 0x268c;
                 int m_vecForce = 0x2680;
@@ -2519,14 +2519,14 @@ namespace Offsets {
         namespace m_flEncodedController {
         }
 
-        namespace DT_ServerAnimationData {
+        namespace ServerAnimationData {
                 int m_flCycle = 0xa14;
                 int m_flPoseParameter = 0x2774;
                 int m_flEncodedController = 0xa54;
                 int serveranimdata = 0x0;
         }
 
-        namespace DT_AI_BaseNPC {
+        namespace AI_BaseNPC {
                 int m_lifeState = 0x25f;
                 int m_bPerformAvoidance = 0x2f24;
                 int m_bIsMoving = 0x2f25;
@@ -2540,7 +2540,7 @@ namespace Offsets {
                 int m_flTimePingEffect = 0x2f10;
         }
 
-        namespace DT_Beam {
+        namespace Beam {
                 int m_nBeamType = 0x9f4;
                 int m_nBeamFlags = 0x9f8;
                 int m_nNumBeamEnts = 0x9e8;
@@ -2573,7 +2573,7 @@ namespace Offsets {
                 int m_nAttachIndex = 0xa24;
         }
 
-        namespace DT_BaseViewModel {
+        namespace BaseViewModel {
                 int m_nModelIndex = 0x258;
                 int m_hWeapon = 0x29c8;
                 int m_nSkin = 0xa1c;
@@ -2590,7 +2590,7 @@ namespace Offsets {
                 int m_bShouldIgnoreOffsetAndAccuracy = 0x2990;
         }
 
-        namespace DT_BaseGrenade {
+        namespace BaseGrenade {
                 int m_flDamage = 0x2998;
                 int m_DmgRadius = 0x2984;
                 int m_bIsLive = 0x2981;
