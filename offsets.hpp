@@ -2599,7 +2599,7 @@ namespace Offsets {
                 int m_fFlags = 0x104;
         }
 
-        namespace DT_BaseCombatWeapon {
+        namespace BaseCombatWeapon {
                 int m_iViewModelIndex = 0x3240;
                 int m_iWorldModelIndex = 0x3244;
                 int m_iWorldDroppedModelIndex = 0x3248;
@@ -2613,7 +2613,7 @@ namespace Offsets {
                 int m_iNumEmptyAttacks = 0x3250;
         }
 
-        namespace DT_LocalWeaponData {
+        namespace LocalWeaponData {
                 int m_iPrimaryAmmoType = 0x325c;
                 int m_iSecondaryAmmoType = 0x3260;
                 int m_nViewModelIndex = 0x3234;
@@ -2622,7 +2622,7 @@ namespace Offsets {
                 int m_iWeaponModule = 0x324c;
         }
 
-        namespace DT_LocalActiveWeaponData {
+        namespace LocalActiveWeaponData {
                 int m_flNextPrimaryAttack = 0x3238;
                 int m_flNextSecondaryAttack = 0x323c;
                 int m_nNextThinkTick = 0xfc;
@@ -2631,7 +2631,7 @@ namespace Offsets {
                 int LocalActiveWeaponData = 0x0;
         }
 
-        namespace DT_BaseWeaponWorldModel {
+        namespace BaseWeaponWorldModel {
                 int m_nModelIndex = 0x258;
                 int m_nBody = 0xa20;
                 int m_fEffects = 0xf0;
