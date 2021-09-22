@@ -1,2281 +1,1952 @@
 #pragma once
-// Updated on Oct 17 2020
-// Dumped by KittenPopo
-
-namespace Offsets {
-	namespace DT_TestTraceline {
-		int clrRender = 0x70;
-		int vecOrigin = 0x138;
-		int angRotation0 = 0x12c;
-		int angRotation1 = 0x130;
-		int angRotation2 = 0x134;
-		int oveparent = 0x148;
-	}
-
-	namespace DT_TEWorldDecal {
-		int vecOrigin = 0x10;
-		int nIndex = 0x1c;
-	}
-
-	namespace DT_TESpriteSpray {
-		int vecOrigin = 0x10;
-		int vecDirection = 0x1c;
-		int nModelIndex = 0x28;
-		int fNoise = 0x30;
-		int nCount = 0x34;
-		int nSpeed = 0x2c;
-	}
-
-	namespace DT_TESprite {
-		int vecOrigin = 0x10;
-		int nModelIndex = 0x1c;
-		int fScale = 0x20;
-		int nBrightness = 0x24;
-	}
-
-	namespace DT_TESparks {
-		int nMagnitude = 0x1c;
-		int nTrailLength = 0x20;
-		int vecDir = 0x24;
-	}
-
-	namespace DT_TESmoke {
-		int vecOrigin = 0x10;
-		int nModelIndex = 0x1c;
-		int fScale = 0x20;
-		int nFrameRate = 0x24;
-	}
-
-	namespace DT_TEShowLine {
-		int vecEnd = 0x1c;
-	}
-
-	namespace DT_TEProjectedDecal {
-		int vecOrigin = 0x10;
-		int angRotation = 0x1c;
-		int flDistance = 0x28;
-		int nIndex = 0x2c;
-	}
-
-	namespace DT_FEPlayerDecal {
-		int nUniqueID = 0x9d8;
-		int unAccountID = 0x9dc;
-		int unTraceID = 0x9e0;
-		int rtGcTime = 0x9e4;
-		int vecEndPos = 0x9e8;
-		int vecStart = 0x9f4;
-		int vecRight = 0xa00;
-		int vecNormal = 0xa0c;
-		int nEntity = 0xa1c;
-		int nPlayer = 0xa18;
-		int nHitbox = 0xa20;
-		int nTintID = 0xa24;
-		int flCreationTime = 0xa28;
-		int nVersion = 0xa2c;
-		int ubSignature = 0xa2d;
-	}
-
-	namespace DT_TEPlayerDecal {
-		int vecOrigin = 0x14;
-		int vecStart = 0x20;
-		int vecRight = 0x2c;
-		int nEntity = 0x38;
-		int nPlayer = 0x10;
-		int nHitbox = 0x3c;
-	}
-
-	namespace DT_TEPhysicsProp {
-		int vecOrigin = 0x10;
-		int angRotation0 = 0x1c;
-		int angRotation1 = 0x20;
-		int angRotation2 = 0x24;
-		int vecVelocity = 0x28;
-		int nModelIndex = 0x34;
-		int nFlags = 0x3c;
-		int nSkin = 0x38;
-		int nEffects = 0x40;
-		int clrRender = 0x44;
-	}
-
-	namespace DT_TEParticleSystem {
-		int vecOrigin0 = 0x10;
-		int vecOrigin1 = 0x14;
-		int vecOrigin2 = 0x18;
-	}
-
-	namespace DT_TEMuzzleFlash {
-		int vecOrigin = 0x10;
-		int vecAngles = 0x1c;
-		int flScale = 0x28;
-		int nType = 0x2c;
-	}
-
-	namespace DT_TELargeFunnel {
-		int nModelIndex = 0x1c;
-		int nReversed = 0x20;
-	}
-
-	namespace DT_TEKillPlayerAttachments {
-		int nPlayer = 0x10;
-	}
-
-	namespace DT_TEImpact {
-		int vecOrigin = 0x10;
-		int vecNormal = 0x1c;
-		int iType = 0x28;
-		int ucFlags = 0x2c;
-	}
-
-	namespace DT_TEGlowSprite {
-		int vecOrigin = 0x10;
-		int nModelIndex = 0x1c;
-		int fScale = 0x20;
-		int fLife = 0x24;
-		int nBrightness = 0x28;
-	}
-
-	namespace DT_TEShatterSurface {
-		int vecOrigin = 0x10;
-		int vecAngles = 0x1c;
-		int vecForce = 0x28;
-		int vecForcePos = 0x34;
-		int flWidth = 0x40;
-		int flHeight = 0x44;
-		int flShardSize = 0x48;
-		int nSurfaceType = 0x50;
-		int uchFrontColor0 = 0x54;
-		int uchFrontColor1 = 0x55;
-		int uchFrontColor2 = 0x56;
-		int uchBackColor0 = 0x57;
-		int uchBackColor1 = 0x58;
-		int uchBackColor2 = 0x59;
-	}
-
-	namespace DT_TEFootprintDecal {
-		int vecOrigin = 0x10;
-		int vecDirection = 0x1c;
-		int nEntity = 0x34;
-		int nIndex = 0x38;
-		int chMaterialType = 0x3c;
-	}
-
-	namespace DT_TEFizz {
-		int nEntity = 0x10;
-		int nModelIndex = 0x14;
-		int nDensity = 0x18;
-		int nCurrent = 0x1c;
-	}
-
-	namespace DT_TEExplosion {
-		int nModelIndex = 0x1c;
-		int fScale = 0x20;
-		int nFrameRate = 0x24;
-		int nFlags = 0x28;
-		int vecNormal = 0x2c;
-		int chMaterialType = 0x38;
-		int nRadius = 0x3c;
-		int nMagnitude = 0x40;
-	}
-
-	namespace DT_TEEnergySplash {
-		int vecPos = 0x10;
-		int vecDir = 0x1c;
-		int bExplosive = 0x28;
-	}
-
-	namespace DT_TEDynamicLight {
-		int vecOrigin = 0x10;
-		int r = 0x20;
-		int g = 0x24;
-		int b = 0x28;
-		int exponent = 0x2c;
-		int fRadius = 0x1c;
-		int fTime = 0x30;
-		int fDecay = 0x34;
-	}
-
-	namespace DT_TEDecal {
-		int vecOrigin = 0x10;
-		int vecStart = 0x1c;
-		int nEntity = 0x28;
-		int nHitbox = 0x2c;
-		int nIndex = 0x30;
-	}
-
-	namespace DT_TEClientProjectile {
-		int vecOrigin = 0x10;
-		int vecVelocity = 0x1c;
-		int nModelIndex = 0x28;
-		int nLifeTime = 0x2c;
-		int hOwner = 0x30;
-	}
-
-	namespace DT_TEBubbleTrail {
-		int vecMins = 0x10;
-		int vecMaxs = 0x1c;
-		int nModelIndex = 0x2c;
-		int flWaterZ = 0x28;
-		int nCount = 0x30;
-		int fSpeed = 0x34;
-	}
-
-	namespace DT_TEBubbles {
-		int vecMins = 0x10;
-		int vecMaxs = 0x1c;
-		int nModelIndex = 0x2c;
-		int fHeight = 0x28;
-		int nCount = 0x30;
-		int fSpeed = 0x34;
-	}
-
-	namespace DT_TEBSPDecal {
-		int vecOrigin = 0x10;
-		int nEntity = 0x1c;
-		int nIndex = 0x20;
-	}
-
-	namespace DT_TEBreakModel {
-		int vecOrigin = 0x10;
-		int angRotation0 = 0x1c;
-		int angRotation1 = 0x20;
-		int angRotation2 = 0x24;
-		int vecSize = 0x28;
-		int vecVelocity = 0x34;
-		int nModelIndex = 0x44;
-		int nRandomization = 0x40;
-		int nCount = 0x48;
-		int fTime = 0x4c;
-		int nFlags = 0x50;
-	}
-
-	namespace DT_TEBloodStream {
-		int vecDirection = 0x1c;
-		int r = 0x28;
-		int g = 0x2c;
-		int b = 0x30;
-		int a = 0x34;
-		int nAmount = 0x38;
-	}
-
-	namespace DT_TEBloodSprite {
-		int vecOrigin = 0x10;
-		int vecDirection = 0x1c;
-		int r = 0x28;
-		int g = 0x2c;
-		int b = 0x30;
-		int a = 0x34;
-		int nSprayModel = 0x3c;
-		int nDropModel = 0x38;
-		int nSize = 0x40;
-	}
-
-	namespace DT_TEBeamSpline {
-		int nPoints = 0xd0;
-		int vecPoints0 = 0x10;
-		int vecPoints = 0x0;
-	}
-
-	namespace DT_TEBeamRingPoint {
-		int vecCenter = 0x4c;
-		int flStartRadius = 0x58;
-		int flEndRadius = 0x5c;
-	}
-
-	namespace DT_TEBeamRing {
-		int nStartEntity = 0x4c;
-		int nEndEntity = 0x50;
-	}
-
-	namespace DT_TEBeamPoints {
-		int vecStartPoint = 0x4c;
-		int vecEndPoint = 0x58;
-	}
-
-	namespace DT_TEBeamLaser {
-		int nStartEntity = 0x4c;
-		int nEndEntity = 0x50;
-	}
-
-	namespace DT_TEBeamFollow {
-		int iEntIndex = 0x4c;
-	}
-
-	namespace DT_TEBeamEnts {
-		int nStartEntity = 0x4c;
-		int nEndEntity = 0x50;
-	}
-
-	namespace DT_TEBeamEntPoint {
-		int nStartEntity = 0x4c;
-		int nEndEntity = 0x50;
-		int vecStartPoint = 0x54;
-		int vecEndPoint = 0x60;
-	}
-
-	namespace DT_BaseBeam {
-		int nModelIndex = 0x10;
-		int nHaloIndex = 0x14;
-		int nStartFrame = 0x18;
-		int nFrameRate = 0x1c;
-		int fLife = 0x20;
-		int fWidth = 0x24;
-		int fEndWidth = 0x28;
-		int nFadeLength = 0x2c;
-		int fAmplitude = 0x30;
-		int nSpeed = 0x44;
-		int r = 0x34;
-		int g = 0x38;
-		int b = 0x3c;
-		int a = 0x40;
-		int nFlags = 0x48;
-	}
-
-	namespace DT_TEMetalSparks {
-		int vecPos = 0x10;
-		int vecDir = 0x1c;
-	}
-
-	namespace DT_SteamJet {
-		int SpreadSpeed = 0xac4;
-		int Speed = 0xac8;
-		int StartSize = 0xacc;
-		int EndSize = 0xad0;
-		int Rate = 0xad4;
-		int JetLength = 0xad8;
-		int bEmit = 0xadc;
-		int bFaceLeft = 0xae4;
-		int nType = 0xae0;
-		int spawnflags = 0xae8;
-		int flRollSpeed = 0xaec;
-	}
-
-	namespace DT_SmokeStack {
-		int SpreadSpeed = 0xb14;
-		int Speed = 0xb18;
-		int StartSize = 0xb1c;
-		int EndSize = 0xb20;
-		int Rate = 0xb24;
-		int JetLength = 0xb28;
-		int bEmit = 0xb2c;
-		int flBaseSpread = 0xb30;
-		int flTwist = 0xb84;
-		int flRollSpeed = 0xbc0;
-		int iMaterialModel = 0xb88;
-		int AmbientLightm_vPos = 0xb34;
-		int AmbientLightm_vColor = 0xb40;
-		int AmbientLightm_flIntensity = 0xb4c;
-		int DirLightm_vPos = 0xb50;
-		int DirLightm_vColor = 0xb5c;
-		int DirLightm_flIntensity = 0xb68;
-		int vWind = 0xb78;
-	}
-
-	namespace DT_DustTrail {
-		int SpawnRate = 0xac4;
-		int Color = 0xac8;
-		int ParticleLifetime = 0xad8;
-		int StopEmitTime = 0xae0;
-		int MinSpeed = 0xae4;
-		int MaxSpeed = 0xae8;
-		int MinDirectedSpeed = 0xaec;
-		int MaxDirectedSpeed = 0xaf0;
-		int StartSize = 0xaf4;
-		int EndSize = 0xaf8;
-		int SpawnRadius = 0xafc;
-		int bEmit = 0xb0c;
-		int Opacity = 0xad4;
-	}
-
-	namespace DT_FireTrail {
-		int nAttachment = 0xac4;
-		int flLifetime = 0xac8;
-	}
-
-	namespace DT_SporeTrail {
-		int flSpawnRate = 0xacc;
-		int vecEndColor = 0xac0;
-		int flParticleLifetime = 0xad0;
-		int flStartSize = 0xad4;
-		int flEndSize = 0xad8;
-		int flSpawnRadius = 0xadc;
-		int bEmit = 0xaec;
-	}
-
-	namespace DT_SporeExplosion {
-		int flSpawnRate = 0xac4;
-		int flParticleLifetime = 0xac8;
-		int flStartSize = 0xacc;
-		int flEndSize = 0xad0;
-		int flSpawnRadius = 0xad4;
-		int bEmit = 0xadc;
-		int bDontRemove = 0xadd;
-	}
-
-	namespace DT_RocketTrail {
-		int SpawnRate = 0xac4;
-		int StartColor = 0xac8;
-		int EndColor = 0xad4;
-		int ParticleLifetime = 0xae4;
-		int StopEmitTime = 0xae8;
-		int MinSpeed = 0xaec;
-		int MaxSpeed = 0xaf0;
-		int StartSize = 0xaf4;
-		int EndSize = 0xaf8;
-		int SpawnRadius = 0xafc;
-		int bEmit = 0xb0c;
-		int nAttachment = 0xb10;
-		int Opacity = 0xae0;
-		int bDamaged = 0xb0d;
-		int flFlareScale = 0xb20;
-	}
-
-	namespace DT_SmokeTrail {
-		int SpawnRate = 0xac4;
-		int StartColor = 0xac8;
-		int EndColor = 0xad4;
-		int ParticleLifetime = 0xae4;
-		int StopEmitTime = 0xae8;
-		int MinSpeed = 0xaec;
-		int MaxSpeed = 0xaf0;
-		int MinDirectedSpeed = 0xaf4;
-		int MaxDirectedSpeed = 0xaf8;
-		int StartSize = 0xafc;
-		int EndSize = 0xb00;
-		int SpawnRadius = 0xb04;
-		int bEmit = 0xb14;
-		int nAttachment = 0xb18;
-		int Opacity = 0xae0;
-	}
-
-	namespace DT_PropVehicleDriveable {
-		int hPlayer = 0x2984;
-		int nSpeed = 0x2988;
-		int nRPM = 0x298c;
-		int flThrottle = 0x2990;
-		int nBoostTimeLeft = 0x2994;
-		int nHasBoost = 0x2998;
-		int nScannerDisabledWeapons = 0x299c;
-		int nScannerDisabledVehicle = 0x29a0;
-		int bEnterAnimOn = 0x29c0;
-		int bExitAnimOn = 0x29c1;
-		int bUnableToFire = 0x2a0d;
-		int vecEyeExitEndpoint = 0x2a00;
-		int bHasGun = 0x2a0c;
-		int vecGunCrosshair = 0x29c8;
-	}
-
-	namespace DT_ParticleSmokeGrenade {
-		int flSpawnTime = 0xad4;
-		int FadeStartTime = 0xad8;
-		int FadeEndTime = 0xadc;
-		int MinColor = 0xae4;
-		int MaxColor = 0xaf0;
-		int CurrentStage = 0xac4;
-	}
-
-	namespace DT_ParticleFire {
-		int vOrigin = 0xacc;
-		int vDirection = 0xad8;
-	}
-
-	namespace DT_TEGaussExplosion {
-		int nType = 0x1c;
-		int vecDirection = 0x20;
-	}
-
-	namespace DT_QuadraticBeam {
-		int targetPosition = 0x9d8;
-		int controlPosition = 0x9e4;
-		int scrollRate = 0x9f0;
-		int flWidth = 0x9f4;
-	}
-
-	namespace DT_Embers {
-		int nDensity = 0x9d8;
-		int nLifetime = 0x9dc;
-		int nSpeed = 0x9e0;
-		int bEmit = 0x9e4;
-	}
-
-	namespace DT_Precipitation {
-		int nPrecipType = 0xa00;
-	}
-
-	namespace DT_BaseAttributableItem {
-		int OriginalOwnerXuidLow = 0x31c0;
-		int OriginalOwnerXuidHigh = 0x31c4;
-		int nFallbackPaintKit = 0x31c8;
-		int nFallbackSeed = 0x31cc;
-		int flFallbackWear = 0x31d0;
-		int nFallbackStatTrak = 0x31d4;
-	}
-
-	namespace DT_AttributeContainer {
-		int hOuter = 0x1c;
-		int ProviderType = 0x24;
-		int iReapplyProvisionParity = 0x18;
-	}
-
-	namespace DT_ScriptCreatedItem {
-		int iItemDefinitionIndex = 0x1ea;
-		int iEntityLevel = 0x1f0;
-		int iItemIDHigh = 0x200;
-		int iItemIDLow = 0x204;
-		int iAccountID = 0x208;
-		int iEntityQuality = 0x1ec;
-		int bInitialized = 0x214;
-		int szCustomName = 0x27c;
-	}
-
-	namespace DT_AttributeList {
-	}
-
-	namespace _ST_m_Attributes_32 {
-	}
-
-	namespace _LPT_m_Attributes_32 {
-		int lengthprop32 = 0x0;
-		int lengthproxy = 0x0;
-		int Attributes = 0x0;
-		int NetworkedDynamicAttributesForDemos = 0x260;
-		int Item = 0x40;
-		int AttributeManager = 0x2d80;
-	}
-
-	namespace DT_EconEntity {
-		int OriginalOwnerXuidLow = 0x31c0;
-		int OriginalOwnerXuidHigh = 0x31c4;
-		int nFallbackPaintKit = 0x31c8;
-		int nFallbackSeed = 0x31cc;
-		int flFallbackWear = 0x31d0;
-		int nFallbackStatTrak = 0x31d4;
-	}
-
-	namespace DT_AttributeContainer {
-		int hOuter = 0x1c;
-		int ProviderType = 0x24;
-		int iReapplyProvisionParity = 0x18;
-	}
-
-	namespace DT_ScriptCreatedItem {
-		int iItemDefinitionIndex = 0x1ea;
-		int iEntityLevel = 0x1f0;
-		int iItemIDHigh = 0x200;
-		int iItemIDLow = 0x204;
-		int iAccountID = 0x208;
-		int iEntityQuality = 0x1ec;
-		int bInitialized = 0x214;
-		int szCustomName = 0x27c;
-	}
-
-	namespace DT_AttributeList {
-	}
-
-	namespace _ST_m_Attributes_32 {
-	}
-
-	namespace _LPT_m_Attributes_32 {
-		int lengthprop32 = 0x0;
-		int lengthproxy = 0x0;
-		int Attributes = 0x0;
-		int NetworkedDynamicAttributesForDemos = 0x260;
-		int Item = 0x40;
-		int AttributeManager = 0x2d80;
-	}
-
-	namespace DT_WeaponXM1014 {
-		int reloadState = 0x33d4;
-	}
-
-	namespace DT_WeaponTaser {
-		int fFireTime = 0x33f0;
-	}
-
-	namespace DT_WeaponTablet {
-		int flUpgradeExpirationTime0 = 0x33d8;
-		int flUpgradeExpirationTime = 0x0;
-		int vecLocalHexFlags0 = 0x33e8;
-		int vecLocalHexFlags = 0x0;
-		int nContractKillGridIndex = 0x3490;
-		int nContractKillGridHighResIndex = 0x3494;
-		int bTabletReceptionIsBlocked = 0x3498;
-		int flScanProgress = 0x349c;
-		int flBootTime = 0x34a0;
-		int flShowMapTime = 0x34a4;
-		int vecNotificationIds0 = 0x34b4;
-		int vecNotificationIds = 0x0;
-		int vecNotificationTimestamps0 = 0x34d4;
-		int vecNotificationTimestamps = 0x0;
-		int vecPlayerPositionHistory0 = 0x34f8;
-		int vecPlayerPositionHistory = 0x0;
-		int nLastPurchaseIndex = 0x34f4;
-		int vecNearestMetalCratePos = 0x34a8;
-	}
-
-	namespace DT_WeaponSawedoff {
-		int reloadState = 0x33d4;
-	}
-
-	namespace DT_WeaponNOVA {
-		int reloadState = 0x33d4;
-	}
-
-	namespace DT_WeaponMelee {
-		int flThrowAt = 0x33d0;
-	}
-
-	namespace DT_WeaponM3 {
-		int reloadState = 0x33d4;
-	}
-
-	namespace DT_WeaponFists {
-		int bPlayingUninterruptableAct = 0x33d0;
-	}
-
-	namespace DT_WeaponCSBaseGun {
-		int zoomLevel = 0x33d0;
-		int iBurstShotsRemaining = 0x33d4;
-	}
-
-	namespace DT_WeaponCSBase {
-		int weaponMode = 0x3318;
-		int fAccuracyPenalty = 0x3330;
-		int fLastShotTime = 0x33a8;
-		int iRecoilIndex = 0x3340;
-		int flRecoilIndex = 0x3344;
-		int hPrevOwner = 0x3384;
-		int bBurstMode = 0x3348;
-		int flPostponeFireReadyTime = 0x334c;
-		int bReloadVisuallyComplete = 0x3350;
-		int bSilencerOn = 0x3351;
-		int flDoneSwitchingSilencer = 0x3354;
-		int iOriginalTeamNumber = 0x335c;
-		int iIronSightMode = 0x33c4;
-	}
-
-	namespace DT_WeaponC4 {
-		int bStartedArming = 0x33f0;
-		int bBombPlacedAnimation = 0x33f8;
-		int fArmedTime = 0x33f4;
-		int bShowC4LED = 0x33f9;
-		int bIsPlantingViaUse = 0x33fa;
-	}
-
-	namespace DT_BumpMineProjectile {
-		int nParentBoneIndex = 0x29d4;
-		int vecParentBonePos = 0x29d8;
-		int bArmed = 0x29e4;
-	}
-
-	namespace DT_BreachChargeProjectile {
-		int bShouldExplode = 0x29d0;
-		int weaponThatThrewMe = 0x29d4;
-		int nParentBoneIndex = 0x29d8;
-		int vecParentBonePos = 0x29dc;
-	}
-
-	namespace DT_WeaponBaseItem {
-		int bRedraw = 0x33dc;
-	}
-
-	namespace DT_BaseCSGrenade {
-		int bRedraw = 0x33d0;
-		int bIsHeldByPlayer = 0x33d1;
-		int bPinPulled = 0x33d2;
-		int fThrowTime = 0x33d4;
-		int bLoopingSoundPlaying = 0x33d8;
-		int flThrowStrength = 0x33dc;
-	}
-
-	namespace DT_SmokeGrenadeProjectile {
-		int bDidSmokeEffect = 0x2a14;
-		int nSmokeEffectTickBegin = 0x2a10;
-	}
-
-	namespace DT_MolotovProjectile {
-		int bIsIncGrenade = 0x2a10;
-	}
-
-	namespace DT_ItemDogtags {
-		int OwningPlayer = 0x3440;
-		int KillingPlayer = 0x3444;
-	}
-
-	namespace DT_PhysPropLootCrate {
-		int bRenderInPSPM = 0x29f4;
-		int bRenderInTablet = 0x29f5;
-		int iHealth = 0x100;
-		int iMaxHealth = 0x29f8;
-	}
-
-	namespace DT_EnvGasCanister {
-		int flFlightSpeed = 0x29f4;
-		int flLaunchTime = 0x29f8;
-		int vecParabolaDirection = 0x2a0c;
-		int flFlightTime = 0x29f0;
-		int flWorldEnterTime = 0x2a18;
-		int flInitialZSpeed = 0x29fc;
-		int flZAcceleration = 0x2a00;
-		int flHorizSpeed = 0x2a04;
-		int bLaunchedFromWithinWorld = 0x2a08;
-		int vecImpactPosition = 0x29b4;
-		int vecStartPosition = 0x29c0;
-		int vecEnterWorldPosition = 0x29cc;
-		int vecDirection = 0x29d8;
-		int vecStartAngles = 0x29e4;
-		int vecSkyboxOrigin = 0x2a1c;
-		int flSkyboxScale = 0x2a28;
-		int bInSkybox = 0x2a2c;
-		int bDoImpactEffects = 0x2a2d;
-		int bLanded = 0x2980;
-		int hSkyboxCopy = 0x29a8;
-		int nMyZoneIndex = 0x2a30;
-		int vecOrigin = 0x138;
-		int vecOrigin2 = 0x140;
-	}
-
-	namespace DT_Dronegun {
-		int vecAttentionTarget = 0x2980;
-		int vecTargetOffset = 0x298c;
-		int iHealth = 0x100;
-		int bHasTarget = 0x2998;
-	}
-
-	namespace DT_ParadropChopper {
-		int vecOrigin = 0x138;
-		int vecOrigin2 = 0x140;
-		int hCallingPlayer = 0x2990;
-	}
-
-	namespace DT_SurvivalSpawnChopper {
-		int vecOrigin = 0x138;
-		int vecOrigin2 = 0x140;
-	}
-
-	namespace DT_BRC4Target {
-		int bBrokenOpen = 0x2984;
-		int flRadius = 0x2988;
-	}
-
-	namespace DT_InfoMapRegion {
-		int flRadius = 0x9d8;
-		int szLocToken = 0x9dc;
-	}
-
-	namespace DT_Inferno {
-		int nFireEffectTickBegin = 0x13b4;
-		int fireCount = 0x13a8;
-		int fireXDelta = 0x9e4;
-		int fireYDelta = 0xb74;
-		int fireZDelta = 0xd04;
-		int bFireIsBurning = 0xe94;
-	}
-
-	namespace DT_CChicken {
-		int jumpedThisFrame = 0x29e8;
-		int leader = 0x29ec;
-	}
-
-	namespace DT_Drone {
-		int hMoveToThisEntity = 0x29d8;
-		int hDeliveryCargo = 0x29dc;
-		int bPilotTakeoverAllowed = 0x29e0;
-		int hPotentialCargo = 0x29e4;
-		int hCurrentPilot = 0x29e8;
-		int vecTagPositions0 = 0x29ec;
-		int vecTagPositions = 0x0;
-		int vecTagIncrements0 = 0x2b0c;
-		int vecTagIncrements = 0x0;
-	}
-
-	namespace DT_FootstepControl {
-		int source = 0xa10;
-		int destination = 0xa20;
-	}
-
-	namespace DT_TEPlantBomb {
-		int vecOrigin = 0x14;
-		int iPlayer = 0x10;
-		int option = 0x20;
-	}
-
-	namespace DT_TEFireBullets {
-		int vecOrigin = 0x18;
-		int vecAngles0 = 0x24;
-		int vecAngles1 = 0x28;
-		int iWeaponID = 0x34;
-		int weapon = 0x30;
-		int iMode = 0x38;
-		int iSeed = 0x3c;
-		int iPlayer = 0x10;
-		int fInaccuracy = 0x40;
-		int fSpread = 0x48;
-		int nItemDefIndex = 0x14;
-		int iSoundType = 0x4c;
-		int flRecoilIndex = 0x44;
-	}
-
-	namespace DT_TERadioIcon {
-		int iAttachToClient = 0x10;
-	}
-
-	namespace DT_PlantedC4 {
-		int bBombTicking = 0x2980;
-		int nBombSite = 0x2984;
-		int flC4Blow = 0x2990;
-		int flTimerLength = 0x2994;
-		int flDefuseLength = 0x29a8;
-		int flDefuseCountDown = 0x29ac;
-		int bBombDefused = 0x29b0;
-		int hBombDefuser = 0x29b4;
-	}
-
-	namespace DT_CSPlayerResource {
-		int iPlayerC4 = 0x165c;
-		int iPlayerVIP = 0x1660;
-		int bombsiteCenterA = 0x1664;
-		int bombsiteCenterB = 0x1670;
-		int bEndMatchNextMapAllVoted = 0x6b8c;
-		int bHostageAlive = 0x167c;
-		int isHostageFollowingSomeone = 0x1688;
-		int iHostageEntityIDs = 0x1694;
-		int hostageRescueX = 0x16c4;
-		int hostageRescueY = 0x16d4;
-		int hostageRescueZ = 0x16e4;
-		int iMVPs = 0x16f4;
-		int iArmor = 0x187c;
-		int bHasHelmet = 0x1839;
-		int bHasDefuser = 0x17f8;
-		int iScore = 0x1980;
-		int iCompetitiveRanking = 0x1a84;
-		int iCompetitiveWins = 0x1b88;
-		int iCompetitiveRankType = 0x1c8c;
-		int iCompTeammateColor = 0x1cd0;
-		int iLifetimeStart = 0x1dd4;
-		int iLifetimeEnd = 0x1ed8;
-		int bControllingBot = 0x1fdc;
-		int iControlledPlayer = 0x2020;
-		int iControlledByPlayer = 0x2124;
-		int iBotDifficulty = 0x42a8;
-		int szClan = 0x43ac;
-		int nCharacterDefIndex = 0x47bc;
-		int iTotalCashSpent = 0x48c0;
-		int iGunGameLevel = 0x49c4;
-		int iCashSpentThisRound = 0x4ac8;
-		int nEndMatchNextMapVotes = 0x6a88;
-		int nActiveCoinRank = 0x4bcc;
-		int nMusicID = 0x4cd0;
-		int nPersonaDataPublicLevel = 0x4dd4;
-		int nPersonaDataPublicCommendsLeader = 0x4ed8;
-		int nPersonaDataPublicCommendsTeacher = 0x4fdc;
-		int nPersonaDataPublicCommendsFriendly = 0x50e0;
-		int bHasCommunicationAbuseMute = 0x51e4;
-		int szCrosshairCodes = 0x5225;
-		int iMatchStats_Kills_Total = 0x5b08;
-		int iMatchStats_5k_Total = 0x601c;
-		int iMatchStats_4k_Total = 0x5f18;
-		int iMatchStats_3k_Total = 0x5e14;
-		int iMatchStats_Damage_Total = 0x6120;
-		int iMatchStats_EquipmentValue_Total = 0x6224;
-		int iMatchStats_KillReward_Total = 0x6328;
-		int iMatchStats_LiveTime_Total = 0x642c;
-		int iMatchStats_Deaths_Total = 0x5d10;
-		int iMatchStats_Assists_Total = 0x5c0c;
-		int iMatchStats_HeadShotKills_Total = 0x6530;
-		int iMatchStats_Objective_Total = 0x6634;
-		int iMatchStats_CashEarned_Total = 0x6738;
-		int iMatchStats_UtilityDamage_Total = 0x683c;
-		int iMatchStats_EnemiesFlashed_Total = 0x6940;
-	}
-
-	namespace DT_CSPlayer {
-		int angEyeAngles0 = 0xb37c;
-		int angEyeAngles1 = 0xb380;
-		int iAddonBits = 0xa374;
-		int iPrimaryAddon = 0xa378;
-		int iSecondaryAddon = 0xa37c;
-		int iThrowGrenadeCounter = 0x396c;
-		int bWaitForNoAttack = 0x3970;
-		int bIsRespawningForDMBonus = 0x3971;
-		int iPlayerState = 0x392c;
-		int iAccount = 0xb364;
-		int iStartAccount = 0xa3a4;
-		int totalHitsOnServer = 0xa3a8;
-		int bInBombZone = 0x3968;
-		int bInBuyZone = 0x3969;
-		int bInNoDefuseArea = 0x396a;
-		int bKilledByTaser = 0x3981;
-		int iMoveState = 0x3984;
-		int iClass = 0xb374;
-		int ArmorValue = 0xb378;
-		int angEyeAngles = 0xb37c;
-		int bHasDefuser = 0xb388;
-		int bNightVisionOn = 0xa399;
-		int bHasNightVision = 0xa39a;
-		int bInHostageRescueZone = 0xb389;
-		int bIsDefusing = 0x3930;
-		int bIsGrabbingHostage = 0x3931;
-		int iBlockingUseActionInProgress = 0x3934;
-		int bIsScoped = 0x3928;
-		int bIsWalking = 0x3929;
-		int nIsAutoMounting = 0x3a98;
-		int bResumeZoom = 0x392a;
-		int fImmuneToGunGameDamageTime = 0x393c;
-		int bGunGameImmunity = 0x3944;
-		int bHasMovedSinceSpawn = 0x3945;
-		int bMadeFinalGunGameProgressiveKill = 0x3946;
-		int iGunGameProgressiveWeaponIndex = 0x3948;
-		int iNumGunGameTRKillPoints = 0x394c;
-		int iNumGunGameKillsWithCurrentWeapon = 0x3950;
-		int iNumRoundKills = 0x3954;
-		int fMolotovUseTime = 0x3960;
-		int fMolotovDamageTime = 0x3964;
-		int szArmsModel = 0x398b;
-		int hCarriedHostage = 0xa3f8;
-		int hCarriedHostageProp = 0xa3fc;
-		int bIsRescuing = 0x3938;
-		int flGroundAccelLinearFracLastTime = 0xa3a0;
-		int bCanMoveDuringFreezePeriod = 0x3988;
-		int isCurrentGunGameLeader = 0x3989;
-		int isCurrentGunGameTeamLeader = 0x398a;
-		int flGuardianTooFarDistFrac = 0x3974;
-		int flDetectedByEnemySensorTime = 0x3978;
-		int bIsPlayerGhost = 0x3a95;
-		int bHasParachute = 0xb350;
-		int unMusicID = 0xb354;
-		int bHasHelmet = 0xb36c;
-		int bHasHeavyArmor = 0xb36d;
-		int nHeavyAssaultSuitCooldownRemaining = 0xb370;
-		int flFlashDuration = 0xa420;
-		int flFlashMaxAlpha = 0xa41c;
-		int iProgressBarDuration = 0xa380;
-		int flProgressBarStartTime = 0xa384;
-		int hRagdoll = 0xa3ec;
-		int hPlayerPing = 0xa3f0;
-		int cycleLatch = 0xb48c;
-		int unCurrentEquipmentValue = 0xb330;
-		int unRoundStartEquipmentValue = 0xb332;
-		int unFreezetimeEndEquipmentValue = 0xb334;
-		int bIsControllingBot = 0xb9f9;
-		int bHasControlledBotThisRound = 0xba08;
-		int bCanControlObservedBot = 0xb9fa;
-		int iControlledBotEntIndex = 0xb9fc;
-		int vecAutomoveTargetEnd = 0x3aa8;
-		int flAutoMoveStartTime = 0x3ab8;
-		int flAutoMoveTargetTime = 0x3abc;
-		int bIsAssassinationTarget = 0xb9f8;
-		int bHud_MiniScoreHidden = 0xb3aa;
-		int bHud_RadarHidden = 0xb3ab;
-		int nLastKillerIndex = 0xb3ac;
-		int nLastConcurrentKilled = 0xb3b0;
-		int nDeathCamMusic = 0xb3b4;
-		int bIsHoldingLookAtWeapon = 0xb921;
-		int bIsLookingAtWeapon = 0xb920;
-		int iNumRoundKillsHeadshots = 0x3958;
-		int unTotalRoundDamageDealt = 0x395c;
-		int flLowerBodyYawTarget = 0x3a90;
-		int bStrafing = 0x3a94;
-		int flThirdpersonRecoil = 0xb998;
-		int bHideTargetID = 0xb99c;
-		int bIsSpawnRappelling = 0xa3ad;
-		int vecSpawnRappellingRopeOrigin = 0xa3b0;
-		int nSurvivalTeam = 0xa3c0;
-		int hSurvivalAssassinationTarget = 0xa3c4;
-		int flHealthShotBoostExpirationTime = 0xa3c8;
-		int flLastExoJumpTime = 0x3ac0;
-	}
-
-	namespace DT_CSLocalPlayerExclusive {
-		int vecOrigin = 0x138;
-		int vecOrigin2 = 0x140;
-		int flStamina = 0xa388;
-		int iDirection = 0xa38c;
-		int iShotsFired = 0xa390;
-		int nNumFastDucks = 0xa394;
-		int bDuckOverride = 0xa398;
-		int flVelocityModifier = 0xa39c;
-		int unActiveQuestId = 0xb328;
-		int nQuestProgressReason = 0xb32c;
-		int bPlayerDominated = 0xb494;
-		int bPlayerDominatingMe = 0xb4d5;
-		int iWeaponPurchasesThisRound = 0xb518;
-	}
-
-	namespace DT_CSNonLocalPlayerExclusive {
-		int vecOrigin = 0x138;
-		int vecOrigin2 = 0x140;
-	}
-
-	namespace DT_CSTeamExclusive {
-		int iWeaponPurchasesThisMatch = 0xaa7c;
-		int EquippedLoadoutItemDefIndices = 0xb254;
-		int cslocaldata = 0x0;
-		int csnonlocaldata = 0x0;
-		int csteamdata = 0x0;
-		int iMatchStats_Kills = 0xa464;
-		int iMatchStats_Damage = 0xa4dc;
-		int iMatchStats_EquipmentValue = 0xa554;
-		int iMatchStats_MoneySaved = 0xa5cc;
-		int iMatchStats_KillReward = 0xa644;
-		int iMatchStats_LiveTime = 0xa6bc;
-		int iMatchStats_Deaths = 0xa734;
-		int iMatchStats_Assists = 0xa7ac;
-		int iMatchStats_HeadShotKills = 0xa824;
-		int iMatchStats_Objective = 0xa89c;
-		int iMatchStats_CashEarned = 0xa914;
-		int iMatchStats_UtilityDamage = 0xa98c;
-		int iMatchStats_EnemiesFlashed = 0xaa04;
-		int rank = 0xb338;
-		int passiveItems = 0xb350;
-		int vecPlayerPatchEconIndices = 0xb970;
-	}
-
-	namespace DT_PlayerPing {
-		int hPlayer = 0x9e4;
-		int hPingedEntity = 0x9e8;
-		int iType = 0x9ec;
-	}
-
-	namespace DT_CSRagdoll {
-		int vecOrigin = 0x138;
-		int vecRagdollOrigin = 0x2a0c;
-		int hPlayer = 0x29f0;
-		int nModelIndex = 0x258;
-		int nForceBone = 0x268c;
-		int vecForce = 0x2680;
-		int vecRagdollVelocity = 0x2a00;
-		int iDeathPose = 0x2a18;
-		int iDeathFrame = 0x2a1c;
-		int iTeamNum = 0xf4;
-		int bClientSideAnimation = 0x289c;
-		int flDeathYaw = 0x2a20;
-		int flAbsYaw = 0x2a24;
-	}
-
-	namespace DT_TEPlayerAnimEvent {
-		int hPlayer = 0x10;
-		int iEvent = 0x14;
-		int nData = 0x18;
-	}
-
-	namespace DT_CHostage {
-		int isRescued = 0x2f30;
-		int jumpedThisFrame = 0x2f31;
-		int iHealth = 0x100;
-		int iMaxHealth = 0x2f18;
-		int lifeState = 0x25f;
-		int fFlags = 0x104;
-		int nHostageState = 0x2f34;
-		int flRescueStartTime = 0x2f38;
-		int flGrabSuccessTime = 0x2f3c;
-		int flDropStartTime = 0x2f40;
-		int vel = 0x2f24;
-		int leader = 0x2f20;
-	}
-
-	namespace DT_BaseCSGrenadeProjectile {
-		int vInitialVelocity = 0x29d0;
-		int nBounces = 0x29dc;
-		int nExplodeEffectIndex = 0x29e0;
-		int nExplodeEffectTickBegin = 0x29e4;
-		int vecExplodeEffectOrigin = 0x29e8;
-	}
-
-	namespace DT_HandleTest {
-		int Handle = 0x9d8;
-		int bSendHandle = 0x9dc;
-	}
-
-	namespace DT_SpriteTrail {
-		int flLifeTime = 0x1074;
-		int flStartWidth = 0x1078;
-		int flEndWidth = 0x107c;
-		int flStartWidthVariance = 0x1080;
-		int flTextureRes = 0x1084;
-		int flMinFadeLength = 0x1088;
-		int vecSkyboxOrigin = 0x108c;
-		int flSkyboxScale = 0x1098;
-	}
-
-	namespace DT_Sprite {
-		int hAttachedToEntity = 0x9e8;
-		int nAttachment = 0x9ec;
-		int flScaleTime = 0xa08;
-		int flSpriteScale = 0xa04;
-		int flSpriteFramerate = 0x9f0;
-		int flGlowProxySize = 0xa10;
-		int flHDRColorScale = 0xa14;
-		int flFrame = 0x9f4;
-		int flBrightnessTime = 0xa00;
-		int nBrightness = 0x9fc;
-		int bWorldSpaceScale = 0xa0c;
-	}
-
-	namespace DT_Ragdoll_Attached {
-		int boneIndexAttached = 0x2cb8;
-		int ragdollAttachedObjectIndex = 0x2cb4;
-		int attachmentPointBoneSpace = 0x2c90;
-		int attachmentPointRagdollSpace = 0x2ca8;
-	}
-
-	namespace DT_Ragdoll {
-		int ragAngles0 = 0x2aa0;
-		int ragAngles = 0x0;
-		int ragPos0 = 0x2980;
-		int ragPos = 0x0;
-		int hUnragdoll = 0x2c7c;
-		int flBlendWeight = 0x2c80;
-		int nOverlaySequence = 0x2c88;
-	}
-
-	namespace DT_PropCounter {
-		int flDisplayValue = 0x2980;
-	}
-
-	namespace DT_PoseController {
-		int bPoseValueParity = 0x9ec;
-		int fPoseValue = 0x9f0;
-		int fInterpolationTime = 0x9f4;
-		int bInterpolationWrap = 0x9f8;
-		int fCycleFrequency = 0x9fc;
-		int nFModType = 0xa00;
-		int fFModTimeOffset = 0xa04;
-		int fFModRate = 0xa08;
-		int fFModAmplitude = 0xa0c;
-		int hProps = 0x9d8;
-		int chPoseIndex = 0x9e8;
-	}
-
-	namespace DT_GrassBurn {
-		int flGrassBurnClearTime = 0x9d8;
-	}
-
-	namespace DT_FuncLadder {
-		int vecPlayerMountPositionTop = 0x9f8;
-		int vecPlayerMountPositionBottom = 0xa04;
-		int vecLadderDir = 0x9d8;
-		int bFakeLadder = 0xa11;
-	}
-
-	namespace DT_TEFoundryHelpers {
-		int iEntity = 0x10;
-	}
-
-	namespace DT_DetailController {
-		int flFadeStartDist = 0x9d8;
-		int flFadeEndDist = 0x9dc;
-	}
-
-	namespace DT_DangerZone {
-		int vecDangerZoneOriginStartedAt = 0x9d8;
-		int flBombLaunchTime = 0x9e4;
-		int flExtraRadius = 0x9e8;
-		int flExtraRadiusStartTime = 0x9ec;
-		int flExtraRadiusTotalLerpTime = 0x9f0;
-		int nDropOrder = 0x9f4;
-		int iWave = 0x9f8;
-	}
-
-	namespace DT_DangerZoneController {
-		int bDangerZoneControllerEnabled = 0x9d8;
-		int bMissionControlledExplosions = 0x9d9;
-		int flStartTime = 0x9f4;
-		int flFinalExpansionTime = 0x9f8;
-		int vecEndGameCircleStart = 0x9dc;
-		int vecEndGameCircleEnd = 0x9e8;
-		int hTheFinalZone = 0xab8;
-		int DangerZones = 0x9fc;
-		int flWaveEndTimes = 0xaa4;
-	}
-
-	namespace DT_WorldVguiText {
-		int bEnabled = 0x9d8;
-		int szDisplayText = 0x9d9;
-		int szDisplayTextOption = 0xbd9;
-		int szFont = 0xcd9;
-		int iTextPanelWidth = 0xd20;
-		int clrText = 0xd19;
-	}
-
-	namespace DT_World {
-		int flWaveHeight = 0x9d8;
-		int WorldMins = 0x9dc;
-		int WorldMaxs = 0x9e8;
-		int bStartDark = 0x9f4;
-		int flMaxOccludeeArea = 0x9f8;
-		int flMinOccluderArea = 0x9fc;
-		int flMaxPropScreenSpaceWidth = 0xa04;
-		int flMinPropScreenSpaceWidth = 0xa00;
-		int iszDetailSpriteMaterial = 0xa10;
-		int bColdWorld = 0xa08;
-		int iTimeOfDay = 0xa0c;
-	}
-
-	namespace DT_WaterLODControl {
-		int flCheapWaterStartDistance = 0x9d8;
-		int flCheapWaterEndDistance = 0x9dc;
-	}
-
-	namespace DT_VoteController {
-		int iActiveIssueIndex = 0x9e4;
-		int iOnlyTeamToVote = 0x9e8;
-		int nPotentialVotes = 0xa04;
-		int bIsYesNoVote = 0xa0a;
-		int nVoteOptionCount = 0x9ec;
-	}
-
-	namespace DT_VGuiScreen {
-		int flWidth = 0x9e0;
-		int flHeight = 0x9e4;
-		int fScreenFlags = 0xa0c;
-		int nPanelName = 0x9e8;
-		int nAttachmentIndex = 0xa04;
-		int nOverlayMaterial = 0xa08;
-		int hPlayerOwner = 0xa68;
-	}
-
-	namespace DT_PropJeep {
-		int bHeadlightIsOn = 0x2acc;
-	}
-
-	namespace DT_PropVehicleChoreoGeneric {
-		int hPlayer = 0x29f4;
-		int bEnterAnimOn = 0x29fc;
-		int bExitAnimOn = 0x29fd;
-		int bForceEyesToAttachment = 0x2a0c;
-		int vecEyeExitEndpoint = 0x2a00;
-		int vehicleViewbClampEyeAngles = 0x2a90;
-		int vehicleViewflPitchCurveZero = 0x2a94;
-		int vehicleViewflPitchCurveLinear = 0x2a98;
-		int vehicleViewflRollCurveZero = 0x2a9c;
-		int vehicleViewflRollCurveLinear = 0x2aa0;
-		int vehicleViewflFOV = 0x2aa4;
-		int vehicleViewflYawMin = 0x2aa8;
-		int vehicleViewflYawMax = 0x2aac;
-		int vehicleViewflPitchMin = 0x2ab0;
-		int vehicleViewflPitchMax = 0x2ab4;
-	}
-
-	namespace DT_TriggerSoundOperator {
-		int nSoundOperator = 0xa10;
-	}
-
-	namespace DT_BaseTrigger {
-		int bClientSidePredicted = 0xa08;
-		int spawnflags = 0x2c8;
-	}
-
-	namespace DT_Tesla {
-		int SoundName = 0xa00;
-		int iszSpriteName = 0xa40;
-	}
-
-	namespace DT_BaseTeamObjectiveResource {
-		int iTimerToShowInHUD = 0x9d8;
-		int iStopWatchTimer = 0x9dc;
-		int iNumControlPoints = 0x9e0;
-		int bPlayingMiniRounds = 0x9e8;
-		int bControlPointsReset = 0x9e9;
-		int iUpdateCapHudParity = 0x9ec;
-		int vCPPositions0 = 0x9f4;
-		int vCPPositions = 0x0;
-		int iszWarnSound0 = 0x1304;
-		int iszWarnSound = 0x0;
-		int pszCapLayoutInHUD = 0x1cec;
-		int bCPIsVisible = 0xa54;
-		int flLazyCapPerc = 0xa5c;
-		int iTeamIcons = 0xa9c;
-		int iTeamOverlays = 0xb9c;
-		int iTeamReqCappers = 0xc9c;
-		int flTeamCapTime = 0xd9c;
-		int iPreviousPoints = 0xe9c;
-		int bTeamCanCap = 0x119c;
-		int iTeamBaseIcons = 0x11dc;
-		int iBaseControlPoints = 0x125c;
-		int bInMiniRound = 0x12dc;
-		int iWarnOnCap = 0x12e4;
-		int flPathDistance = 0x1afc;
-		int iNumTeamMembers = 0x1b1c;
-		int iCappingTeam = 0x1c1c;
-		int iTeamInZone = 0x1c3c;
-		int bBlocked = 0x1c5c;
-		int iOwner = 0x1c64;
-	}
-
-	namespace DT_Team {
-		int iTeamNum = 0xb68;
-		int bSurrendered = 0xb6c;
-		int scoreTotal = 0xb40;
-		int scoreFirstHalf = 0xb44;
-		int scoreSecondHalf = 0xb48;
-		int scoreOvertime = 0xb4c;
-		int iClanID = 0xb58;
-		int szTeamname = 0x9ec;
-		int szClanTeamname = 0xa0c;
-		int szTeamFlagImage = 0xa2c;
-		int szTeamLogoImage = 0xa34;
-		int szTeamMatchStat = 0xa3c;
-		int nGGLeaderEntIndex_CT = 0xb50;
-		int nGGLeaderEntIndex_T = 0xb54;
-		int numMapVictories = 0xb70;
-		int player_array_element = 0x0;
-		int "player_array" = 0x0;
-	}
-
-	namespace DT_SunlightShadowControl {
-		int shadowDirection = 0x9d8;
-		int bEnabled = 0x9e4;
-		int TextureName = 0x9e5;
-		int LightColor = 0xaf0;
-		int flColorTransitionTime = 0xb04;
-		int flSunDistance = 0xb08;
-		int flFOV = 0xb0c;
-		int flNearZ = 0xb10;
-		int flNorthOffset = 0xb14;
-		int bEnableShadows = 0xb18;
-	}
-
-	namespace DT_Sun {
-		int clrRender = 0x70;
-		int clrOverlay = 0xb38;
-		int vDirection = 0xb44;
-		int bOn = 0xb50;
-		int nSize = 0xb3c;
-		int nOverlaySize = 0xb40;
-		int nMaterial = 0xb54;
-		int nOverlayMaterial = 0xb58;
-		int HDRColorScale = 0x0;
-		int glowDistanceScale = 0x0;
-	}
-
-	namespace DT_ParticlePerformanceMonitor {
-		int bMeasurePerf = 0x9d9;
-		int bDisplayPerf = 0x9d8;
-	}
-
-	namespace DT_SpotlightEnd {
-		int flLightScale = 0x9d8;
-		int Radius = 0x9dc;
-	}
-
-	namespace DT_SpatialEntity {
-		int vecOrigin = 0x9d8;
-		int minFalloff = 0x9e4;
-		int maxFalloff = 0x9e8;
-		int flCurWeight = 0x9ec;
-		int bEnabled = 0xaf4;
-	}
-
-	namespace DT_SlideshowDisplay {
-		int bEnabled = 0x9d8;
-		int szDisplayText = 0x9d9;
-		int szSlideshowDirectory = 0xa59;
-		int fMinSlideTime = 0xb08;
-		int fMaxSlideTime = 0xb0c;
-		int iCycleType = 0xb14;
-		int bNoListRepeats = 0xb18;
-		int chCurrentSlideLists = 0xaf0;
-	}
-
-	namespace DT_ShadowControl {
-		int shadowDirection = 0x9d8;
-		int shadowColor = 0x9e4;
-		int flShadowMaxDist = 0x9e8;
-		int bDisableShadows = 0x9ec;
-		int bEnableLocalLightShadows = 0x9ed;
-	}
-
-	namespace DT_SceneEntity {
-		int nSceneStringIndex = 0x9e8;
-		int bIsPlayingBack = 0x9dc;
-		int bPaused = 0x9dd;
-		int bMultiplayer = 0x9de;
-		int flForceClientTime = 0x9e4;
-	}
-
-	namespace _ST_m_hActorList_16 {
-	}
-
-	namespace _LPT_m_hActorList_16 {
-		int lengthprop16 = 0x0;
-		int lengthproxy = 0x0;
-		int hActorList = 0x0;
-	}
-
-	namespace DT_RopeKeyframe {
-		int nChangeCount = 0xccc;
-		int iRopeMaterialModelIndex = 0xa14;
-		int hStartPoint = 0xcac;
-		int hEndPoint = 0xcb0;
-		int iStartAttachment = 0xcb4;
-		int iEndAttachment = 0xcb6;
-		int fLockedPoints = 0xcc8;
-		int Slack = 0xcc0;
-		int RopeLength = 0xcbc;
-		int RopeFlags = 0xa10;
-		int TextureScale = 0xcc4;
-		int nSegments = 0xca8;
-		int bConstrainBetweenEndpoints = 0xd50;
-		int Subdiv = 0xcb8;
-		int Width = 0xcd0;
-		int flScrollSpeed = 0xa0c;
-		int vecOrigin = 0x138;
-		int oveparent = 0x148;
-		int iParentAttachment = 0x2ec;
-		int iDefaultRopeMaterialModelIndex = 0xa18;
-		int nMinCPULevel = 0x988;
-		int nMaxCPULevel = 0x989;
-		int nMinGPULevel = 0x98a;
-		int nMaxGPULevel = 0x98b;
-	}
-
-	namespace DT_RagdollManager {
-		int iCurrentMaxRagdollCount = 0x9d8;
-	}
-
-	namespace DT_PhysicsPropMultiplayer {
-		int iPhysicsMode = 0x29c4;
-		int fMass = 0x29c8;
-		int collisionMins = 0x29cc;
-		int collisionMaxs = 0x29d8;
-	}
-
-	namespace DT_PhysBoxMultiplayer {
-		int iPhysicsMode = 0x9e4;
-		int fMass = 0x9e8;
-	}
-
-	namespace DT_DynamicProp {
-		int bUseHitboxesForRenderBox = 0x29a4;
-		int flGlowMaxDist = 0x29c4;
-		int bShouldGlow = 0x29c8;
-		int clrGlow = 0x29c9;
-		int nGlowStyle = 0x29d0;
-	}
-
-	namespace DT_Prop_Hallucination {
-		int bEnabled = 0x2999;
-		int fVisibleTime = 0x299c;
-		int fRechargeTime = 0x29a0;
-	}
-
-	namespace DT_PostProcessController {
-		int bMaster = 0xa04;
-		int flPostProcessParameters = 0x9d8;
-	}
-
-	namespace DT_PointWorldText {
-		int szText = 0xa08;
-		int flTextSize = 0xb0c;
-		int textColor = 0xb10;
-	}
-
-	namespace DT_PointCommentaryNode {
-		int bActive = 0x2980;
-		int flStartTime = 0x2984;
-		int iszCommentaryFile = 0x2988;
-		int iszCommentaryFileNoHDR = 0x2a8c;
-		int iszSpeakers = 0x2b90;
-		int iNodeNumber = 0x2c90;
-		int iNodeNumberMax = 0x2c94;
-		int hViewPosition = 0x2c9c;
-	}
-
-	namespace DT_PointCamera {
-		int FOV = 0x9d8;
-		int Resolution = 0x9dc;
-		int bFogEnable = 0x9e0;
-		int FogColor = 0x9e1;
-		int flFogStart = 0x9e8;
-		int flFogEnd = 0x9ec;
-		int flFogMaxDensity = 0x9f0;
-		int bActive = 0x9f4;
-		int bUseScreenAspectRatio = 0x9f5;
-	}
-
-	namespace DT_Plasma {
-		int flStartScale = 0x9d8;
-		int flScale = 0x9dc;
-		int flScaleTime = 0x9e0;
-		int nFlags = 0x9e4;
-		int nPlasmaModelIndex = 0x9e8;
-		int nPlasmaModelIndex2 = 0x9ec;
-		int nGlowModelIndex = 0x9f0;
-	}
-
-	namespace DT_PhysicsProp {
-		int bAwake = 0x29a0;
-		int spawnflags = 0x2c8;
-	}
-
-	namespace DT_StatueProp {
-		int hInitBaseAnimating = 0x29c0;
-		int bShatter = 0x29c4;
-		int nShatterFlags = 0x29c8;
-		int vShatterPosition = 0x29cc;
-		int vShatterForce = 0x29d8;
-	}
-
-	namespace DT_PhysBox {
-		int mass = 0x9d8;
-	}
-
-	namespace DT_ParticleSystem {
-		int vecOrigin = 0x138;
-		int fEffects = 0xf0;
-		int hOwnerEntity = 0x14c;
-		int oveparent = 0x148;
-		int iParentAttachment = 0x2ec;
-		int angRotation = 0x12c;
-		int iEffectIndex = 0x9d8;
-		int bActive = 0x9e0;
-		int nStopType = 0x9dc;
-		int flStartTime = 0x9e4;
-		int szSnapshotFileName = 0x9e8;
-		int vServerControlPoints = 0xaec;
-		int iServerControlPointAssignments = 0xb1c;
-		int hControlPointEnts = 0xb30;
-		int iControlPointParents = 0xc2c;
-	}
-
-	namespace DT_MovieDisplay {
-		int bEnabled = 0x9d8;
-		int bLooping = 0x9d9;
-		int szMovieFilename = 0x9da;
-		int szGroupName = 0xa5a;
-		int bStretchToFill = 0xada;
-		int bForcedSlave = 0xadb;
-		int bUseCustomUVs = 0xadc;
-		int flUMin = 0xae0;
-		int flUMax = 0xae4;
-		int flVMin = 0xae8;
-		int flVMax = 0xaec;
-	}
-
-	namespace DT_MaterialModifyControl {
-		int szMaterialName = 0x9d8;
-		int szMaterialVar = 0xad7;
-		int szMaterialVarValue = 0xbd6;
-		int iFrameStart = 0xce0;
-		int iFrameEnd = 0xce4;
-		int bWrap = 0xce8;
-		int flFramerate = 0xcec;
-		int bNewAnimCommandsSemaphore = 0xcf0;
-		int flFloatLerpStartValue = 0xcf4;
-		int flFloatLerpEndValue = 0xcf8;
-		int flFloatLerpTransitionTime = 0xcfc;
-		int bFloatLerpWrap = 0xd00;
-		int nModifyMode = 0xd08;
-	}
-
-	namespace DT_LightGlow {
-		int clrRender = 0x70;
-		int nHorizontalSize = 0x9d8;
-		int nVerticalSize = 0x9dc;
-		int nMinDist = 0x9e0;
-		int nMaxDist = 0x9e4;
-		int nOuterMaxDist = 0x9e8;
-		int spawnflags = 0x9ec;
-		int vecOrigin = 0x138;
-		int angRotation = 0x12c;
-		int oveparent = 0x148;
-		int flGlowProxySize = 0xac4;
-		int HDRColorScale = 0x0;
-	}
-
-	namespace DT_ItemAssaultSuitUseable {
-		int nArmorValue = 0x3440;
-		int bIsHeavyAssaultSuit = 0x3444;
-	}
-
-	namespace DT_Item {
-		int bShouldGlow = 0x3230;
-	}
-
-	namespace DT_InfoOverlayAccessor {
-		int iTextureFrameIndex = 0x98c;
-		int iOverlayID = 0x9d8;
-	}
-
-	namespace DT_FuncSmokeVolume {
-		int Color1 = 0xac4;
-		int Color2 = 0xac8;
-		int MaterialName = 0xacc;
-		int ParticleDrawWidth = 0xbcc;
-		int ParticleSpacingDistance = 0xbd0;
-		int DensityRampSpeed = 0xbd4;
-		int RotationSpeed = 0xbd8;
-		int MovementSpeed = 0xbdc;
-		int Density = 0xbe0;
-		int maxDrawDistance = 0xbe4;
-		int spawnflags = 0xbe8;
-	}
-
-	namespace DT_CollisionProperty {
-		int vecMins = 0x8;
-		int vecMaxs = 0x14;
-		int nSolidType = 0x22;
-		int usSolidFlags = 0x20;
-		int nSurroundType = 0x2a;
-		int triggerBloat = 0x23;
-		int vecSpecifiedSurroundingMins = 0x2c;
-		int vecSpecifiedSurroundingMaxs = 0x38;
-		int Collision = 0x320;
-	}
-
-	namespace DT_FuncRotating {
-		int vecOrigin = 0x138;
-		int angRotation0 = 0x12c;
-		int angRotation1 = 0x130;
-		int angRotation2 = 0x134;
-		int flSimulationTime = 0x268;
-	}
-
-	namespace DT_FuncOccluder {
-		int bActive = 0x9dc;
-		int nOccluderIndex = 0x9d8;
-	}
-
-	namespace DT_FuncMoveLinear {
-		int vecVelocity = 0x114;
-		int fFlags = 0x104;
-	}
-
-	namespace DT_Func_LOD {
-		int nDisappearMinDist = 0x9d8;
-		int nDisappearMaxDist = 0x9dc;
-	}
-
-	namespace DT_TEDust {
-		int flSize = 0x1c;
-		int flSpeed = 0x20;
-		int vecDirection = 0x24;
-	}
-
-	namespace DT_Func_Dust {
-		int Color = 0x9d8;
-		int SpawnRate = 0x9dc;
-		int flSizeMin = 0x9e0;
-		int flSizeMax = 0x9e4;
-		int LifetimeMin = 0x9ec;
-		int LifetimeMax = 0x9f0;
-		int DustFlags = 0xa00;
-		int SpeedMax = 0x9e8;
-		int DistMax = 0x9f4;
-		int nModelIndex = 0x258;
-		int FallSpeed = 0x9f8;
-		int bAffectedByWind = 0x9fc;
-	}
-
-	namespace DT_CollisionProperty {
-		int vecMins = 0x8;
-		int vecMaxs = 0x14;
-		int nSolidType = 0x22;
-		int usSolidFlags = 0x20;
-		int nSurroundType = 0x2a;
-		int triggerBloat = 0x23;
-		int vecSpecifiedSurroundingMins = 0x2c;
-		int vecSpecifiedSurroundingMaxs = 0x38;
-		int Collision = 0x320;
-	}
-
-	namespace DT_FuncConveyor {
-		int flConveyorSpeed = 0x9d8;
-	}
-
-	namespace DT_BreakableSurface {
-		int nNumWide = 0x9dc;
-		int nNumHigh = 0x9e0;
-		int flPanelWidth = 0x9e4;
-		int flPanelHeight = 0x9e8;
-		int vNormal = 0x9ec;
-		int vCorner = 0x9f8;
-		int bIsBroken = 0xa04;
-		int nSurfaceType = 0xa08;
-		int RawPanelBitVec = 0xa2c;
-	}
-
-	namespace DT_FuncAreaPortalWindow {
-		int flFadeStartDist = 0x9d8;
-		int flFadeDist = 0x9dc;
-		int flTranslucencyLimit = 0x9e0;
-		int iBackgroundModelIndex = 0x9e4;
-	}
-
-	namespace DT_CFish {
-		int poolOrigin = 0x29e0;
-		int x = 0x29c8;
-		int y = 0x29cc;
-		int z = 0x29d0;
-		int angle = 0x29d8;
-		int nModelIndex = 0x258;
-		int lifeState = 0x25f;
-		int waterLevel = 0x29ec;
-	}
-
-	namespace DT_FireSmoke {
-		int flStartScale = 0x9d8;
-		int flScale = 0x9dc;
-		int flScaleTime = 0x9e0;
-		int nFlags = 0x9e4;
-		int nFlameModelIndex = 0x9e8;
-		int nFlameFromAboveModelIndex = 0x9ec;
-	}
-
-	namespace DT_EnvTonemapController {
-		int bUseCustomAutoExposureMin = 0x9d8;
-		int bUseCustomAutoExposureMax = 0x9d9;
-		int bUseCustomBloomScale = 0x9da;
-		int flCustomAutoExposureMin = 0x9dc;
-		int flCustomAutoExposureMax = 0x9e0;
-		int flCustomBloomScale = 0x9e4;
-		int flCustomBloomScaleMinimum = 0x9e8;
-		int flBloomExponent = 0x9ec;
-		int flBloomSaturation = 0x9f0;
-		int flTonemapPercentTarget = 0x9f4;
-		int flTonemapPercentBrightPixels = 0x9f8;
-		int flTonemapMinAvgLum = 0x9fc;
-		int flTonemapRate = 0xa00;
-	}
-
-	namespace DT_EnvScreenEffect {
-		int flDuration = 0x9d8;
-		int nType = 0x9dc;
-	}
-
-	namespace DT_EnvScreenOverlay {
-		int iszOverlayNames0 = 0x9d8;
-		int iszOverlayNames = 0x0;
-		int flOverlayTimes0 = 0x13d0;
-		int flOverlayTimes = 0x0;
-		int flStartTime = 0x13f8;
-		int iDesiredOverlay = 0x13fc;
-		int bIsActive = 0x1400;
-	}
-
-	namespace DT_EnvProjectedTexture {
-		int hTargetEntity = 0x9dc;
-		int bState = 0x9e0;
-		int bAlwaysUpdate = 0x9e1;
-		int flLightFOV = 0x9e4;
-		int bEnableShadows = 0x9e8;
-		int bSimpleProjection = 0x9e9;
-		int bLightOnlyTarget = 0x9ea;
-		int bLightWorld = 0x9eb;
-		int bCameraSpace = 0x9ec;
-		int flBrightnessScale = 0x9f0;
-		int LightColor = 0x9f4;
-		int flColorTransitionTime = 0xa08;
-		int flAmbient = 0xa0c;
-		int SpotlightTextureName = 0xa18;
-		int nSpotlightTextureFrame = 0xb24;
-		int flNearZ = 0xa10;
-		int flFarZ = 0xa14;
-		int nShadowQuality = 0xb28;
-		int flProjectionSize = 0xb38;
-		int flRotation = 0xb3c;
-		int iStyle = 0xb2c;
-	}
-
-	namespace DT_EnvParticleScript {
-		int flSequenceScale = 0x2a64;
-	}
-
-	namespace DT_FogController {
-		int fogenable = 0xa1c;
-		int fogblend = 0xa1d;
-		int fogdirPrimary = 0x9dc;
-		int fogcolorPrimary = 0x9e8;
-		int fogcolorSecondary = 0x9ec;
-		int fogstart = 0x9f8;
-		int fogend = 0x9fc;
-		int fogfarz = 0xa00;
-		int fogmaxdensity = 0xa04;
-		int fogcolorPrimaryLerpTo = 0x9f0;
-		int fogcolorSecondaryLerpTo = 0x9f4;
-		int fogstartLerpTo = 0xa08;
-		int fogendLerpTo = 0xa0c;
-		int fogmaxdensityLerpTo = 0xa10;
-		int foglerptime = 0xa14;
-		int fogduration = 0xa18;
-		int fogHDRColorScale = 0xa24;
-		int fogZoomFogScale = 0xa20;
-	}
-
-	namespace DT_EnvDOFController {
-		int bDOFEnabled = 0x9d8;
-		int flNearBlurDepth = 0x9dc;
-		int flNearFocusDepth = 0x9e0;
-		int flFarFocusDepth = 0x9e4;
-		int flFarBlurDepth = 0x9e8;
-		int flNearBlurRadius = 0x9ec;
-		int flFarBlurRadius = 0x9f0;
-	}
-
-	namespace DT_CascadeLight {
-		int shadowDirection = 0x9d8;
-		int envLightShadowDirection = 0x9e4;
-		int bEnabled = 0x9f0;
-		int bUseLightEnvAngles = 0x9f1;
-		int LightColor = 0x9f2;
-		int LightColorScale = 0x9f8;
-		int flMaxShadowDist = 0x9fc;
-	}
-
-	namespace DT_EnvAmbientLight {
-		int vecColor = 0xb00;
-	}
-
-	namespace DT_EntityParticleTrail {
-		int iMaterialName = 0xac0;
-		int hConstraintEntity = 0xad8;
-	}
-
-	namespace DT_EntityParticleTrailInfo {
-		int flLifetime = 0x8;
-		int flStartSize = 0xc;
-		int flEndSize = 0x10;
-		int Info = 0xac4;
-	}
-
-	namespace DT_EntityFreezing {
-		int vFreezingOrigin = 0x9d8;
-		int flFrozen = 0xaac;
-		int bFinishFreezing = 0xab0;
-		int flFrozenPerHitbox = 0x9e4;
-	}
-
-	namespace DT_EntityFlame {
-		int hEntAttached = 0x9d8;
-		int bCheapEffect = 0x9ec;
-	}
-
-	namespace DT_EntityDissolve {
-		int flStartTime = 0x9dc;
-		int flFadeOutStart = 0x9e0;
-		int flFadeOutLength = 0x9e4;
-		int flFadeOutModelStart = 0x9e8;
-		int flFadeOutModelLength = 0x9ec;
-		int flFadeInStart = 0x9f0;
-		int flFadeInLength = 0x9f4;
-		int nDissolveType = 0x9f8;
-		int vDissolverOrigin = 0xa00;
-		int nMagnitude = 0xa0c;
-	}
-
-	namespace DT_DynamicLight {
-		int Flags = 0x9d8;
-		int LightStyle = 0x9d9;
-		int Radius = 0x9dc;
-		int Exponent = 0x9e0;
-		int InnerAngle = 0x9e4;
-		int OuterAngle = 0x9e8;
-		int SpotRadius = 0x9ec;
-	}
-
-	namespace DT_ColorCorrectionVolume {
-		int bEnabled = 0xa20;
-		int MaxWeight = 0xa24;
-		int FadeDuration = 0xa28;
-		int Weight = 0xa2c;
-		int lookupFilename = 0xa30;
-	}
-
-	namespace DT_ColorCorrection {
-		int vecOrigin = 0x9d8;
-		int minFalloff = 0x9e4;
-		int maxFalloff = 0x9e8;
-		int flCurWeight = 0x9f8;
-		int flMaxWeight = 0x9f4;
-		int flFadeInDuration = 0x9ec;
-		int flFadeOutDuration = 0x9f0;
-		int netLookupFilename = 0x9fc;
-		int bEnabled = 0xb00;
-		int bMaster = 0xb01;
-		int bClientSide = 0xb02;
-		int bExclusive = 0xb03;
-	}
-
-	namespace DT_BreakableProp {
-		int qPreferredPlayerCarryAngles = 0x2984;
-		int bClientPhysics = 0x2990;
-	}
-
-	namespace DT_BeamSpotlight {
-		int nHaloIndex = 0x9d8;
-		int bSpotlightOn = 0x9e4;
-		int bHasDynamicLight = 0x9e5;
-		int flSpotlightMaxLength = 0x9e8;
-		int flSpotlightGoalWidth = 0x9ec;
-		int flHDRColorScale = 0x9f0;
-		int nRotationAxis = 0x9dc;
-		int flRotationSpeed = 0x9e0;
-	}
-
-	namespace DT_BaseButton {
-		int usable = 0xa08;
-	}
-
-	namespace DT_BaseToggle {
-		int vecFinalDest = 0x9ec;
-		int movementType = 0x9f8;
-		int flMoveTargetTime = 0x9fc;
-	}
-
-	namespace DT_BasePlayer {
-		int iFOV = 0x31e4;
-		int iFOVStart = 0x31e8;
-		int flFOVTime = 0x3208;
-		int iDefaultFOV = 0x332c;
-		int hZoomOwner = 0x324c;
-		int afPhysicsFlags = 0x32ec;
-		int hVehicle = 0x32f0;
-		int hUseEntity = 0x3328;
-		int hGroundEntity = 0x150;
-		int iHealth = 0x100;
-		int lifeState = 0x25f;
-		int iBonusProgress = 0x3240;
-		int iBonusChallenge = 0x3244;
-		int flMaxspeed = 0x3248;
-		int fFlags = 0x104;
-		int iObserverMode = 0x3378;
-		int bActiveCameraMan = 0x337c;
-		int bCameraManXRay = 0x337d;
-		int bCameraManOverview = 0x337e;
-		int bCameraManScoreBoard = 0x337f;
-		int uCameraManGraphs = 0x3380;
-		int iDeathPostEffect = 0x3374;
-		int hObserverTarget = 0x338c;
-		int hViewModel0 = 0x32f8;
-		int hViewModel = 0x0;
-		int iCoachingTeam = 0x2f50;
-		int szLastPlaceName = 0x35b4;
-		int vecLadderNormal = 0x3230;
-		int ladderSurfaceProps = 0x3200;
-		int ubEFNoInterpParity = 0x35d8;
-		int hPostProcessCtrl = 0x37a8;
-		int hColorCorrectionCtrl = 0x37ac;
-		int PlayerFogm_hCtrl = 0x37b4;
-		int vphysicsCollisionState = 0x325c;
-		int hViewEntity = 0x333c;
-		int bShouldDrawPlayerWhileUsingViewEntity = 0x3340;
-		int flDuckAmount = 0x2fac;
-		int flDuckSpeed = 0x2fb0;
-		int nWaterLevel = 0x25e;
-	}
-
-	namespace DT_LocalPlayerExclusive {
-		int vecViewOffset0 = 0x108;
-		int vecViewOffset1 = 0x10c;
-		int vecViewOffset2 = 0x110;
-		int flFriction = 0x144;
-		int fOnTarget = 0x3324;
-		int nTickBase = 0x3430;
-		int nNextThinkTick = 0xfc;
-		int hLastWeapon = 0x32f4;
-		int vecVelocity0 = 0x114;
-		int vecVelocity1 = 0x118;
-		int vecVelocity2 = 0x11c;
-		int vecBaseVelocity = 0x120;
-		int hConstraintEntity = 0x3344;
-		int vecConstraintCenter = 0x3348;
-		int flConstraintRadius = 0x3354;
-		int flConstraintWidth = 0x3358;
-		int flConstraintSpeedFactor = 0x335c;
-		int bConstraintPastRadius = 0x3360;
-		int flDeathTime = 0x33c4;
-		int flNextDecalTime = 0x33c8;
-		int fForceTeam = 0x33cc;
-		int flLaggedMovementValue = 0x3594;
-		int hTonemapController = 0x31cc;
-	}
-
-	namespace DT_Local {
-		int iHideHUD = 0x48;
-		int flFOVRate = 0x44;
-		int bDucked = 0x88;
-		int bDucking = 0x89;
-		int flLastDuckTime = 0x8c;
-		int bInDuckJump = 0x90;
-		int nDuckTimeMsecs = 0x4c;
-		int nDuckJumpTimeMsecs = 0x50;
-		int nJumpTimeMsecs = 0x54;
-		int flFallVelocity = 0x58;
-		int viewPunchAngle = 0x64;
-		int aimPunchAngle = 0x70;
-		int aimPunchAngleVel = 0x7c;
-		int bDrawViewmodel = 0x91;
-		int bWearingSuit = 0x92;
-		int bPoisoned = 0x93;
-		int flStepSize = 0x60;
-		int bAllowAutoMovement = 0x94;
-		int skybox3dscale = 0x134;
-		int skybox3dorigin = 0x138;
-		int skybox3darea = 0x144;
-		int skybox3dfogenable = 0x18c;
-		int skybox3dfogblend = 0x18d;
-		int skybox3dfogdirPrimary = 0x14c;
-		int skybox3dfogcolorPrimary = 0x158;
-		int skybox3dfogcolorSecondary = 0x15c;
-		int skybox3dfogstart = 0x168;
-		int skybox3dfogend = 0x16c;
-		int skybox3dfogmaxdensity = 0x174;
-		int skybox3dfogHDRColorScale = 0x194;
-		int audiolocalSound0 = 0x19c;
-		int audiolocalSound1 = 0x1a8;
-		int audiolocalSound2 = 0x1b4;
-		int audiolocalSound3 = 0x1c0;
-		int audiolocalSound4 = 0x1cc;
-		int audiolocalSound5 = 0x1d8;
-		int audiolocalSound6 = 0x1e4;
-		int audiolocalSound7 = 0x1f0;
-		int audiosoundscapeIndex = 0x1fc;
-		int audiolocalBits = 0x200;
-		int audioentIndex = 0x204;
-		int chAreaBits = 0x4;
-		int chAreaPortalBits = 0x24;
-		int Local = 0x2fbc;
-	}
-
-	namespace DT_PlayerState {
-		int deadflag = 0x4;
-		int localdata = 0x0;
-		int pl = 0x31d0;
-		int iAmmo = 0x2d78;
-	}
-
-	namespace DT_BaseFlex {
-		int blinktoggle = 0x2bd4;
-		int viewtarget = 0x29f0;
-		int flexWeight = 0x2a28;
-	}
-
-	namespace DT_BaseEntity {
-		int flSimulationTime = 0x268;
-		int cellbits = 0x74;
-		int cellX = 0x7c;
-		int cellY = 0x80;
-		int cellZ = 0x84;
-		int vecOrigin = 0x138;
-		int angRotation = 0x12c;
-		int nModelIndex = 0x258;
-		int fEffects = 0xf0;
-		int nRenderMode = 0x25b;
-		int nRenderFX = 0x25a;
-		int clrRender = 0x70;
-		int iTeamNum = 0xf4;
-		int iPendingTeamNum = 0xf8;
-		int CollisionGroup = 0x474;
-		int flElasticity = 0x300;
-		int flShadowCastDistance = 0x3a0;
-		int hOwnerEntity = 0x14c;
-		int hEffectEntity = 0x998;
-		int oveparent = 0x148;
-		int iParentAttachment = 0x2ec;
-		int iName = 0x154;
-		int ovetype = 0x0;
-		int ovecollide = 0x0;
-		int iTextureFrameIndex = 0x98c;
-		int bSimulatedEveryTick = 0x93a;
-		int bAnimatedEveryTick = 0x93b;
-		int bAlternateSorting = 0x93c;
-		int bSpotted = 0x93d;
-		int bIsAutoaimTarget = 0x60;
-		int fadeMinDist = 0x2f4;
-		int fadeMaxDist = 0x2f8;
-		int flFadeScale = 0x2fc;
-		int nMinCPULevel = 0x988;
-		int nMaxCPULevel = 0x989;
-		int nMinGPULevel = 0x98a;
-		int nMaxGPULevel = 0x98b;
-		int flUseLookAtAngle = 0x2cc;
-		int flLastMadeNoiseTime = 0x20;
-		int flMaxFallVelocity = 0xdc;
-		int bEligibleForScreenHighlight = 0x9b9;
-	}
-
-	namespace DT_AnimTimeMustBeFirst {
-		int flAnimTime = 0x260;
-	}
-
-	namespace DT_CollisionProperty {
-		int vecMins = 0x8;
-		int vecMaxs = 0x14;
-		int nSolidType = 0x22;
-		int usSolidFlags = 0x20;
-		int nSurroundType = 0x2a;
-		int triggerBloat = 0x23;
-		int vecSpecifiedSurroundingMins = 0x2c;
-		int vecSpecifiedSurroundingMaxs = 0x38;
-		int AnimTimeMustBeFirst = 0x0;
-		int Collision = 0x320;
-		int bSpottedBy = 0x93e;
-		int bSpottedByMask = 0x980;
-	}
-
-	namespace DT_BaseDoor {
-		int flWaveHeight = 0xa08;
-	}
-
-	namespace DT_BaseCombatCharacter {
-		int LastHitGroup = 0x2d74;
-		int hActiveWeapon = 0x2ef8;
-		int flTimeOfLastInjury = 0x2efc;
-		int nRelativeDirectionOfLastInjury = 0x2f00;
-	}
-
-	namespace DT_BCCLocalPlayerExclusive {
-		int flNextAttack = 0x2d70;
-	}
-
-	namespace DT_BCCNonLocalPlayerExclusive {
-		int hMyWeapons = 0x2df8;
-		int bcc_localdata = 0x0;
-		int bcc_nonlocaldata = 0x0;
-		int hMyWeapons = 0x2df8;
-		int hMyWearables = 0x2f04;
-	}
-
-	namespace DT_BoneFollower {
-		int modelIndex = 0x9d8;
-		int solidIndex = 0x9dc;
-	}
-
-	namespace DT_BaseAnimating {
-		int nSequence = 0x28bc;
-		int nForceBone = 0x268c;
-		int vecForce = 0x2680;
-		int nSkin = 0xa1c;
-		int nBody = 0xa20;
-		int nHitboxSet = 0x9fc;
-		int flModelScale = 0x2748;
-		int flPlaybackRate = 0xa18;
-		int bClientSideAnimation = 0x289c;
-		int bClientSideFrameReset = 0x26c0;
-		int bClientSideRagdoll = 0x279;
-		int nNewSequenceParity = 0xa44;
-		int nResetEventsParity = 0xa48;
-		int nMuzzleFlashParity = 0xa64;
-		int hLightingOrigin = 0x2944;
-		int flFrozen = 0x26f8;
-		int ScaleType = 0x274c;
-		int bSuppressAnimSounds = 0x294a;
-		int nHighlightColorR = 0xa38;
-		int nHighlightColorG = 0xa3c;
-		int nHighlightColorB = 0xa40;
-	}
-
-	namespace DT_ServerAnimationData {
-		int flCycle = 0xa14;
-		int flPoseParameter = 0x2774;
-		int flEncodedController = 0xa54;
-		int serveranimdata = 0x0;
-	}
-
-	namespace DT_AI_BaseNPC {
-		int lifeState = 0x25f;
-		int bPerformAvoidance = 0x2f24;
-		int bIsMoving = 0x2f25;
-		int bFadeCorpse = 0x2f26;
-		int iDeathPose = 0x2f14;
-		int iDeathFrame = 0x2f18;
-		int iSpeedModRadius = 0x2f1c;
-		int iSpeedModSpeed = 0x2f20;
-		int bSpeedModActive = 0x2f27;
-		int bImportanRagdoll = 0x2f28;
-		int flTimePingEffect = 0x2f10;
-	}
-
-	namespace DT_Beam {
-		int nBeamType = 0x9f4;
-		int nBeamFlags = 0x9f8;
-		int nNumBeamEnts = 0x9e8;
-		int nHaloIndex = 0x9f0;
-		int fHaloScale = 0xa58;
-		int fWidth = 0xa4c;
-		int fEndWidth = 0xa50;
-		int fFadeLength = 0xa54;
-		int fAmplitude = 0xa5c;
-		int fStartFrame = 0xa60;
-		int fSpeed = 0xa64;
-		int flFrameRate = 0x9d8;
-		int flHDRColorScale = 0x9dc;
-		int clrRender = 0x70;
-		int nRenderFX = 0x25a;
-		int nRenderMode = 0x25b;
-		int flFrame = 0xa68;
-		int nClipStyle = 0xa6c;
-		int vecEndPos = 0xa70;
-		int nModelIndex = 0x258;
-		int vecOrigin = 0x138;
-		int oveparent = 0x148;
-		int hAttachEntity = 0x9fc;
-		int nAttachIndex = 0xa24;
-	}
-
-	namespace DT_BaseViewModel {
-		int nModelIndex = 0x258;
-		int hWeapon = 0x29c8;
-		int nSkin = 0xa1c;
-		int nBody = 0xa20;
-		int nSequence = 0x28bc;
-		int nViewModelIndex = 0x29c0;
-		int flPlaybackRate = 0xa18;
-		int fEffects = 0xf0;
-		int nAnimationParity = 0x29c4;
-		int hOwner = 0x29cc;
-		int nNewSequenceParity = 0xa44;
-		int nResetEventsParity = 0xa48;
-		int nMuzzleFlashParity = 0xa64;
-		int bShouldIgnoreOffsetAndAccuracy = 0x2990;
-	}
-
-	namespace DT_BaseGrenade {
-		int flDamage = 0x2998;
-		int DmgRadius = 0x2984;
-		int bIsLive = 0x2981;
-		int hThrower = 0x29a0;
-		int vecVelocity = 0x114;
-		int fFlags = 0x104;
-	}
-
-	namespace DT_BaseCombatWeapon {
-		int iViewModelIndex = 0x3240;
-		int iWorldModelIndex = 0x3244;
-		int iWorldDroppedModelIndex = 0x3248;
-		int iState = 0x3258;
-		int hOwner = 0x3230;
-		int iClip1 = 0x3264;
-		int iClip2 = 0x3268;
-		int iPrimaryReserveAmmoCount = 0x326c;
-		int iSecondaryReserveAmmoCount = 0x3270;
-		int hWeaponWorldModel = 0x3254;
-		int iNumEmptyAttacks = 0x3250;
-	}
-
-	namespace DT_LocalWeaponData {
-		int iPrimaryAmmoType = 0x325c;
-		int iSecondaryAmmoType = 0x3260;
-		int nViewModelIndex = 0x3234;
-		int bFlipViewModel = 0x32c4;
-		int iWeaponOrigin = 0x32c8;
-		int iWeaponModule = 0x324c;
-	}
-
-	namespace DT_LocalActiveWeaponData {
-		int flNextPrimaryAttack = 0x3238;
-		int flNextSecondaryAttack = 0x323c;
-		int nNextThinkTick = 0xfc;
-		int flTimeWeaponIdle = 0x3274;
-		int LocalWeaponData = 0x0;
-		int LocalActiveWeaponData = 0x0;
-	}
-
-	namespace DT_BaseWeaponWorldModel {
-		int nModelIndex = 0x258;
-		int nBody = 0xa20;
-		int fEffects = 0xf0;
-		int oveparent = 0x148;
-		int hCombatWeaponParent = 0x29f0;
-	}
+// https://github.com/KittenPopo/csgo-offsets/edit/master/offsets.hpp
+// Updated on 9/21/2021
+
+namespace DT_TestTraceline {
+        constexpr int m_clrRender =     0x70;   // int
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_angRotation_0_ =        0x12c;  // float
+        constexpr int m_angRotation_1_ =        0x130;  // float
+        constexpr int m_angRotation_2_ =        0x134;  // float
+}
+namespace DT_TEWorldDecal {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_nIndex =        0x1c;   // int
+}
+namespace DT_TESpriteSpray {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecDirection =  0x1c;   // vector
+        constexpr int m_nModelIndex =   0x28;   // int
+        constexpr int m_fNoise =        0x30;   // float
+        constexpr int m_nCount =        0x34;   // int
+        constexpr int m_nSpeed =        0x2c;   // int
+}
+namespace DT_TESprite {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_nModelIndex =   0x1c;   // int
+        constexpr int m_fScale =        0x20;   // float
+        constexpr int m_nBrightness =   0x24;   // int
+}
+namespace DT_TESparks {
+        constexpr int m_nMagnitude =    0x1c;   // int
+        constexpr int m_nTrailLength =  0x20;   // int
+        constexpr int m_vecDir =        0x24;   // vector
+}
+namespace DT_TESmoke {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_nModelIndex =   0x1c;   // int
+        constexpr int m_fScale =        0x20;   // float
+        constexpr int m_nFrameRate =    0x24;   // int
+}
+namespace DT_TEShowLine {
+        constexpr int m_vecEnd =        0x1c;   // vector
+}
+namespace DT_TEProjectedDecal {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_angRotation =   0x1c;   // vector
+        constexpr int m_flDistance =    0x28;   // float
+        constexpr int m_nIndex =        0x2c;   // int
+}
+namespace DT_FEPlayerDecal {
+        constexpr int m_nUniqueID =     0x9d8;  // int
+        constexpr int m_unAccountID =   0x9dc;  // int
+        constexpr int m_unTraceID =     0x9e0;  // int
+        constexpr int m_rtGcTime =      0x9e4;  // int
+        constexpr int m_vecEndPos =     0x9e8;  // vector
+        constexpr int m_vecStart =      0x9f4;  // vector
+        constexpr int m_vecRight =      0xa00;  // vector
+        constexpr int m_vecNormal =     0xa0c;  // vector
+        constexpr int m_nEntity =       0xa1c;  // int
+        constexpr int m_nPlayer =       0xa18;  // int
+        constexpr int m_nHitbox =       0xa20;  // int
+        constexpr int m_nTintID =       0xa24;  // int
+        constexpr int m_flCreationTime =        0xa28;  // float
+        constexpr int m_nVersion =      0xa2c;  // int
+        constexpr int m_ubSignature =   0xa2d;  // datatable
+}
+namespace DT_TEPlayerDecal {
+        constexpr int m_vecOrigin =     0x14;   // vector
+        constexpr int m_vecStart =      0x20;   // vector
+        constexpr int m_vecRight =      0x2c;   // vector
+        constexpr int m_nEntity =       0x38;   // int
+        constexpr int m_nPlayer =       0x10;   // int
+        constexpr int m_nHitbox =       0x3c;   // int
+}
+namespace DT_TEPhysicsProp {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_angRotation_0_ =        0x1c;   // float
+        constexpr int m_angRotation_1_ =        0x20;   // float
+        constexpr int m_angRotation_2_ =        0x24;   // float
+        constexpr int m_vecVelocity =   0x28;   // vector
+        constexpr int m_nModelIndex =   0x34;   // int
+        constexpr int m_nFlags =        0x3c;   // int
+        constexpr int m_nSkin = 0x38;   // int
+        constexpr int m_nEffects =      0x40;   // int
+        constexpr int m_clrRender =     0x44;   // int
+}
+namespace DT_TEParticleSystem {
+        constexpr int m_vecOrigin_0_ =  0x10;   // float
+        constexpr int m_vecOrigin_1_ =  0x14;   // float
+        constexpr int m_vecOrigin_2_ =  0x18;   // float
+}
+namespace DT_TEMuzzleFlash {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecAngles =     0x1c;   // vector
+        constexpr int m_flScale =       0x28;   // float
+        constexpr int m_nType = 0x2c;   // int
+}
+namespace DT_TELargeFunnel {
+        constexpr int m_nModelIndex =   0x1c;   // int
+        constexpr int m_nReversed =     0x20;   // int
+}
+namespace DT_TEKillPlayerAttachments {
+        constexpr int m_nPlayer =       0x10;   // int
+}
+namespace DT_TEImpact {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecNormal =     0x1c;   // vector
+        constexpr int m_iType = 0x28;   // int
+        constexpr int m_ucFlags =       0x2c;   // int
+}
+namespace DT_TEGlowSprite {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_nModelIndex =   0x1c;   // int
+        constexpr int m_fScale =        0x20;   // float
+        constexpr int m_fLife = 0x24;   // float
+        constexpr int m_nBrightness =   0x28;   // int
+}
+namespace DT_TEShatterSurface {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecAngles =     0x1c;   // vector
+        constexpr int m_vecForce =      0x28;   // vector
+        constexpr int m_vecForcePos =   0x34;   // vector
+        constexpr int m_flWidth =       0x40;   // float
+        constexpr int m_flHeight =      0x44;   // float
+        constexpr int m_flShardSize =   0x48;   // float
+        constexpr int m_nSurfaceType =  0x50;   // int
+        constexpr int m_uchFrontColor_0_ =      0x54;   // int
+        constexpr int m_uchFrontColor_1_ =      0x55;   // int
+        constexpr int m_uchFrontColor_2_ =      0x56;   // int
+        constexpr int m_uchBackColor_0_ =       0x57;   // int
+        constexpr int m_uchBackColor_1_ =       0x58;   // int
+        constexpr int m_uchBackColor_2_ =       0x59;   // int
+}
+namespace DT_TEFootprintDecal {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecDirection =  0x1c;   // vector
+        constexpr int m_nEntity =       0x34;   // int
+        constexpr int m_nIndex =        0x38;   // int
+        constexpr int m_chMaterialType =        0x3c;   // int
+}
+namespace DT_TEFizz {
+        constexpr int m_nEntity =       0x10;   // int
+        constexpr int m_nModelIndex =   0x14;   // int
+        constexpr int m_nDensity =      0x18;   // int
+        constexpr int m_nCurrent =      0x1c;   // int
+}
+namespace DT_TEExplosion {
+        constexpr int m_nModelIndex =   0x1c;   // int
+        constexpr int m_fScale =        0x20;   // float
+        constexpr int m_nFrameRate =    0x24;   // int
+        constexpr int m_nFlags =        0x28;   // int
+        constexpr int m_vecNormal =     0x2c;   // vector
+        constexpr int m_chMaterialType =        0x38;   // int
+        constexpr int m_nRadius =       0x3c;   // int
+        constexpr int m_nMagnitude =    0x40;   // int
+}
+namespace DT_TEEnergySplash {
+        constexpr int m_vecPos =        0x10;   // vector
+        constexpr int m_vecDir =        0x1c;   // vector
+        constexpr int m_bExplosive =    0x28;   // int
+}
+namespace DT_TEEffectDispatch {
+        constexpr int m_EffectData =    0x10;   // datatable
+        namespace DT_EffectData {
+                constexpr int m_vOrigin_x =     0x0;    // float
+                constexpr int m_vOrigin_y =     0x4;    // float
+                constexpr int m_vOrigin_z =     0x8;    // float
+                constexpr int m_vStart_x =      0xc;    // float
+                constexpr int m_vStart_y =      0x10;   // float
+                constexpr int m_vStart_z =      0x14;   // float
+                constexpr int m_vAngles =       0x24;   // vector
+                constexpr int m_vNormal =       0x18;   // vector
+                constexpr int m_fFlags =        0x30;   // int
+                constexpr int m_flMagnitude =   0x40;   // float
+                constexpr int m_flScale =       0x3c;   // float
+                constexpr int m_nAttachmentIndex =      0x48;   // int
+                constexpr int m_nSurfaceProp =  0x4c;   // int
+                constexpr int m_iEffectName =   0x64;   // int
+                constexpr int m_nMaterial =     0x50;   // int
+                constexpr int m_nDamageType =   0x54;   // int
+                constexpr int m_nHitBox =       0x58;   // int
+                constexpr int m_nOtherEntIndex =        0x5c;   // int
+                constexpr int m_nColor =        0x60;   // int
+                constexpr int m_flRadius =      0x44;   // float
+                constexpr int m_bPositionsAreRelativeToEntity = 0x61;   // int
+        }
+}
+namespace DT_TEDynamicLight {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_fRadius =       0x1c;   // float
+        constexpr int m_fTime = 0x30;   // float
+        constexpr int m_fDecay =        0x34;   // float
+}
+namespace DT_TEDecal {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecStart =      0x1c;   // vector
+        constexpr int m_nEntity =       0x28;   // int
+        constexpr int m_nHitbox =       0x2c;   // int
+        constexpr int m_nIndex =        0x30;   // int
+}
+namespace DT_TEClientProjectile {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecVelocity =   0x1c;   // vector
+        constexpr int m_nModelIndex =   0x28;   // int
+        constexpr int m_nLifeTime =     0x2c;   // int
+        constexpr int m_hOwner =        0x30;   // int
+}
+namespace DT_TEBubbleTrail {
+        constexpr int m_vecMins =       0x10;   // vector
+        constexpr int m_vecMaxs =       0x1c;   // vector
+        constexpr int m_nModelIndex =   0x2c;   // int
+        constexpr int m_flWaterZ =      0x28;   // float
+        constexpr int m_nCount =        0x30;   // int
+        constexpr int m_fSpeed =        0x34;   // float
+}
+namespace DT_TEBubbles {
+        constexpr int m_vecMins =       0x10;   // vector
+        constexpr int m_vecMaxs =       0x1c;   // vector
+        constexpr int m_nModelIndex =   0x2c;   // int
+        constexpr int m_fHeight =       0x28;   // float
+        constexpr int m_nCount =        0x30;   // int
+        constexpr int m_fSpeed =        0x34;   // float
+}
+namespace DT_TEBSPDecal {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_nEntity =       0x1c;   // int
+        constexpr int m_nIndex =        0x20;   // int
+}
+namespace DT_TEBreakModel {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_angRotation_0_ =        0x1c;   // float
+        constexpr int m_angRotation_1_ =        0x20;   // float
+        constexpr int m_angRotation_2_ =        0x24;   // float
+        constexpr int m_vecSize =       0x28;   // vector
+        constexpr int m_vecVelocity =   0x34;   // vector
+        constexpr int m_nModelIndex =   0x44;   // int
+        constexpr int m_nRandomization =        0x40;   // int
+        constexpr int m_nCount =        0x48;   // int
+        constexpr int m_fTime = 0x4c;   // float
+        constexpr int m_nFlags =        0x50;   // int
+}
+namespace DT_TEBloodStream {
+        constexpr int m_vecDirection =  0x1c;   // vector
+        constexpr int m_nAmount =       0x38;   // int
+}
+namespace DT_TEBloodSprite {
+        constexpr int m_vecOrigin =     0x10;   // vector
+        constexpr int m_vecDirection =  0x1c;   // vector
+        constexpr int m_nSprayModel =   0x3c;   // int
+        constexpr int m_nDropModel =    0x38;   // int
+        constexpr int m_nSize = 0x40;   // int
+}
+namespace DT_TEBeamSpline {
+        constexpr int m_nPoints =       0xd0;   // int
+        constexpr int m_vecPoints_0_ =  0x10;   // vector
+        constexpr int m_vecPoints =     0x0;    // array
+}
+namespace DT_TEBeamRingPoint {
+        constexpr int m_vecCenter =     0x4c;   // vector
+        constexpr int m_flStartRadius = 0x58;   // float
+        constexpr int m_flEndRadius =   0x5c;   // float
+}
+namespace DT_TEBeamRing {
+        constexpr int m_nStartEntity =  0x4c;   // int
+        constexpr int m_nEndEntity =    0x50;   // int
+}
+namespace DT_TEBeamPoints {
+        constexpr int m_vecStartPoint = 0x4c;   // vector
+        constexpr int m_vecEndPoint =   0x58;   // vector
+}
+namespace DT_TEBeamLaser {
+        constexpr int m_nStartEntity =  0x4c;   // int
+        constexpr int m_nEndEntity =    0x50;   // int
+}
+namespace DT_TEBeamFollow {
+        constexpr int m_iEntIndex =     0x4c;   // int
+}
+namespace DT_TEBeamEnts {
+        constexpr int m_nStartEntity =  0x4c;   // int
+        constexpr int m_nEndEntity =    0x50;   // int
+}
+namespace DT_TEBeamEntPoint {
+        constexpr int m_nStartEntity =  0x4c;   // int
+        constexpr int m_nEndEntity =    0x50;   // int
+        constexpr int m_vecStartPoint = 0x54;   // vector
+        constexpr int m_vecEndPoint =   0x60;   // vector
+}
+namespace DT_BaseBeam {
+        constexpr int m_nModelIndex =   0x10;   // int
+        constexpr int m_nHaloIndex =    0x14;   // int
+        constexpr int m_nStartFrame =   0x18;   // int
+        constexpr int m_nFrameRate =    0x1c;   // int
+        constexpr int m_fLife = 0x20;   // float
+        constexpr int m_fWidth =        0x24;   // float
+        constexpr int m_fEndWidth =     0x28;   // float
+        constexpr int m_nFadeLength =   0x2c;   // int
+        constexpr int m_fAmplitude =    0x30;   // float
+        constexpr int m_nSpeed =        0x44;   // int
+        constexpr int m_nFlags =        0x48;   // int
+}
+namespace DT_TEMetalSparks {
+        constexpr int m_vecPos =        0x10;   // vector
+        constexpr int m_vecDir =        0x1c;   // vector
+}
+namespace DT_SteamJet {
+        constexpr int m_SpreadSpeed =   0xac4;  // float
+        constexpr int m_Speed = 0xac8;  // float
+        constexpr int m_StartSize =     0xacc;  // float
+        constexpr int m_EndSize =       0xad0;  // float
+        constexpr int m_Rate =  0xad4;  // float
+        constexpr int m_JetLength =     0xad8;  // float
+        constexpr int m_bEmit = 0xadc;  // int
+        constexpr int m_bFaceLeft =     0xae4;  // int
+        constexpr int m_nType = 0xae0;  // int
+        constexpr int m_spawnflags =    0xae8;  // int
+        constexpr int m_flRollSpeed =   0xaec;  // float
+}
+namespace DT_SmokeStack {
+        constexpr int m_SpreadSpeed =   0xb14;  // float
+        constexpr int m_Speed = 0xb18;  // float
+        constexpr int m_StartSize =     0xb1c;  // float
+        constexpr int m_EndSize =       0xb20;  // float
+        constexpr int m_Rate =  0xb24;  // float
+        constexpr int m_JetLength =     0xb28;  // float
+        constexpr int m_bEmit = 0xb2c;  // int
+        constexpr int m_flBaseSpread =  0xb30;  // float
+        constexpr int m_flTwist =       0xb84;  // float
+        constexpr int m_flRollSpeed =   0xbc0;  // float
+        constexpr int m_iMaterialModel =        0xb88;  // int
+        constexpr int m_AmbientLight_m_vPos =   0xb34;  // vector
+        constexpr int m_AmbientLight_m_vColor = 0xb40;  // vector
+        constexpr int m_AmbientLight_m_flIntensity =    0xb4c;  // float
+        constexpr int m_DirLight_m_vPos =       0xb50;  // vector
+        constexpr int m_DirLight_m_vColor =     0xb5c;  // vector
+        constexpr int m_DirLight_m_flIntensity =        0xb68;  // float
+        constexpr int m_vWind = 0xb78;  // vector
+}
+namespace DT_DustTrail {
+        constexpr int m_SpawnRate =     0xac4;  // float
+        constexpr int m_Color = 0xac8;  // vector
+        constexpr int m_ParticleLifetime =      0xad8;  // float
+        constexpr int m_StopEmitTime =  0xae0;  // float
+        constexpr int m_MinSpeed =      0xae4;  // float
+        constexpr int m_MaxSpeed =      0xae8;  // float
+        constexpr int m_MinDirectedSpeed =      0xaec;  // float
+        constexpr int m_MaxDirectedSpeed =      0xaf0;  // float
+        constexpr int m_StartSize =     0xaf4;  // float
+        constexpr int m_EndSize =       0xaf8;  // float
+        constexpr int m_SpawnRadius =   0xafc;  // float
+        constexpr int m_bEmit = 0xb0c;  // int
+        constexpr int m_Opacity =       0xad4;  // float
+}
+namespace DT_FireTrail {
+        constexpr int m_nAttachment =   0xac4;  // int
+        constexpr int m_flLifetime =    0xac8;  // float
+}
+namespace DT_SporeTrail {
+        constexpr int m_flSpawnRate =   0xacc;  // float
+        constexpr int m_vecEndColor =   0xac0;  // vector
+        constexpr int m_flParticleLifetime =    0xad0;  // float
+        constexpr int m_flStartSize =   0xad4;  // float
+        constexpr int m_flEndSize =     0xad8;  // float
+        constexpr int m_flSpawnRadius = 0xadc;  // float
+        constexpr int m_bEmit = 0xaec;  // int
+}
+namespace DT_SporeExplosion {
+        constexpr int m_flSpawnRate =   0xac4;  // float
+        constexpr int m_flParticleLifetime =    0xac8;  // float
+        constexpr int m_flStartSize =   0xacc;  // float
+        constexpr int m_flEndSize =     0xad0;  // float
+        constexpr int m_flSpawnRadius = 0xad4;  // float
+        constexpr int m_bEmit = 0xadc;  // int
+        constexpr int m_bDontRemove =   0xadd;  // int
+}
+namespace DT_RocketTrail {
+        constexpr int m_SpawnRate =     0xac4;  // float
+        constexpr int m_StartColor =    0xac8;  // vector
+        constexpr int m_EndColor =      0xad4;  // vector
+        constexpr int m_ParticleLifetime =      0xae4;  // float
+        constexpr int m_StopEmitTime =  0xae8;  // float
+        constexpr int m_MinSpeed =      0xaec;  // float
+        constexpr int m_MaxSpeed =      0xaf0;  // float
+        constexpr int m_StartSize =     0xaf4;  // float
+        constexpr int m_EndSize =       0xaf8;  // float
+        constexpr int m_SpawnRadius =   0xafc;  // float
+        constexpr int m_bEmit = 0xb0c;  // int
+        constexpr int m_nAttachment =   0xb10;  // int
+        constexpr int m_Opacity =       0xae0;  // float
+        constexpr int m_bDamaged =      0xb0d;  // int
+        constexpr int m_flFlareScale =  0xb20;  // float
+}
+namespace DT_SmokeTrail {
+        constexpr int m_SpawnRate =     0xac4;  // float
+        constexpr int m_StartColor =    0xac8;  // vector
+        constexpr int m_EndColor =      0xad4;  // vector
+        constexpr int m_ParticleLifetime =      0xae4;  // float
+        constexpr int m_StopEmitTime =  0xae8;  // float
+        constexpr int m_MinSpeed =      0xaec;  // float
+        constexpr int m_MaxSpeed =      0xaf0;  // float
+        constexpr int m_MinDirectedSpeed =      0xaf4;  // float
+        constexpr int m_MaxDirectedSpeed =      0xaf8;  // float
+        constexpr int m_StartSize =     0xafc;  // float
+        constexpr int m_EndSize =       0xb00;  // float
+        constexpr int m_SpawnRadius =   0xb04;  // float
+        constexpr int m_bEmit = 0xb14;  // int
+        constexpr int m_nAttachment =   0xb18;  // int
+        constexpr int m_Opacity =       0xae0;  // float
+}
+namespace DT_PropVehicleDriveable {
+        constexpr int m_hPlayer =       0x2994; // int
+        constexpr int m_nSpeed =        0x2998; // int
+        constexpr int m_nRPM =  0x299c; // int
+        constexpr int m_flThrottle =    0x29a0; // float
+        constexpr int m_nBoostTimeLeft =        0x29a4; // int
+        constexpr int m_nHasBoost =     0x29a8; // int
+        constexpr int m_nScannerDisabledWeapons =       0x29ac; // int
+        constexpr int m_nScannerDisabledVehicle =       0x29b0; // int
+        constexpr int m_bEnterAnimOn =  0x29d0; // int
+        constexpr int m_bExitAnimOn =   0x29d1; // int
+        constexpr int m_bUnableToFire = 0x2a1d; // int
+        constexpr int m_vecEyeExitEndpoint =    0x2a10; // vector
+        constexpr int m_bHasGun =       0x2a1c; // int
+        constexpr int m_vecGunCrosshair =       0x29d8; // vector
+}
+namespace DT_ParticleSmokeGrenade {
+        constexpr int m_flSpawnTime =   0xad4;  // float
+        constexpr int m_FadeStartTime = 0xad8;  // float
+        constexpr int m_FadeEndTime =   0xadc;  // float
+        constexpr int m_MinColor =      0xae4;  // vector
+        constexpr int m_MaxColor =      0xaf0;  // vector
+        constexpr int m_CurrentStage =  0xac4;  // int
+}
+namespace DT_ParticleFire {
+        constexpr int m_vOrigin =       0xacc;  // vector
+        constexpr int m_vDirection =    0xad8;  // vector
+}
+namespace DT_TEGaussExplosion {
+        constexpr int m_nType = 0x1c;   // int
+        constexpr int m_vecDirection =  0x20;   // vector
+}
+namespace DT_QuadraticBeam {
+        constexpr int m_targetPosition =        0x9d8;  // vector
+        constexpr int m_controlPosition =       0x9e4;  // vector
+        constexpr int m_scrollRate =    0x9f0;  // float
+        constexpr int m_flWidth =       0x9f4;  // float
+}
+namespace DT_Embers {
+        constexpr int m_nDensity =      0x9d8;  // int
+        constexpr int m_nLifetime =     0x9dc;  // int
+        constexpr int m_nSpeed =        0x9e0;  // int
+        constexpr int m_bEmit = 0x9e4;  // int
+}
+namespace DT_EnvWind {
+        constexpr int m_EnvWindShared = 0x9d8;  // datatable
+        namespace DT_EnvWindShared {
+                constexpr int m_iMinWind =      0xc;    // int
+                constexpr int m_iMaxWind =      0x10;   // int
+                constexpr int m_iMinGust =      0x18;   // int
+                constexpr int m_iMaxGust =      0x1c;   // int
+                constexpr int m_flMinGustDelay =        0x20;   // float
+                constexpr int m_flMaxGustDelay =        0x24;   // float
+                constexpr int m_iGustDirChange =        0x2c;   // int
+                constexpr int m_iWindSeed =     0x8;    // int
+                constexpr int m_iInitialWindDir =       0x6c;   // int
+                constexpr int m_flInitialWindSpeed =    0x70;   // float
+                constexpr int m_flStartTime =   0x4;    // float
+                constexpr int m_flGustDuration =        0x28;   // float
+        }
+}
+namespace DT_Precipitation {
+        constexpr int m_nPrecipType =   0xa00;  // int
+}
+namespace DT_BaseAttributableItem {
+        constexpr int m_AttributeManager =      0x2d90; // datatable
+        namespace DT_AttributeContainer {
+                constexpr int m_hOuter =        0x1c;   // int
+                constexpr int m_ProviderType =  0x24;   // int
+                constexpr int m_iReapplyProvisionParity =       0x18;   // int
+                constexpr int m_Item =  0x40;   // datatable
+                namespace DT_ScriptCreatedItem {
+                        constexpr int m_iItemDefinitionIndex =  0x1ea;  // int
+                        constexpr int m_iEntityLevel =  0x1f0;  // int
+                        constexpr int m_iItemIDHigh =   0x200;  // int
+                        constexpr int m_iItemIDLow =    0x204;  // int
+                        constexpr int m_iAccountID =    0x208;  // int
+                        constexpr int m_iEntityQuality =        0x1ec;  // int
+                        constexpr int m_bInitialized =  0x214;  // int
+                        constexpr int m_szCustomName =  0x27c;  // const char*
+                        constexpr int m_NetworkedDynamicAttributesForDemos =    0x260;  // datatable
+                        namespace DT_AttributeList {
+                                constexpr int m_Attributes =    0x0;    // datatable
+                        }
+                }
+        }
+        constexpr int m_OriginalOwnerXuidLow =  0x31d0; // int
+        constexpr int m_OriginalOwnerXuidHigh = 0x31d4; // int
+        constexpr int m_nFallbackPaintKit =     0x31d8; // int
+        constexpr int m_nFallbackSeed = 0x31dc; // int
+        constexpr int m_flFallbackWear =        0x31e0; // float
+        constexpr int m_nFallbackStatTrak =     0x31e4; // int
+}
+namespace DT_EconEntity {
+        constexpr int m_AttributeManager =      0x2d90; // datatable
+        namespace DT_AttributeContainer {
+                constexpr int m_hOuter =        0x1c;   // int
+                constexpr int m_ProviderType =  0x24;   // int
+                constexpr int m_iReapplyProvisionParity =       0x18;   // int
+                constexpr int m_Item =  0x40;   // datatable
+                namespace DT_ScriptCreatedItem {
+                        constexpr int m_iItemDefinitionIndex =  0x1ea;  // int
+                        constexpr int m_iEntityLevel =  0x1f0;  // int
+                        constexpr int m_iItemIDHigh =   0x200;  // int
+                        constexpr int m_iItemIDLow =    0x204;  // int
+                        constexpr int m_iAccountID =    0x208;  // int
+                        constexpr int m_iEntityQuality =        0x1ec;  // int
+                        constexpr int m_bInitialized =  0x214;  // int
+                        constexpr int m_szCustomName =  0x27c;  // const char*
+                        constexpr int m_NetworkedDynamicAttributesForDemos =    0x260;  // datatable
+                        namespace DT_AttributeList {
+                                constexpr int m_Attributes =    0x0;    // datatable
+                        }
+                }
+        }
+        constexpr int m_OriginalOwnerXuidLow =  0x31d0; // int
+        constexpr int m_OriginalOwnerXuidHigh = 0x31d4; // int
+        constexpr int m_nFallbackPaintKit =     0x31d8; // int
+        constexpr int m_nFallbackSeed = 0x31dc; // int
+        constexpr int m_flFallbackWear =        0x31e0; // float
+        constexpr int m_nFallbackStatTrak =     0x31e4; // int
+}
+namespace DT_WeaponXM1014 {
+        constexpr int m_reloadState =   0x33e4; // int
+}
+namespace DT_WeaponTaser {
+        constexpr int m_fFireTime =     0x3400; // float
+}
+namespace DT_WeaponTablet {
+        constexpr int m_flUpgradeExpirationTime_0_ =    0x33e8; // float
+        constexpr int m_flUpgradeExpirationTime =       0x0;    // array
+        constexpr int m_vecLocalHexFlags_0_ =   0x33f8; // int
+        constexpr int m_vecLocalHexFlags =      0x0;    // array
+        constexpr int m_nContractKillGridIndex =        0x34a0; // int
+        constexpr int m_nContractKillGridHighResIndex = 0x34a4; // int
+        constexpr int m_bTabletReceptionIsBlocked =     0x34a8; // int
+        constexpr int m_flScanProgress =        0x34ac; // float
+        constexpr int m_flBootTime =    0x34b0; // float
+        constexpr int m_flShowMapTime = 0x34b4; // float
+        constexpr int m_vecNotificationIds_0_ = 0x34c4; // int
+        constexpr int m_vecNotificationIds =    0x0;    // array
+        constexpr int m_vecNotificationTimestamps_0_ =  0x34e4; // float
+        constexpr int m_vecNotificationTimestamps =     0x0;    // array
+        constexpr int m_vecPlayerPositionHistory_0_ =   0x3508; // vector
+        constexpr int m_vecPlayerPositionHistory =      0x0;    // array
+        constexpr int m_nLastPurchaseIndex =    0x3504; // int
+        constexpr int m_vecNearestMetalCratePos =       0x34b8; // vector
+}
+namespace DT_WeaponShield {
+        constexpr int m_flDisplayHealth =       0x3400; // float
+}
+namespace DT_WeaponSawedoff {
+        constexpr int m_reloadState =   0x33e4; // int
+}
+namespace DT_WeaponNOVA {
+        constexpr int m_reloadState =   0x33e4; // int
+}
+namespace DT_WeaponMelee {
+        constexpr int m_flThrowAt =     0x33e0; // float
+}
+namespace DT_WeaponM3 {
+        constexpr int m_reloadState =   0x33e4; // int
+}
+namespace DT_WeaponFists {
+        constexpr int m_bPlayingUninterruptableAct =    0x33e0; // int
+}
+namespace DT_WeaponCSBaseGun {
+        constexpr int m_zoomLevel =     0x33e0; // int
+        constexpr int m_iBurstShotsRemaining =  0x33e4; // int
+}
+namespace DT_WeaponCSBase {
+        constexpr int m_weaponMode =    0x3328; // int
+        constexpr int m_fAccuracyPenalty =      0x3340; // float
+        constexpr int m_fLastShotTime = 0x33b8; // float
+        constexpr int m_iRecoilIndex =  0x3350; // int
+        constexpr int m_flRecoilIndex = 0x3354; // float
+        constexpr int m_hPrevOwner =    0x3394; // int
+        constexpr int m_bBurstMode =    0x3358; // int
+        constexpr int m_flPostponeFireReadyTime =       0x335c; // float
+        constexpr int m_bReloadVisuallyComplete =       0x3360; // int
+        constexpr int m_bSilencerOn =   0x3361; // int
+        constexpr int m_flDoneSwitchingSilencer =       0x3364; // float
+        constexpr int m_iOriginalTeamNumber =   0x336c; // int
+        constexpr int m_iIronSightMode =        0x33d4; // int
+}
+namespace DT_WeaponC4 {
+        constexpr int m_bStartedArming =        0x3400; // int
+        constexpr int m_bBombPlacedAnimation =  0x3408; // int
+        constexpr int m_fArmedTime =    0x3404; // float
+        constexpr int m_bShowC4LED =    0x3409; // int
+        constexpr int m_bIsPlantingViaUse =     0x340a; // int
+}
+namespace DT_BumpMineProjectile {
+        constexpr int m_nParentBoneIndex =      0x29e4; // int
+        constexpr int m_vecParentBonePos =      0x29e8; // vector
+        constexpr int m_bArmed =        0x29f4; // int
+}
+namespace DT_BreachChargeProjectile {
+        constexpr int m_bShouldExplode =        0x29e0; // int
+        constexpr int m_weaponThatThrewMe =     0x29e4; // int
+        constexpr int m_nParentBoneIndex =      0x29e8; // int
+        constexpr int m_vecParentBonePos =      0x29ec; // vector
+}
+namespace DT_WeaponBaseItem {
+        constexpr int m_bRedraw =       0x33ec; // int
+}
+namespace DT_BaseCSGrenade {
+        constexpr int m_bRedraw =       0x33e0; // int
+        constexpr int m_bIsHeldByPlayer =       0x33e1; // int
+        constexpr int m_bPinPulled =    0x33e2; // int
+        constexpr int m_fThrowTime =    0x33e4; // float
+        constexpr int m_bLoopingSoundPlaying =  0x33e8; // int
+        constexpr int m_flThrowStrength =       0x33ec; // float
+        constexpr int m_fDropTime =     0x33f0; // float
+}
+namespace DT_SmokeGrenadeProjectile {
+        constexpr int m_bDidSmokeEffect =       0x2a24; // int
+        constexpr int m_nSmokeEffectTickBegin = 0x2a20; // int
+}
+namespace DT_MolotovProjectile {
+        constexpr int m_bIsIncGrenade = 0x2a20; // int
+}
+namespace DT_ItemDogtags {
+        constexpr int m_OwningPlayer =  0x3450; // int
+        constexpr int m_KillingPlayer = 0x3454; // int
+}
+namespace DT_PhysPropLootCrate {
+        constexpr int m_bRenderInPSPM = 0x2a04; // int
+        constexpr int m_bRenderInTablet =       0x2a05; // int
+        constexpr int m_iHealth =       0x100;  // int
+        constexpr int m_iMaxHealth =    0x2a08; // int
+}
+namespace DT_EnvGasCanister {
+        constexpr int m_flFlightSpeed = 0x2a04; // float
+        constexpr int m_flLaunchTime =  0x2a08; // float
+        constexpr int m_vecParabolaDirection =  0x2a1c; // vector
+        constexpr int m_flFlightTime =  0x2a00; // float
+        constexpr int m_flWorldEnterTime =      0x2a28; // float
+        constexpr int m_flInitialZSpeed =       0x2a0c; // float
+        constexpr int m_flZAcceleration =       0x2a10; // float
+        constexpr int m_flHorizSpeed =  0x2a14; // float
+        constexpr int m_bLaunchedFromWithinWorld =      0x2a18; // int
+        constexpr int m_vecImpactPosition =     0x29c4; // vector
+        constexpr int m_vecStartPosition =      0x29d0; // vector
+        constexpr int m_vecEnterWorldPosition = 0x29dc; // vector
+        constexpr int m_vecDirection =  0x29e8; // vector
+        constexpr int m_vecStartAngles =        0x29f4; // vector
+        constexpr int m_vecSkyboxOrigin =       0x2a2c; // vector
+        constexpr int m_flSkyboxScale = 0x2a38; // float
+        constexpr int m_bInSkybox =     0x2a3c; // int
+        constexpr int m_bDoImpactEffects =      0x2a3d; // int
+        constexpr int m_bLanded =       0x2990; // int
+        constexpr int m_hSkyboxCopy =   0x29b8; // int
+        constexpr int m_nMyZoneIndex =  0x2a40; // int
+        constexpr int m_vecOrigin =     0x138;  // vector2D (x and y)
+        constexpr int m_vecOrigin_2_ =  0x140;  // float
+}
+namespace DT_Dronegun {
+        constexpr int m_vecAttentionTarget =    0x2990; // vector
+        constexpr int m_vecTargetOffset =       0x299c; // vector
+        constexpr int m_iHealth =       0x100;  // int
+        constexpr int m_bHasTarget =    0x29a8; // int
+}
+namespace DT_ParadropChopper {
+        constexpr int m_vecOrigin =     0x138;  // vector2D (x and y)
+        constexpr int m_vecOrigin_2_ =  0x140;  // float
+        constexpr int m_hCallingPlayer =        0x29a0; // int
+}
+namespace DT_SurvivalSpawnChopper {
+        constexpr int m_vecOrigin =     0x138;  // vector2D (x and y)
+        constexpr int m_vecOrigin_2_ =  0x140;  // float
+}
+namespace DT_BRC4Target {
+        constexpr int m_bBrokenOpen =   0x2994; // int
+        constexpr int m_flRadius =      0x2998; // float
+}
+namespace DT_InfoMapRegion {
+        constexpr int m_flRadius =      0x9d8;  // float
+        constexpr int m_szLocToken =    0x9dc;  // const char*
+}
+namespace DT_Inferno {
+        constexpr int m_fireXDelta =    0x9e4;  // datatable
+        constexpr int m_fireYDelta =    0xb74;  // datatable
+        constexpr int m_fireZDelta =    0xd04;  // datatable
+        constexpr int m_bFireIsBurning =        0xe94;  // datatable
+        constexpr int m_nFireEffectTickBegin =  0x13b4; // int
+        constexpr int m_fireCount =     0x13a8; // int
+}
+namespace DT_CChicken {
+        constexpr int m_jumpedThisFrame =       0x29f8; // int
+        constexpr int m_leader =        0x29fc; // int
+}
+namespace DT_Drone {
+        constexpr int m_hMoveToThisEntity =     0x29e8; // int
+        constexpr int m_hDeliveryCargo =        0x29ec; // int
+        constexpr int m_bPilotTakeoverAllowed = 0x29f0; // int
+        constexpr int m_hPotentialCargo =       0x29f4; // int
+        constexpr int m_hCurrentPilot = 0x29f8; // int
+        constexpr int m_vecTagPositions_0_ =    0x29fc; // vector
+        constexpr int m_vecTagPositions =       0x0;    // array
+        constexpr int m_vecTagIncrements_0_ =   0x2b1c; // int
+        constexpr int m_vecTagIncrements =      0x0;    // array
+}
+namespace DT_FootstepControl {
+        constexpr int m_source =        0xa10;  // const char*
+        constexpr int m_destination =   0xa20;  // const char*
+}
+namespace DT_TEPlantBomb {
+        constexpr int m_vecOrigin =     0x14;   // vector
+        constexpr int m_iPlayer =       0x10;   // int
+        constexpr int m_option =        0x20;   // int
+}
+namespace DT_TEFireBullets {
+        constexpr int m_vecOrigin =     0x18;   // vector
+        constexpr int m_vecAngles_0_ =  0x24;   // float
+        constexpr int m_vecAngles_1_ =  0x28;   // float
+        constexpr int m_iWeaponID =     0x34;   // int
+        constexpr int m_weapon =        0x30;   // int
+        constexpr int m_iMode = 0x38;   // int
+        constexpr int m_iSeed = 0x3c;   // int
+        constexpr int m_iPlayer =       0x10;   // int
+        constexpr int m_fInaccuracy =   0x40;   // float
+        constexpr int m_fSpread =       0x48;   // float
+        constexpr int m_nItemDefIndex = 0x14;   // int
+        constexpr int m_iSoundType =    0x4c;   // int
+        constexpr int m_flRecoilIndex = 0x44;   // float
+}
+namespace DT_TERadioIcon {
+        constexpr int m_iAttachToClient =       0x10;   // int
+}
+namespace DT_PlantedC4 {
+        constexpr int m_bBombTicking =  0x2990; // int
+        constexpr int m_nBombSite =     0x2994; // int
+        constexpr int m_flC4Blow =      0x29a0; // float
+        constexpr int m_flTimerLength = 0x29a4; // float
+        constexpr int m_flDefuseLength =        0x29b8; // float
+        constexpr int m_flDefuseCountDown =     0x29bc; // float
+        constexpr int m_bBombDefused =  0x29c0; // int
+        constexpr int m_hBombDefuser =  0x29c4; // int
+}
+namespace DT_CSPlayerResource {
+        constexpr int m_iPlayerC4 =     0x165c; // int
+        constexpr int m_iPlayerVIP =    0x1660; // int
+        constexpr int m_bHostageAlive = 0x167c; // datatable
+        constexpr int m_isHostageFollowingSomeone =     0x1688; // datatable
+        constexpr int m_iHostageEntityIDs =     0x1694; // datatable
+        constexpr int m_bombsiteCenterA =       0x1664; // vector
+        constexpr int m_bombsiteCenterB =       0x1670; // vector
+        constexpr int m_hostageRescueX =        0x16c4; // datatable
+        constexpr int m_hostageRescueY =        0x16d4; // datatable
+        constexpr int m_hostageRescueZ =        0x16e4; // datatable
+        constexpr int m_iMVPs = 0x16f4; // datatable
+        constexpr int m_iArmor =        0x187c; // datatable
+        constexpr int m_bHasHelmet =    0x1839; // datatable
+        constexpr int m_bHasDefuser =   0x17f8; // datatable
+        constexpr int m_iScore =        0x1980; // datatable
+        constexpr int m_iCompetitiveRanking =   0x1a84; // datatable
+        constexpr int m_iCompetitiveWins =      0x1b88; // datatable
+        constexpr int m_iCompetitiveRankType =  0x1c8c; // datatable
+        constexpr int m_iCompTeammateColor =    0x1cd0; // datatable
+        constexpr int m_iLifetimeStart =        0x1dd4; // datatable
+        constexpr int m_iLifetimeEnd =  0x1ed8; // datatable
+        constexpr int m_bControllingBot =       0x1fdc; // datatable
+        constexpr int m_iControlledPlayer =     0x2020; // datatable
+        constexpr int m_iControlledByPlayer =   0x2124; // datatable
+        constexpr int m_iBotDifficulty =        0x42a8; // datatable
+        constexpr int m_szClan =        0x43ac; // datatable
+        constexpr int m_nCharacterDefIndex =    0x47bc; // datatable
+        constexpr int m_iTotalCashSpent =       0x48c0; // datatable
+        constexpr int m_iGunGameLevel = 0x49c4; // datatable
+        constexpr int m_iCashSpentThisRound =   0x4ac8; // datatable
+        constexpr int m_nEndMatchNextMapVotes = 0x6a88; // datatable
+        constexpr int m_bEndMatchNextMapAllVoted =      0x6b8c; // int
+        constexpr int m_nActiveCoinRank =       0x4bcc; // datatable
+        constexpr int m_nMusicID =      0x4cd0; // datatable
+        constexpr int m_nPersonaDataPublicLevel =       0x4dd4; // datatable
+        constexpr int m_nPersonaDataPublicCommendsLeader =      0x4ed8; // datatable
+        constexpr int m_nPersonaDataPublicCommendsTeacher =     0x4fdc; // datatable
+        constexpr int m_nPersonaDataPublicCommendsFriendly =    0x50e0; // datatable
+        constexpr int m_bHasCommunicationAbuseMute =    0x51e4; // datatable
+        constexpr int m_szCrosshairCodes =      0x5225; // datatable
+        constexpr int m_iMatchStats_Kills_Total =       0x5b08; // datatable
+        constexpr int m_iMatchStats_5k_Total =  0x601c; // datatable
+        constexpr int m_iMatchStats_4k_Total =  0x5f18; // datatable
+        constexpr int m_iMatchStats_3k_Total =  0x5e14; // datatable
+        constexpr int m_iMatchStats_Damage_Total =      0x6120; // datatable
+        constexpr int m_iMatchStats_EquipmentValue_Total =      0x6224; // datatable
+        constexpr int m_iMatchStats_KillReward_Total =  0x6328; // datatable
+        constexpr int m_iMatchStats_LiveTime_Total =    0x642c; // datatable
+        constexpr int m_iMatchStats_Deaths_Total =      0x5d10; // datatable
+        constexpr int m_iMatchStats_Assists_Total =     0x5c0c; // datatable
+        constexpr int m_iMatchStats_HeadShotKills_Total =       0x6530; // datatable
+        constexpr int m_iMatchStats_Objective_Total =   0x6634; // datatable
+        constexpr int m_iMatchStats_CashEarned_Total =  0x6738; // datatable
+        constexpr int m_iMatchStats_UtilityDamage_Total =       0x683c; // datatable
+        constexpr int m_iMatchStats_EnemiesFlashed_Total =      0x6940; // datatable
+}
+namespace DT_CSPlayer {
+        constexpr int m_angEyeAngles_0_ =       0x113d0;        // float
+        constexpr int m_angEyeAngles_1_ =       0x113d4;        // float
+        constexpr int m_iAddonBits =    0x103c4;        // int
+        constexpr int m_iPrimaryAddon = 0x103c8;        // int
+        constexpr int m_iSecondaryAddon =       0x103cc;        // int
+        constexpr int m_iThrowGrenadeCounter =  0x99b8; // int
+        constexpr int m_bWaitForNoAttack =      0x99bc; // int
+        constexpr int m_bIsRespawningForDMBonus =       0x99bd; // int
+        constexpr int m_iPlayerState =  0x9978; // int
+        constexpr int m_iAccount =      0x113b8;        // int
+        constexpr int m_iStartAccount = 0x103f4;        // int
+        constexpr int m_totalHitsOnServer =     0x103f8;        // int
+        constexpr int m_bInBombZone =   0x99b4; // int
+        constexpr int m_bInBuyZone =    0x99b5; // int
+        constexpr int m_bInNoDefuseArea =       0x99b6; // int
+        constexpr int m_bKilledByTaser =        0x99cd; // int
+        constexpr int m_iMoveState =    0x99d0; // int
+        constexpr int m_iClass =        0x113c8;        // int
+        constexpr int m_ArmorValue =    0x113cc;        // int
+        constexpr int m_angEyeAngles =  0x113d0;        // vector
+        constexpr int m_bHasDefuser =   0x113dc;        // int
+        constexpr int m_bNightVisionOn =        0x103e9;        // int
+        constexpr int m_bHasNightVision =       0x103ea;        // int
+        constexpr int m_bInHostageRescueZone =  0x113dd;        // int
+        constexpr int m_bIsDefusing =   0x997c; // int
+        constexpr int m_bIsGrabbingHostage =    0x997d; // int
+        constexpr int m_iBlockingUseActionInProgress =  0x9980; // int
+        constexpr int m_bIsScoped =     0x9974; // int
+        constexpr int m_bIsWalking =    0x9975; // int
+        constexpr int m_nIsAutoMounting =       0x9ae4; // int
+        constexpr int m_bResumeZoom =   0x9976; // int
+        constexpr int m_fImmuneToGunGameDamageTime =    0x9988; // float
+        constexpr int m_bGunGameImmunity =      0x9990; // int
+        constexpr int m_bHasMovedSinceSpawn =   0x9991; // int
+        constexpr int m_bMadeFinalGunGameProgressiveKill =      0x9992; // int
+        constexpr int m_iGunGameProgressiveWeaponIndex =        0x9994; // int
+        constexpr int m_iNumGunGameTRKillPoints =       0x9998; // int
+        constexpr int m_iNumGunGameKillsWithCurrentWeapon =     0x999c; // int
+        constexpr int m_iNumRoundKills =        0x99a0; // int
+        constexpr int m_fMolotovUseTime =       0x99ac; // float
+        constexpr int m_fMolotovDamageTime =    0x99b0; // float
+        constexpr int m_szArmsModel =   0x99d7; // const char*
+        constexpr int m_hCarriedHostage =       0x10448;        // int
+        constexpr int m_hCarriedHostageProp =   0x1044c;        // int
+        constexpr int m_bIsRescuing =   0x9984; // int
+        constexpr int m_flGroundAccelLinearFracLastTime =       0x103f0;        // float
+        constexpr int m_bCanMoveDuringFreezePeriod =    0x99d4; // int
+        constexpr int m_isCurrentGunGameLeader =        0x99d5; // int
+        constexpr int m_isCurrentGunGameTeamLeader =    0x99d6; // int
+        constexpr int m_flGuardianTooFarDistFrac =      0x99c0; // float
+        constexpr int m_flDetectedByEnemySensorTime =   0x99c4; // float
+        constexpr int m_bIsPlayerGhost =        0x9ae1; // int
+        constexpr int m_iMatchStats_Kills =     0x104b4;        // datatable
+        constexpr int m_iMatchStats_Damage =    0x1052c;        // datatable
+        constexpr int m_iMatchStats_EquipmentValue =    0x105a4;        // datatable
+        constexpr int m_iMatchStats_MoneySaved =        0x1061c;        // datatable
+        constexpr int m_iMatchStats_KillReward =        0x10694;        // datatable
+        constexpr int m_iMatchStats_LiveTime =  0x1070c;        // datatable
+        constexpr int m_iMatchStats_Deaths =    0x10784;        // datatable
+        constexpr int m_iMatchStats_Assists =   0x107fc;        // datatable
+        constexpr int m_iMatchStats_HeadShotKills =     0x10874;        // datatable
+        constexpr int m_iMatchStats_Objective = 0x108ec;        // datatable
+        constexpr int m_iMatchStats_CashEarned =        0x10964;        // datatable
+        constexpr int m_iMatchStats_UtilityDamage =     0x109dc;        // datatable
+        constexpr int m_iMatchStats_EnemiesFlashed =    0x10a54;        // datatable
+        constexpr int m_rank =  0x1138c;        // datatable
+        constexpr int m_passiveItems =  0x113a4;        // datatable
+        constexpr int m_bHasParachute = 0x113a4;        // int
+        constexpr int m_unMusicID =     0x113a8;        // int
+        constexpr int m_bHasHelmet =    0x113c0;        // int
+        constexpr int m_bHasHeavyArmor =        0x113c1;        // int
+        constexpr int m_nHeavyAssaultSuitCooldownRemaining =    0x113c4;        // int
+        constexpr int m_flFlashDuration =       0x10470;        // float
+        constexpr int m_flFlashMaxAlpha =       0x1046c;        // float
+        constexpr int m_iProgressBarDuration =  0x103d0;        // int
+        constexpr int m_flProgressBarStartTime =        0x103d4;        // float
+        constexpr int m_hRagdoll =      0x1043c;        // int
+        constexpr int m_hPlayerPing =   0x10440;        // int
+        constexpr int m_cycleLatch =    0x114e0;        // int
+        constexpr int m_unCurrentEquipmentValue =       0x11384;        // int
+        constexpr int m_unRoundStartEquipmentValue =    0x11386;        // int
+        constexpr int m_unFreezetimeEndEquipmentValue = 0x11388;        // int
+        constexpr int m_bIsControllingBot =     0x11a4d;        // int
+        constexpr int m_bHasControlledBotThisRound =    0x11a5c;        // int
+        constexpr int m_bCanControlObservedBot =        0x11a4e;        // int
+        constexpr int m_iControlledBotEntIndex =        0x11a50;        // int
+        constexpr int m_vecAutomoveTargetEnd =  0x9af4; // vector
+        constexpr int m_flAutoMoveStartTime =   0x9b04; // float
+        constexpr int m_flAutoMoveTargetTime =  0x9b08; // float
+        constexpr int m_bIsAssassinationTarget =        0x11a4c;        // int
+        constexpr int m_bHud_MiniScoreHidden =  0x113fe;        // int
+        constexpr int m_bHud_RadarHidden =      0x113ff;        // int
+        constexpr int m_nLastKillerIndex =      0x11400;        // int
+        constexpr int m_nLastConcurrentKilled = 0x11404;        // int
+        constexpr int m_nDeathCamMusic =        0x11408;        // int
+        constexpr int m_bIsHoldingLookAtWeapon =        0x11975;        // int
+        constexpr int m_bIsLookingAtWeapon =    0x11974;        // int
+        constexpr int m_iNumRoundKillsHeadshots =       0x99a4; // int
+        constexpr int m_unTotalRoundDamageDealt =       0x99a8; // int
+        constexpr int m_flLowerBodyYawTarget =  0x9adc; // float
+        constexpr int m_bStrafing =     0x9ae0; // int
+        constexpr int m_flThirdpersonRecoil =   0x119ec;        // float
+        constexpr int m_bHideTargetID = 0x119f0;        // int
+        constexpr int m_bIsSpawnRappelling =    0x103fd;        // int
+        constexpr int m_vecSpawnRappellingRopeOrigin =  0x10400;        // vector
+        constexpr int m_nSurvivalTeam = 0x10410;        // int
+        constexpr int m_hSurvivalAssassinationTarget =  0x10414;        // int
+        constexpr int m_flHealthShotBoostExpirationTime =       0x10418;        // float
+        constexpr int m_flLastExoJumpTime =     0x9b0c; // float
+        constexpr int m_vecPlayerPatchEconIndices =     0x119c4;        // datatable
+}
+namespace DT_PlayerPing {
+        constexpr int m_hPlayer =       0x9e4;  // int
+        constexpr int m_hPingedEntity = 0x9e8;  // int
+        constexpr int m_iType = 0x9ec;  // int
+        constexpr int m_bUrgent =       0x9f4;  // int
+        constexpr int m_szPlaceName =   0x9f5;  // const char*
+}
+namespace DT_CSRagdoll {
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_vecRagdollOrigin =      0x2a1c; // vector
+        constexpr int m_hPlayer =       0x2a00; // int
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_nForceBone =    0x268c; // int
+        constexpr int m_vecForce =      0x2680; // vector
+        constexpr int m_vecRagdollVelocity =    0x2a10; // vector
+        constexpr int m_iDeathPose =    0x2a28; // int
+        constexpr int m_iDeathFrame =   0x2a2c; // int
+        constexpr int m_iTeamNum =      0xf4;   // int
+        constexpr int m_bClientSideAnimation =  0x28a0; // int
+        constexpr int m_flDeathYaw =    0x2a30; // float
+        constexpr int m_flAbsYaw =      0x2a34; // float
+        constexpr int m_bDiedAirborne = 0x2a38; // int
+}
+namespace DT_TEPlayerAnimEvent {
+        constexpr int m_hPlayer =       0x10;   // int
+        constexpr int m_iEvent =        0x14;   // int
+        constexpr int m_nData = 0x18;   // int
+}
+namespace DT_CHostage {
+        constexpr int m_isRescued =     0x2f40; // int
+        constexpr int m_jumpedThisFrame =       0x2f41; // int
+        constexpr int m_iHealth =       0x100;  // int
+        constexpr int m_iMaxHealth =    0x2f28; // int
+        constexpr int m_lifeState =     0x25f;  // int
+        constexpr int m_fFlags =        0x104;  // int
+        constexpr int m_nHostageState = 0x2f44; // int
+        constexpr int m_flRescueStartTime =     0x2f48; // float
+        constexpr int m_flGrabSuccessTime =     0x2f4c; // float
+        constexpr int m_flDropStartTime =       0x2f50; // float
+        constexpr int m_vel =   0x2f34; // vector
+        constexpr int m_leader =        0x2f30; // int
+}
+namespace DT_BaseCSGrenadeProjectile {
+        constexpr int m_vInitialVelocity =      0x29e0; // vector
+        constexpr int m_nBounces =      0x29ec; // int
+        constexpr int m_nExplodeEffectIndex =   0x29f0; // int
+        constexpr int m_nExplodeEffectTickBegin =       0x29f4; // int
+        constexpr int m_vecExplodeEffectOrigin =        0x29f8; // vector
+}
+namespace DT_HandleTest {
+        constexpr int m_Handle =        0x9d8;  // int
+        constexpr int m_bSendHandle =   0x9dc;  // int
+}
+namespace DT_SpriteTrail {
+        constexpr int m_flLifeTime =    0x1074; // float
+        constexpr int m_flStartWidth =  0x1078; // float
+        constexpr int m_flEndWidth =    0x107c; // float
+        constexpr int m_flStartWidthVariance =  0x1080; // float
+        constexpr int m_flTextureRes =  0x1084; // float
+        constexpr int m_flMinFadeLength =       0x1088; // float
+        constexpr int m_vecSkyboxOrigin =       0x108c; // vector
+        constexpr int m_flSkyboxScale = 0x1098; // float
+}
+namespace DT_Sprite {
+        constexpr int m_hAttachedToEntity =     0x9e8;  // int
+        constexpr int m_nAttachment =   0x9ec;  // int
+        constexpr int m_flScaleTime =   0xa08;  // float
+        constexpr int m_flSpriteScale = 0xa04;  // float
+        constexpr int m_flSpriteFramerate =     0x9f0;  // float
+        constexpr int m_flGlowProxySize =       0xa10;  // float
+        constexpr int m_flHDRColorScale =       0xa14;  // float
+        constexpr int m_flFrame =       0x9f4;  // float
+        constexpr int m_flBrightnessTime =      0xa00;  // float
+        constexpr int m_nBrightness =   0x9fc;  // int
+        constexpr int m_bWorldSpaceScale =      0xa0c;  // int
+}
+namespace DT_Ragdoll_Attached {
+        constexpr int m_boneIndexAttached =     0x2cc8; // int
+        constexpr int m_ragdollAttachedObjectIndex =    0x2cc4; // int
+        constexpr int m_attachmentPointBoneSpace =      0x2ca0; // vector
+        constexpr int m_attachmentPointRagdollSpace =   0x2cb8; // vector
+}
+namespace DT_Ragdoll {
+        constexpr int m_ragAngles_0_ =  0x2ab0; // vector
+        constexpr int m_ragAngles =     0x0;    // array
+        constexpr int m_ragPos_0_ =     0x2990; // vector
+        constexpr int m_ragPos =        0x0;    // array
+        constexpr int m_hUnragdoll =    0x2c8c; // int
+        constexpr int m_flBlendWeight = 0x2c90; // float
+        constexpr int m_nOverlaySequence =      0x2c98; // int
+}
+namespace DT_PropCounter {
+        constexpr int m_flDisplayValue =        0x2990; // float
+}
+namespace DT_PoseController {
+        constexpr int m_hProps =        0x9d8;  // datatable
+        constexpr int m_chPoseIndex =   0x9e8;  // datatable
+        constexpr int m_bPoseValueParity =      0x9ec;  // int
+        constexpr int m_fPoseValue =    0x9f0;  // float
+        constexpr int m_fInterpolationTime =    0x9f4;  // float
+        constexpr int m_bInterpolationWrap =    0x9f8;  // int
+        constexpr int m_fCycleFrequency =       0x9fc;  // float
+        constexpr int m_nFModType =     0xa00;  // int
+        constexpr int m_fFModTimeOffset =       0xa04;  // float
+        constexpr int m_fFModRate =     0xa08;  // float
+        constexpr int m_fFModAmplitude =        0xa0c;  // float
+}
+namespace DT_GrassBurn {
+        constexpr int m_flGrassBurnClearTime =  0x9d8;  // float
+}
+namespace DT_FuncLadder {
+        constexpr int m_vecPlayerMountPositionTop =     0x9f8;  // vector
+        constexpr int m_vecPlayerMountPositionBottom =  0xa04;  // vector
+        constexpr int m_vecLadderDir =  0x9d8;  // vector
+        constexpr int m_bFakeLadder =   0xa11;  // int
+}
+namespace DT_TEFoundryHelpers {
+        constexpr int m_iEntity =       0x10;   // int
+}
+namespace DT_DetailController {
+        constexpr int m_flFadeStartDist =       0x9d8;  // float
+        constexpr int m_flFadeEndDist = 0x9dc;  // float
+}
+namespace DT_DangerZone {
+        constexpr int m_vecDangerZoneOriginStartedAt =  0x9d8;  // vector
+        constexpr int m_flBombLaunchTime =      0x9e4;  // float
+        constexpr int m_flExtraRadius = 0x9e8;  // float
+        constexpr int m_flExtraRadiusStartTime =        0x9ec;  // float
+        constexpr int m_flExtraRadiusTotalLerpTime =    0x9f0;  // float
+        constexpr int m_nDropOrder =    0x9f4;  // int
+        constexpr int m_iWave = 0x9f8;  // int
+}
+namespace DT_DangerZoneController {
+        constexpr int m_bDangerZoneControllerEnabled =  0x9d8;  // int
+        constexpr int m_bMissionControlledExplosions =  0x9d9;  // int
+        constexpr int m_flStartTime =   0x9f4;  // float
+        constexpr int m_flFinalExpansionTime =  0x9f8;  // float
+        constexpr int m_vecEndGameCircleStart = 0x9dc;  // vector
+        constexpr int m_vecEndGameCircleEnd =   0x9e8;  // vector
+        constexpr int m_DangerZones =   0x9fc;  // datatable
+        constexpr int m_flWaveEndTimes =        0xaa4;  // datatable
+        constexpr int m_hTheFinalZone = 0xab8;  // int
+}
+namespace DT_WorldVguiText {
+        constexpr int m_bEnabled =      0x9d8;  // int
+        constexpr int m_szDisplayText = 0x9d9;  // const char*
+        constexpr int m_szDisplayTextOption =   0xbd9;  // const char*
+        constexpr int m_szFont =        0xcd9;  // const char*
+        constexpr int m_iTextPanelWidth =       0xd20;  // int
+        constexpr int m_clrText =       0xd19;  // int
+}
+namespace DT_World {
+        constexpr int m_flWaveHeight =  0x9d8;  // float
+        constexpr int m_WorldMins =     0x9dc;  // vector
+        constexpr int m_WorldMaxs =     0x9e8;  // vector
+        constexpr int m_bStartDark =    0x9f4;  // int
+        constexpr int m_flMaxOccludeeArea =     0x9f8;  // float
+        constexpr int m_flMinOccluderArea =     0x9fc;  // float
+        constexpr int m_flMaxPropScreenSpaceWidth =     0xa04;  // float
+        constexpr int m_flMinPropScreenSpaceWidth =     0xa00;  // float
+        constexpr int m_iszDetailSpriteMaterial =       0xa10;  // const char*
+        constexpr int m_bColdWorld =    0xa08;  // int
+        constexpr int m_iTimeOfDay =    0xa0c;  // int
+}
+namespace DT_WaterLODControl {
+        constexpr int m_flCheapWaterStartDistance =     0x9d8;  // float
+        constexpr int m_flCheapWaterEndDistance =       0x9dc;  // float
+}
+namespace DT_MapVetoPickController {
+        constexpr int m_nDraftType =    0x9e8;  // int
+        constexpr int m_nTeamWinningCoinToss =  0x9ec;  // int
+        constexpr int m_nTeamWithFirstChoice =  0x9f0;  // datatable
+        constexpr int m_nVoteMapIdsList =       0xaf0;  // datatable
+        constexpr int m_nAccountIDs =   0xb0c;  // datatable
+        constexpr int m_nMapId0 =       0xc0c;  // datatable
+        constexpr int m_nMapId1 =       0xd0c;  // datatable
+        constexpr int m_nMapId2 =       0xe0c;  // datatable
+        constexpr int m_nMapId3 =       0xf0c;  // datatable
+        constexpr int m_nMapId4 =       0x100c; // datatable
+        constexpr int m_nMapId5 =       0x110c; // datatable
+        constexpr int m_nStartingSide0 =        0x120c; // datatable
+        constexpr int m_nCurrentPhase = 0x130c; // int
+        constexpr int m_nPhaseStartTick =       0x1310; // int
+        constexpr int m_nPhaseDurationTicks =   0x1314; // int
+}
+namespace DT_VoteController {
+        constexpr int m_iActiveIssueIndex =     0x9e4;  // int
+        constexpr int m_iOnlyTeamToVote =       0x9e8;  // int
+        constexpr int m_nVoteOptionCount =      0x9ec;  // datatable
+        constexpr int m_nPotentialVotes =       0xa04;  // int
+        constexpr int m_bIsYesNoVote =  0xa0a;  // int
+}
+namespace DT_VGuiScreen {
+        constexpr int m_flWidth =       0x9e0;  // float
+        constexpr int m_flHeight =      0x9e4;  // float
+        constexpr int m_fScreenFlags =  0xa0c;  // int
+        constexpr int m_nPanelName =    0x9e8;  // int
+        constexpr int m_nAttachmentIndex =      0xa04;  // int
+        constexpr int m_nOverlayMaterial =      0xa08;  // int
+        constexpr int m_hPlayerOwner =  0xa68;  // int
+}
+namespace DT_PropJeep {
+        constexpr int m_bHeadlightIsOn =        0x2adc; // int
+}
+namespace DT_PropVehicleChoreoGeneric {
+        constexpr int m_hPlayer =       0x2a04; // int
+        constexpr int m_bEnterAnimOn =  0x2a0c; // int
+        constexpr int m_bExitAnimOn =   0x2a0d; // int
+        constexpr int m_bForceEyesToAttachment =        0x2a1c; // int
+        constexpr int m_vecEyeExitEndpoint =    0x2a10; // vector
+        constexpr int m_vehicleView_bClampEyeAngles =   0x2aa0; // int
+        constexpr int m_vehicleView_flPitchCurveZero =  0x2aa4; // float
+        constexpr int m_vehicleView_flPitchCurveLinear =        0x2aa8; // float
+        constexpr int m_vehicleView_flRollCurveZero =   0x2aac; // float
+        constexpr int m_vehicleView_flRollCurveLinear = 0x2ab0; // float
+        constexpr int m_vehicleView_flFOV =     0x2ab4; // float
+        constexpr int m_vehicleView_flYawMin =  0x2ab8; // float
+        constexpr int m_vehicleView_flYawMax =  0x2abc; // float
+        constexpr int m_vehicleView_flPitchMin =        0x2ac0; // float
+        constexpr int m_vehicleView_flPitchMax =        0x2ac4; // float
+}
+namespace DT_TriggerSoundOperator {
+        constexpr int m_nSoundOperator =        0xa10;  // int
+}
+namespace DT_BaseTrigger {
+        constexpr int m_bClientSidePredicted =  0xa08;  // int
+        constexpr int m_spawnflags =    0x2c8;  // int
+}
+namespace DT_Tesla {
+        constexpr int m_SoundName =     0xa00;  // const char*
+        constexpr int m_iszSpriteName = 0xa40;  // const char*
+}
+namespace DT_BaseTeamObjectiveResource {
+        constexpr int m_iTimerToShowInHUD =     0x9d8;  // int
+        constexpr int m_iStopWatchTimer =       0x9dc;  // int
+        constexpr int m_iNumControlPoints =     0x9e0;  // int
+        constexpr int m_bPlayingMiniRounds =    0x9e8;  // int
+        constexpr int m_bControlPointsReset =   0x9e9;  // int
+        constexpr int m_iUpdateCapHudParity =   0x9ec;  // int
+        constexpr int m_vCPPositions_0_ =       0x9f4;  // vector
+        constexpr int m_vCPPositions =  0x0;    // array
+        constexpr int m_bCPIsVisible =  0xa54;  // datatable
+        constexpr int m_flLazyCapPerc = 0xa5c;  // datatable
+        constexpr int m_iTeamIcons =    0xa9c;  // datatable
+        constexpr int m_iTeamOverlays = 0xb9c;  // datatable
+        constexpr int m_iTeamReqCappers =       0xc9c;  // datatable
+        constexpr int m_flTeamCapTime = 0xd9c;  // datatable
+        constexpr int m_iPreviousPoints =       0xe9c;  // datatable
+        constexpr int m_bTeamCanCap =   0x119c; // datatable
+        constexpr int m_iTeamBaseIcons =        0x11dc; // datatable
+        constexpr int m_iBaseControlPoints =    0x125c; // datatable
+        constexpr int m_bInMiniRound =  0x12dc; // datatable
+        constexpr int m_iWarnOnCap =    0x12e4; // datatable
+        constexpr int m_iszWarnSound_0_ =       0x1304; // const char*
+        constexpr int m_iszWarnSound =  0x0;    // array
+        constexpr int m_flPathDistance =        0x1afc; // datatable
+        constexpr int m_iNumTeamMembers =       0x1b1c; // datatable
+        constexpr int m_iCappingTeam =  0x1c1c; // datatable
+        constexpr int m_iTeamInZone =   0x1c3c; // datatable
+        constexpr int m_bBlocked =      0x1c5c; // datatable
+        constexpr int m_iOwner =        0x1c64; // datatable
+        constexpr int m_pszCapLayoutInHUD =     0x1cec; // const char*
+}
+namespace DT_Team {
+        constexpr int m_iTeamNum =      0xb68;  // int
+        constexpr int m_bSurrendered =  0xb6c;  // int
+        constexpr int m_scoreTotal =    0xb40;  // int
+        constexpr int m_scoreFirstHalf =        0xb44;  // int
+        constexpr int m_scoreSecondHalf =       0xb48;  // int
+        constexpr int m_scoreOvertime = 0xb4c;  // int
+        constexpr int m_iClanID =       0xb58;  // int
+        constexpr int m_szTeamname =    0x9ec;  // const char*
+        constexpr int m_szClanTeamname =        0xa0c;  // const char*
+        constexpr int m_szTeamFlagImage =       0xa2c;  // const char*
+        constexpr int m_szTeamLogoImage =       0xa34;  // const char*
+        constexpr int m_szTeamMatchStat =       0xa3c;  // const char*
+        constexpr int m_nGGLeaderEntIndex_CT =  0xb50;  // int
+        constexpr int m_nGGLeaderEntIndex_T =   0xb54;  // int
+        constexpr int m_numMapVictories =       0xb70;  // int
+}
+namespace DT_SunlightShadowControl {
+        constexpr int m_shadowDirection =       0x9d8;  // vector
+        constexpr int m_bEnabled =      0x9e4;  // int
+        constexpr int m_TextureName =   0x9e5;  // const char*
+        constexpr int m_LightColor =    0xaf0;  // int
+        constexpr int m_flColorTransitionTime = 0xb04;  // float
+        constexpr int m_flSunDistance = 0xb08;  // float
+        constexpr int m_flFOV = 0xb0c;  // float
+        constexpr int m_flNearZ =       0xb10;  // float
+        constexpr int m_flNorthOffset = 0xb14;  // float
+        constexpr int m_bEnableShadows =        0xb18;  // int
+}
+namespace DT_Sun {
+        constexpr int m_clrRender =     0x70;   // int
+        constexpr int m_clrOverlay =    0xb38;  // int
+        constexpr int m_vDirection =    0xb44;  // vector
+        constexpr int m_bOn =   0xb50;  // int
+        constexpr int m_nSize = 0xb3c;  // int
+        constexpr int m_nOverlaySize =  0xb40;  // int
+        constexpr int m_nMaterial =     0xb54;  // int
+        constexpr int m_nOverlayMaterial =      0xb58;  // int
+}
+namespace DT_ParticlePerformanceMonitor {
+        constexpr int m_bMeasurePerf =  0x9d9;  // int
+        constexpr int m_bDisplayPerf =  0x9d8;  // int
+}
+namespace DT_SpotlightEnd {
+        constexpr int m_flLightScale =  0x9d8;  // float
+        constexpr int m_Radius =        0x9dc;  // float
+}
+namespace DT_SpatialEntity {
+        constexpr int m_vecOrigin =     0x9d8;  // vector
+        constexpr int m_minFalloff =    0x9e4;  // float
+        constexpr int m_maxFalloff =    0x9e8;  // float
+        constexpr int m_flCurWeight =   0x9ec;  // float
+        constexpr int m_bEnabled =      0xaf4;  // int
+}
+namespace DT_SlideshowDisplay {
+        constexpr int m_bEnabled =      0x9d8;  // int
+        constexpr int m_szDisplayText = 0x9d9;  // const char*
+        constexpr int m_szSlideshowDirectory =  0xa59;  // const char*
+        constexpr int m_chCurrentSlideLists =   0xaf0;  // datatable
+        constexpr int m_fMinSlideTime = 0xb08;  // float
+        constexpr int m_fMaxSlideTime = 0xb0c;  // float
+        constexpr int m_iCycleType =    0xb14;  // int
+        constexpr int m_bNoListRepeats =        0xb18;  // int
+}
+namespace DT_ShadowControl {
+        constexpr int m_shadowDirection =       0x9d8;  // vector
+        constexpr int m_shadowColor =   0x9e4;  // int
+        constexpr int m_flShadowMaxDist =       0x9e8;  // float
+        constexpr int m_bDisableShadows =       0x9ec;  // int
+        constexpr int m_bEnableLocalLightShadows =      0x9ed;  // int
+}
+namespace DT_SceneEntity {
+        constexpr int m_nSceneStringIndex =     0x9e8;  // int
+        constexpr int m_bIsPlayingBack =        0x9dc;  // int
+        constexpr int m_bPaused =       0x9dd;  // int
+        constexpr int m_bMultiplayer =  0x9de;  // int
+        constexpr int m_flForceClientTime =     0x9e4;  // float
+        constexpr int m_hActorList =    0x0;    // datatable
+}
+namespace DT_RopeKeyframe {
+        constexpr int m_nChangeCount =  0xccc;  // int
+        constexpr int m_iRopeMaterialModelIndex =       0xa14;  // int
+        constexpr int m_hStartPoint =   0xcac;  // int
+        constexpr int m_hEndPoint =     0xcb0;  // int
+        constexpr int m_iStartAttachment =      0xcb4;  // int
+        constexpr int m_iEndAttachment =        0xcb6;  // int
+        constexpr int m_fLockedPoints = 0xcc8;  // int
+        constexpr int m_Slack = 0xcc0;  // int
+        constexpr int m_RopeLength =    0xcbc;  // int
+        constexpr int m_RopeFlags =     0xa10;  // int
+        constexpr int m_TextureScale =  0xcc4;  // float
+        constexpr int m_nSegments =     0xca8;  // int
+        constexpr int m_bConstrainBetweenEndpoints =    0xd50;  // int
+        constexpr int m_Subdiv =        0xcb8;  // int
+        constexpr int m_Width = 0xcd0;  // float
+        constexpr int m_flScrollSpeed = 0xa0c;  // float
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_iParentAttachment =     0x2ec;  // int
+        constexpr int m_iDefaultRopeMaterialModelIndex =        0xa18;  // int
+        constexpr int m_nMinCPULevel =  0x988;  // int
+        constexpr int m_nMaxCPULevel =  0x989;  // int
+        constexpr int m_nMinGPULevel =  0x98a;  // int
+        constexpr int m_nMaxGPULevel =  0x98b;  // int
+}
+namespace DT_RagdollManager {
+        constexpr int m_iCurrentMaxRagdollCount =       0x9d8;  // int
+}
+namespace DT_PhysicsPropMultiplayer {
+        constexpr int m_iPhysicsMode =  0x29d4; // int
+        constexpr int m_fMass = 0x29d8; // float
+        constexpr int m_collisionMins = 0x29dc; // vector
+        constexpr int m_collisionMaxs = 0x29e8; // vector
+}
+namespace DT_PhysBoxMultiplayer {
+        constexpr int m_iPhysicsMode =  0x9e4;  // int
+        constexpr int m_fMass = 0x9e8;  // float
+}
+namespace DT_DynamicProp {
+        constexpr int m_bUseHitboxesForRenderBox =      0x29b4; // int
+        constexpr int m_flGlowMaxDist = 0x29d4; // float
+        constexpr int m_bShouldGlow =   0x29d8; // int
+        constexpr int m_clrGlow =       0x29d9; // int
+        constexpr int m_nGlowStyle =    0x29e0; // int
+}
+namespace DT_Prop_Hallucination {
+        constexpr int m_bEnabled =      0x29a9; // int
+        constexpr int m_fVisibleTime =  0x29ac; // float
+        constexpr int m_fRechargeTime = 0x29b0; // float
+}
+namespace DT_PostProcessController {
+        constexpr int m_flPostProcessParameters =       0x9d8;  // datatable
+        constexpr int m_bMaster =       0xa04;  // int
+}
+namespace DT_PointWorldText {
+        constexpr int m_szText =        0xa08;  // const char*
+        constexpr int m_flTextSize =    0xb0c;  // float
+        constexpr int m_textColor =     0xb10;  // int
+}
+namespace DT_PointCommentaryNode {
+        constexpr int m_bActive =       0x2990; // int
+        constexpr int m_flStartTime =   0x2994; // float
+        constexpr int m_iszCommentaryFile =     0x2998; // const char*
+        constexpr int m_iszCommentaryFileNoHDR =        0x2a9c; // const char*
+        constexpr int m_iszSpeakers =   0x2ba0; // const char*
+        constexpr int m_iNodeNumber =   0x2ca0; // int
+        constexpr int m_iNodeNumberMax =        0x2ca4; // int
+        constexpr int m_hViewPosition = 0x2cac; // int
+}
+namespace DT_PointCamera {
+        constexpr int m_FOV =   0x9d8;  // float
+        constexpr int m_Resolution =    0x9dc;  // float
+        constexpr int m_bFogEnable =    0x9e0;  // int
+        constexpr int m_FogColor =      0x9e1;  // int
+        constexpr int m_flFogStart =    0x9e8;  // float
+        constexpr int m_flFogEnd =      0x9ec;  // float
+        constexpr int m_flFogMaxDensity =       0x9f0;  // float
+        constexpr int m_bActive =       0x9f4;  // int
+        constexpr int m_bUseScreenAspectRatio = 0x9f5;  // int
+}
+namespace DT_PlayerResource {
+        constexpr int m_iPing = 0xb28;  // datatable
+        constexpr int m_iKills =        0xc2c;  // datatable
+        constexpr int m_iAssists =      0xd30;  // datatable
+        constexpr int m_iDeaths =       0xe34;  // datatable
+        constexpr int m_bConnected =    0xae4;  // datatable
+        constexpr int m_iTeam = 0xf38;  // datatable
+        constexpr int m_iPendingTeam =  0x103c; // datatable
+        constexpr int m_bAlive =        0x1140; // datatable
+        constexpr int m_iHealth =       0x1184; // datatable
+        constexpr int m_iCoachingTeam = 0x1288; // datatable
+}
+namespace DT_Plasma {
+        constexpr int m_flStartScale =  0x9d8;  // float
+        constexpr int m_flScale =       0x9dc;  // float
+        constexpr int m_flScaleTime =   0x9e0;  // float
+        constexpr int m_nFlags =        0x9e4;  // int
+        constexpr int m_nPlasmaModelIndex =     0x9e8;  // int
+        constexpr int m_nPlasmaModelIndex2 =    0x9ec;  // int
+        constexpr int m_nGlowModelIndex =       0x9f0;  // int
+}
+namespace DT_PhysicsProp {
+        constexpr int m_bAwake =        0x29b0; // int
+        constexpr int m_spawnflags =    0x2c8;  // int
+}
+namespace DT_StatueProp {
+        constexpr int m_hInitBaseAnimating =    0x29d0; // int
+        constexpr int m_bShatter =      0x29d4; // int
+        constexpr int m_nShatterFlags = 0x29d8; // int
+        constexpr int m_vShatterPosition =      0x29dc; // vector
+        constexpr int m_vShatterForce = 0x29e8; // vector
+}
+namespace DT_PhysBox {
+        constexpr int m_mass =  0x9d8;  // float
+}
+namespace DT_ParticleSystem {
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_fEffects =      0xf0;   // int
+        constexpr int m_hOwnerEntity =  0x14c;  // int
+        constexpr int m_iParentAttachment =     0x2ec;  // int
+        constexpr int m_angRotation =   0x12c;  // vector
+        constexpr int m_iEffectIndex =  0x9d8;  // int
+        constexpr int m_bActive =       0x9e0;  // int
+        constexpr int m_nStopType =     0x9dc;  // int
+        constexpr int m_flStartTime =   0x9e4;  // float
+        constexpr int m_szSnapshotFileName =    0x9e8;  // const char*
+        constexpr int m_vServerControlPoints =  0xaec;  // datatable
+        constexpr int m_iServerControlPointAssignments =        0xb1c;  // datatable
+        constexpr int m_hControlPointEnts =     0xb30;  // datatable
+        constexpr int m_iControlPointParents =  0xc2c;  // datatable
+}
+namespace DT_MovieDisplay {
+        constexpr int m_bEnabled =      0x9d8;  // int
+        constexpr int m_bLooping =      0x9d9;  // int
+        constexpr int m_szMovieFilename =       0x9da;  // const char*
+        constexpr int m_szGroupName =   0xa5a;  // const char*
+        constexpr int m_bStretchToFill =        0xada;  // int
+        constexpr int m_bForcedSlave =  0xadb;  // int
+        constexpr int m_bUseCustomUVs = 0xadc;  // int
+        constexpr int m_flUMin =        0xae0;  // float
+        constexpr int m_flUMax =        0xae4;  // float
+        constexpr int m_flVMin =        0xae8;  // float
+        constexpr int m_flVMax =        0xaec;  // float
+}
+namespace DT_MaterialModifyControl {
+        constexpr int m_szMaterialName =        0x9d8;  // const char*
+        constexpr int m_szMaterialVar = 0xad7;  // const char*
+        constexpr int m_szMaterialVarValue =    0xbd6;  // const char*
+        constexpr int m_iFrameStart =   0xce0;  // int
+        constexpr int m_iFrameEnd =     0xce4;  // int
+        constexpr int m_bWrap = 0xce8;  // int
+        constexpr int m_flFramerate =   0xcec;  // float
+        constexpr int m_bNewAnimCommandsSemaphore =     0xcf0;  // int
+        constexpr int m_flFloatLerpStartValue = 0xcf4;  // float
+        constexpr int m_flFloatLerpEndValue =   0xcf8;  // float
+        constexpr int m_flFloatLerpTransitionTime =     0xcfc;  // float
+        constexpr int m_bFloatLerpWrap =        0xd00;  // int
+        constexpr int m_nModifyMode =   0xd08;  // int
+}
+namespace DT_LightGlow {
+        constexpr int m_clrRender =     0x70;   // int
+        constexpr int m_nHorizontalSize =       0x9d8;  // int
+        constexpr int m_nVerticalSize = 0x9dc;  // int
+        constexpr int m_nMinDist =      0x9e0;  // int
+        constexpr int m_nMaxDist =      0x9e4;  // int
+        constexpr int m_nOuterMaxDist = 0x9e8;  // int
+        constexpr int m_spawnflags =    0x9ec;  // int
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_angRotation =   0x12c;  // vector
+        constexpr int m_flGlowProxySize =       0xac4;  // float
+}
+namespace DT_ItemAssaultSuitUseable {
+        constexpr int m_nArmorValue =   0x3450; // int
+        constexpr int m_bIsHeavyAssaultSuit =   0x3454; // int
+}
+namespace DT_Item {
+        constexpr int m_bShouldGlow =   0x3240; // int
+}
+namespace DT_InfoOverlayAccessor {
+        constexpr int m_iTextureFrameIndex =    0x98c;  // int
+        constexpr int m_iOverlayID =    0x9d8;  // int
+}
+namespace DT_FuncSmokeVolume {
+        constexpr int m_Color1 =        0xac4;  // int
+        constexpr int m_Color2 =        0xac8;  // int
+        constexpr int m_MaterialName =  0xacc;  // const char*
+        constexpr int m_ParticleDrawWidth =     0xbcc;  // float
+        constexpr int m_ParticleSpacingDistance =       0xbd0;  // float
+        constexpr int m_DensityRampSpeed =      0xbd4;  // float
+        constexpr int m_RotationSpeed = 0xbd8;  // float
+        constexpr int m_MovementSpeed = 0xbdc;  // float
+        constexpr int m_Density =       0xbe0;  // float
+        constexpr int m_maxDrawDistance =       0xbe4;  // float
+        constexpr int m_spawnflags =    0xbe8;  // int
+        constexpr int m_Collision =     0x320;  // datatable
+        namespace DT_CollisionProperty {
+                constexpr int m_vecMins =       0x8;    // vector
+                constexpr int m_vecMaxs =       0x14;   // vector
+                constexpr int m_nSolidType =    0x22;   // int
+                constexpr int m_usSolidFlags =  0x20;   // int
+                constexpr int m_nSurroundType = 0x2a;   // int
+                constexpr int m_triggerBloat =  0x23;   // int
+                constexpr int m_vecSpecifiedSurroundingMins =   0x2c;   // vector
+                constexpr int m_vecSpecifiedSurroundingMaxs =   0x38;   // vector
+        }
+}
+namespace DT_FuncRotating {
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_angRotation_0_ =        0x12c;  // float
+        constexpr int m_angRotation_1_ =        0x130;  // float
+        constexpr int m_angRotation_2_ =        0x134;  // float
+        constexpr int m_flSimulationTime =      0x268;  // int
+}
+namespace DT_FuncOccluder {
+        constexpr int m_bActive =       0x9dc;  // int
+        constexpr int m_nOccluderIndex =        0x9d8;  // int
+}
+namespace DT_FuncMoveLinear {
+        constexpr int m_vecVelocity =   0x114;  // vector
+        constexpr int m_fFlags =        0x104;  // int
+}
+namespace DT_Func_LOD {
+        constexpr int m_nDisappearMinDist =     0x9d8;  // int
+        constexpr int m_nDisappearMaxDist =     0x9dc;  // int
+}
+namespace DT_TEDust {
+        constexpr int m_flSize =        0x1c;   // float
+        constexpr int m_flSpeed =       0x20;   // float
+        constexpr int m_vecDirection =  0x24;   // vector
+}
+namespace DT_Func_Dust {
+        constexpr int m_Color = 0x9d8;  // int
+        constexpr int m_SpawnRate =     0x9dc;  // int
+        constexpr int m_flSizeMin =     0x9e0;  // float
+        constexpr int m_flSizeMax =     0x9e4;  // float
+        constexpr int m_LifetimeMin =   0x9ec;  // int
+        constexpr int m_LifetimeMax =   0x9f0;  // int
+        constexpr int m_DustFlags =     0xa00;  // int
+        constexpr int m_SpeedMax =      0x9e8;  // int
+        constexpr int m_DistMax =       0x9f4;  // int
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_FallSpeed =     0x9f8;  // float
+        constexpr int m_bAffectedByWind =       0x9fc;  // int
+        constexpr int m_Collision =     0x320;  // datatable
+        namespace DT_CollisionProperty {
+                constexpr int m_vecMins =       0x8;    // vector
+                constexpr int m_vecMaxs =       0x14;   // vector
+                constexpr int m_nSolidType =    0x22;   // int
+                constexpr int m_usSolidFlags =  0x20;   // int
+                constexpr int m_nSurroundType = 0x2a;   // int
+                constexpr int m_triggerBloat =  0x23;   // int
+                constexpr int m_vecSpecifiedSurroundingMins =   0x2c;   // vector
+                constexpr int m_vecSpecifiedSurroundingMaxs =   0x38;   // vector
+        }
+}
+namespace DT_FuncConveyor {
+        constexpr int m_flConveyorSpeed =       0x9d8;  // float
+}
+namespace DT_BreakableSurface {
+        constexpr int m_nNumWide =      0x9dc;  // int
+        constexpr int m_nNumHigh =      0x9e0;  // int
+        constexpr int m_flPanelWidth =  0x9e4;  // float
+        constexpr int m_flPanelHeight = 0x9e8;  // float
+        constexpr int m_vNormal =       0x9ec;  // vector
+        constexpr int m_vCorner =       0x9f8;  // vector
+        constexpr int m_bIsBroken =     0xa04;  // int
+        constexpr int m_nSurfaceType =  0xa08;  // int
+        constexpr int m_RawPanelBitVec =        0xa2c;  // datatable
+}
+namespace DT_FuncAreaPortalWindow {
+        constexpr int m_flFadeStartDist =       0x9d8;  // float
+        constexpr int m_flFadeDist =    0x9dc;  // float
+        constexpr int m_flTranslucencyLimit =   0x9e0;  // float
+        constexpr int m_iBackgroundModelIndex = 0x9e4;  // int
+}
+namespace DT_CFish {
+        constexpr int m_poolOrigin =    0x29f0; // vector
+        constexpr int m_x =     0x29d8; // float
+        constexpr int m_y =     0x29dc; // float
+        constexpr int m_z =     0x29e0; // float
+        constexpr int m_angle = 0x29e8; // float
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_lifeState =     0x25f;  // int
+        constexpr int m_waterLevel =    0x29fc; // float
+}
+namespace DT_FireSmoke {
+        constexpr int m_flStartScale =  0x9d8;  // float
+        constexpr int m_flScale =       0x9dc;  // float
+        constexpr int m_flScaleTime =   0x9e0;  // float
+        constexpr int m_nFlags =        0x9e4;  // int
+        constexpr int m_nFlameModelIndex =      0x9e8;  // int
+        constexpr int m_nFlameFromAboveModelIndex =     0x9ec;  // int
+}
+namespace DT_EnvTonemapController {
+        constexpr int m_bUseCustomAutoExposureMin =     0x9d8;  // int
+        constexpr int m_bUseCustomAutoExposureMax =     0x9d9;  // int
+        constexpr int m_bUseCustomBloomScale =  0x9da;  // int
+        constexpr int m_flCustomAutoExposureMin =       0x9dc;  // float
+        constexpr int m_flCustomAutoExposureMax =       0x9e0;  // float
+        constexpr int m_flCustomBloomScale =    0x9e4;  // float
+        constexpr int m_flCustomBloomScaleMinimum =     0x9e8;  // float
+        constexpr int m_flBloomExponent =       0x9ec;  // float
+        constexpr int m_flBloomSaturation =     0x9f0;  // float
+        constexpr int m_flTonemapPercentTarget =        0x9f4;  // float
+        constexpr int m_flTonemapPercentBrightPixels =  0x9f8;  // float
+        constexpr int m_flTonemapMinAvgLum =    0x9fc;  // float
+        constexpr int m_flTonemapRate = 0xa00;  // float
+}
+namespace DT_EnvScreenEffect {
+        constexpr int m_flDuration =    0x9d8;  // float
+        constexpr int m_nType = 0x9dc;  // int
+}
+namespace DT_EnvScreenOverlay {
+        constexpr int m_iszOverlayNames_0_ =    0x9d8;  // const char*
+        constexpr int m_iszOverlayNames =       0x0;    // array
+        constexpr int m_flOverlayTimes_0_ =     0x13d0; // float
+        constexpr int m_flOverlayTimes =        0x0;    // array
+        constexpr int m_flStartTime =   0x13f8; // float
+        constexpr int m_iDesiredOverlay =       0x13fc; // int
+        constexpr int m_bIsActive =     0x1400; // int
+}
+namespace DT_EnvProjectedTexture {
+        constexpr int m_hTargetEntity = 0x9dc;  // int
+        constexpr int m_bState =        0x9e0;  // int
+        constexpr int m_bAlwaysUpdate = 0x9e1;  // int
+        constexpr int m_flLightFOV =    0x9e4;  // float
+        constexpr int m_bEnableShadows =        0x9e8;  // int
+        constexpr int m_bSimpleProjection =     0x9e9;  // int
+        constexpr int m_bLightOnlyTarget =      0x9ea;  // int
+        constexpr int m_bLightWorld =   0x9eb;  // int
+        constexpr int m_bCameraSpace =  0x9ec;  // int
+        constexpr int m_flBrightnessScale =     0x9f0;  // float
+        constexpr int m_LightColor =    0x9f4;  // int
+        constexpr int m_flColorTransitionTime = 0xa08;  // float
+        constexpr int m_flAmbient =     0xa0c;  // float
+        constexpr int m_SpotlightTextureName =  0xa18;  // const char*
+        constexpr int m_nSpotlightTextureFrame =        0xb24;  // int
+        constexpr int m_flNearZ =       0xa10;  // float
+        constexpr int m_flFarZ =        0xa14;  // float
+        constexpr int m_nShadowQuality =        0xb28;  // int
+        constexpr int m_flProjectionSize =      0xb38;  // float
+        constexpr int m_flRotation =    0xb3c;  // float
+        constexpr int m_iStyle =        0xb2c;  // int
+}
+namespace DT_EnvParticleScript {
+        constexpr int m_flSequenceScale =       0x2a74; // float
+}
+namespace DT_FogController {
+        constexpr int m_fog_enable =    0xa1c;  // int
+        constexpr int m_fog_blend =     0xa1d;  // int
+        constexpr int m_fog_dirPrimary =        0x9dc;  // vector
+        constexpr int m_fog_colorPrimary =      0x9e8;  // int
+        constexpr int m_fog_colorSecondary =    0x9ec;  // int
+        constexpr int m_fog_start =     0x9f8;  // float
+        constexpr int m_fog_end =       0x9fc;  // float
+        constexpr int m_fog_farz =      0xa00;  // float
+        constexpr int m_fog_maxdensity =        0xa04;  // float
+        constexpr int m_fog_colorPrimaryLerpTo =        0x9f0;  // int
+        constexpr int m_fog_colorSecondaryLerpTo =      0x9f4;  // int
+        constexpr int m_fog_startLerpTo =       0xa08;  // float
+        constexpr int m_fog_endLerpTo = 0xa0c;  // float
+        constexpr int m_fog_maxdensityLerpTo =  0xa10;  // float
+        constexpr int m_fog_lerptime =  0xa14;  // float
+        constexpr int m_fog_duration =  0xa18;  // float
+        constexpr int m_fog_HDRColorScale =     0xa24;  // float
+        constexpr int m_fog_ZoomFogScale =      0xa20;  // float
+}
+namespace DT_EnvDOFController {
+        constexpr int m_bDOFEnabled =   0x9d8;  // int
+        constexpr int m_flNearBlurDepth =       0x9dc;  // float
+        constexpr int m_flNearFocusDepth =      0x9e0;  // float
+        constexpr int m_flFarFocusDepth =       0x9e4;  // float
+        constexpr int m_flFarBlurDepth =        0x9e8;  // float
+        constexpr int m_flNearBlurRadius =      0x9ec;  // float
+        constexpr int m_flFarBlurRadius =       0x9f0;  // float
+}
+namespace DT_CascadeLight {
+        constexpr int m_shadowDirection =       0x9d8;  // vector
+        constexpr int m_envLightShadowDirection =       0x9e4;  // vector
+        constexpr int m_bEnabled =      0x9f0;  // int
+        constexpr int m_bUseLightEnvAngles =    0x9f1;  // int
+        constexpr int m_LightColor =    0x9f2;  // int
+        constexpr int m_LightColorScale =       0x9f8;  // int
+        constexpr int m_flMaxShadowDist =       0x9fc;  // float
+}
+namespace DT_EnvAmbientLight {
+        constexpr int m_vecColor =      0xb00;  // vector
+}
+namespace DT_EntityParticleTrail {
+        constexpr int m_iMaterialName = 0xac0;  // int
+        constexpr int m_Info =  0xac4;  // datatable
+        namespace DT_EntityParticleTrailInfo {
+                constexpr int m_flLifetime =    0x8;    // float
+                constexpr int m_flStartSize =   0xc;    // float
+                constexpr int m_flEndSize =     0x10;   // float
+        }
+        constexpr int m_hConstraintEntity =     0xad8;  // int
+}
+namespace DT_EntityFreezing {
+        constexpr int m_vFreezingOrigin =       0x9d8;  // vector
+        constexpr int m_flFrozenPerHitbox =     0x9e4;  // datatable
+        constexpr int m_flFrozen =      0xaac;  // float
+        constexpr int m_bFinishFreezing =       0xab0;  // int
+}
+namespace DT_EntityFlame {
+        constexpr int m_hEntAttached =  0x9d8;  // int
+        constexpr int m_bCheapEffect =  0x9ec;  // int
+}
+namespace DT_EntityDissolve {
+        constexpr int m_flStartTime =   0x9dc;  // float
+        constexpr int m_flFadeOutStart =        0x9e0;  // float
+        constexpr int m_flFadeOutLength =       0x9e4;  // float
+        constexpr int m_flFadeOutModelStart =   0x9e8;  // float
+        constexpr int m_flFadeOutModelLength =  0x9ec;  // float
+        constexpr int m_flFadeInStart = 0x9f0;  // float
+        constexpr int m_flFadeInLength =        0x9f4;  // float
+        constexpr int m_nDissolveType = 0x9f8;  // int
+        constexpr int m_vDissolverOrigin =      0xa00;  // vector
+        constexpr int m_nMagnitude =    0xa0c;  // int
+}
+namespace DT_DynamicLight {
+        constexpr int m_Flags = 0x9d8;  // int
+        constexpr int m_LightStyle =    0x9d9;  // int
+        constexpr int m_Radius =        0x9dc;  // float
+        constexpr int m_Exponent =      0x9e0;  // int
+        constexpr int m_InnerAngle =    0x9e4;  // float
+        constexpr int m_OuterAngle =    0x9e8;  // float
+        constexpr int m_SpotRadius =    0x9ec;  // float
+}
+namespace DT_ColorCorrectionVolume {
+        constexpr int m_bEnabled =      0xa20;  // int
+        constexpr int m_MaxWeight =     0xa24;  // float
+        constexpr int m_FadeDuration =  0xa28;  // float
+        constexpr int m_Weight =        0xa2c;  // float
+        constexpr int m_lookupFilename =        0xa30;  // const char*
+}
+namespace DT_ColorCorrection {
+        constexpr int m_vecOrigin =     0x9d8;  // vector
+        constexpr int m_minFalloff =    0x9e4;  // float
+        constexpr int m_maxFalloff =    0x9e8;  // float
+        constexpr int m_flCurWeight =   0x9f8;  // float
+        constexpr int m_flMaxWeight =   0x9f4;  // float
+        constexpr int m_flFadeInDuration =      0x9ec;  // float
+        constexpr int m_flFadeOutDuration =     0x9f0;  // float
+        constexpr int m_netLookupFilename =     0x9fc;  // const char*
+        constexpr int m_bEnabled =      0xb00;  // int
+        constexpr int m_bMaster =       0xb01;  // int
+        constexpr int m_bClientSide =   0xb02;  // int
+        constexpr int m_bExclusive =    0xb03;  // int
+}
+namespace DT_BreakableProp {
+        constexpr int m_qPreferredPlayerCarryAngles =   0x2994; // vector
+        constexpr int m_bClientPhysics =        0x29a0; // int
+}
+namespace DT_BeamSpotlight {
+        constexpr int m_nHaloIndex =    0x9d8;  // int
+        constexpr int m_bSpotlightOn =  0x9e4;  // int
+        constexpr int m_bHasDynamicLight =      0x9e5;  // int
+        constexpr int m_flSpotlightMaxLength =  0x9e8;  // float
+        constexpr int m_flSpotlightGoalWidth =  0x9ec;  // float
+        constexpr int m_flHDRColorScale =       0x9f0;  // float
+        constexpr int m_nRotationAxis = 0x9dc;  // int
+        constexpr int m_flRotationSpeed =       0x9e0;  // float
+}
+namespace DT_BaseButton {
+        constexpr int m_usable =        0xa08;  // int
+}
+namespace DT_BaseToggle {
+        constexpr int m_vecFinalDest =  0x9ec;  // vector
+        constexpr int m_movementType =  0x9f8;  // int
+        constexpr int m_flMoveTargetTime =      0x9fc;  // float
+}
+namespace DT_BasePlayer {
+        constexpr int m_iFOV =  0x31f4; // int
+        constexpr int m_iFOVStart =     0x31f8; // int
+        constexpr int m_flFOVTime =     0x3218; // float
+        constexpr int m_iDefaultFOV =   0x333c; // int
+        constexpr int m_hZoomOwner =    0x325c; // int
+        constexpr int m_afPhysicsFlags =        0x32fc; // int
+        constexpr int m_hVehicle =      0x3300; // int
+        constexpr int m_hUseEntity =    0x3338; // int
+        constexpr int m_hGroundEntity = 0x150;  // int
+        constexpr int m_iHealth =       0x100;  // int
+        constexpr int m_lifeState =     0x25f;  // int
+        constexpr int m_iAmmo = 0x2d88; // datatable
+        constexpr int m_iBonusProgress =        0x3250; // int
+        constexpr int m_iBonusChallenge =       0x3254; // int
+        constexpr int m_flMaxspeed =    0x3258; // float
+        constexpr int m_fFlags =        0x104;  // int
+        constexpr int m_iObserverMode = 0x3388; // int
+        constexpr int m_bActiveCameraMan =      0x338c; // int
+        constexpr int m_bCameraManXRay =        0x338d; // int
+        constexpr int m_bCameraManOverview =    0x338e; // int
+        constexpr int m_bCameraManScoreBoard =  0x338f; // int
+        constexpr int m_uCameraManGraphs =      0x3390; // int
+        constexpr int m_iDeathPostEffect =      0x3384; // int
+        constexpr int m_hObserverTarget =       0x339c; // int
+        constexpr int m_hViewModel_0_ = 0x3308; // int
+        constexpr int m_hViewModel =    0x0;    // array
+        constexpr int m_iCoachingTeam = 0x2f60; // int
+        constexpr int m_szLastPlaceName =       0x35c4; // const char*
+        constexpr int m_vecLadderNormal =       0x3240; // vector
+        constexpr int m_ladderSurfaceProps =    0x3210; // int
+        constexpr int m_ubEFNoInterpParity =    0x35e8; // int
+        constexpr int m_hPostProcessCtrl =      0x37b8; // int
+        constexpr int m_hColorCorrectionCtrl =  0x37bc; // int
+        constexpr int m_PlayerFog_m_hCtrl =     0x37c4; // int
+        constexpr int m_vphysicsCollisionState =        0x326c; // int
+        constexpr int m_hViewEntity =   0x334c; // int
+        constexpr int m_bShouldDrawPlayerWhileUsingViewEntity = 0x3350; // int
+        constexpr int m_flDuckAmount =  0x2fbc; // float
+        constexpr int m_flDuckSpeed =   0x2fc0; // float
+        constexpr int m_nWaterLevel =   0x25e;  // int
+}
+namespace DT_BaseFlex {
+        constexpr int m_flexWeight =    0x2a38; // datatable
+        constexpr int m_blinktoggle =   0x2be4; // int
+        constexpr int m_viewtarget =    0x2a00; // vector
+}
+namespace DT_BaseEntity {
+        constexpr int m_flSimulationTime =      0x268;  // int
+        constexpr int m_cellbits =      0x74;   // int
+        constexpr int m_cellX = 0x7c;   // int
+        constexpr int m_cellY = 0x80;   // int
+        constexpr int m_cellZ = 0x84;   // int
+        constexpr int m_vecOrigin =     0x138;  // vector
+        constexpr int m_angRotation =   0x12c;  // vector
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_fEffects =      0xf0;   // int
+        constexpr int m_nRenderMode =   0x25b;  // int
+        constexpr int m_nRenderFX =     0x25a;  // int
+        constexpr int m_clrRender =     0x70;   // int
+        constexpr int m_iTeamNum =      0xf4;   // int
+        constexpr int m_iPendingTeamNum =       0xf8;   // int
+        constexpr int m_CollisionGroup =        0x474;  // int
+        constexpr int m_flElasticity =  0x300;  // float
+        constexpr int m_flShadowCastDistance =  0x3a0;  // float
+        constexpr int m_hOwnerEntity =  0x14c;  // int
+        constexpr int m_hEffectEntity = 0x998;  // int
+        constexpr int m_iParentAttachment =     0x2ec;  // int
+        constexpr int m_iName = 0x154;  // const char*
+        constexpr int m_Collision =     0x320;  // datatable
+        namespace DT_CollisionProperty {
+                constexpr int m_vecMins =       0x8;    // vector
+                constexpr int m_vecMaxs =       0x14;   // vector
+                constexpr int m_nSolidType =    0x22;   // int
+                constexpr int m_usSolidFlags =  0x20;   // int
+                constexpr int m_nSurroundType = 0x2a;   // int
+                constexpr int m_triggerBloat =  0x23;   // int
+                constexpr int m_vecSpecifiedSurroundingMins =   0x2c;   // vector
+                constexpr int m_vecSpecifiedSurroundingMaxs =   0x38;   // vector
+        }
+        constexpr int m_iTextureFrameIndex =    0x98c;  // int
+        constexpr int m_bSimulatedEveryTick =   0x93a;  // int
+        constexpr int m_bAnimatedEveryTick =    0x93b;  // int
+        constexpr int m_bAlternateSorting =     0x93c;  // int
+        constexpr int m_bSpotted =      0x93d;  // int
+        constexpr int m_bSpottedBy =    0x93e;  // datatable
+        constexpr int m_bSpottedByMask =        0x980;  // datatable
+        constexpr int m_bIsAutoaimTarget =      0x60;   // int
+        constexpr int m_fadeMinDist =   0x2f4;  // float
+        constexpr int m_fadeMaxDist =   0x2f8;  // float
+        constexpr int m_flFadeScale =   0x2fc;  // float
+        constexpr int m_nMinCPULevel =  0x988;  // int
+        constexpr int m_nMaxCPULevel =  0x989;  // int
+        constexpr int m_nMinGPULevel =  0x98a;  // int
+        constexpr int m_nMaxGPULevel =  0x98b;  // int
+        constexpr int m_flUseLookAtAngle =      0x2cc;  // float
+        constexpr int m_flLastMadeNoiseTime =   0x20;   // float
+        constexpr int m_flMaxFallVelocity =     0xdc;   // float
+        constexpr int m_bEligibleForScreenHighlight =   0x9b9;  // int
+}
+namespace DT_BaseDoor {
+        constexpr int m_flWaveHeight =  0xa08;  // float
+}
+namespace DT_BaseCombatCharacter {
+        constexpr int m_LastHitGroup =  0x2d84; // int
+        constexpr int m_hActiveWeapon = 0x2f08; // int
+        constexpr int m_flTimeOfLastInjury =    0x2f0c; // float
+        constexpr int m_nRelativeDirectionOfLastInjury =        0x2f10; // int
+        constexpr int m_hMyWeapons =    0x2e08; // datatable
+        constexpr int m_hMyWearables =  0x2f14; // datatable
+}
+namespace DT_BoneFollower {
+        constexpr int m_modelIndex =    0x9d8;  // int
+        constexpr int m_solidIndex =    0x9dc;  // int
+}
+namespace DT_BaseAnimating {
+        constexpr int m_nSequence =     0x28c0; // int
+        constexpr int m_nForceBone =    0x268c; // int
+        constexpr int m_vecForce =      0x2680; // vector
+        constexpr int m_nSkin = 0xa1c;  // int
+        constexpr int m_nBody = 0xa20;  // int
+        constexpr int m_nHitboxSet =    0x9fc;  // int
+        constexpr int m_flModelScale =  0x274c; // float
+        constexpr int m_flPoseParameter =       0x2778; // datatable
+        constexpr int m_flPlaybackRate =        0xa18;  // float
+        constexpr int m_flEncodedController =   0xa54;  // datatable
+        constexpr int m_bClientSideAnimation =  0x28a0; // int
+        constexpr int m_bClientSideFrameReset = 0x26c4; // int
+        constexpr int m_bClientSideRagdoll =    0x279;  // int
+        constexpr int m_nNewSequenceParity =    0xa44;  // int
+        constexpr int m_nResetEventsParity =    0xa48;  // int
+        constexpr int m_nMuzzleFlashParity =    0xa64;  // int
+        constexpr int m_hLightingOrigin =       0x2948; // int
+        constexpr int m_flFrozen =      0x26fc; // float
+        constexpr int m_ScaleType =     0x2750; // int
+        constexpr int m_bSuppressAnimSounds =   0x294e; // int
+        constexpr int m_nHighlightColorR =      0xa38;  // int
+        constexpr int m_nHighlightColorG =      0xa3c;  // int
+        constexpr int m_nHighlightColorB =      0xa40;  // int
+}
+namespace DT_AI_BaseNPC {
+        constexpr int m_lifeState =     0x25f;  // int
+        constexpr int m_bPerformAvoidance =     0x2f34; // int
+        constexpr int m_bIsMoving =     0x2f35; // int
+        constexpr int m_bFadeCorpse =   0x2f36; // int
+        constexpr int m_iDeathPose =    0x2f24; // int
+        constexpr int m_iDeathFrame =   0x2f28; // int
+        constexpr int m_iSpeedModRadius =       0x2f2c; // int
+        constexpr int m_iSpeedModSpeed =        0x2f30; // int
+        constexpr int m_bSpeedModActive =       0x2f37; // int
+        constexpr int m_bImportanRagdoll =      0x2f38; // int
+        constexpr int m_flTimePingEffect =      0x2f20; // float
+}
+namespace DT_Beam {
+        constexpr int m_nBeamType =     0x9f4;  // int
+        constexpr int m_nBeamFlags =    0x9f8;  // int
+        constexpr int m_nNumBeamEnts =  0x9e8;  // int
+        constexpr int m_hAttachEntity = 0x9fc;  // datatable
+        constexpr int m_nAttachIndex =  0xa24;  // datatable
+        constexpr int m_nHaloIndex =    0x9f0;  // int
+        constexpr int m_fHaloScale =    0xa58;  // float
+        constexpr int m_fWidth =        0xa4c;  // float
+        constexpr int m_fEndWidth =     0xa50;  // float
+        constexpr int m_fFadeLength =   0xa54;  // float
+        constexpr int m_fAmplitude =    0xa5c;  // float
+        constexpr int m_fStartFrame =   0xa60;  // float
+        constexpr int m_fSpeed =        0xa64;  // float
+        constexpr int m_flFrameRate =   0x9d8;  // float
+        constexpr int m_flHDRColorScale =       0x9dc;  // float
+        constexpr int m_clrRender =     0x70;   // int
+        constexpr int m_nRenderFX =     0x25a;  // int
+        constexpr int m_nRenderMode =   0x25b;  // int
+        constexpr int m_flFrame =       0xa68;  // float
+        constexpr int m_nClipStyle =    0xa6c;  // int
+        constexpr int m_vecEndPos =     0xa70;  // vector
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_vecOrigin =     0x138;  // vector
+}
+namespace DT_BaseViewModel {
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_hWeapon =       0x29d8; // int
+        constexpr int m_nSkin = 0xa1c;  // int
+        constexpr int m_nBody = 0xa20;  // int
+        constexpr int m_nSequence =     0x28c0; // int
+        constexpr int m_nViewModelIndex =       0x29d0; // int
+        constexpr int m_flPlaybackRate =        0xa18;  // float
+        constexpr int m_fEffects =      0xf0;   // int
+        constexpr int m_nAnimationParity =      0x29d4; // int
+        constexpr int m_hOwner =        0x29dc; // int
+        constexpr int m_nNewSequenceParity =    0xa44;  // int
+        constexpr int m_nResetEventsParity =    0xa48;  // int
+        constexpr int m_nMuzzleFlashParity =    0xa64;  // int
+        constexpr int m_bShouldIgnoreOffsetAndAccuracy =        0x29a0; // int
+}
+namespace DT_BaseGrenade {
+        constexpr int m_flDamage =      0x29a8; // float
+        constexpr int m_DmgRadius =     0x2994; // float
+        constexpr int m_bIsLive =       0x2991; // int
+        constexpr int m_hThrower =      0x29b0; // int
+        constexpr int m_vecVelocity =   0x114;  // vector
+        constexpr int m_fFlags =        0x104;  // int
+}
+namespace DT_BaseCombatWeapon {
+        constexpr int m_iViewModelIndex =       0x3250; // int
+        constexpr int m_iWorldModelIndex =      0x3254; // int
+        constexpr int m_iWorldDroppedModelIndex =       0x3258; // int
+        constexpr int m_iState =        0x3268; // int
+        constexpr int m_hOwner =        0x3240; // int
+        constexpr int m_iClip1 =        0x3274; // int
+        constexpr int m_iClip2 =        0x3278; // int
+        constexpr int m_iPrimaryReserveAmmoCount =      0x327c; // int
+        constexpr int m_iSecondaryReserveAmmoCount =    0x3280; // int
+        constexpr int m_hWeaponWorldModel =     0x3264; // int
+        constexpr int m_iNumEmptyAttacks =      0x3260; // int
+}
+namespace DT_BaseWeaponWorldModel {
+        constexpr int m_nModelIndex =   0x258;  // int
+        constexpr int m_nBody = 0xa20;  // int
+        constexpr int m_fEffects =      0xf0;   // int
+        constexpr int m_hCombatWeaponParent =   0x2a00; // int
 }
