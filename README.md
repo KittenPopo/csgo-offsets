@@ -1,6 +1,6 @@
 # csgo-offsets
-An updated list of all CSGO netvar offsets.
+Tons of offsets and pattern signatures for various functions and variables in CSGO.
 
-Feel free to reference any of these for your cheat.
-These offsets were dumped at the time of the commit, and should stay updated.
-All netvar offests in CSGO are dumped here.
+Includes:
+> All updated netvar offsets
+> Signatures for over 400 different CSGO functions
