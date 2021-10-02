@@ -243,6 +243,7 @@
 	SendSnapshot() = "83 ? ? ? ? ? ? 7F DC 8B";
 	ViewDrawFade() = "A1 ? ? ? ? B9 ? ? ? ? FF 60 2C";
 	WriteDeltaEntities() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 89 55 F8 8B";
+	CNetChan::SendDatagram() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57 8B F9 89 7C 24 18";
 }
 
 [PANORAMA.dll] {
