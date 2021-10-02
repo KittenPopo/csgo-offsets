@@ -11,8 +11,10 @@
 	CBaseAchievement::IncrementCount() = "8B 46 0C 8D 4E 0C 8B 40 14 FF D0 84 C0 0F 85 ? ? ? ? 8B" - 4;
 	CBaseAchievement::OnComponentEvent() = "55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B 58 50";
 	CBaseEntity::EmitSound() = "55 8B EC 81 ? ? ? ? ? 53 8B C1";
+	CBaseEntity::DrawBrushModel() = "55 8B EC 53 56 57 8B F9 8B 0D ? ? ? ? 8B 99 ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF 15 ? ? ? ? 8B 45 0C'; 
 	CBaseLesson::IsTimedOut() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B";
 	CC_CL_Find_Ent() = "55 8B EC 51 57 8B 7D 08 8B 07";
+	CHLClient::FrameStageNotify() = "55 8B EC 8B 0D ?? ?? ?? ?? 8B 01 8B 80 ?? ?? ?? ?? FF D0 A2 ?? ?? ?? ??";
 	CCascadeLightManager::InitRenderTargets() = "56 8B F1 C7 ? ? ? ? ? 8B ? ? ? ? ? 85 C9";
 	CClientLeafSystem::ProjectFlashlight() = "55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 5D 08";
 	CClientShadowMgr::BuildFlashlight() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5D EC 8B 01";
@@ -191,6 +193,7 @@
 	ValidateUserCmd() = "55 8B EC 8B 55 08 3B CA";
 	WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9"; 
 	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7";
+	BuildTransformations() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 56 57 8B F9 8B 0D ? ? ? ? 89 7C 24 28";
 }
 
 [ENGINE.dll] {
@@ -243,6 +246,7 @@
 	SendSnapshot() = "83 ? ? ? ? ? ? 7F DC 8B";
 	ViewDrawFade() = "A1 ? ? ? ? B9 ? ? ? ? FF 60 2C";
 	WriteDeltaEntities() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 89 55 F8 8B";
+	CNetChan::SendDatagram() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57 8B F9 89 7C 24 18";
 }
 
 [PANORAMA.dll] {
