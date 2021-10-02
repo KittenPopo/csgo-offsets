@@ -190,6 +190,7 @@
 	ValidateUserCmd() = "55 8B EC 8B 55 08 3B CA";
 	WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9"; 
 	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7";
+	BuildTransformations() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 56 57 8B F9 8B 0D ? ? ? ? 89 7C 24 28";
 }
 
 [ENGINE.dll] {
