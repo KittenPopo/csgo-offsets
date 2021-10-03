@@ -209,7 +209,7 @@
 	CHLTVServer::ExpandDeltaFrameToFullFrame() = "55 8B EC 83 EC 38 8B ? ? ? ? ? 53 56 57 8B";
 	CHLTVServer::RunFrame() = "8B ? ? ? ? ? 8B 14 C2 EB DD 33 D2";
 	CHLTVServer::UpdateTick() = "55 8B EC 83 EC 14 53 56 8B F1 8B ? ? ? ? ? 57 8B";
-	CL_Move() = "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D ? ? ? ? 8A"; 
+	CL_Move() = "55 8B EC 81 EC ? ? ? ? 53 56 8A F9"; 
 	CL_SendMove() = "55 8B EC A1 ? ? ? ? 81 EC ? ? ? ? B9 ? ? ? ? 53 8B 98"; 
 	CNetworkStringTableContainer::DirectUpdate() = "55 8B EC 51 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0";
 	CNetworkStringTableContainer::WriteBaselines() = "55 8B EC 83 EC 60 53 56 8B F1 8B";
