@@ -11,7 +11,7 @@
 	CBaseAchievement::IncrementCount() = "8B 46 0C 8D 4E 0C 8B 40 14 FF D0 84 C0 0F 85 ? ? ? ? 8B" - 4;
 	CBaseAchievement::OnComponentEvent() = "55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B 58 50";
 	CBaseEntity::EmitSound() = "55 8B EC 81 ? ? ? ? ? 53 8B C1";
-	CBaseEntity::DrawBrushModel() = "55 8B EC 53 56 57 8B F9 8B 0D ? ? ? ? 8B 99 ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF 15 ? ? ? ? 8B 45 0C'; 
+	CBaseEntity::DrawBrushModel() = "55 8B EC 53 56 57 8B F9 8B 0D ? ? ? ? 8B 99 ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF 15 ? ? ? ? 8B 45 0C"; 
 	CBaseLesson::IsTimedOut() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B";
 	CC_CL_Find_Ent() = "55 8B EC 51 57 8B 7D 08 8B 07";
 	CHLClient::FrameStageNotify() = "55 8B EC 8B 0D ?? ?? ?? ?? 8B 01 8B 80 ?? ?? ?? ?? FF D0 A2 ?? ?? ?? ??";
