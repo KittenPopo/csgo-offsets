@@ -93,8 +93,8 @@
 	CParticleSystemMgr::DrawRenderCache() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89 7C 24 38";
 	CPhysicsSystem::PhysicsSimulate() = "55 8B EC 83 EC 7C 8B ? ? ? ? ? 53 56 57 8B";
 	CPrediction::ProcessMovement() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75 08";
-	CPrediction::Update() = "55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B";
 	CPrediction::RunCommand() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75";
+	CPrediction::Update() = "55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B";
 	CProtoBufMsg::BAsyncSendProto() = "55 8B EC 83 EC 1C 89 4D F8 8B";
 	CRopeManager::DrawRenderCache() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B D1 8B";
 	CScriptedIconLesson::FireGameEvent() = "55 8B EC 83 EC 08 57 8B F9 8B";
