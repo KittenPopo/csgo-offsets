@@ -94,6 +94,7 @@
 	CPhysicsSystem::PhysicsSimulate() = "55 8B EC 83 EC 7C 8B ? ? ? ? ? 53 56 57 8B";
 	CPrediction::ProcessMovement() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75 08";
 	CPrediction::Update() = "55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B";
+	CPrediction::RunCommand() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75";
 	CProtoBufMsg::BAsyncSendProto() = "55 8B EC 83 EC 1C 89 4D F8 8B";
 	CRopeManager::DrawRenderCache() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B D1 8B";
 	CScriptedIconLesson::FireGameEvent() = "55 8B EC 83 EC 08 57 8B F9 8B";
@@ -115,7 +116,8 @@
 	C_BaseAnimating::FrameAdvance() = "55 8B EC 83 E4 C0 83 EC 38 56 8B"; 
 	C_BaseAnimating::StandardBlendingRules() = "55 8B EC 83 E4 F0 B8 F8 10"; 
 	C_BaseCombatWeapon::DrawModel() = "55 8B EC 51 56 8B F1 8B 0D ? ? ? ? 57 8B B9"; 
-	C_BaseEntity::EmitSound() = "55 8B EC 83 EC 4C 53 8B D9 8B "; 
+	C_BaseEntity::EmitSound() = "55 8B EC 83 EC 4C 53 8B D9 8B"; 
+	C_BaseEntity::SetCollisionBounds() = "56 57 8B F9 8B 0D ? ? ? ? F6";
 	C_CSPlayer::AttachmentHelper() = "55 8B EC 83 EC 48 53 8B 5D 08 89 4D F4"; 
 	C_CSPlayer::GetEyePosition() = "55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF 90"; 
 	C_CSPlayer::InvalidatePhysicsRecursive() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C3"; 
@@ -156,7 +158,7 @@
 	GlassImpactCallback() = "55 8B EC 81 ? ? ? ? ? 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
 	GloweEffectSpectator() = "55 8B EC 83 EC 14 53 8B 5D 0C 56 57 85 DB 74"; 
 	HasC4() = "56 8B F1 85 F6 74 31 8B 06 8B 80 ? ? ? ? FF D0 84 C0 74 ?"; 
-	InterpolateServerEntities() = "55 8B EC 83 EC 1C 8B 0D ? ? ? ? 53 "; 
+	InterpolateServerEntities() = "55 8B EC 83 EC 1C 8B 0D ? ? ? ? 53"; 
 	IsEntityBreakable() = "55 8B EC 51 56 8B F1 85 F6 74 ? 83 BE"; 
 	IsInIronsight() = "53 56 8B F1 57 8B 4E 3C 85 C9 0F 84 ? ? ? ? 8B 81"; 
 	KeyDown() = "56 57 8B FA 83 C8"; 
@@ -173,7 +175,7 @@
 	SetDormant() = "55 8B EC 53 8B 5D 08 56 8B F1 88 9E ? ? 00 00"; 
 	SetUpAimMatrix() = "55 8B EC 81 EC ? ? ? ? 53 56 57 8B 3D"; 
 	SetUpLean() = "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3"; 
-	SetUpMovement() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 57 8B 3D ? ? ? ? 8B "; 
+	SetUpMovement() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 57 8B 3D ? ? ? ? 8B"; 
 	SetUpVelocity() = "55 8B EC 83 E4 F8 83 EC 30 56 57 8B 3D"; 
 	SetUpWeaponAction() = "55 8B EC 51 53 56 57 8B F9 8B 77 60"; 
 	SetUpWholeBodyAction() = "55 8B EC 83 EC 08 56 57 8B F9 8B 77"; 
@@ -187,9 +189,9 @@
 	SolveDependencies() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 8B 81"; 
 	ThreadedBoneSetup() = "55 8B EC 8B 0D ? ? ? ? 83 EC 24"; 
 	UTIL_TraceLine() = "55 8B EC 83 E4 F0 83 EC 7C 56 52";
-	UpdateClientSideAnimations() = "8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 85 DB";
+	UpdateClientSideAnimations() = "8B 0D ? ? ? ? 53 56 57 8B 99 ? ? ? ? 85 DB 74 1C";
 	UpdatePanelInfo() = "A4 05 ? ? ? ? 7D 2F E7 05 7D 2F";
-	UpdateTargets() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 33 D2"; 
+	UpdateTargets() = "55 8B EC 83 E4 F0 81 EC ? ? ? ? 33 D2 89"; 
 	ValidateUserCmd() = "55 8B EC 8B 55 08 3B CA";
 	WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9"; 
 	WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53 56 8B D9 C7";
