@@ -1,5 +1,5 @@
 [CLIENT.dll] {
-		CryptoPP::_dynamic_initializer_for__DEFAULT_CHANNEL__() = "B9 ? ? ? ? E8 ? ? ? ?";
+	CryptoPP::_dynamic_initializer_for__DEFAULT_CHANNEL__() = "B9 ? ? ? ? E8 ? ? ? ?";
 	InitFunc_882() = "FF ? ? ? ? ? 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83 C4 14 A3 ? ? ? ?";
 	InitFunc_267() = "FF ? ? ? ? ? 6A 01";
 	InitFunc_388() = "55 8B EC 51 C7 ? ? ? ? ? ?";
@@ -695,7 +695,7 @@
 }
 
 [ENGINE.dll] {
-		AMP_Alloc() = "55 8B EC 83 EC 10 53";
+	AMP_Alloc() = "55 8B EC 83 EC 10 53";
 	BLoadUserVideoConfigFileFromDisk() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 53 56 57 8B F9 89";
 	BindToggle() = "55 8B EC 81 ? ? ? ? ? 56 8B 75 08 8B";
 	BuildSpriteLoadName() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F2";
