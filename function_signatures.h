@@ -512,7 +512,7 @@ namespace "CLIENT.dll" {
 	CUtlRBTree() = "55 8B EC 83 EC 10 53 56 8B D9 57 89 5D F0";
 	GetModEncryptionKey() = "56 8B F1 B9 ? ? ? ? 6A";
 	SocketWouldBlock() = "55 8B EC 53 56 8B F1 57 FF";
-	CryptoPP::BitPrecision<unsigned int>() = "8B 44 24 04 57";
+	CryptoPP::BitPrecision<uint32_t>() = "8B 44 24 04 57";
 	CryptoPP::Algorithm::Algorithm() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ?";
 	CryptoPP::BitBucket::AlgorithmName() = "51 56 8B 74";
 	CryptoPP::SimpleKeyingInterface::SetKey() = "57 FF 74 24 0C";
@@ -546,7 +546,7 @@ namespace "CLIENT.dll" {
 	CryptoPP::Store::GetNextMessage() = "56 8B F1 80 7E 10 00 75";
 	CryptoPP::ByteQueue::IsolatedInitialize() = "51 56 8B F1 C7 ? ? ? ? ? ? ? 8B 4C";
 	CryptoPP::ByteQueue::Peek() = "8B 41 14 8B 50";
-	CryptoPP::BytePrecision<unsigned __int64>() = "8B 44 24 04 55";
+	CryptoPP::BytePrecision<uint64_t>() = "8B 44 24 04 55";
 	CryptoPP::BERGeneralDecoder::BERGeneralDecoder() = "53 56 6A 00 8B F1";
 	CryptoPP::BERDecodeNull() = "51 56 8B 74 24 0C 8D";
 	CryptoPP::DEREncodeNull() = "51 56 8B 74 24 0C 8D 4C 24 04";
@@ -1106,7 +1106,6 @@ namespace "ENGINE.dll" {
 	render_blanks() = "55 8B EC 8B 45 08 56 57 83";
 	send_bits() = "55 8B EC 51 53 8B 5D 08 57 89";
 	snd_print_dsp_effect() = "55 8B EC 8B 45 08 83 38 02 74 0E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? FF ? ? ? ? ?";
-	std::less<std::pair<std::string,int>>::operator() = "55 8B EC 53 8B D9 56 57 8D 4B";
 	string_operation() = "55 8B EC 53 8B 5D 08 56 8B";
 	stringtabledictionary() = "83 ? ? ? ? ? ? 7D 0F 68 ? ? ? ?";
 	sv_ShutDown() = "8A ? ? ? ? ? 8B ? ? ? ? ? 84 D2";
