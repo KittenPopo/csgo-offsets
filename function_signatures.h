@@ -1,4 +1,5 @@
 namespace "CLIENT.dll" {
+	C_BaseEntity::PlayFootstepSound() = "55 8B EC ? ? ? ? ? 53 56 57 8B F9 85 C0 ? ? ? ? ? ? ? ? 85 DB";
 	CMsgSteamDatagramLinkInstantaneousStats::Clear() = "80 79 2C";
 	CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve::Clear() = "56 8B F1 8B 46 30 84";
 	CAchievementMgr::OnEvent() = "55 8B EC 53 56 57 8B 7D 08 8B D9 85";
