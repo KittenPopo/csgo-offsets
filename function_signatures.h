@@ -880,7 +880,6 @@ namespace "CLIENT.dll" {
 	_jpeg_stdio_src() = "53 57 8B F9 8B DA 83 7F 18";
 	_jpeg_suppress_tables() = "8B 41 58 85 C0 74 07";
 	_lambda_4f2c1eaeead2a5fc776db5b62ea0fb9b_::operator() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56";
-	_lambda_83425c3f06effba31f387a263a50d5fb_::operator() = "8B FF 56 8B F1 8B 
 	_lambda_af0d5e41dc07595f2c52435db9a0efad_::operator() = "8B FF 56 8B F1 8B 46 04 8B 0E 0F B6";
 	_lambda_b163b37eafe0a13f2c371fafeb0365c9_::operator() = "8B FF 55 8B EC 83 EC 14 56 57";
 	_lambda_b51c0495177f500e782686251704ae76_::operator() = "8B FF 55 8B EC 51 51 56 8B F1 57 8B";
