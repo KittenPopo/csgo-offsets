@@ -1,0 +1,59 @@
+* {
+	color: white;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+#searchInput {
+  background-color: #141414;
+  background-image: url('searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #636363; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  display: block;
+}
+
+#searchUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchResult {
+  border: 1px solid #ddd; /* Add a border to all links */
+  border-style: solid;
+  border-color: #636363;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #141414; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  color: white;  /* White text */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+.searchResult:hover {
+  background-color: #1F1F1F; /* Add a hover effect to all links, except for headers */
+}
+
+.result_BytePattern {
+	color: #b1eb34;
+	font-size: 15px;
+	background-color: #1C1C1C;
+	display: inline;
+}
+
+.result_DllName {
+	color: #7a7a7a;
+	font-size: 15px;
+	background-color: #1C1C1C;
+	display: inline;
+}
