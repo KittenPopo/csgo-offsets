@@ -1,4 +1,6 @@
 namespace "CLIENT.dll" {
+	C_BaseViewModel::ShouldFlipModel() = "8B 89 ? ? ? ? 56 57 83 F9 FF";
+	CSequenceTransitioner::CheckForSequenceChange() = "55 8B EC 51 53 8B 5D 08 ? ? ? 57 85 DB 0F 84";
 	AccumulatePose() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1";
 	AccumulateWeaponPreviewSettingsFloatValue() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 57 6A";
 	AchievementIDCompare() = "55 8B EC 8B 45 08 56";
