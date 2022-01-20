@@ -1,3 +1,8 @@
+// NOTICE:
+// i, kittenpopo, am not a web developer
+// i dont really know how js works or what the fuck im doing
+// but it works soooo
+
 funcLoadedCount = 0
 
 function CreateSearchResult(lineNum, funcName, funcSig, dllName) {
