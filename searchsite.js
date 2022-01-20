@@ -30,7 +30,7 @@ function HandleSigsText(text, dllName) {
 		}
 		
 		var funcName = lineParts[0];
-		var funcSig = lineParts[1];
+		var funcSig = lineParts[1].replace(";","");
 		CreateSearchResult(i, funcName, funcSig, dllName);
 	}
 	
