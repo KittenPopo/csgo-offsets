@@ -57,7 +57,6 @@ function LoadHandleSigsFile(file, dllName) {
 }
 
 // https://www.w3schools.com/howto/howto_js_filter_lists.asp
-// note: i have no idea what the fuck im doing im not a web dev
 function UpdateSearch() {
 	var input = document.getElementById('searchInput');
 	var filter = input.value.toUpperCase();
