@@ -1,13 +1,16 @@
+funcLoadedCount = 0
+
 function CreateSearchResult(lineNum, funcName, funcSig, dllName) {
 	var searchResultDiv = document.createElement("div");
 	searchResultDiv.classList.add("searchResult");
 	
 	searchResultDiv.innerHTML = funcName + "\n<br>\n";
-	searchResultDiv.innerHTML += "<div class=\"result_BytePattern\">" + funcSig + "</div>";
-	searchResultDiv.innerHTML += "<div class=\"result_DllName\"> in " + dllName + ".dll </div>";
+	searchResultDiv.innerHTML += "<div class=\"code_Red\">" + dllName + ".dll</div>";
+	searchResultDiv.innerHTML += "<div class=\"code_Gray\"> -> </div>";
+	searchResultDiv.innerHTML += "<div class=\"code_Green\">" + funcSig + "</div>";
 	
-	console.log("Created " + searchResultDiv.innerHTML + ", appending...")
 	g_SearchUL.appendChild(searchResultDiv);
+	funcLoadedCount++;
 }
 
 function HandleSigsText(text, dllName) {
@@ -20,7 +23,7 @@ function HandleSigsText(text, dllName) {
 			continue;
 		}
 		
-		var lineParts = lines[i].split("=");
+		var lineParts = lines[i].split(" = ");
 		if (lineParts.length != 2) {
 			console.warn(" -> INVALID LINE: " +  lines[i]);
 			continue;
@@ -30,6 +33,8 @@ function HandleSigsText(text, dllName) {
 		var funcSig = lineParts[1];
 		CreateSearchResult(i, funcName, funcSig, dllName);
 	}
+	
+	g_FuncCountText.innerHTML = "Functions loaded: " + funcLoadedCount;
 }
 
 function LoadHandleSigsFile(file, dllName) {
@@ -48,7 +53,7 @@ function LoadHandleSigsFile(file, dllName) {
 
 // https://www.w3schools.com/howto/howto_js_filter_lists.asp
 // note: i have no idea what the fuck im doing im not a web dev
-function UpdateSeach() {
+function UpdateSearch() {
 	var input = document.getElementById('searchInput');
 	var filter = input.value.toUpperCase();
 	var ul = document.getElementById("searchUL");
@@ -75,6 +80,9 @@ function Init() {
 	// lol
 	g_SearchUL = document.getElementById("searchUL");
 	g_SearchResults = document.getElementById("searchUL").getElementsByClassName("searchResult");
+	g_FuncCountText = document.getElementById("funcCount");
 	
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/data/rawsigs_client.txt", "client");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/client_functions.c", "client");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/engine_functions.c", "engine");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/server_functions.c", "server");
 }
