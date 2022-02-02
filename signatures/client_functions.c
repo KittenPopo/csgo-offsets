@@ -1,2870 +1,5107 @@
-CAchievementMgr::SaveGlobalState()=55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-UpdateClientSideAnimations()=8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 85 DB 74 1C=vprof
-CBaseLesson::IsTimedOut()=55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF=vprof
-CIconLesson::ShouldDisplay()=53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B CE=vprof
-CIconLesson::IsVisible()=53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 83=vprof
-CScriptedIconLesson::OnOpen()=55 8B EC 83 EC 20 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 E0=vprof
-CScriptedIconLesson::Update()=55 8B EC 83 EC 18 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CScriptedIconLesson::FireGameEvent()=55 8B EC 83 EC 08 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CScriptedIconLesson::ProcessElements()=55 8B EC 83 E4 F8 83 EC 0C 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CScriptedIconLesson::ProcessElement()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 F8 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 5D=vprof
-CCascadeLightManager::InitRenderTargets()=56 8B F1 C7 ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 18 83 ? ? ? ? ? ? 74 0F 8B 01 FF 50 2C C7 ? ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 18 83 ? ? ? ? ? ? 74 0F 8B 01 FF 50 2C C7 ? ? ? ? ? ? ? ? ? 8D=vprof
-CRopeManager::DrawRenderCache()=55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B D1 8B=vprof
-CBaseEntity::EmitSound()=55 8B EC 81 ? ? ? ? ? 53 8B C1 F3=vprof
-CSprite::GetToolRecordingState()=8B 45 34 8B 5D 38 89=vprof
-CClientLeafSystem::ProjectFlashlight()=55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 5D=vprof
-CVisibleShadowList::FindShadows()=55 8B EC 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? A1=vprof
-CClientShadowMgr::InitDepthTextureShadows()=56 8B F1 8B 06 FF ? ? ? ? ? 8B 4E 14=vprof
-CClientShadowMgr::UpdateFlashlightState()=55 8B EC 83 E4 F8 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 44 24 0C 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B=vprof
-CClientShadowMgr::UpdateProjectionState()=55 8B EC 83 E4 F8 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 44 24 0C 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 0F=vprof
-CClientShadowMgr::BuildPerspectiveWorldToFlashlightMatrix()=55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 56 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 75 0C 8D 46 0C 50 56 8D 45=vprof
-CClientShadowMgr::BuildFlashlight()=55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5D EC=vprof
-CClientShadowMgr::UpdateBrushShadow()=8B ? ? ? ? ? 8B ? ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 57=vprof
-CClientShadowMgr::ReprojectShadows()=55 8B EC 83 EC 08 A1 ? ? ? ? 56 57 8B F9 8B=vprof
-CClientShadowMgr::UpdateProjectedTextureInternal()=55 8B EC 53 8B 5D 08 56 0F=vprof
-CClientShadowMgr::UpdateProjectedTexture()=55 8B EC 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85=vprof
-CClientShadowMgr::CullReceiver()=55 8B EC 83 EC 38 53 56 57 8B 7D 08=vprof
-CClientShadowMgr::ComputeShadowDepthTextures()=8B ? ? ? ? ? 8B ? ? ? ? ? 89 44 24 68=vprof
-CClientShadowMgr::ComputeShadowTextures()=55 8B EC 83 E4 C0 83 EC 34 53 8B D9 8B=vprof
-CClientShadowMgr::DrawDeferredShadows()=8B ? ? ? ? ? 83 ? ? ? ? ? ? 74 22=vprof
-CDetailObjectSystem::CountSpritesInLeafList()=55 8B EC 83 EC 10 89 4D F4 8B ? ? ? ? ? 8B=vprof
-CDetailObjectSystem::SortSpritesBackToFront()=55 8B EC 83 EC 34 53 56 8B F1 8B ? ? ? ? ? 57=vprof
-CDetailObjectSystem::RenderTranslucentDetailObjects()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 3C=vprof
-CDetailObjectSystem::RenderTranslucentDetailObjectsInLeaf()=55 8B EC 83 E4 F8 83 EC 08 56 57 8B F9 8B=vprof
-CFlashlightEffect::UpdateLightTopDown()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CFlashlightEffect::UpdateLight()=55 8B EC 81 ? ? ? ? ? 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? A1=vprof
-CFlashlightEffect::UpdateDefaultFlashlightState()=55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF=vprof
-CModelRenderSystem::DrawModels()=55 8B EC 83 EC 4C 83=vprof
-CModelRenderSystem::ComputeTranslucentRenderData()=8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 E8 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B=vprof
-CModelRenderSystem::DrawBrushModels()=55 8B EC 83 E4 F8 83 EC 24 53 56 57 8B 7D 0C 8B D9=vprof
-CParticleEffectBinding::DrawModel()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 14 8B ? ? ? ? ? 89=vprof
-CParticleMSG::UpdateNewEffects()=55 8B EC 81 ? ? ? ? ? 53 8B D9 F3=vprof
-CNewParticleEffect::DrawModel()=55 8B EC 83 E4 F8 83 EC 54 53 8B D9=vprof
-CPhysicsSystem::PhysicsSimulate()=55 8B EC 83 EC 7C 8B ? ? ? ? ? 53 56=vprof
-CPrediction::ProcessMovement()=55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75=vprof
-CPrediction::Update()=55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B=vprof
-CSprite::DrawModel()=55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5D F8=vprof
-CSpriteTrail::DrawModel()=55 8B EC 83 E4 F0 81 ? ? ? ? ? 56 57 8B F9 8B ? ? ? ? ? 89 7C 24 14 8B ? ? ? ? ? 89 44 24 2C 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83=vprof
-CViewRender::Render()=F3 ? ? ? ? ? ? ? 56 57 8B F9 8B ? ? ? ? ? F3=vprof
-SetupRenderablesList()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89=vprof
-BuildWorldRenderLists()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B F9 8B=vprof
-DrawWorld()=55 8B EC 51 A1 ? ? ? ? F3 ? ? ? ? 53=vprof
-CViewRender::DrawTranslucentWorldInLeaves()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 89 74 24 10 8B ? ? ? ? ? 89=vprof
-CViewRender::DrawTranslucentWorldAndDetailPropsInLeaves()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 80 7D 20=vprof
-CViewRender::Draw3dSkyboxworld()=56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83=vprof
-CShadowDepthView::Draw()=55 8B EC 83 E4 F8 83 EC 28 56 57 8B F9 8B ? ? ? ? ? 89=vprof
-CEconItem::BAddToMessage::std::string()=55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6=vprof
-CEconItemSchema::GetAttributeDefinitionByName()=55 8B EC 8B 01 5D FF ? ? ? ? ? CC CC CC CC 55 8B EC 53 56=vprof
-CEconItemView::GetStaticData()=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85=vprof
-SnowFall()=55 8B EC 83 E4 F8 83 EC 4C 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89 44 24 30=vprof
-GlassImpactCallback()=55 8B EC 81 ? ? ? ? ? 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CGCClient()=55 8B EC 53 8B D9 8B ? ? ? ? ? 56 8B ? ? ? ? ? 85=vprof
-CJobMgr::BResumeSleepingJobs()=56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 8D=vprof
-CJobMgr::BResumeYieldingJobs()=55 8B EC 53 56 57 8B F1 FF=vprof
-CProtoBufMsg::BAsyncSendProto()=55 8B EC 83 EC 1C 89 4D F8=vprof
-GCHost()=55 8B EC 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? E8=vprof
-GetMessage()=55 8B EC 51 8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89 75 FC 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 7D 0C=vprof
-CPanel2D::Initialize()=55 8B EC 83 E4 F8 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89=vprof
-CPanel2D::BSetProperty()=55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF=vprof
-Clabel::OnMouseMove()=55 8B EC F3 ? ? ? ? 83 EC 18=vprof
-CImagePanel::SetImage()=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 4B=vprof
-CMoviePanel::Clear()=55 8B EC 83 EC 10 53 56 8B F1 8B ? ? ? ? ? 57=vprof
-CMoviePanel::Paint()=55 8B EC 83 EC 18 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85=vprof
-CHTML::Paint()=56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF=vprof
-CDebugLayout::AppendElementOpenTag()=55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89=vprof
-CDebugLayout::Build()=55 8B EC 83 E4 F8 83 EC 34 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89=vprof
-UpdatePanelInfo()=24 FF 22=vprof
-CDebugPanelComputed::Build()=55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 89 7C 24 28=vprof
-CDebugPanelStyle::GetStyleBuffer()=55 8B EC 83 E4 F8 83 EC 14 53 8B D9 8B ? ? ? ? ? 56 57 89 5C=vprof
-CDebugPanelStyle::Build()=55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB=vprof
-CDebugPanelStyle::AppendElementStyles()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 F8 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 47=vprof
-CDebugPanelStyle::AppendCascadeStyles()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 5C=vprof
-CDebugPanelStyle::AppendInheritedStyles()=55 8B EC 83 EC 54 53 8B D9 8B ? ? ? ? ? 56=vprof
-CDebugPanelStyle::AppendStyleInfoForProperty()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 89 4C 24 58=vprof
-CDebugPanelStyle::AppendAnimations()=55 8B EC 83 E4 F8 83 EC 4C 53 8B D9 8B=vprof
-CDebugPanelStyle::OnPanelStyleChanged()=55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB=vprof
-CGrid::CGrid()=55 8B EC 83 E4 F8 56 57 8B F1 6A 00 FF 75 0C FF 75 08 C7 ? ? ? ? ? A1 ? ? ? ? 89 46 08 A1 ? ? ? ? 6A 00 89 46 0C E8 ? ? ? ? C7 ? ? ? ? ? A1=vprof
-CGrid::UpdateVecVisible()=55 8B EC 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 F4 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? C7=vprof
-CGrid::GetVisibleChildCount()=56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 1C 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 80 ? ? ? ? ? ? 74 0D 8B CE E8 ? ? ? ? 8B ? ? ? ? ? 8B ? ? ? ? ? 85=vprof
-CGrid::GetVisibleChild()=55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 1C=vprof
-CGrid::MoveSelection()=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 83=vprof
-CGrid::OnLayoutTraverse()=55 8B EC 83 E4 F8 83 EC 4C 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89 44 24 34=vprof
-CGrid::SetFocusedChild()=55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89=vprof
-CGrid::EventInputFocusSet()=55 8B EC 51 51 53 56 8B F1 8B=vprof
-CGrid::GetFocusedChildVisibleIndex()=55 8B EC 83 EC 10 53 56 57 8B F9 8B ? ? ? ? ? 89 7D F8=vprof
-CGrid::MotionTimeout()=55 8B EC 83 EC 0C 53 56 8B F1 8B ? ? ? ? ? 57 8B=vprof
-CGrid::UpdateChildPositions()=55 8B EC 83 E4 F8 83 EC 78 56 57 8B F9 8B ? ? ? ? ? 89=vprof
-CParticleCollection::InitializeNewParticles()=55 8B EC 83 EC 14 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89=vprof
-CParticleCollection::Simulate()=55 8B EC 83 E4 F8 83 EC 30 56 57 8B F9 0F=vprof
-CParticleSystemMgr::DrawRenderCache()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89=vprof
-CParticleCollection::GenerateSortedIndexList()=55 8B EC 83 E4 F8 51 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? F3 ? ? ? ? 8B=vprof
-_CodeRGBBlock()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B 75 08 57 85=pdb
-_CodeAlphaBlock()=81 ? ? ? ? ? 8B ? ? ? ? ? ? 53 55=pdb
-GCSDK::_dynamic_initializer_for__g_RegisterLock_SteamID__()=6A 01 68 ? ? ? ? 6A 01=pdb
-GCSDK::_dynamic_initializer_for__g_RegisterLock_Party__()=6A 00 68 ? ? ? ? 6A 02 B9=pdb
-GCSDK::_dynamic_initializer_for__g_RegisterLock_Lobby__()=6A 00 68 ? ? ? ? 6A 03 B9=pdb
-_dynamic_initializer_for__network_connection_token_default__()=B9 ? ? ? ? E8 ? ? ? ? 6A 00 68 ? ? ? ? B9=pdb
-_dynamic_initializer_for__g_ProtobufLogHandler__()=68 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 83 C4 08 C3=pdb
-_dynamic_initializer_for__LOG_DEVELOPER_VERBOSE__()=FF ? ? ? ? ? 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83 C4 14 A3=pdb
-_dynamic_initializer_for__dmodels__()=56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 30=pdb
-_dynamic_initializer_for__dplanes__()=56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 14=pdb
-_dynamic_initializer_for__dtexdata__()=56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 20=pdb
-_dynamic_initializer_for__entities__()=56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 2C=pdb
-_dynamic_initializer_for__g_EntityLists__()=56 BA ? ? ? ? B8=pdb
-_dynamic_initializer_for__g_pLessonVariableInfo__()=B8 ? ? ? ? B9 ? ? ? ? 66 ? ? ? ? ? C7=pdb
-_dynamic_initializer_for__ss_righthand__()=6A 01 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? C3=pdb
-_dynamic_initializer_for__g_KeyValueSaver__()=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C6=pdb
-_dynamic_initializer_for__g_staticPlayerNames__()=68 ? ? ? ? 6A 00 68 ? ? ? ? E8 ? ? ? ? 83 C4 0C C3=pdb
-_dynamic_initializer_for__s_GaussianRandomStream__()=6A 00 B9 ? ? ? ? FF=pdb
-_dynamic_initializer_for__s_HLTVCamera__()=B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6=pdb
-_dynamic_initializer_for__g_AsyncCaptionResourceManager__()=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7=pdb
-_dynamic_initializer_for__s_ParticleSystemQuery__()=B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? E8=pdb
-_dynamic_initializer_for__g_PhysObjSaveRestoreOps__()=B9 ? ? ? ? B8 ? ? ? ? 66 ? ? ? ? ? C7=pdb
-_dynamic_initializer_for__LOG_SND_EMITTERSYSTEM__()=FF ? ? ? ? ? 6A 00 6A 01 68 ? ? ? ? 68=pdb
-_dynamic_initializer_for__LOG_WORKSHOP__()=FF ? ? ? ? ? 6A 01 6A 01 68=pdb
-_dynamic_initializer_for__g_PPInit__()=0F 57 C0 C6 ? ? ? ? ? ? 0F ? ? ? ? ? ? C3=pdb
-_dynamic_initializer_for__LOG_VScript__()=FF ? ? ? ? ? 6A 01 6A 01 6A 00 68=pdb
-_dynamic_initializer_for__mp_warmuptime__()=68 ? ? ? ? 51 C7 ? ? ? ? ? ? 6A 00 51 C7 ? ? ? ? ? ? B9 ? ? ? ? 6A 01=pdb
-_dynamic_initializer_for__g_SteamWorksGameStatsClient__()=68 ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? B9=pdb
-_dynamic_initializer_for__g_Generated_Texture_Saver__()=6A 00 B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6=pdb
-_dynamic_initializer_for__g_PrecipHack__()=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6=pdb
-_dynamic_initializer_for____g_C_TEPlayerDecal__()=B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7=pdb
-_dynamic_initializer_for__vgui::Panel::m_MessageMap__()=55 8B EC 83 EC 10 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 0F 10 45 F0 C7=pdb
-void protobuf_AssignDesc_steammessages_2eproto(void)=55 8B EC 83 E4 F8 83 EC 44 53 56 33 DB 57 89 5C 24 10 E8 ? ? ? ? 6A 13=pdb
-_anonymous_namespace_::protobuf_RegisterTypes()=68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 83 C4 08=pdb
-public: virtual void CMsgWebAPIKey::Clear(void)=8B 41 20 84 C0 74 3F C1 E8 04=pdb
-public: virtual void CMsgConVarValue::Clear(void)=80 79 14 00 74 47=pdb
-public: virtual CMsgHttpRequest::~CMsgHttpRequest(void)=56 8B F1 57 8B 4E 08=pdb
-public: virtual int CMsgHttpRequest::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 50 00 0F ? ? ? ? ? F6 47 50 01 74 1B 8B 47 20=pdb
-public: virtual void CMsgWebAPIRequest::Clear(void)=56 8B F1 80 7E 28 00 0F ? ? ? ? ? F6=pdb
-public: virtual int CMsgWebAPIRequest::ByteSize(void)const=56 8B F1 57 33 FF 80 7E 28 00 0F ? ? ? ? ? F6 46 28 01 74 25=pdb
-public: virtual void CMsgHttpResponse::Clear(void)=56 8B F1 8B 46 24 84 C0 74 2A=pdb
-public: virtual void CMsgNotifyWatchdog::Clear(void)=8B 41 28 84 C0 74 4A=pdb
-public: virtual int CSOQuestProgress::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 18 00 74 6E=pdb
-public: virtual void CMsgAMGetUserGameStats::Clear(void)=80 79 28 00 74 1C=pdb
-public: virtual void CGCMsgMemCachedGetResponse::Clear(void)=56 8B F1 8D 4E 08 E8 ? ? ? ? 8D=pdb
-public: virtual int CMsgSDONoMemcached::ByteSize(void)const=56 8B F1 8B 4E 04 8D=pdb
-public: virtual void CGCMsgSQLStatsResponse::Clear(void)=8B 41 30 84 C0 74 38=pdb
-public: virtual void CMsgAMAddFreeLicense::Clear(void)=8B 41 20 84 C0 74 3F C1 E8 03=pdb
-public: virtual int CGCMsgGetIPLocation::ByteSize(void)const=56 57 8B F9 8D 57 04 8B 47 0C 8D 34 80=pdb
-public: virtual void CIPLocationInfo::Clear(void)=8B 41 24 84 C0 0F=pdb
-public: virtual void CMsgGCRoutingInfo::Clear(void)=8B 41 28 A9 ? ? ? ? 74 38=pdb
-public: virtual int CMsgGCRoutingInfo::ByteSize(void)const=55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 8B 46 28=pdb
-bool CMsgGCMsgSetOptions_Option_IsValid(int)=55 8B EC 83 7D 08 03 0F=pdb
-private: void CMsgGCHUpdateSession::SharedCtor(void)=C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 14 00 C7=pdb
-public: char const near * CSteamID::Render(void)const=A1 ? ? ? ? 8B D1 56=pdb
-_sscanf()=55 8B EC 83 E4 F8 8D 45 10=pdb
-public: virtual void CExampleEffect::Init(void)=C6 41 04 00 C3=pdb
-public: struct TSLNodeBase_t near * CTSListBase::Pop(void)=55 8B EC 83 E4 F8 56 57 8B F9 8B 37=pdb
-public: CUtlString::~CUtlString(void)=56 8B F1 C7 ? ? ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E=pdb
-private: void CVarBitVecBase<int>::ReallocInts(int)=55 8B EC 56 57 8B 7D 08 8B F1 85 FF 75 22 83 7E 04 01 7E 0F A1 ? ? ? ? FF 76 0C 8B 08 8B 01 FF 50 14 5F C7 ? ? ? ? ? ? 5E 5D C2 04 00 53=pdb
-public: GCSDK::CMessageList::~CMessageList(void)=A1 ? ? ? ? 8B ? ? ? ? ? 56 33 F6 85 C0 7E 32 57 8B 3C B2 85 FF 74 24 A1=pdb
-bool lessFunc(int const near &,int const near &)=55 8B EC 8B 45 08 8B 08 8B 45 0C 3B 08 0F 9C=pdb
-public: CThreadSafeMemoryPool::~CThreadSafeMemoryPool(void)=56 8B F1 8B 06 A9=pdb
-error_exit()=55 8B EC 56 8B 75 08 56 8B 06=pdb
-output_message()=55 8B EC 8B 45 08 8D ? ? ? ? ? 81 ? ? ? ? ? 8B=pdb
-emit_message()=55 8B EC 8B 45 08 8B 4D 0C 56 8B=pdb
-format_message()=55 8B EC 8B 45 08 56 8B 10 8B 4A=pdb
-reset_error_mgr()=55 8B EC 8B 4D 08 8B 01 C7 ? ? ? ? ? ? 8B 01 C7=pdb
-_jpeg_suppress_tables()=8B 41 58 85 C0 74 07=pdb
-default_decompress_parms()=56 8B F1 8B 46 24 83 E8 01=pdb
-_jpeg_consume_input()=56 8B F1 8B 46 14 05=pdb
-init_source()=55 8B EC 8B 45 08 8B 40 18=pdb
-fill_input_buffer()=55 8B EC 56 57 8B 7D 08 8B 77=pdb
-skip_input_data()=55 8B EC 53 8B 5D 08 56 57 8B 7D 0C 8B 73=pdb
-_jpeg_add_quant_table()=55 8B EC 53 56 57 8B F9 8B DA 83=pdb
-add_huff_table()=55 8B EC 51 53 56 8B F2 8B D9 89 75 FC 83=pdb
-alloc_small()=55 8B EC 53 8B 5D 10 56 8B 75=pdb
-alloc_large()=55 8B EC 51 53 56 8B 75 08 57 8B 7D=pdb
-alloc_sarray()=55 8B EC 51 53 8B 5D 08 33 D2 56 57=pdb
-alloc_barray()=55 8B EC 83 EC 08 53 8B 5D 10 33=pdb
-realize_virt_arrays()=55 8B EC 51 53 56 57 8B 7D 08 33 DB 89=pdb
-do_sarray_io()=55 8B EC 83 EC 0C 53 56 57 8B FA 89 4D FC 33 DB 8B 47 08 8B 57 18 8B 77 10 0F=pdb
-do_barray_io()=55 8B EC 83 EC 0C 53 56 57 8B FA 89 4D FC 33 DB 8B 47 08 8B 57 18 8B 77 10 C1=pdb
-free_pool()=55 8B EC 53 56 8B 75 0C 57 8B 7D 08 8B 5F=pdb
-emit_marker()=53 56 8B F1 8B DA 8B 4E=pdb
-emit_2bytes()=53 56 8B F1 8B DA 57 8B CB=pdb
-emit_dht()=55 8B EC 83 EC 08 80 7D 08 00 56=pdb
-emit_dac()=55 8B EC 83 EC 20 53 56 8B F1 0F=pdb
-emit_sof()=53 56 57 8B F1 E8 ? ? ? ? 8B 46 4C=pdb
-emit_sos()=55 8B EC 51 56 BA=pdb
-emit_pseudo_sos()=56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 00=pdb
-emit_jfif_app0()=56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 4A=pdb
-emit_adobe_app14()=56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 41=pdb
-write_marker_header()=55 8B EC 56 8B 75 08 57 8B 7D 10 81=pdb
-write_marker_byte()=55 8B EC 8A 45 0C 56 8B 75=pdb
-write_file_header()=55 8B EC 56 57 8B 7D 08 BA=pdb
-write_frame_header()=55 8B EC 51 53 56 8B 75 08 33 D2 57 33 FF 89=pdb
-write_scan_header()=55 8B EC 51 53 56 8B 75 08 80=pdb
-write_file_trailer()=55 8B EC BA=pdb
-write_tables_only()=55 8B EC 53 56 8B 75 08 BA ? ? ? ? 57 8B CE E8=pdb
-get_soi()=56 8B F1 6A 01 56=pdb
-get_sof()=55 8B EC 51 8A 45 08 53=pdb
-get_sos()=55 8B EC 83 EC 1C 53 56 8B F1 57 8B 4E=pdb
-get_dac()=55 8B EC 83 EC 10 53 56 8B F1 57 8B 5E=pdb
-get_dht()=55 8B EC 81 ? ? ? ? ? 53 8B C1 56=pdb
-get_dqt()=55 8B EC 83 EC 28 8B C1 53=pdb
-get_dri()=55 8B EC 83 EC 08 8B C1 53 56 57=pdb
-examine_app0()=55 8B EC 53 8B 5D 0C 56 8B F1 8B 4D 08 03=pdb
-examine_app14()=55 8B EC 83 EC 08 53 8B D9 89 55=pdb
-get_interesting_appn()=55 8B EC 8B 45 08 83 EC 1C 53 8B 58=pdb
-skip_variable()=55 8B EC 51 53 56 57 8B 7D 08 8B 77=pdb
-first_marker()=55 8B EC 83 EC 0C 8B C1 53 56=pdb
-read_markers()=55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 1E=pdb
-read_restart_marker()=55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 10=pdb
-_jpeg_resync_to_restart()=55 8B EC 53 8B 5D 08 56 8B 75 0C 57 8B 03 8B=pdb
-reset_marker_reader()=55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-_jinit_marker_reader()=56 8B F1 68 ? ? ? ? 6A 00 56 8B=pdb
-_jpeg_core_output_dimensions()=56 8B F1 57 8B 56 30=pdb
-initial_setup()=55 8B EC 83 EC 08 56 8B F1 81=pdb
-per_scan_setup()=55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8 01 75 65=pdb
-latch_quant_tables()=55 8B EC 83 EC 0C 53 8B D9 33 C0 89=pdb
-start_input_pass()=55 8B EC 56 8B 75 08 8B CE E8=pdb
-finish_input_pass()=55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? 5D=pdb
-consume_markers()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F 11=pdb
-reset_input_controller()=55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C7=pdb
-_jinit_compress_master()=56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 75 15=pdb
-use_merged_upsample()=80 79 48 00 0F=pdb
-_jpeg_calc_output_dimensions()=55 8B EC 83 EC 18 56 8B F1 89 75 F4=pdb
-prepare_range_limit_table()=53 8B D9 56 57 68 ? ? ? ? 8B 43=pdb
-master_selection()=56 8B F1 57 8B ? ? ? ? ? E8 ? ? ? ? 8B CE=pdb
-prepare_for_output_pass()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F 08=pdb
-finish_output_pass()=55 8B EC 8B 4D 08 56 80=pdb
-finish_pass()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 48=pdb
-arith_encode()=55 8B EC 83 EC 08 8B C2 53=pdb
-emit_restart()=55 8B EC 83 EC 0C 53 56 8B F1 8B DA 57 56=pdb
-encode_mcu_DC_first()=55 8B EC 83 EC 1C 53 8B 5D 08 56 83 ? ? ? ? ? ? 8B ? ? ? ? ? 89 75 E8=pdb
-encode_mcu_AC_first()=55 8B EC 83 EC 24 53 8B 5D 08 56=pdb
-encode_mcu_DC_refine()=55 8B EC 56 8B 75 08 57 83=pdb
-encode_mcu_AC_refine()=55 8B EC 83 EC 14 53 56 8B 75 08 57 83=pdb
-encode_mcu()=55 8B EC 83 EC 28 53 8B 5D 08 57 83 ? ? ? ? ? ? 8B=pdb
-start_pass()=55 8B EC 83 EC 08 80 7D 0C 00 56 8B=pdb
-_jinit_arith_encoder()=56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 83=pdb
-start_pass_prep()=55 8B EC 83 7D 0C 00 56=pdb
-pre_process_data()=55 8B EC 83 EC 1C 8B 55 10 56=pdb
-pre_process_context()=55 8B EC 83 EC 1C 8B 4D 20=pdb
-create_context_buffer()=55 8B EC 83 EC 28 53 8B D9 56 57 89 5D E0=pdb
-_jinit_c_prep_controller()=55 8B EC 51 56 8B F1 6A 40 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? 8B=pdb
-expand_right_edge()=55 8B EC 83 EC 08 53 8B 5D 0C 56 8B F1=pdb
-sep_downsample()=55 8B EC 83 EC 08 53 56 8B 75 08 C7=pdb
-int_downsample()=55 8B EC 83 EC 2C 8B 45 0C 53 56 57 8B=pdb
-fullsize_downsample()=55 8B EC 51 8B 4D 08 8B 45=pdb
-h2v1_downsample()=55 8B EC 51 8B 45 0C 53 8B 5D 10=pdb
-h2v2_downsample()=55 8B EC 83 EC 0C 8B 45 0C 8B=pdb
-h2v2_smooth_downsample()=55 8B EC 83 EC 24 8B 45 0C 53=pdb
-fullsize_smooth_downsample()=55 8B EC 83 EC 1C 8B 45 0C 53 8B 5D 08 56 8B=pdb
-_jinit_downsampler()=55 8B EC 83 EC 1C 53 56 8B F1 C6=pdb
-start_pass_main()=55 8B EC 8B 55 08 80 ? ? ? ? ? ? 8B=pdb
-process_data_simple_main()=55 8B EC 56 57 8B 7D 08 8B ? ? ? ? ? 8B 46 08=pdb
-_jinit_c_main_controller()=55 8B EC 51 56 8B F1 6A 40 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? 80=pdb
-_jpeg_calc_jpeg_dimensions()=55 8B EC 51 57 8B F9 8B 47 3C=pdb
-initial_setup_0()=55 8B EC 83 EC 18 53 56 8B F1 57 89=pdb
-validate_script()=55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 83 ? ? ? ? ? ? 7F=pdb
-reduce_script()=53 8B D9 33 D2 56 33=pdb
-select_scan_parameters()=53 56 8B F1 57 8B ? ? ? ? ? 85 C9 74 6F=pdb
-per_scan_setup_0()=55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8 01 75 64=pdb
-prepare_for_pass()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 83=pdb
-pass_startup()=55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C6=pdb
-finish_pass_master()=55 8B EC 56 57 8B 7D 08 57 8B=pdb
-_jinit_c_master_control()=56 8B F1 57 6A 20=pdb
-start_iMCU_row()=83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C3 8B ? ? ? ? ? 48 39 42=pdb
-start_pass_coef()=55 8B EC 8B 4D 08 56 8B ? ? ? ? ? C7=pdb
-compress_data()=55 8B EC 83 EC 30 8B 55 08=pdb
-compress_first_pass()=55 8B EC 83 EC 2C 53 56 57 8B 7D 08 33=pdb
-compress_output()=55 8B EC 83 EC 34 53 56 8B 75 08 57 33 FF 8B ? ? ? ? ? 89 5D FC 39 ? ? ? ? ? 7E 46=pdb
-_jinit_c_coef_controller()=55 8B EC 83 EC 10 8B 41 04 53=pdb
-rgb_ycc_start()=53 8B DC 83 EC 08 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 8B 4B=pdb
-rgb_ycc_convert()=55 8B EC 83 EC 18 83 6D=pdb
-rgb_gray_convert()=55 8B EC 83 EC 0C 8B 4D 08 53 8B ? ? ? ? ? 8B=pdb
-cmyk_ycck_convert()=55 8B EC 83 EC 1C 83 6D=pdb
-grayscale_convert()=55 8B EC 51 8B 45 08 53 8B 5D 18=pdb
-null_convert()=55 8B EC 83 EC 08 8B 45 08 8B 55=pdb
-_jinit_color_converter()=56 8B F1 57 6A 0C=pdb
-jpeg_make_c_derived_tbl()=55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A C2 88 45 FF 8B D9 57=pdb
-emit_bits_s()=55 8B EC 51 8B 45 08 89 55=pdb
-emit_bits_e()=55 8B EC 83 EC 08 53 8B 5D 08 89 55=pdb
-emit_eobrun()=57 8B F9 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 56=pdb
-emit_restart_s()=53 56 8B DA 8B F1 6A=pdb
-encode_mcu_DC_first_0()=55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B 43=pdb
-encode_mcu_AC_first_0()=55 8B EC 83 EC 1C 56 57 8B 7D 08 8B 47=pdb
-encode_mcu_DC_refine_0()=55 8B EC 56 57 8B 7D 08 8B 47 18=pdb
-encode_one_block()=55 8B EC 83 EC 10 53 8B D9 89 55 F4=pdb
-encode_mcu_huff()=55 8B EC 83 EC 28 56 57 8B 7D 08 89=pdb
-finish_pass_huff()=55 8B EC 83 EC 24 56 8B 75 08 57 80=pdb
-jpeg_gen_optimal_table()=55 8B EC 81 ? ? ? ? ? 53 57 68 ? ? ? ? 0F=pdb
-finish_pass_gather()=55 8B EC 83 EC 10 53 56 8B 75 08 80=pdb
-start_pass_huff()=55 8B EC 8A 4D 0C=pdb
-_jinit_huff_encoder()=56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-forward_DCT()=55 8B EC 81 ? ? ? ? ? 83 7D 20 00 8B 45 08 8B 55 0C 56=pdb
-forward_DCT_float()=55 8B EC 81 ? ? ? ? ? 83 7D 20 00 8B 45 08 8B 55 0C 53=pdb
-start_pass_fdctmgr()=55 8B EC 83 EC 18 8B 55 08 53 56 57 8B ? ? ? ? ? 33=pdb
-_jinit_forward_dct()=56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-select_ncolors()=55 8B EC 83 EC 18 53 89=pdb
-create_colormap()=55 8B EC 83 EC 2C 53 56 8B F1 57=pdb
-create_colorindex()=55 8B EC 83 EC 1C 53 56 57 8B F9 89 7D E8=pdb
-color_quantize()=55 8B EC 83 EC 0C 83 7D 14 00 8B 4D 08 53=pdb
-color_quantize3()=55 8B EC 83 EC 0C 83 7D 14 00 8B 4D 08 8B=pdb
-quantize_ord_dither()=55 8B EC 83 EC 20 83 7D 14=pdb
-quantize3_ord_dither()=55 8B EC 83 EC 28 83 7D=pdb
-quantize_fs_dither()=55 8B EC 83 EC 40 83=pdb
-alloc_fs_workspace()=55 8B EC 51 53 56 8B F1 33 DB 57 8B=pdb
-start_pass_1_quant()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 89=pdb
-new_color_map_1_quant()=55 8B EC 8B 4D 08 8B 01 C7 ? ? ? ? ? ? 8B 01 89=pdb
-_jinit_1pass_quantizer()=56 8B F1 6A 58=pdb
-build_ycc_rgb_table()=55 8B EC 83 EC 08 53 56 8B F1 57 68 ? ? ? ? 6A 01 8B 46 04 8B ? ? ? ? ? 56 8B 00 FF D0 89 47 10=pdb
-start_pass_merged_upsample()=55 8B EC 8B 45 08 8B ? ? ? ? ? C6 41=pdb
-merged_2v_upsample()=55 8B EC 8B 4D 1C=pdb
-merged_1v_upsample()=55 8B EC 8B 45 18 8B=pdb
-h2v1_merged_upsample()=55 8B EC 83 EC 1C 53 8B 5D 08 56 57 8B ? ? ? ? ? 8B=pdb
-h2v2_merged_upsample()=55 8B EC 83 EC 28 53 8B 5D 08 56 8B=pdb
-_jinit_merged_upsampler()=56 57 8B F9 6A 30 6A 01=pdb
-start_pass_upsample()=55 8B EC 8B 4D 08 8B ? ? ? ? ? 8B ? ? ? ? ? 89=pdb
-sep_upsample()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B ? ? ? ? ? 89=pdb
-fullsize_upsample()=55 8B EC 8B 4D 14 8B 45 10 89=pdb
-noop_upsample()=55 8B EC 8B 45 14 C7=pdb
-int_upsample()=55 8B EC 83 EC 14 8B 45 14=pdb
-h2v1_upsample()=55 8B EC 8B 4D 08 8B 45 14=pdb
-h2v2_upsample()=55 8B EC 8B 45 14 53 8B 5D 08 57=pdb
-_jinit_upsampler()=55 8B EC 83 EC 1C 53 56 8B F1 57 68=pdb
-jpeg_make_d_derived_tbl()=55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A C2 88 45 FF 8B D9 89=pdb
-jpeg_fill_bit_buffer()=55 8B EC 83 EC 0C 8B C1 89 55=pdb
-jpeg_huff_decode()=55 8B EC 53 8B 5D 10 57 8B F9 8B 4D 08=pdb
-process_restart()=53 56 57 8B F9 57=pdb
-decode_mcu_DC_first()=55 8B EC 83 EC 3C 53 8B 5D 08=pdb
-decode_mcu_AC_first()=55 8B EC 83 EC 38 8B 45 08 53 83=pdb
-decode_mcu_DC_refine()=55 8B EC 83 EC 1C 56 57 8B 7D 08 B8=pdb
-decode_mcu_AC_refine()=55 8B EC 81 ? ? ? ? ? 53 57 8B 7D 08 83=pdb
-decode_mcu_sub()=55 8B EC 83 EC 50 8B 4D 08 53 83=pdb
-decode_mcu()=55 8B EC 83 EC 48 8B 45=pdb
-start_pass_huff_decoder()=55 8B EC 83 EC 0C 53 56 8B 75 08 57 80 ? ? ? ? ? ? 8B ? ? ? ? ? 89 5D F4=pdb
-_jinit_huff_decoder()=55 8B EC 51 53 8B D9 56 68=pdb
-prescan_quantize()=55 8B EC 8B 4D 08 53 57=pdb
-update_box()=55 8B EC 83 EC 2C 8B ? ? ? ? ? 53 8B DA=pdb
-median_cut()=55 8B EC 83 EC 10 53 8B C2=pdb
-compute_color()=55 8B EC 83 EC 3C 8B C1=pdb
-select_colors()=55 8B EC 51 53 56 8B 71 04=pdb
-find_nearby_colors()=55 8B EC 81 ? ? ? ? ? 53 8B 59=pdb
-find_best_colors()=55 8B EC 81 ? ? ? ? ? 56 8B F2 B8=pdb
-fill_inverse_cmap()=55 8B EC 81 ? ? ? ? ? 53 56 57 89 4D FC 8B=pdb
-pass2_fs_dither()=55 8B EC 83 EC 6C 83=pdb
-init_error_limit()=8B 41 04 56 8B ? ? ? ? ? 57 8B 00 68 ? ? ? ? 6A 01 51 FF D0 83 C4 0C 33=pdb
-finish_pass1()=55 8B EC 8B 4D 08 56 8B ? ? ? ? ? 8B 46=pdb
-start_pass_2_quant()=55 8B EC 53 56 8B 75 08 57 83 7E=pdb
-new_color_map_2_quant()=55 8B EC 8B 45 08 8B ? ? ? ? ? C6 40=pdb
-_jinit_2pass_quantizer()=56 8B F1 57 6A 2C=pdb
-arith_decode()=55 8B EC 83 EC 08 53 56 8B F1 57 8B FA 89 7D=pdb
-process_restart_0()=55 8B EC 83 EC 0C 53 56 8B F1 56=pdb
-decode_mcu_DC_first_0()=55 8B EC 83 EC 1C 53 57 8B=pdb
-decode_mcu_DC_refine_0()=55 8B EC 53 56 57 8B 7D 08 83 ? ? ? ? ? ? 8B=pdb
-decode_mcu_0()=55 8B EC 83 EC 24 53 8B 5D 08 83=pdb
-start_pass_0()=55 8B EC 83 EC 0C 53 56 8B 75 08 57 80 ? ? ? ? ? ? 8B ? ? ? ? ? 89 5D 08=pdb
-_jinit_arith_decoder()=53 8B D9 68 ? ? ? ? 6A=pdb
-start_iMCU_row_0()=83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C3 8B ? ? ? ? ? 48 39 ? ? ? ? ? 8B=pdb
-start_input_pass_0()=55 8B EC 8B 4D 08 C7=pdb
-start_output_pass()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83 7F=pdb
-decompress_onepass()=55 8B EC 83 EC 3C 8B 4D=pdb
-consume_data()=55 8B EC 83 EC 34 53 56 8B 75 08 57 33 FF 8B ? ? ? ? ? 89 5D FC 39 ? ? ? ? ? 7E 49=pdb
-decompress_data()=55 8B EC 83 EC 24 8B 55 08 57=pdb
-decompress_smooth_data()=55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 57 8B ? ? ? ? ? 8B=pdb
-_jinit_d_coef_controller()=55 8B EC 83 EC 14 53 56 57 8B F9 8A=pdb
-build_ycc_rgb_table_0()=55 8B EC 83 EC 08 53 56 8B F1 57 68 ? ? ? ? 6A 01 8B 46 04 8B ? ? ? ? ? 56 8B 00 FF D0 89 47 08=pdb
-ycc_rgb_convert()=55 8B EC 83 EC 28 83 6D=pdb
-null_convert_0()=55 8B EC 51 8B 45 08 8B 55 18=pdb
-grayscale_convert_0()=55 8B EC 8B 45 08 53 56 8B 75 18=pdb
-gray_rgb_convert()=55 8B EC 8B 45 08 53 8B 5D 18=pdb
-ycck_cmyk_convert()=55 8B EC 83 EC 2C 83 6D=pdb
-_jinit_color_deconverter()=56 8B F1 57 6A 18=pdb
-alloc_funny_pointers()=55 8B EC 83 EC 10 53 56 8B F1 57 8B 46=pdb
-make_funny_pointers()=55 8B EC 83 EC 2C 53 8B D9 57=pdb
-set_wraparound_pointers()=55 8B EC 83 EC 18 53 8B D9 56 33=pdb
-set_bottom_pointers()=55 8B EC 83 EC 0C 53 56 8B F1 57 33 FF 89=pdb
-start_pass_main_0()=55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83 E8 00 74=pdb
-process_data_simple_main_0()=55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80 7F 30 00 75 1B=pdb
-process_data_context_main()=55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80 7F 30 00 75 25=pdb
-process_data_crank_post()=55 8B EC FF 75 14 8B 45 08 FF 75 10 FF=pdb
-_jinit_d_main_controller()=55 8B EC 83 EC 08 53 56 8B F1 57 6A 50=pdb
-start_pass_1()=55 8B EC 83 EC 14 53 8B 5D 08 33=pdb
-_jinit_inverse_dct()=55 8B EC 51 56 8B F1 57 6A 54=pdb
-start_pass_dpost()=55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83 E8 00 0F=pdb
-post_process_1pass()=55 8B EC 8B 4D 20=pdb
-post_process_prepass()=55 8B EC 53 8B 5D 08 56 57 8B ? ? ? ? ? 83 7E=pdb
-post_process_2pass()=55 8B EC 51 8B 55 08 53 56 57 8B=pdb
-_jinit_d_post_controller()=55 8B EC 83 EC 08 53 57 8B F9 88=pdb
-_jpeg_fdct_islow()=55 8B EC 83 EC 28 8B 45 08 33=pdb
-_jpeg_fdct_7x7()=55 8B EC 83 EC 14 53 56 57 68 ? ? ? ? 6A 00 FF=pdb
-_jpeg_fdct_5x5()=55 8B EC 83 EC 08 53 56 57 68 ? ? ? ? 6A 00 FF=pdb
-_jpeg_fdct_3x3()=55 8B EC 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 5D=pdb
-_jpeg_fdct_2x2()=55 8B EC 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 75=pdb
-_jpeg_fdct_1x1()=55 8B EC 56 8B 75 08 68 ? ? ? ? 6A 00 56 E8 ? ? ? ? 8B 45 0C 83 C4 0C 8B 08=pdb
-_jpeg_fdct_9x9()=55 8B EC 83 EC 4C 8B 45 08 33=pdb
-_jpeg_fdct_10x10()=55 8B EC 83 EC 74 8B=pdb
-_jpeg_fdct_11x11()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D D0=pdb
-_jpeg_fdct_12x12()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D D0=pdb
-_jpeg_fdct_13x13()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D D4=pdb
-_jpeg_fdct_14x14()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D D4=pdb
-_jpeg_fdct_15x15()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D C0=pdb
-_jpeg_fdct_16x16()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D CC=pdb
-_jpeg_fdct_16x8()=55 8B EC 83 EC 5C 8B 45 08 33=pdb
-_jpeg_fdct_14x7()=55 8B EC 83 EC 54 8B 45 08=pdb
-_jpeg_fdct_12x6()=55 8B EC 83 EC 44 53 8B 5D 08=pdb
-_jpeg_fdct_10x5()=55 8B EC 83 EC 38 53 8B 5D 08 56=pdb
-_jpeg_fdct_8x4()=55 8B EC 83 EC 2C 53 8B 5D=pdb
-_jpeg_fdct_2x1()=55 8B EC 56 8B 75 08 68 ? ? ? ? 6A 00 56 E8 ? ? ? ? 8B 45 0C 83 C4 0C 8B 00=pdb
-_jpeg_fdct_8x16()=55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D DC=pdb
-_jpeg_fdct_7x14()=55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 68=pdb
-_jpeg_fdct_6x12()=55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 68=pdb
-_jpeg_fdct_5x10()=55 8B EC 83 EC 64 53 8B 5D 08 56=pdb
-_jpeg_fdct_4x8()=55 8B EC 83 EC 1C 8B 4D 08 53=pdb
-_jpeg_fdct_3x6()=55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 5D=pdb
-_jpeg_fdct_2x4()=55 8B EC 53 8B 5D 08 56 57 68 ? ? ? ? 6A=pdb
-_jpeg_fdct_1x2()=55 8B EC 56 57 8B 7D 08 68 ? ? ? ? 6A=pdb
-_jpeg_fdct_ifast()=55 8B EC 83 EC 10 8B 4D 0C=pdb
-_jpeg_fdct_float()=55 8B EC 51 53 8B 5D 0C 56 57 8B 1B=pdb
-_jpeg_idct_islow()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 56 8B ? ? ? ? ? 83 E8 80 C7 ? ? ? ? ? ? 89 45 F8=pdb
-_jpeg_idct_7x7()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 56 8B ? ? ? ? ? 83 E8 80 0F=pdb
-_jpeg_idct_6x6()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 0F BF 1A 83 E8 80 89=pdb
-_jpeg_idct_5x5()=55 8B EC 83 EC 5C 8B 45 08 53=pdb
-_jpeg_idct_4x4()=55 8B EC 83 EC 34 8B 45 08 53 56 57 8B ? ? ? ? ? 8B=pdb
-_jpeg_idct_3x3()=55 8B EC 83 EC 14 8B 45 08 8B=pdb
-_jpeg_idct_2x2()=55 8B EC 8B 45 08 8B 4D 10 53=pdb
-_jpeg_idct_1x1()=55 8B EC 8B 45 0C 56 8B 48=pdb
-_jpeg_idct_9x9()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 83=pdb
-_jpeg_idct_10x10()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45 F0=pdb
-_jpeg_idct_11x11()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83 C2 40=pdb
-_jpeg_idct_12x12()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8B=pdb
-_jpeg_idct_13x13()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8D=pdb
-_jpeg_idct_14x14()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D 10 53 83 C1 20 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 4D=pdb
-_jpeg_idct_15x15()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 83=pdb
-_jpeg_idct_16x16()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D 10 83 E8 80 89 45 08=pdb
-_jpeg_idct_14x7()=55 8B EC 81 ? ? ? ? ? 8B 4D 0C 8B=pdb
-_jpeg_idct_12x6()=55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53 8B 5D=pdb
-_jpeg_idct_10x5()=55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53 8B 45=pdb
-_jpeg_idct_8x4()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 0F BF 1A 83 E8 80 0F=pdb
-_jpeg_idct_6x3()=55 8B EC 83 EC 38 8B 45 08 53 56 57=pdb
-_jpeg_idct_4x2()=55 8B EC 83 EC 10 8B 45 08 8B 55=pdb
-_jpeg_idct_2x1()=55 8B EC 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 45=pdb
-_jpeg_idct_8x16()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D 10 83 E8 80 89 45 EC=pdb
-_jpeg_idct_7x14()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45 F4=pdb
-_jpeg_idct_6x12()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83 C2 20=pdb
-_jpeg_idct_5x10()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D 10 53 83 C1 20 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45=pdb
-_jpeg_idct_3x6()=55 8B EC 83 EC 3C 8B 45 08 8B=pdb
-_jpeg_idct_2x4()=55 8B EC 83 EC 10 8B 45 08 53 56 57 8B ? ? ? ? ? 8B=pdb
-_jpeg_idct_1x2()=55 8B EC 8B 45 08 53 56 8B 75 14=pdb
-_jpeg_idct_ifast()=55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8D=pdb
-_jpeg_idct_float()=55 8B EC 81 ? ? ? ? ? 8B 45 08 8D=pdb
-_inflateReset()=55 8B EC 8B 45 08 85 C0 0F ? ? ? ? ? 8B=pdb
-_inflateReset2()=56 57 8B F9 85 FF 74 41=pdb
-_inflateInit2_()=55 8B EC 8B 45 08 56 8B F1 85 C0 0F=pdb
-_inflateInit_()=55 8B EC FF 75 10 8B 4D 08 FF 75 0C E8 ? ? ? ? 83=pdb
-updatewindow()=55 8B EC 51 53 8B D9 B8 ? ? ? ? 56=pdb
-_inflate()=55 8B EC 8B 45 08 83 EC 40 85=pdb
-_inflateEnd()=55 8B EC 56 8B 75 08 85 F6 74 38=pdb
-_crc32()=55 8B EC 8B 55 0C 85 D2 75 04=pdb
-crc32_little()=55 8B EC 51 53 57 8B 7D 08 8B DA=pdb
-longest_match()=55 8B EC 83 EC 28 53 56 8B F1=pdb
-fill_window()=55 8B EC 83 EC 08 53 56 57 8B F9 8B 77=pdb
-deflate_stored()=55 8B EC 53 56 8B 75 08 BB ? ? ? ? 57 8B 46=pdb
-deflate_fast()=55 8B EC 53 56 8B 75 08 57 8B 5D=pdb
-deflate_slow()=55 8B EC 83 EC 08 53 56 8B 75 08 57 8B 5D=pdb
-_zcalloc()=55 8B EC 8B 45 0C 0F AF=pdb
-_adler32()=55 8B EC 53 8B 5D 08 56 57 8B F9 8B F2=pdb
-_inflate_table()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 0F=pdb
-_inflate_fast()=55 8B EC 83 EC 44 53 56 57 8B F9 89 7D E8=pdb
-init_block()=8D ? ? ? ? ? BA ? ? ? ? 56 0F=pdb
-gen_bitlen()=55 8B EC 83 EC 34 8B 42 04=pdb
-gen_codes()=55 8B EC 83 EC 24 53 56 8B D9 89=pdb
-build_tree()=55 8B EC 83 EC 10 8B C2 83=pdb
-send_tree()=55 8B EC 83 EC 1C 53 56 57 8B FA=pdb
-build_bl_tree()=56 8B F1 FF ? ? ? ? ? 8D ? ? ? ? ? E8=pdb
-send_all_trees()=55 8B EC 51 53 56 8B F1 8B C2=pdb
-__tr_stored_block()=55 8B EC 53 57 8B F9 8B DA 8B=pdb
-__tr_flush_block()=55 8B EC 83 EC 08 53 56 57 8B F9 C7 ? ? ? ? ? ? 8B DA=pdb
-compress_block()=55 8B EC 83 EC 14 53 8B DA 8B=pdb
-detect_data_type()=56 57 8B F9 B8 ? ? ? ? 33=pdb
-bi_windup()=56 8B F1 8B ? ? ? ? ? 83 F8 08=pdb
-public: virtual int CMsgApplySticker::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 28 00 0F ? ? ? ? ? F6 47 28 01 74 11 FF 77 0C FF 77 08 E8 ? ? ? ? 83 C4 08 8D 70 01 8B 47 28 D1 E8 A8 01 74 11=pdb
-public: virtual int CMsgGCBannedWord::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 18 00 0F ? ? ? ? ? F6 47 18 01 74 1B 8B 47 08=pdb
-public: virtual int CMsgGameServerInfo::ByteSize(void)const=53 56 57 8B F9 33 F6 8B 57 64=pdb
-public: virtual int CMsgInviteToParty::ByteSize(void)const=56 57 8B F9 33 F6 8B 4F 1C 84 C9 74 59=pdb
-public: virtual int CSOItemCriteria::ByteSize(void)const=55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 4F 38=pdb
-public: virtual int CSOItemRecipe::ByteSize(void)const=55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 80 7E 74=pdb
-public: virtual void CMsgGCReportAbuse::Clear(void)=8B 41 34 84 C0 74 5A=pdb
-public: virtual void CMsgGameServerInfo::Clear(void)=8B 41 64 84=pdb
-public: virtual void CMsgPartyInviteResponse::Clear(void)=80 79 20 00 74 20 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6=pdb
-public: virtual void CMsgUpdateItemSchema::Clear(void)=80 79 1C 00 74 75=pdb
-public: virtual void CMsgUseItem::Clear(void)=80 79 38 00 74 31=pdb
-public: virtual void CSOEconItem::Clear(void)=56 8B F1 57 8B 46 78 84=pdb
-public: virtual void CSOItemCriteria::Clear(void)=56 8B F1 57 8B 46 38 84 C0 74 26=pdb
-public: virtual void CSOItemCriteriaCondition::Clear(void)=8B 41 20 84 C0 74 5A=pdb
-public: virtual void CSOItemRecipe::Clear(void)=56 8B F1 57 8B 46 74=pdb
-public: virtual void CSOLobbyInvite::Clear(void)=8B 41 20 84 C0 74 3F C1 E8 02 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: virtual int CSOEconItem::GetCachedSize(void)const=8B 41 74 C3=pdb
-public: virtual int CSOItemRecipe::GetCachedSize(void)const=8B 41 70 C3=pdb
-private: virtual void CSOEconItem::SetCachedSize(int)const=55 8B EC 8B 45 08 89 41 74=pdb
-private: virtual void CSOItemRecipe::SetCachedSize(int)const=55 8B EC 8B 45 08 89 41 70=pdb
-public: virtual CSOEconCoupon::~CSOEconCoupon(void)=56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? 8B CE 5E=pdb
-public: virtual int CPreMatchInfoData::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 68=pdb
-public: virtual int DataCenterPing::ByteSize(void)const=56 57 8B F9 33 F6 8B 4F 14 84 C9 74 3C=pdb
-public: virtual int GameServerPing::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 18 00 74 79=pdb
-public: virtual int PlayerRankingInfo::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 1C 00 74 7B=pdb
-public: virtual int TournamentEvent::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 30 00 0F ? ? ? ? ? F6 47 30 01 74 26=pdb
-public: virtual int TournamentPlayer::ByteSize(void)const=56 8B F1 57 33 FF 80 7E 28 00 0F ? ? ? ? ? F6 46 28 01 74 1B=pdb
-public: virtual int TournamentTeam::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C 00 0F ? ? ? ? ? F6 47 2C 01 74 26=pdb
-public: virtual int WatchableMatchInfo::ByteSize(void)const=53 56 8B F1 57 33 FF 80 7E 58=pdb
-public: virtual int XpProgressData::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 14 00 74 52=pdb
-public: virtual void CSOPersonaDataPublic::Clear(void)=56 8B F1 8B 46 18 84 C0 74 1D=pdb
-public: virtual void CSVCMsg_EncryptedData::Clear(void)=80 79 14 00 74 29=pdb
-public: virtual void ScoreLeaderboardData::Clear(void)=56 8B F1 57 80 7E 38 00 74=pdb
-public: virtual void TournamentEvent::Clear(void)=8B 41 30 84 C0 0F=pdb
-public: virtual void TournamentPlayer::Clear(void)=8B 41 28 84 C0 0F=pdb
-public: virtual void TournamentTeam::Clear(void)=56 8B F1 57 8B 46 2C=pdb
-public: virtual void WatchableMatchInfo::Clear(void)=8B 41 58 84=pdb
-private: void CMsgGC_ServerQuestUpdateData::SharedDtor(void)=56 57 8B F9 8B 77 18 81=pdb
-void protobuf_AddDesc_cstrike15_5fgcmessages_2eproto(void)=80 ? ? ? ? ? ? 0F ? ? ? ? ? 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? C6 ? ? ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? E8=pdb
-public: virtual void CEngineGotvSyncPacket::Clear(void)=8B 41 34 84 C0 74 3F=pdb
-public: CCSUsrMsg_ResetHud::CCSUsrMsg_ResetHud(void)=56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C6 46 08 00 C7 ? ? ? ? ? ? 5E=pdb
-public: virtual int CCSUsrMsg_HudMsg::ByteSize(void)const=53 56 57 8B F9 33 F6 8B 57 34=pdb
-public: virtual int CCSUsrMsg_RadioText::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 0F ? ? ? ? ? F6 47 28 01 74 26=pdb
-public: virtual int CCSUsrMsg_ReportHit::ByteSize(void)const=53 56 57 8B F9 33 F6 8B 5F 1C 84 DB 74=pdb
-public: virtual int CCSUsrMsg_SayText2::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 74=pdb
-public: virtual int CCSUsrMsg_Shake::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 1C 00 74 53=pdb
-public: virtual int CCSUsrMsg_VGUIMenu::ByteSize(void)const=55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 37=pdb
-public: virtual int CCSUsrMsg_VoiceMask::ByteSize(void)const=55 8B EC 83 EC 08 8B 41 20=pdb
-public: virtual void CCSUsrMsg_Damage::Clear(void)=56 8B F1 8B 46 18 84 C0 74 20 D1 E8 C7 ? ? ? ? ? ? A8=pdb
-public: virtual void CCSUsrMsg_DisplayInventory::Clear(void)=80 79 14 00 74 0B C6=pdb
-public: virtual void CCSUsrMsg_Fade::Clear(void)=56 8B F1 8B 46 1C 84 C0 74 28 C1 E8 03=pdb
-public: virtual void CCSUsrMsg_HudMsg::Clear(void)=56 8B F1 8B 46 34=pdb
-public: virtual void CSVCMsg_Sounds::Clear(void)=56 8B F1 57 80 7E 20 00 74 04=pdb
-public: virtual void CCSUsrMsg_QuestProgress::Clear(void)=80 79 1C 00 74 19=pdb
-public: virtual void CCSUsrMsg_RawAudio::Clear(void)=8B 41 1C 84 C0 74 38 C1 E8 03=pdb
-public: virtual void CSVCMsg_SetPause::Clear(void)=80 79 10 00 74 04=pdb
-public: virtual void CCSUsrMsg_VGUIMenu::Clear(void)=56 8B F1 57 80 7E 24 00 74 26=pdb
-public: virtual void CCSUsrMsg_VoiceMask::Clear(void)=56 8B F1 57 F7 ? ? ? ? ? ? 74 04=pdb
-public: virtual void CCLCMsg_RespondCvarValue::Clear(void)=8B 41 1C 84 C0 74 57=pdb
-private: void CCSUsrMsg_VoteStart::SharedDtor(void)=56 57 8B F9 8B 77 10 81=pdb
-void protobuf_AddDesc_cstrike15_5fusermessages_2eproto(void)=80 ? ? ? ? ? ? 0F ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? C6 ? ? ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? E8=pdb
-public: CSVCMsg_VoiceData::CSVCMsg_VoiceData(void)=56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? 66=pdb
-public: virtual int CCLCMsg_ClientInfo::ByteSize(void)const=56 8B F1 57 33 FF 8B 4E 2C=pdb
-public: virtual int CMsgVector2D::ByteSize(void)const=56 57 8B F9 33 F6 8B 4F 14 84 C9 74 18 8A C1 24 01 0F B6 F0 F7 DE 1B F6 D1 E9 83 E6 05 F6 C1 01 74 03 83 C6 05 8B 47=pdb
-public: virtual int CMsgVector::ByteSize(void)const=56 57 8B F9 33 F6 8B 57 18 84 D2 74 25=pdb
-public: virtual int CNETMsg_File::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 18 00 74 7B=pdb
-public: virtual int CNETMsg_SignonState::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C 00 0F ? ? ? ? ? F6 47 2C 01 74 1B=pdb
-public: virtual int CSVCMsg_Menu::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 14 00 74 5E=pdb
-public: virtual int CSVCMsg_SendTable::ByteSize(void)const=55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 47 24=pdb
-public: virtual int CSVCMsg_VoiceData::ByteSize(void)const=56 57 8B F9 33 F6 80 7F 34=pdb
-public: virtual void CCLCMsg_ClientInfo::Clear(void)=8B 41 2C 84 C0 74 3E=pdb
-public: virtual void CCLCMsg_FileCRCCheck::Clear(void)=8B 41 38 84 C0 0F=pdb
-public: virtual void CCSUsrMsg_ShowMenu::Clear(void)=8B 41 18 84 C0 74 31=pdb
-public: virtual void CCLCMsg_VoiceData::Clear(void)=80 79 2C 00 74 4C=pdb
-public: virtual void CMsg_CVars_CVar::Clear(void)=80 79 18 00 74 4E=pdb
-public: virtual void CNETMsg_File::Clear(void)=8B 41 18 84 C0 74 2F=pdb
-public: virtual void CSVCMsg_BSPDecal::Clear(void)=56 8B F1 80 7E 20 00 74 2B=pdb
-public: virtual void CSVCMsg_ClassInfo_class_t::Clear(void)=8B 41 18 84 C0 74 4F=pdb
-public: virtual void CSVCMsg_CreateStringTable::Clear(void)=80 79 2C 00 74 6F=pdb
-public: virtual void CSVCMsg_FixAngle::Clear(void)=56 8B F1 8B 46 14 84 C0 74 16=pdb
-public: virtual void CSVCMsg_GameEvent_key_t::Clear(void)=8B 41 38 84 C0 74 57=pdb
-public: virtual void CSVCMsg_PacketEntities::Clear(void)=8B 41 24 84 C0 74 45=pdb
-public: virtual void CCSUsrMsg_SendAudio::Clear(void)=80 79 10 00 74 22=pdb
-public: virtual void CSVCMsg_SendTable::Clear(void)=56 8B F1 57 8B 46 24 84 C0 74 2A D1=pdb
-public: virtual void CSVCMsg_Sounds_sounddata_t::Clear(void)=8B 41 4C 84=pdb
-public: virtual void CSVCMsg_TempEntities::Clear(void)=8B 41 18 84 C0 74 2E C1 E8 02 C6=pdb
-public: virtual void CSVCMsg_VoiceData::Clear(void)=8B 41 34 84 C0 74 55=pdb
-public: virtual void CSVCMsg_VoiceInit::Clear(void)=8B 41 18 84 C0 74 30 D1 E8 C7 ? ? ? ? ? ? A8=pdb
-private: void CSVCMsg_VoiceData::SharedDtor(void)=56 8B 71 18 81=pdb
-private: void CSVCMsg_GameEvent::SharedDtor(void)=56 8B 71 08 81=pdb
-void protobuf_AddDesc_network_5fconnection_2eproto(void)=80 ? ? ? ? ? ? 75 64 68=pdb
-public: virtual CAchievementMgr::~CAchievementMgr(void)=56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? ? 83 7E F4=pdb
-AchievementIDCompare()=55 8B EC 8B 45 08 56 57 8B 08 8B 45 0C 83=pdb
-AchievementOrderCompare()=55 8B EC 8B 45 08 56 57 8B 38 8B 45=pdb
-private: void CAchievementMgr::ClearAchievementData(int)=55 8B EC 56 57 8B 7D 08 33 F6 8D=pdb
-public: int CAchievementMgr::GetAchievementCount(bool)=55 8B EC 56 57 0F B7 79=pdb
-public: virtual int ConVar::GetInt(void)const=8B 51 1C 3B D1 75 06=pdb
-public: virtual void CAchievementMgr::Shutdown(void)=53 56 57 8B D9 E8 ? ? ? ? 0F=pdb
-public: virtual void CAchievementMgr::Update(float)=56 57 8B F9 8B ? ? ? ? ? 85 C9 75 18=pdb
-public: int CAmmoDef::PlrDamage(int)=55 8B EC 8B 45 08 8B D1 83 F8 01 7C=pdb
-public: CBasePlayerAnimState::CBasePlayerAnimState(void)=C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 89 ? ? ? ? ? C7=pdb
-public: virtual float ConVar::GetFloat(void)const=55 8B EC 51 8B 51 1C 3B=pdb
-public: virtual void CBasePlayerAnimState::Release(void)=85 C9 74 07 8B 01 6A 01 FF 50 24=pdb
-public: CBaseAchievement::CBaseAchievement(void)=C6 41 08 00 8B C1=pdb
-protected: void CBaseAchievement::AwardAchievement(void)=56 8B F1 8B 46 0C 8D 4E 0C 8B 40 14 FF D0 84 C0 75=pdb
-protected: void CBaseAchievement::HandleProgressUpdate(void)=56 8B F1 8B 4E 20 85 C9 7E=pdb
-public: virtual bool CBaseAchievement::IsAchieved(void)=8A 41 50=pdb
-public: virtual void CBaseAchievement::SetShowOnHUD(bool)=55 8B EC 53 8A 5D 08 38=pdb
-public: virtual void CBaseAchievement::SetUserSlot(int)=55 8B EC 8B 45 08 89 41 7C=pdb
-public: bool C_CSGameRules::IsFreezePeriod(void)=8A 41 20 C3=pdb
-public: virtual bool CBaseAchievement::ShouldShowOnHUD(void)=8A 41 78=pdb
-public: CSoundParameters::CSoundParameters(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 20=pdb
-public: virtual void C_BaseCombatWeapon::AbortReload(void)=56 8B F1 6A 07=pdb
-public: virtual bool C_BaseCombatWeapon::CanBeSelected(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75 02=pdb
-public: void C_BaseCombatWeapon::ClassifyWeaponModel(void)=53 56 57 8B F9 8B 47 04 8D=pdb
-public: int C_BaseWeaponWorldModel::GetMuzzleBoneIndex(void)=56 8B F1 83 ? ? ? ? ? ? 75 10=pdb
-public: virtual int C_BaseCombatWeapon::GetRandomBurst(void)=A1 ? ? ? ? 56 8B F1 57 8B 38=pdb
-public: virtual int C_BaseEntity::GetSolidFlags(void)const=81 ? ? ? ? ? 8B 01 FF 60 30=pdb
-public: void C_BaseCombatWeapon::GiveDefaultAmmo(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 8B=pdb
-public: virtual bool C_BaseCombatWeapon::HasAnyAmmo(void)=56 8B F1 8B ? ? ? ? ? C1 E8 1F=pdb
-public: virtual bool C_BaseCombatWeapon::Reload(void)=56 8B F1 8B 06 FF ? ? ? ? ? FF ? ? ? ? ? 50=pdb
-public: virtual void C_BaseCombatWeapon::Spawn(void)=56 8B F1 57 8B 06 FF ? ? ? ? ? 6A 02=pdb
-public: virtual void C_BaseEntity::Think(void)=8B C1 8B 50 40=pdb
-public: virtual void C_BaseCombatWeapon::WeaponIdle(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0F=pdb
-public: CEffectData::CEffectData(void)=C7 ? ? ? ? ? ? 33 C0 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: void C_BaseEntity::AddEffects(int)=55 8B EC 53 8B 5D 08 56 8B F1 09=pdb
-public: void C_BaseEntity::CheckHasThinkFunction(bool)=55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B C6=pdb
-public: virtual class Vector C_BaseEntity::EarPosition(void)=55 8B EC 8B 11 FF 75 08 FF ? ? ? ? ? 8B=pdb
-public: virtual class Vector C_BaseEntity::EyePosition(void)=55 8B EC 56 8B F1 8B 06 FF 50 28=pdb
-public: virtual int C_BaseEntity::GetTracerAttachment(void)=8B ? ? ? ? ? 56 83 CE=pdb
-public: bool C_BaseEntity::IsStandable(void)const=56 8B F1 8B 06 FF ? ? ? ? ? A8=pdb
-public: void C_BaseEntity::SetCollisionGroup(int)=55 8B EC 8B 45 08 39 ? ? ? ? ? 74 0B=pdb
-public: bool C_BaseEntity::WillThink(void)=8B C1 83 ? ? ? ? ? ? 7E=pdb
-public: virtual void C_BasePlayer::AbortReload(void)=56 8B F1 8B 06 FF ? ? ? ? ? 85 C0 74 15 8B 06 8B CE FF ? ? ? ? ? 8B=pdb
-public: int C_BasePlayer::GetAssociatedTeamNumber(void)const=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 44=pdb
-public: virtual int C_BasePlayer::GetDefaultFOV(void)const=56 57 8B F9 8B 07 FF ? ? ? ? ? 83=pdb
-public: virtual float C_BasePlayer::GetPlayerMaxSpeed(void)=55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 19=pdb
-public: bool C_BasePlayer::IsSpectator(void)const=56 8B F1 8B 06 FF ? ? ? ? ? 83 F8 01 75 2D=pdb
-public: virtual void C_BasePlayer::ItemPostFrame(void)=55 8B EC 83 EC 0C 56 57 8B F9 8B 37=pdb
-public: virtual void C_BasePlayer::ItemPreFrame(void)=53 8B D9 56 57 8B 03 FF ? ? ? ? ? 8B 03 8B CB FF=pdb
-public: float C_BaseAnimating::SetPoseParameter(int,float)=55 8B EC 56 8B F1 83 ? ? ? ? ? ? 75 14 8B 46 04 8D 4E 04 FF 50 20 85 C0 74 07 8B CE E8 ? ? ? ? 8B ? ? ? ? ? 85 C0=pdb
-public: void C_Beam::SetBeamFlags(int)=55 8B EC 8B 45 08 39 ? ? ? ? ? 74 06 89 ? ? ? ? ? 5D=pdb
-public: void C_Beam::SetEndEntity(class C_BaseEntity near *)=55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 0B 8B 06 8B CE FF 50 08 8B 00 EB 03 83 C8 FF 8B ? ? ? ? ? 49=pdb
-public: CMeshBuilder::CMeshBuilder(void)=C7 ? ? ? ? ? ? ? ? ? 8B C1 C6=pdb
-public: void CVertexBuilder::AdvanceVertex(void)=FF ? ? ? ? ? 8B ? ? ? ? ? 3B ? ? ? ? ? 7E 06 89 ? ? ? ? ? 8B 01=pdb
-public: void CVertexBuilder::Reset(void)=8B 41 54 89 ? ? ? ? ? 8B=pdb
-public: CBoneMergeCache::CBoneMergeCache(void)=56 8B F1 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? C7=pdb
-protected: void CUtlBuffer::GetTypeBin<int>(int near &)=55 8B EC 56 6A 04=pdb
-public: CUtlBuffer::~CUtlBuffer(void)=56 8B F1 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E=pdb
-public: virtual void C_BaseAnimating::Clear(void)=56 8B F1 6A 3C=pdb
-public: virtual void C_ClientRagdoll::ClientThink(void)=55 8B EC 83 EC 30 56 8B F1 80=pdb
-public: virtual void C_BaseAnimating::DoMuzzleFlash(void)=8A ? ? ? ? ? FE C0 24 03 88 ? ? ? ? ? C3=pdb
-public: virtual int C_BaseAnimating::GetRenderFlags(void)=A1 ? ? ? ? 53 56 8B F1 33=pdb
-public: void C_BaseAnimating::InvalidateBoneCache(void)=80 ? ? ? ? ? ? 74 16 A1 ? ? ? ? 48 C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? C3=pdb
-public: bool C_BaseAnimating::IsRagdoll(void)const=83 ? ? ? ? ? ? 74 0C 80 ? ? ? ? ? ? 74=pdb
-public: virtual bool C_BaseAnimating::IsSelfAnimating(void)=80 ? ? ? ? ? ? 74 03 B0 01 C3 0F=pdb
-public: void C_BaseAnimating::RagdollMoved(void)=55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 8B 01 FF 50=pdb
-public: void C_BaseAnimating::ResetSequenceInfo(void)=56 8B F1 83 ? ? ? ? ? ? 75 0A 8B=pdb
-public: virtual void C_ClientRagdoll::SUB_Remove(void)=8B 01 51 C6 ? ? ? ? ? ? C7=pdb
-public: virtual void C_BaseAnimating::SetPredictable(bool)=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B CE=pdb
-public: virtual void C_BaseAnimating::SetSequence(int)=55 8B EC 53 8B 5D 08 56 8B F1 39 ? ? ? ? ? 74=pdb
-private: void C_BaseAnimating::TermRopes(void)=53 56 57 8B F9 BB ? ? ? ? 0F ? ? ? ? ? ? 66=pdb
-public: char const near * CStudioHdr::name(void)const=8B 11 8B ? ? ? ? ? 85 C0 74 1B=pdb
-public: void C_AnimationLayer::Reset(void)=56 8B F1 0F 57 C9 8B=pdb
-public: VMatrix::VMatrix(struct matrix3x4_t const near &)=55 8B EC 8B 45 08 0F 10 00 0F 11 01=pdb
-public: void C_BaseEntity::AddToLeafSystem(void)=0F ? ? ? ? ? ? 50 E8 ? ? ? ? C3=pdb
-void CC_CL_Find_Ent(class CCommand const near &)=55 8B EC 51 57 8B 7D 08 8B 07=pdb
-void CC_CL_Find_Ent_Index(class CCommand const near &)=55 8B EC 8B 4D 08 8B 01 83 F8 02 7D 0E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 83 F8 01 B8=pdb
-public: virtual void C_BaseEntity::Clear(void)=56 8B F1 B8 ? ? ? ? 57 56=pdb
-public: virtual bool C_BaseEntity::CreateLightEffects(void)=A1 ? ? ? ? 53 56 57 8B 30=pdb
-public: virtual void C_BaseEntity::CreateModelInstance(void)=56 8B F1 B8 ? ? ? ? 66 ? ? ? ? ? ? 75=pdb
-public: void C_BaseEntity::CreateShadow(void)=55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 57 8D ? ? ? ? ? 89=pdb
-public: void C_BaseEntity::DrawBBoxVisualizations(void)=55 8B EC 83 EC 18 53 8B D9 56 57 F6=pdb
-public: float C_BaseEntity::GetInterpolationAmount(int)=55 8B EC 56 57 8B F1 BF=pdb
-public: void near * C_BaseEntity::GetPredictedFrame(int)=55 8B EC 57 8B F9 83 ? ? ? ? ? ? 75 07 33=pdb
-public: virtual int C_BaseEntity::GetRenderFlags(void)=8B 01 FF 50 20 8B D0 85 D2 74 1B=pdb
-public: int C_BaseEntity::GetSoundSourceIndex(void)const=8B 01 FF 50 08 8B 00 83 F8 FF 75 06=pdb
-void InitC_BaseEntityScriptDesc(void)=80 ? ? ? ? ? ? 0F ? ? ? ? ? FF ? ? ? ? ? B9 ? ? ? ? C6=pdb
-public: virtual bool C_BaseEntity::IsDormant(void)const=83 79 5C FF 74=pdb
-public: static void C_BaseEntity::MarkAimEntsDirty(void)=8B ? ? ? ? ? 33 C0 85 D2 7E 28=pdb
-public: virtual void C_BaseEntity::MarkShadowDirty(bool)=55 8B EC 80 7D 08 00 74 0B=pdb
-public: virtual void C_BaseEntity::OnRestore(void)=56 6A 07 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 8B CE 5E=pdb
-public: virtual bool C_BaseEntity::PreRender(int)=8B 01 53 32=pdb
-RecvProxy_MoveCollide()=55 8B EC 8B 45 08 8A 48 08 8B 45 0C=pdb
-RecvProxy_MoveType()=55 8B EC 8B 45 08 8B 4D 0C 8A=pdb
-public: void C_BaseEntity::RemoveFromAimEntsList(void)=57 8B F9 8B ? ? ? ? ? 83 F8 FF 0F ? ? ? ? ? 8B=pdb
-public: void C_BaseEntity::RemoveVar(void near *,bool)=55 8B EC 56 8B F1 33 C0 8B 4E=pdb
-public: virtual void C_BaseEntity::ResetLatched(void)=57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75 35=pdb
-public: virtual void C_BaseEntity::SUB_Remove(void)=56 8B F1 83 ? ? ? ? ? ? 7E 1A=pdb
-public: virtual int C_BaseEntity::Save(class ISave near &)=55 8B EC 56 8B F1 8B 06 FF 50 3C=pdb
-public: bool C_BaseEntity::SetModel(char const near *)=55 8B EC 8B 55 08 57 8B F9 85 D2 74 28=pdb
-public: virtual void C_BaseEntity::SetPredictable(bool)=55 8B EC 8A 45 08 88 ? ? ? ? ? 8D=pdb
-public: void C_BaseEntity::ShutdownPredictable(void)=56 8B ? ? ? ? ? 33 C0 57 8B F9=pdb
-public: virtual bool C_BaseEntity::VPhysicsIsFlesh(void)=55 8B EC B8 ? ? ? ? E8 ? ? ? ? 8B 01=pdb
-public: virtual void C_BaseEntity::ValidateModelIndex(void)=8B 11 0F ? ? ? ? ? ? 50 FF ? ? ? ? ? C3=pdb
-public: virtual bool CFlexSceneFileManager::Init(void)=56 6A 01 68 ? ? ? ? 6A=pdb
-public: virtual void C_BaseFlex::OnThreadedDrawSetup(void)=83 ? ? ? ? ? ? 7C 39=pdb
-public: virtual CBaseLesson::~CBaseLesson(void)=55 8B EC 51 56 8B F1 8B 4E 0C C7=pdb
-public: void CBaseLesson::Init(void)=55 8B EC 51 56 8B F1 8D 45 FE 68 ? ? ? ? 50 B9 ? ? ? ? 80=pdb
-public: void CIconLesson::Init(void)=55 8B EC 51 56 8B F1 8D 45 FE 68 ? ? ? ? 50 B9 ? ? ? ? C7=pdb
-public: void CScriptedIconLesson::Init(void)=55 8B EC 83 EC 0C 8D 45 FE=pdb
-public: void CTextLesson::Init(void)=55 8B EC 51 56 68 ? ? ? ? 8D 45 FE=pdb
-public: bool CBaseLesson::IsLocked(void)const=56 8B F1 0F 57 C9 F3 ? ? ? ? 0F 2E C1 9F=pdb
-public: bool CBaseLesson::ShouldShowSpew(void)=53 56 57 8B ? ? ? ? ? 8B D9 8B ? ? ? ? ? BE=pdb
-public: virtual void CIconLesson::UpdateInactive(void)=55 8B EC 83 EC 10 A1 ? ? ? ? 56 8B F1 89=pdb
-public: virtual bool CBaseLesson::WasDisplayed(void)const=80 79 64 00 0F=pdb
-public: fogparams_t::fogparams_t(void)=C7 ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? C7=pdb
-public: virtual bool C_BasePlayer::CanSetSoundMixer(void)=8B 01 FF ? ? ? ? ? 33 C9 83 F8 02=pdb
-public: virtual float C_BasePlayer::GetMinFOV(void)const=A1 ? ? ? ? 83 78 18 01 75 07=pdb
-public: char const near * C_BasePlayer::GetPlayerName(void)=56 8B ? ? ? ? ? 85 F6 74 21 8B 41=pdb
-public: virtual bool C_BasePlayer::ShouldPredict(void)=56 8B F1 85 F6 74 1C 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0E 8A ? ? ? ? ? 84 C0 74 04 B0 01 5E C3 32=pdb
-public: virtual void C_BasePlayer::UpdateClientData(void)=56 57 8B F9 33 F6 8B 07 8B CF 56 FF ? ? ? ? ? 85 C0 74 16=pdb
-public: void C_BasePlayer::UpdateFogBlend(void)=55 8B EC 83 EC 1C 56 8B F1 57 F3=pdb
-public: virtual void C_BasePlayer::UpdateSpeechVOIP(bool)=55 8B EC 80 7D 08 00 57 8B F9 74=pdb
-public: virtual bool C_BaseToggle::ShouldPredict(void)=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 0D=pdb
-public: C_BeamSpotLight::C_BeamSpotLight(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? F3=pdb
-public: void C_ColorCorrection::EnableOnClient(bool,bool)=55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 15=pdb
-public: virtual void C_EntityDissolve::UpdateOnRemove(void)=56 8B F1 8B ? ? ? ? ? 85 D2 74 16=pdb
-public: virtual void C_EntityFlame::ClientThink(void)=56 8B F1 8D 4E F4=pdb
-public: C_EnvDOFController::C_EnvDOFController(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6=pdb
-public: C_FogController::C_FogController(void)=55 8B EC 83 EC 08 56 57 8B F1 E8 ? ? ? ? 8D=pdb
-public: C_EnvProjectedTexture::C_EnvProjectedTexture(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7=pdb
-public: FlashlightState_t::FlashlightState_t(void)=C7 ? ? ? ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? ? ? ? C7=pdb
-private: bool C_EnvProjectedTexture::IsBBoxVisible(void)=55 8B EC 83 EC 34 56 8B F1 8B=pdb
-public: virtual void C_EnvScreenOverlay::ClientThink(void)=F3 ? ? ? ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 1D=pdb
-public: void C_EnvScreenOverlay::StartCurrentOverlay(void)=56 8B F1 8B ? ? ? ? ? 83 F9 0A=pdb
-public: void C_EnvScreenOverlay::StartOverlays(void)=56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: void C_EnvScreenOverlay::StopOverlays(void)=56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 FF ? ? ? ? ? 80=pdb
-public: C_EnvTonemapController::C_EnvTonemapController(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66=pdb
-public: C_FireSmoke::C_FireSmoke(void)=53 56 57 8B D9 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7 ? ? ? ? ? ? BF=pdb
-public: virtual void C_Func_Dust::ClientThink(void)=55 8B EC 83 EC 1C 56 8B F1 8B ? ? ? ? ? A8=pdb
-public: virtual C_FuncSmokeVolume::~C_FuncSmokeVolume(void)=56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: virtual void C_GameInstructor::Shutdown(void)=56 57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 21=pdb
-public: C_GameInstructor::C_GameInstructor(void)=56 68 ? ? ? ? 8B F1 E8 ? ? ? ? C7=pdb
-private: void C_GameInstructor::FindErrors(void)=55 8B EC 83 EC 08 8B C1 33=pdb
-void GameInstructor_Init(void)=8B ? ? ? ? ? 85 C9 74 57 8B=pdb
-gameinstructor_reload_lessons()=A1 ? ? ? ? B9 ? ? ? ? FF 50 0C A1 ? ? ? ? B9 ? ? ? ? FF 60=pdb
-public: virtual void C_LightGlow::ClientThink(void)=55 8B EC 83 EC 0C 56 8B F1 8B 46 F4=pdb
-RecvProxy_HDRColorScale()=55 8B EC 8B 45 08 8B 48 08 8B 45 0C 89 ? ? ? ? ? 5D=pdb
-public: virtual bool C_LightGlow::Simulate(void)=56 8B F1 8B 06 FF 50 28 8B 10=pdb
-protected: virtual C_ParticleSystem::~C_ParticleSystem(void)=56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 85 FF=pdb
-public: CPixelVisibilityQuery::CPixelVisibilityQuery(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 B8=pdb
-public: COcclusionQuerySet::~COcclusionQuerySet(void)=55 8B EC 83 EC 0C 8B ? ? ? ? ? 57=pdb
-public: void CPixelVisibilitySystem::DeleteUnusedSets(bool)=55 8B EC 83 EC 08 57 8B F9 B9=pdb
-pixelvis_debug()=0F ? ? ? ? ? ? 8D 0C 80 A1 ? ? ? ? 0F ? ? ? ? 50 0F ? ? ? ? ? ? 50 0F=pdb
-protected: void C_Plasma::Update(void)=55 8B EC A1 ? ? ? ? 83 EC 0C F3=pdb
-protected: void C_Plasma::UpdateAnimation(void)=55 8B EC 83 EC 0C A1 ? ? ? ? 53 56 57 F3=pdb
-class IGameResources near * GameResources(void)=A1 ? ? ? ? 85 C0 74 06 05=pdb
-public: virtual int C_PlayerResource::GetCoachingTeam(int)=55 8B EC 8B 45 08 8D 50 FF 83 FA 3F 77 0B=pdb
-public: unsigned __int64 C_PlayerResource::GetXuid(int)=55 8B EC 8B 55 08 8D 42 FF 83 F8 3F 77 12=pdb
-public: virtual bool vgui::Panel::IsProportional(void)=0F B7 41 64 C1 E8 0C=pdb
-public: CRopeManager::CRopeManager(void)=56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 46 04=pdb
-public: virtual CRopeManager::~CRopeManager(void)=53 8B D9 56 57 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 83=pdb
-private: bool C_RopeKeyframe::AnyPointsMoved(void)=56 57 8B ? ? ? ? ? 33 D2 85 FF 7E 52=pdb
-private: void C_RopeKeyframe::FinishInit(char const near *)=55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 6A=pdb
-public: virtual void CRopeManager::ResetRenderCache(void)=56 8B F1 8B 56 10 85 D2 7E=pdb
-public: virtual void CRopeManager::SetHolidayLightMode(bool)=55 8B EC 8A 45 08 88 41 40=pdb
-void ShakeRopesCallback(class CEffectData const near &)=55 8B EC 83 EC 10 8B 4D 08 F3=pdb
-public: virtual bool C_RopeKeyframe::ShouldDraw(void)=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 75 04=pdb
-private: void C_RopeKeyframe::UpdateHolidayLights(void)=A1 ? ? ? ? B9 ? ? ? ? 8B 40 14 FF D0 84 C0 0F ? ? ? ? ? A1=pdb
-bool UseHWMorphVCDs(void)=8B ? ? ? ? ? 81 ? ? ? ? ? 75 0F A1 ? ? ? ? 8B D0 81 ? ? ? ? ? EB 12 8B 01 FF 50 34 8B ? ? ? ? ? 8B D0 A1 ? ? ? ? 85 D2 75=pdb
-public: C_SlideshowDisplay::C_SlideshowDisplay(void)=56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7=pdb
-public: int C_SlideshowDisplay::NumMaterials(void)=8B ? ? ? ? ? 8B 00 85 C0 75=pdb
-public: virtual void C_SoundscapeSystem::OnRestore(void)=A1 ? ? ? ? 8B 40 04 89 41=pdb
-public: char const near * CCommand::operator[](int)const=55 8B EC 8B 45 08 85 C0 78 0F=pdb
-public: void C_SoundscapeSystem::OnStopAllSounds(void)=56 8B F1 83 ? ? ? ? ? ? 57=pdb
-public: static void C_Sprite::DestroyAllClientside(void)=83 ? ? ? ? ? ? 7E 20 0F ? ? ? ? ? ? A1 ? ? ? ? 8B 08 8B 41 08 83 C1 08 FF 50 04 83 ? ? ? ? ? ? 7F E7 C3=pdb
-public: static void C_Sprite::RecreateAllClientside(void)=83 ? ? ? ? ? ? 7E 20 0F ? ? ? ? ? ? A1 ? ? ? ? 8B 08 8B 41 08 83 C1 08 FF 50 04 83 ? ? ? ? ? ? 7F E7 8B=pdb
-public: virtual bool C_Team::ContainsPlayer(int)=55 8B EC 56 8B ? ? ? ? ? 33 D2 85 F6 7E 1C 8B ? ? ? ? ? 8B 4D 08 0F ? ? ? ? ? ? 39=pdb
-public: virtual int C_Team::GetGGLeader(int)=55 8B EC 8B 45 08 83 F8 03 75=pdb
-void RecvProxyArrayLength_PlayerArray(void near *,int,int)=55 8B EC 8B 4D 08 8B 45 10 39=pdb
-Test_ProxyToggle_EnsureValue()=55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83 3E=pdb
-public: virtual bool C_VGuiScreen::ShouldDraw(void)=8B ? ? ? ? ? C1 E8 05 F6=pdb
-public: virtual C_VoteController::~C_VoteController(void)=56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? C7=pdb
-public: virtual void C_VoteController::Spawn(void)=56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-ClientWorldFactory()=55 8B EC 8B ? ? ? ? ? FF 75 0C FF 75 08 8B 01=pdb
-public: virtual bool C_World::Init(int,int)=55 8B EC C7 ? ? ? ? ? ? ? ? ? 5D=pdb
-public: virtual void C_World::Release(void)=83 C1 F8 E9=pdb
-public: virtual int ConVar_ServerBounded::GetInt(void)const=55 8B EC 51 8B 01 8B=pdb
-public: void CFmtStrN<256,0>::Append(char)=55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 7D=pdb
-public: virtual int CFunctorJob::DoExecute(void)=8B 49 48 8B=pdb
-public: virtual int CHLClient::GetInEyeEntity(void)const=E8 ? ? ? ? 85 C0 74 08 8D 48 08=pdb
-public: virtual void CHLClient::GetStatus(char near *,int)=55 8B EC FF 75 0C FF 75 08 E8 ? ? ? ? 83=pdb
-public: virtual void CHLClient::HudText(char const near *)=55 8B EC FF 75 08 E8 ? ? ? ? 83 C4 04 5D=pdb
-public: bool CJob::IsFinished(void)const=8B 41 0C 83 F8 01 74 0D=pdb
-public: bool CSteamID::IsValid(void)const=56 8B 71 04 8B D6=pdb
-void PurgeOnDataChangedEvents(void)=0F ? ? ? ? ? ? 85 C0 74 0F=pdb
-public: virtual void CHLClient::RetireAllPlayerDecals(bool)=55 8B EC E8 ? ? ? ? 80=pdb
-private: void CHLClient::UncacheAllMaterials(void)=53 8B D9 56 57 BE ? ? ? ? 0F=pdb
-cl_dumpsplithacks()=8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F 1F 00 83 FE FF 74 47=pdb
-public: virtual bool CClientThinkList::Init(void)=C7 ? ? ? ? ? ? B0 01 C6 41 4C=pdb
-public: virtual CClientEntityList::~CClientEntityList(void)=56 57 8B F9 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? E8=pdb
-public: void CClientEntityList::Release(void)=53 56 57 8B F9 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 2B=pdb
-public: virtual CClientLeafSystem::~CClientLeafSystem(void)=53 56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: bool CClientAlphaProperty::IgnoresZBuffer(void)const=66 8B 41 0A BA=pdb
-public: virtual ClientModeShared::~ClientModeShared(void)=56 57 8B F9 8D 77 04 C7 ? ? ? ? ? 8B=pdb
-public: virtual void ClientModeShared::Update(void)=A1 ? ? ? ? 53 56 8B F1 B9 ? ? ? ? FF=pdb
-public: virtual void ClientModeShared::VGui_Shutdown(void)=56 8B F1 8B 4E 18 85 C9 74 0A=pdb
-public: CViewSetup::CViewSetup(void)=80 ? ? ? ? ? ? 8B C1 C7=pdb
-private: void CTextureAllocator::AddBlockToLRU(int)=55 8B EC 51 8B 45 08 53 8B D9 56 BE=pdb
-public: void CTextureAllocator::DeallocateAllTextures(void)=56 57 8B F9 8D 4F 04 E8 ? ? ? ? 83=pdb
-private: void CClientShadowMgr::DestroyQueuedShadows(void)=56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 1D=pdb
-public: virtual bool CShadowLeafEnum::EnumerateLeaf(int,int)=55 8B EC 83 C1 04 8D 45 08 50 FF ? ? ? ? ? E8=pdb
-public: virtual void CShadowModelProxy::OnBind(void near *)=55 8B EC 56 57 FF ? ? ? ? ? 8B F9=pdb
-public: virtual void CShadowProxy::OnBind(void near *)=56 FF ? ? ? ? ? 8B F1 8B 4E=pdb
-public: virtual void ParticleSphereProxy::Release(void)=85 C9 74 07 8B 01 6A 01 FF 50 14=pdb
-r_shadowcolor()=55 8B EC 56 8B 75 08 8B 06 83 F8 01=pdb
-public: virtual void CEffectsList::Flush(void)=55 8B EC 51 56 8B 71 04=pdb
-public: void CClientSteamContext::Activate(void)=56 8B F1 80 ? ? ? ? ? ? 75 3C C6=pdb
-private: void CClientSteamContext::UpdateLoggedOnState(void)=55 8B EC 83 EC 0C 53 56 8B F1 8B 4E=pdb
-public: CCollisionProperty::CCollisionProperty(void)=56 8B F1 33 C0 6A 00=pdb
-RecvProxy_IntDirtySurround()=55 8B EC 8B 55 10 8B 4D 08 0F=pdb
-RecvProxy_OBBMaxs()=55 8B EC 8B 45 08 56 8B 75 0C 83=pdb
-RecvProxy_OBBMins()=55 8B EC 56 8B 75 0C 8B CE 8B 06 FF 50 08=pdb
-RecvProxy_VectorDirtySurround()=55 8B EC 8B 45 08 8B 4D 10 F3=pdb
-void UpdateDirtySpatialPartitionEntities(void)=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 75=pdb
-public: void CCollisionProperty::UpdatePartition(void)=55 8B EC 83 EC 18 57 8B F9 8B 4F=pdb
-public: CCSMParallelSplit::CCSMParallelSplit(void)=56 57 8B F9 8D 4F 40 C6=pdb
-public: SunLightState_t::SunLightState_t(void)=53 8B D9 56 57 BF ? ? ? ? 8D 73=pdb
-public: virtual CDetailModel::~CDetailModel(void)=55 8B EC 83 EC 08 56 8B F1 8B 46 2C=pdb
-DrawMeshCallback()=55 8B EC 8B 4D 08 6A 00 6A=pdb
-private: void CDetailObjectSystem::FreeSortBuffers(void)=56 8B F1 8B ? ? ? ? ? 85 D2 74 1C=pdb
-ShouldDrawInWireFrameMode()=8B ? ? ? ? ? 85 C9 75 1C 8B ? ? ? ? ? 68=pdb
-private: float CountdownTimer::Now(void)const=A1 ? ? ? ? D9 40 10 C3=pdb
-private: void CBaseEntityList::RemoveEntityAtSlot(int)=55 8B EC 53 8B 5D 08 8B C3 56 57=pdb
-public: CEnvWindShared::CEnvWindShared(void)=53 56 8B ? ? ? ? ? 57 8B F9 C7=pdb
-void ResetWindspeed(void)=0F ? ? ? ? ? ? BA ? ? ? ? 66 ? ? ? ? ? ? 74=pdb
-char near * ParseFile(char near *,char near *,bool near *)=55 8B EC 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 83=pdb
-public: virtual void CFXQuad::Destroy(void)=56 8B F1 8B 4E 10 85 C9 74=pdb
-public: virtual bool CFXQuad::IsActive(void)=F3 ? ? ? ? 0F 2F 41 38=pdb
-private: void CGameTimescale::UpdateTimescale(void)=55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF=pdb
-protected: virtual void CGameMovement::AddGravity(void)=55 8B EC 83 EC 14 0F 57 C9=pdb
-void CreateStuckTable(void)=55 8B EC 83 EC 0C 83 ? ? ? ? ? ? 0F ? ? ? ? ? 68=pdb
-protected: virtual void CGameMovement::FinishGravity(void)=55 8B EC 83 EC 08 0F 57 C9 57=pdb
-protected: virtual void CGameMovement::FullLadderMove(void)=56 8B F1 8B 06 FF ? ? ? ? ? 8B 46=pdb
-protected: virtual void CGameMovement::FullTossMove(void)=55 8B EC 81 ? ? ? ? ? 53 8B D9 C7 ? ? ? ? ? ? 8B 03=pdb
-protected: virtual bool CGameMovement::InWater(void)=8B 41 04 80 ? ? ? ? ? ? 0F=pdb
-protected: virtual void CGameMovement::ReduceTimers(void)=A1 ? ? ? ? 8B 51 04 56=pdb
-protected: virtual void CGameMovement::StartGravity(void)=55 8B EC 83 EC 14 56 57 8B F9 0F 57 C0 8B=pdb
-public: virtual int C_GameRulesProxy::ObjectCaps(void)=E8 ? ? ? ? 25 ? ? ? ? C3=pdb
-public: __int64 CFpsHistogram::Encode(void)const=55 8B EC 83 EC 2C 53 56 57 8B F9 8B 4F=pdb
-public: virtual void CBaseGameStats_Driver::OnRestore(void)=8B ? ? ? ? ? 8B 01 FF 60 28=pdb
-public: void CGameStringPool::PurgeDeferredDeleteList(void)=56 8B F1 57 33 FF 39 7E 2C=pdb
-public: virtual bool CHudGeiger::ShouldDraw(void)=8B ? ? ? ? ? 85 C0 7E 13 3D=pdb
-public: CGlowOverlay::CGlowOverlay(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: bool C_HLTVCamera::IsPVSLocked(void)=8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 09 83 78 0C 00 74 03 B0=pdb
-Spec_Autodirector_Cameraman_Callback()=A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 75 0C 0F 57 C0 0F ? ? ? ? ? ? 77 0C 6A 00 B9 ? ? ? ? E8 ? ? ? ? C3=pdb
-public: CHud::CHud(void)=C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 1C C7=pdb
-public: bool CHud::HudDisabled(void)=83 ? ? ? ? ? ? 0F 9F C0 C3=pdb
-public: void CHud::LevelInit(void)=55 8B EC 51 53 8B D9 56 33 F6 57 39 73=pdb
-public: virtual void CBaseHudChat::SetChatPrompt(int)=56 8B F1 8B ? ? ? ? ? 83 ? ? ? ? ? ? 8B 01=pdb
-public: void CAsyncCaptionResourceManager::Clear(void)=55 8B EC 83 EC 10 8B C1 C7 ? ? ? ? ? ? 89=pdb
-private: void CHudCloseCaption::ClearAsyncWork(void)=53 8B D9 56 0F=pdb
-private: void CHudCloseCaption::CreateFonts(void)=53 56 57 8B ? ? ? ? ? 8B D9 68=pdb
-EmitCaptionCompletion()=55 8B EC 83 EC 0C 57 33 FF 39=pdb
-public: virtual void CHudCloseCaption::LevelInit(void)=56 8B F1 E8 ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 8B=pdb
-public: virtual void CHudCloseCaption::LevelShutdown(void)=56 8B F1 8B 06 C6 ? ? ? ? ? ? FF 50=pdb
-public: virtual void CHudCloseCaption::Reset(void)=56 8B F1 80 ? ? ? ? ? ? 75 18=pdb
-cc_random()=55 8B EC 56 57 8B 7D 08 BE ? ? ? ? 83=pdb
-protected: virtual void CHudHintDisplay::OnThink(void)=55 8B EC 83 EC 08 53 8B D9 8D 4D FC 56 51=pdb
-public: virtual void CHudHintKeyDisplay::Reset(void)=6A 00 81 ? ? ? ? ? E8 ? ? ? ? C3=pdb
-public: virtual void CLCD::AddChatLine(char const near *)=55 8B EC 83 EC 10 56 8B F1 83 7E=pdb
-public: virtual void CLCDItemIcon::Create(class IG15 near *)=55 8B EC 56 8B F1 57 8B 7D 08 8B CF FF 76 1C=pdb
-public: void CUtlDict<class CUtlString,int>::RemoveAll(void)=53 8B D9 56 8B 73 10 83 FE FF 74 3E 8B 43 04 8D 0C F6=pdb
-public: virtual void CLCDItem::Wipe(class IG15 near *)=55 8B EC 56 8B F1 57 33 FF 39 7E=pdb
-public: void CLocatorTarget::Deactivate(bool)=55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C9 74 12 8B 01 8B=pdb
-public: class Color ConVar::GetColor(void)const=55 8B EC 8B 41 1C 83 EC 08=pdb
-public: bool CLocatorTarget::IsPresenting(void)=55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 16 F3 ? ? ? ? ? ? ? F3 ? ? ? ? 81 ? ? ? ? ? ? EB 0A=pdb
-public: bool CLocatorTarget::IsStatic(void)=55 8B EC 51 56 8B F1 F7=pdb
-public: bool CLocatorTarget::IsVisible(void)=8A 41 1E=pdb
-public: void CLocatorTarget::SetVisible(bool)=55 8B EC 8A 45 08 56 8B F1 38 46 1E=pdb
-public: void CLocatorTarget::StartPresent(void)=A1 ? ? ? ? 8B 40 10 89 ? ? ? ? ? C3=pdb
-public: virtual bool CPDumpPanel::ShouldDraw(void)=83 ? ? ? ? ? ? 75 03 32=pdb
-protected: virtual bool CHudSaveStatus::ShouldDraw(void)=55 8B EC 83 EC 08 0F 57 C9 53=pdb
-protected: virtual void CHudSubtitles::Reset(void)=56 8B F1 8B ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? C7=pdb
-protected: virtual bool CHudSubtitles::ShouldDraw(void)=55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 8B 01=pdb
-public: virtual bool CHudVehicle::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 85 C0 74 35=pdb
-InvokeMethod()=55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 8B CE 57=pdb
-InvokeMethodTickProgress()=55 8B EC 83 EC 08 A1 ? ? ? ? 33 C9=pdb
-public: void CUtlBuffer::Purge(void)=56 8B F1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6=pdb
-ValveJpegErrorHandler()=55 8B EC 8B 45 08 8D ? ? ? ? ? 81 ? ? ? ? ? 56=pdb
-init_destination()=55 8B EC 8B 4D 08 56 68=pdb
-term_destination()=55 8B EC 8B 45 08 8B 48 18 B8=pdb
-protected: virtual bool CInput::JoyStickActive(void)=56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 2C=pdb
-public: virtual void CInput::ClearInputButton(int)=55 8B EC 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 75 09=pdb
-public: virtual float CInput::GetLookSpring(void)=55 8B EC 51 8B ? ? ? ? ? 81 ? ? ? ? ? 75 14=pdb
-void IN_Impulse(class CCommand const near &)=55 8B EC 8B 45 08 83 38 01 7F 15=pdb
-public: virtual float ConVar_m_pitch::GetFloat(void)const=55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 85 C9=pdb
-public: virtual void CInput::SetFullscreenMousePos(int,int)=55 8B EC A1 ? ? ? ? FF 75 0C FF 75 08 8B 10 FF ? ? ? ? ? 8B=pdb
-public: virtual void CLessOrEqualProxy::OnBind(void near *)=55 8B EC 83 EC 14 53 8B D9 56 57 8B 4B=pdb
-__malloc_base()=55 8B EC A1 ? ? ? ? FF 75 08 8B 08 8B 01 FF 50 04=pdb
-__free_base()=55 8B EC A1 ? ? ? ? FF 75 08 8B 08 8B 01 FF 50 14=pdb
-__recalloc()=55 8B EC A1 ? ? ? ? 53 8B 5D 0C 0F=pdb
-__calloc_base()=55 8B EC A1 ? ? ? ? 56 57 8B 7D 08 8B 08=pdb
-private: virtual void CHudMenu::OnThink(void)=80 ? ? ? ? ? ? 74 22 A1=pdb
-public: virtual bool CHudMenu::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 84 C0 74 2F=pdb
-public: void CHudMessage::MessageScanNextChar(void)=55 8B EC 83 EC 14 53 56 8B F1 33=pdb
-public: void CHudMessage::MessageScanStart(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 85=pdb
-private: void CHudMessage::PaintCharacters(void)=55 8B EC 83 EC 18 53 57=pdb
-public: virtual void CHudMessage::Reset(void)=56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? 50 E8 ? ? ? ? 83=pdb
-public: virtual void CHudMessage::SetDefaultFont(void)=8B 01 FF ? ? ? ? ? FF 50 10=pdb
-public: virtual void CHudMessage::SetFont(unsigned long)=55 8B EC 8B 45 08 56 8B F1 8D=pdb
-public: virtual void CHudMessage::SetPosition(int,int)=55 8B EC 81 ? ? ? ? ? E8 ? ? ? ? 85 C0 74 14=pdb
-public: virtual bool CHudMessage::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 84 C0 74 16=pdb
-public: virtual void CMumbleSystem::PostRender(void)=55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 57=pdb
-public: ParticleControlPoint_t::ParticleControlPoint_t(void)=55 8B EC 51 8B D1 C7=pdb
-public: virtual CParticleMgr::~CParticleMgr(void)=56 57 8B F9 6A 00 C7 ? ? ? ? ? E8=pdb
-public: void CParticleMgr::IncrementFrameCode(void)=66 ? ? ? ? 75 40=pdb
-public: bool VMatrix::IsIdentity(void)const=F3 0F 10 01 F3 ? ? ? ? ? ? ? 0F 2E=pdb
-public: void CParticleMgr::PostRender(void)=56 8B F1 57 BF ? ? ? ? 0F B7 46 34=pdb
-public: void CParticleMgr::RemoveAllEffects(void)=55 8B EC 83 EC 08 56 57 8B F9 89 7D F8=pdb
-public: void CParticleMgr::SpewInfo(bool)=53 8B ? ? ? ? ? 57 68 ? ? ? ? 8B=pdb
-private: void CParticleEffectBinding::Term(void)=55 8B EC 83 EC 0C 56 8B F1 83 ? ? ? ? ? ? 0F=pdb
-public: virtual void CLocalSpaceEmitter::Update(float)=8B 01 FF 50 48 C2=pdb
-public: virtual void CParticleSystemQuery::PreSimulate(void)=8B D1 33 C0 39 42=pdb
-private: void CPerfVisualBenchmark::Print(void)=55 8B EC 83 EC 10 53 57 8B F9 C7=pdb
-public: virtual void CDataObjectAccessSystem::Shutdown(void)=56 57 8D 71 0C=pdb
-public: void C_BaseEntity::DestroyAllDataObjects(void)=56 57 8B F9 33 F6 66 ? ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 0F=pdb
-public: bool C_BaseEntity::IsSolid(void)const=80 ? ? ? ? ? ? 74 0C F6=pdb
-public: bool C_BaseEntity::PhysicsCheckWater(void)=80 ? ? ? ? ? ? 0F 97 C0 C3=pdb
-public: C_PhysPropClientside::C_PhysPropClientside(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: virtual void C_PhysPropClientside::ClientThink(void)=55 8B EC 51 F3 ? ? ? ? ? ? ? 0F 57=pdb
-public: virtual float C_PhysPropClientside::GetMass(void)=8B ? ? ? ? ? 85 C9 74 07 8B 01 8B 40 74=pdb
-public: virtual bool C_PhysPropClientside::IsAsleep(void)=8B ? ? ? ? ? 85 C9 74 07 8B 01 8B 40 08=pdb
-public: virtual void C_PhysPropClientside::OnTakeDamage(int)=55 8B EC 80 ? ? ? ? ? ? 74 1A=pdb
-public: bool CPoseDebuggerImpl::IsModelShown(int)const=55 8B EC 8B 55 08 56 8B F1 81=pdb
-public: virtual bool CPrediction::InPrediction(void)const=8A 41 08 C3=pdb
-public: optimized_datamap_t::optimized_datamap_t(void)=56 8B F1 BA ? ? ? ? 8D 46 24=pdb
-CompareFlattenedOffsets()=55 8B EC 8B 55 08 56 8B 75 0C 8B 42=pdb
-cl_predictioncopy_describe()=55 8B EC 8B 4D 08 8B 01 83 F8 01 7F=pdb
-public: virtual void CBreakParser::SetDefaults(void near *)=55 8B EC 8B 55 08 C6=pdb
-public: virtual bool C_ServerRagdoll::Simulate(void)=56 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 0F=pdb
-public: CRagdoll::CRagdoll(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: void CRagdoll::PhysForceRagdollToSleep(void)=55 8B EC 81 ? ? ? ? ? 53 8B D9 C7 ? ? ? ? ? ? 56=pdb
-_rand()=68 ? ? ? ? 6A 00 FF ? ? ? ? ? 83 C4 08 C3=pdb
-public: virtual bool CRenderToRTHelper::Init(void)=83 ? ? ? ? ? ? 57 8B F9 75 04=pdb
-public: void CBaseRopePhysics::SetNumNodes(int)=55 8B EC 8B 45 08 8B D1 56=pdb
-public: virtual void CSaveRestoreBlockSet::PostSave(void)=56 8B F1 57 33 FF 39 7E 30 7E 16 0F ? ? ? ? 8B 46 24 8B 0C B8 8B 01 FF 50 10=pdb
-public: virtual void CSaveRestoreBlockSet::PreRestore(void)=56 57 8B F9 33 F6 39 77 30 7E 16=pdb
-public: virtual void CSaveRestoreBlockSet::PostRestore(void)=56 8B F1 57 33 FF 39 7E 30 7E 16 0F ? ? ? ? 8B 46 24 8B 0C B8 8B 01 FF 50 20=pdb
-private: int CRestore::ReadSimple<bool>(bool near *,int,int)=55 8B EC 51 56 57 8B 7D 10 8B D1=pdb
-public: CRestore::CRestore(class CSaveRestoreData near *)=55 8B EC 56 8B F1 8B 4D 08 C7 ? ? ? ? ? C7=pdb
-public: CSave::CSave(class CSaveRestoreData near *)=55 8B EC 8B 55 08 56 8B F1 8B CA=pdb
-private: void CSave::BufferData(char const near *,int)=55 8B EC 53 8B D9 56 8B 73 18 85=pdb
-private: int CSave::DataEmpty(char const near *,int)=55 8B EC 8B 45 0C 8B 4D 08 83=pdb
-public: virtual void CRestore::EndBlock(void)=56 8B F1 57 8B 56 10=pdb
-public: virtual void CSave::EndBlock(void)=55 8B EC 83 EC 08 53 56 57 8B F9 8B 07 FF 50=pdb
-public: virtual void CSave::EndLogging(void)=56 8B F1 8B 56 20=pdb
-public: virtual bool CRestore::GetPrecacheMode(void)=8A 41 24 C3=pdb
-public: virtual int CRestore::GetReadPos(void)const=8B 41 18 8B 40 08=pdb
-public: bool CSaveRestoreSegment::Read(void near *,int)=55 8B EC 56 8B F1 8B 4E 0C 8B=pdb
-public: virtual int CRestore::ReadTick(int near *,int,int)=55 8B EC 8B 41 1C 53=pdb
-public: virtual int CRestore::ReadTime(float near *,int,int)=55 8B EC 51 8B 41 1C 56 FF=pdb
-public: virtual void CSave::SetWritePos(int)=55 8B EC 8B 55 08 8B 49=pdb
-public: virtual void CRestore::SkipEntityData(void)=55 8B EC 51 56 8B F1 57 8B 06 FF=pdb
-public: virtual int CRestore::SkipHeader(void)=55 8B EC 51 8B 01 8D 55 FC 52 FF 50=pdb
-public: virtual void CRestore::StartBlock(void)=55 8B EC 8B 01 8D 55 E0=pdb
-public: virtual void CSave::StartBlock(void)=8B 01 68 ? ? ? ? FF 50 20=pdb
-public: virtual void CSave::StartLogging(char const near *)=55 8B EC 56 8B F1 8B ? ? ? ? ? 83 C1=pdb
-public: virtual void CSave::WriteInt(int const near *,int)=55 8B EC 8B 45 0C C1 E0 02=pdb
-public: virtual void CSave::WriteString(char const near *)=55 8B EC 8B 55 08 8B C2 56 57 8B F1 8D 78 01 90 8A 08 40 84 C9 75 F9 2B C7 8B CE 40=pdb
-public: virtual void CSave::WriteTick(int const near *,int)=55 8B EC 51 53 56 57 8B F9 8B 5D=pdb
-public: virtual bool CSceneTokenProcessor::GetToken(bool)=55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 68 ? ? ? ? 8B 01 8D=pdb
-public: CSceneEventInfo::CSceneEventInfo(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 10 00 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: void CSceneTokenProcessor::SetBuffer(char near *)=55 8B EC 8B 45 08 89 41 04 5D=pdb
-public: virtual bool CSoundEmitterSystem::Init(void)=8B ? ? ? ? ? 68 ? ? ? ? 8B 01 FF 50 44 A3 ? ? ? ? B0=pdb
-cl_soundemitter_flush()=A1 ? ? ? ? B9 ? ? ? ? FF 50 0C 8B ? ? ? ? ? 8B=pdb
-public: virtual void CSoundControllerImp::Update(float)=8B 41 FC 83 C1 FC FF 50 04 C2=pdb
-public: virtual void CSpatialEntityMgr::Update(float)=57 8B F9 83 7F 18 00 7E=pdb
-public: C_Sprite::C_Sprite(void)=55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: int C_Sprite::GetRenderBrightness(void)=8B D1 F3 ? ? ? ? ? ? ? 0F ? ? ? ? ? ? 9F=pdb
-RecvProxy_SpriteScale()=55 8B EC 8B 45 08 8B 4D 0C F3 ? ? ? ? 0F ? ? ? ? ? ? 9F=pdb
-public: void CEngineSprite::SetFrame(enum RenderMode_t,int)=55 8B EC 0F B7 11=pdb
-public: void CEngineSprite::Shutdown(void)=56 8B F1 57 BF ? ? ? ? 0F B7 16=pdb
-public: C_SpriteTrail::C_SpriteTrail(void)=55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 0F 57 C9=pdb
-public: virtual void C_SpriteTrail::ClientThink(void)=56 8D 71 F4 8B CE E8 ? ? ? ? 8B=pdb
-private: void C_SpriteTrail::ConvertSkybox(void)=33 D2 39 ? ? ? ? ? 0F ? ? ? ? ? 66=pdb
-private: void C_SpriteTrail::UpdateTrail(void)=55 8B EC A1 ? ? ? ? 83 EC 10 56 8B F1 F3=pdb
-public: int CStringRegistry::GetStringID(char const near *)=55 8B EC 8B 45 08 83 EC 08 56 57=pdb
-public: int CStudioHdr::GetNumAttachments(void)const=8B 41 04 85 C0 75 09 8B 01 8B ? ? ? ? ? C3 8B 40 3C=pdb
-public: int CStudioHdr::GetNumPoseParameters(void)const=8B 41 04 85 C0 75 10=pdb
-public: int CStudioHdr::GetNumSeq(void)const=8B 41 04 85 C0 75 09 8B 01 8B ? ? ? ? ? C3 8B 40 14=pdb
-public: int CStudioHdr::GetSharedPoseParameter(int,int)const=55 8B EC 56 8B 71 04=pdb
-public: int CStudioHdr::GetTransition(int,int)const=55 8B EC 83 79 04 00 8B 45=pdb
-public: char const near * studiohdr_t::pszName(void)const=8B ? ? ? ? ? 85 C0 74 1B 8D 14=pdb
-public: char near * CStudioHdr::pszNodeName(int)=55 8B EC 57 8B F9 8B 4F 04 85 C9 75 18=pdb
-public: void CStudioHdr::setBoneFlags(int,int)=55 8B EC 51 53 8B 5D 0C 8B C1=pdb
-public: void CSubtitlePanel::Pause(bool)=55 8B EC 8A 45 08 83=pdb
-public: CUGCFileRequestManager::CUGCFileRequestManager(void)=C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 04 89 41 18=pdb
-private: UGCFileRequest_t::UGCFileRequest_t(void)=56 8B F1 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-Register_LOG_WORKSHOP_Tags()=68 ? ? ? ? FF ? ? ? ? ? 68 ? ? ? ? FF ? ? ? ? ? 83=pdb
-void UGCUtil_Shutdown(void)=8B ? ? ? ? ? 85 C9 74 20 8B 01 6A=pdb
-public: void bf_write::WriteUBitLong(unsigned int,int,bool)=55 8B EC 53 8B 5D 0C 57 8B F9 8B=pdb
-bool UTIL_IsLowViolence(void)=A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 43=pdb
-public: virtual void CAvatarImage::Paint(void)=53 56 8B F1 57 80 7E 25=pdb
-public: void CAvatarImage::SetAvatarSize(int,int)=55 8B EC 80 79 3C 00 8B 45=pdb
-public: virtual void CAvatarImage::SetSize(int,int)=55 8B EC 80 79 3C 00 8B 55=pdb
-public: virtual void CBitmapButton::Paint(void)=53 56 8B F1 33 DB 8B 06 8B=pdb
-public: virtual class Color BitmapImage::GetColor(void)=55 8B EC 8B 45 08 8B 49 1C=pdb
-public: virtual void BitmapImage::Paint(void)=55 8B EC 83 EC 08 56 8B F1 8B 56=pdb
-public: virtual void vgui::Image::SetBkColor(class Color)=55 8B EC 8B 01 FF 75 08 FF 50 48=pdb
-public: virtual void BitmapImage::SetPos(int,int)=55 8B EC 8B 45 08 89 41 20 8B=pdb
-public: virtual void CCenterPrint::Destroy(void)=56 8B F1 8B 4E 04 85 C9 74 22=pdb
-public: virtual void CCenterStringLabel::Print(char near *)=55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 81=pdb
-public: virtual void CDebugOverlay::Paint(void)=55 8B EC 83 EC 1C 89 4D F0=pdb
-public: virtual bool CDebugOverlay::ShouldDraw(void)=8B ? ? ? ? ? 8B 01 FF 50 38 85=pdb
-public: virtual void CFPSPanel::DumpStats(void)=56 8B F1 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? A1=pdb
-private: void CFPSPanel::InitAverages(void)=56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 50=pdb
-public: virtual bool CFPSPanel::ShouldDraw(void)=80 ? ? ? ? ? ? 56 8B F1 0F ? ? ? ? ? 8B ? ? ? ? ? 81=pdb
-bool VGui_IsSplitScreenPIP(void)=83 ? ? ? ? ? ? 7C 2A 8B ? ? ? ? ? 81=pdb
-public: virtual void CLoadingDisc::Destroy(void)=56 8B F1 8B 4E 04 85 C9 74 1B 8B 01 6A 00 FF ? ? ? ? ? 8B 4E 04 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B=pdb
-public: virtual void CNetGraphPanelInterface::Destroy(void)=56 8B F1 8B 4E 04 85 C9 74 1B 8B 01 6A 00 FF ? ? ? ? ? 8B 4E 04 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 5E=pdb
-public: virtual void CMessageChars::Clear(void)=8B 49 04 85 C9 0F ? ? ? ? ? C3=pdb
-public: virtual void CMessageCharsPanel::Paint(void)=55 8B EC 51 53 56 8B ? ? ? ? ? 89 4D FC 57=pdb
-private: void CMovieDisplayScreen::UpdateMovie(void)=56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? B8 ? ? ? ? 66 ? ? ? ? ? ? 0F=pdb
-private: void CNetGraphPanel::ComputeNetgraphHeight(void)=56 8B F1 8B ? ? ? ? ? 57 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 89=pdb
-public: void CNetGraphPanel::DrawHatches(int,int,int)=55 8B EC 83 EC 24 89 4D F8=pdb
-public: void CNetGraphPanel::DrawStreamProgress(int,int,int)=55 8B EC 83 EC 14 8B 45 08 56 8B F1 C7 ? ? ? ? ? ? 57=pdb
-public: void CNetGraphPanel::InitColors(void)=55 8B EC 83 EC 20 F3 ? ? ? ? ? ? ? F3=pdb
-public: virtual void VideoPanel::Activate(void)=55 8B EC 51 53 8B D9 56 57 6A 01=pdb
-protected: virtual void VideoPanel::OnVideoOver(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? C7=pdb
-void VGui_ClearVideoPanels(void)=56 8B ? ? ? ? ? 83 C6 FF=pdb
-stopvideos()=56 33 F6 39 ? ? ? ? ? 7E 2D 57 0F=pdb
-public: virtual float CViewRender::GetZNear(void)=55 8B EC 51 8B ? ? ? ? ? 66=pdb
-public: virtual void CViewRender::StartPitchDrift(void)=55 8B EC 51 A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? 0F=pdb
-public: virtual void CViewRender::StopPitchDrift(void)=A1 ? ? ? ? F3 ? ? ? ? 0F 5A C0 C6=pdb
-public: virtual void CViewRenderBeams::ClearBeams(void)=56 8B F1 57 83 7E 04 00 74=pdb
-public: void Beam_t::ComputeBounds(void)=55 8B EC 83 EC 0C 56 8B F1 8B 46 30=pdb
-Noise()=55 8B EC 51 56 57 8B 7D 0C 8B F7=pdb
-public: virtual void CViewEffects::LevelInit(void)=56 8B F1 8B 06 FF 50 34=pdb
-public: virtual void CViewEffects::ClearPermanentFades(void)=53 57 8B F9 8B 5F 18 83 EB 01 78=pdb
-public: virtual void CViewEffects::ClearAllFades(void)=56 8B F1 57 8B 7E 18 83 EF 01 78 19=pdb
-public: virtual void CViewEffects::Save(class ISave near *)=55 8B EC 51 53 56 8B 75 08 8B D9 57 6A=pdb
-private: virtual void CViewEffects::ClearAllShakes(void)=53 56 8B F1 57 33 FF 8B 5E 2C=pdb
-void CC_Shake_TestPunch(class CCommand const near &)=55 8B EC 83 EC 30 56 8B 75 08 8B 06=pdb
-private: void CViewEffects::ClearAllTilts(void)=53 56 8B F1 57 33 FF 8B 5E 50=pdb
-bool __MsgFunc_Fade(class CCSUsrMsg_Fade const near &)=55 8B EC 83 EC 0C 8B 4D 08 8B=pdb
-bool __MsgFunc_Shake(class CCSUsrMsg_Shake const near &)=55 8B EC 83 EC 1C 8B 4D 08 C7=pdb
-public: virtual void CViewAngleAnimation::ClientThink(void)=55 8B EC 83 EC 44 53 56 57 8B F9 80=pdb
-private: void CViewAngleAnimation::SetAngles(class QAngle)=55 8B EC 83 EC 14 56 8B F1 F6=pdb
-viewanim_addkeyframe()=55 8B EC 83 EC 1C 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B=pdb
-viewanim_create()=55 8B EC 8B ? ? ? ? ? 85 C9 74 10 8B 01=pdb
-bool IsDepthOfFieldEnabled(void)=8B ? ? ? ? ? 56 8B 01 FF 50 34 8B F0 85 F6 75=pdb
-public: CClientRenderablesList::CClientRenderablesList(void)=C7 ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7=pdb
-public: virtual bool CRefractiveGlassView::AdjustView(float)=56 57 8B F9 E8 ? ? ? ? 8B F0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B CE 8B 16 FF=pdb
-private: virtual int PruneWorldListInfoJob::DoExecute(void)=55 8B EC 83 EC 0C 8B ? ? ? ? ? 53 56 8B F1=pdb
-public: virtual void CFreezeFrameView::Draw(void)=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89 5D FC 8B 01 FF ? ? ? ? ? 8B=pdb
-public: virtual void CRefractiveGlassView::Draw(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B CF=pdb
-public: virtual void CViewRender::FreezeFrame(float)=55 8B EC F3 ? ? ? ? 0F 57 C0 0F 2E D0=pdb
-public: virtual int CViewRender::GetDrawFlags(void)=8B ? ? ? ? ? 85 C9 74 05 8B 01 FF 60 08 33=pdb
-protected: virtual void CBaseWorldView::PopView(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B CE 6A=pdb
-public: virtual void CRefractiveGlassView::PopView(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B CE FF=pdb
-public: void CConcurrentViewData::Purge(void)=55 8B EC 51 56 8B F1 8B ? ? ? ? ? 85 C9 74 0F=pdb
-protected: virtual void CBaseWorldView::PushView(float)=55 8B EC F3 ? ? ? ? 83 EC 08 53=pdb
-public: virtual void CReflectiveGlassView::PushView(float)=55 8B EC 83 EC 10 53 8B D9 8B ? ? ? ? ? 56=pdb
-public: virtual void CRefractiveGlassView::PushView(float)=55 8B EC 83 EC 14 89 4D FC 8B=pdb
-protected: void CRendering3dView::ReleaseLists(void)=55 8B EC 51 53 56 8B F1 57 8B ? ? ? ? ? 85 C9=pdb
-SetLightmapScaleForWater()=55 8B EC 8B ? ? ? ? ? 83 EC 18 8B 01 FF=pdb
-public: void CUnderWaterView::CRefractionView::Setup(void)=53 8B D9 B9 ? ? ? ? 56 57 8B FB 8D ? ? ? ? ? 8D 46 08 F7 DE 1B F6 23 F0 F7 DF 8D 43 08 1B FF 23 F8 F3 A5 8B CB E8 ? ? ? ? 80 7B=pdb
-r_cheapwaterend()=55 8B EC 51 8B 45 08 83 38 02 75 27 FF ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? D9 5D 08 F3 ? ? ? ? F3 ? ? ? ? 8B 01 FF 50 44=pdb
-r_cheapwaterstart()=55 8B EC 51 8B 45 08 83 38 02 75 27 FF ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? D9 5D 08 F3 ? ? ? ? F3 ? ? ? ? 8B 01 FF 50 40=pdb
-testfreezeframe_f()=8B ? ? ? ? ? 51 C7 ? ? ? ? ? ? 8B 01 FF 50 7C C3=pdb
-public: CVoiceStatus::CVoiceStatus(void)=55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 C7=pdb
-public: virtual CVoiceStatus::~CVoiceStatus(void)=56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 05 8B 01 FF 50 34=pdb
-void ClientVoiceMgr_LevelInit(void)=8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? C3=pdb
-script_help_client()=55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF=pdb
-void near * zcalloc(void near *,unsigned int,unsigned int)=55 8B EC A1 ? ? ? ? 56 57 8B 7D 0C=pdb
-void zcfree(void near *,void near *)=55 8B EC A1 ? ? ? ? FF 75 0C 8B=pdb
-public: CAchievement_Meta::CAchievement_Meta(void)=55 8B EC 83 EC 20 56 8B F1 E8=pdb
-public: virtual CAchievement_Meta::~CAchievement_Meta(void)=56 8B F1 8D ? ? ? ? ? E8 ? ? ? ? F6=pdb
-public: bool CGlowObject::IsRendering(void)const=56 57 8B F9 8B 37 E8=pdb
-public: virtual bool C_CHostage::ShouldDraw(void)=80 ? ? ? ? ? ? 75 19 8B ? ? ? ? ? 83=pdb
-public: BeamInfo_t::BeamInfo_t(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 70=pdb
-public: virtual C_CSPlayer::~C_CSPlayer(void)=55 8B EC 51 53 8B D9 56 89 5D FC C7=pdb
-public: void C_CSPlayer::ClearAllBulletHitModels(void)=57 8B F9 8B ? ? ? ? ? 85 C0 74 2D=pdb
-public: float C_CSPlayer::GetFreezeFrameInterpolant(void)=55 8B EC 83 EC 08 80 ? ? ? ? ? ? A1=pdb
-GlowEffectSensorGrenade()=55 8B EC 8B 4D 08 0F 57 C0=pdb
-public: void C_CSPlayer::HandleTaserAnimation(void)=55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? A1=pdb
-public: void CBoneSnapshot::Init(void)=56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7 ? ? ? ? ? 50=pdb
-public: bool C_CSPlayer::IsHoldingSpecGrenadeKey(void)=55 8B EC 51 8B ? ? ? ? ? 32=pdb
-public: bool C_BaseEntity::IsVisible(void)const=B8 ? ? ? ? 66 ? ? ? ? ? ? 75 03=pdb
-public: virtual void C_CSPlayer::SetSequence(int)=55 8B EC 80 ? ? ? ? ? ? 74 16=pdb
-private: void C_CSPlayer::UpdateFlashBangEffect(void)=A1 ? ? ? ? 0F 57 D2 F3 ? ? ? ? ? ? ? F3 ? ? ? ? 0F=pdb
-public: virtual void CBaseViewport::ShowBackGround(bool)=55 8B EC 8B 49 1C 8B 01=pdb
-public: virtual void CCSModeManager::LevelShutdown(void)=8B ? ? ? ? ? 8B 01 FF 60 68=pdb
-cl_reloadpostprocessparams()=55 8B EC 8B 45 08 B9 ? ? ? ? 83 38 02 75=pdb
-cl_sos_test_get_opvar()=55 8B EC 56 8B 75 08 8B 06 83 F8 02 7E=pdb
-toggleRdrOpt()=80 ? ? ? ? ? ? 8B ? ? ? ? ? 0F 94 C0 A2=pdb
-public: virtual bool CCSCustomTextureSaver::Init(void)=C7 ? ? ? ? ? ? B0 01 C6 41 20=pdb
-public: virtual bool CCSGameMovement::LadderMove(void)=53 56 8B F1 E8 ? ? ? ? 8A D8 84=pdb
-protected: virtual void CCSGameMovement::PlayerMove(void)=55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? E8=pdb
-public: virtual void CCSGameMovement::ReduceTimers(void)=55 8B EC 83 EC 08 0F 57 D2 56 8B=pdb
-public: void C_CSGameRules::CloseBuyMenu(int)=55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 0F ? ? ? ? ? 8B ? ? ? ? ? 8B=pdb
-public: float C_CSGameRules::GetBuyTimeLength(void)=55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B 01 FF=pdb
-public: static int C_CSGameRules::GetMaxPlayers(void)=8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 06 B8=pdb
-public: int C_CSGameRules::GetNumWinsToClinch(void)const=57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 6E=pdb
-public: bool C_CSGameRules::IsEndMatchVotingForNextMap(void)=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 5A=pdb
-public: virtual bool C_CSGameRules::IsGameRestarting(void)=8A 41 54=pdb
-public: bool C_CSGameRules::IsPlayingCoopGuardian(void)const=8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 12=pdb
-public: bool C_CSGameRules::IsPlayingCoopMission(void)const=8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 13 8B ? ? ? ? ? 8B 01 FF 50 24 83=pdb
-public: bool C_CSGameRules::IsPlayingGunGame(void)const=8B ? ? ? ? ? 8B 01 FF 50 20 48 F7 D8 1B C0 40 C3=pdb
-public: bool C_CSGameRules::IsPlayingTraining(void)const=8B ? ? ? ? ? 8B 01 FF 50 20 33 C9 83 F8 02=pdb
-public: bool C_CSGameRules::IsWarmupPeriod(void)const=56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 02 75 04=pdb
-public: virtual bool C_CSGameRules::ShouldCollide(int,int)=55 8B EC 8B 55 08 56 8B 75 0C 3B=pdb
-void __CreateGameRules_CCSGameRules(void)=A1 ? ? ? ? 56 68 ? ? ? ? 8B 08 8B 01 FF 50 04 68 ? ? ? ? 8B F0 6A 00 56 E8 ? ? ? ? 83 C4 0C 85 F6 74 08=pdb
-print_mapgroup()=8B ? ? ? ? ? 53 56 57 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B F0=pdb
-public: virtual void CPlayerRankManager::Shutdown(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 2C 8B D7=pdb
-print_achievement_categories()=55 8B EC 83 EC 08 53 8B ? ? ? ? ? 33 C0=pdb
-public: bool CGameTrace::DidHit(void)const=F3 ? ? ? ? ? ? ? 0F 2F 41 2C 77=pdb
-protected: bool CCSPlayerAnimState::HandleJumping(void)=55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 0F=pdb
-public: virtual void CCSPlayerAnimState::Update(float,float)=55 8B EC 56 8B F1 57 F3=pdb
-public: CMatRenderContextPtr::~CMatRenderContextPtr(void)=56 8B F1 8B 0E 85 C9 74 11=pdb
-bool IsPreCrouchUpdateDemo(void)=8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 75 14 8B ? ? ? ? ? 8B=pdb
-public: virtual GameTypes::~GameTypes(void)=53 56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8=pdb
-public: GameTypes::Map::~Map(void)=56 57 8B F9 C7 ? ? ? ? ? ? ? ? ? 83 ? ? ? ? ? ? 7C=pdb
-private: bool GameTypes::LoadMaps(class KeyValues near *)=55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 39=pdb
-public: virtual bool CSteamWorksGameStatsClient::Init(void)=E8 ? ? ? ? 6A 01 68 ? ? ? ? B9=pdb
-void Show_Steam_Stats_Session_ID(void)=F7 ? ? ? ? ? ? ? ? ? 56 BE=pdb
-private: void C_Inferno::RecomputeBounds(void)=56 8B F1 8B 06 FF 50 28 F3 ? ? ? ? ? ? ? 8B CE F3 0F 10=pdb
-public: virtual void CBitmapImagePanel::forceReload(void)=56 8B F1 80 ? ? ? ? ? ? 74 1F=pdb
-private: void CBitmapImagePanel::forceUpload(void)=56 8B F1 80 ? ? ? ? ? ? 57 8D ? ? ? ? ? 74 31=pdb
-public: virtual void CGameConsole::Activate(void)=56 8B F1 80 7E 04 00 74=pdb
-public: virtual void CGameConsole::Clear(void)=80 79 04 00 74 08=pdb
-public: virtual bool CGameConsole::IsConsoleVisible(void)=80 79 04 00 75 03 32=pdb
-public: virtual void CGameConsole::SetParent(int)=55 8B EC 80 79 04 00 74 0C=pdb
-public: virtual void CGameConsole::Shutdown(void)=56 8B F1 8B 4E 08 85 C9 74 1C=pdb
-public: virtual bool CGameUI::IsInLevel(void)=8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 1C 80=pdb
-public: virtual void CGameUI::SetProgressOnStart(void)=80 49 08=pdb
-public: char const near * CModInfo::GetFallbackDir(void)=8B ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? C3=pdb
-public: wchar_t const near * CModInfo::GetGameTitle(void)=56 8B F1 66 83 3E=pdb
-private: void COptionsSubKeyboard::Finish(enum ButtonCode_t)=55 8B EC 53 56 8B F1 57 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B=pdb
-public: virtual void COptionsSubKeyboard::ItemSelected(int)=55 8B EC 56 8B F1 57 8B 7D 08 57 8B ? ? ? ? ? 8B=pdb
-public: virtual void COptionsSubKeyboard::OnResetData(void)=56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF D0 84 C0 74 10=pdb
-protected: void COptionsSubMouse::UpdateJoystickPanels(void)=55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 8B 01=pdb
-private: void COptionsSubMultiplayer::RemapLogo(void)=55 8B EC 81 ? ? ? ? ? 56 8B F1 8D ? ? ? ? ? 68 ? ? ? ? 52=pdb
-public: virtual void CGammaDialog::OnClose(void)=56 8B F1 6A 01 F3=pdb
-public: virtual void CGammaDialog::OnOK(void)=56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B CE 66=pdb
-public: virtual void COptionsSubVideo::OnResetData(void)=53 8B D9 56 57 C6 ? ? ? ? ? ? 8B ? ? ? ? ? 8B=pdb
-public: virtual void COptionsSubVideo::PerformLayout(void)=56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74 24=pdb
-private: void COptionsSubVoice::EndTestMicrophone(void)=56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B 40=pdb
-public: virtual void COptionsSubVoice::OnApplyChanges(void)=56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B=pdb
-private: void COptionsSubVoice::ResetVoiceParameters(void)=55 8B EC 83 EC 08 56 8B F1 51=pdb
-private: void COptionsSubVoice::StartTestMicrophone(void)=56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 80=pdb
-public: virtual void CPanelListPanel::DeleteAllItems(void)=56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 3B=pdb
-protected: virtual void CPanelListPanel::OnMouseWheeled(int)=55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B 4D 08 C1 E1 04 2B 4D 08 2B=pdb
-public: virtual void CPanelListPanel::RemoveItem(int)=55 8B EC 53 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 8B=pdb
-public: virtual bool CRunGameEngine::IsInGame(void)=55 8B EC 51 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74=pdb
-public: CDescription::~CDescription(void)=57 8B F9 8B 4F 04 C7 ? ? ? ? ? 85 C9 74 20=pdb
-public: virtual CScriptObject::~CScriptObject(void)=57 8B F9 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C0 74 1C=pdb
-public: bool CDescription::InitFromFile(char near *)=55 8B EC 51 89 4D FC 8B ? ? ? ? ? 53 83=pdb
-public: BaseModUI::CUIGameData::CUIGameData(void)=55 8B EC 83 EC 10 53 56 8B F1 C7 ? ? ? ? ? ? C7=pdb
-public: virtual void vgui::URLButton::DoClick(void)=56 8B F1 6A 01 8B 06 FF ? ? ? ? ? 8B 06=pdb
-private: void vgui::URLButton::Init(void)=56 8B F1 6A 00 6A 00 66=pdb
-public: virtual void vgui::URLButton::OnCursorEntered(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0C 8B=pdb
-public: virtual void vgui::URLButton::OnCursorExited(void)=8A ? ? ? ? ? C0 E8 05 A8 01 75 0A=pdb
-protected: virtual void vgui::Button::OnSetState(int)=55 8B EC 83 7D 08 00 56 8B F1 0F=pdb
-public: virtual void vgui::URLButton::PerformLayout(void)=55 8B EC 51 56 57 8B F9 8D 45=pdb
-public: virtual void vgui::URLButton::SetArmed(bool)=55 8B EC 56 8B F1 8A 4D 08 8A ? ? ? ? ? 24=pdb
-public: virtual bool CExampleEffect::IsEnabled(void)=8A 41 04 C3=pdb
-private: virtual void CBenchmarkResultsDialog::OnClose(void)=56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 15=pdb
-private: void CNewGameDialog::ShiftPanelIndices(int)=55 8B EC 83 7D 08 00 56 57 8B F1=pdb
-public: virtual void CAsyncCtxSaveGame::Completed(void)=51 8B ? ? ? ? ? E8 ? ? ? ? C3=pdb
-public: virtual void CAsyncCtxSaveGame::ExecuteAsync(void)=8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 28 56=pdb
-public: virtual CBaseModPanel::~CBaseModPanel(void)=56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 83=pdb
-public: virtual void CBaseModPanel::OnGameUIActivated(void)=56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 1E=pdb
-public: virtual void CGameMenu::OnKillFocus(void)=53 56 57 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 8B CE 8B 06 8B 1F FF 10 50 8B CF FF ? ? ? ? ? 5F=pdb
-public: virtual void CBaseModPanel::OnSizeChanged(int,int)=55 8B EC 81 ? ? ? ? ? 5D=pdb
-PanelJobWrapperFn()=55 8B EC 83 EC 08 56 FF ? ? ? ? ? 8B=pdb
-public: virtual CGameSavePanel::~CGameSavePanel(void)=56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B=pdb
-public: virtual void CSaveGameBrowserDialog::Activate(void)=56 8B F1 0F ? ? ? ? ? ? 50 E8=pdb
-private: void CSaveGameBrowserDialog::ShiftPanelIndices(int)=55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 57=pdb
-private: void CSaveGameBrowserDialog::ShowNoSaveGameUI(void)=56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A 00 68=pdb
-public: virtual CHltvReplaySystem::~CHltvReplaySystem(void)=56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 83=pdb
-public: virtual int CHudChat::GetChatInputOffset(void)=56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 08=pdb
-public: virtual class Color CHudChat::GetClientColor(int)=55 8B EC 8B 55 0C 85 D2 75 0F=pdb
-public: virtual void CHudWeaponSelection::LevelInit(void)=8B ? ? ? ? ? 85 C0 79 0B=pdb
-public: virtual bool CRadioStatus::Init(void)=56 8B F1 83 ? ? ? ? ? ? 75 22=pdb
-public: virtual void CRadioStatus::Shutdown(void)=56 8B F1 8B ? ? ? ? ? 85 C9 74 05 8B 01=pdb
-menuselect()=55 8B EC 8B 4D 08 8B 01 83 F8 02 0F=pdb
-public: virtual bool SFMapOverview::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 84 C0 75 1E=pdb
-protected: void SFMapOverview::UpdateGrenades(void)=53 8B D9 57 33 FF 39 ? ? ? ? ? 7C=pdb
-public: virtual bool SFHudRadio::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 84 C0 74 04 32 C0 5E C3 A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 12=pdb
-public: virtual bool SFHudFreezePanel::ShouldDraw(void)=56 8B F1 80 ? ? ? ? ? ? 74 31=pdb
-public: virtual bool SFHudInfoPanel::ShouldDraw(void)=56 8B F1 E8 ? ? ? ? 84 C0 74 04 32 C0 5E C3 A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 23=pdb
-public: virtual void SFHudMoney::SetActive(bool)=55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B CF=pdb
-public: virtual void SFHudRadar::Reset(void)=8B 01 6A 01 FF 50 3C=pdb
-public: virtual bool SFWeaponSelection::ShouldDraw(void)=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 20=pdb
-public: virtual void C_Item_Healthshot::WeaponIdle(void)=A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F 2F 40 10 77 2F=pdb
-public: virtual bool C_BaseCSGrenade::Deploy(void)=55 8B EC 83 EC 08 80 ? ? ? ? ? ? 74 07 C6 ? ? ? ? ? ? 80 ? ? ? ? ? ? 74 07 C6 ? ? ? ? ? ? 80=pdb
-public: void CountdownTimer::Invalidate(void)=55 8B EC 83 EC 08 F3 ? ? ? ? 56=pdb
-public: virtual void C_WeaponBaseItem::Spawn(void)=55 8B EC 83 EC 08 56 8B F1 C7 ? ? ? ? ? ? F3=pdb
-public: virtual class Vector C_C4::GetGlowColor(void)=55 8B EC 8B 45 08 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 5D=pdb
-public: virtual C_WeaponCSBase::~C_WeaponCSBase(void)=55 8B EC 51 53 8B D9 56 57 68 ? ? ? ? FF=pdb
-public: virtual void C_WeaponCSBaseGun::Spawn(void)=55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? 80=pdb
-public: virtual bool C_WeaponCSBaseGun::Deploy(void)=55 8B EC 83 EC 10 56 8B F1 C7 ? ? ? ? ? ? F3=pdb
-public: virtual void C_WeaponCSBaseGun::DoFireEffects(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75 16=pdb
-public: virtual bool C_DEagle::SendWeaponAnim(int)=55 8B EC 8B 45 08 3D ? ? ? ? 75 0F=pdb
-public: virtual bool C_WeaponElite::SendWeaponAnim(int)=55 8B EC 8B 45 08 3D ? ? ? ? 75 3C=pdb
-public: bool CIronSightController::IsInIronSight(void)=53 56 8B F1 57 8B 4E 3C=pdb
-public: bool CIronSightController::ShouldHideCrossHair(void)=8B 41 3C 85 C0 74 27=pdb
-public: virtual void C_Knife::WeaponIdle(void)=A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F 2F 40 10 77 3A=pdb
-public: void CAttributeManager::ClearCache(void)=57 8B F9 80 7F 20 00 0F ? ? ? ? ? C7=pdb
-public: void CCSInventoryManager::GenerateBaseItems(void)=55 8B EC 83 EC 0C 53 56 33 D2=pdb
-public: virtual bool CCSInventoryManager::Init(void)=56 8B F1 6A 00 68 ? ? ? ? 68=pdb
-public: CEconStyleInfo::CEconStyleInfo(void)=C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18=pdb
-public: AlternateIconData_t::~AlternateIconData_t(void)=56 8B F1 C7 ? ? ? ? ? ? 83 7E 38=pdb
-public: virtual int CBaseAchievement::GetCount(void)=8B 41 58 C3=pdb
-public: CItemSelectionCriteria::CItemSelectionCriteria(void)=C6 01 00 C7 ? ? ? ? ? ? C6=pdb
-public: CEconItem::CEconItem(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? C7=pdb
-public: virtual CEconItem::~CEconItem(void)=56 8B F1 8B 4E 18 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 85 C9 74 05 E8 ? ? ? ? C7=pdb
-public: virtual unsigned char CEconItem::GetFlags(void)const=8A 41 2C C3=pdb
-public: virtual bool CEconItem::GetInUse(void)const=B8 ? ? ? ? 66 39 41 22 0F=pdb
-public: virtual int CEconItem::GetQuality(void)const=0F B7 41 22 C1 E8 05=pdb
-public: virtual int CEconItem::GetRarity(void)const=53 56 8B F1 57 8B 06 FF 50 30=pdb
-public: void CEconItem::SetItemID(unsigned __int64)=55 8B EC 8B 55 08 53 8B 5D 0C 56 8B=pdb
-public: void CEconItem::SetOriginalID(unsigned __int64)=55 8B EC 8B 55 08 8B 45 0C 3B=pdb
-public: CPlayerInventory::CPlayerInventory(void)=56 8B F1 C7 ? ? ? ? ? 8D 4E 2C=pdb
-public: void C_EconItemView::SetItemID(unsigned __int64)=55 8B EC 8B 45 08 53 8B 5D 0C 56 57=pdb
-public: void C_EconItemView::ClearInventoryImageRgba(void)=55 8B EC 81 ? ? ? ? ? 57 8B F9 C7 ? ? ? ? ? ? C7=pdb
-private: void CEconItemAttribute::Init(void)=55 8B EC 83 EC 08 53 56 8B F1 BB=pdb
-public: void C_EconItemView::Invalidate(void)=56 8B F1 80 ? ? ? ? ? ? 57 8D ? ? ? ? ? 74 13=pdb
-public: BMPResData_t::BMPResData_t(void)=C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 48=pdb
-public: virtual void CBaseModelPanel::OnCursorMoved(int,int)=55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8D=pdb
-public: void CBaseModelPanel::SetModelAnim(int,bool)=55 8B EC 8B D1 8B ? ? ? ? ? 85 C9=pdb
-public: virtual CBaseViewport::~CBaseViewport(void)=53 57 8B F9 8D ? ? ? ? ? C7=pdb
-public: virtual void CBaseViewport::LevelInit(void)=56 57 8B F9 33 F6 39 77 50=pdb
-protected: virtual void CBaseViewport::Paint(void)=8B ? ? ? ? ? 56 81 ? ? ? ? ? 75 0F 8B ? ? ? ? ? 8B C6 35 ? ? ? ? EB 11 8B 01 FF 50 34 8B ? ? ? ? ? 8B ? ? ? ? ? 85=pdb
-public: virtual void CBaseViewport::SetParent(unsigned int)=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 01 8B=pdb
-hidepanel()=55 8B EC 8B ? ? ? ? ? 85 C9 74 15 8B 55 08 83 3A 02 75 0D 8B 01 6A 00=pdb
-showpanel()=55 8B EC 8B ? ? ? ? ? 85 C9 74 15 8B 55 08 83 3A 02 75 0D 8B 01 6A 01=pdb
-public: virtual void CClientScoreBoardDialog::Reset(void)=56 8B F1 8B 4E 18 8B=pdb
-public: virtual bool C_BaseTempEntity::Init(int,int)=A1 ? ? ? ? 89 41 0C B0=pdb
-public: CSnowFallManager::CSnowFallManager(void)=56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7 ? ? ? ? ? ? C7=pdb
-public: virtual CSnowFallManager::~CSnowFallManager(void)=56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? 8B CF=pdb
-public: virtual void CClient_Precipitation::Precache(void)=56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 83=pdb
-public: virtual bool C_Embers::Simulate(void)=55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 75 07=pdb
-public: virtual void C_MovieExplosion::Update(float)=55 8B EC 83 EC 14 53 8B D9 83 ? ? ? ? ? ? 0F ? ? ? ? ? F3=pdb
-public: C_RecipientFilter::C_RecipientFilter(void)=C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 08=pdb
-public: virtual C_RecipientFilter::~C_RecipientFilter(void)=56 8B F1 8D 4E 08 C7 ? ? ? ? ? E8 ? ? ? ? C7=pdb
-private: void C_SporeTrail::AddParticles(void)=55 8B EC 83 EC 0C 56 83=pdb
-public: virtual void C_SporeTrail::Update(float)=55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 51=pdb
-public: void constraint_ballsocketparams_t::Defaults(void)=C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 2C=pdb
-public: virtual CTempEnts::~CTempEnts(void)=53 56 57 8B F9 8D 4F 04=pdb
-public: virtual void CTempEnts::Update(void)=55 8B EC 83 EC 08 57 8B F9 66=pdb
-public: virtual void CPlayerLogoProxy::Release(void)=56 8B F1 8B 4E 18 85 C9 74 05=pdb
-public: virtual C_FEPlayerDecal::~C_FEPlayerDecal(void)=55 8B EC 83 EC 08 56 57 8B F9 C7 ? ? ? ? ? C7=pdb
-void OnPlayerDecalsLevelShutdown(void)=8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F 1F 00 83 FE FF 74 4D=pdb
-public: C_TestTraceline::C_TestTraceline(void)=56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B=pdb
-public: virtual void CFXStaticLine::Destroy(void)=56 8B F1 8B 4E 0C 85 C9 74 0C=pdb
-public: virtual void CFXDiscreetLine::Update(double)=55 8B EC F3 ? ? ? ? 0F 5A C0 F2 ? ? ? ? 66 0F 5A C0 F3 ? ? ? ? F3=pdb
-public: virtual void CFXLine::Destroy(void)=56 8B F1 8B 4E 54 85=pdb
-public: virtual bool CFXLine::IsActive(void)=F3 ? ? ? ? 0F 2F 41 50 0F=pdb
-public: virtual void CFXLine::Update(double)=55 8B EC F3 ? ? ? ? F2=pdb
-void InitSmokeFogOverlay(void)=8B ? ? ? ? ? 85 C9 74 0F 8B 01 FF 50 34=pdb
-public: virtual void CClientTools::EnableRecordingMode(bool)=55 8B EC 8A 45 08 88 41 38=pdb
-public: virtual int CClientTools::GetEntIndex(void near *)=55 8B EC 8B 4D 08 85 C9 74 0D 8B 41=pdb
-public: virtual void CToolFrameworkClient::PreRender(void)=8B 49 04 85 C9 74 05 8B 01 FF 60 14=pdb
-public: virtual void CToolFrameworkClient::PostRender(void)=8B 49 04 85 C9 74 05 8B 01 FF 60 18=pdb
-stb__InitDXT()=33 D2 8B CA=pdb
-public: int mstudioseqdesc_t::anim(int,int)const=55 8B EC 8B 51 44=pdb
-public: void CIKContext::ClearTargets(void)=33 C0 39 ? ? ? ? ? 7E 1B=pdb
-public: bool CIKTarget::IsActive(void)=F3 ? ? ? ? 33 C0 0F ? ? ? ? ? ? 0F 97=pdb
-public: virtual float CChoreoEvent::GetDuration(void)=55 8B EC 51 F3 ? ? ? ? 0F ? ? ? ? ? ? F3=pdb
-public: char const near * CChoreoEvent::GetParameters(void)=83 C1 18 E9=pdb
-public: bool CChoreoEvent::GetTrackLookupSet(void)=8A ? ? ? ? ? C0 E8 03 24=pdb
-public: bool CChoreoEvent::IsProcessing(void)const=8A ? ? ? ? ? C0 E8 04 24 01 C3=pdb
-public: bool CChoreoEvent::IsResumeCondition(void)=8A ? ? ? ? ? D0 E8 24=pdb
-public: bool CChoreoEvent::IsUsingRelativeTag(void)=8A ? ? ? ? ? C0 E8 02 24 01 C3=pdb
-public: bool CChoreoEvent::PreventTagOverlap(void)=F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 53 57=pdb
-public: void CChoreoEvent::RemoveAllTracks(void)=56 8B F1 8B ? ? ? ? ? 85 C0 7E 48=pdb
-public: void CFlexAnimationTrack::Resort(int)=55 8B EC 83 EC 24 8B 45 08 56 8B=pdb
-public: void CChoreoEvent::SetActive(bool)=55 8B EC 8A 45 08 C0 E0 06=pdb
-public: void CChoreoEvent::SetPlayOverScript(bool)=55 8B EC 8A ? ? ? ? ? 8A 45 08=pdb
-public: void CChoreoEvent::SetTrackLookupSet(bool)=55 8B EC 8A 45 08 C0 E0 03 32 ? ? ? ? ? 24 08 30 ? ? ? ? ? 5D=pdb
-public: unsigned char CUtlBuffer::GetUnsignedChar(void)=55 8B EC 51 56 8B F1 F6 46 15=pdb
-void DisconnectInterfaces(void)=8B ? ? ? ? ? 83 EA 01 89 ? ? ? ? ? 78=pdb
-public: google::protobuf::internal::Mutex::Mutex(void)=56 6A 18 8B F1=pdb
-public: google::protobuf::internal::Mutex::~Mutex(void)=56 8B F1 FF 36 FF=pdb
-void google::protobuf::internal::InitLogSilencerCount(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 04=pdb
-void google::protobuf::internal::InitShutdownFunctions(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 0C=pdb
-void google::protobuf::internal::OnShutdown(void (*)(void))=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 10 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? A1=pdb
-unsigned int google::protobuf::ghtonl(unsigned int)=55 8B EC 8B 4D 08 8B C1 C1 E8=pdb
-google::protobuf::_anonymous_namespace_::DeleteGeneratedPool()=8B ? ? ? ? ? 85 C9 74 06 8B 01 6A 01 FF 10 56 8B=pdb
-google::protobuf::_anonymous_namespace_::FormatLineOptions()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75=pdb
-google::protobuf::_anonymous_namespace_::Symbol::GetFile()=8B 01 83 F8 07=pdb
-google::protobuf::_anonymous_namespace_::RetrieveOptions()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 5D 10=pdb
-google::protobuf::_anonymous_namespace_::ToCamelCase()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 08 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? C7=pdb
-private: void google::protobuf::UnknownField::DeepCopy(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B 07 C1=pdb
-google::protobuf::internal::SubMessagePrefix()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 24 A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75 08 8B 4D=pdb
-public: virtual void CHudElement::SetHud(class CHud near *)=55 8B EC 8B 45 08 89 41 38=pdb
-google::protobuf::internal::_anonymous_namespace_::Register()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 78 A1 ? ? ? ? 33 C5 89 45 F0 56=pdb
-public: google::protobuf::TextFormat::Parser::Parser(void)=C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66=pdb
-public: google::protobuf::TextFormat::Printer::Printer(void)=C7 ? ? ? ? ? 8B C1 66=pdb
-google::protobuf::_anonymous_namespace_::FieldSpaceUsed()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 50 8D 45 F4 64 ? ? ? ? ? 8B=pdb
-public: google::protobuf::io::Tokenizer::Token::~Token(void)=8B 41 18 56 8D 71 04=pdb
-public: google::protobuf::io::Tokenizer::~Tokenizer(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B 57 60=pdb
-google::protobuf::io::AppendUTF8()=55 8B EC 51 8B 55 08 C7=pdb
-google::protobuf::io::_anonymous_namespace_::DigitValue()=55 8B EC 8A 4D 08 8D 41 D0=pdb
-google::protobuf::io::FetchUnicodePoint()=55 8B EC 83 EC 08 8B 45 0C 53 8B 5D 08 C7=pdb
-public: bool google::protobuf::io::Tokenizer::Next(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 34 A1 ? ? ? ? 33 C5 89 45 F0 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B F1 8B=pdb
-google::protobuf::io::ReadHexDigits()=55 8B EC 8B 45 0C 56 8B 75 10 C7=pdb
-private: void google::protobuf::io::Tokenizer::Refresh(void)=55 8B EC 51 56 8B F1 80 7E 68=pdb
-google::protobuf::io::_anonymous_namespace_::TranslateEscape()=55 8B EC 0F BE 45=pdb
-void google::protobuf::DelocalizeRadix(char near *)=55 8B EC 56 8B 75 08 6A 2E 56 E8 ? ? ? ? 83=pdb
-google::protobuf::internal::ValidateEnumUsingDescriptor()=55 8B EC FF 75 0C 8B 4D 08 E8 ? ? ? ? F7=pdb
-public: void fourplanes_t::ComputeSignbits(void)=0F 28 01 0F ? ? ? ? ? ? ? 0F 29=pdb
-void InitSinCosTable(void)=56 33 F6 66 0F 6E=pdb
-public: class VMatrix VMatrix::Transpose(void)const=55 8B EC 8B 55 08 56 8B F1 8B 06=pdb
-public: IceKey::~IceKey(void)=56 33 F6 39 71=pdb
-int GetSIMDRandContext(void)=56 57 8B ? ? ? ? ? 0F ? ? ? ? ? ? ? 33 F6=pdb
-public: void CSoftbody::InitDefaults(void)=33 C0 56 8B F1 83=pdb
-public: virtual void vgui::Image::SetPos(int,int)=55 8B EC 8B 45 08 89 41 04 8B 45 0C 89 41 08 5D=pdb
-protected: CParticleCollection::CParticleCollection(void)=55 8B EC 51 56 8B F1 68 ? ? ? ? 6A=pdb
-private: void CParticleSystemMgr::InitAttributeTable(void)=56 57 68 ? ? ? ? 6A 00 68=pdb
-public: bool CParticleCollection::IsBatchable(void)const=8A ? ? ? ? ? C0 E8 07 C3=pdb
-public: bool CParticleCollection::IsFinished(void)const=55 8B EC 51 57 8B F9 8B 47 48 85 C0 75=pdb
-private: void CParticleCollection::LabelTextureUsage(void)=56 8B F1 8B 4E 48 85 C9 74 5B=pdb
-public: void CParticleCollection::ResetParticleCache(void)=55 8B EC 51 53 8B D9 83 ? ? ? ? ? ? 74=pdb
-public: void CParticleCollection::StartEmission(bool)=55 8B EC 57 8B F9 8B 47 48=pdb
-public: void CParticleSnapshot::Purge(void)=56 8B F1 E8 ? ? ? ? 0F ? ? ? ? ? ? C7=pdb
-SortLessFuncExtended()=55 8B EC 8B 45 08 8B 10 8B 45=pdb
-public: int FourRays::CalculateDirectionSignMask(void)const=8D 51 30 8B=pdb
-public: virtual bool ConVar::IsRegistered(void)const=8B 41 1C 8A 40=pdb
-public: virtual void ConVar::AddFlags(int)=55 8B EC 8B 49 1C 8B 45 08 09=pdb
-public: virtual int ConVar::GetFlags(void)const=8B 41 1C 8B 40 14=pdb
-public: virtual void ConVar::SetValue(class Color)=55 8B EC 8B 49 04 FF 75 08 8B 01 FF 50=pdb
-private: virtual void ConVar::InternalSetFloatValue(float)=55 8B EC 83 EC 28 56 8B F1 F3 ? ? ? ? F3 ? ? ? ? 31=pdb
-private: virtual void ConVar::InternalSetIntValue(int)=55 8B EC 83 EC 28 56 8B F1 57 8B=pdb
-private: virtual bool ConVar::ClampValue(float near &)=55 8B EC 80 79 34=pdb
-protected: virtual void ConCommandBase::Init(void)=8B D1 8B ? ? ? ? ? 85 C9 74 05=pdb
-public: virtual void ConCommandBase::RemoveFlags(int)=55 8B EC 8B 45 08 F7 D0=pdb
-public: virtual void ConCommandBase::AddFlags(int)=55 8B EC 8B 45 08 09=pdb
-public: virtual bool ConCommand::CanAutoComplete(void)=8A 41 20 24=pdb
-public: virtual char const near * ConVar::GetName(void)const=8B 41 1C 8B 40 0C=pdb
-public: void ConVarRef::Init(char const near *,bool)=55 8B EC 57 8B F9 8B ? ? ? ? ? 85 C9 74 0C=pdb
-public: virtual bool ConCommandBase::IsFlagSet(int)const=55 8B EC 8B 45 08 85 41=pdb
-public: virtual bool ConVar::IsFlagSet(int)const=55 8B EC 8B 49 1C 8B 45 08 85=pdb
-public: virtual void ConVar::SetValue(int)=55 8B EC 8B 49 04 8B 01 5D FF 60 40=pdb
-public: virtual void ConVar::SetValue(float)=55 8B EC 8B 49 04 F3=pdb
-public: virtual void ConVar::SetValue(char const near *)=55 8B EC 8B 49 04 8B 01 5D FF 60 38=pdb
-public: void KeyValues::AddSubKey(class KeyValues near *)=55 8B EC 8B 41 18 85 C0 75=pdb
-public: class KeyValues near * KeyValues::FindKey(int)const=55 8B EC 85 C9 74 1D=pdb
-public: char CUtlBuffer::GetChar(void)=56 6A 01 8B F1 E8 ? ? ? ? 84=pdb
-public: int KeyValues::GetInt(char const near *,int)=55 8B EC 6A 00 FF 75 08 E8 ? ? ? ? 85 C0 74 45=pdb
-public: char const near * KeyValues::GetName(void)const=57 8B F9 85 FF 74 1F=pdb
-private: void KeyValues::RemoveEverything(void)=56 57 8B F9 8B 4F 18 85=pdb
-public: void KeyValues::RemoveSubKey(class KeyValues near *)=55 8B EC 56 8B 75 08 85 F6 74 4D 8B 51=pdb
-public: void CKeyValuesTokenReader::SeekBackOneToken(void)=56 8B F1 8B ? ? ? ? ? 80 7E 0C=pdb
-public: void KeyValues::SetInt(char const near *,int)=55 8B EC 6A 01 FF 75 08 E8 ? ? ? ? 85 C0 74 0A 8B 4D 0C 89 48 0C C6 40 10 02=pdb
-public: void KeyValues::SetName(char const near *)=55 8B EC 51 56 8B F1 C7 ? ? ? ? ? ? FF=pdb
-public: void KeyValues::deleteThis(void)=56 8B F1 85 F6 74 13=pdb
-public: char const near * CUtlString::Get(void)const=83 79 0C 00 B8 ? ? ? ? 74 02 8B 01 C3=pdb
-public: void CUtlBinaryBlock::Set(void const near *,int)=55 8B EC 53 56 33 DB 8B=pdb
-unsigned int HashString(char const near *)=0F B6 01 33 D2=pdb
-unsigned int HashStringCaseless(char const near *)=53 56 8B F1 33 DB 57 33 FF 0F=pdb
-protected: void CUtlBuffer::PutTypeBin<char>(char)=55 8B EC 56 8B F1 F6 46 14 01 75 7B=pdb
-public: CUtlBuffer::CUtlBuffer(int,int,int)=55 8B EC 56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6=pdb
-public: CUtlBuffer::CUtlBuffer(void const near *,int,int)=55 8B EC 8B 45 08 56 8B F1 8B 4D 0C 89 06 8B=pdb
-protected: void CUtlBuffer::AddNullTermination(int)=55 8B EC 56 8B F1 57 8B 7D 08 3B 7E 1C=pdb
-protected: bool CUtlBuffer::CheckGet(int)=55 8B EC 56 8B F1 8A 56 14=pdb
-protected: bool CUtlBuffer::CheckPut(int)=55 8B EC 56 8B F1 F6 46 14 01 75 2C=pdb
-public: void CUtlBuffer::EatWhiteSpace(void)=56 8B F1 F6 46 15 01 74 5D=pdb
-public: bool CUtlBuffer::Get(void near *,int)=55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 7E=pdb
-public: void CUtlBuffer::GetString(char near *,int)=55 8B EC 51 57 8B F9 80 7F 14=pdb
-public: void const near * CUtlBuffer::PeekGet(int,int)=55 8B EC 56 8B F1 57 F6 46 14 02=pdb
-unsigned int ThreadedLoadLibraryFunc(void near *)=55 8B EC 56 8B 75 08 6A 08=pdb
-public: void CBitRead::ReadBitVec3Coord(class Vector near &)=55 8B EC 56 57 8B 7D 08 8B F1 C7=pdb
-public: unsigned int CBitRead::ReadVarInt32(void)=55 8B EC 83 EC 08 53 56 8B C1 33=pdb
-public: bool CBitRead::Seek(int)=55 8B EC 51 53 56 57 8B 7D 08 8B F1 C6 45 FF 01=pdb
-public: CUtlSymbol::CUtlSymbol(char const near *)=55 8B EC 51 53 56 57 8B D9 E8 ? ? ? ? 8B ? ? ? ? ? 8B 47=pdb
-private: int CUtlSymbolTable::FindPoolWithSpace(int)const=55 8B EC 53 56 57 8B 79 30=pdb
-public: void CSOAContainer::AllocateData(int,int,int)=55 8B EC 8B 55 08 8B 45 0C 53=pdb
-public: void CSOAContainer::Purge(void)=56 8B F1 E8 ? ? ? ? 68 ? ? ? ? 8D ? ? ? ? ? 68=pdb
-public: void CSOAContainer::PurgeData(void)=56 8B F1 57 8B ? ? ? ? ? 85 D2 74 1C=pdb
-public: bool netadr_s::IsLocalhost(void)const=80 79 04 7F=pdb
-public: void netadr_s::SetIP(unsigned int)=55 8B EC 8B 45 08 0F C8=pdb
-public: void netadr_s::SetPort(unsigned short)=55 8B EC 66 8B 45 08 86=pdb
-public: void CUtlMemoryPool::Clear(void)=53 8B D9 57 8B 53=pdb
-protected: void CUtlMemoryPool::AddNewBlob(void)=53 8B D9 8B 43 08 83=pdb
-public: void near * CUtlMemoryPool::AllocZero(unsigned int)=55 8B EC 53 8B 5D 08 56 8B F1 3B 1E=pdb
-public: void CStringPool::FreeAll(void)=53 56 57 8B F9 BE ? ? ? ? 0F B7 47 10 66 90 66 3B C6 74 16 0F B7 C8 8D 14 49=pdb
-public: void CMemoryStack::Term(void)=56 8B F1 8B 4E 14 85=pdb
-public: void bf_write::WriteShort(int)=55 8B EC 6A 10 FF 75 08 E8 ? ? ? ? 5D=pdb
-protected: virtual CDataManagerBase::~CDataManagerBase(void)=C7 ? ? ? ? ? 83 C1 0C=pdb
-public: unsigned int CDataManagerBase::FlushAll(void)=55 8B EC 83 EC 30 53 8B D9 56 57=pdb
-void DefaultConditionalErrorProc(char const near *)=55 8B EC FF 75 08 68 ? ? ? ? FF=pdb
-public: CUtlStreamBuffer::~CUtlStreamBuffer(void)=56 8B F1 E8 ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E=pdb
-public: void CUtlStreamBuffer::Close(void)=56 8B F1 57 F6 46 15=pdb
-private: int CUtlStreamBuffer::ReadBytesFromFile(int,int)=55 8B EC 56 57 8B F9 83 7F=pdb
-private: bool CUtlStreamBuffer::StreamGetOverflow(int)=55 8B EC 56 8B F1 80 7E 14 00 0F ? ? ? ? ? F6 46 15 08 0F ? ? ? ? ? 83=pdb
-private: bool CUtlStreamBuffer::StreamPutOverflow(int)=55 8B EC 56 8B F1 80 7E 14 00 0F ? ? ? ? ? F6 46 15 08 0F ? ? ? ? ? 57=pdb
-public: struct studiohdr_t near * CMDL::GetStudioHdr(void)=8B C1 8B ? ? ? ? ? 85 C9 75 03 33=pdb
-public: vgui::DragDrop_t::DragDrop_t(void)=C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18=pdb
-public: virtual vgui::Panel::~Panel(void)=56 8B F1 57 80 7E 38 00 C7=pdb
-public: virtual void vgui::Panel::DeletePanel(void)=66 ? ? ? ? B8 ? ? ? ? 66 21 41=pdb
-public: int vgui::Panel::GetChildCount(void)=57 8B ? ? ? ? ? 85 FF 74 10 8B 01 56 8B 37 FF 10 50 8B CF FF 56 44=pdb
-public: class Color vgui::Panel::GetDropFrameColor(void)=55 8B EC 8B 45 08 8B 49 30=pdb
-public: virtual char const near * vgui::Panel::GetName(void)=83 C1 50 E9=pdb
-public: virtual unsigned long vgui::Panel::GetScheme(void)=53 8B D9 8B ? ? ? ? ? 85 C0 75=pdb
-public: int vgui::Panel::GetTall(void)=55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B 45=pdb
-public: virtual unsigned int vgui::Panel::GetVParent(void)=57 8B ? ? ? ? ? 85 FF 74 10 8B 01 56 8B 37 FF 10 50 8B CF FF 56 50=pdb
-public: int vgui::Panel::GetWide(void)=55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 F8=pdb
-public: virtual bool vgui::Panel::HasFocus(void)=56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 10=pdb
-public: virtual bool vgui::Panel::HasParent(unsigned int)=55 8B EC 8B 45 08 85 C0 75 06 32=pdb
-private: virtual void vgui::Panel::InternalMousePressed(int)=55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 18=pdb
-public: virtual bool vgui::Panel::IsAutoDeleteSet(void)=0F B7 41 64 C1 E8 06=pdb
-public: virtual bool vgui::Panel::IsBuildGroupEnabled(void)=53 56 8B F1 57 8B ? ? ? ? ? 83 FA FF 0F=pdb
-public: bool vgui::Panel::IsBuildModeActive(void)=8B ? ? ? ? ? 83 F9 FF 74 40 8B D1=pdb
-public: virtual bool vgui::Panel::IsCursorNone(void)=8B 01 FF ? ? ? ? ? 85 C0 0F 94 C0 C3=pdb
-public: virtual bool vgui::Panel::IsCursorOver(void)=55 8B EC 83 EC 20 53 56 8B D9 8D=pdb
-public: virtual bool vgui::Panel::IsDragEnabled(void)const=8B 41 28 8A 00=pdb
-public: virtual bool vgui::Panel::IsDropEnabled(void)const=8B 41 28 8A 40 40=pdb
-public: virtual bool vgui::Panel::IsFullyVisible(void)=8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47 68=pdb
-public: virtual bool vgui::Panel::IsLayoutInvalid(void)=0F B7 41 64 C1 E8 07=pdb
-public: virtual bool vgui::Panel::IsOpaque(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 17=pdb
-public: virtual bool vgui::Panel::IsPopup(void)=8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47 60=pdb
-public: virtual bool vgui::Panel::IsVisible(void)=57 8B ? ? ? ? ? 85 FF 74 12=pdb
-public: bool vgui::Panel::IsWithin(int,int)=55 8B EC 83 EC 10 56 8B ? ? ? ? ? 8D 45=pdb
-public: void vgui::Panel::MakePopup(bool,bool)=55 8B EC 8B 01 56 8B ? ? ? ? ? 57 6A=pdb
-public: virtual void vgui::Panel::MarkForDeletion(void)=53 8B D9 F6 43 64=pdb
-public: virtual void vgui::Panel::MoveToFront(void)=53 8B D9 56 57 8B 03 8B ? ? ? ? ? FF D0 84 C0 8B CB=pdb
-public: virtual void vgui::Panel::NavigateFrom(void)=55 8B EC 83 EC 08 53 8B D9 33 C0=pdb
-public: virtual void vgui::Panel::OnSizeChanged(int,int)=8B 01 6A 00 6A 00 FF ? ? ? ? ? C2=pdb
-protected: virtual void vgui::Panel::OnStartDragging(void)=57 8B F9 8B ? ? ? ? ? 6A 6B=pdb
-public: virtual void vgui::Panel::OnThink(void)=55 8B EC 83 EC 20 53 8B D9 89 5D FC 8B 43=pdb
-public: virtual void vgui::Panel::PaintBackground(void)=55 8B EC 83 EC 18 8D 45 FC=pdb
-public: virtual void vgui::Panel::PaintBorder(void)=56 57 8B F9 8B 47 60 8B=pdb
-public: virtual void vgui::Panel::PaintBuildOverlay(void)=55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B ? ? ? ? ? 68 ? ? ? ? 6A 00 6A=pdb
-public: virtual void vgui::Panel::PerformLayout(void)=55 8B EC 83 EC 10 56 8B F1 8B ? ? ? ? ? 85 C9 74=pdb
-public: virtual void vgui::Panel::Repaint(void)=66 ? ? ? ? 57 8B ? ? ? ? ? 85=pdb
-public: virtual void vgui::Panel::RequestFocus(int)=56 57 8B F9 6A 00 8B 37=pdb
-public: void vgui::Panel::SetAlpha(int)=55 8B EC 66 ? ? ? ? 0F 5B C0 F3=pdb
-public: virtual void vgui::Panel::SetBlockDragChaining(bool)=55 8B EC 8B 49 28 8A 45 08 88 41 58=pdb
-public: void vgui::Panel::SetBounds(int,int,int,int)=55 8B EC 53 56 8B ? ? ? ? ? 8B D9 57 FF 75 0C 8B 03 FF 75 08 8B 3E FF 10 50 8B CE FF 57 08=pdb
-public: virtual void vgui::Panel::SetDragEnabled(bool)=55 8B EC 53 8A 5D 08 56 8B F1 8B 46=pdb
-public: virtual void vgui::Panel::SetDragSTartTolerance(int)=55 8B EC 8B 49 28 8B=pdb
-public: virtual void vgui::Panel::SetDropEnabled(bool,float)=55 8B EC 8B 51 28=pdb
-public: virtual void vgui::Panel::SetEnabled(bool)=55 8B EC 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 10=pdb
-public: virtual void vgui::Panel::SetMouseInputEnabled(bool)=55 8B EC 8B 01 56 8B ? ? ? ? ? 57 FF 75 08 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 8B=pdb
-public: virtual void vgui::Panel::SetParent(unsigned int)=55 8B EC 51 8B 45 08 53 8B D9 89=pdb
-public: virtual void vgui::Panel::SetScheme(unsigned long)=55 8B EC 8B 45 08 3B ? ? ? ? ? 74 06=pdb
-public: virtual void vgui::Panel::SetShowDragHelper(bool)=55 8B EC 8B 49 28 8A 45 08 88 41 01=pdb
-public: virtual void vgui::Panel::SetVisible(bool)=55 8B EC 8B 01 56 8B ? ? ? ? ? 57 FF 75 08 8B 3E FF 10 50 8B CE FF 57=pdb
-private: virtual void vgui::Panel::Think(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 3B=pdb
-public: virtual vgui::Frame::~Frame(void)=56 57 8B F9 8B 77 4C=pdb
-public: virtual void vgui::Frame::Activate(void)=53 8B D9 56 57 8B 03 FF ? ? ? ? ? 8B 03 8B CB 8B=pdb
-public: virtual void vgui::Frame::ActivateMinimized(void)=53 8B D9 8B 03 8B ? ? ? ? ? FF D0 84 C0 74 10=pdb
-_anonymous_namespace_::GripPanel::ApplySchemeSettings()=55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 89=pdb
-private: void vgui::Frame::FinishClose(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 80=pdb
-public: virtual void vgui::Frame::FlashWindowStop(void)=53 8B D9 56 8B ? ? ? ? ? 57 8B 03 6A 00 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 80=pdb
-_anonymous_namespace_::GripPanel::OnCursorMoved()=55 8B EC 83 EC 10 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B=pdb
-protected: virtual void vgui::Frame::OnMinimize(void)=8B 01 56 8B ? ? ? ? ? 57 6A 01 8B=pdb
-_anonymous_namespace_::GripPanel::OnMouseDoublePressed()=55 8B EC 8B 01 FF ? ? ? ? ? 8B 10=pdb
-_anonymous_namespace_::GripPanel::OnMousePressed()=55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 83=pdb
-_anonymous_namespace_::GripPanel::OnMouseReleased()=56 8B F1 6A 00 C6 ? ? ? ? ? ? 8B ? ? ? ? ? 8B 01 FF 50 08 8B ? ? ? ? ? 8B=pdb
-protected: virtual void vgui::Frame::PaintBackground(void)=55 8B EC 83 EC 0C 53 8B D9 56 89=pdb
-public: virtual void vgui::Frame::SetSizeable(bool)=55 8B EC 8A ? ? ? ? ? 32 45 08 24 01 30 ? ? ? ? ? E8=pdb
-public: virtual void vgui::Frame::SetSmallCaption(bool)=55 8B EC 8A 45 08 C0 E0 03 32 ? ? ? ? ? 24 08 30 ? ? ? ? ? 8B=pdb
-public: virtual void vgui::Frame::SetTitleBarVisible(bool)=55 8B EC 53 8B 5D 08 8A C3=pdb
-private: void vgui::Frame::SetupResizeCursors(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 8B ? ? ? ? ? 84 C0 8B=pdb
-_anonymous_namespace_::CaptionGripPanel::tryToDock()=55 8B EC 83 EC 10 53 8B D9 56 8B ? ? ? ? ? 8B=pdb
-public: virtual void vgui::Label::SetHotkey(wchar_t)=55 8B EC 66 8B 45 08 66 ? ? ? ? ? ? 5D=pdb
-public: virtual void vgui::Label::SetImagePreOffset(int,int)=55 8B EC 8B 45 08 8B D1 85 C0 78 3F=pdb
-public: virtual void vgui::Label::SetText(char const near *)=55 8B EC 8B 45 08 85 C0 53=pdb
-public: virtual int vgui::Label::SetTextImageIndex(int)=55 8B EC 53 8B 5D 08 57 8B F9 8B ? ? ? ? ? 3B=pdb
-public: virtual vgui::TextEntry::~TextEntry(void)=56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8D=pdb
-public: virtual void vgui::TextEntry::Backspace(void)=55 8B EC 51 56 8B F1 8B 06 8B=pdb
-private: void vgui::TextEntry::CalcBreakIndex(void)=8B ? ? ? ? ? 3B ? ? ? ? ? 75 10 8B ? ? ? ? ? 83=pdb
-public: virtual void vgui::TextEntry::CutSelected(void)=56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06 8B CE 6A=pdb
-protected: virtual bool vgui::TextEntry::DrawCursor(int,int)=55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 75=pdb
-private: void vgui::TextEntry::FlipToLastIME(void)=56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 68=pdb
-private: int vgui::TextEntry::GetCurrentLineStart(void)=80 ? ? ? ? ? ? 75 07 8B ? ? ? ? ? C3=pdb
-private: int vgui::TextEntry::GetCursorLine(void)=56 8B F1 33 C0 8B ? ? ? ? ? 85 C9 7E=pdb
-public: virtual void vgui::TextEntry::GotoDown(void)=55 8B EC 83 EC 08 57 8B F9 6A 00 8B 07 FF ? ? ? ? ? 80 ? ? ? ? ? ? 74 13=pdb
-public: virtual void vgui::TextEntry::GotoFirstOfLine(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B CE=pdb
-public: virtual void vgui::TextEntry::GotoLeft(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 33=pdb
-public: virtual void vgui::TextEntry::GotoTextStart(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE C7=pdb
-public: virtual void vgui::TextEntry::GotoUp(void)=55 8B EC 83 EC 08 57 8B F9 6A 00 8B 07 FF ? ? ? ? ? 80 ? ? ? ? ? ? 74 1E=pdb
-public: virtual void vgui::TextEntry::GotoWordLeft(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 83=pdb
-public: virtual void vgui::TextEntry::GotoWordRight(void)=56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 40=pdb
-public: virtual void vgui::TextEntry::InsertChar(wchar_t)=55 8B EC 8B 55 08 56 8B F1 66=pdb
-public: virtual bool vgui::TextEntry::IsEditable(void)=80 ? ? ? ? ? ? 74 11 8B 01 8B=pdb
-public: virtual void vgui::TextEntry::MoveCursor(int,int)=55 8B EC 83 EC 1C 8B 45 08 56 8B=pdb
-protected: virtual void vgui::TextEntry::OnKeyTyped(wchar_t)=55 8B EC 56 8B F1 57 8B 7D 08 57 8A=pdb
-private: virtual void vgui::TextEntry::OnSetState(int)=55 8B EC 83 EC 40 8D 45 C0 56 FF=pdb
-protected: virtual void vgui::TextEntry::PerformLayout(void)=56 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 80=pdb
-public: virtual void vgui::TextEntry::SaveUndoState(void)=8B ? ? ? ? ? 53 8B ? ? ? ? ? 56 8B=pdb
-protected: void vgui::TextEntry::ScrollLeft(void)=80 ? ? ? ? ? ? 75 39 80=pdb
-public: virtual void vgui::TextEntry::SelectNone(void)=8B 01 C7 ? ? ? ? ? ? ? ? ? FF 60=pdb
-public: virtual void vgui::TextEntry::SetEditable(bool)=55 8B EC 53 8A 5D 08 56 8B F1 51=pdb
-public: virtual void vgui::TextEntry::SetEnabled(bool)=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF 50=pdb
-public: virtual void vgui::TextEntry::SetFont(unsigned long)=55 8B EC 8B 45 08 56 8B F1 6A 00=pdb
-public: virtual void vgui::TextEntry::Undo(void)=55 8B EC 83 EC 08 53 56 8B F1 57 8D ? ? ? ? ? 89=pdb
-public: virtual void vgui::RichText::CutSelected(void)=56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE 6A 00 FF 50=pdb
-public: void vgui::RichText::GetText(int,wchar_t near *,int)=55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 4C=pdb
-public: void vgui::RichText::GotoTextEnd(void)=55 8B EC 83 EC 08 56 8B F1 8D 55=pdb
-public: void vgui::RichText::GotoTextStart(void)=56 8B F1 6A 00 8B ? ? ? ? ? C7=pdb
-private: void vgui::RichText::GotoWordLeft(void)=56 8B F1 8B ? ? ? ? ? 83 F8 01 7C=pdb
-private: void vgui::RichText::GotoWordRight(void)=56 8B F1 8B ? ? ? ? ? 40 89=pdb
-private: virtual void vgui::RichText::MoveScrollBar(int)=55 8B EC 8B 45 08 8B 11=pdb
-protected: virtual void vgui::RichText::OnSliderMoved(void)=8B 01 C6 ? ? ? ? ? ? FF 60=pdb
-protected: virtual void vgui::RichText::OnThink(void)=56 8B F1 80 ? ? ? ? ? ? 74 1D=pdb
-private: void vgui::RichText::TruncateTextStream(void)=56 8B F1 8B ? ? ? ? ? 83 F8 01 0F=pdb
-private: void vgui::Button::Init(void)=56 57 8B F9 B8 ? ? ? ? 6A=pdb
-public: virtual bool vgui::Button::IsBlinking(void)=0F ? ? ? ? ? ? C1 E8 09 83=pdb
-public: virtual void vgui::Button::NavigateFrom(void)=56 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 FF=pdb
-public: virtual void vgui::Button::OnCursorEntered(void)=56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0B=pdb
-public: virtual void vgui::Button::OnCursorExited(void)=8A ? ? ? ? ? C0 E8 05 A8 01 75 08 8B 01=pdb
-public: virtual void vgui::Button::PerformLayout(void)=55 8B EC 83 EC 0C 56 57 8B F9 0F ? ? ? ? ? ? 8B=pdb
-public: virtual void vgui::Button::SetArmed(bool)=55 8B EC 53 8A 5D 08 56 8B F1 8A=pdb
-public: virtual void vgui::Button::SetBlink(bool)=55 8B EC 56 8B F1 8A 4D 08 66=pdb
-public: virtual void vgui::ToggleButton::DoClick(void)=56 57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 8B=pdb
-public: virtual void CheckImage::Paint(void)=55 8B EC 83 EC 14 53 8B D9 56 89=pdb
-protected: virtual void vgui::Image::DrawPrintChar(wchar_t)=55 8B EC 8B ? ? ? ? ? 6A 00 FF 75 08 8B 01 FF 50 74=pdb
-protected: virtual void vgui::Image::DrawSetTextPos(int,int)=55 8B EC 8B 41 08 8B ? ? ? ? ? 03 45 0C 56 50 8B 41 04 8B CA 8B 32 03 45 08 50 FF 56 68 5E=pdb
-public: virtual class Color vgui::Image::GetColor(void)=55 8B EC 8B 45 08 8B 49 14=pdb
-public: virtual void vgui::Image::SetColor(class Color)=55 8B EC 8B 45 08 89 41 14 8B 11=pdb
-protected: virtual void vgui::Image::SetSize(int,int)=55 8B EC 8B 45 08 89 41 0C 8B=pdb
-public: virtual void vgui::ComboBox::HideMenu(void)=56 8B F1 8B ? ? ? ? ? 85 C9 74 21=pdb
-public: virtual bool vgui::ComboBox::IsItemIDValid(int)=55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? 5D=pdb
-public: virtual void vgui::ComboBox::ShowMenu(void)=56 8B F1 8B ? ? ? ? ? 85 C9 74 15 8B 01 6A=pdb
-public: virtual vgui::ListPanel::~ListPanel(void)=53 56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8A=pdb
-public: virtual void vgui::ListPanel::ApplyItemChanges(int)=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 FF=pdb
-AscendingSortFunc()=55 8B EC 8B 45 08 8B ? ? ? ? ? 56 57=pdb
-FastSortFunc()=55 8B EC 8B 45 0C 8B 4D 10 56=pdb
-public: virtual int vgui::ListPanel::GetItemCurrentRow(int)=55 8B EC 8B ? ? ? ? ? 33 C0 56 85 D2 7E 1C 8B ? ? ? ? ? 8B 75 08 0F ? ? ? ? ? ? 39=pdb
-protected: virtual int vgui::ListPanel::GetStartItem(void)=55 8B EC 51 56 57 8B F9 8B 07 8B=pdb
-public: virtual bool vgui::ListPanel::IsItemSelected(int)=55 8B EC 8B 55 08 56 8B F1 57 85 D2 78=pdb
-public: virtual void vgui::ListPanel::SetFont(unsigned long)=55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 27=pdb
-public: virtual void Dragger::SetMovable(bool)=55 8B EC 53 8A 5D 08 56 8B F1 8B 06=pdb
-public: virtual vgui::ListViewPanel::~ListViewPanel(void)=56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? 85=pdb
-private: void vgui::ListViewPanel::FinishKeyPress(int)=55 8B EC 56 57 8B F9 8B ? ? ? ? ? 6A 4F=pdb
-public: virtual void vgui::ListViewItem::PerformLayout(void)=55 8B EC 83 EC 08 53 8B D9 56 57 8B 03 FF ? ? ? ? ? 80=pdb
-public: virtual void vgui::ListViewPanel::RemoveItem(int)=55 8B EC 51 56 8B 75 08 89 4D FC 57=pdb
-public: virtual vgui::Menu::~Menu(void)=56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8D=pdb
-public: virtual void vgui::Menu::ActivateItem(int)=55 8B EC 56 8B 75 08 57 8B F9 85 F6 78 4E=pdb
-public: virtual void vgui::Menu::ActivateItemByRow(int)=55 8B EC 56 8B 75 08 85 F6 78 19=pdb
-protected: virtual void vgui::Menu::AddScrollBar(void)=56 8B F1 6A 01 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80=pdb
-protected: void vgui::Menu::CalculateWidth(void)=55 8B EC 83 EC 08 56 8B F1 F6=pdb
-public: void vgui::Menu::ClearCurrentlyHighlightedItem(void)=56 8B F1 8B ? ? ? ? ? 85 D2 78=pdb
-protected: int vgui::Menu::CountVisibleItems(void)=55 8B EC 51 53 8B D1=pdb
-public: void vgui::Menu::DeleteAllItems(void)=53 56 57 8B F9 8B ? ? ? ? ? 83 F8 FF 74 23=pdb
-protected: virtual void vgui::Menu::LayoutMenuBorder(void)=53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 50 50 50 8B CE FF 57 20 68=pdb
-protected: void vgui::Menu::MoveAlongMenuItemList(int,int)=55 8B EC 81 ? ? ? ? ? 57 8B F9 83=pdb
-public: virtual void vgui::Menu::MoveMenuItem(int,int)=55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B ? ? ? ? ? 85=pdb
-protected: virtual void vgui::Menu::OnHotKey(wchar_t)=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 83 F8=pdb
-public: virtual void vgui::Menu::OnKeyTyped(wchar_t)=55 8B EC 81 ? ? ? ? ? 56 57 8B 7D 08 8B F1 66 85=pdb
-public: virtual void vgui::Menu::OnKillFocus(void)=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89 5D FC 8B 01 FF 50=pdb
-protected: virtual void vgui::Menu::OnMouseWheeled(int)=55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 2E=pdb
-protected: virtual void vgui::Menu::OnSliderMoved(void)=56 6A 00 8B F1 E8 ? ? ? ? 8B 06=pdb
-protected: virtual void vgui::Menu::OnTypeAhead(wchar_t)=55 8B EC 81 ? ? ? ? ? 56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? FF=pdb
-protected: virtual void vgui::Menu::RemoveScrollBar(void)=56 8B F1 6A 00 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80=pdb
-public: void vgui::Menu::SetCurrentlyHighlightedItem(int)=55 8B EC 53 8B 5D 08 56 57 53 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 33=pdb
-public: virtual void vgui::Menu::SetFont(unsigned long)=55 8B EC 8B 55 08 56 8B F1 89=pdb
-protected: virtual void vgui::MenuBar::OnMenuClose(void)=8B 01 6A 00 FF 50 30 C3=pdb
-protected: virtual void vgui::MenuBar::Paint(void)=55 8B EC 83 EC 08 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 89=pdb
-public: virtual void MenuItemCheckImage::Paint(void)=55 8B EC 51 56 57 8B F9 8B 37 FF=pdb
-public: virtual void vgui::MenuItem::PerformLayout(void)=55 8B EC 51 56 57 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 85=pdb
-public: virtual void vgui::ProgressBar::SetProgress(float)=55 8B EC F3 ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 20=pdb
-public: virtual void RadioImage::Paint(void)=55 8B EC 51 57 8B F9 8B 07 FF 77=pdb
-_anonymous_namespace_::ScrollBarButton::OnMouseReleased()=55 8B EC 56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 4A=pdb
-protected: virtual void vgui::ScrollBar::OnSliderMoved(int)=55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 5E=pdb
-public: virtual vgui::TreeView::~TreeView(void)=56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 FF 74 25=pdb
-public: int vgui::TreeNode::CountVisibleIndex(void)=55 8B EC 83 EC 14 56 57 8B F9 C7 ? ? ? ? ? ? 8B=pdb
-public: int vgui::TreeNode::CountVisibleNodes(void)=53 8B D9 56 BE ? ? ? ? 80=pdb
-public: virtual void vgui::TreeView::ExpandItem(int,bool)=55 8B EC 8B 55 08 56 8B F1 85 D2 78 40=pdb
-public: virtual int vgui::TreeView::GetChild(int,int)=55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04 90 8B ? ? ? ? ? 8B=pdb
-public: virtual int vgui::TreeView::GetItemParent(int)const=55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04 90 8B ? ? ? ? ? 5D=pdb
-public: virtual int vgui::TreeView::GetNumChildren(int)=55 8B EC 8B 45 08 8B D1 83 F8 FF 75=pdb
-public: virtual int vgui::TreeView::GetRootItemIndex(void)=8B ? ? ? ? ? 85 C0 74 07 8B ? ? ? ? ? C3 83=pdb
-public: virtual void vgui::TreeView::MakeItemVisible(int)=55 8B EC 8B 45 08 53 56 57 8B F9 8D 14=pdb
-public: virtual void vgui::TreeNodeText::OnKillFocus(void)=56 8B F1 E8 ? ? ? ? 6A=pdb
-protected: virtual void vgui::TreeView::OnMouseWheeled(int)=55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 29=pdb
-public: virtual void vgui::TreeNode::OnSetFocus(void)=8B ? ? ? ? ? 6A 00 8B 01 FF 50 30 C3=pdb
-protected: virtual void vgui::TreeView::OnSliderMoved(int)=56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF 50=pdb
-public: virtual void vgui::TreeNodeText::OnTextChanged(void)=8B 01 FF ? ? ? ? ? 6A 00 6A 00 8B C8=pdb
-public: virtual void vgui::TreeNode::Paint(void)=56 8B F1 83 ? ? ? ? ? ? 7F=pdb
-public: virtual void vgui::TreeView::RangeSelectItems(int)=55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 85 D2=pdb
-public: virtual void vgui::TreeView::RemoveAll(void)=56 57 8B F9 33 F6 39 ? ? ? ? ? 7E 41=pdb
-public: void vgui::TreeNode::RemoveChildren(void)=56 57 8B F9 8B ? ? ? ? ? 83 EE 01 78 27=pdb
-public: virtual void vgui::TreeView::RemoveSelectedItem(int)=55 8B EC 56 57 8B 7D 08 8B F1 85 FF 0F ? ? ? ? ? 3B ? ? ? ? ? 0F=pdb
-public: void vgui::TreeNode::SetFont(unsigned long)=55 8B EC 53 8B 5D 08 57 8B F9 85 DB 74 50=pdb
-public: virtual void vgui::TreeView::SetFont(unsigned long)=55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 3C=pdb
-public: void vgui::TreeNode::SetNodeExpanded(bool)=55 8B EC 8A 45 08 56 8B F1 88 ? ? ? ? ? 84 C0 74 51=pdb
-public: virtual void vgui::TreeNode::StepInto(bool)=55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 07 6A=pdb
-public: virtual void vgui::TreeNode::StepOver(bool)=55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85=pdb
-public: virtual vgui::PanelListPanel::~PanelListPanel(void)=56 57 8B F9 C7 ? ? ? ? ? E8 ? ? ? ? 8D=pdb
-public: virtual void vgui::PanelListPanel::RemoveItem(int)=55 8B EC 83 EC 08 8B C1 56 8B=pdb
-protected: virtual void vgui::Slider::DrawNob(void)=55 8B EC 83 EC 14 53 56 8B D9 8D=pdb
-protected: virtual void vgui::Slider::DrawTickLabels(void)=55 8B EC 83 EC 18 56 8B F1 8D 4D F0=pdb
-protected: virtual void vgui::Slider::DrawTicks(void)=55 8B EC 83 EC 1C 53 56 8B D9 8D=pdb
-protected: virtual void vgui::Slider::Paint(void)=56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06 8B CE 5E=pdb
-protected: virtual void vgui::Slider::PaintBackground(void)=55 8B EC 83 EC 10 53 56 57 8B D9 E8 ? ? ? ? 8B=pdb
-public: virtual void vgui::Slider::SetRange(int,int)=55 8B EC 8B 55 08 8B ? ? ? ? ? 56 8B=pdb
-public: virtual void vgui::Slider::SetValue(int,bool)=55 8B EC 8B 45 08 56 8B F1 57 8B ? ? ? ? ? 8B=pdb
-public: virtual vgui::CConsolePanel::~CConsolePanel(void)=53 56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? E8=pdb
-protected: virtual void vgui::CConsolePanel::OnThink(void)=56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF D0 84 C0 74 1C=pdb
-public: vgui::FileData_t::~FileData_t(void)=56 8B F1 C7 ? ? ? ? ? ? 83 7E 70=pdb
-private: void vgui::FileOpenDialog::BuildFileList(void)=55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8D=pdb
-public: void vgui::SectionedListPanel::MoveSelectionUp(void)=53 57 8B F9 8B 07 FF ? ? ? ? ? 8B D8 83 FB FF 74 66=pdb
-protected: virtual void vgui::ListPanel::OnSliderMoved(void)=56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 5E=pdb
-public: void vgui::CItemButton::SetSectionID(int)=55 8B EC 53 8B 5D 08 56 8B F1 3B ? ? ? ? ? 74=pdb
-public: virtual vgui::CFooterPanel::~CFooterPanel(void)=56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 D2 74 17 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? ? ? ? ? 8D=pdb
-public: virtual void vgui::HTML::SetViewSourceEnabled(bool)=55 8B EC 8B ? ? ? ? ? FF 75 08 FF ? ? ? ? ? 8B=pdb
-public: vgui::ImageList::~ImageList(void)=56 8B F1 80 7E 14 00 74 22=pdb
-public: bool vgui::ImageList::IsValidIndex(int)=55 8B EC 8B 45 08 85 C0 78 0B=pdb
-public: virtual void vgui::BaseTooltip::HideTooltip(void)=8A 41 24 24=pdb
-protected: virtual void vgui::BuildModeDialog::OnClose(void)=56 8B F1 8B ? ? ? ? ? 8B 01 8B 40 04=pdb
-public: virtual unsigned long vgui::TextImage::GetFont(void)=F6 41 34 10=pdb
-public: virtual void vgui::TextImage::Paint(void)=55 8B EC 83 EC 28 56 8B F1 8D=pdb
-public: virtual void vgui::TextImage::SetFont(unsigned long)=55 8B EC 8B 45 08 80 49=pdb
-protected: virtual void vgui::ScrollBarSlider::Paint(void)=55 8B EC 83 EC 0C 56 8B F1 8D 4D F4 51 8D=pdb
-public: virtual void vgui::ScrollBarSlider::SetValue(int)=55 8B EC 8B 55 08 56 57 8B F9 8B ? ? ? ? ? 2B=pdb
-private: void vgui::PropertySheet::ClearPageDropTab(void)=56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 56=pdb
-public: virtual void vgui::PageTab::OnCursorEntered(void)=56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 18 89 ? ? ? ? ? 5E=pdb
-public: virtual void vgui::PageTab::OnThink(void)=56 8B F1 80 ? ? ? ? ? ? 74 48=pdb
-public: virtual void vgui::PropertySheet::OnThink(void)=56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74 20=pdb
-public: virtual void vgui::PropertySheet::RequestFocus(int)=55 8B EC 8B 55 08 56 8B F1 83 FA=pdb
-public: virtual void vgui::PropertySheet::SetSmallTabs(bool)=55 8B EC 8A 45 08 53=pdb
-public: virtual void vgui::PropertySheet::SetTabWidth(int)=55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 8B=pdb
-public: CVTFTexture::CVTFTexture(void)=C7 ? ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 5C=pdb
-public: virtual float CVTFTexture::BumpScale(void)const=D9 41 40=pdb
-public: virtual void CVTFTexture::ComputeAlphaFlags(void)=55 8B EC 83 EC 18 56 8B F1 81=pdb
-public: virtual int CVTFTexture::ComputeFaceSize(int)const=55 8B EC FF 71 18 FF 75=pdb
-public: virtual int CVTFTexture::ComputeTotalSize(void)const=56 8B F1 FF 76 18 6A=pdb
-public: virtual bool CVTFTexture::ConstructLowResImage(void)=55 8B EC 83 EC 54 56 8B=pdb
-public: virtual int CVTFTexture::FileSize(int)const=55 8B EC 57 6A 30=pdb
-public: virtual bool CVTFTexture::IsCubeMap(void)const=8B 41 2C C1 E8 0E=pdb
-public: virtual bool CVTFTexture::IsNormalMap(void)const=8B 41 2C C1 E8 07 83=pdb
-public: virtual bool CVTFTexture::IsVolumeTexture(void)const=83 79 14 01 0F=pdb
-public: std::_Init_locks::_Init_locks(void)=33 C0 57 8B F9 40=pdb
-public: std::_Init_locks::~_Init_locks(void)=83 C8 FF F0 ? ? ? ? ? ? ? 79=pdb
-public: std::_Fac_node::~_Fac_node(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 79=pdb
-public: std::_Fac_tidy_reg_t::~_Fac_tidy_reg_t(void)=56 EB 18=pdb
-__Mtxinit()=55 8B EC 6A 00 68 ? ? ? ? FF=pdb
-__freea_crt()=55 8B EC 8B 45 08 85 C0 74 12 83 E8=pdb
-public: _Init_atexit::~_Init_atexit(void)=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? EB=pdb
-initialize_pointers()=56 68 ? ? ? ? FF ? ? ? ? ? 8B F0=pdb
-___crtInitializeCriticalSectionEx()=55 8B EC 56 8B ? ? ? ? ? 33 ? ? ? ? ? 74 14=pdb
-void operator delete[](void near *,unsigned int)=55 8B EC FF 75 08 E8 ? ? ? ? 59 5D C3=pdb
-find_pe_section()=55 8B EC 8B 45 08 56 8B 48=pdb
-___scrt_acquire_startup_lock()=E8 ? ? ? ? 85 C0 75 03 32=pdb
-___scrt_dllmain_after_initialize_c()=E8 ? ? ? ? 85 C0 74 07 E8=pdb
-___scrt_dllmain_before_initialize_c()=6A 00 E8 ? ? ? ? 84 C0 59=pdb
-___scrt_dllmain_crt_thread_detach()=E8 ? ? ? ? E8 ? ? ? ? B0 01 C3=pdb
-___scrt_dllmain_exception_filter()=55 8B EC E8 ? ? ? ? 85 C0 75=pdb
-___scrt_dllmain_uninitialize_c()=E8 ? ? ? ? 85 C0 74 0C 68 ? ? ? ? E8=pdb
-___scrt_dllmain_uninitialize_critical()=6A 00 E8 ? ? ? ? 59 E9=pdb
-___scrt_initialize_crt()=55 8B EC 83 7D 08 00 75 07=pdb
-___scrt_initialize_onexit_tables()=55 8B EC 83 EC 0C 56 8B 75 08 85 F6 74 05=pdb
-___scrt_is_nonwritable_in_current_image()=6A 08 68 ? ? ? ? E8 ? ? ? ? 83 65 FC 00 B8=pdb
-___scrt_release_startup_lock()=55 8B EC E8 ? ? ? ? 85 C0 74 0F=pdb
-___scrt_uninitialize_crt()=55 8B EC 80 ? ? ? ? ? ? 74 06 80=pdb
-__onexit()=55 8B EC A1 ? ? ? ? 8B C8=pdb
-_atexit()=55 8B EC FF 75 08 E8 ? ? ? ? F7=pdb
-__scrt_initialize_thread_safe_statics()=53 56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? E8=pdb
-__scrt_uninitialize_thread_safe_statics()=68 ? ? ? ? FF ? ? ? ? ? A1 ? ? ? ? 85=pdb
-__Init_thread_footer()=55 8B EC E8 ? ? ? ? 8B ? ? ? ? ? 8B 45 08 41=pdb
-__Init_thread_header()=55 8B EC 56 E8 ? ? ? ? 8B 75 08 EB=pdb
-__Init_thread_notify()=A1 ? ? ? ? 85 C0 75 24 56=pdb
-__Init_thread_wait()=55 8B EC 83 ? ? ? ? ? ? 56 75=pdb
-__alloca_probe_16()=51 8D 4C 24 08 2B C8 83 E1 0F=pdb
-__alloca_probe_8()=51 8D 4C 24 08 2B C8 83 E1 07=pdb
-__chkstk()=51 8D 4C 24 04=pdb
-__ftol2_sse()=83 ? ? ? ? ? ? 74 37 55=pdb
-__ftol2_sse_excpt()=83 ? ? ? ? ? ? 74 1B 83=pdb
-__ftol2()=55 8B EC 83 EC 20 83 E4=pdb
-__ftoui3()=B9 ? ? ? ? F2 ? ? ? ? ? ? ? EB 1C B9 ? ? ? ? F2 ? ? ? ? ? ? ? EB 0D B9 ? ? ? ? F2 ? ? ? ? ? ? ? 66 0F 7E=pdb
-__ftol3_except()=83 EC 20 9B=pdb
-__dtol3()=B9 ? ? ? ? F2 ? ? ? ? ? ? ? 66 0F 6F=pdb
-__ultod3()=0F 57 C0 F2 0F 2A C1 C1 E9 1F F2 ? ? ? ? ? ? ? ? 85=pdb
-__ltod3()=0F 57 C9 F2 0F 2A CA 0F=pdb
-__alldiv()=57 56 53 33=pdb
-__aullshr()=80 F9 40 73 15 80 F9 20 73 06 0F AD=pdb
-__aulldiv()=53 56 8B 44 24=pdb
-__allmul()=8B 44 24 08 8B 4C 24 10=pdb
-dllmain_crt_dispatch()=55 8B EC 8B 45 0C 83 E8 00 74 33=pdb
-dllmain_crt_process_attach()=6A 10 68 ? ? ? ? E8 ? ? ? ? 6A=pdb
-dllmain_crt_process_detach()=6A 0C 68 ? ? ? ? E8 ? ? ? ? A1=pdb
-dllmain_dispatch()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 8B 7D=pdb
-dllmain_raw()=55 8B EC 56 8B ? ? ? ? ? 85 F6 75 05=pdb
-_DllMainCRTStartup(x,x,x)=55 8B EC 83 7D 0C 01 75=pdb
-__security_check_cookie(x)=3B ? ? ? ? ? F2 75=pdb
-___raise_securityfailure()=55 8B EC 6A 00 FF ? ? ? ? ? FF 75 08 FF=pdb
-___report_gsfailure()=55 8B EC 81 ? ? ? ? ? 6A 17 E8 ? ? ? ? 85 C0 74 05 6A=pdb
-___report_rangecheckfailure()=55 8B EC 6A 08 E8=pdb
-___report_securityfailure()=55 8B EC 81 ? ? ? ? ? 6A 17 E8 ? ? ? ? 85 C0 74 05 8B=pdb
-__EH_prolog3_catch()=50 64 ? ? ? ? ? ? 8D 44 24 0C 2B 64 24 0C 53 56 57 89 28 8B E8 A1 ? ? ? ? 33 C5 50 89 65=pdb
-___scrt_fastfail()=55 8B EC 81 ? ? ? ? ? 53 56 6A=pdb
-__SEH_prolog4()=68 ? ? ? ? 64 ? ? ? ? ? ? 8B 44 24 10 89 6C 24 10 8D 6C 24 10 2B E0 53 56 57 A1 ? ? ? ? 31 45 FC 33 C5 50=pdb
-__SEH_epilog4()=8B 4D F0 64 ? ? ? ? ? ? 59 5F 5F=pdb
-___security_init_cookie()=55 8B EC 83 EC 14 83 65=pdb
-___scrt_initialize_default_local_stdio_options()=E8 ? ? ? ? 8B 48 04 83 08 04=pdb
-___sse2_acosf4()=55 8B EC 83 E4 C0 81 ? ? ? ? ? 0F=pdb
-___sse2_sin2()=8B C4 81 ? ? ? ? ? 83 E4 F0 89 44=pdb
-_B1_1()=57 8B 7C 24 0C 81=pdb
-__vmldPow_HA_scalar()=55 8B EC 83 E4 F8 56 57 53 83 EC 2C=pdb
-__raise_zerodivide()=66 0F 76 DB=pdb
-_pow_scalar()=60 8B C4 83=pdb
-___sse2_pow2()=8B C4 81 ? ? ? ? ? 83 E4 F0 89 ? ? ? ? ? ? 66=pdb
-__raise_invalid()=66 0F 76 D2=pdb
-___common_sacos_cout_rare()=55 8B EC 83 E4 F8 56 57 53 83 EC 5C=pdb
-___common_srl()=8B 44 24 04 8B 54 24 08 8B 4C 24 0C 80 F9 40 73 16=pdb
-___common_sll()=8B 44 24 04 8B 54 24 08 8B 4C 24 0C 80 F9 40 73 15=pdb
-___common_pi04_reduction_LA()=55 8B EC 83 E4 F0 56 57 53 83 EC 54 B8 ? ? ? ? 8B 55 0C 8B 5D 10 2B D0 0F ? ? ? ? ? 33 C0 66 ? ? ? ? D9 7C 24 46=pdb
-__get_purecall_handler()=33 C9 BA ? ? ? ? 33=pdb
-__purecall()=56 E8 ? ? ? ? 8B F0 85 F6 74 09=pdb
-__set_purecall_handler()=55 8B EC FF 75 08 E8 ? ? ? ? 8B D0=pdb
-_CxxThrowException(x,x)=55 8B EC 83 EC 20 53 8B 5D 08 56 57 6A=pdb
-__CatchGuardHandler()=55 8B EC 56 FC=pdb
-__CreateFrameInfo()=55 8B EC 8B 4D 0C 56 8B=pdb
-__FindAndUnlinkFrame()=55 8B EC 56 E8 ? ? ? ? 8B 75 08 3B=pdb
-__IsExceptionObjectToBeDestroyed()=55 8B EC E8 ? ? ? ? 8B 40=pdb
-__TranslatorGuardHandler()=55 8B EC 51 53 FC=pdb
-___CxxFrameHandler3()=55 8B EC 83 EC 08 53 56 57 FC=pdb
-FindCompleteObject()=55 8B EC 8B 55 08 8B 02 8B 48 FC=pdb
-FindMITargetTypeInstance()=55 8B EC 83 EC 14 8B 45 0C 33=pdb
-FindSITargetTypeInstance()=55 8B EC 51 51 8B 45 08 53=pdb
-FindVITargetTypeInstance()=55 8B EC 83 EC 24 8B 45 0C 83=pdb
-PMDtoOffset()=55 8B EC 56 8B 75 0C 33=pdb
-___RTDynamicCast()=6A 18 68 ? ? ? ? E8 ? ? ? ? 8B=pdb
-___RTtypeid()=6A 14 68 ? ? ? ? E8 ? ? ? ? 8B 45=pdb
-_strchr()=83 ? ? ? ? ? ? 72 5F 0F=pdb
-_memset()=8B 4C 24 0C 0F ? ? ? ? 8B D7=pdb
-___std_type_info_compare()=55 8B EC 8B 45 08 8B 4D 0C 3B=pdb
-___std_type_info_destroy_list()=55 8B EC FF 75 08 FF ? ? ? ? ? 85=pdb
-___std_type_info_name()=55 8B EC 83 EC 0C 33 C9 33=pdb
-_wcschr()=53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 8B=pdb
-_wcsstr()=53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83=pdb
-_strstr()=8B 4C 24 08 8B 44 24 04=pdb
-_longjmp()=55 8B EC FF 75 08 E8 ? ? ? ? 59 5D E9=pdb
-__setjmp3()=8B 54 24 04 89=pdb
-_strrchr()=55 8B EC 57 83=pdb
-___std_exception_copy()=55 8B EC 57 8B 7D 08 80 7F 04=pdb
-___std_exception_destroy()=55 8B EC 56 8B 75 08 80 7E 04=pdb
-___DestructExceptionObject()=6A 08 68 ? ? ? ? E8 ? ? ? ? 8B 45 08 85=pdb
-public: virtual std::exception::~exception(void)=8D 41 04 C7 ? ? ? ? ? 50=pdb
-CallCatchBlock()=6A 38 68 ? ? ? ? E8=pdb
-CallUnexpected()=6A 04 B8 ? ? ? ? E8 ? ? ? ? E8=pdb
-CatchIt()=55 8B EC 83 7D 20=pdb
-ExFilterRethrow()=55 8B EC 8B 45 08 8B 00 81 ? ? ? ? ? 75=pdb
-FindHandler()=55 8B EC 83 EC 44 53 8B 5D 0C 56 57 8B=pdb
-FindHandlerForForeignException()=55 8B EC 51 51 57 8B 7D 08=pdb
-IsInExceptionSpec()=55 8B EC 83 EC 18 53 56 8B 75 0C 57=pdb
-Is_bad_exception_allowed()=55 8B EC 53 56 57 8B 7D 08 33=pdb
-___AdjustPointer()=55 8B EC 8B 4D 0C 8B 55 08=pdb
-___BuildCatchObject()=6A 08 68 ? ? ? ? E8 ? ? ? ? 8B 55=pdb
-___BuildCatchObjectHelper()=6A 10 68 ? ? ? ? E8 ? ? ? ? 33 DB 8B=pdb
-___FrameUnwindFilter()=55 8B EC 8B 45 08 8B 00 81 ? ? ? ? ? 74=pdb
-___FrameUnwindToState()=6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 45=pdb
-___InternalCxxFrameHandler()=55 8B EC 53 56 57 FF 75 10 E8=pdb
-___TypeMatch()=55 8B EC 8B 55 08 53 56 57 8B 42=pdb
-_memchr()=8B 44 24 0C 53 85=pdb
-_memcmp()=55 8B EC 53 8B 5D 10 8B=pdb
-___vcrt_initialize()=E8 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? 84 C0=pdb
-___vcrt_thread_detach()=6A 00 E8 ? ? ? ? 59 B0 01 C3=pdb
-___vcrt_uninitialize()=55 8B EC 80 7D 08 00 75 12=pdb
-ValidateLocalCookies()=55 8B EC 56 8B 75 08 57 8B 7D 0C 8B 06=pdb
-__except_handler4()=55 8B EC 83 EC 1C 53 56 8B 75 0C 57=pdb
-___vcrt_initialize_pure_virtual_call_handler()=A1 ? ? ? ? 83 E0 1F 6A 20 59 2B C8 33 C0 D3 C8 33 ? ? ? ? ? A3 ? ? ? ? C3=pdb
-__vcrt_freefls(x)=55 8B EC 8B 45 08 85 C0 74 0E 3D=pdb
-___vcrt_freeptd()=55 8B EC A1 ? ? ? ? 83 F8 FF 74 27=pdb
-___vcrt_getptd_noexit()=83 ? ? ? ? ? ? 75 03 33 C0 C3 53=pdb
-___vcrt_initialize_ptd()=68 ? ? ? ? E8 ? ? ? ? A3 ? ? ? ? 59=pdb
-___vcrt_uninitialize_ptd()=A1 ? ? ? ? 83 F8 FF 74 0E=pdb
-_CallSettingFrame(x,x,x)=55 8B EC 83 EC 04=pdb
-public: DName::DName(char const near * near &,char)=55 8B EC 53 56 8B F1 57 8B 7D 08 83 26=pdb
-public: DName::DName(class DName near *)=55 8B EC 53 33 DB 56 8B F1=pdb
-public: DName::DName(char const near *)=55 8B EC 56 8B F1 33 C0 8B 4D 08 88 46 04 81 ? ? ? ? ? ? 89 06 85=pdb
-public: DName::DName(enum DNameStatus)=55 8B EC 8B 45 08 56 8B F1 81 ? ? ? ? ? ? 83=pdb
-public: DName::DName(__int64)=55 8B EC 83 EC 2C A1 ? ? ? ? 33 C5 89 45 FC 8B 55 0C 8B C1=pdb
-public: DName::DName(unsigned __int64)=55 8B EC 83 EC 24 A1 ? ? ? ? 33 C5 89 45 FC 8B=pdb
-public: pDNameNode::pDNameNode(class DName near *)=55 8B EC 8B 45 08 C7 ? ? ? ? ? 85=pdb
-public: pcharNode::pcharNode(char const near *,int)=55 8B EC 53 56 8B F1 57 8B 7D 0C C7=pdb
-public: class DName Replicator::operator[](int)const=55 8B EC 8B 55 0C 83 FA 09=pdb
-public: UnDecorator::operator char near *(void)=55 8B EC 83 EC 20 8B 4D=pdb
-public: void _HeapManager::Destructor(void)=57 8B F9 83 7F 04 00 74 2E=pdb
-private: void DName::append(class DNameNode near *)=55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 2E 6A=pdb
-private: void DName::doPchar(char const near *,int)=55 8B EC 56 8B F1 57 33 FF 39 3E=pdb
-private: static class DName UnDecorator::getBasedType(void)=55 8B EC 83 EC 10 6A 00 E8=pdb
-private: static class DName UnDecorator::getDimension(bool)=55 8B EC 8B ? ? ? ? ? 83 EC 18 56 33=pdb
-private: static class DName UnDecorator::getEnumType(void)=55 8B EC 83 EC 18 A1 ? ? ? ? 83=pdb
-public: char DName::getLastChar(void)const=57 8B 39 85 FF 75 04 32=pdb
-public: virtual char DNameStatusNode::getLastChar(void)const=83 79 04 01 0F 95=pdb
-public: virtual char pDNameNode::getLastChar(void)const=8B 49 04 85 C9 0F ? ? ? ? ? 32 C0 C3=pdb
-public: virtual char pairNode::getLastChar(void)const=53 8B D9 56 57 8B 7B 08=pdb
-public: virtual char pcharNode::getLastChar(void)const=8B 51 08 85 D2 74 08=pdb
-private: static int UnDecorator::getNumberOfDimensions(void)=8B ? ? ? ? ? 8A 01 84 C0 75 03=pdb
-private: static class DName UnDecorator::getScope(void)=55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 C6=pdb
-private: static class DName UnDecorator::getScopedName(void)=55 8B EC 83 EC 18 53 56 8B 75 08 33 DB 57=pdb
-public: char near * DName::getString(char near *,int)const=55 8B EC 53 8B D9 56 8B 75 08 57 83=pdb
-private: static class DName UnDecorator::getSymbolName(void)=55 8B EC A1 ? ? ? ? 80=pdb
-private: static class DName UnDecorator::getThisType(void)=55 8B EC 83 EC 10 83 65=pdb
-private: static class DName UnDecorator::getThrowTypes(void)=55 8B EC A1 ? ? ? ? 83 EC 18 8A 08 84 C9 74=pdb
-private: static int UnDecorator::getTypeEncoding(void)=55 8B EC 51 8B ? ? ? ? ? 53 56 57 6A=pdb
-private: static class DName UnDecorator::getZName(bool,bool)=55 8B EC 83 EC 3C A1 ? ? ? ? 33=pdb
-public: int DName::length(void)const=57 8B 39 85 FF 75 04 33=pdb
-public: virtual int pDNameNode::length(void)const=8B 49 04 85 C9 0F ? ? ? ? ? 33=pdb
-public: virtual int pairNode::length(void)const=55 8B EC 51 8B C1 89 45 FC 83 78=pdb
-und_strncmp()=55 8B EC 8B 45 10 85 C0 75 02 5D C3 8B 4D 0C 8B 55 08 53=pdb
-___unDName()=6A 64 68 ? ? ? ? E8 ? ? ? ? 8B=pdb
-___longjmp_internal()=55 8B EC 83 EC 50 8B 5C=pdb
-__global_unwind2()=55 8B EC 53 56 57 55=pdb
-__unwind_handler()=8B 4C 24 04 F7 ? ? ? ? ? ? B8 ? ? ? ? 74 32=pdb
-__local_unwind2()=53 56 57 8B 44=pdb
-__abnormal_termination()=33 C0 64=pdb
-__NLG_Notify1()=53 51 BB ? ? ? ? EB=pdb
-__NLG_Notify()=53 51 BB ? ? ? ? 8B=pdb
-_unexpected()=56 E8 ? ? ? ? 8B 70 04=pdb
-___vcrt_initialize_locks()=56 57 BF ? ? ? ? 33 F6 6A 00 68 ? ? ? ? 57 E8 ? ? ? ? 83=pdb
-__local_unwind4()=53 56 57 8B 54=pdb
-_seh_longjmp_unwind4(x)=55 FF 74 24 08=pdb
-_EH4_CallFilterFunc(x,x)=55 56 57 53=pdb
-_EH4_TransferToHandler(x,x)=8B EA 8B F1=pdb
-_EH4_GlobalUnwind2(x,x)=55 8B EC 53 56 57 6A 00 52=pdb
-_EH4_LocalUnwind(x,x,x,x)=55 8B 6C 24 08 52=pdb
-_rt_probe_read4(x)=6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 65 FC=pdb
-___acrt_call_reportfault()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 83 7D 08=pdb
-__invalid_parameter()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 E8 ? ? ? ? 85=pdb
-__invalid_parameter_noinfo()=33 C0 50 50 50 50 50 E8 ? ? ? ? 83=pdb
-__invalid_parameter_noinfo_noreturn()=8B FF 56 33 F6 56=pdb
-__invoke_watson()=6A 17 E8 ? ? ? ? 85 C0 74 05 6A 05=pdb
-shortsort()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 08 53 8B 5D 0C 3B D9 76 6C=pdb
-_qsort()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 08=pdb
-__chvalidchk_l()=8B FF 55 8B EC 8B 45 10 85 C0 74=pdb
-__isalnum_l()=8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 68=pdb
-__ischartype_l()=8B FF 55 8B EC 8B 4D 10 85=pdb
-__iscntrl_l()=8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 20=pdb
-__isdigit_l()=8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 04=pdb
-__isspace_l()=8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 08=pdb
-_isalnum()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 25=pdb
-_iscntrl()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 20=pdb
-_isdigit()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 04=pdb
-_isspace()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 08=pdb
-fFMOD()=D9 C9 D9 F8=pdb
-_lambda_d9b46f0b07bf76f03656ac7f646b375e_::operator()=8B FF 56 8B F1 8B 46 04 8B 0E 0F B7 00 50 E8 ? ? ? ? 8B 46 04 33 C9 66 89 08 8B 46 08 8B 0E 5E=pdb
-_lambda_af0d5e41dc07595f2c52435db9a0efad_::operator()=8B FF 56 8B F1 8B 46 04 8B 0E 0F B6 00 50 E8 ? ? ? ? 8B 46 04 C6 00 00 8B 46 08 8B 0E 5E=pdb
-memcpy_s()=8B FF 55 8B EC 56 8B 75 14 85 F6 75=pdb
-___libm_sse2_powf()=F3 ? ? ? ? ? ? ? 83 EC 0C 66 ? ? ? ? ? ? ? 66=pdb
-___acrt_initialize_stdio()=A1 ? ? ? ? 56 6A 03=pdb
-___acrt_iob_func()=8B FF 55 8B EC 6B 45 08 38=pdb
-___acrt_uninitialize_stdio()=8B FF 56 E8 ? ? ? ? E8=pdb
-common_fsopen_char_()=6A 10 68 ? ? ? ? E8 ? ? ? ? 33 C0 8B 75 08 85 F6 0F 95 C0 85 C0 75 14 E8 ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 33 C0 EB 73=pdb
-_fopen()=8B FF 55 8B EC 6A 40=pdb
-__fclose_nolock()=8B FF 55 8B EC 56 8B 75 08 85 F6 75 15=pdb
-_fclose()=6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 75=pdb
-__fread_nolock_s()=8B FF 55 8B EC 83 EC 14 53 56 8B=pdb
-_fread()=8B FF 55 8B EC FF 75 14 FF 75 10 FF 75 0C 6A=pdb
-_fread_s()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 7D=pdb
-long LongLongSub(__int64,__int64,__int64 near *)=8B FF 55 8B EC 53 56 8B 75 08 2B=pdb
-common_fseek()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 33 C0 39 45 08 0F 95 C0 85 C0 75 15 E8 ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 83 C8 FF EB 47=pdb
-common_fseek_binary_mode_read_only_fast_track_nolock()=8B FF 55 8B EC 83 7D 14=pdb
-common_fseek_nolock()=8B FF 55 8B EC 8B 45 08 8B 40=pdb
-_fseek()=8B FF 55 8B EC FF 75 10=pdb
-_lambda_b51c0495177f500e782686251704ae76_::operator()=8B FF 55 8B EC 51 51 56 8B F1 57 8B=pdb
-__fwrite_nolock()=8B FF 55 8B EC 83 EC 0C 53 56 8B 75 0C=pdb
-_fwrite()=8B FF 55 8B EC 83 EC 10 83 7D 0C=pdb
-common_vsprintf_s_char_()=8B FF 55 8B EC 83 7D 18=pdb
-_lambda_4f2c1eaeead2a5fc776db5b62ea0fb9b_::operator()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B F1=pdb
-___stdio_common_vfprintf()=8B FF 55 8B EC 83 EC 2C 8B=pdb
-common_vsscanf_char_()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 57 8B=pdb
-common_vsscanf_wchar_t_()=8B FF 55 8B EC 83 EC 7C=pdb
-_lambda_83425c3f06effba31f387a263a50d5fb_::operator()=8B FF 56 8B F1 8B 46 04 8B 0E 0F B7 00 50 E8 ? ? ? ? 8B 46 04 33 C9 66 89 08 8B 46 08 8B 0E FF=pdb
-_lambda_79c077965043167fb4fbb9f601780f11_::operator()=8B FF 56 8B F1 8B 46 04 8B 0E 0F B6 00 50 E8 ? ? ? ? 8B 46 04 C6 00 00 8B 46 08 8B 0E FF=pdb
-_strtok()=8B FF 55 8B EC E8 ? ? ? ? 83=pdb
-___libm_sse2_expf()=F3 0F 10 C8 F3 0F 10=pdb
-___libm_sse2_logf()=F3 ? ? ? ? ? ? ? F3 0F 10 F8=pdb
-_wcsncpy()=8B FF 55 8B EC 8B 4D 10 57=pdb
-internal_islower_l()=8B FF 55 8B EC FF 75 0C 6A 02=pdb
-internal_isupper_l()=8B FF 55 8B EC FF 75 0C 6A 01=pdb
-_tolower()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 10 6A 00 FF 75 08 E8 ? ? ? ? 59 59 8B C8 EB 0E 8B 4D 08 8D 41 BF=pdb
-_toupper()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 10 6A 00 FF 75 08 E8 ? ? ? ? 59 59 8B C8 EB 0E 8B 4D 08 8D 41 9F=pdb
-___libm_sse2_atanf()=B9 ? ? ? ? 66 0F 6E D1 F3=pdb
-shortsort_s()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 08 53 8B 5D 0C 3B D9 76 6F=pdb
-swap()=8B FF 55 8B EC 8B 45 0C 57=pdb
-_qsort_s()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 18=pdb
-common_stat__stat64i32_()=8B FF 55 8B EC 83 EC 34 83=pdb
-common_stat_handle_file_not_opened__stat64i32_()=8B FF 55 8B EC 51 FF 75 08 E8=pdb
-common_stat_handle_file_opened__stat64i32_()=8B FF 55 8B EC 83 EC 50=pdb
-convert_large_integer_time_to_time_t___int64_()=8B FF 55 8B EC 83 EC 28 A1 ? ? ? ? 33 C5 89 45 FC 83=pdb
-call_wfullpath()=8B FF 55 8B EC 56 57 E8 ? ? ? ? 8B 38=pdb
-compute_size()=8B FF 55 8B EC 8B 4D 0C 8B=pdb
-convert_to_stat_mode()=8B FF 55 8B EC 56 57 0F B6=pdb
-get_drive_number_from_path()=8B FF 55 8B EC 8B 4D 08 33 D2 53=pdb
-has_executable_extension()=8B FF 55 8B EC 83 7D 08 00 75 04 32=pdb
-is_root_or_empty()=8B FF 55 8B EC 8B 4D 08 85 C9 74 47=pdb
-is_root_unc_name()=8B FF 55 8B EC 8B 55 08 8B=pdb
-is_slash()=8B FF 55 8B EC 66 ? ? ? ? 74 0B=pdb
-is_usable_drive_or_unc_root()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 08 68=pdb
-__stat64i32()=8B FF 55 8B EC 51 83 7D 08 00 56=pdb
-common_getdcwd_char_()=8B FF 55 8B EC 51 56 8B 75 10=pdb
-common_getdcwd_wchar_t_()=8B FF 55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 53 8B=pdb
-is_valid_drive()=8B FF 55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 8B=pdb
-common_getenv_char_()=6A 10 68 ? ? ? ? E8 ? ? ? ? 33 C0 8B 75 08 85 F6 0F 95 C0 85 C0 75 14 E8 ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 33 C0 EB 40=pdb
-common_getenv_nolock_char_()=8B FF 55 8B EC 51 56 57 E8 ? ? ? ? 8B F8=pdb
-common_getenv_s_char_()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 65 E4 00 6A 0B=pdb
-common_getenv_s_nolock_char_()=8B FF 55 8B EC 51 53 8B 5D 08 56=pdb
-__access()=8B FF 55 8B EC FF 75 0C FF=pdb
-__access_s()=8B FF 55 8B EC 51 83 7D 08 00 75 0E=pdb
-common_ftell_long_()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 33 C0 39 45 08 0F 95 C0 85 C0 75 15 E8 ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 83 C8 FF EB 2D=pdb
-common_ftell_nolock_long_()=8B FF 55 8B EC FF 75 08 E8 ? ? ? ? 59 85=pdb
-common_ftell_nolock___int64_()=8B FF 55 8B EC 83 EC 10 83 7D 08 00 75 1A=pdb
-common_ftell_read_mode_nolock()=8B FF 55 8B EC 83 EC 1C 57=pdb
-common_ftell_translated_utf8_nolock()=8B FF 55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53=pdb
-bool __crt_time_is_leap_year<int>(int)=8B FF 55 8B EC 8B 4D 08 8B C1=pdb
-common_asctime_s_char_()=8B FF 55 8B EC 51 53 56 8B 75 08 57 85=pdb
-common_asctime_s_write_value_char_()=8B FF 55 8B EC 56 6A=pdb
-bool __crt_time_is_day_valid(int,int,int)=8B FF 55 8B EC 83 7D 10 00 7F=pdb
-_asctime()=8B FF 55 8B EC 56 57 E8 ? ? ? ? 85=pdb
-common_localtime_s_long_()=8B FF 55 8B EC 83 EC 10 56 8B 75=pdb
-common_localtime_s___int64_()=8B FF 55 8B EC 83 EC 14 56 8B=pdb
-common_timespec_get__timespec64_()=8B FF 55 8B EC 51 51 56 8B 75 08 85 F6 75 14=pdb
-__time64()=8B FF 55 8B EC 83 EC 10 33 C0 57=pdb
-_strnlen()=8B FF 55 8B EC A1 ? ? ? ? 56 57=pdb
-_wcsnlen()=8B FF 55 8B EC 51 A1 ? ? ? ? 8B=pdb
-_wcsncmp()=8B FF 55 8B EC 8B 45 10 85 C0 75=pdb
-__isleadbyte_l()=8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8B=pdb
-_iswascii()=8B FF 55 8B EC B8 ? ? ? ? 66=pdb
-_iswcntrl()=8B FF 55 8B EC 6A 20=pdb
-_iswdigit()=8B FF 55 8B EC 6A 04 FF=pdb
-_iswpunct()=8B FF 55 8B EC 6A 10=pdb
-_iswspace()=8B FF 55 8B EC 6A 08=pdb
-__fputc_nolock()=8B FF 55 8B EC 8B 55 0C 83 6A=pdb
-___libm_sse2_acosf()=66 0F 7E C0 B9=pdb
-___libm_sse2_asinf()=66 0F 7E C0 F3=pdb
-___libm_sse2_pow()=83 EC 14 66=pdb
-___libm_sse2_tanf()=66 ? ? ? ? 66 25 FF 7F 66 2D 80 00 66 3D FF=pdb
-___acrt_errno_from_os_error()=8B FF 55 8B EC 8B 4D 08 33 C0 3B=pdb
-___acrt_errno_map_os_error()=8B FF 55 8B EC 56 E8 ? ? ? ? 8B 4D=pdb
-___doserrno()=E8 ? ? ? ? 85 C0 75 06 B8 ? ? ? ? C3 83 C0 14=pdb
-__errno()=E8 ? ? ? ? 85 C0 75 06 B8 ? ? ? ? C3 83 C0 10=pdb
-common_futime___int64___utimbuf64_()=8B FF 55 8B EC 83 EC 68=pdb
-common_utime___int64_char___utimbuf64_()=8B FF 55 8B EC 51 83 7D 08 00 75 15=pdb
-_strncmp()=53 56 8B 4C=pdb
-__mbsstr_l()=8B FF 55 8B EC 83 EC 18 53 56 57 FF 75 10=pdb
-int __crt_time_elapsed_leap_years<int>(int)=8B FF 55 8B EC 8B 45 08 56 BE=pdb
-common_gmtime_s_long_()=8B FF 55 8B EC 51 51 56 8B 75 08 85 F6 75 16=pdb
-common_gmtime_s___int64_()=8B FF 55 8B EC 83 EC 0C 56 8B 75 08 85=pdb
-compute_year()=8B FF 55 8B EC 56 57 8B 7D 08 B9=pdb
-compute_year_0()=8B FF 55 8B EC 51 53 8B 5D 08 B8=pdb
-___getgmtimebuf()=8B FF 56 E8 ? ? ? ? 8B=pdb
-_isindst_nolock()=8B FF 55 8B EC 51 53 8D=pdb
-cvtdate()=8B FF 55 8B EC 51 51 83 65 F8 00 83 7D=pdb
-tzset_from_environment_nolock()=8B FF 55 8B EC 83 EC 0C 53 56 E8=pdb
-tzset_from_system_nolock()=8B FF 55 8B EC 83 EC 10 53 56 E8=pdb
-tzset_nolock()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 83 ? ? ? ? ? ? 8D=pdb
-___tzset()=6A 08 68 ? ? ? ? E8 ? ? ? ? A1=pdb
-__isindst()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 65 E4 00 6A 06=pdb
-___acrt_stdio_free_tmpfile_name_buffers_nolock()=8B FF 53 56 57 6A=pdb
-__wcsicmp()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 75 75=pdb
-__wcsicmp_l()=8B FF 55 8B EC 83 EC 10 8D 4D F0 53 56 FF=pdb
-___libm_sse2_atan()=83 EC 0C 66 ? ? ? ? ? ? ? 66 0F 57=pdb
-__ftol()=55 8B EC 83 C4 F4 9B=pdb
-atexit_exception_filter()=8B FF 55 8B EC 33 C0 81=pdb
-common_exit()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 8B 75 10=pdb
-exit_or_terminate_process()=8B FF 55 8B EC E8 ? ? ? ? 84=pdb
-is_managed_app()=6A 00 FF ? ? ? ? ? 8B C8 85=pdb
-try_cor_exit_process()=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 83=pdb
-___acrt_initialize_thread_local_exit_callback()=8B FF 55 8B EC 8B 45 08 A3=pdb
-__cexit()=6A 01 6A 00 6A 00 E8=pdb
-__exit()=8B FF 55 8B EC 6A 00 6A 02=pdb
-_exit()=8B FF 55 8B EC 6A 00 6A 00 FF 75 08=pdb
-__libm_sse2_pow_precise()=83 EC 10 0F ? ? ? ? 8B 44=pdb
-_abort()=E8 ? ? ? ? 85 C0 74 08 6A=pdb
-___acrt_stdio_flush_nolock()=8B FF 55 8B EC 8B 4D 08 56 8D=pdb
-__fflush_nolock()=8B FF 55 8B EC 56 8B 75 08 85 F6 75 09=pdb
-__flushall()=6A 01 E8 ? ? ? ? 59 C3=pdb
-common_flush_all()=6A 1C 68 ? ? ? ? E8 ? ? ? ? 83=pdb
-_fflush()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 8B 75 08=pdb
-_ldiv()=8B FF 55 8B EC 8B 45 08 99=pdb
-_strpbrk()=55 8B EC 56 33 C0 50 50 50 50 50 50 50 50 8B 55 0C 8D 49 00 8A 02 0A C0 74 09 83 C2 01 0F AB 04 24 EB F1 8B 75 08 8B=pdb
-___libm_sse2_log10f()=F3 ? ? ? ? ? ? ? 66 ? ? ? ? ? ? ? 66 0F DB=pdb
-_wcsncat()=8B FF 55 8B EC 56 8B 75 08 33=pdb
-_strncat()=8B 4C 24 0C 57 85 C9 0F ? ? ? ? ? 8B=pdb
-_strncpy()=8B 4C 24 0C 57 85 C9 0F ? ? ? ? ? 56=pdb
-call_wsetlocale()=8B FF 55 8B EC 51 83 7D 0C=pdb
-_setlocale()=6A 1C 68 ? ? ? ? E8 ? ? ? ? FF=pdb
-__strnicmp()=8B FF 55 8B EC A1 ? ? ? ? 56 85=pdb
-__strnicmp_l()=8B FF 55 8B EC 83 EC 10 83 7D 10=pdb
-___acrt_initialize_locks()=8B FF 56 57 BF=pdb
-___acrt_uninitialize_locks()=8B FF 56 8B ? ? ? ? ? 85=pdb
-___pctype_func()=8B FF 55 8B EC 51 E8 ? ? ? ? 8B 48 4C 89 4D FC 8D 4D FC 51 50 E8 ? ? ? ? 8B 45 FC 59 59 8B 00=pdb
-____lc_codepage_func()=8B FF 55 8B EC 51 E8 ? ? ? ? 8B 48 4C 89 4D FC 8D 4D FC 51 50 E8 ? ? ? ? 8B 45 FC 59 59 8B 40 08=pdb
-___acrt_locale_initialize_ctype()=8B FF 55 8B EC 83 EC 48 A1 ? ? ? ? 33 C5 89 45 FC 53 56=pdb
-___strncnt()=8B FF 55 8B EC 8B 4D 08 33 C0 38=pdb
-_strcspn()=55 8B EC 56 33 C0 50 50 50 50 50 50 50 50 8B 55 0C 8D 49 00 8A 02 0A C0 74 09 83 C2 01 0F AB 04 24 EB F1 8B 75 08 83=pdb
-__CIpow_default()=83 EC 14 D9=pdb
-__pow_default()=8D 54 24 0C E8 ? ? ? ? 8B=pdb
-_test_whether_TOS_is_int()=D9 C0 D9 FC D8 D9 B1=pdb
-_wcscpy_s()=8B FF 55 8B EC 8B 55 08 56 85 D2 74 13=pdb
-x_ismbbtype_l()=8B FF 55 8B EC 83 EC 10 56 FF=pdb
-__ismbblead()=8B FF 55 8B EC 6A 04 6A=pdb
-__seh_filter_dll()=8B FF 55 8B EC B8 ? ? ? ? 39=pdb
-__seh_filter_exe()=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 56 E8=pdb
-common_configure_argv_char_()=8B FF 55 8B EC 83 EC 0C 83=pdb
-parse_command_line_char_()=8B FF 55 8B EC 51 8B 45 14=pdb
-___acrt_allocate_buffer_for_argv()=8B FF 55 8B EC 56 8B 75 08 81=pdb
-common_get_or_create_environment_nolock_char_()=A1 ? ? ? ? 85 C0 75 25 39=pdb
-common_initialize_environment_nolock_char_()=83 ? ? ? ? ? ? 74 03 33=pdb
-create_environment_char_()=8B FF 55 8B EC 51 51 53 56 57 8B 7D 08 33 D2=pdb
-free_environment_wchar_t_()=8B FF 55 8B EC 56 8B 75 08 85 F6 74 1F=pdb
-initialize_environment_by_cloning_nolock_char_()=8B FF 57=pdb
-___dcrt_uninitialize_environments_nolock()=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? FF=pdb
-_lambda_275893d493268fdec8709772e3fcec0e_::operator()=8B FF 55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 8B C1=pdb
-_lambda_4e60a939b0d047cfe11ddc22648dfba9_::operator()=8B FF 55 8B EC 83 EC 0C 8B C1=pdb
-__crt_atexit()=8B FF 55 8B EC FF 75 08 68=pdb
-__execute_onexit_table()=8B FF 55 8B EC 51 8D 45 08 89=pdb
-__initialize_onexit_table()=8B FF 55 8B EC 56 8B 75 08 85 F6 75 05=pdb
-__register_onexit_function()=8B FF 55 8B EC 51 51 8D=pdb
-initialize_c()=68 ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? E8=pdb
-initialize_pointers_0()=A1 ? ? ? ? 56 6A 20 83=pdb
-uninitialize_allocated_memory()=A1 ? ? ? ? 83 C9=pdb
-___acrt_uninitialize_critical()=8B FF 55 8B EC FF 75 08 E8 ? ? ? ? 59 B0=pdb
-__errcode()=8B FF 55 8B EC 8B 45 08 A8 20=pdb
-__except1()=8B FF 53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B 73 20=pdb
-__handle_exc()=8B FF 55 8B EC 83 EC 10 53 8B 5D 08 56=pdb
-__raise_exc()=8B FF 55 8B EC 6A 00 FF 75 1C=pdb
-__raise_exc_ex()=8B FF 55 8B EC 8B 45 08 33 C9 53 33=pdb
-__set_errno_from_matherr()=8B FF 55 8B EC 8B 45 08 83 F8 01=pdb
-__umatherr()=8B FF 55 8B EC 8B 55 0C 83 EC=pdb
-__initterm()=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 8B 45=pdb
-__initterm_e()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 08=pdb
-_terminate()=6A 0C 68 ? ? ? ? E8 ? ? ? ? E8=pdb
-_getch()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 6A 09=pdb
-__getch_nolock()=6A 30 68 ? ? ? ? E8=pdb
-__getextendedkeycode()=8B FF 55 8B EC 8B 55 08 56 8B=pdb
-common_xtox_unsigned_long_char_()=8B FF 55 8B EC 8B 45 08 33 C9 53 8B=pdb
-common_xtox_unsigned_long_wchar_t_()=8B FF 55 8B EC 8B 45 0C 8B 4D 08 53 56=pdb
-common_xtox_s_unsigned_long_wchar_t_()=8B FF 55 8B EC 8B 4D 0C 56=pdb
-_itoa()=8B FF 55 8B EC 51 83 7D 10=pdb
-__itow_s()=8B FF 55 8B EC 51 83 7D 14=pdb
-__ultoa_s()=8B FF 55 8B EC 6A 00 FF 75 14 FF=pdb
-__close()=8B FF 55 8B EC 51 56 8B 75 08 83 FE FE 75 15=pdb
-__close_nolock()=8B FF 55 8B EC 56 57 8B 7D 08 57=pdb
-translate_text_mode_nolock_char_()=8B FF 55 8B EC 83 EC 18 8B 45 08 8B 4D 08 83 E0 3F 8B=pdb
-translate_text_mode_nolock_wchar_t_()=8B FF 55 8B EC 83 EC 18 8B 45 08 8B 4D 08 83 E0 3F 53=pdb
-translate_ansi_or_utf8_nolock()=8B FF 55 8B EC 51 51 53 FF=pdb
-translate_utf16_from_console_nolock()=8B FF 55 8B EC 8B 45 10 56=pdb
-__read_nolock()=8B FF 55 8B EC 83 EC 28 53=pdb
-write_double_translated_ansi_nolock()=8B FF 55 8B EC 83 EC 38 A1=pdb
-write_double_translated_unicode_nolock()=8B FF 55 8B EC 51 53 56 8B 75 08 33 C0=pdb
-write_requires_double_translation_nolock()=8B FF 55 8B EC 51 56 8B 75 08 56=pdb
-write_text_utf8_nolock()=8B FF 55 8B EC B8 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C 8B C1 C1 F8 06 83 E1 3F 6B C9 30 53 56=pdb
-__write_nolock()=8B FF 55 8B EC 83 EC 30 A1 ? ? ? ? 33 C5 89 45 FC 8B 4D=pdb
-__wcsnicmp()=8B FF 55 8B EC 51 A1 ? ? ? ? 57=pdb
-__wcsnicmp_l()=8B FF 55 8B EC 83 EC 14 53 56 33=pdb
-_strcpy_s()=8B FF 55 8B EC 8B 55 08 56 85 D2 74 11=pdb
-construct_ptd()=8B FF 55 8B EC 51 51 8B 45 08=pdb
-destroy_fls()=8B FF 55 8B EC 83 7D 08 00 74 12=pdb
-destroy_ptd()=8B FF 55 8B EC 51 8B 45 08 8B 08=pdb
-replace_current_thread_locale_nolock()=8B FF 55 8B EC 56 8B 75 08 83 7E=pdb
-___acrt_freeptd()=A1 ? ? ? ? 83 F8 FF 74 21=pdb
-___acrt_getptd()=8B FF 56 57 FF=pdb
-___acrt_getptd_noexit()=8B FF 53 56 57 FF=pdb
-___acrt_initialize_ptd()=68 ? ? ? ? E8 ? ? ? ? A3 ? ? ? ? 83 F8=pdb
-___acrt_uninitialize_ptd()=A1 ? ? ? ? 83 F8 FF 74 0D=pdb
-__isctype_l()=8B FF 55 8B EC 83 EC 24 A1 ? ? ? ? 33 C5 89 45 FC 53=pdb
-_lambda_2af78c5f5901b1372d98f9ab3177dfa6_::operator()=8B FF 55 8B EC 83 EC 14 56 57=pdb
-_lambda_e378711a6f6581bf7f0efd7cdf97f5d9_::operator()=8B FF 56 8B F1 8B 46 04 8B 00=pdb
-___acrt_copy_locale_name()=8B FF 55 8B EC 83 7D 08 00 75 04 33 C0 5D C3 53=pdb
-___acrt_set_locale_changed()=33 C0 B9 ? ? ? ? 40=pdb
-___acrt_uninitialize_locale()=6A 08 68 ? ? ? ? E8 ? ? ? ? BE=pdb
-___lc_lctowcs()=8B FF 55 8B EC 56 57 8B 7D 10 57 FF=pdb
-___lc_wcstolc()=8B FF 55 8B EC 51 51 53 56 57 8B 7D 08 33 DB=pdb
-_copytlocinfo_nolock()=8B FF 55 8B EC 56 8B 75 0C 85=pdb
-__expandlocale()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 0C 53 8B=pdb
-__wcscats()=8B FF 55 8B EC 53 33=pdb
-__wsetlocale()=8B FF 55 8B EC 83 EC 28 83=pdb
-_wsetlocale_get_all()=8B FF 55 8B EC 83 EC 0C 53 56 33=pdb
-_wsetlocale_nolock()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 0C 53 56=pdb
-_wsetlocale_set_cat()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 0C=pdb
-__cintrindisp2()=55 8B EC 81 ? ? ? ? ? 53 9B ? ? ? ? ? ? 9B=pdb
-__cintrindisp1()=55 8B EC 81 ? ? ? ? ? 53 9B ? ? ? ? ? ? 50=pdb
-__ctrandisp2()=55 8B EC 81 ? ? ? ? ? 53 FF 75 0C FF 75 08 E8 ? ? ? ? 83 C4 08 FF=pdb
-cintrinexit()=83 ? ? ? ? ? ? 75 4F DD=pdb
-__ctrandisp1()=55 8B EC 81 ? ? ? ? ? 53 FF 75 0C FF 75 08 E8 ? ? ? ? 83 C4 08 9B=pdb
-__fload()=55 8B EC 83 C4 F4 53=pdb
-__rtnospopde()=E8 ? ? ? ? EB F6=pdb
-__rtzeronpop()=DD D8 D9 EE C3=pdb
-__rtzerospop()=DD D8 DD D8 D9 EE 84=pdb
-__rtonenpop()=DD D8 D9 E8 C3=pdb
-__tosnan1()=DB ? ? ? ? ? DB ? ? ? ? ? F6 ? ? ? ? ? ? 74 08=pdb
-__nan2()=DB ? ? ? ? ? DB ? ? ? ? ? F6 ? ? ? ? ? ? 74 20=pdb
-__rtindfpop()=DD D8 DD D8 DB ? ? ? ? ? 80=pdb
-__rttosnpopde()=C6 ? ? ? ? ? ? 0A C9=pdb
-__rtatan2inf()=DD D8 DD D8 DB ? ? ? ? ? 0A=pdb
-__rtchsifneg()=0A C9 74 02=pdb
-_iswctype()=8B FF 55 8B EC 51 51 66=pdb
-try_get_CompareStringEx()=68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 01 E8=pdb
-try_get_function_0()=8B FF 55 8B EC 8B 45 08 53=pdb
-try_get_module_0()=8B FF 55 8B EC 8B 45 08 57=pdb
-__acrt_AreFileApisANSI()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 00=pdb
-__acrt_CompareStringEx(x,x,x,x,x,x,x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 E8 ? ? ? ? 8B=pdb
-__acrt_EnumSystemLocalesEx(x,x,x,x)=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68=pdb
-__acrt_FlsAlloc(x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 03=pdb
-__acrt_FlsFree(x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 04=pdb
-__acrt_FlsGetValue(x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 05=pdb
-__acrt_FlsSetValue(x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 06=pdb
-__acrt_GetFileInformationByHandleEx(x,x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 0B=pdb
-__acrt_GetLocaleInfoEx(x,x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 0D=pdb
-__acrt_GetSystemTimePreciseAsFileTime(x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 0F=pdb
-__acrt_GetUserDefaultLocaleName(x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 11=pdb
-__acrt_InitializeCriticalSectionEx(x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 14=pdb
-__acrt_IsValidLocaleName(x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 15=pdb
-__acrt_LCIDToLocaleName(x,x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 17=pdb
-__acrt_LCMapStringEx(x,x,x,x,x,x,x,x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 16=pdb
-__acrt_LocaleNameToLCID(x,x)=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 6A 18=pdb
-___acrt_can_use_vista_locale_apis()=E8 ? ? ? ? F7 D8 1B C0 F7 D8 C3=pdb
-___acrt_initialize_winapi_thunks()=A1 ? ? ? ? 57 6A 20=pdb
-___acrt_is_packaged_app()=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 8B ? ? ? ? ? 85=pdb
-___vcrt_uninitialize_winapi_thunks_0()=55 8B EC 80 7D 08 00 75 27=pdb
-__fcloseall()=6A 10 68 ? ? ? ? E8 ? ? ? ? 83=pdb
-___acrt_stdio_free_buffer_nolock()=8B FF 55 8B EC 56 8B 75 08 57 8D=pdb
-initialize_inherited_file_handles_nolock()=8B FF 55 8B EC 83 EC 48 8D=pdb
-initialize_stdio_handles_nolock()=8B FF 53 56 57 33=pdb
-___acrt_initialize_lowio()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 6A 07=pdb
-___acrt_uninitialize_lowio()=8B FF 56 33 F6 8B=pdb
-class __crt_stdio_stream __acrt_stdio_allocate_stream(void)=6A 0C 68 ? ? ? ? E8 ? ? ? ? 33 FF=pdb
-void __acrt_stdio_free_stream(class __crt_stdio_stream)=8B FF 55 8B EC 8B 45 08 33 C9 89=pdb
-find_or_allocate_unused_stream_nolock()=8B FF 55 8B EC 51 53 8B ? ? ? ? ? 56=pdb
-common_openfile_char_()=8B FF 55 8B EC 83 EC 1C 56 57=pdb
-__fileno()=8B FF 55 8B EC 8B 45 08 85 C0 75=pdb
-common_refill_and_read_nolock_char_()=8B FF 55 8B EC 8B 45 08 56 85=pdb
-common_lseek___int64_()=6A 1C 68 ? ? ? ? E8 ? ? ? ? 8B=pdb
-common_lseek_nolock___int64_()=8B FF 55 8B EC 51 51 56 8B 75 08 57 56 E8 ? ? ? ? 83=pdb
-common_flush_and_write_nolock_char_()=8B FF 55 8B EC 57 FF=pdb
-write_buffer_nolock_char_()=8B FF 55 8B EC 56 57 FF=pdb
-___acrt_stdio_begin_temporary_buffering_nolock()=8B FF 55 8B EC 56 8B 75 08 56=pdb
-___acrt_stdio_end_temporary_buffering_nolock()=8B FF 55 8B EC 80 7D 08 00 74=pdb
-__mbtowc_l()=8B FF 55 8B EC 83 EC 10 53 56 8B 75 0C=pdb
-_mbtowc()=8B FF 55 8B EC 6A 00 FF 75 10=pdb
-__wctomb_s_l()=8B FF 55 8B EC 83 EC 14 53 8B=pdb
-enum __acrt_fp_class __acrt_fp_classify(double const near &)=8B FF 55 8B EC 8B 45 08 B9=pdb
-bool __acrt_fp_is_negative(double const near &)=8B FF 55 8B EC 8B 45 08 33 D2 8B=pdb
-fp_format_a()=8B FF 55 8B EC 83 EC 30 53=pdb
-fp_format_e()=8B FF 55 8B EC 83 EC 0C 8D=pdb
-fp_format_e_internal()=8B FF 55 8B EC 83 EC 10 56 57 8B 7D 10=pdb
-fp_format_f()=8B FF 55 8B EC 83 EC 0C 33=pdb
-fp_format_f_internal()=8B FF 55 8B EC 83 EC 10 8D 4D F0 53 56 57 FF 75 1C=pdb
-fp_format_g()=8B FF 55 8B EC 83 EC 10 53 56 57 FF=pdb
-fp_format_nan_or_infinity()=8B FF 55 8B EC 83 EC 48 A1 ? ? ? ? 33 C5 89 45 FC 8B=pdb
-shift_bytes()=8B FF 55 8B EC 8B 55 14=pdb
-___acrt_fp_format()=8B FF 55 8B EC 51 51 56 57 8B 7D 0C=pdb
-__get_printf_count_output()=8B ? ? ? ? ? 33 C0 83 C9=pdb
-___libm_error_support()=8B FF 55 8B EC 83 EC 24 A1 ? ? ? ? 33 C5 89 45 FC 83=pdb
-___acrt_initialize_sse2()=6A 0A E8 ? ? ? ? A3=pdb
-___acrt_strtok_s_novalidation()=8B FF 55 8B EC 83 EC 28 A1 ? ? ? ? 33 C5 89 45 FC 8B 45 10=pdb
-__acrt_LCMapStringA_stat()=8B FF 55 8B EC 51 51 A1 ? ? ? ? 33 C5 89 45 FC 53=pdb
-___acrt_LCMapStringA()=8B FF 55 8B EC 83 EC 10 FF 75 08 8D 4D F0 E8 ? ? ? ? FF 75 28=pdb
-get_drive_number_from_path_0()=8B FF 55 8B EC 8B 4D 08 0F=pdb
-__getdrive()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 57 33=pdb
-common_fullpath_dynamic_buffer_wchar_t_()=8B FF 55 8B EC 57 33 FF 57 57 57 FF 75 08 FF ? ? ? ? ? 85 C0 75 11 FF ? ? ? ? ? 50 E8 ? ? ? ? 59 33 C0 EB 4A=pdb
-common_fullpath_user_buffer_wchar_t_()=8B FF 55 8B EC 56 8B 75 10 85=pdb
-__wfullpath()=8B FF 55 8B EC 8B 45 0C 85=pdb
-_wcspbrk()=8B FF 55 8B EC 8B 45 08 33 C9 53 56=pdb
-___acrt_copy_path_to_wide_string()=8B FF 55 8B EC 51 83 7D 08 00 75 17=pdb
-___acrt_lowio_create_handle_array()=8B FF 55 8B EC 51 51 53 57=pdb
-___acrt_lowio_destroy_handle_array()=8B FF 55 8B EC 56 8B 75 08 85 F6 74 25=pdb
-___acrt_lowio_ensure_fh_exists()=6A 14 68 ? ? ? ? E8 ? ? ? ? 81=pdb
-___acrt_lowio_set_os_handle()=8B FF 55 8B EC 51 53 56 8B 75 08 85=pdb
-__alloc_osfhnd()=6A 1C 68 ? ? ? ? E8 ? ? ? ? 6A=pdb
-__free_osfhnd()=8B FF 55 8B EC 53 56 8B 75 08 57=pdb
-__get_osfhandle()=8B FF 55 8B EC 8B 4D 08 83 F9 FE 75 15=pdb
-common_loctotime_t___int64_()=8B FF 55 8B EC 83 EC 48 A1 ? ? ? ? 33 C5 89 45 FC 53 8B=pdb
-__strnicoll()=8B FF 55 8B EC A1 ? ? ? ? 85 C0 75 06=pdb
-__strnicoll_l()=8B FF 55 8B EC 83 EC 10 8D 4D F0 53 56 57 FF 75 14=pdb
-common_set_variable_in_environment_nolock_char_()=8B FF 55 8B EC 83 EC 0C 53 8B 5D 08 85=pdb
-copy_environment_char_()=8B FF 55 8B EC 51 57=pdb
-find_in_environment_nolock_char_()=8B FF 55 8B EC 53 56 57 8B ? ? ? ? ? 8B=pdb
-__waccess_s()=8B FF 55 8B EC 83 EC 28 A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08=pdb
-_wcscat_s()=8B FF 55 8B EC 53 56 57 8B 7D=pdb
-___acrt_initialize_timeset()=68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 6A=pdb
-_mbstowcs_l_helper()=8B FF 55 8B EC 83 EC 18 53 8B 5D 10=pdb
-__mbstowcs_s_l()=8B FF 55 8B EC 83 EC 10 53 8B 5D 10=pdb
-common_tcsncpy_s_char_()=8B FF 55 8B EC 51 8B 55 14 8B 4D 08 56 85 D2 75 0D 85 C9 75 0D 39 4D 0C 75 21=pdb
-__rmtmp()=6A 14 68 ? ? ? ? E8 ? ? ? ? 83 65=pdb
-common_sopen_dispatch_char_()=6A 10 68 ? ? ? ? E8 ? ? ? ? 33 C0 8B 75 18=pdb
-configure_text_mode()=8B FF 55 8B EC 51 8B 45 08 8B 55=pdb
-create_file()=8B FF 55 8B EC 8B 45 20 0B=pdb
-decode_open_create_flags()=8B FF 55 8B EC 8B 45 08 BA=pdb
-decode_options()=8B FF 55 8B EC 51 53 8B 5D 0C=pdb
-truncate_ctrl_z_if_present()=8B FF 55 8B EC 51 56 8B 75 08 8B=pdb
-__sopen_nolock()=8B FF 55 8B EC 51 83 65 FC 00 8D 45 FC 50 FF=pdb
-__sopen_s()=8B FF 55 8B EC 6A 01 FF 75 08 FF=pdb
-__wsopen_nolock()=8B FF 55 8B EC 83 EC 44 53=pdb
-__decomp()=8B FF 55 8B EC DD 45 08 D9=pdb
-__set_exp()=8B FF 55 8B EC 51 51 8B 4D=pdb
-__sptype()=8B FF 55 8B EC 81 ? ? ? ? ? ? 8B 45=pdb
-__clrfp()=8B FF 55 8B EC 51 DD=pdb
-__ctrlfp()=8B FF 55 8B EC 51 51 9B=pdb
-__set_statfp()=8B FF 55 8B EC 8B 4D 08 83 EC=pdb
-__statfp()=8B FF 55 8B EC 51 9B=pdb
-__modf_default()=8B FF 55 8B EC 83 EC 10 53 56 57 6A=pdb
-get_global_action_nolock()=8B FF 55 8B EC 8B 45 08 48=pdb
-siglookup()=8B FF 55 8B EC 6B ? ? ? ? ? ? 8B=pdb
-___acrt_get_sigabrt_handler()=8B FF 55 8B EC 51 8D 45 FF=pdb
-___acrt_initialize_signal_handlers()=8B FF 55 8B EC FF 75 08 B9 ? ? ? ? E8 ? ? ? ? FF=pdb
-___fpecode()=E8 ? ? ? ? 83 C0 08 C3=pdb
-_raise()=6A 2C 68 ? ? ? ? E8=pdb
-__commit()=8B FF 55 8B EC 51 56 8B 75 08 83 FE FE 75 0D=pdb
-___acrt_LCMapStringW()=8B FF 55 8B EC 56 8B 75 14 85 F6 7E=pdb
-_wcstombs_l_helper()=8B FF 55 8B EC 83 EC 2C A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08 53 8B=pdb
-__wcstombs_s_l()=8B FF 55 8B EC 51 56 8B 75 0C 33 C0=pdb
-___ascii_strnicmp()=55 8B EC 57 56=pdb
-InternalGetLocaleInfoA()=8B FF 55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 53 56 57 FF 75 08 8D 4D E8 E8 ? ? ? ? 8B 45=pdb
-___acrt_GetLocaleInfoA()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 0C 8B=pdb
-___acrt_GetStringTypeA()=8B FF 55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 53 56 57 FF 75 08 8D 4D E8 E8 ? ? ? ? 8B 4D=pdb
-__copysign()=8B FF 55 8B EC 51 51 D9=pdb
-__fpclass()=8B FF 55 8B EC 66 8B=pdb
-__CIpow_pentium4()=55 8B EC 83 EC 10 83 E4=pdb
-__fFEXP()=C6 ? ? ? ? ? ? 32 ED=pdb
-__fFLN()=D9 ED D9 C9 D9 E4=pdb
-_rtforexpinf()=0A C9 75 AF=pdb
-__ffexpm1()=D9 C0 D9 E1 DB=pdb
-_isintTOS()=D9 C0 D9 FC D8 D9 9B=pdb
-__startTwoArgErrorHandling()=55 8B EC 83 C4 E0 89 45 E0 8B=pdb
-__startOneArgErrorHandling()=55 8B EC 83 C4 E0 89 45 E0 DD=pdb
-__twoToTOS()=D9 C0 D9 FC DC=pdb
-__load_CW()=8B 54 24 04 81=pdb
-__convertTOStoQNaN()=A9 ? ? ? ? 74 06 B8=pdb
-__fload_withFB()=8B 42 04 25 ? ? ? ? 3D=pdb
-__checkTOS_withFB()=8B 44 24 08 25 ? ? ? ? 3D=pdb
-__fast_exit()=66 ? ? ? ? ? 74 03 D9 2C=pdb
-__math_exit()=66 8B 04 24 66 3D 7F 02 74 1E=pdb
-__check_overflow_exit()=83 EC 08 DD 14 24 8B 44 24 04 83 C4 08 25 ? ? ? ? EB=pdb
-__check_range_exit()=83 EC 08 DD 14 24 8B 44 24 04 83 C4 08 25 ? ? ? ? 74=pdb
-__d_inttype()=8B FF 55 8B EC 51 51 DD 45 08 51=pdb
-__powhlp()=8B FF 55 8B EC DD 45 08 B9=pdb
-common_expand_argv_wildcards_char_()=8B FF 55 8B EC 8B 45 0C 83=pdb
-copy_and_add_argument_to_buffer_char_()=8B FF 55 8B EC 51 8B 4D 08 8D=pdb
-expand_argument_wildcards_char_()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C 53=pdb
-_lambda_ad1ced32f4ac17aa236e5ef05d6b3b7c_::operator()=8B FF 56 8B F1 6A=pdb
-CPtoLocaleName()=8B FF 55 8B EC 8B 45 08 2D=pdb
-getSystemCP()=8B FF 55 8B EC 83 EC 10 8D 4D F0 6A=pdb
-setSBCS()=8B FF 55 8B EC 53 8B 5D 08 56=pdb
-setSBUpLow()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53 56 8B 75 08 8D=pdb
-setmbcp_internal()=8B FF 55 8B EC 83 EC 0C E8=pdb
-___acrt_initialize_multibyte()=80 ? ? ? ? ? ? 75 12 6A=pdb
-___acrt_update_thread_multibyte_data()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 33 F6 89 75 E4 E8=pdb
-__setmbcp_nolock()=8B FF 55 8B EC 83 EC 20 A1=pdb
-___acrt_initialize_command_line()=FF ? ? ? ? ? A3 ? ? ? ? FF ? ? ? ? ? A3=pdb
-find_end_of_double_null_terminated_sequence()=8B FF 55 8B EC 8B 55 08 57=pdb
-___dcrt_get_narrow_environment_from_os()=8B FF 55 8B EC 51 53 56 57=pdb
-___acrt_initialize_heap()=FF ? ? ? ? ? 85 C0 A3=pdb
-___acrt_execute_initializers()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 57=pdb
-___acrt_execute_uninitializers()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 0C=pdb
-___acrt_has_user_matherr()=A1 ? ? ? ? 8B C8 33 ? ? ? ? ? 83 E1 1F D3=pdb
-___acrt_invoke_user_matherr()=8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 56 8B ? ? ? ? ? 8B CE 33 ? ? ? ? ? 83 E1 1F D3=pdb
-__isatty()=8B FF 55 8B EC 8B 4D 08 83 F9 FE 75 0D=pdb
-__putwch_nolock()=8B FF 55 8B EC 51 A1 ? ? ? ? 83=pdb
-___acrt_add_locale_ref()=8B FF 55 8B EC 8B 45 08 F0=pdb
-___acrt_free_locale()=8B FF 55 8B EC 51 53 56 8B 75 08 57 8B=pdb
-___acrt_locale_add_lc_time_reference()=8B FF 55 8B EC 8B 4D 08 85 C9 74 16 81 ? ? ? ? ? 74 0E 33=pdb
-___acrt_locale_free_lc_time_if_unreferenced()=8B FF 55 8B EC 56 8B 75 08 85 F6 74 20=pdb
-___acrt_locale_release_lc_time_reference()=8B FF 55 8B EC 8B 4D 08 85 C9 74 16 81 ? ? ? ? ? 74 0E 83=pdb
-___acrt_release_locale_ref()=8B FF 55 8B EC 8B 45 08 85 C0 74 73=pdb
-___acrt_update_thread_locale_data()=6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 65 E4 00 E8=pdb
-__updatetlocinfoEx_nolock()=8B FF 55 8B EC 56 8B 75 0C 57=pdb
-___acrt_locale_free_monetary()=8B FF 55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B=pdb
-___acrt_locale_initialize_monetary()=8B FF 55 8B EC 83 EC 18 53 8B 5D 08 33 C9=pdb
-___acrt_locale_free_numeric()=8B FF 55 8B EC 56 8B 75 08 85 F6 74 59=pdb
-___acrt_locale_initialize_numeric()=8B FF 55 8B EC 83 EC 18 53 8B 5D 08 33 C0=pdb
-free_crt_array_internal()=8B FF 55 8B EC 8B 45 0C 53=pdb
-initialize_lc_time()=8B FF 55 8B EC 83 EC 14 8B=pdb
-___acrt_locale_free_time()=8B FF 55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 6A=pdb
-___acrt_locale_initialize_time()=8B FF 55 8B EC 56 57 8B 7D 08 83=pdb
-common_tcsncpy_s_wchar_t_()=8B FF 55 8B EC 51 8B 55 14 8B 4D 08 56 85 D2 75 0D 85 C9 75 0D 39 4D 0C 75 26=pdb
-_wcscspn()=8B FF 55 8B EC 51 8B 4D 08 33=pdb
-GetLocaleNameFromDefault()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 08 8D=pdb
-GetLocaleNameFromLangCountry()=8B FF 55 8B EC 51 53 56 8B 75 08 33 DB=pdb
-GetLocaleNameFromLanguage()=8B FF 55 8B EC 53 56 8B 75 08 33 DB 57 6A=pdb
-GetPrimaryLen()=8B FF 55 8B EC 8B 4D 08 33 D2 85=pdb
-LangCountryEnumProcEx()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 57 8B 7D 08 E8 ? ? ? ? 8B F0 8D ? ? ? ? ? 6A 40=pdb
-LanguageEnumProcEx()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 57 8B 7D 08 E8 ? ? ? ? 8B F0 8D ? ? ? ? ? 6A 78=pdb
-TestDefaultCountry()=8B FF 55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 56=pdb
-TranslateName()=8B FF 55 8B EC 51 56 8B 75 0C 33 D2=pdb
-___acrt_get_qualified_locale()=8B FF 55 8B EC 51 51 53 56 57 E8=pdb
-GetLcidFromCountry()=8B FF 55 8B EC 56 57 E8 ? ? ? ? 8B D0=pdb
-GetLcidFromLangCountry()=8B FF 55 8B EC 53 56 57 E8 ? ? ? ? 8B F0 33 DB 6A 02 5A 8B 4E 50 8D 79 02 66 8B 01 03 CA 66 3B C3 75 F6 2B CF 33 C0 D1 F9 83 F9 03 8B=pdb
-GetLcidFromLanguage()=8B FF 55 8B EC 53 56 57 E8 ? ? ? ? 8B F0 33 DB 6A 02 5A 8B 4E 50 8D 79 02 66 8B 01 03 CA 66 3B C3 75 F6 2B CF 33 C0 D1 F9 83 F9 03 0F=pdb
-GetPrimaryLen_0()=8B FF 55 8B EC 8B 4D 08 33 D2 0F=pdb
-LcidFromHexString()=8B FF 55 8B EC 8B 55 08 56 33=pdb
-TestDefaultCountry_0()=8B FF 55 8B EC 8B 4D 08 33 C0 66=pdb
-TestDefaultLanguage()=8B FF 55 8B EC 51 56 57 E8 ? ? ? ? 8B 75=pdb
-TranslateName_0()=8B FF 55 8B EC 53 56 8B 75 0C 33 DB 57 85=pdb
-___acrt_get_qualified_locale_downlevel()=8B FF 55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 8B 45=pdb
-__87except()=8B FF 53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B=pdb
-__get_abstract_control_sse2()=8B FF 55 8B EC 8B 55 08 33 C9 F7 ? ? ? ? ? 74 67=pdb
-__get_abstract_control_x87()=8B FF 55 8B EC 8B 55 08 33 C9 F7 ? ? ? ? ? 74 5D=pdb
-__get_machine_control()=8B FF 55 8B EC 8B 55 08 33 C9 F7 ? ? ? ? ? 74 5B=pdb
-__get_machine_control_sse2()=8B FF 55 8B EC 8B 55 08 33 C9 F7 ? ? ? ? ? 74 6A=pdb
-__getfpcontrolword()=8B FF 55 8B EC 51 51 33 C0 21=pdb
-__getfpstatusword()=8B FF 55 8B EC 51 51 33 C0 33=pdb
-GetTableIndexFromLocaleName()=8B FF 55 8B EC 83 EC 10 53 56 57 33=pdb
-___acrt_DownlevelLCIDToLocaleName()=8B FF 55 8B EC 8B 4D 08 53=pdb
-___acrt_DownlevelLocaleNameToLCID()=8B FF 55 8B EC 83 7D 08 00 74 1D=pdb
-___acrt_stdio_allocate_buffer_nolock()=8B FF 55 8B EC FF ? ? ? ? ? 53=pdb
-___acrt_fp_strflt_to_string()=8B FF 55 8B EC 8B 55 08 56 85 D2 75=pdb
-___acrt_fltout()=8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 18=pdb
-__frnd()=8B FF 55 8B EC 51 51 DD 45 08 D9=pdb
-InternalCompareStringA()=8B FF 55 8B EC 83 EC 2C A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08 53 56=pdb
-___acrt_CompareStringA()=8B FF 55 8B EC 83 EC 10 FF 75 08 8D 4D F0 E8 ? ? ? ? FF 75 24=pdb
-__setmode_nolock()=8B FF 55 8B EC 51 8B 45 08 53=pdb
-__chsize_nolock()=8B FF 55 8B EC 83 EC 10 56 57 8B 7D 08=pdb
-__mbsdec_l()=8B FF 55 8B EC 83 EC 10 83 7D 08 00 75 14=pdb
-initialize_multibyte()=E8 ? ? ? ? 33 C9 84 C0 0F 94 C1 8B=pdb
-_fegetenv()=8B FF 55 8B EC 56 E8 ? ? ? ? 8B 75=pdb
-_fesetenv()=8B FF 55 8B EC 51 51 83 65 F8 00 83 65=pdb
-_feholdexcept()=8B FF 55 8B EC 51 51 83 65 F8 00 8D=pdb
-start_6()=52 9B D9 3C 24 74 4C 8B 44 24 0C 66 ? ? ? ? ? 74 06 D9 ? ? ? ? ? A9 ? ? ? ? 74 5E A9 ? ? ? ? 75 41 D9 EC=pdb
-__clearfp()=8B FF 55 8B EC 83 EC 0C DD=pdb
-private: CDmxElement::CDmxElement(char const near *)=55 8B EC 56 FF 75 08 8B F1 B9=pdb
-private: void CDmxElement::Resort(void)const=55 8B EC 83 EC 0C 56 8B F1 F6 46 31=pdb
-_sscanf_s()=55 8B EC 8D 45 10 50 6A=pdb
-private: CDmxAttribute::CDmxAttribute(char const near *)=55 8B EC 56 FF 75 08 8B F1 8D 45=pdb
-private: void CDmxAttribute::FreeDataMemory(void)=56 8B F1 8B 06 85 C0 0F=pdb
-__FindPESection()=55 8B EC 8B 45 08 33 D2 53=pdb
-__ValidateImageBase()=55 8B EC 8B 45 08 B9 ? ? ? ? 66=pdb
-__aulldvrm()=56 8B 44 24 14 0B=pdb
-__allrem()=53 57 33 FF 8B 44=pdb
-__alldvrm()=57 56 55=pdb
-__SEH_prolog4_GS()=68 ? ? ? ? 64 ? ? ? ? ? ? 8B 44 24 10 89 6C 24 10 8D 6C 24 10 2B E0 53 56 57 A1 ? ? ? ? 31 45 FC 33 C5 89=pdb
-__SEH_epilog4_GS()=8B 4D E4 33 CD=pdb
-_dynamic_atexit_destructor_for__g_EntityLists__()=56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 83=pdb
-_dynamic_atexit_destructor_for__g_ExitStopper__()=80 ? ? ? ? ? ? 74 13 68=pdb
-_dynamic_atexit_destructor_for__s_HLTVCamera__()=80 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 74=pdb
-_dynamic_atexit_destructor_for__s_MoveHelperClient__()=B9 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? E8 ? ? ? ? C7=pdb
-_dynamic_atexit_destructor_for__s_ParticleSystemQuery__()=B9 ? ? ? ? E8 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? 85 D2=pdb
-_dynamic_atexit_destructor_for__g_WeaponDatabase__()=B9 ? ? ? ? E8 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 80=pdb
-_dynamic_atexit_destructor_for__g_CSGOWorkshopMaps__()=B9 ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? 8B C1=pdb
-_dynamic_atexit_destructor_for__g_VModuleLoader__()=B9 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C3=pdb
-InitFunc_388()=55 8B EC 51 C7 ? ? ? ? ? ? FF 75=lumina
-CryptoPP::_dynamic_initializer_for__AAD_CHANNEL___2()=B9 ? ? ? ? E8 ? ? ? ? 6A 03=lumina
-public: Poco::URIRedirection::~URIRedirection()=56 8B F1 8B 46 14 83 F8 10 72 0E 6A 01 40 50 FF 36 E8 ? ? ? ? 83 C4 0C C7 ? ? ? ? ? ? 83 7E 14 10 C7 ? ? ? ? ? ? 72 07=lumina
-string_operation()=55 8B EC 53 8B 5D 08 56 8B F1 8B 4D 0C 57 8B 43 10 3B C1 0F ? ? ? ? ? 8B 7D 10 2B C1 3B F8 0F 47 F8 3B F3 75 47=lumina
-CMsgSteamDatagramLinkInstantaneousStats::Clear()=80 79 2C 00 74 38=lumina
-CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve::Clear()=56 8B F1 8B 46 30 84=lumina
-CAchievementMgr::OnEvent()=55 8B EC 53 56 57 8B 7D 08 8B D9 85 FF 74=lumina
-GetSequenceName()=85 C9 74 61 85 D2 78 22 8B 41 04 85 C0 75 0A 8B 01 8B ? ? ? ? ? EB 03 8B 40 14 3B D0 7D 0A 52 E8 ? ? ? ? 03 40 04=lumina
-GetSequenceActivityName()=85 C9 74 61 85 D2 78 22 8B 41 04 85 C0 75 0A 8B 01 8B ? ? ? ? ? EB 03 8B 40 14 3B D0 7D 0A 52 E8 ? ? ? ? 03 40 08=lumina
-CBaseAchievement::IncrementCount()=56 8B F1 57 8B 46 0C 8D 4E 0C 8B 40 14 FF D0 84 C0 0F ? ? ? ? ? 8B 06=lumina
-UTIL_TraceLine()=55 8B EC 83 E4 F0 83 EC 7C 56 52=lumina
-UsingStandardWeaponsInVehicle()=56 57 8B F9 8B ? ? ? ? ? 83 FA FF 74 43=lumina
-UpdateCollisionBounds()=56 57 8B F9 8B ? ? ? ? ? F6 ? ? ? ? ? ? 8B=lumina
-SimulatePlayerSimulatedEntities()=56 8B F1 57 8B ? ? ? ? ? 83 EF 01 78 74=lumina
-SelectItem()=55 8B EC 53 8B 5D 08 57 8B F9 85 DB 74 7B=lumina
-CBasePlayer::CalcViewBob()=55 8B EC A1 ? ? ? ? 83 EC 10 56 8B F1 B9=lumina
-PostThinkVPhysics()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 56 57 83 ? ? ? ? ? ? 0F=lumina
-UpdateVPhysicsPosition()=55 8B EC 83 EC 10 57 8B F9 F3=lumina
-__vfscanf_l()=55 8B EC 83 E4 F8 FF 75 0C 6A 00 52 51=lumina
-OpenBSPFile()=55 8B EC 51 56 68 ? ? ? ? 6A=lumina
-C_BaseAnimatingGameSystem::LevelShutdownPostEntity()=A1 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 85 C0 74 19 50=lumina
-C_BaseAnimating::OnNewModel()=55 8B EC 83 EC 0C 53 57 8B F9 89 7D F4=lumina
-LookupBone()=55 8B EC 53 56 8B F1 57 83 ? ? ? ? ? ? 75=lumina
-GetBonePosition()=55 8B EC 83 E4 F8 56 8B F1 57 83=lumina
-C_BaseAnimating::BuildTransformations()=55 8B EC 83 E4 F0 81 ? ? ? ? ? 56 57 8B F9 8B ? ? ? ? ? 89 7C 24 28=lumina
-C_BaseAnimating::MaintainSequenceTransitions()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B F9 F3=lumina
-C_BaseAnimating::StandardBlendingRules()=55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 8B 75 08 57 8B F9 85=lumina
-C_BaseAnimating::SetupBones_AttachmentHelper()=55 8B EC 83 EC 48 53 8B 5D=lumina
-C_BaseAnimating::ThreadedBoneSetup()=55 8B EC 8B ? ? ? ? ? 83 EC 24=lumina
-C_BaseAnimating::ShouldSkipAnimationFrame()=57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75 02=lumina
-C_BaseAnimating::SetupBones()=55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57 8B F9 8B=lumina
-C_BaseAnimating::FindFollowedEntity()=55 8B EC 83 EC 0C 53 8B D9 57 89=lumina
-C_BaseAnimating::DrawModel()=55 8B EC 83 EC 14 53 56 8B F1 8B ? ? ? ? ? 57 89=lumina
-C_BaseAnimating::StudioFrameAdvance()=55 8B EC 83 E4 F8 83 EC 08 56 8B F1 57 80=lumina
-FrameAdvance()=55 8B EC 83 E4 C0 83 EC 38 56 8B=lumina
-DevMsgRT()=55 8B EC 8B ? ? ? ? ? 8B 01 8B 40 2C=lumina
-C_BaseEntity::DrawBrushModel()=55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B=lumina
-C_CSPlayer::ShouldInterpolate()=A1 ? ? ? ? 56 57 8B F9 8B 30 8D 4F 08=lumina
-SetupMovement()=55 8B EC 83 E4 F8 83 EC 0C 53 56 57 8B 7D 08 8B F1 F3=lumina
-RestoreData()=55 8B EC 83 E4 F8 83 EC 44 53 56 8B 75 0C=lumina
-OnPostRestoreData()=55 8B EC 51 53 56 6A=lumina
-C_BaseEntity::GetToolRecordingState()=55 8B EC 51 53 8B D9 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? 8B 01 8B=lumina
-C_BaseEntity::ToolRecordEnties()=8B ? ? ? ? ? 53 8B ? ? ? ? ? 85 DB 74=lumina
-CCSPlayer::PreThink()=55 8B EC 83 E4 F8 51 56 8B F1 8B 06=lumina
-CBasePlayer::PostThink()=56 8B ? ? ? ? ? 57 8B F9 8B CE 8B 06 FF ? ? ? ? ? 8B 07=lumina
-C_BasePlayer::GetToolRecordingState()=55 8B EC 83 EC 50 57 8B F9 8B=lumina
-GetViewModel()=55 8B EC 8B 45 08 53 8B D9 56 8B=lumina
-C_BasePlayer::PhysicsSimulate()=56 8B F1 8B ? ? ? ? ? 83 F9 FF 74 23=lumina
-BeginViewModelRendering()=A1 ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 0F=lumina
-EndViewModelRendering()=55 8B EC 51 A1 ? ? ? ? 85 C0 0F=lumina
-C_ParticlePerformanceMonitor::~C_ParticlePerformanceMonitor()=A1 ? ? ? ? 56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7=lumina
-C_GameInstructor::DefineLesson()=55 8B EC 56 57 8B F9 8B ? ? ? ? ? 81=lumina
-ChatPrintf()=55 8B EC 8B 4D 08 8D 55=lumina
-C_RopeKeyframe::CreateFromKeyValues()=55 8B EC 83 EC 0C 53 56 57 8B C1=lumina
-C_SceneEntity::LoadSceneFromFile()=55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 56 8B F1 B9=lumina
-C_SoundscapeSystem::UpdateAudioParams()=55 8B EC 56 57 8B 7D 08 8B F1 8B ? ? ? ? ? 3B 47=lumina
-C_BaseTeamObjectiveResource::OnDataChanged()=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8A ? ? ? ? ? 3A=lumina
-RecvProxy_Owner()=55 8B EC 8B 45 0C 56 8B 75 08 57=lumina
-CVGuiScreenPanel::Init()=55 8B EC 51 53 56 8B 75 08 8B D9 57 68 ? ? ? ? 68=lumina
-CBoundedCvar_Predict::GetFloat()=55 8B EC 51 80 ? ? ? ? ? ? 56 8B F1 75=lumina
-CHLClient::OnDemoPlaybackStart()=FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 5A=lumina
-ScreenWidth()=55 8B EC 83 EC 08 8B ? ? ? ? ? 8D 55 F8 52 8D 55 FC 52 8B 01 FF ? ? ? ? ? 8B 45=lumina
-_printf()=55 8B EC 51 8D 45 0C=lumina
-CClientLeafSystem::AddShadowToRenderable()=55 8B EC 8B 45 0C 53 56 8B F1=lumina
-IClientModeShared::CreateMove()=55 8B EC 56 8D 75 04 8B 0E 8B C1 83 C0 08 8B=lumina
-ClientModeShared::FireGameEvent()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B 5D 08 56 57 8B ? ? ? ? ? 8B=lumina
-CClientShadowMgr::CalculateRenderTargetsAndSizes()=55 8B EC 83 EC 08 53 56 8B F1 FF=lumina
-CEffectsList::AddEffect()=55 8B EC 8B 55 08 85 D2 74 2D=lumina
-LoadFile()=55 8B EC 51 56 57 8B FA E8=lumina
-InitFunc_158()=53 68 ? ? ? ? B9=lumina
-SetCollisionBounds()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B 7B=lumina
-CCollisionProperty::ComputeSurroundingBox()=55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 8B 07=lumina
-CCollisionProperty::MarkSurroundingBoundsDirty()=56 8B F1 8B 4E 04 83=lumina
-CColorCorrectionMgr::SetColorCorrectionWeight()=55 8B EC 83 EC 10 8B 45 08 0F=lumina
-CommentaryShowModelViewer()=55 8B EC 8B 45 08 83 38 02 7D=lumina
-public: std::exception::exception()=55 8B EC 83 EC 08 8B 45 08 0F 57 C0 56 8B F1 89 45 F8 8D 56 04 C6 45 FC 01 52 8D 45 F8 C7 ? ? ? ? ? 50 66 0F D6 02 E8 ? ? ? ? 83 C4 08 8B=lumina
-public: std::exception::exception()=55 8B EC 56 8B F1 0F 57 C0 8D 46 04 50 C7 ? ? ? ? ? 66 0F D6 00 8B 45 08 83 C0 04 50 E8 ? ? ? ? 83 C4 08 8B=lumina
-public: std::runtime_error::runtime_error()=55 8B EC 83 EC 08 8B 45 08 0F 57 C0 56 8B F1 89 45 F8 8D 56 04 C6 45 FC 01 52 8D 45 F8 C7 ? ? ? ? ? 50 66 0F D6 02 E8 ? ? ? ? 83 C4 08 C7=lumina
-public: virtual bool std::error_category::equivalent()=55 8B EC 8B 01 8D 55 F8 83 EC 08 56=lumina
-public: virtual bool std::error_category::equivalent()=55 8B EC 8B 41 04 56 8B=lumina
-CDummyMaterialProxy::Init()=55 8B EC 8B 4D 08 8B 01 FF 10=lumina
-CBaseEntityList::AddNonNetworkableEntity()=55 8B EC 51 53 8B ? ? ? ? ? 89 4D FC 56=lumina
-C_WaterExplosionEffect::PlaySound()=55 8B EC 83 E4 F8 83 EC 24 56 8B F1 F6 46 24 04 75 6D=lumina
-CGamestatsData::AllocData()=55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B 3E=lumina
-CBaseGameStats::Event_SaveGame()=83 ? ? ? ? ? ? B8 ? ? ? ? 0F ? ? ? ? ? ? 50 68 ? ? ? ? 51=lumina
-CGlowObjectManager::RenderGlowBoxes()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 60 56 57 8B F9 89=lumina
-SetLastCmd()=55 8B EC 8B 55 08 3B CA=lumina
-FindHudElement()=55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 39=lumina
-CHudChatFilterPanel::ApplySchemeSettings()=55 8B EC 83 EC 0C 53 56 57 8B F9 6A 00 6A=lumina
-CPostCommentaryDialog::OnFinishedClose()=56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 74 15=lumina
-CAsyncCaptionResourceManager::Init()=55 8B EC 83 EC 10 83 79=lumina
-cc_emit()=55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 85 C0 74 26=lumina
-cc_findsound()=55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 85 C0 74 18=lumina
-g15_reload()=FF ? ? ? ? ? 68 ? ? ? ? 8B C8 8B 10 FF 52 2C 85 C0 75 0F 68 ? ? ? ? FF ? ? ? ? ? 83 C4 04 C3 E8=lumina
-CDescribeData::DescribeFields()=55 8B EC 53 56 57 8B 7D 14 33 F6 8B D9 85 FF 7E 41=lumina
-CLocatorPanel::PerformLayout()=55 8B EC 83 EC 2C 53 8B D9 E8=lumina
-CAM_ToggleSnapto()=55 8B EC 8B 45 08 BA ? ? ? ? 85 C0 0F=lumina
-CLessOrEqualProxy::Init()=55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68 ? ? ? ? 8B F1=lumina
-CTextureTransformProxy::Init()=55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 8B F1=lumina
-CMumbleSystem::Init()=C6 41 34 00 8D=lumina
-UpdateScreenEffectTexture()=55 8B EC 83 E4 F0 83 EC 48 8B 45 08 56 89=lumina
-CNewParticleEffect::SetControlPoint()=55 8B EC 53 8B 5D 0C 56 8B F1 F6=lumina
-CSimpleEmitter_Factory()=55 8B EC 51 BA=lumina
-usrCmd_Start()=A1 ? ? ? ? B9 ? ? ? ? FF 50 34 8B ? ? ? ? ? 85 C0 6A 00 0F ? ? ? ? ? ? 8B=lumina
-CBaseEntity::PhysicsSimulate()=55 8B EC 83 E4 F8 83 EC 0C 56 8B F1 8B ? ? ? ? ? 80=lumina
-physics_run_think()=55 8B EC 83 EC 10 53 56 57 8B F9 8B ? ? ? ? ? C1=lumina
-AddSurfacepropFile()=55 8B EC 83 EC 0C 53 8B 5D 08 56 57 68 ? ? ? ? 8B=lumina
-C_PhysPropClientside::ParseAllEntities()=55 8B EC B8 ? ? ? ? E8 ? ? ? ? 56 57 8D ? ? ? ? ? E8=lumina
-CPrecacheRegister::LevelInitPreEntity()=56 8B ? ? ? ? ? 68 ? ? ? ? FF D6 8B=lumina
-CPredictedViewModel::AddViewModelBob()=55 8B EC A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 35=lumina
-cl_predictioncopy_describe()=55 8B EC 83 EC 0C 53 8D=lumina
-CValueChangeTracker::SetupTracking()=55 8B EC 80 ? ? ? ? ? ? B9 ? ? ? ? 56 57=lumina
-CryptoPP::Algorithm::AlgorithmName()=55 8B EC 56 8B 75 08 8B CE 6A 07=lumina
-CStickerSelectionProxy::Init()=55 8B EC 83 EC 0C 56 FF 75 0C 8B F1 FF 75 08 E8 ? ? ? ? 84 C0 75 09=lumina
-CPupilProxy::Init()=55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68 ? ? ? ? 8B F9=lumina
-CreateRagdoll()=55 8B EC 51 A1 ? ? ? ? 53 8B D9 56 8B 08 57 68 ? ? ? ? 8B=lumina
-CRagdollLowViolenceManager::SetLowViolence()=55 8B EC 56 E8 ? ? ? ? A2=lumina
-GetFullFrameFrameBufferTexture()=55 8B EC 81 ? ? ? ? ? 56 8B F1 83 ? ? ? ? ? ? ? 0F=lumina
-CPlayerInventory::CItemContainers::Add()=55 8B EC 56 8B F1 F6 46 15=lumina
-CSoundEmitterSystem::StopSound()=55 8B EC 57 8B 7D 10=lumina
-C_BaseEntity::GetSoundDuration()=56 8B F1 68 ? ? ? ? 56=lumina
-CHltvReplaySystem::StopHltvReplay()=55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 25=lumina
-CSoundControllerImp::SoundPlayEnvelope()=55 8B EC 83 EC 10 8B 01 0F=lumina
-TextToSoundLevel()=57 8B F9 85 FF 75 05=lumina
-CSteamWorksGameStatsUploader::WriteSessionRow()=55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89 46 78 85 C0 74=lumina
-CWorkshopFileInfoManager::~CWorkshopFileInfoManager()=56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D 4E=lumina
-UGCUtil_Init()=55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 75=lumina
-WriteUserCmd()=55 8B EC 83 E4 F8 51 53 56 8B D9=lumina
-CDebugOverlay::CDebugOverlay()=55 8B EC 83 EC 08 53 56 57 68 ? ? ? ? 6A 00 8B D9 E8 ? ? ? ? C7 ? ? ? ? ? 8D 55 FC 8B=lumina
-CSplitScreenLetterBox::GetSettings()=55 8B EC 80 ? ? ? ? ? ? 0F ? ? ? ? ? 83=lumina
-CLoadingDiscPanel::CLoadingDiscPanel()=55 8B EC 83 EC 18 53 56 57 68=lumina
-CLoadingDisc::SetPausedVisible()=55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 69=lumina
-CLoadingDisc::SetFastForwardVisible()=55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 7B=lumina
-CMessageCharsPanel::CMessageCharsPanel()=55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 8B F1=lumina
-CMessageCharsPanel::GetTextExtents()=55 8B EC 56 8B 75 08 85 F6 75 25=lumina
-drawtextfields()=55 8B EC 83 E4 F0 81 ? ? ? ? ? A1 ? ? ? ? 56 57 8B F9 B9 ? ? ? ? 8B 40 34 89 7C=lumina
-CSlideshowDisplayScreen::ApplySchemeSettings()=55 8B EC 51 53 8B D9 8D 4D 08 56 8B=lumina
-VideoPanel::ApplySchemeSettings()=55 8B EC 53 56 57 FF 75 08 8B D9 E8 ? ? ? ? 8B 03 8B CB 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B CB=lumina
-ConVar_Unregister()=55 8B EC 83 EC 18 53 8B D9 8B ? ? ? ? ? 89=lumina
-CViewRender::Init()=56 8B F1 0F 57 C0 57 68=lumina
-CViewRender::Shutdown()=A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 08=lumina
-spec_pos()=55 8B EC 83 E4 C0 83 EC 40=lumina
-getpos()=55 8B EC 83 E4 C0 83 EC 34 8D=lumina
-CViewRenderBeams::InitBeams()=53 56 57 8B D9 FF ? ? ? ? ? 6A FF=lumina
-CViewAngleAnimation::SaveAsAnimFile()=55 8B EC 83 E4 C0 83 EC 74 53 56 57 8B ? ? ? ? ? FF=lumina
-TestViewAnim()=55 8B EC 51 8B ? ? ? ? ? 83 ? ? ? ? ? ? 75=lumina
-CBloomAddMaterialProxy::Init()=55 8B EC 51 56 8B F1 C6=lumina
-CEnginePostMaterialProxy::Init()=55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 00 8B 06 8D 4D FF 51 68 ? ? ? ? 8B CE FF 50 2C 6A=lumina
-DumpTGAofRenderTarget()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B DA 6A=lumina
-CMotionBlurMaterialProxy::Init()=55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 00 8B 06 8D 4D FF 51 68 ? ? ? ? 8B CE FF 50 2C 80=lumina
-CMotionBlurMaterialProxy::OnBind()=56 8B F1 8B 4E 04 85 C9 74 0C 8B 01 6A=lumina
-DoDepthOfField()=55 8B EC 83 EC 24 53 56 8B F1 57 89 75 E0=lumina
-toggleThreadedBuildRWList()=A1 ? ? ? ? B9 ? ? ? ? 53 FF 50 34 8B ? ? ? ? ? 85 C0 0F 94=lumina
-ShouldDrawViewModel()=55 8B EC 80 7D 08 00 56 8B F1 75=lumina
-UpdateRefractIfNeededByList()=55 8B EC 83 EC 10 53 8B 5D 08 56 57 33=lumina
-DrawRenderablesInList()=55 8B EC 83 EC 08 8B 45 08 53 56 8B D9=lumina
-CViewRender::DrawViewModels()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 ? ? ? ? ? 56 57 FF=lumina
-PerformScreenOverlay()=55 8B EC 51 A1 ? ? ? ? 53 56 8B D9=lumina
-DrawUnderwaterOverlay()=53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 28 56 57=lumina
-CViewRender::RenderView()=55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 89 7C=lumina
-CConcurrentViewBuilder::QueueBuildWorldListJob()=55 8B EC 83 ? ? ? ? ? ? 75 12 68=lumina
-SafeRelease()=56 57 8B F9 8B 37 85 F6 74 2B=lumina
-__MsgFunc_RequestState()=51 56 8B ? ? ? ? ? 85 F6 74 3B=lumina
-DoIncludeScript()=55 8B EC 8B 55 0C 81 ? ? ? ? ? 56 8B 75=lumina
-VScriptRunScript()=83 ? ? ? ? ? ? 56 57 8B FA 8B F1 0F=lumina
-script_execute_client()=55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 7C=lumina
-inflate_blocks()=55 8B EC 83 EC 10 53 56 8B 75 10=lumina
-inflate_trees_dynamic()=55 8B EC 83 EC 10 53 56 8B 75 20=lumina
-_adler32()=55 8B EC 56 8B 75 08 57 8B 7D 0C 0F B7=lumina
-FormatZipMessageU()=83 F9 01 56=lumina
-compress_block()=55 8B EC 83 EC 14 53 56 8B F1 89 55=lumina
-send_bits()=55 8B EC 51 53 8B 5D 08 57 89 55=lumina
-copy_block()=55 8B EC 51 53 56 57 89 55 FC 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 8D=lumina
-lm_init()=55 8B EC 56 57 8B FA=lumina
-CUserCmd::GetChecksum()=55 8B EC 51 56 8B 75 08 8D 45 FF=lumina
-CCSBaseAchievement::ApplySettings()=55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 4D 08 6A=lumina
-CBaseCSGrenadeProjectile::CreateGrenadeTrail()=55 8B EC 83 E4 F8 83 EC 68 56 8B F1 8B 4D=lumina
-CGlowObjectManager::AddGlowBox()=55 8B EC 53 56 8D=lumina
-C_CSRagdoll::ApplyRandomTaserForce()=55 8B EC 83 E4 F8 83 EC 58 56 8B F1 57 8B=lumina
-C_CSPlayer::DoExtraBoneProcessing()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B F1 57 89 74 24 1C=lumina
-C_CSPlayer::HasC4()=56 8B F1 85 F6 74 31=lumina
-Helper_GetMouseEnableBindingName()=F7 ? ? ? ? ? ? ? ? ? 56 74=lumina
-ClientModeCSNormal::DoPostScreenSpaceEffects()=55 8B EC 8B 49 18 56 8B=lumina
-__MsgFunc_MatchEndConditions()=55 8B EC 51 8B 45 08 53 56 57 8B 48=lumina
-__snprintf()=55 8B EC 83 E4 F8 8D 45 14 50 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 8B=lumina
-C_CSGameRules::HasHalfTime()=8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 12=lumina
-C_CSGameRules::IsPlayingGunGameProgressive()=8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 13 8B ? ? ? ? ? 8B 01 FF 50 24 83 F8 02=lumina
-EconWear_ToIntCategory()=A1 ? ? ? ? 85 C0 75 49=lumina
-CUiComponent_Inventory::UiComponentFunction_SetCraftTarget()=55 8B EC 83 EC 0C 56 FF 75 14=lumina
-memcpy_s()=55 8B EC 56 8B 75 0C 57 8B FA=lumina
-ShowGlobalServerStats()=55 8B EC 51 56 8B ? ? ? ? ? 57 68=lumina
-CQueueMatchServerListListener::ShouldPingStartMatchmaking()=55 8B EC 51 56 8B ? ? ? ? ? 83 7E=lumina
-C_CSPlayer::WeaponShootPosition()=55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF ? ? ? ? ? 80=lumina
-ClampBonesInBBox()=55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 38=lumina
-CSGOWorkshopMaps::UnsubscribeFromMap()=55 8B EC 8B ? ? ? ? ? 56 57 85 C9=lumina
-CCommunityMapRequest::OnLoaded()=55 8B EC 83 E4 F8 51 56 8B 75 08 8B C1=lumina
-CCommunityMapRequest::OnError()=55 8B EC 83 E4 F8 83 EC 08 83 7D=lumina
-CCSGOPlayerAnimState::Update()=55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3=lumina
-CCSGOPlayerAnimState::ModifyEyePosition()=55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 14=lumina
-CCSGOPlayerAnimState::DoProceduralFootPlant()=55 8B EC 83 E4 F0 83 EC 78 56 8B F1 57 8B=lumina
-CCSGOPlayerAnimState::SetUpLean()=55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3=lumina
-CCSGOPlayerAnimState::SetUpWholeBodyAction()=55 8B EC 83 EC 08 56 57 8B F9 8B 77=lumina
-CCSGOPlayerAnimState::SetUpWeaponAction()=55 8B EC 51 53 56 57 8B F9 8B 77 60=lumina
-CCSGOPlayerAnimState::SetUpMovement()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 57 8B ? ? ? ? ? 8B F1=lumina
-CCSGOPlayerAnimState::SetUpAimMatrix()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 8B D9 8B=lumina
-CCSGOPlayerAnimState::SetUpVelocity()=55 8B EC 83 E4 F8 83 EC 30 56 57 8B ? ? ? ? ? 8B=lumina
-CCSGOPlayerAnimState::CacheSequences()=55 8B EC 83 E4 F8 83 EC 34 53 56 8B F1 57 8B=lumina
-GameTypes::GetMap_Internal()=55 8B EC 83 EC 40 57 8B F9 83=lumina
-GameTypes::SetCustomBotDifficulty()=55 8B EC 56 8B 75 08 85 F6 78 2A=lumina
-GameTypes::GetGameModeAndTypeFromStrings()=55 8B EC 51 8B 45 10 53 8B 5D 14 56=lumina
-CSteamWorksGameStatsClient::FireGameEvent()=55 8B EC 56 8B 75 08 57 8B F9 85 F6 0F ? ? ? ? ? 8B 06 8B CE 53 FF 50 04 8B D8 B9 ? ? ? ? 8B D3 E8 ? ? ? ? 85 C0 75 10=lumina
-CSteamWorksGameStatsClient::WriteSessionRow()=55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89 46 78 85 C0 0F=lumina
-VGUI_CreateClientDLLRootPanel()=A1 ? ? ? ? 56 57 68 ? ? ? ? 8B 08 8B 01 FF 50 04 8B F0=lumina
-CBaseSaveGameDialog::OnPanelSelected()=56 8B F1 6A 01 68 ? ? ? ? 8B=lumina
-CCreateMultiplayerGameServerPage::LoadMapList()=51 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? E8=lumina
-CCreateMultiplayerGameServerPage::OnCheckButtonChecked()=56 57 8B F9 8B ? ? ? ? ? 8B 37 8B=lumina
-CGameUI::SendConnectedToGameMessage()=56 57 8B F9 FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 10 68 ? ? ? ? 8B C8 E8 ? ? ? ? 8B F0 EB 02 33 F6 53 8B 5F 0C=lumina
-CLoadingScreenScaleform::DisplayLoggedInElsewhereError()=55 8B EC 83 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 74=lumina
-CGameUI::SetProgressLevelName()=55 8B EC 83 ? ? ? ? ? ? 74 5F=lumina
-CInfoDescription::WriteScriptHeader()=55 8B EC 83 EC 68 66 ? ? ? ? ? 66 89 45 FC A0 ? ? ? ? 88 45 FE 8D 45 D8 56 50 8B=lumina
-CInfoDescription::WriteFileHeader()=55 8B EC 83 EC 68 66 ? ? ? ? ? 66 89 45 FC A0 ? ? ? ? 88 45 FE 8D 45 D8 56 50 FF=lumina
-COptionsSubAudio::OnCommand()=55 8B EC 53 8B 5D 08 BA ? ? ? ? 56 8B=lumina
-COptionsSubKeyboard::OnKeyCodeTyped()=55 8B EC 8B 45 08 83 F8 40 75 10=lumina
-COptionsSubKeyboard::OnCommand()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 0F ? ? ? ? ? A1=lumina
-AdvancedCrosshairImagePanel::AdvancedCrosshairImagePanel()=55 8B EC 51 56 68 ? ? ? ? FF=lumina
-COptionsSubMultiplayer::OnCommand()=55 8B EC 53 56 8B 75 08 8B D9 BA ? ? ? ? 8B CE E8 ? ? ? ? 85 C0 0F ? ? ? ? ? 8B ? ? ? ? ? 83=lumina
-COptionsSubMultiplayer::ConvertTGAToVTF()=55 8B EC 83 E4 F8 83 EC 54 53 56 57 68=lumina
-COptionsSubVoice::OnThink()=55 8B EC 83 EC 10 53 8B D9 E8=lumina
-CPlayerListDialog::OnItemSelected()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B F9 E8 ? ? ? ? 8B=lumina
-CRunGameEngine::AddTextCommand()=55 8B EC 56 8B 75 08 85 F6 74 1F BA=lumina
-IntersectRayWithRay()=55 8B EC 83 EC 1C 8B 55 08=lumina
-VControlsListPanel::VControlsListPanel()=55 8B EC 56 57 68 ? ? ? ? FF 75 08 8B F1=lumina
-VControlsListPanel::ApplySchemeSettings()=55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8B CB 8B=lumina
-CVGuiSystemModuleLoader::GetModuleLabel()=55 8B EC 8B 45 08 68 ? ? ? ? 68=lumina
-CBenchmarkDialog::RunBenchmark()=56 8B F1 8B ? ? ? ? ? E8 ? ? ? ? 8B=lumina
-CBenchmarkResultsDialog::Activate()=55 8B EC 83 E4 C0 83 EC 38 56 57 8B F9=lumina
-CBonusMapsDialog::CreateBonusMapsList()=A1 ? ? ? ? 56 8B F1 68 ? ? ? ? 8B 08 8B 01 FF 50 04 85 C0 74 0F 68=lumina
-CChangeGameDialog::OnCommand()=55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75 08 57 8B F9 8B CE E8 ? ? ? ? 85 C0 0F ? ? ? ? ? 8B ? ? ? ? ? 8B=lumina
-CCSGOMapPublishDialog::SetFile()=55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B 7D 08 57 8B 06 8B ? ? ? ? ? FF D0 8B=lumina
-CCSGOStickerPublishDialog::SetImageFile()=55 8B EC 53 8B D9 8B 4D 08 56 85=lumina
-CLoadCommentaryDialog::OnCommand()=55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B F1 8B 4D 08 E8=lumina
-CLoadGameDialogXbox::UpdateFooterOptions()=56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 74 58=lumina
-CLoadGameDialogXbox::OnCommand()=55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 57 8B 7D 08 8B F1 8B CF E8 ? ? ? ? 85 C0 75 71=lumina
-AccumulateWeaponPreviewSettingsFloatValue()=55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 57 6A=lumina
-GetWorkshopWorkbenchKeyValuesFromFile()=53 8B ? ? ? ? ? 56 57 8B F9 FF D3 6A 24 8B C8 8B 10 FF 52 04 85 C0 74=lumina
-CFilePublishDialog::DownloadPreviewImage()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 80 ? ? ? ? ? ? 75=lumina
-ExplainErrorNum()=83 C1 F7=lumina
-CFilePublishDialog::OnCommand()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 3B=lumina
-CFilePublishDialog::FileExists()=55 8B EC 81 ? ? ? ? ? 56 8B 75 08 85 F6 74 59=lumina
-DisplayZipError()=56 8B ? ? ? ? ? 57 8B F9 8B C7=lumina
-CPublishedFileBrowserDialog::OnRadioButtonChecked()=56 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A=lumina
-CSaveGameDialogXbox::UpdateFooterOptions()=56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 74 2F=lumina
-CGameMenu::ApplySchemeSettings()=55 8B EC 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 8B 06 8B CE 8B 3B 68 ? ? ? ? FF 50 04=lumina
-CBaseModPanel::CreateGameMenu()=55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 FF=lumina
-CSaveBeforeQuitQueryDialog::OnCommand()=55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75 08 57 8B F9 8B CE E8 ? ? ? ? 85 C0 74=lumina
-CBaseModPanel::InTeamLobby()=8B ? ? ? ? ? 85 C9 74 35 8B 01 FF 50 34=lumina
-CBaseModPanel::OnMakeGamePublic()=8B ? ? ? ? ? 56 57 8B 01 FF 50 34=lumina
-CBaseModPanel::LoadVersionNumbers()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85=lumina
-CBaseModPanel::LoadVersionNumber()=55 8B EC 8B ? ? ? ? ? 83 EC 08 83=lumina
-CMessageDialogHandler::CreateMessageDialog()=55 8B EC 83 EC 08 8B 45 08 53 56 57 8B F9=lumina
-CMainMenuGameLogo::ApplySettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56 8B 01 FF 50 14 6A=lumina
-CHudScope::Init()=56 8B F1 8B ? ? ? ? ? 6A 00 8B=lumina
-public: void ceng::ui::CWindowWidget::OnDragBy()=55 8B EC F3 ? ? ? ? 83 EC 08 F3 ? ? ? ? ? F3=lumina
-headshot_skull_get()=55 8B EC 8B 4D 0C 83 F9=lumina
-team_color()=55 8B EC 83 EC 10 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 83=lumina
-default_hex()=53 8B D9 85 DB 79=lumina
-CUiComponent_FriendsList::GetFriendStatusBucket()=55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 57 8B F9 89=lumina
-Helper_TagFromString()=55 8B EC 51 53 8B 5D 08 56 33 F6 89=lumina
-GetStatForRound()=55 8B EC 51 56 57 8B FA C7=lumina
-CHltvReplaySystem::SetDemoPlaybackFadeBrackets()=55 8B EC 83 EC 08 56 8B 75 08 8B CE 6A 00 FF 75 0C 8B 06 8B 40 14 FF D0 DD 5D F8 F2 ? ? ? ? 85=lumina
-CUiComponent_News::UiComponentFunction_IsNewClientAvailable()=55 8B EC 51 8B ? ? ? ? ? 56 8B 01 FF 50=lumina
-Helper_ComputeProPlayerMatchFantasyScore()=55 8B EC 81 ? ? ? ? ? 56 57 FF=lumina
-CMsgSOMultipleObjects::Clear()=55 8B EC 51 8B 55 08 8B C1 89=lumina
-GetGlyphOutlineA()=55 8B EC 6A 00 FF 75 20=lumina
-int AfxOleRegisterServerClass()=55 8B EC 6A 00 FF 75 28=lumina
-CC4Panel::ApplySchemeSettings()=55 8B EC 51 53 8B D9 8D 4D 08 56 57=lumina
-CViewC4Panel::ApplySchemeSettings()=55 8B EC 83 EC 08 53 8B 5D 08 89 4D FC 85 DB 74=lumina
-CalcViewModelBobHelper()=55 8B EC 83 E4 F8 83 EC 30 A1 ? ? ? ? 56=lumina
-AddViewModelBobHelper()=55 8B EC A1 ? ? ? ? 83 EC 18 53 57 8B F9 8B DA=lumina
-CIronSightController::PrepareScopeEffect()=55 8B EC 83 EC 38 53 56 57 E8=lumina
-CIronSightController::RenderScopeEffect()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 E8=lumina
-CCSEconUI::ApplySchemeSettings()=55 8B EC 53 56 57 FF 75 08 8B F1=lumina
-CCSEconUI::ApplySettings()=55 8B EC 51 53 56 57 8B 7D 08 8B F1 57=lumina
-CCSEconUI::OnSelectionReturned()=55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 8B F9 85=lumina
-DllMain()=55 8B EC 8B 45 0C 83 EC 24 83=lumina
-CCSItemSelectionPanel::ApplySchemeSettings()=55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 07=lumina
-CCSItemSelectionPanel::ApplySettings()=55 8B EC 53 8B 5D 08 56 57 53 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 53=lumina
-CEconTool_WrappedGift::GetUseCommandLocalizationToken()=55 8B EC 8B 4D 08 E8 ? ? ? ? 84=lumina
-cc_dump_particlemanifest()=56 57 8B ? ? ? ? ? 68 ? ? ? ? FF D7 8B=lumina
-GetCustomParticleEffectId()=55 8B EC 83 EC 08 53 8B 5D 08 56 33=lumina
-CEconItemDescription::Generate_QualityDesc()=55 8B EC 56 8B F1 8B 4D 0C 8B=lumina
-CEconItemDescription::Generate_ScorecardDesc_BravoPhoenix()=55 8B EC 56 57 8B 7D 08 8B F1 83 3F 00 0F ? ? ? ? ? 83 7E 0C 00 75 7C=lumina
-CEconItemDescription::Generate_ScorecardDesc_PostPhoenix()=55 8B EC 83 E4 F8 83 EC 34 53 56 57 8B D9=lumina
-CSteamWorksGameStatsUploader::WriteFloatToTable()=55 8B EC 83 EC 08 33 C0 56 8B F1=lumina
-CGCDev_NewItemRequestResponse::BYieldingRunGCJob()=55 8B EC 83 E4 F8 51 56 8B 75 08 8B CE 8B 06 FF 50 14 8B 06 8B CE FF 50 10 8B=lumina
-CEconTool_Gift::CEconTool_Gift()=55 8B EC 56 57 8B 7D 10 8B F1 57 6A 00 6A 00 FF 75 0C FF 75 08 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7=lumina
-CEconColorDefinition::BInitFromKV()=55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 8B F9 85 DB 74 1F=lumina
-CEconGraffitiTintDefinition::BInitFromKV()=55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 6A 00 8B F9 8B CB 68 ? ? ? ? E8 ? ? ? ? 89=lumina
-static_attrib_t::BInitFromKV_MultiLine()=55 8B EC 81 ? ? ? ? ? 53 8B 5D 0C 89=lumina
-CItemLevelingDefinition::BInitFromKV()=55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 8B D9 85 FF 74 1D=lumina
-CEconSharedToolSupport::CanCollect()=55 8B EC 83 EC 18 57 8B F9 89 55=lumina
-CEconTool_StatTrakSwap::SetItems()=53 56 8B D9 57 8B FA 85 DB 74=lumina
-C_EconItemView::GetQualityParticleType()=55 8B EC 83 E4 F8 51 A1 ? ? ? ? 56 8B F1 A8 01 75 21=lumina
-CExButton::ApplySettings()=55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 68=lumina
-CBasePlayerAnimState::ShouldResetMainSequence()=56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 8B=lumina
-CExImageButton::ApplySettings()=55 8B EC 83 E4 F8 83 EC 18 56 8B 75 08 57 56=lumina
-CExLabel::SetColorStr()=55 8B EC 8B 45 08 8B D0 56=lumina
-CExRichText::ApplySettings()=55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 53=lumina
-CExRichText::ApplySchemeSettings()=55 8B EC 53 56 57 8B D9 E8=lumina
-CEconItemDetailsRichText::ApplySettings()=55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 8B C1 57 56=lumina
-CExplanationPopup::OnCommand()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 0E=lumina
-CItemModelPanelToolTip::ShowTooltip()=55 8B EC 53 8B D9 83 7B 2C=lumina
-CStorePreviewItemIcon::ApplySchemeSettings()=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? FF ? ? ? ? ? 6A=lumina
-CStorePreviewItemIcon::OnCursorEntered()=56 8B F1 8B 06 FF ? ? ? ? ? C6 ? ? ? ? ? ? FF=lumina
-CStorePreviewItemIcon::OnCursorExited()=56 8B F1 80 ? ? ? ? ? ? 8B 06=lumina
-CStoreItemControlsPanel::OnCommand()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 36=lumina
-CStorePricePanel::ApplySchemeSettings()=55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 37=lumina
-CStorePage::ApplySettings()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 53 8B F1=lumina
-CStorePage::UpdateFilterComboBox()=57 8B F9 8B ? ? ? ? ? 85 C9 74 7C=lumina
-CStorePanel::ApplySchemeSettings()=55 8B EC 53 56 57 FF 75 08 8B D9 E8 ? ? ? ? 8B 03 8B CB 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 6A=lumina
-CStorePanel::ShowPanel()=55 8B EC 53 8B 5D 08 56 8B F1 C6=lumina
-OpenStoreStatusDialog()=55 8B EC 53 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A=lumina
-CStorePreviewItemPanel::OnCommand()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 42=lumina
-CStoreViewCartPanel::ApplySchemeSettings()=55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B=lumina
-CStoreViewCartPanel::ShowPanel()=55 8B EC 53 8B 5D 08 57 8B F9 84=lumina
-CBaseViewport::CBackGroundPanel::CBackGroundPanel()=57 51 6A 01 68 ? ? ? ? 6A 00 8B F9 E8 ? ? ? ? C7 ? ? ? ? ? 8B=lumina
-CBaseViewport::AddNewPanel()=55 8B EC 83 EC 08 53 8B 5D 08 89 4D F8 85 DB 75=lumina
-CClientScoreBoardDialog::ApplySettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56 8B 01 FF 50 14 68 ? ? ? ? 68 ? ? ? ? 8B CE E8 ? ? ? ? 8B=lumina
-CClientScoreBoardDialog::AddHeader()=55 8B EC 51 53 8B D9 56 57 6A 00 8B ? ? ? ? ? 68=lumina
-showinfo()=55 8B EC 51 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? 56 8B=lumina
-judeg_str()=55 8B EC 8B 4D 10 85 C9 75=lumina
-C_Embers::C_Embers()=A1 ? ? ? ? 56 57 8B F9 8B 08 68 ? ? ? ? 8B 01 FF 50 04 8B F0 85 F6 74 32=lumina
-CSnowFallManager::CreateSnowParticlesSphere()=55 8B EC 83 EC 18 56 57 83=lumina
-TE_BeamSpline()=55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 13=lumina
-C_TempEntsSystem::Explosion()=55 8B EC 8B 01 83 EC 18=lumina
-CClientSteamContext::Shutdown()=55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 4B=lumina
-RecordBloodSprite()=55 8B EC 83 EC 0C 53 8B D9 89 55 F4 8B=lumina
-C_TEExplosion::RecordExplosion()=55 8B EC 51 57 8B F9 8B ? ? ? ? ? 85 C9 0F=lumina
-C_TEShatterSurface::RecordShatterSurface()=55 8B EC 83 EC 08 57 8B F9 8B ? ? ? ? ? 85=lumina
-RecordGlowSprite()=55 8B EC 83 EC 0C 53 8B D9 F3 ? ? ? ? 8B=lumina
-CPlayerLogoProxy::Init()=55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 01=lumina
-RecordSprite()=55 8B EC 83 EC 08 53 8B D9 F3 ? ? ? ? 8B ? ? ? ? ? 56 8B=lumina
-RecordWorldDecal()=55 8B EC 83 EC 08 57 8B F9 89 55=lumina
-FX_RicochetSound()=55 8B EC 83 EC 38 F3=lumina
-DrawSmokeFogOverlay()=55 8B EC F3 ? ? ? ? ? ? ? 81 ? ? ? ? ? 0F=lumina
-ClipRayToHitbox()=55 8B EC 83 E4 F8 F3 ? ? ? ? 81 ? ? ? ? ? 0F=lumina
-InitPose()=55 8B EC 83 EC 10 53 8B D9 89 55 F8=lumina
-C_BaseFlex::StandardBlendingRules()=55 8B EC 83 EC 08 8B 45 08 56 57 8B F9 8D=lumina
-CIKContext::UpdateTargets()=55 8B EC 83 E4 F0 81 ? ? ? ? ? 33 D2 89=lumina
-CIKContext::SolveDependencies()=55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B ? ? ? ? ? 56 57 89=lumina
-CDmxSerializerKeyValues2::UnserializeElement()=55 8B EC 83 EC 34 83 65 F8=lumina
-GCSDK::CJobMgr::RecordOrphanedMessage()=55 8B EC 51 56 57 6A 00 FF ? ? ? ? ? 8B=lumina
-GCSDK::CJobMgr::TimeoutJob()=55 8B EC 83 EC 08 53 8B 5D 08 56 8B F1 57 83=lumina
-CRTime::UpdateRealTime()=55 8B EC 83 EC 14 56 8B ? ? ? ? ? 6A=lumina
-CRTime::RTime32ToString()=55 8B EC 83 EC 2C 56 57 8B F1=lumina
-GCSDK::CSharedObjectTypeCache::Dump()=56 57 8B F9 FF 77 18 FF=lumina
-GCSDK::CGCClientSharedObjectTypeCache::BCreateFromMsg()=55 8B EC 83 EC 50 53 56 57 6A 08 FF 75 0C=lumina
-_jpeg_destroy()=56 8B F1 8B 46 04 85=lumina
-_jpeg_stdio_src()=53 57 8B F9 8B DA 83 7F 18=lumina
-deflateInit2_()=55 8B EC 51 8B 45 20=lumina
-putShortMSB()=56 57 8B F9 8B CA=lumina
-deflateEnd()=55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B 46 1C=lumina
-lm_init()=56 8B F1 33 C9 8B=lumina
-_tr_init()=8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? 8D ? ? ? ? ? 89=lumina
-bi_flush()=56 8B F1 8B ? ? ? ? ? 83 F8 10=lumina
-CPotteryWheelPanel::GetWireframeMaterial()=56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 57=lumina
-CColorPickerPanel::SetInitialColor()=55 8B EC 83 EC 10 8B 45 08 8B D0=lumina
-CColorPickerPanel::OnColorSelected()=55 8B EC 83 EC 14 56 8D 45 FC=lumina
-CColorPickerButton::OnCancelled()=55 8B EC 83 EC 08 56 57 8B F9 6A=lumina
-CProceduralTexturePanel::Init()=55 8B EC 8B 55 0C 81 ? ? ? ? ? 80=lumina
-CParticleSystemMgr::ReadParticleConfigFile()=55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B 75 08 80=lumina
-GetParticleManifest()=55 8B EC 83 E4 F8 83 EC 1C 53 56 8B ? ? ? ? ? 57 89=lumina
-CParticleSnapshot::ValidateAttributeMapping()=55 8B EC 51 8B 45 0C 53 8B D9 56 8B=lumina
-GCSDK::CGCClientSharedObjectCache::NotifyCreated()=8B 41 5C BA ? ? ? ? 3B C2 7F 0B 85 C0 79 04 33 C0 EB 06 83 F8 3F 0F 4F C2 89 41 5C 8B 41 68=lumina
-C_OP_RenderSprites::InitializeContextData()=55 8B EC 56 8B 75 0C C7 ? ? ? ? ? C7=lumina
-int Scaleform::SFstrcmp()=8A 01 3A 02 75 19=lumina
-Q_stristr()=55 8B EC 53 57 8B 7D 08 85 FF 0F=lumina
-V_snprintf()=55 8B EC 51 56 8B 75 0C 8D 45 14 57 8B 7D 08 8B D6 50 51 FF 75 10 8B CF E8 ? ? ? ? 83 C4 0C 85 C0 78 08 85 F6 7E 0C=lumina
-CreateInterface_0()=55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 38=lumina
-C_SDK::Hash::CRC32::ProcessBuffer()=55 8B EC 53 8B D9 56 57 8B 7D 08 8B F2 8B 03=lumina
-CUtlBuffer::Put()=55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 57=lumina
-Unserialize()=56 8B F1 57 8B FA 80 7E=lumina
-CExpressionEvaluator::MakeExpression()=55 8B EC 8A 55 0C=lumina
-CExpressionEvaluator::MakeFactor()=55 8B EC 81 ? ? ? ? ? 56 8B F1 8A=lumina
-C_EconItemView::Update()=55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 BF=lumina
-CMergedMDL::SetupBonesForAttachmentQueries()=55 8B EC 83 EC 14 83 ? ? ? ? ? ? 53=lumina
-CKeyBindingsMgr::AddPanelToContext()=55 8B EC 56 8B 75 0C 8B CE 8B 06 FF 50 48=lumina
-vgui::Panel::Init()=53 56 57 8B D9 6A 01=lumina
-CColorOperationListPanel::OnReadFileFromDisk()=55 8B EC 83 EC 10 56 8B 75 08 57 56=lumina
-vgui::Panel::OnKeyCodePressed()=55 8B EC 56 8B F1 8B ? ? ? ? ? 6A 53=lumina
-vgui::Panel::AddPropertyConverter()=55 8B EC 83 EC 10 56 57 89=lumina
-vgui::Panel::InitPropertyConverters()=51 80 ? ? ? ? ? ? 0F ? ? ? ? ? BA=lumina
-CParticleEffectBinding::GetActiveParticleList()=55 8B EC 53 8B D9 66=lumina
-vgui::Panel::OnContinueDragging()=55 8B EC 83 EC 10 53 8B D9 8B 43 28=lumina
-vgui::AnimationController::LoadScriptFile()=55 8B EC 83 EC 08 89 4D FC 8B ? ? ? ? ? 56=lumina
-Helper_CanUseSprays()=55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 2C=lumina
-vgui::Frame::Frame()=55 8B EC 56 8B 75 08 57 68=lumina
-vgui::FrameButton::ApplySchemeSettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8D 4D 08 56 68=lumina
-vgui::Frame::ApplySettings()=55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 6A 01=lumina
-vgui::Frame::GetSysMenu()=53 56 57 8B F9 83 ? ? ? ? ? ? 0F ? ? ? ? ? A1=lumina
-vgui::Button::ApplySchemeSettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 06 8B CE 68=lumina
-vgui::Button::ApplySettings()=55 8B EC 83 E4 F8 83 EC 08 56 57 8B 7D 08 8B F1 57 E8 ? ? ? ? 68=lumina
-C_OP_LerpScalar::Operate()=55 8B EC 57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 74 0D=lumina
-vgui::TextEntry::ApplySchemeSettings()=55 8B EC 51 53 8B 5D 08 56 57 53=lumina
-vgui::TextEntry::GetDropContextMenu()=55 8B EC 56 57 8B 7D 08 8B F1 6A 00 56=lumina
-vgui::RichText::ApplySchemeSettings()=55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8B=lumina
-vgui::PropertyDialog::ActivateBuildMode()=55 8B EC 83 EC 10 53 8B D9 80 ? ? ? ? ? ? 74=lumina
-vgui::CheckButton::ApplySchemeSettings()=55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B F1 53 89 75 FC=lumina
-vgui::ToggleButton::DoClick()=53 56 57 8B F9 8B 07 8B ? ? ? ? ? FF=lumina
-vgui::ToggleButton::ApplySchemeSettings()=55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B 07=lumina
-vgui::MenuBar::ApplySchemeSettings()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B 37 68 ? ? ? ? FF 50 08 50 8B CF FF ? ? ? ? ? 8B 3F=lumina
-vgui::ComboBox::OnMenuItemSelected()=55 8B EC 51 56 8B F1 81=lumina
-vgui::ScrollBar::ApplySchemeSettings()=55 8B EC 83 EC 0C 53 56 8B 75 08 8B D9 57 56 E8=lumina
-vgui::ScrollBar::SetButton()=55 8B EC 56 57 8B 7D 0C 8B F1 8B ? ? ? ? ? ? 85=lumina
-C_INIT_SequenceLifeTime::InitNewParticlesScalar()=55 8B EC 53 8B 5D 08 8B CB 56 57 8B=lumina
-vgui::Menu::ApplySchemeSettings()=55 8B EC 83 EC 10 53 8B 5D 08 56 57 53=lumina
-vgui::Menu::SetCurrentlySelectedItem()=55 8B EC 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 3B FA=lumina
-vgui::Panel::InternalMouseFocusTicked()=55 8B EC 53 8B D9 83 ? ? ? ? ? ? 75 5D=lumina
-vgui::ExpandButton::ApplySchemeSettings()=55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D 4D 08 57=lumina
-ColumnButton::ApplySchemeSettings()=55 8B EC 51 53 8B 5D 08 56 57 8B F1 53=lumina
-vgui::ListPanel::RBTreeLessFunc()=55 8B EC 56 8B 75 0C 57 8B 7D 08 FF=lumina
-vgui::ListPanel::ApplySchemeSettings()=55 8B EC 51 53 56 57 8B F9 6A=lumina
-vgui::MenuButton::OnKillFocus()=55 8B EC 56 57 6A 00 8B F1 8B 4D 08 68 ? ? ? ? E8 ? ? ? ? 85 C0 74 0B 80 78 10 04 75 05 8B 78=lumina
-vgui::MenuItem::ApplySchemeSettings()=55 8B EC 83 EC 14 53 56 57 8B 7D 08 8B F1=lumina
-CIronSightController::IncreaseDotBlur()=55 8B EC 83 EC 18 53 8B D9 E8 ? ? ? ? 83=lumina
-vgui::RadioButton::ApplySchemeSettings()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 07=lumina
-vgui::RadioButton::ApplySettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8B=lumina
-vgui::RadioButton::GetDescription()=68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68=lumina
-vgui::URLLabel::OnMousePressed()=55 8B EC 83 7D 08 6B 75 1B=lumina
-vgui::URLLabel::ApplySchemeSettings()=55 8B EC 51 53 8B 5D 08 8B C1 56 57 89 45 FC 8B=lumina
-vgui::TreeView::ApplySchemeSettings()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B 37 68 ? ? ? ? FF 50 08 50 8B CF FF ? ? ? ? ? 8B 37=lumina
-vgui::TreeView::ClearSelection()=56 8B F1 C7 ? ? ? ? ? ? ? ? ? FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 1B=lumina
-vgui::ListViewItem::ApplySchemeSettings()=55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D=lumina
-CLessOrEqualProxy::OnBind()=56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 76=lumina
-vgui::ListViewPanel::ApplySchemeSettings()=55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 33 8D 45 08 57 68 ? ? ? ? 50 8B CB FF ? ? ? ? ? 8B CB FF 30 FF ? ? ? ? ? 8B 07=lumina
-setuiname()=68 ? ? ? ? 51 68 ? ? ? ? E8=lumina
-vgui::PanelListPanel::ApplySettings()=55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 01 68=lumina
-vgui::Slider::RecomputeNobPosFromValue()=55 8B EC 83 EC 10 53 56 8B F1 8D=lumina
-vgui::Slider::ApplySettings()=55 8B EC 83 E4 F8 51 53 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 00=lumina
-vgui::CConsolePanel::ApplySchemeSettings()=55 8B EC 51 53 8B 5D 08 56 57 8B F9 53=lumina
-vgui::QueryBox::OnKeyCodeTyped()=55 8B EC 8B 45 08 83 F8 46 75 10=lumina
-vgui::FileOpenDialog::ApplySchemeSettings()=55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 8B=lumina
-vgui::CItemButton::ApplySchemeSettings()=55 8B EC 83 EC 08 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03=lumina
-vgui::CItemButton::OnMousePressed()=55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F=lumina
-vgui::CItemButton::OnMouseDoublePressed()=55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 74=lumina
-vgui::SectionedListPanel::ApplySettings()=55 8B EC 53 56 8B 75 08 8B D9 56 E8 ? ? ? ? 6A=lumina
-CMessageDialog::ApplySettings()=55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B ? ? ? ? ? 8B CF=lumina
-vgui::TextImage::SetUseAsianWordWrapping()=80 ? ? ? ? ? ? 56 57 8B F9 75 60=lumina
-vgui::TextTooltip::TextTooltip()=55 8B EC 83 EC 14 53 8B D9 56 57 6A=lumina
-vgui::BuildGroup::SaveControlSettings()=55 8B EC 81 ? ? ? ? ? 32 C0 56=lumina
-vgui::BuildModeDialog::OnCommand()=55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 53 56 57 8B D9=lumina
-vgui::BuildModeDialog::OnCreateNewControl()=55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 52=lumina
-vgui::ScrollBarSlider::ApplySchemeSettings()=55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 37=lumina
-vgui::ContextLabel::ApplySchemeSettings()=55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 56=lumina
-vgui::PageTab::ApplySettings()=55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C1=lumina
-CUtlRBTree<char const*,int,bool ()=55 8B EC 83 EC 10 53 56 8B D9 57 89 5D F0=lumina
-GetModEncryptionKey()=56 8B F1 B9 ? ? ? ? 6A=lumina
-SocketWouldBlock()=55 8B EC 53 56 8B F1 57 FF=lumina
-unsigned int CryptoPP::BitPrecision<unsigned int>()=8B 44 24 04 57 8B 38 85 FF 75 04 33 C0 5F C3 56 33 F6 BA ? ? ? ? 8D 0C 32 8B C7 D1 E9 D3 E8 85 C0 74 04 8B F1 EB 02 8B D1 8B CA 2B CE 83 F9 01=lumina
-public: CryptoPP::Algorithm::Algorithm()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 56 50=lumina
-CryptoPP::BitBucket::AlgorithmName()=51 56 8B 74 24 0C 8B CE 6A 09=lumina
-public: virtual void CryptoPP::SimpleKeyingInterface::SetKey()=57 FF 74 24 0C=lumina
-public: virtual bool CryptoPP::PK_Verifier::Verify()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 53 56 A1=lumina
-public: virtual bool CryptoPP::PK_Verifier::VerifyMessage()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B=lumina
-memcpy_s_0()=56 8B 74 24 14 85=lumina
-unsigned int CryptoPP::BytePrecision<unsigned int>()=8B 44 24 04 57 8B 38 85 FF 75 04 33 C0 5F C3 56 33 F6 BA ? ? ? ? 8D 0C 32 8B C7 D1 E9 D3 E8 85 C0 74 04 8B F1 EB 02 8B D1 8B CA 2B CE 83 F9 08=lumina
-public: virtual void CryptoPP::Integer::BERDecode()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B F9=lumina
-int CryptoPP::Baseline_Add()=57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 F7 ? ? ? ? ? 74 05 83 E9 02 EB 17 E3 32 8B 34 88 13=lumina
-void CryptoPP::Baseline_Multiply2()=53 55 8B 6C 24 14 33=lumina
-void CryptoPP::Baseline_Multiply4()=53 55 8B 6C 24 14 56=lumina
-void CryptoPP::Baseline_Multiply8()=53 8B 5C 24 0C 55 8B 6C=lumina
-void CryptoPP::Baseline_MultiplyBottom2()=53 8B 5C 24 0C 56 8B 74=lumina
-void CryptoPP::Baseline_MultiplyTop2()=53 8B 5C 24 0C 55 56 57 8B 03 8B=lumina
-void CryptoPP::Baseline_MultiplyTop4()=83 EC 08 8B 44 24 14 53 8B 5C 24 14 55 8B 28 56 8B 43 08=lumina
-void CryptoPP::Baseline_MultiplyTop8()=83 EC 08 8B 44 24 14 53 8B 5C 24 14 55 8B 28 56 8B 43 18=lumina
-int CryptoPP::Baseline_Sub()=57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 F7 ? ? ? ? ? 74 05 83 E9 02 EB 17 E3 32 8B 34 88 1B=lumina
-CEconItemDescription::Generate_ScorecardDesc_PostPhoenix()=8B 4C 24 0C 56 57=lumina
-CryptoPP::Decrement()=57 8B 7C 24 08=lumina
-CryptoPP::EvenWordCount()=8B 44 24 08 85 C0 74 1D=lumina
-CryptoPP::Increment()=8B 54 24 04 8B 44=lumina
-public: bool CryptoPP::Integer::IsUnit()=8B 41 08 8B 51 0C 85 C0 74 13 8D 48 FF 8D 0C 8A 83 39 00 75 08 83 E9 04 83 E8 01 75 F3 83=lumina
-void CryptoPP::RecursiveMultiplyBottom()=57 8B 7C 24 18 3B=lumina
-void CryptoPP::RecursiveSquare()=51 8B 44 24 14=lumina
-CryptoPP::RoundupSize()=8B 44 24 04 83 F8 08=lumina
-int CryptoPP::SSE2_Add()=57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F EF D2 74 73 F7 ? ? ? ? ? 74 05 83 E9 02 EB 2F 0F 6E 04 88 0F 6E 0C 8F 0F D4=lumina
-void CryptoPP::SSE2_Square4()=55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C 24 C0=lumina
-void CryptoPP::SSE2_Square8()=55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C 24 80=lumina
-int CryptoPP::SSE2_Sub()=57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F EF D2 74 73 F7 ? ? ? ? ? 74 05 83 E9 02 EB 2F 0F 6E 04 88 0F 6E 0C 8F 0F FB=lumina
-public: virtual unsigned int CryptoPP::Filter::CopyRangeTo2()=8B 01 FF ? ? ? ? ? FF 74 24 18 8B C8 FF=lumina
-public: virtual bool CryptoPP::Store::GetNextMessage()=56 8B F1 80 7E 10 00 75=lumina
-CryptoPP::ByteQueue::IsolatedInitialize()=51 56 8B F1 C7 ? ? ? ? ? ? ? 8B 4C=lumina
-public: virtual unsigned int CryptoPP::ByteQueue::Peek()=8B 41 14 8B 50=lumina
-unsigned int CryptoPP::BytePrecision<unsigned __int64>()=8B 44 24 04 55=lumina
-public: CryptoPP::BERGeneralDecoder::BERGeneralDecoder()=53 56 6A 00 8B F1=lumina
-void CryptoPP::BERDecodeNull()=51 56 8B 74 24 0C 8D 4C 24 0C=lumina
-void CryptoPP::DEREncodeNull()=51 56 8B 74 24 0C 8D 4C 24 04=lumina
-private: static void CryptoPP::OID::EncodeValue()=83 EC 08 53 8B 5C=lumina
-CryptoPP::X86_SHA256_HashBlocks()=55 8B EC 53 56 57 8B 7D 08 8D ? ? ? ? ? 55=lumina
-CScriptedIconLesson::PreReadLessonsFromFile()=83 EC 34 A1 ? ? ? ? 33 C4=lumina
-public: virtual bool CryptoPP::MessageQueue::AnyRetrievable()=83 EC 0C 8D 04 24 83 C1 38 50=lumina
-public: virtual bool CryptoPP::MessageQueue::GetNextMessage()=83 EC 18 56 8B F1 8B 06 FF 50=lumina
-_png_set_oFFs()=55 8B EC 83 7D 08 00 74 20 8B 4D 0C 85 C9 74 19 8B 45 10 81 ? ? ? ? ? ? 89 41 64=lumina
-_png_set_pHYs()=55 8B EC 83 7D 08 00 74 20 8B 4D 0C 85 C9 74 19 8B 45 10 81 ? ? ? ? ? ? 89 41 70=lumina
-_png_save_int_32()=55 8B EC 8B 55 0C 8B C2 8B 4D 08 C1 F8=lumina
-_png_save_uint_32()=55 8B EC 8B 55 0C 8B C2 8B 4D 08 C1 E8=lumina
-CChoreoEvent::FindRelativeTag()=55 8B EC 56 8B 75 08 85 F6 74 25 57=lumina
-_UNITY_png_get_uint_31()=55 8B EC 8B 4D 0C 0F B6 11 0F=lumina
-vgui::FileData_t::FileData_t()=55 8B EC 53 8B 5D 0C 8B CB 56 57 8B 03 FF 50 44=lumina
-public: ceng::CBitMask<int>::~CBitMask<int>()=55 8B EC 51 56 8B F1 8B 06 50=lumina
-public: AutoReleaseThreadContext::~AutoReleaseThreadContext()=55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 09 85=lumina
-ReslistLogLessFunc()=55 8B EC 51 56 E8 ? ? ? ? 8B=lumina
-CCoreDispInfo::CalcMinMaxBoundingBoxAtNode()=55 8B EC 8B 45 08 33 C9 56=lumina
-google::protobuf::io::Tokenizer::NextChar()=8B D1 8A 42=lumina
-_ldexpf()=55 8B EC 51 FF 75 0C D9=lumina
-common_strtod_l_float_char_()=8B FF 55 8B EC 83 EC 18 56=lumina
-_anonymous_namespace_::argument_list_wchar_t_::append_0()=8B FF 55 8B EC 56 57 8B F1=lumina
-AccumulatePose()=55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1=lumina
-AddEconItem()=55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 14 53 56 57 8B F9 8B=lumina
-CAM_Think()=55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 8B F1 8B 0D ? ? ? ? 57 85=lumina
-CBaseAchievement::EnsureComponentBitSetAndEvaluate()=55 8B EC 51 56 8B F1 57 8B 46=lumina
-CBaseAchievement::FireGameEvent()=55 8B EC 56 8B F1 8B 06 8B 40 28=lumina
-CBaseAchievement::OnComponentEvent()=55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B 58 50=lumina
-CHLClient::FrameStageNotify()=55 8B EC 8B 0D ? ? ? ? 8B 01 8B 80 ? ? ? ? FF D0 A2=lumina
-CClientShadowMgr::InitDepthTextureShadow()=55 8B EC 83 EC 54 53 8B D9 8B 0D ? ? ? ? 89=lumina
-CEffectsList::DrawEffects()=55 8B EC 83 EC 08 A1 ? ? ? ? 89 4D FC 8B=lumina
-CGlowObjectManager::RenderGlowEffects()=55 8B EC A1 ? ? ? ? 83 EC 18 57=lumina
-CMergedMDL_Constructor()=53 8B D9 56 57 8D 4B 04 C7 03 ? ? ? ? E8 ? ? ? ? 6A=lumina
-CNewParticleEffect::DrawModel()=55 8B EC 83 E4 F8 83 EC 5C 53 56 57=lumina
-C_BaseCombatWeapon::DrawModel()=55 8B EC 51 56 8B F1 8B 0D ? ? ? ? 57 8B B9=lumina
-C_BaseEntity::EmitSound()=55 8B EC 83 EC 4C 53 8B D9 8B=lumina
-C_CSPlayer::InvalidatePhysicsRecursive()=55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C3=lumina
-C_CSPlayer::UpdateClientsideAnimation()=55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74=lumina
-C_GameInstructor::Update()=55 8B EC 83 EC 10 53 8B D9 8B 0D ? ? ? ? 8B=lumina
-CalcAbsolutePosition()=55 8B EC 83 E4 F0 83 EC 68 80=lumina
-CalcAbsoluteVelocity()=55 8B EC 83 E4 F8 83 EC 1C 53 56 57 8B F9 F7=lumina
-CalcPlayerView()=84 C0 75 08 57=lumina
-CalculateView()=55 8B EC 83 EC 14 53 56 57 FF 75 18=lumina
-ClearDeathNotices()=55 8B EC 83 EC 0C 53 56 8B 71=lumina
-CreateAnimationState()=55 8B EC 56 8B F1 B9 ? ? ? ? C7=lumina
-GetSequenceActivity()=55 8B EC 53 8B 5D 08 56 8B F1 83=lumina
-GetSequenceLinearMotion()=55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85 F6 75 14=lumina
-GetShotgunSpread()=55 8B EC 83 EC 10 56 8B 75 08 8D=lumina
-GetToolRecordingState()=55 8B EC 83 EC 08 53 56 8B F1 8B 0D ? ? ? ? 57 85=lumina
-GetUserCmd()=55 8B EC 8B 45 08 56 57 8B F9 83=lumina
-GetWeaponMoveAnimation()=53 56 57 8B F9 33 F6 8B 4F 60=lumina
-GloweEffectSpectator()=55 8B EC 83 EC 14 53 8B 5D 0C 56 57 85 DB 74=lumina
-InterpolateServerEntities()=55 8B EC 83 EC 1C 8B 0D ? ? ? ? 53=lumina
-IsEntityBreakable()=55 8B EC 51 56 8B F1 85 F6 74 ? 83=lumina
-KeyDown()=56 57 8B FA 83 C8=lumina
-LineGoesThroughSmoke()=55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F=lumina
-OnLand()=55 8B EC 83 E4 F8 81 EC 28 02 00 00 56 8B=lumina
-PutString()=55 8B EC 56 57 8B F9 8A=lumina
-RunSimulation()=55 8B EC 83 EC 08 53 8B 5D 10 56=lumina
-SetAbsAngles()=55 8B EC 83 E4 F8 83 EC 64 53 56 57 8B F1=lumina
-WriteUserCmdDeltaToBuffer()=55 8B EC 83 EC 68 53 56 8B D9 C7=lumina
+AccumulatePose() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1";
+AccumulateWeaponPreviewSettingsFloatValue() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 57 6A";
+AchievementIDCompare() = "55 8B EC 8B 45 08 56";
+AchievementOrderCompare() = "55 8B EC 8B 45 08 56 57 8B 38";
+AddEconItem() = "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 14 53 56 57 8B F9 8B";
+AddSurfacepropFile() = "55 8B EC 83 EC 0C 53 8B 5D 08 56 57 68";
+AddViewModelBobHelper() = "55 8B EC A1 ? ? ? ? 83 EC 18 53 57 8B F9 8B DA";
+AdvancedCrosshairImagePanel::AdvancedCrosshairImagePanel() = "55 8B EC 51 56 68 ? ? ? ? FF";
+AscendingSortFunc() = "55 8B EC 8B 45 08 8B ? ? ? ? ? 56 57";
+BeginViewModelRendering() = "A1 ? ? ? ? 85 C0 0F";
+BuildWorldRenderLists() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B F9 8B";
+CAM_Think() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 8B F1 8B 0D ? ? ? ? 57 85";
+CAM_ToggleSnapto() = "55 8B EC 8B 45 08 BA ? ? ? ? 85";
+CAchievementMgr::OnEvent() = "55 8B EC 53 56 57 8B 7D 08 8B D9 85";
+CAchievementMgr::SaveGlobalState() = "55 8B EC 51 53 56 8B F1 8B 0D";
+CAsyncCaptionResourceManager::Init() = "55 8B EC 83 EC 10 83 79";
+CAvatarImage::SetSize() = "55 8B EC 80 79 3C 00 8B 55";
+CBaseAchievement::EnsureComponentBitSetAndEvaluate() = "55 8B EC 51 56 8B F1 57";
+CBaseAchievement::FireGameEvent() = "55 8B EC 56 8B F1 8B 06";
+CBaseAchievement::IncrementCount() = "56 8B F1 57 8B 46 0C";
+CBaseAchievement::OnComponentEvent() = "55 8B EC 51 8B C1";
+CBaseCSGrenadeProjectile::CreateGrenadeTrail() = "55 8B EC 83 E4 F8 83 EC 68 56 8B F1";
+CBaseEntity::PhysicsSimulate() = "55 8B EC 83 E4 F8 83 EC 0C 56 8B F1 8B ? ? ? ? ? 80";
+CBaseEntityList::AddNonNetworkableEntity() = "55 8B EC 51 53 8B ? ? ? ? ? 89 4D";
+CBaseGameStats::Event_SaveGame() = "83 ? ? ? ? ? ? B8 ? ? ? ? 0F";
+CBaseLesson::CBaseLesson() = "55 8B EC 51 56 8B F1 8D 45 FE";
+CBaseLesson::IsTimedOut() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57";
+CBaseModPanel::CreateGameMenu() = "55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 FF";
+CBaseModPanel::InTeamLobby() = "8B ? ? ? ? ? 85 C9 74 35 8B 01 FF 50 34";
+CBaseModPanel::LoadVersionNumber() = "55 8B EC 8B ? ? ? ? ? 83 EC 08 83";
+CBaseModPanel::LoadVersionNumbers() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 FF";
+CBaseModPanel::OnMakeGamePublic() = "8B ? ? ? ? ? 56 57 8B 01 FF 50 34";
+CBaseModPanel::~CBaseModPanel() = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 83";
+CBasePlayer::CalcViewBob() = "55 8B EC A1 ? ? ? ? 83 EC 10";
+CBasePlayer::PostThink() = "56 8B ? ? ? ? ? 57 8B F9 8B CE 8B 06 FF ? ? ? ? ? 8B";
+CBasePlayerAnimState::ShouldResetMainSequence() = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 8B";
+CBaseSaveGameDialog::OnPanelSelected() = "56 8B F1 6A 01 68";
+CBaseViewport::AddNewPanel() = "55 8B EC 83 EC 08 53 8B 5D 08 89 4D F8 85 DB 75";
+CBaseViewport::CBackGroundPanel::CBackGroundPanel() = "57 51 6A 01 68 ? ? ? ? 6A 00 8B F9 E8 ? ? ? ? C7 ? ? ? ? ? 8B";
+CBaseWorldView::PopView() = "55 8B EC 51 A1 ? ? ? ? 56 8B F1 F3";
+CBenchmarkDialog::RunBenchmark() = "56 8B F1 8B ? ? ? ? ? E8 ? ? ? ? 8B";
+CBenchmarkResultsDialog::Activate() = "55 8B EC 83 E4 C0 83 EC 38 56 57 8B F9";
+CBenchmarkResultsDialog::OnClose() = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 15";
+CBloomAddMaterialProxy::Init() = "55 8B EC 51 56 8B F1 C6";
+CBonusMapsDialog::CreateBonusMapsList() = "A1 ? ? ? ? 56 8B F1 68 ? ? ? ? 8B 08 8B 01 FF 50 04 85 C0 74 0F";
+CBoundedCvar_Predict::GetFloat() = "55 8B EC 51 80 ? ? ? ? ? ? 56 8B F1 75";
+CC4Panel::ApplySchemeSettings() = "55 8B EC 51 53 8B D9 8D 4D 08 56 57";
+CCSBaseAchievement::ApplySettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B";
+CCSEconUI::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B F1";
+CCSEconUI::ApplySettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B F1 57";
+CCSEconUI::OnSelectionReturned() = "55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 8B F9 85";
+CCSGOMapPublishDialog::SetFile() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B 7D";
+CCSGOPlayerAnimState::CacheSequences() = "55 8B EC 83 E4 F8 83 EC 34 53 56 8B F1";
+CCSGOPlayerAnimState::DoProceduralFootPlant() = "55 8B EC 83 E4 F0 83 EC 78 56 8B F1 57 8B";
+CCSGOPlayerAnimState::ModifyEyePosition() = "55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 14";
+CCSGOPlayerAnimState::SetUpAimMatrix() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 8B";
+CCSGOPlayerAnimState::SetUpLean() = "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3";
+CCSGOPlayerAnimState::SetUpMovement() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 57 8B ? ? ? ? ? 8B F1";
+CCSGOPlayerAnimState::SetUpVelocity() = "55 8B EC 83 E4 F8 83 EC 30 56 57 8B ? ? ? ? ? 8B";
+CCSGOPlayerAnimState::SetUpWeaponAction() = "55 8B EC 51 53 56 57 8B F9 8B 77";
+CCSGOPlayerAnimState::SetUpWholeBodyAction() = "55 8B EC 83 EC 08 56 57 8B F9 8B 77";
+CCSGOPlayerAnimState::Update() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3";
+CCSGOStickerPublishDialog::SetImageFile() = "55 8B EC 53 8B D9 8B 4D 08 56";
+CCSItemSelectionPanel::ApplySchemeSettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 07";
+CCSItemSelectionPanel::ApplySettings() = "55 8B EC 53 8B 5D 08 56 57 53 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 53";
+CCSPlayer::PreThink() = "55 8B EC 83 E4 F8 51 56 8B F1 8B 06";
+CC_CL_Find_Ent() = "55 8B EC 51 57 8B 7D";
+CC_Shake_TestPunch() = "55 8B EC 83 EC 30 56 8B 75 08 8B 06";
+CChangeGameDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75";
+CChoreoEvent::FindRelativeTag() = "55 8B EC 56 8B 75 08 85 F6 74 25";
+CClientLeafSystem::AddShadowToRenderable() = "55 8B EC 8B 45 0C 53 56";
+CClientLeafSystem::ProjectFlashlight() = "55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 5D";
+CClientScoreBoardDialog::AddHeader() = "55 8B EC 51 53 8B D9 56 57 6A 00 8B ? ? ? ? ? 68";
+CClientScoreBoardDialog::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56 8B 01 FF 50 14 68 ? ? ? ? 68 ? ? ? ? 8B CE E8 ? ? ? ? 8B";
+CClientShadowMgr::BuildFlashlight() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89";
+CClientShadowMgr::CalculateRenderTargetsAndSizes() = "55 8B EC 83 EC 08 53 56 8B F1 FF";
+CClientShadowMgr::ComputeShadowDepthTextures() = "8B ? ? ? ? ? 8B ? ? ? ? ? 89 44 24 68";
+CClientShadowMgr::CullReceiver() = "55 8B EC 83 EC 38 53 56 57";
+CClientShadowMgr::DrawDeferredShadows() = "8B ? ? ? ? ? 83 ? ? ? ? ? ? 74 22";
+CClientShadowMgr::InitDepthTextureShadow() = "55 8B EC 83 EC 54 53 8B D9";
+CClientShadowMgr::InitDepthTextureShadows() = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 4E";
+CClientShadowMgr::UpdateBrushShadow() = "8B ? ? ? ? ? 8B ? ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 57";
+CClientShadowMgr::UpdateProjectedTextureInternal() = "55 8B EC 53 8B 5D 08 56 0F";
+CClientShadowMgr::UpdateProjectionState() = "55 8B EC 83 E4 F8 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 44 24 0C 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 0F";
+CClientSteamContext::Shutdown() = "55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 4B";
+CCollisionProperty::ComputeSurroundingBox() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53";
+CCollisionProperty::MarkSurroundingBoundsDirty() = "56 8B F1 8B 4E 04 83";
+CColorCorrectionMgr::SetColorCorrectionWeight() = "55 8B EC 83 EC 10 8B 45 08 0F";
+CColorOperationListPanel::OnReadFileFromDisk() = "55 8B EC 83 EC 10 56 8B 75 08 57 56";
+CColorPickerButton::OnCancelled() = "55 8B EC 83 EC 08 56 57 8B F9 6A";
+CColorPickerPanel::OnColorSelected() = "55 8B EC 83 EC 14 56 8D 45 FC";
+CColorPickerPanel::SetInitialColor() = "55 8B EC 83 EC 10 8B 45 08 8B D0";
+CCommunityMapRequest::OnError() = "55 8B EC 83 E4 F8 83 EC 08 83 7D";
+CCommunityMapRequest::OnLoaded() = "55 8B EC 83 E4 F8 51 56 8B 75";
+CConcurrentViewBuilder::QueueBuildWorldListJob() = "55 8B EC 83 ? ? ? ? ? ? 75 12";
+CConcurrentViewBuilder::SequentialJobs::SequentialJobs() = "55 8B EC 83 EC 10 53 56 57 8B D9 E8 ? ? ? ? 8B";
+CCoreDispInfo::CalcMinMaxBoundingBoxAtNode() = "55 8B EC 8B 45 08 33 C9 56";
+CCreateMultiplayerGameServerPage::LoadMapList() = "51 56 57 8B F9 8B ? ? ? ? ? 8B";
+CCreateMultiplayerGameServerPage::OnCheckButtonChecked() = "56 57 8B F9 8B ? ? ? ? ? 8B 37 8B";
+CDebugLayout::AppendElementOpenTag() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CDebugLayout::Build() = "55 8B EC 83 E4 F8 83 EC 34 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CDebugOverlay::CDebugOverlay() = "55 8B EC 83 EC 08 53 56 57 68";
+CDebugPanelComputed::Build() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 89 7C 24 28";
+CDebugPanelStyle::AppendAnimations() = "55 8B EC 83 E4 F8 83 EC 4C 53 8B D9 8B";
+CDebugPanelStyle::AppendCascadeStyles() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 5C";
+CDebugPanelStyle::AppendElementStyles() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 F8 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 47";
+CDebugPanelStyle::AppendInheritedStyles() = "55 8B EC 83 EC 54 53 8B D9 8B ? ? ? ? ? 56";
+CDebugPanelStyle::AppendStyleInfoForProperty() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 89 4C 24 58";
+CDebugPanelStyle::Build() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB";
+CDebugPanelStyle::GetStyleBuffer() = "55 8B EC 83 E4 F8 83 EC 14 53 8B D9 8B ? ? ? ? ? 56 57 89 5C";
+CDebugPanelStyle::OnPanelStyleChanged() = "55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB";
+CDescribeData::DescribeFields() = "55 8B EC 53 56 57 8B 7D 14";
+CDetailObjectSystem::RenderTranslucentDetailObjects() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56";
+CDetailObjectSystem::RenderTranslucentDetailObjectsInLeaf() = "55 8B EC 83 E4 F8 83 EC 08 56 57 8B F9 8B";
+CDetailObjectSystem::SortSpritesBackToFront() = "55 8B EC 83 EC 34 53 56 8B F1 8B ? ? ? ? ? 57";
+CDispInfo::GetIntersectingSurfaces() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+CDmxSerializerKeyValues2::UnserializeElement() = "55 8B EC 83 EC 34 83 65 F8";
+CDummyMaterialProxy::Init() = "55 8B EC 8B 4D 08 8B 01 FF";
+CEconColorDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 8B F9 85";
+CEconGraffitiTintDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 6A";
+CEconItem::BAddToMessage::std::string() = "55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6";
+CEconItemDescription::Generate_QualityDesc() = "55 8B EC 56 8B F1 8B 4D 0C 8B";
+CEconItemDescription::Generate_ScorecardDesc_BravoPhoenix() = "55 8B EC 56 57 8B 7D 08 8B F1 83 3F";
+CEconItemDescription::Generate_ScorecardDesc_PostPhoenix() = "55 8B EC 83 E4 F8 83 EC 34 53 56 57 8B D9";
+CEconItemDescription::Generate_ScorecardDesc_PostPhoenix() = "8B 4C 24 0C 56 57";
+CEconItemDetailsRichText::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 8B C1";
+CEconItemView::GetStaticData() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85";
+CEconSharedToolSupport::CanCollect() = "55 8B EC 83 EC 18 57 8B F9 89 55";
+CEconTool_Gift::CEconTool_Gift() = "55 8B EC 56 57 8B 7D 10 8B F1 57 6A 00 6A 00 FF 75 0C FF 75 08 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+CEconTool_StatTrakSwap::SetItems() = "53 56 8B D9 57 8B FA";
+CEconTool_WrappedGift::GetUseCommandLocalizationToken() = "55 8B EC 8B 4D 08 E8 ? ? ? ? 84";
+CEffectsList::AddEffect() = "55 8B EC 8B 55 08 85 D2 74 2D";
+CEffectsList::DrawEffects() = "55 8B EC 83 EC 08 A1 ? ? ? ? 89";
+CEnginePostMaterialProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6";
+CExButton::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 68";
+CExImageButton::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 18 56 8B 75 08 57";
+CExLabel::SetColorStr() = "55 8B EC 8B 45 08 8B D0 56";
+CExRichText::ApplySchemeSettings() = "55 8B EC 53 56 57 8B D9 E8";
+CExRichText::ApplySettings() = "55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 53";
+CExplanationPopup::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 0E";
+CExpressionEvaluator::MakeExpression() = "55 8B EC 8A 55 0C";
+CExpressionEvaluator::MakeFactor() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 8A";
+CFilePublishDialog::DownloadPreviewImage() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 80 ? ? ? ? ? ? 75";
+CFilePublishDialog::FileExists() = "55 8B EC 81 ? ? ? ? ? 56 8B 75 08 85 F6 74 59";
+CFilePublishDialog::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 3B";
+CFlashlightEffect::UpdateDefaultFlashlightState() = "55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF";
+CFlexSceneFileManager::Init() = "56 6A 01 68";
+CGCClient() = "55 8B EC 53 8B D9 8B ? ? ? ? ? 56 8B ? ? ? ? ? 85";
+CGCDev_NewItemRequestResponse::BYieldingRunGCJob() = "55 8B EC 83 E4 F8 51 56 8B 75 08 8B CE 8B";
+CGameMenu::ApplySchemeSettings() = "55 8B EC 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 8B 06 8B CE 8B 3B 68 ? ? ? ? FF 50 04";
+CGameUI::SendConnectedToGameMessage() = "56 57 8B F9 FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 10";
+CGameUI::SetProgressLevelName() = "55 8B EC 83 ? ? ? ? ? ? 74 5F";
+CGamestatsData::AllocData() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B";
+CGlowObjectManager::AddGlowBox() = "55 8B EC 53 56 8D";
+CGlowObjectManager::RenderGlowBoxes() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 60 56 57 8B F9 89";
+CGlowObjectManager::RenderGlowEffects() = "55 8B EC A1 ? ? ? ? 83 EC 18 57";
+CGrid::CGrid() = "55 8B EC 83 E4 F8 56 57 8B F1 6A 00 FF 75 0C FF 75 08 C7 ? ? ? ? ? A1 ? ? ? ? 89 46 08 A1 ? ? ? ? 6A 00 89 46 0C E8 ? ? ? ? C7 ? ? ? ? ? A1";
+CGrid::EventInputFocusSet() = "55 8B EC 51 51 53";
+CGrid::GetFocusedChildVisibleIndex() = "55 8B EC 83 EC 10 53 56 57 8B F9 8B ? ? ? ? ? 89 7D F8";
+CGrid::GetVisibleChild() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 1C";
+CGrid::MotionTimeout() = "55 8B EC 83 EC 0C 53 56 8B F1 8B ? ? ? ? ? 57 8B";
+CGrid::MoveSelection() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 83";
+CGrid::OnLayoutTraverse() = "55 8B EC 83 E4 F8 83 EC 4C 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89 44 24 34";
+CGrid::SetFocusedChild() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CGrid::UpdateChildPositions() = "55 8B EC 83 E4 F8 83 EC 78 56 57 8B F9 8B ? ? ? ? ? 89";
+CGrid::UpdateVecVisible() = "55 8B EC 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 F4 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? C7";
+CHLClient::FrameStageNotify() = "55 8B EC 8B 0D ? ? ? ? 8B 01 8B 80 ? ? ? ? FF D0 A2";
+CHLClient::OnDemoPlaybackStart() = "FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 5A";
+CHTML::Paint() = "56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF";
+CHltvReplaySystem::SetDemoPlaybackFadeBrackets() = "55 8B EC 83 EC 08 56 8B 75 08 8B CE 6A 00 FF 75 0C 8B 06 8B 40 14 FF D0 DD 5D F8 F2 ? ? ? ? 85";
+CHltvReplaySystem::StopHltvReplay() = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 25";
+CHudChatFilterPanel::ApplySchemeSettings() = "55 8B EC 83 EC 0C 53 56 57 8B F9 6A 00 6A";
+CHudScope::Init() = "56 8B F1 8B ? ? ? ? ? 6A 00 8B";
+CIKContext::SolveDependencies() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B ? ? ? ? ? 56 57 89";
+CIKContext::UpdateTargets() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 33 D2 89";
+CIconLesson::Init() = "55 8B EC 51 56 8B F1 8D 45 FE 68 ? ? ? ? 50 B9 ? ? ? ? C7";
+CIconLesson::IsVisible() = "53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 83";
+CImagePanel::SetImage() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 4B";
+CInfoDescription::WriteFileHeader() = "55 8B EC 83 EC 68 66 ? ? ? ? ? 66 89 45 FC A0 ? ? ? ? 88 45 FE 8D 45 D8 56 50 FF";
+CInfoDescription::WriteScriptHeader() = "55 8B EC 83 EC 68 66";
+CIronSightController::IncreaseDotBlur() = "55 8B EC 83 EC 18 53 8B D9 E8 ? ? ? ? 83";
+CIronSightController::PrepareScopeEffect() = "55 8B EC 83 EC 38 53 56 57 E8";
+CIronSightController::RenderScopeEffect() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 E8";
+CIronSightController::ShouldHideCrossHair() = "8B 41 3C 85 C0 74 27";
+CItemLevelingDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 8B D9 85 FF 74 1D";
+CItemModelPanelToolTip::ShowTooltip() = "55 8B EC 53 8B D9 83 7B 2C";
+CJobMgr::BResumeSleepingJobs() = "56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 8D";
+CJobMgr::BResumeYieldingJobs() = "55 8B EC 53 56 57 8B F1 FF";
+CKeyBindingsMgr::AddPanelToContext() = "55 8B EC 56 8B 75 0C 8B CE 8B 06 FF 50 48";
+CKeyValuesTokenReader::SeekBackOneToken() = "56 8B F1 8B ? ? ? ? ? 80 7E 0C";
+CLessOrEqualProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68";
+CLessOrEqualProxy::OnBind() = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 76";
+CLoadCommentaryDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B F1 8B 4D 08 E8";
+CLoadGameDialogXbox::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 57 8B 7D 08 8B F1 8B CF E8 ? ? ? ? 85 C0 75 71";
+CLoadGameDialogXbox::UpdateFooterOptions() = "56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8";
+CLoadingDisc::SetFastForwardVisible() = "55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 7B";
+CLoadingDisc::SetPausedVisible() = "55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 69";
+CLoadingDiscPanel::CLoadingDiscPanel() = "55 8B EC 83 EC 18 53 56 57 68";
+CLoadingScreenScaleform::DisplayLoggedInElsewhereError() = "55 8B EC 83 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 74";
+CLocatorPanel::PerformLayout() = "55 8B EC 83 EC 2C 53 8B";
+CMainMenuGameLogo::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56";
+CMergedMDL::SetupBonesForAttachmentQueries() = "55 8B EC 83 EC 14 83 ? ? ? ? ? ? 53";
+CMergedMDL_Constructor() = "53 8B D9 56 57 8D 4B 04 C7 03 ? ? ? ? E8 ? ? ? ? 6A";
+CMessageCharsPanel::CMessageCharsPanel() = "55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 8B";
+CMessageCharsPanel::GetTextExtents() = "55 8B EC 56 8B 75 08 85 F6 75 25";
+CMessageDialog::ApplySettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B ? ? ? ? ? 8B CF";
+CMessageDialogHandler::CreateMessageDialog() = "55 8B EC 83 EC 08 8B 45 08 53 56 57 8B F9";
+CModelRenderSystem::DrawBrushModels() = "55 8B EC 83 E4 F8 83 EC 24 53 56 57 8B 7D";
+CModelRenderSystem::DrawModels() = "55 8B EC 83 EC 4C 83";
+CMotionBlurMaterialProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 00 8B 06 8D 4D FF 51 68 ? ? ? ? 8B CE FF 50 2C 80";
+CMotionBlurMaterialProxy::OnBind() = "56 8B F1 8B 4E 04 85 C9 74 0C";
+CMoviePanel::Clear() = "55 8B EC 83 EC 10 53 56 8B F1 8B ? ? ? ? ? 57";
+CMoviePanel::Paint() = "55 8B EC 83 EC 18 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve::Clear() = "56 8B F1 8B 46 30 84";
+CMsgSOMultipleObjects::Clear() = "55 8B EC 51 8B 55 08 8B C1";
+CMsgSteamDatagramLinkInstantaneousStats::Clear() = "80 79 2C";
+CMumbleSystem::Init() = "C6 41 34 00 8D";
+CNewParticleEffect::DrawModel() = "55 8B EC 83 E4 F8 83 EC 5C 53 56";
+CNewParticleEffect::SetControlPoint() = "55 8B EC 53 8B 5D 0C 56 8B F1 F6";
+COptionsSubAudio::OnCommand() = "55 8B EC 53 8B 5D 08 BA";
+COptionsSubKeyboard::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA";
+COptionsSubKeyboard::OnKeyCodeTyped() = "55 8B EC 8B 45 08 83 F8 40";
+COptionsSubMultiplayer::ConvertTGAToVTF() = "55 8B EC 83 E4 F8 83 EC 54 53 56 57 68";
+COptionsSubMultiplayer::OnCommand() = "55 8B EC 53 56 8B 75 08 8B D9 BA";
+COptionsSubMultiplayer::RemapLogo() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 8D";
+COptionsSubVoice::OnThink() = "55 8B EC 83 EC 10 53 8B D9 E8";
+COptionsSubVoice::StartTestMicrophone() = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 80";
+CPanel2D::BSetProperty() = "55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85";
+CPanel2D::Initialize() = "55 8B EC 83 E4 F8 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+CParticleCollection::InitializeNewParticles() = "55 8B EC 83 EC 14 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89";
+CParticleCollection::Simulate() = "55 8B EC 83 E4 F8 83 EC 30 56 57 8B F9 0F";
+CParticleEffectBinding::DrawModel() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 14 8B ? ? ? ? ? 89";
+CParticleEffectBinding::GetActiveParticleList() = "55 8B EC 53 8B D9 66";
+CParticleMSG::UpdateNewEffects() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 F3";
+CParticleSnapshot::ValidateAttributeMapping() = "55 8B EC 51 8B 45 0C 53 8B D9 56 8B";
+CParticleSystemMgr::DrawRenderCache() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89";
+CParticleSystemMgr::ReadParticleConfigFile() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B 75 08 80";
+CPhysicsSystem::PhysicsSimulate() = "55 8B EC 83 EC 7C 8B ? ? ? ? ? 53 56";
+CPlayerInventory::CItemContainers::Add() = "55 8B EC 56 8B F1 F6 46 15";
+CPlayerListDialog::OnItemSelected() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B F9 E8";
+CPlayerLogoProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 01";
+CPostCommentaryDialog::OnFinishedClose() = "56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 74";
+CPotteryWheelPanel::GetWireframeMaterial() = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 57";
+CPrecacheRegister::LevelInitPreEntity() = "56 8B ? ? ? ? ? 68 ? ? ? ? FF D6";
+CPredictedViewModel::AddViewModelBob() = "55 8B EC A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 35";
+CPrediction::RunCommand() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75";
+CPrediction::Update() = "55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B";
+CProceduralTexturePanel::Init() = "55 8B EC 8B 55 0C 81 ? ? ? ? ? 80";
+CProtoBufMsg::BAsyncSendProto() = "55 8B EC 83 EC 1C 89 4D F8";
+CPublishedFileBrowserDialog::OnRadioButtonChecked() = "56 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+CPupilProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68 ? ? ? ? 8B F9";
+CQueueMatchServerListListener::ShouldPingStartMatchmaking() = "55 8B EC 51 56 8B ? ? ? ? ? 83 7E";
+CRTime::RTime32ToString() = "55 8B EC 83 EC 2C 56 57 8B F1";
+CRTime::UpdateRealTime() = "55 8B EC 83 EC 14 56 8B ? ? ? ? ? 6A";
+CRadioStatus::Init() = "56 8B F1 83 ? ? ? ? ? ? 75 22";
+CRagdollLowViolenceManager::SetLowViolence() = "55 8B EC 56 E8 ? ? ? ? A2";
+CRendering3dView::SetupRenderablesList() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 8B";
+CRopeManager::DrawRenderCache() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B D1";
+CRunGameEngine::AddTextCommand() = "55 8B EC 56 8B 75 08 85 F6 74 1F";
+CSGOWorkshopMaps::UnsubscribeFromMap() = "55 8B EC 8B ? ? ? ? ? 56 57 85 C9";
+CSaveBeforeQuitQueryDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75 08 57 8B F9 8B CE E8 ? ? ? ? 85 C0 74";
+CSaveGameBrowserDialog::ShowNoSaveGameUI() = "56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A 00 68";
+CSaveGameDialogXbox::UpdateFooterOptions() = "56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 74 2F";
+CScriptedIconLesson::PreReadLessonsFromFile() = "83 EC 34 A1 ? ? ? ? 33 C4";
+CSimpleEmitter_Factory() = "55 8B EC 51 BA";
+CSlideshowDisplayScreen::ApplySchemeSettings() = "55 8B EC 51 53 8B D9 8D";
+CSnowFallManager::CreateSnowParticlesSphere() = "55 8B EC 83 EC 18 56 57 83";
+CSoundControllerImp::SoundPlayEnvelope() = "55 8B EC 83 EC 10 8B 01 0F";
+CSoundEmitterSystem::StopSound() = "55 8B EC 57 8B 7D 10";
+CSplitScreenLetterBox::GetSettings() = "55 8B EC 80 ? ? ? ? ? ? 0F";
+CSprite::DrawModel() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5D F8";
+CSprite::GetToolRecordingState() = "8B 45 34 8B 5D 38 89";
+CSteamWorksGameStatsClient::FireGameEvent() = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 0F ? ? ? ? ? 8B 06 8B CE 53 FF 50 04 8B D8 B9 ? ? ? ? 8B D3 E8 ? ? ? ? 85 C0 75 10";
+CSteamWorksGameStatsClient::WriteSessionRow() = "55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89 46 78 85 C0 0F";
+CSteamWorksGameStatsUploader::WriteFloatToTable() = "55 8B EC 83 EC 08 33 C0 56 8B F1";
+CSteamWorksGameStatsUploader::WriteSessionRow() = "55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89";
+CStickerSelectionProxy::Init() = "55 8B EC 83 EC 0C 56 FF 75 0C 8B F1 FF 75 08 E8 ? ? ? ? 84 C0 75 09";
+CStoreItemControlsPanel::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 36";
+CStorePage::ApplySettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 53";
+CStorePage::UpdateFilterComboBox() = "57 8B F9 8B ? ? ? ? ? 85 C9 74 7C";
+CStorePanel::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B D9 E8 ? ? ? ? 8B 03 8B CB 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 6A";
+CStorePanel::ShowPanel() = "55 8B EC 53 8B 5D 08 56 8B F1 C6";
+CStorePreviewItemIcon::ApplySchemeSettings() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? FF ? ? ? ? ? 6A";
+CStorePreviewItemIcon::OnCursorEntered() = "56 8B F1 8B 06 FF ? ? ? ? ? C6 ? ? ? ? ? ? FF";
+CStorePreviewItemIcon::OnCursorExited() = "56 8B F1 80 ? ? ? ? ? ? 8B";
+CStorePreviewItemPanel::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 42";
+CStorePricePanel::ApplySchemeSettings() = "55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 37";
+CStoreViewCartPanel::ApplySchemeSettings() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B";
+CStoreViewCartPanel::ShowPanel() = "55 8B EC 53 8B 5D 08 57 8B F9 84";
+CStudioHdr::pszNodeName() = "55 8B EC 57 8B F9 8B 4F 04 85 C9 75 18";
+CTextureTransformProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 8B";
+CUiComponent_FriendsList::GetFriendStatusBucket() = "55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 57 8B F9 89";
+CUiComponent_Inventory::UiComponentFunction_SetCraftTarget() = "55 8B EC 83 EC 0C 56 FF 75 14";
+CUiComponent_News::UiComponentFunction_IsNewClientAvailable() = "55 8B EC 51 8B ? ? ? ? ? 56 8B 01 FF 50";
+CUserCmd::GetChecksum() = "55 8B EC 51 56 8B 75 08 8D 45 FF";
+CUtlBuffer::Put() = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 57";
+CUtlRBTree<char const*,int,bool () = "55 8B EC 83 EC 10 53 56 8B D9 57 89 5D F0";
+CUtlStreamBuffer::ReadBytesFromFile() = "55 8B EC 56 57 8B F9 83 7F";
+CVGuiScreenPanel::Init() = "55 8B EC 51 53 56 8B 75 08 8B D9 57 68";
+CVGuiSystemModuleLoader::GetModuleLabel() = "55 8B EC 8B 45 08 68";
+CValueChangeTracker::SetupTracking() = "55 8B EC 80 ? ? ? ? ? ? B9";
+CViewAngleAnimation::SaveAsAnimFile() = "55 8B EC 83 E4 C0 83 EC 74 53 56 57";
+CViewC4Panel::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 89 4D FC 85 DB 74";
+CViewRender::Draw3dSkyboxworld() = "56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83";
+CViewRender::DrawTranslucentWorldAndDetailPropsInLeaves() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 80";
+CViewRender::DrawTranslucentWorldInLeaves() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 89 74 24 10 8B ? ? ? ? ? 89";
+CViewRender::DrawViewModels() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 ? ? ? ? ? 56 57 FF";
+CViewRender::Init() = "56 8B F1 0F 57 C0 57 68";
+CViewRender::Render() = "F3 ? ? ? ? ? ? ? 56 57 8B F9 8B";
+CViewRender::RenderView() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 89";
+CViewRender::Shutdown() = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 08";
+CViewRenderBeams::InitBeams() = "53 56 57 8B D9 FF";
+CVoiceServer::GetClientListening() = "8B 01 83 F8 07";
+CWorkshopFileInfoManager::~CWorkshopFileInfoManager() = "56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D 4E";
+C_BaseAnimating::BuildTransformations() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 56 57 8B F9 8B";
+C_BaseAnimating::DrawModel() = "55 8B EC 83 EC 14 53 56 8B";
+C_BaseAnimating::FindFollowedEntity() = "55 8B EC 83 EC 0C 53 8B D9";
+C_BaseAnimating::MaintainSequenceTransitions() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56";
+C_BaseAnimating::OnNewModel() = "55 8B EC 83 EC 0C 53 57 8B F9";
+C_BaseAnimating::SetupBones() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57";
+C_BaseAnimating::SetupBones_AttachmentHelper() = "55 8B EC 83 EC 48 53 8B";
+C_BaseAnimating::ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75";
+C_BaseAnimating::StandardBlendingRules() = "55 8B EC 83 E4 F0 B8";
+C_BaseAnimating::StudioFrameAdvance() = "55 8B EC 83 E4 F8 83 EC 08 56 8B F1 57";
+C_BaseAnimating::ThreadedBoneSetup() = "55 8B EC 8B ? ? ? ? ? 83 EC 24";
+C_BaseAnimating::UpdateClientSideAnimations() = "8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 85";
+C_BaseAnimatingGameSystem::LevelShutdownPostEntity() = "A1 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 85";
+C_BaseCombatWeapon::DrawModel() = "55 8B EC 51 56 8B F1 8B 0D ? ? ? ? 57";
+C_BaseEntity::DrawBrushModel() = "55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+C_BaseEntity::EmitSound() = "55 8B EC 81 ? ? ? ? ? 53 8B C1";
+C_BaseEntity::EmitSound() = "55 8B EC 83 EC 4C 53 8B";
+C_BaseEntity::GetSoundDuration() = "56 8B F1 68 ? ? ? ? 56";
+C_BaseEntity::GetToolRecordingState() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 85";
+C_BaseEntity::ToolRecordEnties() = "8B ? ? ? ? ? 53 8B ? ? ? ? ? 85 DB 74";
+C_BaseFlex::StandardBlendingRules() = "55 8B EC 83 EC 08 8B 45 08 56 57 8B F9 8D";
+C_BasePlayer::GetToolRecordingState() = "55 8B EC 83 EC 50";
+C_BasePlayer::PhysicsSimulate() = "56 8B F1 8B ? ? ? ? ? 83 F9 FF 74 23";
+C_BaseTeamObjectiveResource::OnDataChanged() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8A ? ? ? ? ? 3A";
+C_CSGameRules::HasHalfTime() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 12";
+C_CSGameRules::IsPlayingCoopGuardian() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 12";
+C_CSGameRules::IsPlayingCoopMission() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 13 8B ? ? ? ? ? 8B 01 FF 50 24 83";
+C_CSGameRules::IsPlayingGunGameProgressive() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 13";
+C_CSGameRules::IsWarmupPeriod() = "56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 02 75 04";
+C_CSPlayer::DoExtraBoneProcessing() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B F1 57 89 74 24 1C";
+C_CSPlayer::HasC4() = "56 8B F1 85 F6 74 31";
+C_CSPlayer::InvalidatePhysicsRecursive() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B";
+C_CSPlayer::ShouldInterpolate() = "A1 ? ? ? ? 56 57 8B F9 8B";
+C_CSPlayer::UpdateClientsideAnimation() = "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74";
+C_CSPlayer::WeaponShootPosition() = "55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF ? ? ? ? ? 80";
+C_CSRagdoll::ApplyRandomTaserForce() = "55 8B EC 83 E4 F8 83 EC 58 56 8B";
+C_EconItemView::GetQualityParticleType() = "55 8B EC 83 E4 F8 51 A1 ? ? ? ? 56 8B F1 A8";
+C_EconItemView::Update() = "55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 BF";
+C_Embers::C_Embers() = "A1 ? ? ? ? 56 57 8B F9 8B 08 68 ? ? ? ? 8B 01 FF 50 04 8B F0 85 F6 74 32";
+C_GameInstructor::DefineLesson() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 81";
+C_GameInstructor::Update() = "55 8B EC 83 EC 10 53 8B D9";
+C_INIT_SequenceLifeTime::InitNewParticlesScalar() = "55 8B EC 53 8B 5D 08 8B CB 56 57 8B";
+C_OP_LerpScalar::Operate() = "55 8B EC 57 8B F9 8B 07 8B";
+C_OP_RenderSprites::InitializeContextData() = "55 8B EC 56 8B 75 0C C7 ? ? ? ? ? C7";
+C_ParticlePerformanceMonitor::~C_ParticlePerformanceMonitor() = "A1 ? ? ? ? 56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+C_PhysPropClientside::ParseAllEntities() = "55 8B EC B8 ? ? ? ? E8 ? ? ? ? 56 57 8D";
+C_RopeKeyframe::CreateFromKeyValues() = "55 8B EC 83 EC 0C 53 56 57 8B C1";
+C_SDK::EngineTrace::DidHit() = "F3 ? ? ? ? ? ? ? 0F 2F 41";
+C_SDK::Hash::CRC32::ProcessBuffer() = "55 8B EC 53 8B D9 56 57 8B 7D 08 8B F2";
+C_SceneEntity::LoadSceneFromFile() = "55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 56 8B F1 B9";
+C_SoundscapeSystem::UpdateAudioParams() = "55 8B EC 56 57 8B 7D 08 8B F1 8B ? ? ? ? ? 3B";
+C_TEExplosion::RecordExplosion() = "55 8B EC 51 57 8B F9 8B ? ? ? ? ? 85";
+C_TEShatterSurface::RecordShatterSurface() = "55 8B EC 83 EC 08 57 8B F9 8B ? ? ? ? ? 85";
+C_TempEntsSystem::Explosion() = "55 8B EC 8B 01 83 EC 18";
+C_WaterExplosionEffect::PlaySound() = "55 8B EC 83 E4 F8 83 EC 24 56 8B F1 F6 46 24 04 75 6D";
+CalcAbsolutePosition() = "55 8B EC 83 E4 F0 83 EC 68";
+CalcAbsoluteVelocity() = "55 8B EC 83 E4 F8 83 EC 1C";
+CalcPlayerView() = "84 C0 75 08 57";
+CalcViewModelBobHelper() = "55 8B EC 83 E4 F8 83 EC 30 A1 ? ? ? ? 56";
+CalculateView() = "55 8B EC 83 EC 14 53 56 57 FF 75 18";
+CallCatchBlock() = "6A 38 68 ? ? ? ? E8";
+CallUnexpected() = "6A 04 B8 ? ? ? ? E8 ? ? ? ? E8";
+CatchIt() = "55 8B EC 83 7D 20";
+ChatPrintf() = "55 8B EC 8B 4D 08 8D";
+Clabel::OnMouseMove() = "55 8B EC F3 ? ? ? ? 83 EC 18";
+ClampBonesInBBox() = "55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 38";
+ClearDeathNotices() = "55 8B EC 83 EC 0C 53 56 8B 71";
+ClientModeCSNormal::DoPostScreenSpaceEffects() = "55 8B EC 8B 49 18 56 8B";
+ClientModeShared::FireGameEvent() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B 5D 08 56 57";
+ClientWorldFactory() = "55 8B EC 8B ? ? ? ? ? FF 75";
+ClipRayToHitbox() = "55 8B EC 83 E4 F8 F3 ? ? ? ? 81 ? ? ? ? ? 0F";
+ColumnButton::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 8B F1 53";
+CommentaryShowModelViewer() = "55 8B EC 8B 45 08 83 38";
+CompareFlattenedOffsets() = "55 8B EC 8B 55 08 56 8B 75 0C 8B 42";
+ConVar_Unregister() = "55 8B EC 83 EC 18 53 8B D9 8B";
+CreateAnimationState() = "55 8B EC 56 8B F1 B9 ? ? ? ? C7";
+CreateInterface_0() = "55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 38";
+CreateRagdoll() = "55 8B EC 51 A1 ? ? ? ? 53 8B D9 56 8B 08 57 68";
+CryptoPP::Algorithm::AlgorithmName() = "55 8B EC 56 8B 75 08 8B CE 6A";
+CryptoPP::BitBucket::AlgorithmName() = "51 56 8B 74";
+CryptoPP::ByteQueue::IsolatedInitialize() = "51 56 8B F1 C7 ? ? ? ? ? ? ? 8B 4C";
+CryptoPP::Decrement() = "57 8B 7C 24 08";
+CryptoPP::EvenWordCount() = "8B 44 24 08 85 C0 74 1D";
+CryptoPP::Increment() = "8B 54 24 04 8B 44";
+CryptoPP::RoundupSize() = "8B 44 24 04 83 F8 08";
+CryptoPP::X86_SHA256_HashBlocks() = "55 8B EC 53 56 57 8B 7D 08 8D ? ? ? ? ? 55";
+CryptoPP::_dynamic_initializer_for__AAD_CHANNEL___2() = "B9 ? ? ? ? E8 ? ? ? ? 6A 03";
+CryptoPP::_dynamic_initializer_for__DEFAULT_CHANNEL__() = "B9 ? ? ? ? E8";
+DevMsgRT() = "55 8B EC 8B ? ? ? ? ? 8B 01 8B";
+DisplayZipError() = "56 8B ? ? ? ? ? 57 8B F9 8B C7";
+DllMain() = "55 8B EC 8B 45 0C 83 EC 24";
+DoDepthOfField() = "55 8B EC 83 EC 24 53 56 8B F1";
+DoIncludeScript() = "55 8B EC 8B 55 0C 81";
+DrawMeshCallback() = "55 8B EC 8B 4D 08 6A 00 6A";
+DrawRenderablesInList() = "55 8B EC 83 EC 08 8B 45 08 53 56 8B D9";
+DrawSmokeFogOverlay() = "55 8B EC F3 ? ? ? ? ? ? ? 81 ? ? ? ? ? 0F";
+DrawUnderwaterOverlay() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 28 56 57";
+DumpTGAofRenderTarget() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B DA";
+EconWear_ToIntCategory() = "A1 ? ? ? ? 85 C0 75 49";
+EmitCaptionCompletion() = "55 8B EC 83 EC 0C 57 33";
+EndViewModelRendering() = "55 8B EC 51 A1 ? ? ? ? 85";
+ExFilterRethrow() = "55 8B EC 8B 45 08 8B 00 81";
+ExplainErrorNum() = "83 C1 F7";
+FX_RicochetSound() = "55 8B EC 83 EC 38 F3";
+FastSortFunc() = "55 8B EC 8B 45 0C 8B 4D 10 56";
+FindCompleteObject() = "55 8B EC 8B 55 08 8B 02 8B 48 FC";
+FindHandler() = "55 8B EC 83 EC 44 53 8B 5D 0C 56 57 8B";
+FindHandlerForForeignException() = "55 8B EC 51 51 57";
+FindHudElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33";
+FindMITargetTypeInstance() = "55 8B EC 83 EC 14 8B 45 0C 33";
+FindSITargetTypeInstance() = "55 8B EC 51 51 8B 45 08";
+FindVITargetTypeInstance() = "55 8B EC 83 EC 24 8B 45 0C 83";
+FormatZipMessageU() = "83 F9 01 56";
+FrameAdvance() = "55 8B EC 83 E4 C0 83 EC 38";
+GCHost() = "55 8B EC 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? E8";
+GCSDK::CGCClientSharedObjectCache::NotifyCreated() = "8B 41 5C BA ? ? ? ? 3B C2 7F 0B 85 C0 79 04 33 C0 EB 06 83 F8 3F 0F 4F C2 89 41 5C 8B 41 68";
+GCSDK::CGCClientSharedObjectTypeCache::BCreateFromMsg() = "55 8B EC 83 EC 50 53 56 57 6A";
+GCSDK::CJobMgr::RecordOrphanedMessage() = "55 8B EC 51 56 57 6A 00 FF ? ? ? ? ? 8B";
+GCSDK::CJobMgr::TimeoutJob() = "55 8B EC 83 EC 08 53 8B 5D 08 56 8B F1 57 83";
+GCSDK::CSharedObjectTypeCache::Dump() = "56 57 8B F9 FF 77 18 FF";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_Lobby__() = "6A 00 68 ? ? ? ? 6A 03";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_Party__() = "6A 00 68 ? ? ? ? 6A 02 B9";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_SteamID__() = "6A 01 68 ? ? ? ? 6A 01";
+GameTypes::GetGameModeAndTypeFromStrings() = "55 8B EC 51 8B 45 10 53";
+GameTypes::GetMap_Internal() = "55 8B EC 83 EC 40 57 8B F9 83";
+GameTypes::SetCustomBotDifficulty() = "55 8B EC 56 8B 75 08 85 F6 78";
+GetBonePosition() = "55 8B EC 83 E4 F8 56 8B F1 57 83";
+GetCustomParticleEffectId() = "55 8B EC 83 EC 08 53 8B 5D 08 56 33";
+GetFullFrameFrameBufferTexture() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 83";
+GetGlyphOutlineA() = "55 8B EC 6A 00 FF 75 20";
+GetMessage() = "55 8B EC 51 8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89 75 FC 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 7D 0C";
+GetModEncryptionKey() = "56 8B F1 B9 ? ? ? ? 6A";
+GetParticleManifest() = "55 8B EC 83 E4 F8 83 EC 1C 53 56 8B ? ? ? ? ? 57 89";
+GetSequenceActivity() = "55 8B EC 53 8B 5D 08 56 8B F1 83";
+GetSequenceActivityName() = "85 C9 74 61 85 D2 78 22 8B 41 04 85 C0 75 0A 8B 01 8B ? ? ? ? ? EB 03 8B 40 14 3B D0 7D 0A 52 E8 ? ? ? ? 03 40 08";
+GetSequenceLinearMotion() = "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85";
+GetSequenceName() = "85 C9 74 61";
+GetShotgunSpread() = "55 8B EC 83 EC 10 56 8B 75 08 8D";
+GetStatForRound() = "55 8B EC 51 56 57 8B FA C7";
+GetToolRecordingState() = "55 8B EC 83 EC 08 53 56 8B F1 8B";
+GetUserCmd() = "55 8B EC 8B 45 08 56 57 8B F9 83";
+GetViewModel() = "55 8B EC 8B 45 08 53 8B D9 56";
+GetWeaponMoveAnimation() = "53 56 57 8B F9 33 F6 8B 4F 60";
+GetWorkshopWorkbenchKeyValuesFromFile() = "53 8B ? ? ? ? ? 56 57 8B F9 FF";
+GlassImpactCallback() = "55 8B EC 81 ? ? ? ? ? 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+GlowEffectSensorGrenade() = "55 8B EC 8B 4D 08 0F 57 C0";
+GloweEffectSpectator() = "55 8B EC 83 EC 14 53 8B 5D 0C 56 57";
+Helper_CanUseSprays() = "55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 2C";
+Helper_ComputeProPlayerMatchFantasyScore() = "55 8B EC 81 ? ? ? ? ? 56 57 FF";
+Helper_GetMouseEnableBindingName() = "F7 ? ? ? ? ? ? ? ? ? 56 74";
+Helper_TagFromString() = "55 8B EC 51 53 8B 5D 08 56 33 F6 89";
+IClientModeShared::CreateMove() = "55 8B EC 56 8D";
+ImageLoader::A8ToRGBA8888() = "55 8B EC 8B 45 08 56 8B 75 10 03 F0 3B C6 73 26";
+ImageLoader::ARGB8888ToRGBA8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 02 2B F1 83 C6 FE 8D 41 02 0F B6 4A FF";
+ImageLoader::BGR565ToRGBA8888() = "55 8B EC 8B 45 10 33 D2 57";
+ImageLoader::BGR888ToRGBA8888() = "55 8B EC 8B 4D 10 8B 45 08 56 8D 34 48 03 F1 3B C6 73 2F 8B 55 0C 83 C2 02 0F ? ? ? ? ? ? 0F B6 48";
+ImageLoader::BGR888_BLUESCREENToRGBA8888() = "55 8B EC 8B 45 10 57 8B 7D 08 8D 14 47 03 D0 3B FA 73 52";
+ImageLoader::BGRA4444ToRGBA8888() = "55 8B EC 51 8B 45 10 8B 55 08 57 C7 ? ? ? ? ? ? 8D ? ? ? ? ? ? 8D 0C 42 D1 EF 33 C0 3B D1 0F 47 F8 85 FF 74 76";
+ImageLoader::BGRA5551ToRGBA8888() = "55 8B EC 51 8B 45 10 8B";
+ImageLoader::BGRX5551ToRGBA8888() = "55 8B EC 8B 45 10 33 D2 57 8B 7D 08 C7 ? ? ? ? ? ? 8D 0C 47 8D ? ? ? ? ? ? D1 E8 3B F9 0F 47 C2 89 45 10 85 C0 74 5D";
+ImageLoader::BGRX8888ToRGBA8888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 31";
+ImageLoader::I8ToRGBA8888() = "55 8B EC 8B 45 08 56 8B 75 10 03";
+ImageLoader::IA88ToRGBA8888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 48";
+ImageLoader::RGB888ToRGBA8888() = "55 8B EC 8B 4D 10 8B";
+ImageLoader::RGB888_BLUESCREENToRGBA8888() = "55 8B EC 8B 45 10 57 8B 7D 08 8D 14";
+ImageLoader::RGBA16161616ToRGBA8888() = "55 8B EC 8B 45 10 56 57 8B 7D";
+ImageLoader::RGBA8888ToA8() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 13";
+ImageLoader::RGBA8888ToABGR8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D";
+ImageLoader::RGBA8888ToARGB8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 01";
+ImageLoader::RGBA8888ToBGR565() = "55 8B EC 8B 45 08 8B 4D 10 56 8B";
+ImageLoader::RGBA8888ToBGR888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 2D";
+ImageLoader::RGBA8888ToBGR888_BLUESCREEN() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 3E";
+ImageLoader::RGBA8888ToBGRA4444() = "55 8B EC 8B 4D 08 8B 45 10 57 8B 7D 0C 8D 04 81 3B C8 73 51";
+ImageLoader::RGBA8888ToBGRA5551() = "55 8B EC 8B 4D 08 8B 45 10 57";
+ImageLoader::RGBA8888ToBGRA8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 01 2B F1 83 C6 FE 8D 41 02 0F B6 4A 01";
+ImageLoader::RGBA8888ToBGRX5551() = "55 8B EC 8B 45 08 8B 4D 10 56 8B 75 0C 57 8D 3C 88 3B C7 73 3E";
+ImageLoader::RGBA8888ToBGRX8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 32";
+ImageLoader::RGBA8888ToI8() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 61";
+ImageLoader::RGBA8888ToIA88() = "55 8B EC 8B 45 10 56 8B 75 08 8D";
+ImageLoader::RGBA8888ToR32F() = "55 8B EC 8B 4D 08 8B 45 10 8B 55 0C 56 8D 34 81 3B CE 0F ? ? ? ? ? F3 ? ? ? ? ? ? ? 8B C6 2B C1 83 C0 03 83 E0 FC 83 F8 10 72";
+ImageLoader::RGBA8888ToRG3232F() = "55 8B EC 8B 4D 08 8B 45 10 8B 55";
+ImageLoader::RGBA8888ToRGB323232F() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73";
+ImageLoader::RGBA8888ToRGB888() = "55 8B EC 8B 45 08 8B 4D 10 56";
+ImageLoader::RGBA8888ToRGB888_BLUESCREEN() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 3F";
+ImageLoader::RGBA8888ToRGBA32323232F() = "55 8B EC 8B 45 10 57";
+ImageLoader::RGBA8888ToUV88() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 1A";
+ImageLoader::UV88ToRGBA8888() = "55 8B EC 8B 55 08 8B 45 10 56 8D";
+ImageLoader::UVWQ8888ToRGBA8888() = "55 8B EC 8B 45 10 C1";
+InitC_BaseEntityScriptDesc() = "80 ? ? ? ? ? ? 0F ? ? ? ? ? FF";
+InitFunc_158() = "53 68 ? ? ? ? B9";
+InitFunc_267() = "FF ? ? ? ? ? 6A 01";
+InitFunc_388() = "55 8B EC 51 C7";
+InitFunc_882() = "FF ? ? ? ? ? 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83 C4 14 A3";
+InitPose() = "55 8B EC 83 EC 10 53 8B D9 89 55";
+InterpolateServerEntities() = "55 8B EC 83 EC 1C 8B 0D";
+IntersectRayWithRay() = "55 8B EC 83 EC 1C 8B 55 08";
+InvokeMethod() = "55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 8B CE";
+InvokeMethodTickProgress() = "55 8B EC 83 EC 08 A1 ? ? ? ? 33";
+IsDepthOfFieldEnabled() = "8B ? ? ? ? ? 56 8B 01 FF 50 34";
+IsEntityBreakable() = "55 8B EC 51 56 8B F1 85 F6 74 ? 83";
+IsInExceptionSpec() = "55 8B EC 83 EC 18 53 56 8B 75 0C 57";
+IsInIronsight() = "53 56 8B F1 57 8B 4E 3C";
+IsPreCrouchUpdateDemo() = "8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 75 14 8B ? ? ? ? ? 8B";
+Is_bad_exception_allowed() = "55 8B EC 53 56 57 8B 7D 08 33";
+KeyDown() = "56 57 8B FA 83 C8";
+LineGoesThroughSmoke() = "55 8B EC 83 EC 08 8B 15";
+LoadFile() = "55 8B EC 51 56 57 8B FA";
+LookupBone() = "55 8B EC 53 56 8B F1 57 83";
+Noise() = "55 8B EC 51 56 57 8B 7D 0C 8B F7";
+OnLand() = "55 8B EC 83 E4 F8 81 EC 28 02 00 00 56 8B";
+OnPostRestoreData() = "55 8B EC 51 53 56 6A";
+OpenBSPFile() = "55 8B EC 51 56 68";
+OpenStoreStatusDialog() = "55 8B EC 53 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+PMDtoOffset() = "55 8B EC 56 8B 75 0C 33";
+PanelJobWrapperFn() = "55 8B EC 83 EC 08 56 FF";
+PerformScreenOverlay() = "55 8B EC 51 A1 ? ? ? ? 53 56 8B";
+PostThinkVPhysics() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9";
+PutString() = "55 8B EC 56 57 8B F9 8A";
+Q_stristr() = "55 8B EC 53 57 8B 7D 08 85 FF 0F";
+RecordBloodSprite() = "55 8B EC 83 EC 0C 53 8B D9 89 55";
+RecordGlowSprite() = "55 8B EC 83 EC 0C 53 8B D9 F3 ? ? ? ? 8B";
+RecordSprite() = "55 8B EC 83 EC 08 53 8B D9 F3";
+RecordWorldDecal() = "55 8B EC 83 EC 08 57 8B F9 89 55";
+RecvProxy_HDRColorScale() = "55 8B EC 8B 45 08 8B 48 08 8B 45 0C 89 ? ? ? ? ? 5D";
+RecvProxy_IntDirtySurround() = "55 8B EC 8B 55 10 8B 4D";
+RecvProxy_MoveCollide() = "55 8B EC 8B 45 08 8A";
+RecvProxy_MoveType() = "55 8B EC 8B 45 08 8B 4D 0C 8A";
+RecvProxy_Owner() = "55 8B EC 8B 45 0C 56 8B 75 08";
+RecvProxy_SpriteScale() = "55 8B EC 8B 45 08 8B 4D 0C F3 ? ? ? ? 0F ? ? ? ? ? ? 9F";
+RecvProxy_VectorDirtySurround() = "55 8B EC 8B 45 08 8B 4D 10";
+Register_LOG_WORKSHOP_Tags() = "68 ? ? ? ? FF ? ? ? ? ? 68 ? ? ? ? FF ? ? ? ? ? 83";
+ReslistLogLessFunc() = "55 8B EC 51 56 E8 ? ? ? ? 8B";
+RestoreData() = "55 8B EC 83 E4 F8 83 EC 44 53 56 8B";
+RunSimulation() = "55 8B EC 83 EC 08 53 8B 5D 10";
+SafeRelease() = "56 57 8B F9 8B 37 85 F6 74 2B";
+ScreenWidth() = "55 8B EC 83 EC 08 8B ? ? ? ? ? 8D 55";
+SelectItem() = "55 8B EC 53 8B 5D 08 57";
+SetAbsAngles() = "55 8B EC 83 E4 F8 83 EC 64 53";
+SetCollisionBounds() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B 7B";
+SetLastCmd() = "55 8B EC 8B 55 08 3B";
+SetLightmapScaleForWater() = "55 8B EC 8B ? ? ? ? ? 83 EC 18 8B 01 FF";
+SetSequence() = "55 8B EC 53 8B 5D 08 56 8B F1 39";
+SetupMovement() = "55 8B EC 83 E4 F8 83 EC 0C 53 56 57 8B 7D";
+ShouldDrawInWireFrameMode() = "8B ? ? ? ? ? 85 C9 75 1C";
+ShouldDrawViewModel() = "55 8B EC 80 7D 08 00 56 8B F1 75";
+ShowGlobalServerStats() = "55 8B EC 51 56 8B ? ? ? ? ? 57 68";
+Show_Steam_Stats_Session_ID() = "F7 ? ? ? ? ? ? ? ? ? 56 BE";
+SimulatePlayerSimulatedEntities() = "56 8B F1 57 8B ? ? ? ? ? 83 EF";
+SocketWouldBlock() = "55 8B EC 53 56 8B F1 57 FF";
+SortLessFuncExtended() = "55 8B EC 8B 45 08 8B 10 8B 45";
+Spec_Autodirector_Cameraman_Callback() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 75 0C 0F 57 C0 0F ? ? ? ? ? ? 77 0C 6A 00 B9 ? ? ? ? E8 ? ? ? ? C3";
+TE_BeamSpline() = "55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 13";
+TestViewAnim() = "55 8B EC 51 8B ? ? ? ? ? 83 ? ? ? ? ? ? 75";
+Test_ProxyToggle_EnsureValue() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83";
+TextToSoundLevel() = "57 8B F9 85 FF 75 05";
+UGCUtil_Init() = "55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 75";
+UTIL_IsLowViolence() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 43";
+UTIL_TraceLine() = "55 8B EC 83 E4 F0 83 EC 7C";
+Unserialize() = "56 8B F1 57 8B FA 80 7E";
+UpdateCollisionBounds() = "56 57 8B F9 8B ? ? ? ? ? F6";
+UpdateRefractIfNeededByList() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 33";
+UpdateScreenEffectTexture() = "55 8B EC 83 E4 F0 83 EC 48 8B 45 08 56 89";
+UpdateVPhysicsPosition() = "55 8B EC 83 EC 10 57";
+UsingStandardWeaponsInVehicle() = "56 57 8B F9 8B ? ? ? ? ? 83 FA FF 74 43";
+VControlsListPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B";
+VControlsListPanel::VControlsListPanel() = "55 8B EC 56 57 68 ? ? ? ? FF 75 08 8B F1";
+VGUI_CreateClientDLLRootPanel() = "A1 ? ? ? ? 56 57 68 ? ? ? ? 8B";
+VScriptRunScript() = "83 ? ? ? ? ? ? 56 57 8B FA 8B F1 0F";
+V_snprintf() = "55 8B EC 51 56 8B 75 0C 8D 45 14 57 8B 7D 08 8B D6 50 51 FF 75 10 8B CF E8 ? ? ? ? 83 C4 0C 85 C0 78 08 85 F6 7E 0C";
+ValidateLocalCookies() = "55 8B EC 56 8B 75 08 57 8B 7D 0C 8B 06";
+ValveJpegErrorHandler() = "55 8B EC 8B 45 08 8D ? ? ? ? ? 81";
+VideoPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B D9";
+WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9";
+WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53";
+_B1_1() = "57 8B 7C 24 0C 81";
+_CallSettingFrame(x,x,x) = "55 8B EC 83 EC 04";
+_CodeAlphaBlock() = "81 ? ? ? ? ? 8B ? ? ? ? ? ? 53";
+_CodeRGBBlock() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53";
+_CxxThrowException(x,x) = "55 8B EC 83 EC 20 53 8B 5D 08 56 57 6A";
+_DllMainCRTStartup(x,x,x) = "55 8B EC 83 7D 0C 01 75";
+_EH4_CallFilterFunc(x,x) = "55 56 57 53";
+_EH4_GlobalUnwind2(x,x) = "55 8B EC 53 56 57 6A 00 52";
+_EH4_LocalUnwind(x,x,x,x) = "55 8B 6C 24 08 52";
+_EH4_TransferToHandler(x,x) = "8B EA 8B F1";
+_UNITY_png_get_uint_31() = "55 8B EC 8B 4D 0C 0F B6 11 0F";
+__CatchGuardHandler() = "55 8B EC 56 FC";
+__CreateFrameInfo() = "55 8B EC 8B 4D 0C 56 8B";
+__EH_prolog3_catch() = "50 64 ? ? ? ? ? ? 8D 44 24 0C 2B 64 24 0C 53 56 57 89 28 8B E8 A1 ? ? ? ? 33 C5 50 89 65";
+__FindAndUnlinkFrame() = "55 8B EC 56 E8 ? ? ? ? 8B 75 08 3B";
+__Init_thread_footer() = "55 8B EC E8 ? ? ? ? 8B ? ? ? ? ? 8B 45 08 41";
+__Init_thread_header() = "55 8B EC 56 E8 ? ? ? ? 8B 75";
+__Init_thread_notify() = "A1 ? ? ? ? 85 C0 75 24 56";
+__Init_thread_wait() = "55 8B EC 83 ? ? ? ? ? ? 56 75";
+__IsExceptionObjectToBeDestroyed() = "55 8B EC E8 ? ? ? ? 8B 40";
+__MsgFunc_MatchEndConditions() = "55 8B EC 51 8B 45 08 53 56 57 8B 48";
+__MsgFunc_RequestState() = "51 56 8B ? ? ? ? ? 85 F6 74 3B";
+__Mtxinit() = "55 8B EC 6A 00 68 ? ? ? ? FF";
+__NLG_Notify() = "53 51 BB ? ? ? ? 8B";
+__NLG_Notify1() = "53 51 BB";
+__SEH_epilog4() = "8B 4D F0 64 ? ? ? ? ? ? 59 5F 5F";
+__SEH_prolog4() = "68 ? ? ? ? 64 ? ? ? ? ? ? 8B 44";
+__TranslatorGuardHandler() = "55 8B EC 51 53 FC";
+___AdjustPointer() = "55 8B EC 8B 4D 0C 8B 55";
+___BuildCatchObject() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 8B 55";
+___BuildCatchObjectHelper() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 33 DB 8B";
+___CxxFrameHandler3() = "55 8B EC 83 EC 08 53 56 57 FC";
+___DestructExceptionObject() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 8B";
+___FrameUnwindFilter() = "55 8B EC 8B 45 08 8B 00 81 ? ? ? ? ? 74";
+___FrameUnwindToState() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 45";
+___InternalCxxFrameHandler() = "55 8B EC 53 56 57 FF 75 10 E8";
+___RTDynamicCast() = "6A 18 68 ? ? ? ? E8 ? ? ? ? 8B";
+___RTtypeid() = "6A 14 68 ? ? ? ? E8 ? ? ? ? 8B";
+___TypeMatch() = "55 8B EC 8B 55 08 53 56 57 8B 42";
+___acrt_call_reportfault() = "8B FF 55";
+___acrt_initialize_stdio() = "A1 ? ? ? ? 56 6A 03";
+___acrt_iob_func() = "8B FF 55 8B EC 6B";
+___acrt_uninitialize_stdio() = "8B FF 56 E8";
+___common_pi04_reduction_LA() = "55 8B EC 83 E4 F0 56 57 53 83 EC 54 B8 ? ? ? ? 8B 55 0C 8B 5D 10 2B D0 0F ? ? ? ? ? 33 C0 66 ? ? ? ? D9 7C 24 46";
+___common_sacos_cout_rare() = "55 8B EC 83 E4 F8 56 57 53 83 EC 5C";
+___common_sll() = "8B 44 24 04 8B 54 24 08 8B 4C 24 0C 80 F9 40 73 15";
+___common_srl() = "8B 44 24 04 8B 54";
+___crtInitializeCriticalSectionEx() = "55 8B EC 56 8B ? ? ? ? ? 33 ? ? ? ? ? 74 14";
+___libm_sse2_powf() = "F3 ? ? ? ? ? ? ? 83 EC 0C 66 ? ? ? ? ? ? ? 66";
+___longjmp_internal() = "55 8B EC 83 EC 50 8B 5C";
+___raise_securityfailure() = "55 8B EC 6A 00 FF ? ? ? ? ? FF 75 08 FF";
+___report_gsfailure() = "55 8B EC 81 ? ? ? ? ? 6A 17";
+___report_rangecheckfailure() = "55 8B EC 6A 08";
+___report_securityfailure() = "55 8B EC 81 ? ? ? ? ? 6A 17 E8 ? ? ? ? 85 C0 74 05 8B";
+___scrt_acquire_startup_lock() = "E8 ? ? ? ? 85 C0 75 03 32";
+___scrt_dllmain_after_initialize_c() = "E8 ? ? ? ? 85 C0 74 07 E8";
+___scrt_dllmain_before_initialize_c() = "6A 00 E8 ? ? ? ? 84 C0 59";
+___scrt_dllmain_crt_thread_detach() = "E8 ? ? ? ? E8 ? ? ? ? B0 01 C3";
+___scrt_dllmain_exception_filter() = "55 8B EC E8 ? ? ? ? 85 C0 75";
+___scrt_dllmain_uninitialize_c() = "E8 ? ? ? ? 85 C0 74 0C 68 ? ? ? ? E8";
+___scrt_dllmain_uninitialize_critical() = "6A 00 E8 ? ? ? ? 59 E9";
+___scrt_fastfail() = "55 8B EC 81 ? ? ? ? ? 53 56 6A";
+___scrt_initialize_crt() = "55 8B EC 83 7D 08 00 75 07";
+___scrt_initialize_default_local_stdio_options() = "E8 ? ? ? ? 8B 48 04 83";
+___scrt_initialize_onexit_tables() = "55 8B EC 83 EC 0C 56 8B 75 08 85 F6 74 05";
+___scrt_is_nonwritable_in_current_image() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 83";
+___scrt_release_startup_lock() = "55 8B EC E8 ? ? ? ? 85 C0 74 0F";
+___scrt_uninitialize_crt() = "55 8B EC 80 ? ? ? ? ? ? 74 06 80";
+___security_init_cookie() = "55 8B EC 83 EC 14 83 65";
+___sse2_acosf4() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 0F";
+___sse2_pow2() = "8B C4 81";
+___sse2_sin2() = "8B C4 81 ? ? ? ? ? 83 E4 F0 89 44";
+___std_exception_copy() = "55 8B EC 57 8B 7D 08 80 7F 04";
+___std_exception_destroy() = "55 8B EC 56 8B 75 08 80 7E 04";
+___std_type_info_compare() = "55 8B EC 8B 45 08 8B 4D 0C 3B";
+___std_type_info_destroy_list() = "55 8B EC FF 75 08 FF ? ? ? ? ? 85";
+___std_type_info_name() = "55 8B EC 83 EC 0C 33 C9 33";
+___stdio_common_vfprintf() = "8B FF 55 8B EC 83 EC 2C";
+___unDName() = "6A 64 68 ? ? ? ? E8 ? ? ? ? 8B";
+___vcrt_freeptd() = "55 8B EC A1 ? ? ? ? 83 F8 FF 74 27";
+___vcrt_getptd_noexit() = "83 ? ? ? ? ? ? 75 03 33 C0 C3 53";
+___vcrt_initialize() = "E8 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? 84 C0";
+___vcrt_initialize_locks() = "56 57 BF ? ? ? ? 33 F6 6A";
+___vcrt_initialize_ptd() = "68 ? ? ? ? E8 ? ? ? ? A3 ? ? ? ? 59";
+___vcrt_initialize_pure_virtual_call_handler() = "A1 ? ? ? ? 83 E0 1F 6A 20 59 2B C8 33";
+___vcrt_thread_detach() = "6A 00 E8 ? ? ? ? 59 B0";
+___vcrt_uninitialize() = "55 8B EC 80 7D 08 00 75 12";
+___vcrt_uninitialize_ptd() = "A1 ? ? ? ? 83 F8 FF 74 0E";
+__abnormal_termination() = "33 C0 64";
+__alldiv() = "57 56 53 33";
+__allmul() = "8B 44 24 08 8B 4C 24 10";
+__alloca_probe_16() = "51 8D 4C 24 08";
+__alloca_probe_8() = "51 8D 4C 24 08 2B C8 83 E1 07";
+__aulldiv() = "53 56 8B 44 24";
+__aullshr() = "80 F9 40 73";
+__calloc_base() = "55 8B EC A1 ? ? ? ? 56 57 8B 7D 08 8B 08";
+__chkstk() = "51 8D 4C 24 04";
+__chvalidchk_l() = "8B FF 55 8B EC 8B 45 10";
+__close() = "8B FF 55 8B EC 51 56 8B 75 08";
+__dtol3() = "B9 ? ? ? ? F2 ? ? ? ? ? ? ? 66 0F 6F";
+__except_handler4() = "55 8B EC 83 EC 1C 53 56 8B 75 0C 57";
+__fclose_nolock() = "8B FF 55 8B EC 56";
+__fread_nolock_s() = "8B FF 55 8B EC 83 EC 14";
+__free_base() = "55 8B EC A1 ? ? ? ? FF 75 08 8B 08 8B 01 FF 50 14";
+__freea_crt() = "55 8B EC 8B 45 08 85 C0 74 12 83";
+__ftol2() = "55 8B EC 83 EC 20 83 E4";
+__ftol2_sse() = "83 ? ? ? ? ? ? 74 37 55";
+__ftol2_sse_excpt() = "83 ? ? ? ? ? ? 74 1B 83";
+__ftol3_except() = "83 EC 20 9B";
+__ftoui3() = "B9 ? ? ? ? F2 ? ? ? ? ? ? ? EB";
+__fwrite_nolock() = "8B FF 55 8B EC 83 EC 0C 53 56 8B 75 0C";
+__get_purecall_handler() = "33 C9 BA ? ? ? ? 33";
+__getch() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 6A";
+__global_unwind2() = "55 8B EC 53 56 57 55";
+__invalid_parameter() = "8B FF 55 8B EC 51";
+__invalid_parameter_noinfo() = "33 C0 50 50 50 50";
+__invalid_parameter_noinfo_noreturn() = "8B FF 56 33";
+__invoke_watson() = "6A 17 E8 ? ? ? ? 85 C0 74 05 6A 05";
+__isalnum_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D";
+__ischartype_l() = "8B FF 55 8B EC 8B 4D";
+__iscntrl_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A";
+__isdigit_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 04";
+__isspace_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 08";
+__local_unwind2() = "53 56 57 8B 44";
+__local_unwind4() = "53 56 57 8B 54";
+__ltod3() = "0F 57 C9 F2 0F 2A CA 0F";
+__malloc_base() = "55 8B EC A1 ? ? ? ? FF 75 08";
+__onexit() = "55 8B EC A1 ? ? ? ? 8B C8";
+__purecall() = "56 E8 ? ? ? ? 8B F0 85 F6 74 09";
+__raise_invalid() = "66 0F 76 D2";
+__raise_zerodivide() = "66 0F 76 DB";
+__recalloc() = "55 8B EC A1 ? ? ? ? 53 8B 5D 0C 0F";
+__scrt_initialize_thread_safe_statics() = "53 56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? E8";
+__scrt_uninitialize_thread_safe_statics() = "68 ? ? ? ? FF ? ? ? ? ? A1 ? ? ? ? 85";
+__security_check_cookie(x) = "3B ? ? ? ? ? F2 75";
+__set_purecall_handler() = "55 8B EC FF 75 08 E8 ? ? ? ? 8B D0";
+__setjmp3() = "8B 54 24 04 89";
+__snprintf() = "55 8B EC 83 E4 F8 8D 45 14 50 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 8B";
+__tr_flush_block() = "55 8B EC 83 EC 08 53 56 57 8B F9 C7 ? ? ? ? ? ? 8B DA";
+__tr_stored_block() = "55 8B EC 53 57 8B F9 8B DA 8B";
+__ultod3() = "0F 57 C0 F2 0F 2A";
+__unwind_handler() = "8B 4C 24 04 F7 ? ? ? ? ? ? B8 ? ? ? ? 74 32";
+__vcrt_freefls(x) = "55 8B EC 8B 45 08 85 C0 74 0E 3D";
+__vfscanf_l() = "55 8B EC 83 E4 F8 FF";
+__vmldPow_HA_scalar() = "55 8B EC 83 E4 F8 56 57 53";
+_adler32() = "55 8B EC 53 8B 5D 08 56 57 8B F9 8B F2";
+_adler32() = "55 8B EC 56 8B 75 08 57 8B 7D";
+_anonymous_namespace_::CaptionGripPanel::tryToDock() = "55 8B EC 83 EC 10 53 8B D9 56 8B ? ? ? ? ? 8B";
+_anonymous_namespace_::GripPanel::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 89";
+_anonymous_namespace_::GripPanel::OnCursorMoved() = "55 8B EC 83 EC 10 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B";
+_anonymous_namespace_::GripPanel::OnMouseDoublePressed() = "55 8B EC 8B 01 FF ? ? ? ? ? 8B 10";
+_anonymous_namespace_::GripPanel::OnMousePressed() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 83";
+_anonymous_namespace_::GripPanel::OnMouseReleased() = "56 8B F1 6A 00 C6";
+_anonymous_namespace_::ScrollBarButton::OnMouseReleased() = "55 8B EC 56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 4A";
+_anonymous_namespace_::argument_list_wchar_t_::append_0() = "8B FF 55 8B EC 56 57 8B F1";
+_anonymous_namespace_::protobuf_RegisterTypes() = "68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 83 C4 08";
+_atexit() = "55 8B EC FF 75 08 E8 ? ? ? ? F7";
+_crc32() = "55 8B EC 8B 55 0C 85 D2 75 04";
+_dynamic_initializer_for__LOG_SND_EMITTERSYSTEM__() = "FF ? ? ? ? ? 6A 00 6A 01";
+_dynamic_initializer_for__LOG_VScript__() = "FF ? ? ? ? ? 6A 01 6A 01 6A";
+_dynamic_initializer_for____g_C_TEPlayerDecal__() = "B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7";
+_dynamic_initializer_for__dmodels__() = "56 57 BF ? ? ? ? BE";
+_dynamic_initializer_for__dplanes__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 14";
+_dynamic_initializer_for__dtexdata__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 20";
+_dynamic_initializer_for__entities__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 2C";
+_dynamic_initializer_for__g_AsyncCaptionResourceManager__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7";
+_dynamic_initializer_for__g_EntityLists__() = "56 BA";
+_dynamic_initializer_for__g_Generated_Texture_Saver__() = "6A 00 B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__g_KeyValueSaver__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C6";
+_dynamic_initializer_for__g_PPInit__() = "0F 57 C0 C6 ? ? ? ? ? ? 0F";
+_dynamic_initializer_for__g_PhysObjSaveRestoreOps__() = "B9 ? ? ? ? B8";
+_dynamic_initializer_for__g_PrecipHack__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__g_ProtobufLogHandler__() = "68 ? ? ? ? E8 ? ? ? ? 68";
+_dynamic_initializer_for__g_SteamWorksGameStatsClient__() = "68 ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? B9";
+_dynamic_initializer_for__g_pLessonVariableInfo__() = "B8 ? ? ? ? B9";
+_dynamic_initializer_for__g_staticPlayerNames__() = "68 ? ? ? ? 6A 00 68 ? ? ? ? E8";
+_dynamic_initializer_for__mp_warmuptime__() = "68 ? ? ? ? 51 C7 ? ? ? ? ? ? 6A 00 51 C7 ? ? ? ? ? ? B9 ? ? ? ? 6A 01";
+_dynamic_initializer_for__s_GaussianRandomStream__() = "6A 00 B9 ? ? ? ? FF";
+_dynamic_initializer_for__s_HLTVCamera__() = "B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__s_ParticleSystemQuery__() = "B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? E8";
+_dynamic_initializer_for__ss_righthand__() = "6A 01 68 ? ? ? ? B9";
+_dynamic_initializer_for__vgui::Panel::m_MessageMap__() = "55 8B EC 83 EC";
+_fclose() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 75";
+_fopen() = "8B FF 55 8B EC 6A 40";
+_fread() = "8B FF 55 8B EC FF 75 14";
+_fread_s() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 7D";
+_fseek() = "8B FF 55 8B EC FF 75 10";
+_fwrite() = "8B FF 55 8B EC 83 EC 10 83";
+_inflate() = "55 8B EC 8B 45 08 83 EC 40 85";
+_inflateInit2_() = "55 8B EC 8B 45 08 56 8B F1 85 C0 0F";
+_inflateInit_() = "55 8B EC FF 75 10 8B 4D 08 FF 75 0C E8 ? ? ? ? 83";
+_inflateReset() = "55 8B EC 8B 45 08 85 C0 0F ? ? ? ? ? 8B";
+_inflateReset2() = "56 57 8B F9 85 FF 74 41";
+_inflate_fast() = "55 8B EC 83 EC 44 53 56 57 8B F9 89 7D";
+_inflate_table() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 0F";
+_isalnum() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E";
+_iscntrl() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83";
+_isdigit() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 04";
+_isspace() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 08";
+_jinit_1pass_quantizer() = "56 8B F1 6A 58";
+_jinit_2pass_quantizer() = "56 8B F1 57 6A 2C";
+_jinit_arith_decoder() = "53 8B D9 68 ? ? ? ? 6A";
+_jinit_arith_encoder() = "56 8B F1 68 ? ? ? ? 6A 01 56";
+_jinit_c_coef_controller() = "55 8B EC 83 EC 10 8B 41 04 53";
+_jinit_c_main_controller() = "55 8B EC 51 56 8B F1 6A 40 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? 80";
+_jinit_c_master_control() = "56 8B F1 57 6A 20";
+_jinit_c_prep_controller() = "55 8B EC 51 56 8B F1 6A 40";
+_jinit_color_converter() = "56 8B F1 57 6A 0C";
+_jinit_color_deconverter() = "56 8B F1 57 6A 18";
+_jinit_compress_master() = "56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 75 15";
+_jinit_d_coef_controller() = "55 8B EC 83 EC 14 53 56 57 8B F9 8A";
+_jinit_d_main_controller() = "55 8B EC 83 EC 08 53 56 8B F1 57 6A";
+_jinit_d_post_controller() = "55 8B EC 83 EC 08 53 57 8B F9 88";
+_jinit_downsampler() = "55 8B EC 83 EC 1C 53 56 8B F1 C6";
+_jinit_forward_dct() = "56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+_jinit_huff_decoder() = "55 8B EC 51 53 8B D9 56 68";
+_jinit_huff_encoder() = "56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89";
+_jinit_inverse_dct() = "55 8B EC 51 56 8B F1 57 6A";
+_jinit_marker_reader() = "56 8B F1 68 ? ? ? ? 6A 00 56 8B";
+_jinit_merged_upsampler() = "56 57 8B F9 6A 30 6A 01";
+_jinit_upsampler() = "55 8B EC 83 EC 1C 53 56 8B F1 57 68";
+_jpeg_add_quant_table() = "55 8B EC 53 56 57 8B F9 8B DA 83";
+_jpeg_calc_jpeg_dimensions() = "55 8B EC 51 57 8B F9 8B 47 3C";
+_jpeg_calc_output_dimensions() = "55 8B EC 83 EC 18 56 8B F1 89";
+_jpeg_consume_input() = "56 8B F1 8B 46 14 05";
+_jpeg_core_output_dimensions() = "56 8B F1 57 8B 56 30";
+_jpeg_destroy() = "56 8B F1 8B 46 04 85";
+_jpeg_fdct_10x10() = "55 8B EC 83 EC 74 8B";
+_jpeg_fdct_10x5() = "55 8B EC 83 EC 38 53 8B 5D 08";
+_jpeg_fdct_11x11() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33";
+_jpeg_fdct_12x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57";
+_jpeg_fdct_12x6() = "55 8B EC 83 EC 44 53 8B 5D 08";
+_jpeg_fdct_13x13() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D D4";
+_jpeg_fdct_14x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D D4";
+_jpeg_fdct_14x7() = "55 8B EC 83 EC 54 8B 45";
+_jpeg_fdct_15x15() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D C0";
+_jpeg_fdct_16x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D CC";
+_jpeg_fdct_16x8() = "55 8B EC 83 EC 5C 8B 45 08 33";
+_jpeg_fdct_1x1() = "55 8B EC 56 8B 75 08 68 ? ? ? ? 6A";
+_jpeg_fdct_1x2() = "55 8B EC 56 57 8B 7D 08 68";
+_jpeg_fdct_2x1() = "55 8B EC 56 8B 75 08 68 ? ? ? ? 6A 00 56 E8 ? ? ? ? 8B 45 0C 83 C4 0C 8B 00";
+_jpeg_fdct_2x2() = "55 8B EC 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 75";
+_jpeg_fdct_2x4() = "55 8B EC 53 8B 5D 08 56 57 68";
+_jpeg_fdct_3x3() = "55 8B EC 53 56 57 68 ? ? ? ? 6A";
+_jpeg_fdct_3x6() = "55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 5D";
+_jpeg_fdct_4x8() = "55 8B EC 83 EC 1C 8B 4D 08 53";
+_jpeg_fdct_5x10() = "55 8B EC 83 EC 64 53 8B 5D 08 56";
+_jpeg_fdct_5x5() = "55 8B EC 83 EC 08 53 56 57 68 ? ? ? ? 6A 00 FF";
+_jpeg_fdct_6x12() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 68";
+_jpeg_fdct_7x14() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 68";
+_jpeg_fdct_7x7() = "55 8B EC 83 EC 14 53 56 57 68 ? ? ? ? 6A 00 FF";
+_jpeg_fdct_8x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D DC";
+_jpeg_fdct_8x4() = "55 8B EC 83 EC 2C 53 8B 5D";
+_jpeg_fdct_9x9() = "55 8B EC 83 EC 4C 8B 45 08 33";
+_jpeg_fdct_float() = "55 8B EC 51 53 8B 5D 0C 56 57 8B 1B";
+_jpeg_fdct_ifast() = "55 8B EC 83 EC 10 8B 4D 0C";
+_jpeg_fdct_islow() = "55 8B EC 83 EC 28 8B 45 08 33";
+_jpeg_idct_10x10() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7";
+_jpeg_idct_10x5() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53 8B 45";
+_jpeg_idct_11x11() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83";
+_jpeg_idct_12x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8B";
+_jpeg_idct_12x6() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53";
+_jpeg_idct_13x13() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8D";
+_jpeg_idct_14x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D";
+_jpeg_idct_14x7() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 8B";
+_jpeg_idct_15x15() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 83";
+_jpeg_idct_16x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D";
+_jpeg_idct_1x1() = "55 8B EC 8B 45 0C 56 8B 48";
+_jpeg_idct_1x2() = "55 8B EC 8B 45 08 53 56 8B 75 14";
+_jpeg_idct_2x1() = "55 8B EC 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 45";
+_jpeg_idct_2x2() = "55 8B EC 8B 45 08 8B 4D 10 53";
+_jpeg_idct_2x4() = "55 8B EC 83 EC 10 8B 45 08 53 56 57 8B ? ? ? ? ? 8B";
+_jpeg_idct_3x3() = "55 8B EC 83 EC 14 8B 45 08 8B";
+_jpeg_idct_3x6() = "55 8B EC 83 EC 3C 8B 45 08";
+_jpeg_idct_4x2() = "55 8B EC 83 EC 10 8B 45 08 8B";
+_jpeg_idct_4x4() = "55 8B EC 83 EC 34 8B 45 08 53 56 57 8B ? ? ? ? ? 8B";
+_jpeg_idct_5x10() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D 10 53 83 C1 20 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45";
+_jpeg_idct_5x5() = "55 8B EC 83 EC 5C 8B 45 08 53";
+_jpeg_idct_6x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83 C2 20";
+_jpeg_idct_6x3() = "55 8B EC 83 EC 38 8B 45 08 53 56 57";
+_jpeg_idct_6x6() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B";
+_jpeg_idct_7x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45 F4";
+_jpeg_idct_7x7() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 56 8B ? ? ? ? ? 83 E8 80 0F";
+_jpeg_idct_8x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D 10 83 E8 80 89 45 EC";
+_jpeg_idct_8x4() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 0F BF 1A 83 E8 80 0F";
+_jpeg_idct_9x9() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 83";
+_jpeg_idct_float() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8D";
+_jpeg_idct_ifast() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8D";
+_jpeg_idct_islow() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D";
+_jpeg_resync_to_restart() = "55 8B EC 53 8B 5D 08 56 8B 75";
+_jpeg_stdio_src() = "53 57 8B F9 8B DA 83 7F 18";
+_jpeg_suppress_tables() = "8B 41 58 85 C0 74 07";
+_lambda_4f2c1eaeead2a5fc776db5b62ea0fb9b_::operator() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56";
+_lambda_83425c3f06effba31f387a263a50d5fb_::operator() = "8B FF 56 8B F1 8B ;
+_lambda_af0d5e41dc07595f2c52435db9a0efad_::operator() = "8B FF 56 8B F1 8B 46 04 8B 0E 0F B6";
+_lambda_b163b37eafe0a13f2c371fafeb0365c9_::operator() = "8B FF 55 8B EC 83 EC 14 56 57";
+_lambda_b51c0495177f500e782686251704ae76_::operator() = "8B FF 55 8B EC 51 51 56 8B F1 57 8B";
+_lambda_d9b46f0b07bf76f03656ac7f646b375e_::operator() = "8B FF 56 8B";
+_ldexpf() = "55 8B EC 51 FF 75 0C D9";
+_longjmp() = "55 8B EC FF 75 08 E8 ? ? ? ? 59 5D E9";
+_memchr() = "8B 44 24 0C 53 85";
+_memcmp() = "55 8B EC 53 8B 5D 10 8B";
+_memset() = "8B 4C 24 0C 0F ? ? ? ? 8B D7";
+_png_64bit_product() = "55 8B EC 8B 4D 08 8B C1";
+_png_XYZ_from_xy() = "55 8B EC 8B 4D 0C 83 EC 24";
+_png_XYZ_from_xy_checked() = "55 8B EC 0F 10 45 10";
+_png_build_gamma_table() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 57";
+_png_calculate_crc() = "55 8B EC 53 8B 5D 08 F7";
+_png_calloc() = "55 8B EC 56 FF 75 0C FF 75 08 E8 ? ? ? ? 8B";
+_png_check_IHDR() = "55 8B EC 53 8B 5D 0C 56 8B 75 08 57 33";
+_png_check_cHRM_fixed() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 BE";
+_png_check_chunk_name() = "55 8B EC 53 8B 5D 0C B8";
+_png_check_fp_number() = "55 8B EC 8B 55 10 56 8B";
+_png_check_fp_string() = "55 8B EC 83 EC 08 56 8B 75 08 8D 45 FC 50";
+_png_chunk_error() = "55 8B EC 8B 45 0C 83 EC 54";
+_png_chunk_unknown_handling() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33";
+_png_chunk_warning() = "55 8B EC 83 EC 58 A1";
+_png_combine_row() = "55 8B EC 83 EC 1C 8B 45 08 53 56 57 0F";
+_png_crc_error() = "55 8B EC 56 8B 75 08 57 BF ? ? ? ? F7";
+_png_crc_finish() = "55 8B EC 53 56 8B 75 08 57 8B 7D 0C 8B ? ? ? ? ? 3B";
+_png_crc_read() = "55 8B EC 53 8B 5D 08 85 DB 74 1B";
+_png_create_info_struct() = "55 8B EC 8B 45 08 85 C0 75 02";
+_png_create_struct_2() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08";
+_png_decompress_chunk() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 18";
+_png_destroy_gamma_table() = "55 8B EC 53 56 8B 75 08 57 FF ? ? ? ? ? 56";
+_png_destroy_read_struct() = "55 8B EC 83 EC 08 53 8B 5D 08 33";
+_png_destroy_struct_2() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 08 8B";
+_png_do_bgr() = "55 8B EC 8B 4D 08 8A 41 08 A8 02 0F ? ? ? ? ? 8B";
+_png_do_check_palette_indexes() = "55 8B EC 53 56 8B 75 08 BA ? ? ? ? 57 8B 7D";
+_png_do_chop() = "55 8B EC 57 8B 7D 08 80";
+_png_do_compose() = "55 8B EC 83 EC 24 8B 45 10";
+_png_do_encode_alpha() = "55 8B EC 51 8B 55 08 8B 4D";
+_png_do_expand() = "55 8B EC 83 EC 14 53 8B 5D 08 56 8A";
+_png_do_expand_16() = "55 8B EC 56 8B 75 08 80 7E";
+_png_do_expand_palette() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 80";
+_png_do_gamma() = "55 8B EC 83 EC 18 8B 45 10 8B";
+_png_do_gray_to_rgb() = "55 8B EC 53 8B 5D 08 57 8A";
+_png_do_invert() = "55 8B EC 8B 55 08 56 8A";
+_png_do_packswap() = "55 8B EC 53 8B 5D 08 8A 4B";
+_png_do_quantize() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 80 7F 09";
+_png_do_read_filler() = "55 8B EC 51 53 8B 5D 10 8B C3";
+_png_do_read_interlace() = "55 8B EC 83 EC 2C A1 ? ? ? ? 33";
+_png_do_read_invert_alpha() = "55 8B EC 56 8B 75 08 8A";
+_png_do_read_swap_alpha() = "55 8B EC 8B 45 08 53 56 57 8A";
+_png_do_read_transformations() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 85 C9";
+_png_do_rgb_to_gray() = "55 8B EC 83 EC 2C 8B 4D 0C 57";
+_png_do_scale_16_to_8() = "55 8B EC 56 8B 75 08 80 7E 09 10";
+_png_do_strip_channel() = "55 8B EC 51 8B 4D 0C 8B";
+_png_do_swap() = "55 8B EC 8B 4D 08 80";
+_png_do_unpack() = "55 8B EC 51 8B 55 08 8A 42";
+_png_do_unshift() = "55 8B EC 83 EC 18 A1 ? ? ? ? 33";
+_png_error() = "55 8B EC 56 8B 75 08 85 F6 74 10";
+_png_format_number() = "55 8B EC 83 EC 08 8B 4D 0C";
+_png_formatted_warning() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33";
+_png_free() = "55 8B EC 8B 45 08 85 C0 74 26";
+_png_free_data() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 56 8B 75";
+_png_gamma_correct() = "55 8B EC 8B 45 08 FF 75 10 FF 75 0C 80";
+_png_gamma_significant() = "55 8B EC 8B 45 08 B9 ? ? ? ? 05";
+_png_get_IHDR() = "55 8B EC 83 7D 08 00 53 57 0F";
+_png_get_channels() = "55 8B EC 83 7D 08 00 74 0C";
+_png_get_io_ptr() = "55 8B EC 8B 45 08 85 C0 75 02 5D C3 8B";
+_png_get_rowbytes() = "55 8B EC 83 7D 08 00 74 0C 8B 45 0C 85 C0 74 05 8B";
+_png_get_valid() = "55 8B EC 83 7D 08 00 74 0F";
+_png_handle_IEND() = "55 8B EC 56 8B 75 08 8B 4E";
+_png_handle_IHDR() = "55 8B EC 83 EC 28 A1 ? ? ? ? 33";
+_png_handle_PLTE() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 08 57";
+_png_handle_as_unknown() = "55 8B EC 8B 55 08 56 85 D2 74";
+_png_handle_bKGD() = "55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 56";
+_png_handle_cHRM() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53";
+_png_handle_hIST() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C";
+_png_handle_iCCP() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C 53";
+_png_handle_iTXt() = "55 8B EC 83 EC 0C 56 8B 75 08 8B ? ? ? ? ? 85";
+_png_handle_pCAL() = "55 8B EC 83 EC 14 57 8B 7D 08 8B";
+_png_handle_sBIT() = "55 8B EC 51 56 8B 75 08 C7";
+_png_handle_sCAL() = "55 8B EC 51 56 8B 75 08 8B 46";
+_png_handle_sPLT() = "55 8B EC 83 EC 14 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_handle_tEXt() = "55 8B EC 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_handle_tIME() = "55 8B EC 83 EC 14 A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 0C 56 8B 75 08 8B";
+_png_handle_tRNS() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 0C 56 8B 75 08 8B";
+_png_handle_unknown() = "55 8B EC 56 8B 75 08 8B ? ? ? ? ? 85";
+_png_handle_zTXt() = "55 8B EC 51 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_info_destroy() = "55 8B EC 56 8B 75 08 6A FF";
+_png_info_init_3() = "55 8B EC 56 8B 75 08 8B 06 85";
+_png_init_read_transformations() = "55 8B EC 83 EC 14 53 56 8B 75 08 57 8B ? ? ? ? ? 85";
+_png_longjmp() = "55 8B EC 8B 45 08 85 C0 74 10";
+_png_malloc() = "55 8B EC 56 8B 75 08 85 F6 74 2E 8B 45";
+_png_malloc_default() = "55 8B EC 83 7D 08 00 74 12";
+_png_malloc_warn() = "55 8B EC 57 8B 7D 08 85 FF 75 05";
+_png_muldiv() = "55 8B EC 8B 45 14 83 EC 08";
+_png_read_chunk_header() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 56 57";
+_png_read_data() = "55 8B EC 8B 45 08 8B 48 54";
+_png_read_destroy() = "55 8B EC 8B 45 0C 83 EC 40";
+_png_read_end() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 6A";
+_png_read_filter_row() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 09";
+_png_read_finish_row() = "55 8B EC 51 56 8B 75 08 FF ? ? ? ? ? 8B ? ? ? ? ? 3B ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 53 57 0F ? ? ? ? ? 8B";
+_png_read_image() = "55 8B EC 51 57 8B 7D 08 85 FF 0F ? ? ? ? ? F6";
+_png_read_info() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B 45 0C";
+_png_read_row() = "55 8B EC 83 EC 14 A1 ? ? ? ? 33";
+_png_read_sig() = "55 8B EC 51 53 57 8B 7D 08 8A";
+_png_read_start_row() = "55 8B EC 56 57 8B 7D 08 57 C7";
+_png_read_transform_info() = "55 8B EC 8B 55 08 8B 4D 0C F7";
+_png_read_update_info() = "55 8B EC 56 8B 75 08 85 F6 74 12";
+_png_reciprocal() = "55 8B EC 83 EC 08 66 ? ? ? ? 83 EC 08 F2";
+_png_reciprocal2() = "55 8B EC 83 EC 08 66 ? ? ? ? 83 EC 08 F2 ? ? ? ? ? ? ? F3 0F E6 C0 F2 0F 5E C8 66";
+_png_reset_crc() = "55 8B EC 6A 00 6A 00 6A 00 E8";
+_png_safecat() = "55 8B EC 8B 45 10 56 8B 75 08 85";
+_png_save_int_32() = "55 8B EC 8B 55 0C 8B C2 8B";
+_png_save_uint_32() = "55 8B EC 8B 55 0C 8B C2 8B 4D 08 C1 E8";
+_png_set_IHDR() = "55 8B EC 83 7D 08 00 0F";
+_png_set_PLTE() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 57";
+_png_set_add_alpha() = "55 8B EC 56 8B 75 08 85 F6 74 16";
+_png_set_bKGD() = "55 8B EC 83 7D 08 00 74 1F";
+_png_set_cHRM_fixed() = "55 8B EC 8B 45 08 85 C0 74 7A";
+_png_set_error_fn() = "55 8B EC 8B 4D 08 85 C9 74 12";
+_png_set_filler() = "55 8B EC 8B 4D 08 85 C9 74 4D";
+_png_set_gAMA_fixed() = "55 8B EC 8B 55 08 85 D2 74 2E";
+_png_set_gray_to_rgb() = "55 8B EC 56 8B 75 08 85 F6 74 14";
+_png_set_hIST() = "55 8B EC 57 8B 7D 08 85 FF 0F ? ? ? ? ? 56 8B 75 0C 85 F6 0F ? ? ? ? ? 0F";
+_png_set_iCCP() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 57 8B 7D 0C 85 FF 0F";
+_png_set_interlace_handling() = "55 8B EC 8B 45 08 85 C0 74 14 80 ? ? ? ? ? ? 74";
+_png_set_longjmp_fn() = "55 8B EC 8B 45 08 85 C0 74 0E 83";
+_png_set_mem_fn() = "55 8B EC 8B 4D 08 85 C9 74 1B";
+_png_set_oFFs() = "55 8B EC 83 7D 08 00 74 20";
+_png_set_pCAL() = "55 8B EC 51 57 8B 7D 08 85 FF 0F ? ? ? ? ? 53";
+_png_set_pHYs() = "55 8B EC 83 7D 08 00 74 20 8B 4D 0C 85 C9 74 19 8B 45 10 81 ? ? ? ? ? ? 89 41 70";
+_png_set_read_fn() = "55 8B EC 56 8B 75 08 85 F6 74 3B";
+_png_set_sBIT() = "55 8B EC 83 7D 08 00 74 19";
+_png_set_sCAL_s() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 83";
+_png_set_sPLT() = "55 8B EC 83 EC 08 53 8B 5D 08 85";
+_png_set_sRGB() = "55 8B EC 83 7D 08 00 74 14";
+_png_set_sRGB_gAMA_and_cHRM() = "55 8B EC 56 8B 75 08 85 F6 74 51";
+_png_set_strip_16() = "55 8B EC 8B 45 08 85 C0 74 07";
+_png_set_tIME() = "55 8B EC 8B 45 08 85 C0 74 62";
+_png_set_tRNS() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 56 8B 75 0C 85 F6 0F ? ? ? ? ? 83";
+_png_set_text_2() = "55 8B EC 8B 55 08 83 EC 18 53";
+_png_set_unknown_chunks() = "55 8B EC 51 53 8B 5D 08 85 DB 0F";
+_png_sig_cmp() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 10";
+_png_start_read_image() = "55 8B EC 8B 45 08 85 C0 74 09";
+_png_user_version_check() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56";
+_png_warning() = "55 8B EC 8B 55 08 33 C0 8B";
+_png_warning_parameter() = "55 8B EC 8B 4D 0C 8D";
+_png_warning_parameter_signed() = "55 8B EC 83 EC 1C A1 ? ? ? ? 33";
+_png_warning_parameter_unsigned() = "55 8B EC 83 EC 1C A1 ? ? ? ? 33 C5 89 45 FC 8B 45";
+_png_zalloc() = "55 8B EC 83 C8 FF 8B 4D 0C 33 D2 F7 75 10 53";
+_pow_scalar() = "60 8B C4 83";
+_printf() = "55 8B EC 51 8D 45 0C";
+_qsort() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B";
+_rand() = "68 ? ? ? ? 6A 00 FF ? ? ? ? ? 83 C4";
+_rt_probe_read4(x) = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 83";
+_seh_longjmp_unwind4(x) = "55 FF 74 24 08";
+_sscanf() = "55 8B EC 83 E4 F8 8D 45 10";
+_strchr() = "83 ? ? ? ? ? ? 72 5F 0F";
+_strrchr() = "55 8B EC 57 83";
+_strstr() = "8B 4C 24 08 8B 44 24 04";
+_swscanf_s() = "55 8B EC 8D 45 10 50";
+_tr_init() = "8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? 8D ? ? ? ? ? 89";
+_unexpected() = "56 E8 ? ? ? ? 8B 70 04";
+_wcschr() = "53 8B DC 51";
+_wcsstr() = "53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83";
+_zcalloc() = "55 8B EC 8B 45 0C 0F AF";
+add_huff_table() = "55 8B EC 51 53 56 8B F2 8B D9 89 75 FC 83";
+alloc_barray() = "55 8B EC 83 EC 08 53 8B 5D 10 33";
+alloc_fs_workspace() = "55 8B EC 51 53 56 8B F1 33 DB 57 8B";
+alloc_funny_pointers() = "55 8B EC 83 EC 10 53 56 8B F1 57 8B 46";
+alloc_large() = "55 8B EC 51 53 56 8B 75 08 57 8B 7D";
+alloc_sarray() = "55 8B EC 51 53 8B 5D 08 33 D2 56 57";
+alloc_small() = "55 8B EC 53 8B 5D 10 56 8B 75";
+arith_decode() = "55 8B EC 83 EC 08 53 56 8B F1 57 8B FA 89 7D";
+arith_encode() = "55 8B EC 83 EC 08 8B C2 53";
+bi_flush() = "56 8B F1 8B ? ? ? ? ? 83 F8 10";
+bi_windup() = "56 8B F1 8B ? ? ? ? ? 83 F8 08";
+bool CMsgGCMsgSetOptions_Option_IsValid(int) = "55 8B EC 83 7D 08 03 0F";
+bool UseHWMorphVCDs(void) = "8B ? ? ? ? ? 81 ? ? ? ? ? 75 0F A1 ? ? ? ? 8B D0 81 ? ? ? ? ? EB 12 8B 01 FF 50 34 8B ? ? ? ? ? 8B D0 A1 ? ? ? ? 85 D2 75";
+bool VGui_IsSplitScreenPIP(void) = "83 ? ? ? ? ? ? 7C 2A 8B ? ? ? ? ? 81";
+bool __MsgFunc_Fade(class CCSUsrMsg_Fade const near &) = "55 8B EC 83 EC 0C 8B 4D 08 8B";
+bool __MsgFunc_Shake(class CCSUsrMsg_Shake const near &) = "55 8B EC 83 EC 1C 8B 4D";
+bool lessFunc(int const near &,int const near &) = "55 8B EC 8B 45 08 8B 08";
+build_bl_tree() = "56 8B F1 FF ? ? ? ? ? 8D ? ? ? ? ? E8";
+build_tree() = "55 8B EC 83 EC 10 8B C2";
+build_ycc_rgb_table() = "55 8B EC 83 EC 08 53 56 8B F1 57 68";
+build_ycc_rgb_table_0() = "55 8B EC 83 EC 08 53 56 8B F1 57 68 ? ? ? ? 6A 01 8B 46 04 8B ? ? ? ? ? 56 8B 00 FF D0 89 47 08";
+cc_dump_particlemanifest() = "56 57 8B ? ? ? ? ? 68 ? ? ? ? FF D7 8B";
+cc_emit() = "55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68";
+cc_findsound() = "55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 85 C0 74 18";
+cc_random() = "55 8B EC 56 57 8B 7D 08 BE";
+char near * ParseFile(char near *,char near *,bool near *) = "55 8B EC 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 83";
+cl_dumpsplithacks() = "8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F";
+cl_predictioncopy_describe() = "55 8B EC 83 EC 0C 53 8D";
+cl_predictioncopy_describe() = "55 8B EC 8B 4D 08 8B 01 83 F8 01 7F";
+cl_reloadpostprocessparams() = "55 8B EC 8B 45 08 B9 ? ? ? ? 83 38 02 75";
+cl_sos_test_get_opvar() = "55 8B EC 56 8B 75 08 8B 06 83 F8 02";
+cl_soundemitter_flush() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 0C 8B";
+class IGameResources near * GameResources(void) = "A1 ? ? ? ? 85 C0 74 06";
+cmyk_ycck_convert() = "55 8B EC 83 EC 1C 83 6D";
+color_quantize() = "55 8B EC 83 EC 0C 83 7D 14";
+color_quantize3() = "55 8B EC 83 EC 0C 83 7D 14 00 8B 4D 08 8B";
+common_fseek() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 33";
+common_fseek_binary_mode_read_only_fast_track_nolock() = "8B FF 55 8B EC 83 7D";
+common_fseek_nolock() = "8B FF 55 8B EC 8B 45 08 8B 40";
+common_fsopen_char_() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 33 C0";
+common_get_or_create_environment_nolock_char_() = "A1 ? ? ? ? 85 C0 75 25 39";
+common_strtod_l_float_char_() = "8B FF 55 8B EC 83 EC 18";
+common_vsprintf_s_char_() = "8B FF 55 8B EC 83 7D 18";
+common_vsscanf_char_() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 57";
+common_vsscanf_wchar_t_() = "8B FF 55 8B EC 83 EC 7C";
+compress_block() = "55 8B EC 83 EC 14 53 56 8B F1 89";
+compress_block() = "55 8B EC 83 EC 14 53 8B DA 8B";
+compress_data() = "55 8B EC 83 EC 30 8B 55 08";
+compress_first_pass() = "55 8B EC 83 EC 2C 53 56 57 8B 7D 08 33";
+compress_output() = "55 8B EC 83 EC 34 53 56 8B 75 08 57 33 FF 8B ? ? ? ? ? 89 5D FC 39 ? ? ? ? ? 7E 46";
+compute_color() = "55 8B EC 83 EC 3C 8B C1";
+consume_data() = "55 8B EC 83 EC 34 53 56 8B 75 08";
+consume_markers() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F";
+copy_block() = "55 8B EC 51 53 56 57 89 55 FC 8B F1";
+crc32_little() = "55 8B EC 51 53 57 8B 7D 08 8B DA";
+create_colorindex() = "55 8B EC 83 EC 1C 53 56 57 8B F9 89 7D E8";
+create_colormap() = "55 8B EC 83 EC 2C 53 56 8B F1 57";
+create_context_buffer() = "55 8B EC 83 EC 28 53 8B D9 56 57 89";
+decode_mcu() = "55 8B EC 83 EC 48 8B 45";
+decode_mcu_0() = "55 8B EC 83 EC 24 53 8B 5D 08 83";
+decode_mcu_AC_first() = "55 8B EC 83 EC 38 8B 45 08 53 83";
+decode_mcu_AC_refine() = "55 8B EC 81 ? ? ? ? ? 53 57 8B 7D 08 83";
+decode_mcu_DC_first() = "55 8B EC 83 EC 3C 53 8B 5D 08";
+decode_mcu_DC_first_0() = "55 8B EC 83 EC 1C 53 57";
+decode_mcu_DC_refine() = "55 8B EC 83 EC 1C 56 57 8B 7D 08 B8";
+decode_mcu_DC_refine_0() = "55 8B EC 53 56 57 8B 7D 08 83";
+decode_mcu_sub() = "55 8B EC 83 EC 50 8B 4D 08 53 83";
+decompress_data() = "55 8B EC 83 EC 24 8B 55";
+decompress_onepass() = "55 8B EC 83 EC 3C 8B 4D";
+decompress_smooth_data() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 57 8B ? ? ? ? ? 8B";
+default_decompress_parms() = "56 8B F1 8B 46 24 83 E8 01";
+default_hex() = "53 8B D9 85 DB 79";
+deflateEnd() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B 46";
+deflateInit2_() = "55 8B EC 51 8B 45 20";
+deflate_fast() = "55 8B EC 53 56 8B 75 08 57 8B 5D";
+deflate_slow() = "55 8B EC 83 EC 08 53 56 8B 75 08 57 8B 5D";
+deflate_stored() = "55 8B EC 53 56 8B 75 08 BB ? ? ? ? 57 8B 46";
+detect_data_type() = "56 57 8B F9 B8 ? ? ? ? 33";
+dllmain_crt_dispatch() = "55 8B EC 8B 45 0C 83 E8 00 74 33";
+dllmain_crt_process_attach() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 6A";
+dllmain_crt_process_detach() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? A1";
+dllmain_dispatch() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 8B 7D";
+dllmain_raw() = "55 8B EC 56 8B ? ? ? ? ? 85 F6 75 05";
+do_barray_io() = "55 8B EC 83 EC 0C 53 56 57 8B FA 89 4D FC 33 DB 8B 47 08 8B 57 18 8B 77 10 C1";
+do_sarray_io() = "55 8B EC 83 EC 0C 53 56 57 8B FA 89";
+drawtextfields() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? A1 ? ? ? ? 56 57 8B F9 B9 ? ? ? ? 8B 40 34 89 7C";
+emit_2bytes() = "53 56 8B F1 8B DA 57 8B CB";
+emit_adobe_app14() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 41";
+emit_bits_e() = "55 8B EC 83 EC 08 53 8B 5D 08 89 55";
+emit_bits_s() = "55 8B EC 51 8B 45 08 89 55";
+emit_dac() = "55 8B EC 83 EC 20 53 56 8B F1";
+emit_dht() = "55 8B EC 83 EC 08 80 7D 08 00 56";
+emit_eobrun() = "57 8B F9 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 56";
+emit_jfif_app0() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 4A";
+emit_marker() = "53 56 8B F1 8B DA 8B 4E";
+emit_message() = "55 8B EC 8B 45 08 8B 4D 0C 56";
+emit_pseudo_sos() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA";
+emit_restart() = "55 8B EC 83 EC 0C 53 56 8B F1 8B DA";
+emit_restart_s() = "53 56 8B DA 8B F1 6A";
+emit_sof() = "53 56 57 8B F1 E8 ? ? ? ? 8B 46";
+emit_sos() = "55 8B EC 51 56 BA";
+encode_mcu() = "55 8B EC 83 EC 28 53 8B 5D 08 57";
+encode_mcu_AC_first() = "55 8B EC 83 EC 24 53 8B 5D 08 56";
+encode_mcu_AC_first_0() = "55 8B EC 83 EC 1C 56 57 8B 7D 08 8B 47";
+encode_mcu_AC_refine() = "55 8B EC 83 EC 14 53 56 8B 75 08 57 83";
+encode_mcu_DC_first() = "55 8B EC 83 EC 1C 53 8B 5D 08 56 83 ? ? ? ? ? ? 8B ? ? ? ? ? 89 75 E8";
+encode_mcu_DC_first_0() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B 43";
+encode_mcu_DC_refine() = "55 8B EC 56 8B 75 08 57 83";
+encode_mcu_DC_refine_0() = "55 8B EC 56 57 8B 7D 08 8B 47 18";
+encode_mcu_huff() = "55 8B EC 83 EC 28 56 57 8B 7D 08 89";
+encode_one_block() = "55 8B EC 83 EC 10 53 8B D9 89 55 F4";
+error_exit() = "55 8B EC 56 8B 75 08 56 8B";
+examine_app0() = "55 8B EC 53 8B 5D 0C 56 8B F1 8B 4D";
+examine_app14() = "55 8B EC 83 EC 08 53 8B D9 89 55";
+expand_right_edge() = "55 8B EC 83 EC 08 53 8B 5D 0C 56 8B F1";
+fFMOD() = "D9 C9 D9 F8";
+fill_input_buffer() = "55 8B EC 56 57 8B 7D 08 8B 77";
+fill_inverse_cmap() = "55 8B EC 81 ? ? ? ? ? 53 56 57 89 4D FC 8B";
+fill_window() = "55 8B EC 83 EC 08 53 56 57 8B F9 8B 77";
+find_best_colors() = "55 8B EC 81 ? ? ? ? ? 56 8B F2 B8";
+find_nearby_colors() = "55 8B EC 81 ? ? ? ? ? 53 8B 59";
+find_pe_section() = "55 8B EC 8B 45 08 56 8B 48";
+finish_input_pass() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? 5D";
+finish_output_pass() = "55 8B EC 8B 4D 08 56 80";
+finish_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 48";
+finish_pass1() = "55 8B EC 8B 4D 08 56 8B ? ? ? ? ? 8B 46";
+finish_pass_gather() = "55 8B EC 83 EC 10 53 56 8B 75 08 80";
+finish_pass_huff() = "55 8B EC 83 EC 24 56 8B 75";
+finish_pass_master() = "55 8B EC 56 57 8B 7D 08 57 8B";
+first_marker() = "55 8B EC 83 EC 0C 8B C1 53 56";
+format_message() = "55 8B EC 8B 45 08 56 8B 10 8B 4A";
+forward_DCT() = "55 8B EC 81 ? ? ? ? ? 83 7D 20";
+forward_DCT_float() = "55 8B EC 81 ? ? ? ? ? 83 7D 20 00 8B 45 08 8B 55 0C 53";
+free_pool() = "55 8B EC 53 56 8B 75 0C 57 8B 7D 08 8B 5F";
+fullsize_downsample() = "55 8B EC 51 8B 4D 08 8B 45";
+fullsize_smooth_downsample() = "55 8B EC 83 EC 1C 8B 45 0C 53 8B 5D 08 56 8B";
+fullsize_upsample() = "55 8B EC 8B 4D 14 8B 45 10 89";
+g15_reload() = "FF ? ? ? ? ? 68 ? ? ? ? 8B C8 8B 10 FF 52 2C 85 C0 75";
+gameinstructor_reload_lessons() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 0C";
+gen_bitlen() = "55 8B EC 83 EC 34 8B 42 04";
+gen_codes() = "55 8B EC 83 EC 24 53 56 8B D9 89";
+get_dac() = "55 8B EC 83 EC 10 53 56 8B F1 57 8B 5E";
+get_dht() = "55 8B EC 81 ? ? ? ? ? 53 8B C1 56";
+get_dqt() = "55 8B EC 83 EC 28 8B C1 53";
+get_dri() = "55 8B EC 83 EC 08 8B C1 53 56 57";
+get_interesting_appn() = "55 8B EC 8B 45 08 83 EC 1C 53 8B 58";
+get_sof() = "55 8B EC 51 8A 45 08";
+get_soi() = "56 8B F1 6A 01 56";
+get_sos() = "55 8B EC 83 EC 1C 53 56 8B F1 57 8B 4E";
+getpos() = "55 8B EC 83 E4 C0 83 EC 34 8D";
+google::protobuf::_anonymous_namespace_::DeleteGeneratedPool() = "8B ? ? ? ? ? 85 C9 74 06 8B 01 6A 01 FF 10 56 8B";
+google::protobuf::_anonymous_namespace_::FieldSpaceUsed() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 50 8D 45 F4 64 ? ? ? ? ? 8B";
+google::protobuf::_anonymous_namespace_::FormatLineOptions() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75";
+google::protobuf::_anonymous_namespace_::RetrieveOptions() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 5D 10";
+google::protobuf::_anonymous_namespace_::ToCamelCase() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 08 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? C7";
+google::protobuf::internal::SubMessagePrefix() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 24 A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75";
+google::protobuf::internal::ValidateEnumUsingDescriptor() = "55 8B EC FF 75 0C 8B 4D 08 E8 ? ? ? ? F7";
+google::protobuf::internal::_anonymous_namespace_::Register() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 78 A1 ? ? ? ? 33 C5 89 45 F0 56";
+google::protobuf::io::AppendUTF8() = "55 8B EC 51 8B 55 08 C7";
+google::protobuf::io::FetchUnicodePoint() = "55 8B EC 83 EC 08 8B 45 0C 53 8B 5D 08 C7";
+google::protobuf::io::ReadHexDigits() = "55 8B EC 8B 45 0C 56 8B 75 10 C7";
+google::protobuf::io::Tokenizer::NextChar() = "8B D1 8A 42";
+google::protobuf::io::_anonymous_namespace_::DigitValue() = "55 8B EC 8A 4D 08 8D";
+google::protobuf::io::_anonymous_namespace_::TranslateEscape() = "55 8B EC 0F BE 45";
+gray_rgb_convert() = "55 8B EC 8B 45 08 53 8B 5D 18";
+grayscale_convert() = "55 8B EC 51 8B 45 08 53 8B 5D 18";
+grayscale_convert_0() = "55 8B EC 8B 45 08 53 56 8B 75 18";
+h2v1_downsample() = "55 8B EC 51 8B 45 0C 53 8B 5D 10";
+h2v1_merged_upsample() = "55 8B EC 83 EC 1C 53 8B 5D 08 56 57 8B ? ? ? ? ? 8B";
+h2v1_upsample() = "55 8B EC 8B 4D 08 8B 45 14";
+h2v2_downsample() = "55 8B EC 83 EC 0C 8B 45 0C 8B";
+h2v2_merged_upsample() = "55 8B EC 83 EC 28 53 8B 5D 08 56";
+h2v2_smooth_downsample() = "55 8B EC 83 EC 24 8B 45 0C";
+h2v2_upsample() = "55 8B EC 8B 45 14 53 8B 5D 08 57";
+headshot_skull_get() = "55 8B EC 8B 4D 0C 83 F9";
+hidepanel() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 15 8B 55 08 83 3A 02 75 0D 8B 01 6A 00";
+inflateEnd() = "55 8B EC 56 8B 75 08 85 F6 74 38";
+inflate_blocks() = "55 8B EC 83 EC 10 53 56 8B 75 10";
+inflate_trees_dynamic() = "55 8B EC 83 EC 10 53 56 8B 75 20";
+init_block() = "8D ? ? ? ? ? BA ? ? ? ? 56";
+init_destination() = "55 8B EC 8B 4D 08 56 68";
+init_error_limit() = "8B 41 04 56 8B ? ? ? ? ? 57";
+init_source() = "55 8B EC 8B 45 08 8B 40 18";
+initial_setup() = "55 8B EC 83 EC 08 56 8B F1 81";
+initial_setup_0() = "55 8B EC 83 EC 18 53 56 8B F1 57 89";
+initialize_pointers() = "56 68 ? ? ? ? FF ? ? ? ? ? 8B F0";
+int AfxOleRegisterServerClass() = "55 8B EC 6A 00 FF 75 28";
+int CryptoPP::Baseline_Add() = "57 56 8B 44";
+int CryptoPP::Baseline_Sub() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 F7 ? ? ? ? ? 74 05 83 E9 02 EB 17 E3 32 8B 34 88 1B";
+int CryptoPP::SSE2_Add() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F";
+int CryptoPP::SSE2_Sub() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F EF D2 74 73 F7 ? ? ? ? ? 74 05 83 E9 02 EB 2F 0F 6E 04 88 0F 6E 0C 8F 0F FB";
+int GetSIMDRandContext(void) = "56 57 8B ? ? ? ? ? 0F ? ? ? ? ? ? ? 33 F6";
+int Scaleform::SFstrcmp() = "8A 01 3A 02 75 19";
+int_downsample() = "55 8B EC 83 EC 2C 8B 45 0C 53 56 57 8B";
+int_upsample() = "55 8B EC 83 EC 14 8B 45 14";
+jpeg_fill_bit_buffer() = "55 8B EC 83 EC 0C 8B C1 89 55";
+jpeg_gen_optimal_table() = "55 8B EC 81 ? ? ? ? ? 53 57 68 ? ? ? ? 0F";
+jpeg_huff_decode() = "55 8B EC 53 8B 5D 10 57 8B F9 8B 4D 08";
+jpeg_make_c_derived_tbl() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A C2 88 45 FF 8B D9 57";
+jpeg_make_d_derived_tbl() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A";
+judeg_str() = "55 8B EC 8B 4D 10 85 C9 75";
+latch_quant_tables() = "55 8B EC 83 EC 0C 53 8B D9 33 C0";
+lm_init() = "55 8B EC 56 57 8B FA";
+lm_init() = "56 8B F1 33 C9 8B";
+long LongLongSub(__int64,__int64,__int64 near *) = "8B FF 55 8B EC 53 56 8B 75 08 2B";
+longest_match() = "55 8B EC 83 EC 28 53 56 8B F1 8B";
+make_funny_pointers() = "55 8B EC 83 EC 2C 53 8B D9 57";
+master_selection() = "56 8B F1 57 8B ? ? ? ? ? E8 ? ? ? ? 8B CE";
+median_cut() = "55 8B EC 83 EC 10 53 8B C2";
+memcpy_s() = "55 8B EC 56 8B 75 0C 57 8B FA";
+memcpy_s() = "8B FF 55 8B EC 56 8B 75 14 85 F6 75";
+memcpy_s_0() = "56 8B 74 24 14 85";
+menuselect() = "55 8B EC 8B 4D 08 8B 01 83 F8 02 0F";
+merged_1v_upsample() = "55 8B EC 8B 45 18 8B";
+merged_2v_upsample() = "55 8B EC 8B 4D 1C";
+new_color_map_1_quant() = "55 8B EC 8B 4D 08 8B 01 C7 ? ? ? ? ? ? 8B 01 89";
+new_color_map_2_quant() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C6 40";
+noop_upsample() = "55 8B EC 8B 45 14 C7";
+null_convert() = "55 8B EC 83 EC 08 8B 45 08 8B 55";
+null_convert_0() = "55 8B EC 51 8B 45 08 8B 55";
+output_message() = "55 8B EC 8B 45 08 8D ? ? ? ? ? 81 ? ? ? ? ? 8B";
+pass2_fs_dither() = "55 8B EC 83 EC 6C 83";
+pass_startup() = "55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C6";
+per_scan_setup() = "55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8";
+per_scan_setup_0() = "55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8 01 75 64";
+physics_run_think() = "55 8B EC 83 EC 10 53 56 57 8B F9 8B";
+pixelvis_debug() = "0F ? ? ? ? ? ? 8D 0C 80 A1 ? ? ? ? 0F ? ? ? ? 50";
+post_process_1pass() = "55 8B EC 8B 4D 20";
+post_process_2pass() = "55 8B EC 51 8B 55 08 53 56 57 8B";
+post_process_prepass() = "55 8B EC 53 8B 5D 08 56 57 8B ? ? ? ? ? 83";
+pre_process_context() = "55 8B EC 83 EC 1C 8B 4D 20";
+pre_process_data() = "55 8B EC 83 EC 1C 8B 55 10";
+prepare_for_output_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F 08";
+prepare_for_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 83";
+prepare_range_limit_table() = "53 8B D9 56 57 68 ? ? ? ? 8B 43";
+prescan_quantize() = "55 8B EC 8B 4D 08 53";
+print_achievement_categories() = "55 8B EC 83 EC 08 53 8B ? ? ? ? ? 33";
+print_mapgroup() = "8B ? ? ? ? ? 53 56 57 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B";
+private: UGCFileRequest_t::UGCFileRequest_t(void) = "56 8B F1 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+private: bool CUtlStreamBuffer::StreamGetOverflow(int) = "55 8B EC 56 8B F1 80 7E 14 00 0F ? ? ? ? ? F6 46 15 08 0F ? ? ? ? ? 83";
+private: bool CUtlStreamBuffer::StreamPutOverflow(int) = "55 8B EC 56 8B F1 80 7E 14 00 0F";
+private: bool C_EnvProjectedTexture::IsBBoxVisible(void) = "55 8B EC 83 EC 34 56 8B F1";
+private: bool C_RopeKeyframe::AnyPointsMoved(void) = "56 57 8B ? ? ? ? ? 33 D2 85";
+private: bool GameTypes::LoadMaps(class KeyValues near *) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 39";
+private: float CountdownTimer::Now(void)const = "A1 ? ? ? ? D9 40";
+private: int CRestore::ReadSimple<bool>(bool near *,int,int) = "55 8B EC 51 56 57 8B 7D 10";
+private: int CSave::DataEmpty(char const near *,int) = "55 8B EC 8B 45 0C 8B 4D 08 83";
+private: int CUtlSymbolTable::FindPoolWithSpace(int)const = "55 8B EC 53 56 57 8B 79";
+private: int vgui::TextEntry::GetCurrentLineStart(void) = "80 ? ? ? ? ? ? 75 07 8B ? ? ? ? ? C3";
+private: int vgui::TextEntry::GetCursorLine(void) = "56 8B F1 33 C0 8B ? ? ? ? ? 85 C9 7E";
+private: static class DName UnDecorator::getBasedType(void) = "55 8B EC 83 EC 10 6A 00 E8";
+private: static class DName UnDecorator::getDimension(bool) = "55 8B EC 8B ? ? ? ? ? 83 EC 18 56 33";
+private: static class DName UnDecorator::getEnumType(void) = "55 8B EC 83 EC 18 A1 ? ? ? ? 83";
+private: static class DName UnDecorator::getScope(void) = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 C6";
+private: static class DName UnDecorator::getScopedName(void) = "55 8B EC 83 EC 18 53 56 8B 75 08 33 DB 57";
+private: static class DName UnDecorator::getSymbolName(void) = "55 8B EC A1 ? ? ? ? 80";
+private: static class DName UnDecorator::getThisType(void) = "55 8B EC 83 EC 10 83 65";
+private: static class DName UnDecorator::getThrowTypes(void) = "55 8B EC A1 ? ? ? ? 83 EC 18 8A 08 84 C9 74";
+private: static class DName UnDecorator::getZName(bool,bool) = "55 8B EC 83 EC 3C A1 ? ? ? ? 33";
+private: static int UnDecorator::getNumberOfDimensions(void) = "8B ? ? ? ? ? 8A 01 84 C0 75 03";
+private: static int UnDecorator::getTypeEncoding(void) = "55 8B EC 51 8B ? ? ? ? ? 53 56 57 6A";
+private: static void CryptoPP::OID::EncodeValue() = "83 EC 08 53 8B 5C";
+private: virtual bool ConVar::ClampValue(float near &) = "55 8B EC 80 79 34";
+private: virtual int PruneWorldListInfoJob::DoExecute(void) = "55 8B EC 83 EC 0C 8B ? ? ? ? ? 53 56 8B F1";
+private: virtual void CHudMenu::OnThink(void) = "80 ? ? ? ? ? ? 74 22 A1";
+private: virtual void CSOEconItem::SetCachedSize(int)const = "55 8B EC 8B 45 08 89 41 74";
+private: virtual void CSOItemRecipe::SetCachedSize(int)const = "55 8B EC 8B 45 08 89 41 70";
+private: virtual void CViewEffects::ClearAllShakes(void) = "53 56 8B F1 57 33 FF 8B 5E";
+private: virtual void ConVar::InternalSetFloatValue(float) = "55 8B EC 83 EC 28 56 8B F1 F3 ? ? ? ? F3 ? ? ? ? 31";
+private: virtual void ConVar::InternalSetIntValue(int) = "55 8B EC 83 EC 28 56 8B F1 57 8B";
+private: virtual void vgui::Panel::InternalMousePressed(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 18";
+private: virtual void vgui::Panel::Think(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 3B";
+private: virtual void vgui::RichText::MoveScrollBar(int) = "55 8B EC 8B 45 08 8B 11";
+private: virtual void vgui::TextEntry::OnSetState(int) = "55 8B EC 83 EC 40 8D 45 C0 56 FF";
+private: void CAchievementMgr::ClearAchievementData(int) = "55 8B EC 56 57 8B 7D 08 33";
+private: void CBaseEntityList::RemoveEntityAtSlot(int) = "55 8B EC 53 8B 5D 08 8B C3 56 57";
+private: void CBitmapImagePanel::forceUpload(void) = "56 8B F1 80 ? ? ? ? ? ? 57";
+private: void CCSUsrMsg_VoteStart::SharedDtor(void) = "56 57 8B F9 8B 77 10 81";
+private: void CClientShadowMgr::DestroyQueuedShadows(void) = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 1D";
+private: void CClientSteamContext::UpdateLoggedOnState(void) = "55 8B EC 83 EC 0C 53 56 8B F1 8B";
+private: void CDetailObjectSystem::FreeSortBuffers(void) = "56 8B F1 8B ? ? ? ? ? 85 D2 74 1C";
+private: void CEconItemAttribute::Init(void) = "55 8B EC 83 EC 08 53 56 8B F1 BB";
+private: void CFPSPanel::InitAverages(void) = "56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7";
+private: void CGameTimescale::UpdateTimescale(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B";
+private: void CHLClient::UncacheAllMaterials(void) = "53 8B D9 56 57 BE";
+private: void CHudCloseCaption::ClearAsyncWork(void) = "53 8B D9 56 0F";
+private: void CHudCloseCaption::CreateFonts(void) = "53 56 57 8B ? ? ? ? ? 8B D9 68";
+private: void CHudMessage::PaintCharacters(void) = "55 8B EC 83 EC 18 53 57";
+private: void CMovieDisplayScreen::UpdateMovie(void) = "56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? B8 ? ? ? ? 66 ? ? ? ? ? ? 0F";
+private: void CMsgGCHUpdateSession::SharedCtor(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 14";
+private: void CMsgGC_ServerQuestUpdateData::SharedDtor(void) = "56 57 8B F9 8B 77 18 81";
+private: void CNetGraphPanel::ComputeNetgraphHeight(void) = "56 8B F1 8B ? ? ? ? ? 57 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 89";
+private: void CNewGameDialog::ShiftPanelIndices(int) = "55 8B EC 83 7D 08 00 56 57 8B F1";
+private: void COptionsSubKeyboard::Finish(enum ButtonCode_t) = "55 8B EC 53 56 8B F1 57 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B";
+private: void COptionsSubVoice::EndTestMicrophone(void) = "56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B";
+private: void COptionsSubVoice::ResetVoiceParameters(void) = "55 8B EC 83 EC 08 56 8B F1 51";
+private: void CParticleCollection::LabelTextureUsage(void) = "56 8B F1 8B 4E 48 85 C9 74 5B";
+private: void CParticleEffectBinding::Term(void) = "55 8B EC 83 EC 0C 56 8B F1 83 ? ? ? ? ? ? 0F";
+private: void CParticleSystemMgr::InitAttributeTable(void) = "56 57 68 ? ? ? ? 6A 00 68";
+private: void CPerfVisualBenchmark::Print(void) = "55 8B EC 83 EC 10 53 57 8B F9 C7";
+private: void CSVCMsg_GameEvent::SharedDtor(void) = "56 8B 71 08 81";
+private: void CSVCMsg_VoiceData::SharedDtor(void) = "56 8B 71 18 81";
+private: void CSave::BufferData(char const near *,int) = "55 8B EC 53 8B D9 56 8B 73";
+private: void CSaveGameBrowserDialog::ShiftPanelIndices(int) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 57";
+private: void CTextureAllocator::AddBlockToLRU(int) = "55 8B EC 51 8B 45 08 53 8B D9 56";
+private: void CVarBitVecBase<int>::ReallocInts(int) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 75 22";
+private: void CViewAngleAnimation::SetAngles(class QAngle) = "55 8B EC 83 EC 14 56 8B F1 F6";
+private: void CViewEffects::ClearAllTilts(void) = "53 56 8B F1 57 33 FF 8B 5E 50";
+private: void C_BaseAnimating::TermRopes(void) = "53 56 57 8B F9 BB ? ? ? ? 0F";
+private: void C_CSPlayer::UpdateFlashBangEffect(void) = "A1 ? ? ? ? 0F 57 D2 F3 ? ? ? ? ? ? ? F3";
+private: void C_GameInstructor::FindErrors(void) = "55 8B EC 83 EC 08 8B C1 33";
+private: void C_Inferno::RecomputeBounds(void) = "56 8B F1 8B 06 FF 50 28 F3 ? ? ? ? ? ? ? 8B CE F3 0F 10";
+private: void C_RopeKeyframe::FinishInit(char const near *) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 6A";
+private: void C_RopeKeyframe::UpdateHolidayLights(void) = "A1 ? ? ? ? B9 ? ? ? ? 8B 40 14 FF D0 84 C0 0F ? ? ? ? ? A1";
+private: void C_SporeTrail::AddParticles(void) = "55 8B EC 83 EC 0C 56 83";
+private: void C_SpriteTrail::ConvertSkybox(void) = "33 D2 39 ? ? ? ? ? 0F ? ? ? ? ? 66";
+private: void C_SpriteTrail::UpdateTrail(void) = "55 8B EC A1 ? ? ? ? 83 EC 10 56 8B F1 F3";
+private: void DName::append(class DNameNode near *) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 2E 6A";
+private: void DName::doPchar(char const near *,int) = "55 8B EC 56 8B F1 57 33 FF 39 3E";
+private: void KeyValues::RemoveEverything(void) = "56 57 8B F9 8B 4F 18 85";
+private: void google::protobuf::UnknownField::DeepCopy(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B";
+private: void google::protobuf::io::Tokenizer::Refresh(void) = "55 8B EC 51 56 8B F1 80 7E 68";
+private: void vgui::FileOpenDialog::BuildFileList(void) = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8D";
+private: void vgui::Frame::FinishClose(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 80";
+private: void vgui::Frame::SetupResizeCursors(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 8B ? ? ? ? ? 84 C0 8B";
+private: void vgui::ListViewPanel::FinishKeyPress(int) = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 6A 4F";
+private: void vgui::PropertySheet::ClearPageDropTab(void) = "56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 56";
+private: void vgui::RichText::GotoWordLeft(void) = "56 8B F1 8B ? ? ? ? ? 83 F8 01 7C";
+private: void vgui::RichText::GotoWordRight(void) = "56 8B F1 8B ? ? ? ? ? 40 89";
+private: void vgui::RichText::TruncateTextStream(void) = "56 8B F1 8B ? ? ? ? ? 83 F8 01 0F";
+private: void vgui::TextEntry::CalcBreakIndex(void) = "8B ? ? ? ? ? 3B ? ? ? ? ? 75 10 8B ? ? ? ? ? 83";
+private: void vgui::TextEntry::FlipToLastIME(void) = "56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 68";
+private: void vgui::URLButton::Init(void) = "56 8B F1 6A 00 6A 00 66";
+process_data_context_main() = "55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80 7F 30 00 75 25";
+process_data_crank_post() = "55 8B EC FF 75 14 8B 45";
+process_data_simple_main() = "55 8B EC 56 57 8B 7D 08 8B ? ? ? ? ? 8B 46";
+process_data_simple_main_0() = "55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80";
+process_restart() = "53 56 57 8B F9 57";
+process_restart_0() = "55 8B EC 83 EC 0C 53 56 8B F1 56";
+protected: CParticleCollection::CParticleCollection(void) = "55 8B EC 51 56 8B F1 68 ? ? ? ? 6A";
+protected: bool CCSPlayerAnimState::HandleJumping(void) = "55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 0F";
+protected: bool CUtlBuffer::CheckGet(int) = "55 8B EC 56 8B F1 8A 56 14";
+protected: bool CUtlBuffer::CheckPut(int) = "55 8B EC 56 8B F1 F6 46 14 01 75 2C";
+protected: int vgui::Menu::CountVisibleItems(void) = "55 8B EC 51 53 8B D1";
+protected: virtual C_ParticleSystem::~C_ParticleSystem(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 85";
+protected: virtual bool CGameMovement::InWater(void) = "8B 41 04 80 ? ? ? ? ? ? 0F";
+protected: virtual bool CHudSaveStatus::ShouldDraw(void) = "55 8B EC 83 EC 08 0F 57 C9 53";
+protected: virtual bool CHudSubtitles::ShouldDraw(void) = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 8B 01";
+protected: virtual bool CInput::JoyStickActive(void) = "56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 2C";
+protected: virtual bool vgui::TextEntry::DrawCursor(int,int) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 75";
+protected: virtual int vgui::ListPanel::GetStartItem(void) = "55 8B EC 51 56 57 8B F9 8B 07 8B";
+protected: virtual void CBaseViewport::Paint(void) = "8B ? ? ? ? ? 56 81 ? ? ? ? ? 75 0F 8B ? ? ? ? ? 8B C6 35 ? ? ? ? EB 11 8B 01 FF 50 34 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+protected: virtual void CBaseWorldView::PopView(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B";
+protected: virtual void CBaseWorldView::PushView(float) = "55 8B EC F3 ? ? ? ? 83 EC 08";
+protected: virtual void CCSGameMovement::PlayerMove(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? E8";
+protected: virtual void CGameMovement::AddGravity(void) = "55 8B EC 83 EC 14 0F";
+protected: virtual void CGameMovement::FinishGravity(void) = "55 8B EC 83 EC 08 0F 57 C9";
+protected: virtual void CGameMovement::FullLadderMove(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 46";
+protected: virtual void CGameMovement::FullTossMove(void) = "55 8B EC 81 ? ? ? ? ? 53 8B D9 C7";
+protected: virtual void CGameMovement::ReduceTimers(void) = "A1 ? ? ? ? 8B 51 04 56";
+protected: virtual void CGameMovement::StartGravity(void) = "55 8B EC 83 EC 14 56 57";
+protected: virtual void CHudHintDisplay::OnThink(void) = "55 8B EC 83 EC 08 53 8B D9 8D";
+protected: virtual void CHudSubtitles::Reset(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 0A";
+protected: virtual void CPanelListPanel::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+protected: virtual void ConCommandBase::Init(void) = "8B D1 8B ? ? ? ? ? 85 C9 74 05";
+protected: virtual void VideoPanel::OnVideoOver(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? C7";
+protected: virtual void vgui::BuildModeDialog::OnClose(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B 40 04";
+protected: virtual void vgui::Button::OnSetState(int) = "55 8B EC 83 7D 08 00 56 8B F1 0F";
+protected: virtual void vgui::CConsolePanel::OnThink(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF D0 84 C0 74 1C";
+protected: virtual void vgui::Frame::OnMinimize(void) = "8B 01 56 8B ? ? ? ? ? 57 6A 01 8B";
+protected: virtual void vgui::Frame::PaintBackground(void) = "55 8B EC 83 EC 0C 53 8B D9 56 89";
+protected: virtual void vgui::Image::DrawPrintChar(wchar_t) = "55 8B EC 8B ? ? ? ? ? 6A 00 FF 75 08 8B 01 FF 50 74";
+protected: virtual void vgui::Image::DrawSetTextPos(int,int) = "55 8B EC 8B 41 08 8B";
+protected: virtual void vgui::Image::SetSize(int,int) = "55 8B EC 8B 45 08 89 41 0C 8B";
+protected: virtual void vgui::ListPanel::OnSliderMoved(void) = "56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 5E";
+protected: virtual void vgui::Menu::AddScrollBar(void) = "56 8B F1 6A 01 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80";
+protected: virtual void vgui::Menu::OnHotKey(wchar_t) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 83 F8";
+protected: virtual void vgui::Menu::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 2E";
+protected: virtual void vgui::Menu::OnSliderMoved(void) = "56 6A 00 8B F1 E8 ? ? ? ? 8B";
+protected: virtual void vgui::Menu::OnTypeAhead(wchar_t) = "55 8B EC 81 ? ? ? ? ? 56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? FF";
+protected: virtual void vgui::Menu::RemoveScrollBar(void) = "56 8B F1 6A 00 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80";
+protected: virtual void vgui::MenuBar::OnMenuClose(void) = "8B 01 6A 00 FF 50 30 C3";
+protected: virtual void vgui::MenuBar::Paint(void) = "55 8B EC 83 EC 08 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 89";
+protected: virtual void vgui::Panel::OnStartDragging(void) = "57 8B F9 8B ? ? ? ? ? 6A 6B";
+protected: virtual void vgui::RichText::OnSliderMoved(void) = "8B 01 C6 ? ? ? ? ? ? FF 60";
+protected: virtual void vgui::RichText::OnThink(void) = "56 8B F1 80 ? ? ? ? ? ? 74 1D";
+protected: virtual void vgui::ScrollBar::OnSliderMoved(int) = "55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 5E";
+protected: virtual void vgui::ScrollBarSlider::Paint(void) = "55 8B EC 83 EC 0C 56 8B F1 8D 4D F4 51 8D";
+protected: virtual void vgui::Slider::DrawNob(void) = "55 8B EC 83 EC 14 53 56 8B D9 8D";
+protected: virtual void vgui::Slider::DrawTickLabels(void) = "55 8B EC 83 EC 18 56 8B F1 8D 4D F0";
+protected: virtual void vgui::Slider::DrawTicks(void) = "55 8B EC 83 EC 1C 53 56 8B D9 8D";
+protected: virtual void vgui::Slider::Paint(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06 8B CE 5E";
+protected: virtual void vgui::TextEntry::OnKeyTyped(wchar_t) = "55 8B EC 56 8B F1 57 8B 7D 08 57 8A";
+protected: virtual void vgui::TextEntry::PerformLayout(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 80";
+protected: virtual void vgui::TreeView::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 29";
+protected: virtual void vgui::TreeView::OnSliderMoved(int) = "56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B";
+protected: void CBaseAchievement::AwardAchievement(void) = "56 8B F1 8B 46 0C 8D 4E 0C 8B";
+protected: void CBaseAchievement::HandleProgressUpdate(void) = "56 8B F1 8B 4E 20 85";
+protected: void COptionsSubMouse::UpdateJoystickPanels(void) = "55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 8B";
+protected: void CRendering3dView::ReleaseLists(void) = "55 8B EC 51 53 56 8B F1 57 8B ? ? ? ? ? 85";
+protected: void CUtlBuffer::AddNullTermination(int) = "55 8B EC 56 8B F1 57 8B 7D 08 3B 7E 1C";
+protected: void CUtlBuffer::GetTypeBin<int>(int near &) = "55 8B EC 56 6A 04";
+protected: void CUtlBuffer::PutTypeBin<char>(char) = "55 8B EC 56 8B F1 F6 46 14 01 75";
+protected: void CUtlMemoryPool::AddNewBlob(void) = "53 8B D9 8B 43 08 83";
+protected: void C_Plasma::Update(void) = "55 8B EC A1 ? ? ? ? 83 EC 0C F3";
+protected: void C_Plasma::UpdateAnimation(void) = "55 8B EC 83 EC 0C A1 ? ? ? ? 53";
+protected: void SFMapOverview::UpdateGrenades(void) = "53 8B D9 57 33 FF 39 ? ? ? ? ? 7C";
+protected: void vgui::Menu::CalculateWidth(void) = "55 8B EC 83 EC 08 56 8B F1 F6";
+protected: void vgui::Menu::MoveAlongMenuItemList(int,int) = "55 8B EC 81 ? ? ? ? ? 57 8B F9 83";
+protected: void vgui::TextEntry::ScrollLeft(void) = "80 ? ? ? ? ? ? 75 39 80";
+public: AlternateIconData_t::~AlternateIconData_t(void) = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 38";
+public: AutoReleaseThreadContext::~AutoReleaseThreadContext() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 09 85";
+public: BMPResData_t::BMPResData_t(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 48";
+public: BaseModUI::CUIGameData::CUIGameData(void) = "55 8B EC 83 EC 10 53 56 8B F1 C7";
+public: BeamInfo_t::BeamInfo_t(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 70";
+public: CAchievement_Meta::CAchievement_Meta(void) = "55 8B EC 83 EC 20 56 8B F1 E8";
+public: CBaseAchievement::CBaseAchievement(void) = "C6 41 08 00 8B";
+public: CBasePlayerAnimState::CBasePlayerAnimState(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CBoneMergeCache::CBoneMergeCache(void) = "56 8B F1 0F 57";
+public: CCSMParallelSplit::CCSMParallelSplit(void) = "56 57 8B F9 8D 4F 40 C6";
+public: CCSUsrMsg_ResetHud::CCSUsrMsg_ResetHud(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C6 46 08 00 C7 ? ? ? ? ? ? 5E";
+public: CClientRenderablesList::CClientRenderablesList(void) = "C7 ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CCollisionProperty::CCollisionProperty(void) = "56 8B F1 33 C0 6A";
+public: CDescription::~CDescription(void) = "57 8B F9 8B 4F 04 C7";
+public: CEconItem::CEconItem(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? C7";
+public: CEconStyleInfo::CEconStyleInfo(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18";
+public: CEffectData::CEffectData(void) = "C7 ? ? ? ? ? ? 33 C0 C7";
+public: CEnvWindShared::CEnvWindShared(void) = "53 56 8B ? ? ? ? ? 57 8B F9 C7";
+public: CGlowOverlay::CGlowOverlay(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? ? ? ? C7";
+public: CHud::CHud(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 1C";
+public: CInput::PerUserInput_t::PerUserInput_t(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: CItemSelectionCriteria::CItemSelectionCriteria(void) = "C6 01 00 C7 ? ? ? ? ? ? C6";
+public: CMatRenderContextPtr::~CMatRenderContextPtr(void) = "56 8B F1 8B 0E";
+public: CMeshBuilder::CMeshBuilder(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C6";
+public: COcclusionQuerySet::~COcclusionQuerySet(void) = "55 8B EC 83 EC 0C 8B ? ? ? ? ? 57";
+public: CPixelVisibilityQuery::CPixelVisibilityQuery(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+public: CPlayerInventory::CPlayerInventory(void) = "56 8B F1 C7 ? ? ? ? ? 8D 4E 2C";
+public: CRagdoll::CRagdoll(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CRestore::CRestore(class CSaveRestoreData near *) = "55 8B EC 56 8B F1 8B 4D 08 C7 ? ? ? ? ? C7";
+public: CRopeManager::CRopeManager(void) = "56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 46 04";
+public: CSVCMsg_VoiceData::CSVCMsg_VoiceData(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? 66";
+public: CSave::CSave(class CSaveRestoreData near *) = "55 8B EC 8B 55 08 56 8B F1 8B CA";
+public: CSceneEventInfo::CSceneEventInfo(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CSnowFallManager::CSnowFallManager(void) = "56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: CSoundParameters::CSoundParameters(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CThreadSafeMemoryPool::~CThreadSafeMemoryPool(void) = "56 8B F1 8B 06 A9";
+public: CUGCFileRequestManager::CUGCFileRequestManager(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 04";
+public: CUtlBuffer::CUtlBuffer(int,int,int) = "55 8B EC 56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CUtlBuffer::CUtlBuffer(void const near *,int,int) = "55 8B EC 8B 45 08 56 8B F1 8B 4D 0C 89 06 8B";
+public: CUtlBuffer::~CUtlBuffer(void) = "56 8B F1 83 7E 08";
+public: CUtlStreamBuffer::~CUtlStreamBuffer(void) = "56 8B F1 E8 ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E";
+public: CUtlString::~CUtlString(void) = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E";
+public: CUtlSymbol::CUtlSymbol(char const near *) = "55 8B EC 51 53 56 57 8B D9 E8 ? ? ? ? 8B ? ? ? ? ? 8B 47";
+public: CVTFTexture::CVTFTexture(void) = "C7 ? ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 5C";
+public: CViewSetup::CViewSetup(void) = "80 ? ? ? ? ? ? 8B C1";
+public: CVoiceStatus::CVoiceStatus(void) = "55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 C7";
+public: C_BeamSpotLight::C_BeamSpotLight(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? F3";
+public: C_EnvDOFController::C_EnvDOFController(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: C_EnvProjectedTexture::C_EnvProjectedTexture(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7";
+public: C_EnvTonemapController::C_EnvTonemapController(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66";
+public: C_FireSmoke::C_FireSmoke(void) = "53 56 57 8B D9 E8 ? ? ? ? C7";
+public: C_FogController::C_FogController(void) = "55 8B EC 83 EC 08 56 57 8B F1 E8 ? ? ? ? 8D";
+public: C_GameInstructor::C_GameInstructor(void) = "56 68 ? ? ? ? 8B F1 E8";
+public: C_PhysPropClientside::C_PhysPropClientside(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? ? ? ? C7";
+public: C_RecipientFilter::C_RecipientFilter(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 08";
+public: C_SlideshowDisplay::C_SlideshowDisplay(void) = "56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7";
+public: C_Sprite::C_Sprite(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: C_SpriteTrail::C_SpriteTrail(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 0F";
+public: C_TestTraceline::C_TestTraceline(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B";
+public: CryptoPP::Algorithm::Algorithm() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81";
+public: CryptoPP::BERGeneralDecoder::BERGeneralDecoder() = "53 56 6A 00 8B F1";
+public: DName::DName(__int64) = "55 8B EC 83 EC 2C A1 ? ? ? ? 33 C5 89 45 FC 8B 55 0C 8B C1";
+public: DName::DName(char const near * near &,char) = "55 8B EC 53 56 8B F1 57 8B 7D 08 83 26";
+public: DName::DName(char const near *) = "55 8B EC 56 8B F1 33 C0 8B 4D 08";
+public: DName::DName(class DName near *) = "55 8B EC 53 33 DB";
+public: DName::DName(enum DNameStatus) = "55 8B EC 8B 45 08 56 8B F1 81";
+public: DName::DName(unsigned __int64) = "55 8B EC 83 EC 24 A1 ? ? ? ? 33 C5 89 45 FC 8B";
+public: FlashlightState_t::FlashlightState_t(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C7";
+public: GCSDK::CMessageList::~CMessageList(void) = "A1 ? ? ? ? 8B ? ? ? ? ? 56 33 F6 85 C0 7E 32 57 8B 3C B2 85 FF 74 24 A1";
+public: GameTypes::Map::~Map(void) = "56 57 8B F9 C7 ? ? ? ? ? ? ? ? ? 83 ? ? ? ? ? ? 7C";
+public: IceKey::~IceKey(void) = "56 33 F6 39 71";
+public: ParticleControlPoint_t::ParticleControlPoint_t(void) = "55 8B EC 51 8B D1 C7";
+public: Poco::URIRedirection::~URIRedirection() = "56 8B F1 8B 46 14 83 F8 10 72 0E 6A 01 40 50 FF 36 E8 ? ? ? ? 83 C4 0C C7 ? ? ? ? ? ? 83 7E 14 10 C7 ? ? ? ? ? ? 72 07";
+public: SunLightState_t::SunLightState_t(void) = "53 8B D9 56 57 BF";
+public: UnDecorator::operator char near *(void) = "55 8B EC 83 EC 20 8B 4D";
+public: VMatrix::VMatrix(struct matrix3x4_t const near &) = "55 8B EC 8B 45 08 0F";
+public: _Init_atexit::~_Init_atexit(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? EB";
+public: __int64 CFpsHistogram::Encode(void)const = "55 8B EC 83 EC 2C 53 56 57";
+public: bool CBaseLesson::IsLocked(void)const = "56 8B F1 0F 57 C9 F3";
+public: bool CBaseLesson::ShouldShowSpew(void) = "53 56 57 8B ? ? ? ? ? 8B D9";
+public: bool CBitRead::Seek(int) = "55 8B EC 51 53 56 57 8B 7D 08 8B F1 C6 45 FF 01";
+public: bool CChoreoEvent::GetTrackLookupSet(void) = "8A ? ? ? ? ? C0 E8 03 24";
+public: bool CChoreoEvent::IsProcessing(void)const = "8A ? ? ? ? ? C0 E8 04 24 01 C3";
+public: bool CChoreoEvent::IsResumeCondition(void) = "8A ? ? ? ? ? D0 E8 24";
+public: bool CChoreoEvent::IsUsingRelativeTag(void) = "8A ? ? ? ? ? C0 E8 02 24 01 C3";
+public: bool CChoreoEvent::PreventTagOverlap(void) = "F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 53 57";
+public: bool CClientAlphaProperty::IgnoresZBuffer(void)const = "66 8B 41 0A BA";
+public: bool CDescription::InitFromFile(char near *) = "55 8B EC 51 89 4D";
+public: bool CGlowObject::IsRendering(void)const = "56 57 8B F9 8B 37 E8";
+public: bool CHud::HudDisabled(void) = "83 ? ? ? ? ? ? 0F 9F C0 C3";
+public: bool CIKTarget::IsActive(void) = "F3 ? ? ? ? 33 C0 0F ? ? ? ? ? ? 0F 97";
+public: bool CJob::IsFinished(void)const = "8B 41 0C 83 F8";
+public: bool CLocatorTarget::IsPresenting(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 16";
+public: bool CLocatorTarget::IsStatic(void) = "55 8B EC 51 56 8B F1 F7";
+public: bool CLocatorTarget::IsVisible(void) = "8A 41 1E";
+public: bool CParticleCollection::IsBatchable(void)const = "8A ? ? ? ? ? C0 E8 07 C3";
+public: bool CParticleCollection::IsFinished(void)const = "55 8B EC 51 57 8B F9 8B 47 48";
+public: bool CPoseDebuggerImpl::IsModelShown(int)const = "55 8B EC 8B 55 08 56 8B F1 81";
+public: bool CSaveRestoreSegment::Read(void near *,int) = "55 8B EC 56 8B F1 8B 4E 0C 8B";
+public: bool CSteamID::IsValid(void)const = "56 8B 71 04 8B D6";
+public: bool CUtlBuffer::Get(void near *,int) = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 7E";
+public: bool C_BaseAnimating::IsRagdoll(void)const = "83 ? ? ? ? ? ? 74 0C 80";
+public: bool C_BaseEntity::IsSolid(void)const = "80 ? ? ? ? ? ? 74 0C F6";
+public: bool C_BaseEntity::IsStandable(void)const = "56 8B F1 8B 06 FF ? ? ? ? ? A8";
+public: bool C_BaseEntity::IsVisible(void)const = "B8 ? ? ? ? 66 ? ? ? ? ? ? 75";
+public: bool C_BaseEntity::PhysicsCheckWater(void) = "80 ? ? ? ? ? ? 0F 97 C0 C3";
+public: bool C_BaseEntity::SetModel(char const near *) = "55 8B EC 8B 55 08 57";
+public: bool C_BaseEntity::WillThink(void) = "8B C1 83 ? ? ? ? ? ? 7E";
+public: bool C_BasePlayer::IsSpectator(void)const = "56 8B F1 8B 06 FF ? ? ? ? ? 83 F8 01 75 2D";
+public: bool C_CSGameRules::IsEndMatchVotingForNextMap(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 5A";
+public: bool C_CSGameRules::IsFreezePeriod(void) = "8A 41 20";
+public: bool C_CSGameRules::IsPlayingGunGame(void)const = "8B ? ? ? ? ? 8B 01 FF 50 20 48 F7 D8 1B C0 40 C3";
+public: bool C_CSGameRules::IsPlayingTraining(void)const = "8B ? ? ? ? ? 8B 01 FF 50 20 33";
+public: bool C_CSPlayer::IsHoldingSpecGrenadeKey(void) = "55 8B EC 51 8B ? ? ? ? ? 32";
+public: bool C_HLTVCamera::IsPVSLocked(void) = "8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 09";
+public: bool CryptoPP::Integer::IsUnit() = "8B 41 08 8B 51 0C 85";
+public: bool VMatrix::IsIdentity(void)const = "F3 0F 10 01 F3 ? ? ? ? ? ? ? 0F 2E";
+public: bool google::protobuf::io::Tokenizer::Next(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 34 A1 ? ? ? ? 33 C5 89 45 F0 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B F1 8B";
+public: bool netadr_s::IsLocalhost(void)const = "80 79 04 7F";
+public: bool vgui::ImageList::IsValidIndex(int) = "55 8B EC 8B 45 08 85 C0 78 0B";
+public: bool vgui::Panel::IsBuildModeActive(void) = "8B ? ? ? ? ? 83 F9 FF 74 40 8B D1";
+public: bool vgui::Panel::IsWithin(int,int) = "55 8B EC 83 EC 10 56 8B ? ? ? ? ? 8D";
+public: ceng::CBitMask<int>::~CBitMask<int>() = "55 8B EC 51 56 8B F1 8B 06 50";
+public: char CUtlBuffer::GetChar(void) = "56 6A 01 8B F1 E8 ? ? ? ? 84";
+public: char DName::getLastChar(void)const = "57 8B 39 85";
+public: char const near * CChoreoEvent::GetParameters(void) = "83 C1 18 E9";
+public: char const near * CCommand::operator[](int)const = "55 8B EC 8B 45 08 85 C0 78 0F";
+public: char const near * CModInfo::GetFallbackDir(void) = "8B ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? C3";
+public: char const near * CSteamID::Render(void)const = "A1 ? ? ? ? 8B D1 56";
+public: char const near * CStudioHdr::name(void)const = "8B 11 8B";
+public: char const near * CUtlString::Get(void)const = "83 79 0C";
+public: char const near * C_BasePlayer::GetPlayerName(void) = "56 8B ? ? ? ? ? 85 F6 74 21";
+public: char const near * KeyValues::GetName(void)const = "57 8B F9 85 FF 74 1F";
+public: char const near * studiohdr_t::pszName(void)const = "8B ? ? ? ? ? 85 C0 74 1B";
+public: char near * DName::getString(char near *,int)const = "55 8B EC 53 8B D9 56 8B 75 08 57 83";
+public: class Color ConVar::GetColor(void)const = "55 8B EC 8B 41 1C 83";
+public: class Color vgui::Panel::GetDropFrameColor(void) = "55 8B EC 8B 45 08 8B 49";
+public: class DName Replicator::operator[](int)const = "55 8B EC 8B 55 0C 83 FA 09";
+public: class KeyValues near * KeyValues::FindKey(int)const = "55 8B EC 85 C9 74 1D";
+public: class VMatrix VMatrix::Transpose(void)const = "55 8B EC 8B 55 08 56 8B F1 8B 06";
+public: float C_BaseAnimating::SetPoseParameter(int,float) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 75";
+public: float C_BaseEntity::GetInterpolationAmount(int) = "55 8B EC 56 57 8B F1";
+public: float C_CSGameRules::GetBuyTimeLength(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B 01 FF";
+public: float C_CSPlayer::GetFreezeFrameInterpolant(void) = "55 8B EC 83 EC 08 80 ? ? ? ? ? ? A1";
+public: fogparams_t::fogparams_t(void) = "C7 ? ? ? ? ? ? 8B C1 C7";
+public: google::protobuf::TextFormat::Parser::Parser(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66";
+public: google::protobuf::TextFormat::Printer::Printer(void) = "C7 ? ? ? ? ? 8B C1 66";
+public: google::protobuf::internal::Mutex::Mutex(void) = "56 6A 18 8B F1";
+public: google::protobuf::internal::Mutex::~Mutex(void) = "56 8B F1 FF 36 FF";
+public: google::protobuf::io::Tokenizer::Token::~Token(void) = "8B 41 18 56 8D 71 04";
+public: google::protobuf::io::Tokenizer::~Tokenizer(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B 57 60";
+public: int CAchievementMgr::GetAchievementCount(bool) = "55 8B EC 56 57 0F";
+public: int CAmmoDef::PlrDamage(int) = "55 8B EC 8B 45 08 8B D1";
+public: int CStringRegistry::GetStringID(char const near *) = "55 8B EC 8B 45 08 83 EC 08 56 57";
+public: int CStudioHdr::GetNumAttachments(void)const = "8B 41 04 85 C0 75 09 8B 01 8B ? ? ? ? ? C3 8B 40 3C";
+public: int CStudioHdr::GetNumPoseParameters(void)const = "8B 41 04 85 C0 75 10";
+public: int CStudioHdr::GetNumSeq(void)const = "8B 41 04 85 C0 75 09";
+public: int CStudioHdr::GetSharedPoseParameter(int,int)const = "55 8B EC 56 8B 71 04";
+public: int CStudioHdr::GetTransition(int,int)const = "55 8B EC 83 79 04 00 8B";
+public: int C_BaseEntity::GetSoundSourceIndex(void)const = "8B 01 FF 50 08 8B 00 83";
+public: int C_BasePlayer::GetAssociatedTeamNumber(void)const = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 44";
+public: int C_BaseWeaponWorldModel::GetMuzzleBoneIndex(void) = "56 8B F1 83 ? ? ? ? ? ? 75 10";
+public: int C_CSGameRules::GetNumWinsToClinch(void)const = "57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 6E";
+public: int C_SlideshowDisplay::NumMaterials(void) = "8B ? ? ? ? ? 8B 00 85 C0 75";
+public: int C_Sprite::GetRenderBrightness(void) = "8B D1 F3 ? ? ? ? ? ? ? 0F";
+public: int DName::length(void)const = "57 8B 39 85 FF 75 04 33";
+public: int FourRays::CalculateDirectionSignMask(void)const = "8D 51 30 8B";
+public: int KeyValues::GetInt(char const near *,int) = "55 8B EC 6A 00 FF 75 08 E8 ? ? ? ? 85";
+public: int mstudioseqdesc_t::anim(int,int)const = "55 8B EC 8B 51 44";
+public: int vgui::Panel::GetChildCount(void) = "57 8B ? ? ? ? ? 85 FF 74 10 8B 01 56 8B 37 FF 10 50 8B CF FF 56 44";
+public: int vgui::Panel::GetTall(void) = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B 45";
+public: int vgui::TreeNode::CountVisibleIndex(void) = "55 8B EC 83 EC 14 56 57 8B F9 C7 ? ? ? ? ? ? 8B";
+public: int vgui::TreeNode::CountVisibleNodes(void) = "53 8B D9 56 BE ? ? ? ? 80";
+public: optimized_datamap_t::optimized_datamap_t(void) = "56 8B F1 BA";
+public: pDNameNode::pDNameNode(class DName near *) = "55 8B EC 8B 45 08 C7 ? ? ? ? ? 85";
+public: pcharNode::pcharNode(char const near *,int) = "55 8B EC 53 56 8B F1 57 8B 7D 0C C7";
+public: static int C_CSGameRules::GetMaxPlayers(void) = "8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 06 B8";
+public: static void C_BaseEntity::MarkAimEntsDirty(void) = "8B ? ? ? ? ? 33 C0 85 D2 7E 28";
+public: static void C_Sprite::DestroyAllClientside(void) = "83 ? ? ? ? ? ? 7E 20 0F ? ? ? ? ? ? A1 ? ? ? ? 8B 08 8B 41 08 83 C1 08 FF 50 04 83 ? ? ? ? ? ? 7F E7 C3";
+public: static void C_Sprite::RecreateAllClientside(void) = "83 ? ? ? ? ? ? 7E 20 0F";
+public: std::_Fac_node::~_Fac_node(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 79";
+public: std::_Fac_tidy_reg_t::~_Fac_tidy_reg_t(void) = "56 EB 18";
+public: std::_Init_locks::_Init_locks(void) = "33 C0 57 8B F9 40";
+public: std::_Init_locks::~_Init_locks(void) = "83 C8 FF F0 ? ? ? ? ? ? ? 79";
+public: std::exception::exception() = "55 8B EC 56 8B F1 0F 57";
+public: std::exception::exception() = "55 8B EC 83 EC 08 8B 45 08 0F";
+public: std::runtime_error::runtime_error() = "55 8B EC 83 EC 08 8B 45 08 0F 57 C0 56 8B F1 89 45 F8 8D 56 04 C6 45 FC 01 52 8D 45 F8 C7 ? ? ? ? ? 50 66 0F D6 02 E8 ? ? ? ? 83 C4 08 C7";
+public: struct TSLNodeBase_t near * CTSListBase::Pop(void) = "55 8B EC 83 E4 F8 56 57 8B F9 8B 37";
+public: struct studiohdr_t near * CMDL::GetStudioHdr(void) = "8B C1 8B ? ? ? ? ? 85 C9 75 03 33";
+public: unsigned __int64 C_PlayerResource::GetXuid(int) = "55 8B EC 8B 55 08 8D 42 FF 83 F8 3F 77 12";
+public: unsigned char CUtlBuffer::GetUnsignedChar(void) = "55 8B EC 51 56 8B F1 F6 46 15";
+public: unsigned int CBitRead::ReadVarInt32(void) = "55 8B EC 83 EC 08 53 56 8B C1 33";
+public: unsigned int CDataManagerBase::FlushAll(void) = "55 8B EC 83 EC 30 53 8B D9 56 57";
+public: vgui::DragDrop_t::DragDrop_t(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18";
+public: vgui::ImageList::~ImageList(void) = "56 8B F1 80 7E 14 00 74 22";
+public: virtual CAchievementMgr::~CAchievementMgr(void) = "56 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CAchievement_Meta::~CAchievement_Meta(void) = "56 8B F1 8D ? ? ? ? ? E8 ? ? ? ? F6";
+public: virtual CBaseLesson::~CBaseLesson(void) = "55 8B EC 51 56 8B F1 8B 4E 0C";
+public: virtual CBaseViewport::~CBaseViewport(void) = "53 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CClientEntityList::~CClientEntityList(void) = "56 57 8B F9 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? E8";
+public: virtual CClientLeafSystem::~CClientLeafSystem(void) = "53 56 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CDetailModel::~CDetailModel(void) = "55 8B EC 83 EC 08 56 8B F1 8B 46 2C";
+public: virtual CEconItem::~CEconItem(void) = "56 8B F1 8B 4E 18 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 85 C9 74 05 E8 ? ? ? ? C7";
+public: virtual CGameSavePanel::~CGameSavePanel(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual CHltvReplaySystem::~CHltvReplaySystem(void) = "56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 83";
+public: virtual CMsgHttpRequest::~CMsgHttpRequest(void) = "56 8B F1 57 8B 4E";
+public: virtual CParticleMgr::~CParticleMgr(void) = "56 57 8B F9 6A 00 C7";
+public: virtual CRopeManager::~CRopeManager(void) = "53 8B D9 56 57 C7";
+public: virtual CSOEconCoupon::~CSOEconCoupon(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? 8B CE 5E";
+public: virtual CScriptObject::~CScriptObject(void) = "57 8B F9 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C0 74 1C";
+public: virtual CSnowFallManager::~CSnowFallManager(void) = "56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? 8B CF";
+public: virtual CTempEnts::~CTempEnts(void) = "53 56 57 8B F9 8D 4F 04";
+public: virtual CVoiceStatus::~CVoiceStatus(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 05";
+public: virtual C_CSPlayer::~C_CSPlayer(void) = "55 8B EC 51 53 8B D9 56 89";
+public: virtual C_FEPlayerDecal::~C_FEPlayerDecal(void) = "55 8B EC 83 EC 08 56 57 8B F9 C7";
+public: virtual C_FuncSmokeVolume::~C_FuncSmokeVolume(void) = "56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: virtual C_RecipientFilter::~C_RecipientFilter(void) = "56 8B F1 8D 4E 08 C7 ? ? ? ? ? E8 ? ? ? ? C7";
+public: virtual C_VoteController::~C_VoteController(void) = "56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7";
+public: virtual C_WeaponCSBase::~C_WeaponCSBase(void) = "55 8B EC 51 53 8B D9 56 57 68";
+public: virtual ClientModeShared::~ClientModeShared(void) = "56 57 8B F9 8D 77 04";
+public: virtual GameTypes::~GameTypes(void) = "53 56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8";
+public: virtual bool CBaseAchievement::IsAchieved(void) = "8A 41 50";
+public: virtual bool CBaseAchievement::ShouldShowOnHUD(void) = "8A 41 78";
+public: virtual bool CBaseLesson::WasDisplayed(void)const = "80 79 64 00 0F";
+public: virtual bool CCSCustomTextureSaver::Init(void) = "C7 ? ? ? ? ? ? B0 01 C6 41 20";
+public: virtual bool CCSGameMovement::LadderMove(void) = "53 56 8B F1 E8 ? ? ? ? 8A D8 84";
+public: virtual bool CCSInventoryManager::Init(void) = "56 8B F1 6A 00 68 ? ? ? ? 68";
+public: virtual bool CClientThinkList::Init(void) = "C7 ? ? ? ? ? ? B0 01 C6";
+public: virtual bool CDebugOverlay::ShouldDraw(void) = "8B ? ? ? ? ? 8B 01 FF 50 38 85";
+public: virtual bool CEconItem::GetInUse(void)const = "B8 ? ? ? ? 66 39 41";
+public: virtual bool CExampleEffect::IsEnabled(void) = "8A 41 04 C3";
+public: virtual bool CFPSPanel::ShouldDraw(void) = "80 ? ? ? ? ? ? 56 8B F1 0F ? ? ? ? ? 8B ? ? ? ? ? 81";
+public: virtual bool CFXLine::IsActive(void) = "F3 ? ? ? ? 0F 2F 41 50 0F";
+public: virtual bool CFXQuad::IsActive(void) = "F3 ? ? ? ? 0F 2F 41";
+public: virtual bool CGameConsole::IsConsoleVisible(void) = "80 79 04 00 75 03";
+public: virtual bool CGameUI::IsInLevel(void) = "8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 1C 80";
+public: virtual bool CHudGeiger::ShouldDraw(void) = "8B ? ? ? ? ? 85 C0 7E 13 3D";
+public: virtual bool CHudMenu::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 2F";
+public: virtual bool CHudMessage::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 16";
+public: virtual bool CHudVehicle::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 85 C0 74 35";
+public: virtual bool CPDumpPanel::ShouldDraw(void) = "83 ? ? ? ? ? ? 75 03 32";
+public: virtual bool CPrediction::InPrediction(void)const = "8A 41 08";
+public: virtual bool CRefractiveGlassView::AdjustView(float) = "56 57 8B F9 E8 ? ? ? ? 8B F0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B CE 8B 16 FF";
+public: virtual bool CRenderToRTHelper::Init(void) = "83 ? ? ? ? ? ? 57 8B F9 75 04";
+public: virtual bool CRestore::GetPrecacheMode(void) = "8A 41 24";
+public: virtual bool CRunGameEngine::IsInGame(void) = "55 8B EC 51 8B ? ? ? ? ? 8B 01";
+public: virtual bool CSceneTokenProcessor::GetToken(bool) = "55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 68";
+public: virtual bool CShadowLeafEnum::EnumerateLeaf(int,int) = "55 8B EC 83 C1 04";
+public: virtual bool CSoundEmitterSystem::Init(void) = "8B ? ? ? ? ? 68 ? ? ? ? 8B 01 FF 50 44 A3 ? ? ? ? B0";
+public: virtual bool CSteamWorksGameStatsClient::Init(void) = "E8 ? ? ? ? 6A 01 68 ? ? ? ? B9";
+public: virtual bool CVTFTexture::ConstructLowResImage(void) = "55 8B EC 83 EC 54 56 8B";
+public: virtual bool CVTFTexture::IsCubeMap(void)const = "8B 41 2C C1 E8 0E";
+public: virtual bool CVTFTexture::IsNormalMap(void)const = "8B 41 2C C1 E8 07 83";
+public: virtual bool CVTFTexture::IsVolumeTexture(void)const = "83 79 14 01 0F";
+public: virtual bool C_BaseAnimating::IsSelfAnimating(void) = "80 ? ? ? ? ? ? 74 03";
+public: virtual bool C_BaseCSGrenade::Deploy(void) = "55 8B EC 83 EC 08 80 ? ? ? ? ? ? 74";
+public: virtual bool C_BaseCombatWeapon::CanBeSelected(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75";
+public: virtual bool C_BaseCombatWeapon::HasAnyAmmo(void) = "56 8B F1 8B ? ? ? ? ? C1";
+public: virtual bool C_BaseCombatWeapon::Reload(void) = "56 8B F1 8B 06 FF ? ? ? ? ? FF";
+public: virtual bool C_BaseEntity::CreateLightEffects(void) = "A1 ? ? ? ? 53 56 57 8B 30";
+public: virtual bool C_BaseEntity::IsDormant(void)const = "83 79 5C";
+public: virtual bool C_BaseEntity::PreRender(int) = "8B 01 53 32";
+public: virtual bool C_BaseEntity::VPhysicsIsFlesh(void) = "55 8B EC B8 ? ? ? ? E8 ? ? ? ? 8B 01";
+public: virtual bool C_BasePlayer::CanSetSoundMixer(void) = "8B 01 FF ? ? ? ? ? 33 C9 83";
+public: virtual bool C_BasePlayer::ShouldPredict(void) = "56 8B F1 85 F6 74 1C 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0E 8A ? ? ? ? ? 84 C0 74 04 B0 01 5E C3 32";
+public: virtual bool C_BaseTempEntity::Init(int,int) = "A1 ? ? ? ? 89 41 0C";
+public: virtual bool C_BaseToggle::ShouldPredict(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 0D";
+public: virtual bool C_CHostage::ShouldDraw(void) = "80 ? ? ? ? ? ? 75 19 8B ? ? ? ? ? 83";
+public: virtual bool C_CSGameRules::IsGameRestarting(void) = "8A 41 54";
+public: virtual bool C_CSGameRules::ShouldCollide(int,int) = "55 8B EC 8B 55 08 56 8B 75 0C 3B";
+public: virtual bool C_DEagle::SendWeaponAnim(int) = "55 8B EC 8B 45 08 3D ? ? ? ? 75";
+public: virtual bool C_Embers::Simulate(void) = "55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 75";
+public: virtual bool C_LightGlow::Simulate(void) = "56 8B F1 8B 06 FF 50 28 8B";
+public: virtual bool C_PhysPropClientside::IsAsleep(void) = "8B ? ? ? ? ? 85 C9 74 07 8B 01 8B 40 08";
+public: virtual bool C_RopeKeyframe::ShouldDraw(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 75";
+public: virtual bool C_ServerRagdoll::Simulate(void) = "56 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 0F";
+public: virtual bool C_Team::ContainsPlayer(int) = "55 8B EC 56 8B ? ? ? ? ? 33 D2";
+public: virtual bool C_VGuiScreen::ShouldDraw(void) = "8B ? ? ? ? ? C1 E8 05 F6";
+public: virtual bool C_WeaponCSBaseGun::Deploy(void) = "55 8B EC 83 EC 10 56 8B F1 C7 ? ? ? ? ? ? F3";
+public: virtual bool C_WeaponElite::SendWeaponAnim(int) = "55 8B EC 8B 45 08 3D ? ? ? ? 75 3C";
+public: virtual bool C_World::Init(int,int) = "55 8B EC C7";
+public: virtual bool ConCommand::CanAutoComplete(void) = "8A 41 20 24";
+public: virtual bool ConCommandBase::IsFlagSet(int)const = "55 8B EC 8B 45 08 85 41";
+public: virtual bool ConVar::IsFlagSet(int)const = "55 8B EC 8B 49 1C 8B 45";
+public: virtual bool ConVar::IsRegistered(void)const = "8B 41 1C 8A";
+public: virtual bool CryptoPP::MessageQueue::AnyRetrievable() = "83 EC 0C 8D 04";
+public: virtual bool CryptoPP::MessageQueue::GetNextMessage() = "83 EC 18 56 8B F1 8B 06 FF 50";
+public: virtual bool CryptoPP::PK_Verifier::Verify() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 53";
+public: virtual bool CryptoPP::PK_Verifier::VerifyMessage() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B";
+public: virtual bool CryptoPP::Store::GetNextMessage() = "56 8B F1 80 7E 10 00 75";
+public: virtual bool SFHudFreezePanel::ShouldDraw(void) = "56 8B F1 80 ? ? ? ? ? ? 74 31";
+public: virtual bool SFHudInfoPanel::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 04";
+public: virtual bool SFHudRadio::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 04 32 C0 5E C3 A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 12";
+public: virtual bool SFMapOverview::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 75 1E";
+public: virtual bool SFWeaponSelection::ShouldDraw(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 20";
+public: virtual bool std::error_category::equivalent() = "55 8B EC 8B 01 8D 55 F8 83 EC 08 56";
+public: virtual bool std::error_category::equivalent() = "55 8B EC 8B 41 04 56";
+public: virtual bool vgui::Button::IsBlinking(void) = "0F ? ? ? ? ? ? C1 E8 09 83";
+public: virtual bool vgui::ComboBox::IsItemIDValid(int) = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? 5D";
+public: virtual bool vgui::ListPanel::IsItemSelected(int) = "55 8B EC 8B 55 08 56 8B F1 57 85 D2 78";
+public: virtual bool vgui::Panel::HasFocus(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 10";
+public: virtual bool vgui::Panel::HasParent(unsigned int) = "55 8B EC 8B 45 08 85 C0 75 06 32";
+public: virtual bool vgui::Panel::IsAutoDeleteSet(void) = "0F B7 41 64 C1 E8 06";
+public: virtual bool vgui::Panel::IsBuildGroupEnabled(void) = "53 56 8B F1 57 8B ? ? ? ? ? 83 FA FF 0F";
+public: virtual bool vgui::Panel::IsCursorNone(void) = "8B 01 FF ? ? ? ? ? 85 C0 0F 94 C0 C3";
+public: virtual bool vgui::Panel::IsCursorOver(void) = "55 8B EC 83 EC 20 53 56 8B D9 8D";
+public: virtual bool vgui::Panel::IsDragEnabled(void)const = "8B 41 28 8A";
+public: virtual bool vgui::Panel::IsDropEnabled(void)const = "8B 41 28 8A 40 40";
+public: virtual bool vgui::Panel::IsFullyVisible(void) = "8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47";
+public: virtual bool vgui::Panel::IsLayoutInvalid(void) = "0F B7 41 64 C1 E8 07";
+public: virtual bool vgui::Panel::IsOpaque(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 17";
+public: virtual bool vgui::Panel::IsPopup(void) = "8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47 60";
+public: virtual bool vgui::Panel::IsProportional(void) = "0F B7 41 64";
+public: virtual bool vgui::Panel::IsVisible(void) = "57 8B ? ? ? ? ? 85 FF 74 12";
+public: virtual bool vgui::TextEntry::IsEditable(void) = "80 ? ? ? ? ? ? 74 11 8B 01 8B";
+public: virtual char DNameStatusNode::getLastChar(void)const = "83 79 04 01 0F 95";
+public: virtual char const near * ConVar::GetName(void)const = "8B 41 1C 8B 40 0C";
+public: virtual char const near * vgui::Panel::GetName(void) = "83 C1 50 E9";
+public: virtual char pDNameNode::getLastChar(void)const = "8B 49 04 85 C9 0F ? ? ? ? ? 32 C0 C3";
+public: virtual char pairNode::getLastChar(void)const = "53 8B D9 56 57 8B 7B 08";
+public: virtual char pcharNode::getLastChar(void)const = "8B 51 08 85 D2 74 08";
+public: virtual class Color BitmapImage::GetColor(void) = "55 8B EC 8B 45 08 8B 49 1C";
+public: virtual class Color CHudChat::GetClientColor(int) = "55 8B EC 8B 55 0C 85";
+public: virtual class Color vgui::Image::GetColor(void) = "55 8B EC 8B 45 08 8B 49 14";
+public: virtual class Vector C_BaseEntity::EarPosition(void) = "55 8B EC 8B 11";
+public: virtual class Vector C_BaseEntity::EyePosition(void) = "55 8B EC 56 8B F1 8B 06 FF";
+public: virtual class Vector C_C4::GetGlowColor(void) = "55 8B EC 8B 45 08 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 5D";
+public: virtual float CChoreoEvent::GetDuration(void) = "55 8B EC 51 F3 ? ? ? ? 0F ? ? ? ? ? ? F3";
+public: virtual float CInput::GetLookSpring(void) = "55 8B EC 51 8B ? ? ? ? ? 81 ? ? ? ? ? 75 14";
+public: virtual float CVTFTexture::BumpScale(void)const = "D9 41 40";
+public: virtual float CViewRender::GetZNear(void) = "55 8B EC 51 8B ? ? ? ? ? 66";
+public: virtual float C_BasePlayer::GetMinFOV(void)const = "A1 ? ? ? ? 83 78 18 01 75 07";
+public: virtual float C_BasePlayer::GetPlayerMaxSpeed(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81";
+public: virtual float C_PhysPropClientside::GetMass(void) = "8B ? ? ? ? ? 85 C9 74 07 8B 01 8B";
+public: virtual float ConVar::GetFloat(void)const = "55 8B EC 51 8B 51";
+public: virtual float ConVar_m_pitch::GetFloat(void)const = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 85";
+public: virtual int CBaseAchievement::GetCount(void) = "8B 41 58";
+public: virtual int CCLCMsg_ClientInfo::ByteSize(void)const = "56 8B F1 57 33 FF 8B 4E 2C";
+public: virtual int CCSUsrMsg_HudMsg::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 57 34";
+public: virtual int CCSUsrMsg_RadioText::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 0F ? ? ? ? ? F6 47 28 01 74 26";
+public: virtual int CCSUsrMsg_ReportHit::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 5F 1C 84 DB 74";
+public: virtual int CCSUsrMsg_SayText2::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 74";
+public: virtual int CCSUsrMsg_Shake::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 1C 00 74 53";
+public: virtual int CCSUsrMsg_VGUIMenu::ByteSize(void)const = "55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 37";
+public: virtual int CCSUsrMsg_VoiceMask::ByteSize(void)const = "55 8B EC 83 EC 08 8B 41 20";
+public: virtual int CClientTools::GetEntIndex(void near *) = "55 8B EC 8B 4D 08 85 C9 74 0D 8B 41";
+public: virtual int CEconItem::GetQuality(void)const = "0F B7 41 22 C1 E8 05";
+public: virtual int CEconItem::GetRarity(void)const = "53 56 8B F1 57 8B 06 FF 50 30";
+public: virtual int CFunctorJob::DoExecute(void) = "8B 49 48";
+public: virtual int CGCMsgGetIPLocation::ByteSize(void)const = "56 57 8B F9 8D 57 04 8B 47 0C 8D 34 80";
+public: virtual int CHLClient::GetInEyeEntity(void)const = "E8 ? ? ? ? 85 C0 74 08 8D";
+public: virtual int CHudChat::GetChatInputOffset(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 08";
+public: virtual int CMsgApplySticker::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 28";
+public: virtual int CMsgGCBannedWord::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 0F ? ? ? ? ? F6 47 18 01 74 1B";
+public: virtual int CMsgGCRoutingInfo::ByteSize(void)const = "55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 8B 46 28";
+public: virtual int CMsgGameServerInfo::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 57";
+public: virtual int CMsgHttpRequest::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 50 00 0F ? ? ? ? ? F6 47 50 01 74 1B 8B 47 20";
+public: virtual int CMsgInviteToParty::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 1C 84 C9 74 59";
+public: virtual int CMsgSDONoMemcached::ByteSize(void)const = "56 8B F1 8B 4E 04 8D";
+public: virtual int CMsgVector2D::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 14 84 C9 74 18 8A C1 24 01 0F B6 F0 F7 DE 1B F6 D1 E9 83 E6 05 F6 C1 01 74 03 83 C6 05 8B 47";
+public: virtual int CMsgVector::ByteSize(void)const = "56 57 8B F9 33 F6 8B 57 18 84 D2 74 25";
+public: virtual int CMsgWebAPIRequest::ByteSize(void)const = "56 8B F1 57 33 FF 80 7E 28 00 0F ? ? ? ? ? F6 46 28 01 74 25";
+public: virtual int CNETMsg_File::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 7B";
+public: virtual int CNETMsg_SignonState::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C 00 0F ? ? ? ? ? F6 47 2C 01 74 1B";
+public: virtual int CPreMatchInfoData::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 68";
+public: virtual int CRestore::GetReadPos(void)const = "8B 41 18 8B 40";
+public: virtual int CRestore::ReadTick(int near *,int,int) = "55 8B EC 8B 41 1C 53";
+public: virtual int CRestore::ReadTime(float near *,int,int) = "55 8B EC 51 8B 41 1C";
+public: virtual int CRestore::SkipHeader(void) = "55 8B EC 51 8B 01 8D 55 FC";
+public: virtual int CSOEconItem::GetCachedSize(void)const = "8B 41 74";
+public: virtual int CSOItemCriteria::ByteSize(void)const = "55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 4F";
+public: virtual int CSOItemRecipe::ByteSize(void)const = "55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 80 7E 74";
+public: virtual int CSOItemRecipe::GetCachedSize(void)const = "8B 41 70";
+public: virtual int CSOQuestProgress::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 6E";
+public: virtual int CSVCMsg_Menu::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 14 00 74 5E";
+public: virtual int CSVCMsg_SendTable::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 47 24";
+public: virtual int CSVCMsg_VoiceData::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 34";
+public: virtual int CVTFTexture::ComputeFaceSize(int)const = "55 8B EC FF 71 18 FF 75";
+public: virtual int CVTFTexture::ComputeTotalSize(void)const = "56 8B F1 FF 76 18 6A";
+public: virtual int CVTFTexture::FileSize(int)const = "55 8B EC 57 6A 30";
+public: virtual int CViewRender::GetDrawFlags(void) = "8B ? ? ? ? ? 85 C9 74 05 8B 01 FF 60 08 33";
+public: virtual int C_BaseAnimating::GetRenderFlags(void) = "A1 ? ? ? ? 53 56 8B";
+public: virtual int C_BaseCombatWeapon::GetRandomBurst(void) = "A1 ? ? ? ? 56 8B F1 57";
+public: virtual int C_BaseEntity::GetRenderFlags(void) = "8B 01 FF 50 20 8B D0";
+public: virtual int C_BaseEntity::GetSolidFlags(void)const = "81 ? ? ? ? ? 8B 01";
+public: virtual int C_BaseEntity::GetTracerAttachment(void) = "8B ? ? ? ? ? 56 83 CE";
+public: virtual int C_BaseEntity::Save(class ISave near &) = "55 8B EC 56 8B F1 8B 06 FF 50 3C";
+public: virtual int C_BasePlayer::GetDefaultFOV(void)const = "56 57 8B F9 8B 07 FF ? ? ? ? ? 83";
+public: virtual int C_GameRulesProxy::ObjectCaps(void) = "E8 ? ? ? ? 25 ? ? ? ? C3";
+public: virtual int C_PlayerResource::GetCoachingTeam(int) = "55 8B EC 8B 45 08 8D 50";
+public: virtual int C_Team::GetGGLeader(int) = "55 8B EC 8B 45 08 83 F8 03 75";
+public: virtual int ConVar::GetFlags(void)const = "8B 41 1C 8B 40";
+public: virtual int ConVar::GetInt(void)const = "8B 51 1C";
+public: virtual int ConVar_ServerBounded::GetInt(void)const = "55 8B EC 51 8B 01 8B";
+public: virtual int DataCenterPing::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 14 84 C9 74 3C";
+public: virtual int GameServerPing::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 79";
+public: virtual int PlayerRankingInfo::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 1C 00 74 7B";
+public: virtual int TournamentEvent::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 30";
+public: virtual int TournamentPlayer::ByteSize(void)const = "56 8B F1 57 33 FF 80";
+public: virtual int TournamentTeam::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C";
+public: virtual int WatchableMatchInfo::ByteSize(void)const = "53 56 8B F1 57 33 FF 80 7E 58";
+public: virtual int XpProgressData::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 14 00 74 52";
+public: virtual int pDNameNode::length(void)const = "8B 49 04 85 C9 0F ? ? ? ? ? 33";
+public: virtual int pairNode::length(void)const = "55 8B EC 51 8B C1 89 45 FC 83 78";
+public: virtual int vgui::Label::SetTextImageIndex(int) = "55 8B EC 53 8B 5D 08 57 8B F9 8B ? ? ? ? ? 3B";
+public: virtual int vgui::ListPanel::GetItemCurrentRow(int) = "55 8B EC 8B ? ? ? ? ? 33 C0 56 85 D2 7E 1C 8B ? ? ? ? ? 8B 75 08 0F ? ? ? ? ? ? 39";
+public: virtual int vgui::TreeView::GetChild(int,int) = "55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04";
+public: virtual int vgui::TreeView::GetItemParent(int)const = "55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04 90 8B ? ? ? ? ? 5D";
+public: virtual int vgui::TreeView::GetNumChildren(int) = "55 8B EC 8B 45 08 8B D1 83 F8 FF 75";
+public: virtual int vgui::TreeView::GetRootItemIndex(void) = "8B ? ? ? ? ? 85 C0 74 07 8B ? ? ? ? ? C3 83";
+public: virtual std::exception::~exception(void) = "8D 41 04 C7 ? ? ? ? ? 50";
+public: virtual unsigned char CEconItem::GetFlags(void)const = "8A 41 2C";
+public: virtual unsigned int CryptoPP::ByteQueue::Peek() = "8B 41 14 8B 50";
+public: virtual unsigned int CryptoPP::Filter::CopyRangeTo2() = "8B 01 FF ? ? ? ? ? FF 74 24 18 8B C8 FF";
+public: virtual unsigned int vgui::Panel::GetVParent(void) = "57 8B ? ? ? ? ? 85 FF 74 10";
+public: virtual unsigned long vgui::Panel::GetScheme(void) = "53 8B D9 8B ? ? ? ? ? 85 C0 75";
+public: virtual unsigned long vgui::TextImage::GetFont(void) = "F6 41 34 10";
+public: virtual vgui::CConsolePanel::~CConsolePanel(void) = "53 56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? E8";
+public: virtual vgui::CFooterPanel::~CFooterPanel(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 D2 74 17 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? ? ? ? ? 8D";
+public: virtual vgui::Frame::~Frame(void) = "56 57 8B F9 8B 77 4C";
+public: virtual vgui::ListPanel::~ListPanel(void) = "53 56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8A";
+public: virtual vgui::ListViewPanel::~ListViewPanel(void) = "56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual vgui::Menu::~Menu(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A";
+public: virtual vgui::Panel::~Panel(void) = "56 8B F1 57 80 7E 38 00 C7";
+public: virtual vgui::PanelListPanel::~PanelListPanel(void) = "56 57 8B F9 C7 ? ? ? ? ? E8 ? ? ? ? 8D";
+public: virtual vgui::TextEntry::~TextEntry(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8D";
+public: virtual vgui::TreeView::~TreeView(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 FF 74 25";
+public: virtual void BitmapImage::Paint(void) = "55 8B EC 83 EC 08 56 8B F1 8B 56";
+public: virtual void BitmapImage::SetPos(int,int) = "55 8B EC 8B 45 08 89 41 20 8B";
+public: virtual void CAchievementMgr::Shutdown(void) = "53 56 57 8B D9";
+public: virtual void CAchievementMgr::Update(float) = "56 57 8B F9 8B ? ? ? ? ? 85";
+public: virtual void CAsyncCtxSaveGame::Completed(void) = "51 8B ? ? ? ? ? E8 ? ? ? ? C3";
+public: virtual void CAsyncCtxSaveGame::ExecuteAsync(void) = "8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 28";
+public: virtual void CAvatarImage::Paint(void) = "53 56 8B F1 57 80 7E 25";
+public: virtual void CBaseAchievement::SetShowOnHUD(bool) = "55 8B EC 53 8A";
+public: virtual void CBaseAchievement::SetUserSlot(int) = "55 8B EC 8B 45 08 89 41 7C";
+public: virtual void CBaseGameStats_Driver::OnRestore(void) = "8B ? ? ? ? ? 8B 01 FF 60 28";
+public: virtual void CBaseHudChat::SetChatPrompt(int) = "56 8B F1 8B ? ? ? ? ? 83 ? ? ? ? ? ? 8B";
+public: virtual void CBaseModPanel::OnGameUIActivated(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 1E";
+public: virtual void CBaseModPanel::OnSizeChanged(int,int) = "55 8B EC 81 ? ? ? ? ? 5D";
+public: virtual void CBaseModelPanel::OnCursorMoved(int,int) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8D";
+public: virtual void CBasePlayerAnimState::Release(void) = "85 C9 74 07 8B 01 6A 01 FF 50 24";
+public: virtual void CBaseViewport::LevelInit(void) = "56 57 8B F9 33 F6 39 77 50";
+public: virtual void CBaseViewport::SetParent(unsigned int) = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A";
+public: virtual void CBaseViewport::ShowBackGround(bool) = "55 8B EC 8B 49 1C";
+public: virtual void CBitmapButton::Paint(void) = "53 56 8B F1 33 DB 8B";
+public: virtual void CBitmapImagePanel::forceReload(void) = "56 8B F1 80 ? ? ? ? ? ? 74 1F";
+public: virtual void CBreakParser::SetDefaults(void near *) = "55 8B EC 8B 55 08 C6";
+public: virtual void CCLCMsg_ClientInfo::Clear(void) = "8B 41 2C 84 C0 74 3E";
+public: virtual void CCLCMsg_FileCRCCheck::Clear(void) = "8B 41 38 84 C0 0F";
+public: virtual void CCLCMsg_RespondCvarValue::Clear(void) = "8B 41 1C 84 C0 74 57";
+public: virtual void CCLCMsg_VoiceData::Clear(void) = "80 79 2C 00 74 4C";
+public: virtual void CCSGameMovement::ReduceTimers(void) = "55 8B EC 83 EC 08 0F 57 D2";
+public: virtual void CCSModeManager::LevelShutdown(void) = "8B ? ? ? ? ? 8B 01 FF 60 68";
+public: virtual void CCSPlayerAnimState::Update(float,float) = "55 8B EC 56 8B F1 57 F3";
+public: virtual void CCSUsrMsg_Damage::Clear(void) = "56 8B F1 8B 46 18 84 C0 74 20 D1 E8 C7 ? ? ? ? ? ? A8";
+public: virtual void CCSUsrMsg_DisplayInventory::Clear(void) = "80 79 14 00 74 0B C6";
+public: virtual void CCSUsrMsg_Fade::Clear(void) = "56 8B F1 8B 46 1C 84 C0 74 28";
+public: virtual void CCSUsrMsg_HudMsg::Clear(void) = "56 8B F1 8B 46 34";
+public: virtual void CCSUsrMsg_QuestProgress::Clear(void) = "80 79 1C 00 74 19";
+public: virtual void CCSUsrMsg_RawAudio::Clear(void) = "8B 41 1C 84";
+public: virtual void CCSUsrMsg_SendAudio::Clear(void) = "80 79 10 00 74 22";
+public: virtual void CCSUsrMsg_ShowMenu::Clear(void) = "8B 41 18 84";
+public: virtual void CCSUsrMsg_VGUIMenu::Clear(void) = "56 8B F1 57 80 7E 24 00 74 26";
+public: virtual void CCSUsrMsg_VoiceMask::Clear(void) = "56 8B F1 57 F7 ? ? ? ? ? ? 74 04";
+public: virtual void CCenterPrint::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 22";
+public: virtual void CCenterStringLabel::Print(char near *) = "55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 81";
+public: virtual void CClientScoreBoardDialog::Reset(void) = "56 8B F1 8B 4E 18 8B";
+public: virtual void CClientTools::EnableRecordingMode(bool) = "55 8B EC 8A 45 08 88 41 38";
+public: virtual void CClient_Precipitation::Precache(void) = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 83";
+public: virtual void CDataObjectAccessSystem::Shutdown(void) = "56 57 8D 71";
+public: virtual void CDebugOverlay::Paint(void) = "55 8B EC 83 EC 1C 89";
+public: virtual void CEffectsList::Flush(void) = "55 8B EC 51 56 8B 71";
+public: virtual void CEngineGotvSyncPacket::Clear(void) = "8B 41 34 84 C0 74 3F";
+public: virtual void CExampleEffect::Init(void) = "C6 41 04";
+public: virtual void CFPSPanel::DumpStats(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? A1";
+public: virtual void CFXDiscreetLine::Update(double) = "55 8B EC F3 ? ? ? ? 0F 5A C0 F2 ? ? ? ? 66 0F 5A C0 F3 ? ? ? ? F3";
+public: virtual void CFXLine::Destroy(void) = "56 8B F1 8B 4E 54 85";
+public: virtual void CFXLine::Update(double) = "55 8B EC F3 ? ? ? ? F2";
+public: virtual void CFXQuad::Destroy(void) = "56 8B F1 8B 4E 10 85";
+public: virtual void CFXStaticLine::Destroy(void) = "56 8B F1 8B 4E 0C 85 C9 74 0C";
+public: virtual void CFreezeFrameView::Draw(void) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89";
+public: virtual void CGCMsgMemCachedGetResponse::Clear(void) = "56 8B F1 8D 4E 08 E8";
+public: virtual void CGCMsgSQLStatsResponse::Clear(void) = "8B 41 30 84 C0 74";
+public: virtual void CGameConsole::Activate(void) = "56 8B F1 80 7E 04 00 74";
+public: virtual void CGameConsole::Clear(void) = "80 79 04 00 74 08";
+public: virtual void CGameConsole::SetParent(int) = "55 8B EC 80 79 04 00 74 0C";
+public: virtual void CGameConsole::Shutdown(void) = "56 8B F1 8B 4E 08 85 C9 74 1C";
+public: virtual void CGameMenu::OnKillFocus(void) = "53 56 57 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 8B CE 8B 06 8B 1F FF 10 50 8B CF FF ? ? ? ? ? 5F";
+public: virtual void CGameUI::SetProgressOnStart(void) = "80 49 08";
+public: virtual void CGammaDialog::OnClose(void) = "56 8B F1 6A 01 F3";
+public: virtual void CGammaDialog::OnOK(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B CE";
+public: virtual void CHLClient::GetStatus(char near *,int) = "55 8B EC FF 75 0C FF 75 08 E8 ? ? ? ? 83";
+public: virtual void CHLClient::HudText(char const near *) = "55 8B EC FF 75 08 E8 ? ? ? ? 83 C4 04 5D";
+public: virtual void CHLClient::RetireAllPlayerDecals(bool) = "55 8B EC E8";
+public: virtual void CHudCloseCaption::LevelInit(void) = "56 8B F1 E8 ? ? ? ? 8D ? ? ? ? ? E8";
+public: virtual void CHudCloseCaption::LevelShutdown(void) = "56 8B F1 8B 06 C6";
+public: virtual void CHudCloseCaption::Reset(void) = "56 8B F1 80 ? ? ? ? ? ? 75 18";
+public: virtual void CHudElement::SetHud(class CHud near *) = "55 8B EC 8B 45 08 89 41 38";
+public: virtual void CHudHintKeyDisplay::Reset(void) = "6A 00 81";
+public: virtual void CHudMessage::Reset(void) = "56 8B F1 68 ? ? ? ? 6A 00";
+public: virtual void CHudMessage::SetDefaultFont(void) = "8B 01 FF ? ? ? ? ? FF 50 10";
+public: virtual void CHudMessage::SetFont(unsigned long) = "55 8B EC 8B 45 08 56 8B F1 8D";
+public: virtual void CHudMessage::SetPosition(int,int) = "55 8B EC 81 ? ? ? ? ? E8";
+public: virtual void CHudWeaponSelection::LevelInit(void) = "8B ? ? ? ? ? 85 C0 79 0B";
+public: virtual void CIPLocationInfo::Clear(void) = "8B 41 24 84 C0 0F";
+public: virtual void CIconLesson::UpdateInactive(void) = "55 8B EC 83 EC 10 A1 ? ? ? ? 56 8B F1 89";
+public: virtual void CInput::ClearInputButton(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 75";
+public: virtual void CInput::SetFullscreenMousePos(int,int) = "55 8B EC A1 ? ? ? ? FF 75";
+public: virtual void CLCD::AddChatLine(char const near *) = "55 8B EC 83 EC 10 56 8B F1 83";
+public: virtual void CLCDItem::Wipe(class IG15 near *) = "55 8B EC 56 8B F1 57 33";
+public: virtual void CLCDItemIcon::Create(class IG15 near *) = "55 8B EC 56 8B F1 57 8B 7D 08 8B CF FF";
+public: virtual void CLessOrEqualProxy::OnBind(void near *) = "55 8B EC 83 EC 14 53 8B D9 56 57 8B";
+public: virtual void CLoadingDisc::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 1B 8B 01 6A 00 FF ? ? ? ? ? 8B 4E 04 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B";
+public: virtual void CLocalSpaceEmitter::Update(float) = "8B 01 FF 50 48 C2";
+public: virtual void CMessageChars::Clear(void) = "8B 49 04 85 C9 0F";
+public: virtual void CMessageCharsPanel::Paint(void) = "55 8B EC 51 53 56 8B ? ? ? ? ? 89 4D FC 57";
+public: virtual void CMsgAMAddFreeLicense::Clear(void) = "8B 41 20 84 C0 74 3F C1 E8 03";
+public: virtual void CMsgAMGetUserGameStats::Clear(void) = "80 79 28 00 74 1C";
+public: virtual void CMsgConVarValue::Clear(void) = "80 79 14 00 74 47";
+public: virtual void CMsgGCReportAbuse::Clear(void) = "8B 41 34 84";
+public: virtual void CMsgGCRoutingInfo::Clear(void) = "8B 41 28 A9 ? ? ? ? 74 38";
+public: virtual void CMsgGameServerInfo::Clear(void) = "8B 41 64";
+public: virtual void CMsgHttpResponse::Clear(void) = "56 8B F1 8B 46 24";
+public: virtual void CMsgNotifyWatchdog::Clear(void) = "8B 41 28 84 C0 74 4A";
+public: virtual void CMsgPartyInviteResponse::Clear(void) = "80 79 20 00 74 20";
+public: virtual void CMsgUpdateItemSchema::Clear(void) = "80 79 1C 00 74 75";
+public: virtual void CMsgUseItem::Clear(void) = "80 79 38";
+public: virtual void CMsgWebAPIKey::Clear(void) = "8B 41 20 84 C0 74 3F C1 E8 04";
+public: virtual void CMsgWebAPIRequest::Clear(void) = "56 8B F1 80 7E 28 00 0F";
+public: virtual void CMsg_CVars_CVar::Clear(void) = "80 79 18 00 74 4E";
+public: virtual void CMumbleSystem::PostRender(void) = "55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 57";
+public: virtual void CNETMsg_File::Clear(void) = "8B 41 18 84 C0 74 2F";
+public: virtual void CNetGraphPanelInterface::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 1B";
+public: virtual void COptionsSubKeyboard::ItemSelected(int) = "55 8B EC 56 8B F1 57 8B 7D 08 57 8B ? ? ? ? ? 8B";
+public: virtual void COptionsSubKeyboard::OnResetData(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF";
+public: virtual void COptionsSubVideo::OnResetData(void) = "53 8B D9 56 57 C6";
+public: virtual void COptionsSubVideo::PerformLayout(void) = "56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74";
+public: virtual void COptionsSubVoice::OnApplyChanges(void) = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+public: virtual void CPanelListPanel::DeleteAllItems(void) = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 3B";
+public: virtual void CPanelListPanel::RemoveItem(int) = "55 8B EC 53 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 8B";
+public: virtual void CParticleSystemQuery::PreSimulate(void) = "8B D1 33 C0 39 42";
+public: virtual void CPlayerLogoProxy::Release(void) = "56 8B F1 8B 4E 18 85 C9 74 05";
+public: virtual void CPlayerRankManager::Shutdown(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 2C 8B D7";
+public: virtual void CRadioStatus::Shutdown(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 05 8B 01";
+public: virtual void CReflectiveGlassView::PushView(float) = "55 8B EC 83 EC 10 53 8B D9 8B ? ? ? ? ? 56";
+public: virtual void CRefractiveGlassView::Draw(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B CF";
+public: virtual void CRefractiveGlassView::PopView(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B CE FF";
+public: virtual void CRefractiveGlassView::PushView(float) = "55 8B EC 83 EC 14 89 4D";
+public: virtual void CRestore::EndBlock(void) = "56 8B F1 57 8B 56 10";
+public: virtual void CRestore::SkipEntityData(void) = "55 8B EC 51 56 8B F1 57 8B 06";
+public: virtual void CRestore::StartBlock(void) = "55 8B EC 8B 01 8D 55 E0";
+public: virtual void CRopeManager::ResetRenderCache(void) = "56 8B F1 8B 56 10";
+public: virtual void CRopeManager::SetHolidayLightMode(bool) = "55 8B EC 8A 45 08 88 41 40";
+public: virtual void CSOEconItem::Clear(void) = "56 8B F1 57 8B 46 78";
+public: virtual void CSOItemCriteria::Clear(void) = "56 8B F1 57 8B 46 38 84 C0 74 26";
+public: virtual void CSOItemCriteriaCondition::Clear(void) = "8B 41 20 84 C0 74 5A";
+public: virtual void CSOItemRecipe::Clear(void) = "56 8B F1 57 8B 46 74";
+public: virtual void CSOLobbyInvite::Clear(void) = "8B 41 20 84 C0 74 3F";
+public: virtual void CSOPersonaDataPublic::Clear(void) = "56 8B F1 8B 46 18 84 C0 74 1D";
+public: virtual void CSVCMsg_BSPDecal::Clear(void) = "56 8B F1 80 7E 20 00 74 2B";
+public: virtual void CSVCMsg_ClassInfo_class_t::Clear(void) = "8B 41 18 84 C0 74 4F";
+public: virtual void CSVCMsg_CreateStringTable::Clear(void) = "80 79 2C 00 74 6F";
+public: virtual void CSVCMsg_EncryptedData::Clear(void) = "80 79 14 00 74 29";
+public: virtual void CSVCMsg_FixAngle::Clear(void) = "56 8B F1 8B 46 14 84 C0 74 16";
+public: virtual void CSVCMsg_GameEvent_key_t::Clear(void) = "8B 41 38 84 C0 74 57";
+public: virtual void CSVCMsg_PacketEntities::Clear(void) = "8B 41 24 84 C0 74 45";
+public: virtual void CSVCMsg_SendTable::Clear(void) = "56 8B F1 57 8B 46 24 84 C0 74 2A";
+public: virtual void CSVCMsg_SetPause::Clear(void) = "80 79 10 00 74 04";
+public: virtual void CSVCMsg_Sounds::Clear(void) = "56 8B F1 57 80 7E 20 00 74 04";
+public: virtual void CSVCMsg_Sounds_sounddata_t::Clear(void) = "8B 41 4C 84";
+public: virtual void CSVCMsg_TempEntities::Clear(void) = "8B 41 18 84 C0 74 2E";
+public: virtual void CSVCMsg_VoiceData::Clear(void) = "8B 41 34 84 C0 74 55";
+public: virtual void CSVCMsg_VoiceInit::Clear(void) = "8B 41 18 84 C0 74 30 D1 E8 C7 ? ? ? ? ? ? A8";
+public: virtual void CSave::EndBlock(void) = "55 8B EC 83 EC 08 53 56 57 8B F9 8B 07";
+public: virtual void CSave::EndLogging(void) = "56 8B F1 8B 56 20";
+public: virtual void CSave::SetWritePos(int) = "55 8B EC 8B 55 08 8B 49";
+public: virtual void CSave::StartBlock(void) = "8B 01 68 ? ? ? ? FF 50 20";
+public: virtual void CSave::StartLogging(char const near *) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 83 C1";
+public: virtual void CSave::WriteInt(int const near *,int) = "55 8B EC 8B 45 0C C1";
+public: virtual void CSave::WriteString(char const near *) = "55 8B EC 8B 55 08 8B C2";
+public: virtual void CSave::WriteTick(int const near *,int) = "55 8B EC 51 53 56 57 8B F9 8B 5D";
+public: virtual void CSaveGameBrowserDialog::Activate(void) = "56 8B F1 0F ? ? ? ? ? ? 50 E8";
+public: virtual void CSaveRestoreBlockSet::PostRestore(void) = "56 8B F1 57 33 FF 39 7E 30 7E 16 0F ? ? ? ? 8B 46 24 8B 0C B8 8B 01 FF 50 20";
+public: virtual void CSaveRestoreBlockSet::PostSave(void) = "56 8B F1 57 33 FF 39 7E 30 7E 16";
+public: virtual void CSaveRestoreBlockSet::PreRestore(void) = "56 57 8B F9 33 F6 39 77 30";
+public: virtual void CShadowModelProxy::OnBind(void near *) = "55 8B EC 56 57 FF ? ? ? ? ? 8B F9";
+public: virtual void CShadowProxy::OnBind(void near *) = "56 FF ? ? ? ? ? 8B F1";
+public: virtual void CSoundControllerImp::Update(float) = "8B 41 FC 83 C1 FC FF 50 04 C2";
+public: virtual void CSpatialEntityMgr::Update(float) = "57 8B F9 83 7F 18";
+public: virtual void CTempEnts::Update(void) = "55 8B EC 83 EC 08 57 8B F9 66";
+public: virtual void CToolFrameworkClient::PostRender(void) = "8B 49 04 85 C9 74 05 8B 01 FF 60 18";
+public: virtual void CToolFrameworkClient::PreRender(void) = "8B 49 04 85 C9 74 05 8B 01 FF 60 14";
+public: virtual void CVTFTexture::ComputeAlphaFlags(void) = "55 8B EC 83 EC 18 56 8B F1 81";
+public: virtual void CViewAngleAnimation::ClientThink(void) = "55 8B EC 83 EC 44 53 56 57 8B F9 80";
+public: virtual void CViewEffects::ClearAllFades(void) = "56 8B F1 57 8B 7E 18";
+public: virtual void CViewEffects::ClearPermanentFades(void) = "53 57 8B F9 8B 5F 18";
+public: virtual void CViewEffects::LevelInit(void) = "56 8B F1 8B 06 FF 50 34";
+public: virtual void CViewEffects::Save(class ISave near *) = "55 8B EC 51 53 56 8B 75 08 8B D9 57 6A";
+public: virtual void CViewRender::FreezeFrame(float) = "55 8B EC F3 ? ? ? ? 0F 57 C0 0F";
+public: virtual void CViewRender::StopPitchDrift(void) = "A1 ? ? ? ? F3 ? ? ? ? 0F 5A C0 C6";
+public: virtual void CViewRenderBeams::ClearBeams(void) = "56 8B F1 57 83 7E 04 00 74";
+public: virtual void C_BaseAnimating::Clear(void) = "56 8B F1 6A 3C";
+public: virtual void C_BaseAnimating::DoMuzzleFlash(void) = "8A ? ? ? ? ? FE C0 24 03 88 ? ? ? ? ? C3";
+public: virtual void C_BaseAnimating::SetPredictable(bool) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B CE";
+public: virtual void C_BaseCombatWeapon::AbortReload(void) = "56 8B F1 6A";
+public: virtual void C_BaseCombatWeapon::Spawn(void) = "56 8B F1 57 8B 06 FF ? ? ? ? ? 6A";
+public: virtual void C_BaseCombatWeapon::WeaponIdle(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0F";
+public: virtual void C_BaseEntity::Clear(void) = "56 8B F1 B8";
+public: virtual void C_BaseEntity::CreateModelInstance(void) = "56 8B F1 B8 ? ? ? ? 66";
+public: virtual void C_BaseEntity::MarkShadowDirty(bool) = "55 8B EC 80 7D 08 00 74";
+public: virtual void C_BaseEntity::OnRestore(void) = "56 6A 07 8B F1";
+public: virtual void C_BaseEntity::ResetLatched(void) = "57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75 35";
+public: virtual void C_BaseEntity::SUB_Remove(void) = "56 8B F1 83 ? ? ? ? ? ? 7E";
+public: virtual void C_BaseEntity::SetPredictable(bool) = "55 8B EC 8A 45 08 88 ? ? ? ? ? 8D";
+public: virtual void C_BaseEntity::Think(void) = "8B C1 8B 50";
+public: virtual void C_BaseEntity::ValidateModelIndex(void) = "8B 11 0F ? ? ? ? ? ? 50";
+public: virtual void C_BaseFlex::OnThreadedDrawSetup(void) = "83 ? ? ? ? ? ? 7C 39";
+public: virtual void C_BasePlayer::AbortReload(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 85";
+public: virtual void C_BasePlayer::ItemPostFrame(void) = "55 8B EC 83 EC 0C 56 57 8B F9 8B 37";
+public: virtual void C_BasePlayer::ItemPreFrame(void) = "53 8B D9 56 57 8B 03";
+public: virtual void C_BasePlayer::UpdateClientData(void) = "56 57 8B F9 33 F6 8B 07 8B CF 56 FF ? ? ? ? ? 85 C0 74 16";
+public: virtual void C_BasePlayer::UpdateSpeechVOIP(bool) = "55 8B EC 80 7D 08 00 57";
+public: virtual void C_CSPlayer::SetSequence(int) = "55 8B EC 80 ? ? ? ? ? ? 74 16";
+public: virtual void C_ClientRagdoll::ClientThink(void) = "55 8B EC 83 EC 30 56 8B F1 80";
+public: virtual void C_ClientRagdoll::SUB_Remove(void) = "8B 01 51 C6";
+public: virtual void C_EntityDissolve::UpdateOnRemove(void) = "56 8B F1 8B ? ? ? ? ? 85 D2";
+public: virtual void C_EntityFlame::ClientThink(void) = "56 8B F1 8D 4E F4";
+public: virtual void C_EnvScreenOverlay::ClientThink(void) = "F3 ? ? ? ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 1D";
+public: virtual void C_Func_Dust::ClientThink(void) = "55 8B EC 83 EC 1C 56 8B F1 8B ? ? ? ? ? A8";
+public: virtual void C_GameInstructor::Shutdown(void) = "56 57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 21";
+public: virtual void C_Item_Healthshot::WeaponIdle(void) = "A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F";
+public: virtual void C_Knife::WeaponIdle(void) = "A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F 2F 40 10 77 3A";
+public: virtual void C_LightGlow::ClientThink(void) = "55 8B EC 83 EC 0C 56 8B F1 8B 46 F4";
+public: virtual void C_MovieExplosion::Update(float) = "55 8B EC 83 EC 14 53 8B D9 83 ? ? ? ? ? ? 0F ? ? ? ? ? F3";
+public: virtual void C_PhysPropClientside::ClientThink(void) = "55 8B EC 51 F3 ? ? ? ? ? ? ? 0F 57";
+public: virtual void C_PhysPropClientside::OnTakeDamage(int) = "55 8B EC 80 ? ? ? ? ? ? 74 1A";
+public: virtual void C_SoundscapeSystem::OnRestore(void) = "A1 ? ? ? ? 8B 40 04 89 41";
+public: virtual void C_SporeTrail::Update(float) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 51";
+public: virtual void C_SpriteTrail::ClientThink(void) = "56 8D 71 F4 8B CE";
+public: virtual void C_VoteController::Spawn(void) = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: virtual void C_WeaponBaseItem::Spawn(void) = "55 8B EC 83 EC 08 56 8B F1 C7 ? ? ? ? ? ? F3";
+public: virtual void C_WeaponCSBaseGun::DoFireEffects(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75 16";
+public: virtual void C_WeaponCSBaseGun::Spawn(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? 80";
+public: virtual void C_World::Release(void) = "83 C1 F8 E9";
+public: virtual void CheckImage::Paint(void) = "55 8B EC 83 EC 14 53 8B D9 56 89";
+public: virtual void ClientModeShared::Update(void) = "A1 ? ? ? ? 53 56 8B F1 B9 ? ? ? ? FF";
+public: virtual void ClientModeShared::VGui_Shutdown(void) = "56 8B F1 8B 4E 18 85";
+public: virtual void ConCommandBase::AddFlags(int) = "55 8B EC 8B 45 08 09";
+public: virtual void ConCommandBase::RemoveFlags(int) = "55 8B EC 8B 45 08 F7";
+public: virtual void ConVar::AddFlags(int) = "55 8B EC 8B 49 1C 8B 45 08 09";
+public: virtual void ConVar::SetValue(char const near *) = "55 8B EC 8B 49 04 8B 01 5D FF 60 38";
+public: virtual void ConVar::SetValue(class Color) = "55 8B EC 8B 49 04 FF 75 08 8B 01 FF 50";
+public: virtual void ConVar::SetValue(float) = "55 8B EC 8B 49 04 F3";
+public: virtual void ConVar::SetValue(int) = "55 8B EC 8B 49 04 8B 01 5D FF 60 40";
+public: virtual void CryptoPP::Integer::BERDecode() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 53 56";
+public: virtual void CryptoPP::SimpleKeyingInterface::SetKey() = "57 FF 74 24 0C";
+public: virtual void Dragger::SetMovable(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8B 06";
+public: virtual void MenuItemCheckImage::Paint(void) = "55 8B EC 51 56 57 8B F9 8B 37 FF";
+public: virtual void ParticleSphereProxy::Release(void) = "85 C9 74 07 8B 01";
+public: virtual void RadioImage::Paint(void) = "55 8B EC 51 57 8B F9 8B 07 FF 77";
+public: virtual void SFHudMoney::SetActive(bool) = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B";
+public: virtual void SFHudRadar::Reset(void) = "8B 01 6A 01 FF 50 3C";
+public: virtual void ScoreLeaderboardData::Clear(void) = "56 8B F1 57 80 7E 38";
+public: virtual void TournamentEvent::Clear(void) = "8B 41 30 84";
+public: virtual void TournamentPlayer::Clear(void) = "8B 41 28 84 C0 0F";
+public: virtual void TournamentTeam::Clear(void) = "56 8B F1 57 8B 46 2C";
+public: virtual void VideoPanel::Activate(void) = "55 8B EC 51 53 8B D9 56 57 6A 01";
+public: virtual void WatchableMatchInfo::Clear(void) = "8B 41 58 84";
+public: virtual void vgui::BaseTooltip::HideTooltip(void) = "8A 41 24 24";
+public: virtual void vgui::Button::NavigateFrom(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 FF";
+public: virtual void vgui::Button::OnCursorEntered(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0B";
+public: virtual void vgui::Button::OnCursorExited(void) = "8A ? ? ? ? ? C0 E8 05 A8 01 75 08";
+public: virtual void vgui::Button::PerformLayout(void) = "55 8B EC 83 EC 0C 56 57 8B F9 0F ? ? ? ? ? ? 8B";
+public: virtual void vgui::Button::SetArmed(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8A";
+public: virtual void vgui::Button::SetBlink(bool) = "55 8B EC 56 8B F1 8A 4D 08 66";
+public: virtual void vgui::ComboBox::HideMenu(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 21";
+public: virtual void vgui::ComboBox::ShowMenu(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 15 8B 01 6A";
+public: virtual void vgui::Frame::Activate(void) = "53 8B D9 56 57 8B 03 FF ? ? ? ? ? 8B 03 8B CB 8B";
+public: virtual void vgui::Frame::ActivateMinimized(void) = "53 8B D9 8B 03 8B ? ? ? ? ? FF D0 84 C0 74 10";
+public: virtual void vgui::Frame::FlashWindowStop(void) = "53 8B D9 56 8B ? ? ? ? ? 57 8B 03 6A 00 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 80";
+public: virtual void vgui::Frame::SetSizeable(bool) = "55 8B EC 8A ? ? ? ? ? 32 45";
+public: virtual void vgui::Frame::SetSmallCaption(bool) = "55 8B EC 8A 45 08 C0 E0 03";
+public: virtual void vgui::Frame::SetTitleBarVisible(bool) = "55 8B EC 53 8B 5D 08 8A";
+public: virtual void vgui::HTML::SetViewSourceEnabled(bool) = "55 8B EC 8B ? ? ? ? ? FF 75 08 FF ? ? ? ? ? 8B";
+public: virtual void vgui::Image::SetBkColor(class Color) = "55 8B EC 8B 01 FF 75 08 FF 50 48";
+public: virtual void vgui::Image::SetColor(class Color) = "55 8B EC 8B 45 08 89 41 14 8B 11";
+public: virtual void vgui::Image::SetPos(int,int) = "55 8B EC 8B 45 08 89 41 04 8B 45 0C 89 41 08 5D";
+public: virtual void vgui::Label::SetHotkey(wchar_t) = "55 8B EC 66 8B 45 08 66 ? ? ? ? ? ? 5D";
+public: virtual void vgui::Label::SetImagePreOffset(int,int) = "55 8B EC 8B 45 08 8B D1 85 C0 78 3F";
+public: virtual void vgui::Label::SetText(char const near *) = "55 8B EC 8B 45 08 85 C0 53";
+public: virtual void vgui::ListPanel::ApplyItemChanges(int) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 FF";
+public: virtual void vgui::ListPanel::SetFont(unsigned long) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 27";
+public: virtual void vgui::ListViewItem::PerformLayout(void) = "55 8B EC 83 EC 08 53 8B D9 56 57 8B 03 FF ? ? ? ? ? 80";
+public: virtual void vgui::ListViewPanel::RemoveItem(int) = "55 8B EC 51 56 8B 75 08 89 4D FC 57";
+public: virtual void vgui::Menu::ActivateItem(int) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 78 4E";
+public: virtual void vgui::Menu::ActivateItemByRow(int) = "55 8B EC 56 8B 75 08 85 F6 78 19";
+public: virtual void vgui::Menu::MoveMenuItem(int,int) = "55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B ? ? ? ? ? 85";
+public: virtual void vgui::Menu::OnKeyTyped(wchar_t) = "55 8B EC 81 ? ? ? ? ? 56 57 8B 7D 08 8B F1 66";
+public: virtual void vgui::Menu::OnKillFocus(void) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89 5D FC 8B 01 FF 50";
+public: virtual void vgui::Menu::SetFont(unsigned long) = "55 8B EC 8B 55 08 56 8B F1 89";
+public: virtual void vgui::MenuItem::PerformLayout(void) = "55 8B EC 51 56 57 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual void vgui::PageTab::OnCursorEntered(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 18 89 ? ? ? ? ? 5E";
+public: virtual void vgui::PageTab::OnThink(void) = "56 8B F1 80 ? ? ? ? ? ? 74 48";
+public: virtual void vgui::Panel::DeletePanel(void) = "66 ? ? ? ? B8 ? ? ? ? 66 21";
+public: virtual void vgui::Panel::MarkForDeletion(void) = "53 8B D9 F6 43 64";
+public: virtual void vgui::Panel::MoveToFront(void) = "53 8B D9 56 57 8B 03 8B ? ? ? ? ? FF D0 84";
+public: virtual void vgui::Panel::NavigateFrom(void) = "55 8B EC 83 EC 08 53 8B D9 33 C0";
+public: virtual void vgui::Panel::OnSizeChanged(int,int) = "8B 01 6A 00 6A 00 FF ? ? ? ? ? C2";
+public: virtual void vgui::Panel::OnThink(void) = "55 8B EC 83 EC 20 53 8B D9 89 5D FC 8B 43";
+public: virtual void vgui::Panel::PaintBackground(void) = "55 8B EC 83 EC 18 8D 45 FC";
+public: virtual void vgui::Panel::PaintBorder(void) = "56 57 8B F9 8B 47 60 8B";
+public: virtual void vgui::Panel::PaintBuildOverlay(void) = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B ? ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+public: virtual void vgui::Panel::PerformLayout(void) = "55 8B EC 83 EC 10 56 8B F1 8B ? ? ? ? ? 85 C9 74";
+public: virtual void vgui::Panel::Repaint(void) = "66 ? ? ? ? 57 8B ? ? ? ? ? 85";
+public: virtual void vgui::Panel::RequestFocus(int) = "56 57 8B F9 6A 00 8B 37";
+public: virtual void vgui::Panel::SetBlockDragChaining(bool) = "55 8B EC 8B 49 28 8A 45 08 88 41 58";
+public: virtual void vgui::Panel::SetDragEnabled(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8B";
+public: virtual void vgui::Panel::SetDragSTartTolerance(int) = "55 8B EC 8B 49 28 8B";
+public: virtual void vgui::Panel::SetDropEnabled(bool,float) = "55 8B EC 8B 51 28";
+public: virtual void vgui::Panel::SetEnabled(bool) = "55 8B EC 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 10";
+public: virtual void vgui::Panel::SetMouseInputEnabled(bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57 FF 75 08 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 8B";
+public: virtual void vgui::Panel::SetParent(unsigned int) = "55 8B EC 51 8B 45 08 53 8B D9 89";
+public: virtual void vgui::Panel::SetScheme(unsigned long) = "55 8B EC 8B 45 08 3B ? ? ? ? ? 74 06";
+public: virtual void vgui::Panel::SetShowDragHelper(bool) = "55 8B EC 8B 49 28";
+public: virtual void vgui::Panel::SetVisible(bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57";
+public: virtual void vgui::PanelListPanel::RemoveItem(int) = "55 8B EC 83 EC 08 8B C1 56 8B";
+public: virtual void vgui::ProgressBar::SetProgress(float) = "55 8B EC F3 ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 20";
+public: virtual void vgui::PropertySheet::RequestFocus(int) = "55 8B EC 8B 55 08 56 8B F1 83 FA";
+public: virtual void vgui::PropertySheet::SetSmallTabs(bool) = "55 8B EC 8A 45 08 53";
+public: virtual void vgui::PropertySheet::SetTabWidth(int) = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 8B";
+public: virtual void vgui::RichText::CutSelected(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE 6A";
+public: virtual void vgui::ScrollBarSlider::SetValue(int) = "55 8B EC 8B 55 08 56 57 8B F9 8B ? ? ? ? ? 2B";
+public: virtual void vgui::Slider::SetRange(int,int) = "55 8B EC 8B 55 08 8B ? ? ? ? ? 56 8B";
+public: virtual void vgui::Slider::SetValue(int,bool) = "55 8B EC 8B 45 08 56 8B F1 57 8B ? ? ? ? ? 8B";
+public: virtual void vgui::TextEntry::Backspace(void) = "55 8B EC 51 56 8B F1 8B 06 8B";
+public: virtual void vgui::TextEntry::CutSelected(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06";
+public: virtual void vgui::TextEntry::GotoDown(void) = "55 8B EC 83 EC 08 57 8B F9 6A 00 8B 07 FF ? ? ? ? ? 80 ? ? ? ? ? ? 74 13";
+public: virtual void vgui::TextEntry::GotoFirstOfLine(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B CE";
+public: virtual void vgui::TextEntry::GotoLeft(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 33";
+public: virtual void vgui::TextEntry::GotoTextStart(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE C7";
+public: virtual void vgui::TextEntry::GotoUp(void) = "55 8B EC 83 EC 08 57 8B F9 6A";
+public: virtual void vgui::TextEntry::GotoWordLeft(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 83";
+public: virtual void vgui::TextEntry::GotoWordRight(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 40";
+public: virtual void vgui::TextEntry::InsertChar(wchar_t) = "55 8B EC 8B 55 08 56 8B F1 66";
+public: virtual void vgui::TextEntry::MoveCursor(int,int) = "55 8B EC 83 EC 1C 8B 45 08 56 8B";
+public: virtual void vgui::TextEntry::SaveUndoState(void) = "8B ? ? ? ? ? 53 8B ? ? ? ? ? 56 8B";
+public: virtual void vgui::TextEntry::SelectNone(void) = "8B 01 C7 ? ? ? ? ? ? ? ? ? FF 60";
+public: virtual void vgui::TextEntry::SetEditable(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 51";
+public: virtual void vgui::TextEntry::SetEnabled(bool) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF 50";
+public: virtual void vgui::TextEntry::SetFont(unsigned long) = "55 8B EC 8B 45 08 56 8B F1 6A 00";
+public: virtual void vgui::TextEntry::Undo(void) = "55 8B EC 83 EC 08 53 56 8B F1 57 8D ? ? ? ? ? 89";
+public: virtual void vgui::TextImage::Paint(void) = "55 8B EC 83 EC 28 56 8B F1 8D";
+public: virtual void vgui::TextImage::SetFont(unsigned long) = "55 8B EC 8B 45 08 80 49";
+public: virtual void vgui::ToggleButton::DoClick(void) = "56 57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 8B";
+public: virtual void vgui::TreeNode::OnSetFocus(void) = "8B ? ? ? ? ? 6A 00 8B 01 FF 50 30 C3";
+public: virtual void vgui::TreeNode::Paint(void) = "56 8B F1 83 ? ? ? ? ? ? 7F";
+public: virtual void vgui::TreeNode::StepInto(bool) = "55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 07 6A";
+public: virtual void vgui::TreeNodeText::OnKillFocus(void) = "56 8B F1 E8 ? ? ? ? 6A";
+public: virtual void vgui::TreeNodeText::OnTextChanged(void) = "8B 01 FF ? ? ? ? ? 6A 00 6A 00 8B C8";
+public: virtual void vgui::TreeView::ExpandItem(int,bool) = "55 8B EC 8B 55 08 56 8B F1 85 D2 78 40";
+public: virtual void vgui::TreeView::MakeItemVisible(int) = "55 8B EC 8B 45 08 53 56 57 8B F9 8D 14";
+public: virtual void vgui::TreeView::RangeSelectItems(int) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 85 D2";
+public: virtual void vgui::TreeView::RemoveAll(void) = "56 57 8B F9 33 F6 39 ? ? ? ? ? 7E 41";
+public: virtual void vgui::TreeView::RemoveSelectedItem(int) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 0F ? ? ? ? ? 3B ? ? ? ? ? 0F";
+public: virtual void vgui::TreeView::SetFont(unsigned long) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 3C";
+public: virtual void vgui::URLButton::DoClick(void) = "56 8B F1 6A 01 8B 06 FF ? ? ? ? ? 8B";
+public: virtual void vgui::URLButton::OnCursorEntered(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0C 8B";
+public: virtual void vgui::URLButton::OnCursorExited(void) = "8A ? ? ? ? ? C0 E8 05 A8 01 75";
+public: virtual void vgui::URLButton::PerformLayout(void) = "55 8B EC 51 56 57 8B F9 8D 45";
+public: virtual void vgui::URLButton::SetArmed(bool) = "55 8B EC 56 8B F1 8A 4D 08 8A ? ? ? ? ? 24";
+public: void Beam_t::ComputeBounds(void) = "55 8B EC 83 EC 0C 56 8B F1 8B 46 30";
+public: void CAsyncCaptionResourceManager::Clear(void) = "55 8B EC 83 EC 10 8B C1 C7";
+public: void CAttributeManager::ClearCache(void) = "57 8B F9 80 7F 20";
+public: void CAvatarImage::SetAvatarSize(int,int) = "55 8B EC 80 79 3C";
+public: void CBaseModelPanel::SetModelAnim(int,bool) = "55 8B EC 8B D1 8B ? ? ? ? ? 85";
+public: void CBaseRopePhysics::SetNumNodes(int) = "55 8B EC 8B 45 08 8B D1 56";
+public: void CBitRead::ReadBitVec3Coord(class Vector near &) = "55 8B EC 56 57 8B 7D 08 8B F1 C7";
+public: void CBoneSnapshot::Init(void) = "56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7 ? ? ? ? ? 50";
+public: void CCSInventoryManager::GenerateBaseItems(void) = "55 8B EC 83 EC 0C 53 56 33";
+public: void CChoreoEvent::RemoveAllTracks(void) = "56 8B F1 8B ? ? ? ? ? 85 C0 7E 48";
+public: void CChoreoEvent::SetActive(bool) = "55 8B EC 8A 45 08 C0 E0 06";
+public: void CChoreoEvent::SetPlayOverScript(bool) = "55 8B EC 8A ? ? ? ? ? 8A";
+public: void CChoreoEvent::SetTrackLookupSet(bool) = "55 8B EC 8A 45 08 C0 E0 03 32 ? ? ? ? ? 24 08 30 ? ? ? ? ? 5D";
+public: void CClientEntityList::Release(void) = "53 56 57 8B F9 8B ? ? ? ? ? 85 C0";
+public: void CClientSteamContext::Activate(void) = "56 8B F1 80 ? ? ? ? ? ? 75 3C";
+public: void CCollisionProperty::UpdatePartition(void) = "55 8B EC 83 EC 18 57 8B F9 8B 4F";
+public: void CConcurrentViewData::Purge(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 85 C9 74 0F";
+public: void CEconItem::SetItemID(unsigned __int64) = "55 8B EC 8B 55 08 53 8B 5D 0C 56 8B";
+public: void CEconItem::SetOriginalID(unsigned __int64) = "55 8B EC 8B 55 08 8B 45 0C";
+public: void CEngineSprite::SetFrame(enum RenderMode_t,int) = "55 8B EC 0F B7 11";
+public: void CEngineSprite::Shutdown(void) = "56 8B F1 57 BF ? ? ? ? 0F B7 16";
+public: void CFlexAnimationTrack::Resort(int) = "55 8B EC 83 EC 24 8B 45 08 56";
+public: void CFmtStrN<256,0>::Append(char) = "55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 7D";
+public: void CGameStringPool::PurgeDeferredDeleteList(void) = "56 8B F1 57 33 FF 39 7E 2C";
+public: void CHud::LevelInit(void) = "55 8B EC 51 53 8B D9 56 33";
+public: void CHudMessage::MessageScanNextChar(void) = "55 8B EC 83 EC 14 53 56 8B F1 33";
+public: void CHudMessage::MessageScanStart(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 85";
+public: void CIKContext::ClearTargets(void) = "33 C0 39 ? ? ? ? ? 7E 1B";
+public: void CLocatorTarget::Deactivate(bool) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C9 74 12";
+public: void CLocatorTarget::SetVisible(bool) = "55 8B EC 8A 45 08 56 8B F1 38";
+public: void CLocatorTarget::StartPresent(void) = "A1 ? ? ? ? 8B 40 10 89 ? ? ? ? ? C3";
+public: void CMemoryStack::Term(void) = "56 8B F1 8B 4E 14 85";
+public: void CNetGraphPanel::DrawHatches(int,int,int) = "55 8B EC 83 EC 24 89";
+public: void CNetGraphPanel::DrawStreamProgress(int,int,int) = "55 8B EC 83 EC 14 8B 45 08 56 8B";
+public: void CNetGraphPanel::InitColors(void) = "55 8B EC 83 EC 20 F3";
+public: void CParticleCollection::ResetParticleCache(void) = "55 8B EC 51 53 8B D9 83 ? ? ? ? ? ? 74";
+public: void CParticleCollection::StartEmission(bool) = "55 8B EC 57 8B F9 8B 47 48";
+public: void CParticleMgr::IncrementFrameCode(void) = "66 ? ? ? ? 75 40";
+public: void CParticleMgr::PostRender(void) = "56 8B F1 57 BF ? ? ? ? 0F B7 46 34";
+public: void CParticleMgr::RemoveAllEffects(void) = "55 8B EC 83 EC 08 56 57 8B F9 89";
+public: void CParticleMgr::SpewInfo(bool) = "53 8B ? ? ? ? ? 57 68";
+public: void CParticleSnapshot::Purge(void) = "56 8B F1 E8 ? ? ? ? 0F ? ? ? ? ? ? C7";
+public: void CPixelVisibilitySystem::DeleteUnusedSets(bool) = "55 8B EC 83 EC 08 57 8B F9 B9";
+public: void CRagdoll::PhysForceRagdollToSleep(void) = "55 8B EC 81 ? ? ? ? ? 53 8B D9 C7 ? ? ? ? ? ? 56";
+public: void CSOAContainer::AllocateData(int,int,int) = "55 8B EC 8B 55 08 8B 45 0C 53";
+public: void CSOAContainer::Purge(void) = "56 8B F1 E8 ? ? ? ? 68 ? ? ? ? 8D ? ? ? ? ? 68";
+public: void CSOAContainer::PurgeData(void) = "56 8B F1 57 8B ? ? ? ? ? 85 D2 74 1C";
+public: void CSceneTokenProcessor::SetBuffer(char near *) = "55 8B EC 8B 45 08 89 41 04";
+public: void CScriptedIconLesson::Init(void) = "55 8B EC 83 EC 0C 8D";
+public: void CSoftbody::InitDefaults(void) = "33 C0 56 8B F1 83";
+public: void CStringPool::FreeAll(void) = "53 56 57 8B F9 BE ? ? ? ? 0F B7 47 10 66 90 66 3B C6 74 16 0F B7 C8 8D 14 49";
+public: void CStudioHdr::setBoneFlags(int,int) = "55 8B EC 51 53 8B 5D 0C 8B C1";
+public: void CSubtitlePanel::Pause(bool) = "55 8B EC 8A 45 08 83";
+public: void CTextLesson::Init(void) = "55 8B EC 51 56 68 ? ? ? ? 8D";
+public: void CTextureAllocator::DeallocateAllTextures(void) = "56 57 8B F9 8D 4F 04 E8 ? ? ? ? 83";
+public: void CUnderWaterView::CRefractionView::Setup(void) = "53 8B D9 B9 ? ? ? ? 56 57 8B FB 8D ? ? ? ? ? 8D 46 08 F7 DE 1B F6 23 F0 F7 DF 8D 43 08 1B FF 23 F8 F3 A5 8B CB E8 ? ? ? ? 80 7B";
+public: void CUtlBinaryBlock::Set(void const near *,int) = "55 8B EC 53 56 33 DB";
+public: void CUtlBuffer::EatWhiteSpace(void) = "56 8B F1 F6 46 15 01 74";
+public: void CUtlBuffer::GetString(char near *,int) = "55 8B EC 51 57 8B F9 80 7F 14";
+public: void CUtlBuffer::Purge(void) = "56 8B F1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: void CUtlDict<class CUtlString,int>::RemoveAll(void) = "53 8B D9 56 8B 73 10 83 FE FF 74 3E 8B 43 04 8D 0C F6";
+public: void CUtlMemoryPool::Clear(void) = "53 8B D9 57 8B 53";
+public: void CUtlStreamBuffer::Close(void) = "56 8B F1 57 F6 46 15";
+public: void CVertexBuilder::AdvanceVertex(void) = "FF ? ? ? ? ? 8B ? ? ? ? ? 3B ? ? ? ? ? 7E";
+public: void CVertexBuilder::Reset(void) = "8B 41 54 89";
+public: void C_AnimationLayer::Reset(void) = "56 8B F1 0F 57 C9";
+public: void C_BaseAnimating::InvalidateBoneCache(void) = "80 ? ? ? ? ? ? 74 16 A1 ? ? ? ? 48 C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? C3";
+public: void C_BaseAnimating::RagdollMoved(void) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 8B";
+public: void C_BaseAnimating::ResetSequenceInfo(void) = "56 8B F1 83 ? ? ? ? ? ? 75 0A";
+public: void C_BaseCombatWeapon::ClassifyWeaponModel(void) = "53 56 57 8B F9 8B 47 04";
+public: void C_BaseCombatWeapon::GiveDefaultAmmo(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 8B";
+public: void C_BaseEntity::AddEffects(int) = "55 8B EC 53 8B 5D 08 56 8B F1 09";
+public: void C_BaseEntity::AddToLeafSystem(void) = "0F ? ? ? ? ? ? 50 E8 ? ? ? ? C3";
+public: void C_BaseEntity::CreateShadow(void) = "55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 57";
+public: void C_BaseEntity::DestroyAllDataObjects(void) = "56 57 8B F9 33 F6 66 ? ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 0F";
+public: void C_BaseEntity::DrawBBoxVisualizations(void) = "55 8B EC 83 EC 18 53 8B D9";
+public: void C_BaseEntity::RemoveFromAimEntsList(void) = "57 8B F9 8B ? ? ? ? ? 83 F8 FF 0F ? ? ? ? ? 8B";
+public: void C_BaseEntity::RemoveVar(void near *,bool) = "55 8B EC 56 8B F1 33 C0 8B";
+public: void C_BaseEntity::SetCollisionGroup(int) = "55 8B EC 8B 45 08 39 ? ? ? ? ? 74 0B";
+public: void C_BaseEntity::ShutdownPredictable(void) = "56 8B ? ? ? ? ? 33 C0 57";
+public: void C_BasePlayer::UpdateFogBlend(void) = "55 8B EC 83 EC 1C 56 8B F1 57";
+public: void C_Beam::SetBeamFlags(int) = "55 8B EC 8B 45 08 39 ? ? ? ? ? 74";
+public: void C_Beam::SetEndEntity(class C_BaseEntity near *) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 0B 8B 06 8B CE FF 50 08 8B 00 EB 03 83 C8 FF 8B ? ? ? ? ? 49";
+public: void C_CSGameRules::CloseBuyMenu(int) = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 0F ? ? ? ? ? 8B ? ? ? ? ? 8B";
+public: void C_CSPlayer::ClearAllBulletHitModels(void) = "57 8B F9 8B ? ? ? ? ? 85 C0 74 2D";
+public: void C_CSPlayer::HandleTaserAnimation(void) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? A1";
+public: void C_ColorCorrection::EnableOnClient(bool,bool) = "55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 15";
+public: void C_EconItemView::ClearInventoryImageRgba(void) = "55 8B EC 81 ? ? ? ? ? 57 8B F9 C7 ? ? ? ? ? ? C7";
+public: void C_EconItemView::Invalidate(void) = "56 8B F1 80 ? ? ? ? ? ? 57 8D ? ? ? ? ? 74 13";
+public: void C_EconItemView::SetItemID(unsigned __int64) = "55 8B EC 8B 45 08 53 8B 5D 0C 56 57";
+public: void C_EnvScreenOverlay::StartCurrentOverlay(void) = "56 8B F1 8B ? ? ? ? ? 83 F9 0A";
+public: void C_EnvScreenOverlay::StartOverlays(void) = "56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 C7";
+public: void C_EnvScreenOverlay::StopOverlays(void) = "56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 FF ? ? ? ? ? 80";
+public: void C_SoundscapeSystem::OnStopAllSounds(void) = "56 8B F1 83 ? ? ? ? ? ? 57";
+public: void ConVarRef::Init(char const near *,bool) = "55 8B EC 57 8B F9 8B ? ? ? ? ? 85 C9 74 0C";
+public: void CountdownTimer::Invalidate(void) = "55 8B EC 83 EC 08 F3";
+public: void KeyValues::AddSubKey(class KeyValues near *) = "55 8B EC 8B 41 18 85 C0 75";
+public: void KeyValues::RemoveSubKey(class KeyValues near *) = "55 8B EC 56 8B 75 08 85 F6 74 4D 8B 51";
+public: void KeyValues::SetInt(char const near *,int) = "55 8B EC 6A 01 FF 75 08 E8 ? ? ? ? 85 C0 74 0A 8B";
+public: void KeyValues::SetName(char const near *) = "55 8B EC 51 56 8B F1 C7 ? ? ? ? ? ? FF";
+public: void KeyValues::deleteThis(void) = "56 8B F1 85 F6 74 13";
+public: void _HeapManager::Destructor(void) = "57 8B F9 83 7F 04 00 74 2E";
+public: void bf_write::WriteShort(int) = "55 8B EC 6A 10";
+public: void bf_write::WriteUBitLong(unsigned int,int,bool) = "55 8B EC 53 8B 5D 0C 57 8B";
+public: void ceng::ui::CWindowWidget::OnDragBy() = "55 8B EC F3 ? ? ? ? 83 EC 08 F3";
+public: void const near * CUtlBuffer::PeekGet(int,int) = "55 8B EC 56 8B F1 57 F6 46 14 02";
+public: void constraint_ballsocketparams_t::Defaults(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 2C";
+public: void fourplanes_t::ComputeSignbits(void) = "0F 28 01 0F";
+public: void near * CUtlMemoryPool::AllocZero(unsigned int) = "55 8B EC 53 8B 5D 08 56 8B F1 3B 1E";
+public: void near * C_BaseEntity::GetPredictedFrame(int) = "55 8B EC 57 8B F9 83";
+public: void netadr_s::SetIP(unsigned int) = "55 8B EC 8B 45 08 0F C8";
+public: void netadr_s::SetPort(unsigned short) = "55 8B EC 66 8B 45 08 86";
+public: void vgui::CItemButton::SetSectionID(int) = "55 8B EC 53 8B 5D 08 56 8B F1 3B ? ? ? ? ? 74";
+public: void vgui::Menu::ClearCurrentlyHighlightedItem(void) = "56 8B F1 8B ? ? ? ? ? 85 D2 78";
+public: void vgui::Menu::DeleteAllItems(void) = "53 56 57 8B F9 8B ? ? ? ? ? 83 F8 FF 74 23";
+public: void vgui::Panel::MakePopup(bool,bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57 6A";
+public: void vgui::Panel::SetAlpha(int) = "55 8B EC 66 ? ? ? ? 0F 5B C0 F3";
+public: void vgui::Panel::SetBounds(int,int,int,int) = "55 8B EC 53 56 8B ? ? ? ? ? 8B D9 57 FF";
+public: void vgui::RichText::GetText(int,wchar_t near *,int) = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 4C";
+public: void vgui::RichText::GotoTextEnd(void) = "55 8B EC 83 EC 08 56 8B F1 8D 55";
+public: void vgui::RichText::GotoTextStart(void) = "56 8B F1 6A 00 8B ? ? ? ? ? C7";
+public: void vgui::SectionedListPanel::MoveSelectionUp(void) = "53 57 8B F9 8B 07 FF ? ? ? ? ? 8B D8 83 FB FF 74 66";
+public: void vgui::TreeNode::RemoveChildren(void) = "56 57 8B F9 8B ? ? ? ? ? 83 EE 01 78 27";
+public: void vgui::TreeNode::SetFont(unsigned long) = "55 8B EC 53 8B 5D 08 57 8B F9 85 DB 74 50";
+public: void vgui::TreeNode::SetNodeExpanded(bool) = "55 8B EC 8A 45 08 56 8B F1 88 ? ? ? ? ? 84 C0 74 51";
+public: wchar_t const near * CModInfo::GetGameTitle(void) = "56 8B F1 66 83 3E";
+putShortMSB() = "56 57 8B F9 8B CA";
+quantize3_ord_dither() = "55 8B EC 83 EC 28 83";
+quantize_fs_dither() = "55 8B EC 83 EC 40 83";
+quantize_ord_dither() = "55 8B EC 83 EC 20 83 7D 14";
+r_cheapwaterend() = "55 8B EC 51 8B 45 08 83 38 02 75 27 FF ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? D9 5D 08 F3 ? ? ? ? F3 ? ? ? ? 8B 01 FF 50 44";
+r_cheapwaterstart() = "55 8B EC 51 8B 45 08 83";
+r_shadowcolor() = "55 8B EC 56 8B 75 08 8B 06";
+read_markers() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 1E";
+read_restart_marker() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 10";
+realize_virt_arrays() = "55 8B EC 51 53 56 57 8B 7D 08 33";
+reduce_script() = "53 8B D9 33 D2 56 33";
+reset_error_mgr() = "55 8B EC 8B 4D 08 8B 01 C7";
+reset_input_controller() = "55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C7";
+reset_marker_reader() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+rgb_gray_convert() = "55 8B EC 83 EC 0C 8B 4D 08 53 8B ? ? ? ? ? 8B";
+rgb_ycc_convert() = "55 8B EC 83 EC 18 83 6D";
+rgb_ycc_start() = "53 8B DC 83 EC 08 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 8B 4B";
+script_execute_client() = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 7C";
+script_help_client() = "55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 8B 01 8B";
+select_colors() = "55 8B EC 51 53 56 8B 71 04";
+select_ncolors() = "55 8B EC 83 EC 18 53 89";
+select_scan_parameters() = "53 56 8B F1 57 8B ? ? ? ? ? 85 C9 74 6F";
+send_all_trees() = "55 8B EC 51 53 56 8B F1 8B C2";
+send_bits() = "55 8B EC 51 53 8B 5D 08 57 89";
+send_tree() = "55 8B EC 83 EC 1C 53 56 57 8B FA";
+sep_downsample() = "55 8B EC 83 EC 08 53 56 8B 75 08 C7";
+sep_upsample() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B ? ? ? ? ? 89";
+set_bottom_pointers() = "55 8B EC 83 EC 0C 53 56 8B F1 57 33 FF 89";
+set_next_think() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B C6";
+set_wraparound_pointers() = "55 8B EC 83 EC 18 53 8B D9 56 33";
+setuiname() = "68 ? ? ? ? 51 68 ? ? ? ? E8";
+shortsort() = "8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 8B";
+showinfo() = "55 8B EC 51 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? 56";
+showpanel() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 15";
+skip_input_data() = "55 8B EC 53 8B 5D 08 56 57 8B 7D 0C 8B 73";
+skip_variable() = "55 8B EC 51 53 56 57 8B 7D 08 8B 77";
+spec_pos() = "55 8B EC 83 E4 C0 83 EC 40";
+start_iMCU_row() = "83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C3 8B ? ? ? ? ? 48 39 42";
+start_iMCU_row_0() = "83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16";
+start_input_pass() = "55 8B EC 56 8B 75 08 8B CE E8";
+start_input_pass_0() = "55 8B EC 8B 4D 08 C7";
+start_output_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83 7F";
+start_pass() = "55 8B EC 83 EC 08 80 7D 0C 00 56 8B";
+start_pass_0() = "55 8B EC 83 EC 0C 53 56 8B 75 08 57 80 ? ? ? ? ? ? 8B ? ? ? ? ? 89 5D 08";
+start_pass_1() = "55 8B EC 83 EC 14 53 8B 5D 08 33";
+start_pass_1_quant() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 89";
+start_pass_2_quant() = "55 8B EC 53 56 8B 75 08 57 83 7E";
+start_pass_coef() = "55 8B EC 8B 4D 08 56 8B ? ? ? ? ? C7";
+start_pass_dpost() = "55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83 E8 00 0F";
+start_pass_fdctmgr() = "55 8B EC 83 EC 18 8B 55 08 53 56 57 8B ? ? ? ? ? 33";
+start_pass_huff() = "55 8B EC 8A 4D";
+start_pass_huff_decoder() = "55 8B EC 83 EC 0C 53 56 8B 75 08 57 80";
+start_pass_main() = "55 8B EC 8B 55 08 80 ? ? ? ? ? ? 8B";
+start_pass_main_0() = "55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83";
+start_pass_merged_upsample() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C6";
+start_pass_prep() = "55 8B EC 83 7D 0C 00 56";
+start_pass_upsample() = "55 8B EC 8B 4D 08 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+static_attrib_t::BInitFromKV_MultiLine() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 0C 89";
+stb__InitDXT() = "33 D2 8B CA";
+stopvideos() = "56 33 F6 39 ? ? ? ? ? 7E 2D";
+string_operation() = "55 8B EC 53 8B 5D 08 56 8B F1 8B";
+team_color() = "55 8B EC 83 EC 10 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 83";
+term_destination() = "55 8B EC 8B 45 08 8B 48 18";
+testfreezeframe_f() = "8B ? ? ? ? ? 51 C7 ? ? ? ? ? ? 8B 01 FF 50 7C C3";
+toggleRdrOpt() = "80 ? ? ? ? ? ? 8B ? ? ? ? ? 0F 94";
+toggleThreadedBuildRWList() = "A1 ? ? ? ? B9 ? ? ? ? 53 FF 50 34 8B ? ? ? ? ? 85 C0 0F 94";
+und_strncmp() = "55 8B EC 8B 45 10 85 C0 75 02";
+unsigned int CryptoPP::BitPrecision<unsigned int>() = "8B 44 24 04 57";
+unsigned int CryptoPP::BytePrecision<unsigned __int64>() = "8B 44 24 04 55";
+unsigned int CryptoPP::BytePrecision<unsigned int>() = "8B 44 24 04 57 8B 38 85 FF 75 04 33 C0 5F C3 56 33 F6 BA ? ? ? ? 8D 0C 32 8B C7 D1 E9 D3 E8 85 C0 74 04 8B F1 EB 02 8B D1 8B CA 2B CE 83 F9 08";
+unsigned int HashString(char const near *) = "0F B6 01 33";
+unsigned int HashStringCaseless(char const near *) = "53 56 8B F1 33 DB 57 33 FF 0F";
+unsigned int ThreadedLoadLibraryFunc(void near *) = "55 8B EC 56 8B 75 08 6A";
+unsigned int google::protobuf::ghtonl(unsigned int) = "55 8B EC 8B 4D 08 8B C1 C1 E8";
+update_box() = "55 8B EC 83 EC 2C 8B ? ? ? ? ? 53 8B DA";
+updatewindow() = "55 8B EC 51 53 8B D9 B8";
+use_merged_upsample() = "80 79 48 00 0F";
+usrCmd_Start() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 8B ? ? ? ? ? 85 C0 6A";
+validate_script() = "55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 83 ? ? ? ? ? ? 7F";
+vgui::AnimationController::LoadScriptFile() = "55 8B EC 83 EC 08 89 4D FC 8B ? ? ? ? ? 56";
+vgui::BuildGroup::SaveControlSettings() = "55 8B EC 81 ? ? ? ? ? 32 C0 56";
+vgui::BuildModeDialog::OnCommand() = "55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 53 56 57 8B D9";
+vgui::BuildModeDialog::OnCreateNewControl() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 52";
+vgui::Button::ApplySchemeSettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 06 8B CE 68";
+vgui::Button::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 08 56 57 8B 7D 08 8B F1 57 E8 ? ? ? ? 68";
+vgui::Button::Init() = "56 57 8B F9 B8 ? ? ? ? 6A";
+vgui::CConsolePanel::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 8B F9 53";
+vgui::CItemButton::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03";
+vgui::CItemButton::OnMouseDoublePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 74";
+vgui::CItemButton::OnMousePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F";
+vgui::CheckButton::ApplySchemeSettings() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B F1 53 89 75 FC";
+vgui::ComboBox::OnMenuItemSelected() = "55 8B EC 51 56 8B F1 81";
+vgui::ContextLabel::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 56";
+vgui::ExpandButton::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D 4D 08 57";
+vgui::FileData_t::FileData_t() = "55 8B EC 53 8B 5D 0C 8B CB 56 57 8B 03 FF 50 44";
+vgui::FileData_t::~FileData_t() = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 70";
+vgui::FileOpenDialog::ApplySchemeSettings() = "55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 8B";
+vgui::Frame::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 6A 01";
+vgui::Frame::Frame() = "55 8B EC 56 8B 75 08 57 68";
+vgui::Frame::GetSysMenu() = "53 56 57 8B F9 83 ? ? ? ? ? ? 0F ? ? ? ? ? A1";
+vgui::FrameButton::ApplySchemeSettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8D 4D 08 56 68";
+vgui::ListPanel::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B F9 6A";
+vgui::ListPanel::RBTreeLessFunc() = "55 8B EC 56 8B 75 0C 57 8B 7D 08 FF";
+vgui::ListViewItem::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D";
+vgui::ListViewPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 33 8D 45 08 57 68 ? ? ? ? 50 8B CB FF ? ? ? ? ? 8B CB FF 30 FF ? ? ? ? ? 8B 07";
+vgui::Menu::ApplySchemeSettings() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 53";
+vgui::Menu::LayoutMenuBorder() = "53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 50 50 50 8B CE FF 57 20 68";
+vgui::Menu::SetCurrentlyHighlightedItem() = "55 8B EC 53 8B 5D 08 56 57 53 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 33";
+vgui::Menu::SetCurrentlySelectedItem() = "55 8B EC 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 3B FA";
+vgui::MenuBar::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B";
+vgui::MenuButton::OnKillFocus() = "55 8B EC 56 57 6A 00 8B F1 8B 4D 08 68 ? ? ? ? E8 ? ? ? ? 85 C0 74 0B 80 78 10 04 75 05 8B 78";
+vgui::MenuItem::ApplySchemeSettings() = "55 8B EC 83 EC 14 53 56 57 8B 7D";
+vgui::PageTab::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C1";
+vgui::Panel::AddPropertyConverter() = "55 8B EC 83 EC 10 56 57 89";
+vgui::Panel::GetWide() = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 F8";
+vgui::Panel::Init() = "53 56 57 8B D9 6A 01";
+vgui::Panel::InitPropertyConverters() = "51 80 ? ? ? ? ? ? 0F ? ? ? ? ? BA";
+vgui::Panel::InternalMouseFocusTicked() = "55 8B EC 53 8B D9 83 ? ? ? ? ? ? 75 5D";
+vgui::Panel::OnContinueDragging() = "55 8B EC 83 EC 10 53 8B D9 8B 43 28";
+vgui::Panel::OnKeyCodePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 6A 53";
+vgui::PanelListPanel::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 01 68";
+vgui::PropertyDialog::ActivateBuildMode() = "55 8B EC 83 EC 10 53 8B D9 80 ? ? ? ? ? ? 74";
+vgui::PropertySheet::OnThink() = "56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74 20";
+vgui::QueryBox::OnKeyCodeTyped() = "55 8B EC 8B 45 08 83 F8 46 75 10";
+vgui::RadioButton::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 07";
+vgui::RadioButton::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8B";
+vgui::RadioButton::GetDescription() = "68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68";
+vgui::RichText::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03";
+vgui::ScrollBar::ApplySchemeSettings() = "55 8B EC 83 EC 0C 53 56 8B 75 08 8B D9 57 56 E8";
+vgui::ScrollBar::SetButton() = "55 8B EC 56 57 8B 7D 0C 8B F1 8B ? ? ? ? ? ? 85";
+vgui::ScrollBarSlider::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 37";
+vgui::SectionedListPanel::ApplySettings() = "55 8B EC 53 56 8B 75 08 8B D9 56 E8 ? ? ? ? 6A";
+vgui::Slider::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 00";
+vgui::Slider::RecomputeNobPosFromValue() = "55 8B EC 83 EC 10 53 56 8B F1 8D";
+vgui::TextEntry::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 53";
+vgui::TextEntry::GetDropContextMenu() = "55 8B EC 56 57 8B 7D 08 8B F1 6A 00 56";
+vgui::TextImage::SetUseAsianWordWrapping() = "80 ? ? ? ? ? ? 56 57 8B F9 75";
+vgui::TextTooltip::TextTooltip() = "55 8B EC 83 EC 14 53 8B D9 56 57 6A";
+vgui::ToggleButton::ApplySchemeSettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B 07";
+vgui::ToggleButton::DoClick() = "53 56 57 8B F9 8B 07 8B ? ? ? ? ? FF";
+vgui::TreeView::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B 37 68 ? ? ? ? FF 50 08 50 8B CF FF ? ? ? ? ? 8B 37";
+vgui::TreeView::ClearSelection() = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 1B";
+vgui::URLLabel::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 8B C1 56 57 89 45 FC 8B";
+vgui::URLLabel::OnMousePressed() = "55 8B EC 83 7D 08 6B 75 1B";
+viewanim_addkeyframe() = "55 8B EC 83 EC 1C 83 ? ? ? ? ? ? 0F";
+viewanim_create() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 10";
+void CC_CL_Find_Ent_Index(class CCommand const near &) = "55 8B EC 8B 4D 08 8B 01";
+void ClientVoiceMgr_LevelInit(void) = "8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? C3";
+void CreateStuckTable(void) = "55 8B EC 83 EC 0C 83 ? ? ? ? ? ? 0F ? ? ? ? ? 68";
+void CryptoPP::BERDecodeNull() = "51 56 8B 74 24 0C 8D";
+void CryptoPP::Baseline_Multiply2() = "53 55 8B 6C 24 14";
+void CryptoPP::Baseline_Multiply4() = "53 55 8B 6C 24 14 56";
+void CryptoPP::Baseline_Multiply8() = "53 8B 5C 24 0C 55";
+void CryptoPP::Baseline_MultiplyBottom2() = "53 8B 5C 24 0C 56 8B 74";
+void CryptoPP::Baseline_MultiplyTop2() = "53 8B 5C 24 0C 55 56";
+void CryptoPP::Baseline_MultiplyTop4() = "83 EC 08 8B 44 24 14";
+void CryptoPP::Baseline_MultiplyTop8() = "83 EC 08 8B 44 24 14 53 8B 5C 24 14 55 8B 28 56 8B 43 18";
+void CryptoPP::DEREncodeNull() = "51 56 8B 74 24 0C 8D 4C 24 04";
+void CryptoPP::RecursiveMultiplyBottom() = "57 8B 7C 24 18 3B";
+void CryptoPP::RecursiveSquare() = "51 8B 44 24 14";
+void CryptoPP::SSE2_Square4() = "55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C";
+void CryptoPP::SSE2_Square8() = "55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C 24 80";
+void DefaultConditionalErrorProc(char const near *) = "55 8B EC FF 75 08 68 ? ? ? ? FF";
+void DisconnectInterfaces(void) = "8B ? ? ? ? ? 83 EA 01 89 ? ? ? ? ? 78";
+void GameInstructor_Init(void) = "8B ? ? ? ? ? 85 C9 74 57";
+void IN_Impulse(class CCommand const near &) = "55 8B EC 8B 45 08 83 38 01";
+void InitSinCosTable(void) = "56 33 F6 66 0F 6E";
+void InitSmokeFogOverlay(void) = "8B ? ? ? ? ? 85 C9 74 0F 8B 01 FF 50 34";
+void OnPlayerDecalsLevelShutdown(void) = "8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F 1F 00 83 FE FF 74 4D";
+void PurgeOnDataChangedEvents(void) = "0F ? ? ? ? ? ? 85 C0 74 0F";
+void RecvProxyArrayLength_PlayerArray(void near *,int,int) = "55 8B EC 8B 4D 08 8B 45 10";
+void ResetWindspeed(void) = "0F ? ? ? ? ? ? BA ? ? ? ? 66";
+void ShakeRopesCallback(class CEffectData const near &) = "55 8B EC 83 EC 10 8B 4D";
+void UGCUtil_Shutdown(void) = "8B ? ? ? ? ? 85 C9 74 20 8B 01 6A";
+void UpdateDirtySpatialPartitionEntities(void) = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 75";
+void VGui_ClearVideoPanels(void) = "56 8B ? ? ? ? ? 83 C6 FF";
+void __CreateGameRules_CCSGameRules(void) = "A1 ? ? ? ? 56 68 ? ? ? ? 8B 08 8B 01 FF 50 04 68 ? ? ? ? 8B F0 6A 00 56 E8 ? ? ? ? 83 C4 0C 85 F6 74 08";
+void google::protobuf::DelocalizeRadix(char near *) = "55 8B EC 56 8B 75 08 6A 2E";
+void google::protobuf::internal::InitLogSilencerCount(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 04";
+void google::protobuf::internal::InitShutdownFunctions(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 0C";
+void google::protobuf::internal::OnShutdown(void (*)(void)) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 10 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? A1";
+void near * zcalloc(void near *,unsigned int,unsigned int) = "55 8B EC A1 ? ? ? ? 56 57 8B 7D 0C";
+void operator delete[](void near *,unsigned int) = "55 8B EC FF 75 08 E8 ? ? ? ? 59";
+void protobuf_AddDesc_cstrike15_5fgcmessages_2eproto(void) = "80 ? ? ? ? ? ? 0F ? ? ? ? ? 56";
+void protobuf_AddDesc_cstrike15_5fusermessages_2eproto(void) = "80 ? ? ? ? ? ? 0F ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? C6 ? ? ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? E8";
+void protobuf_AddDesc_network_5fconnection_2eproto(void) = "80 ? ? ? ? ? ? 75 64";
+void protobuf_AssignDesc_steammessages_2eproto(void) = "55 8B EC 83 E4 F8 83 EC 44 53 56 33 DB 57 89 5C 24 10 E8 ? ? ? ? 6A 13";
+void zcfree(void near *,void near *) = "55 8B EC A1 ? ? ? ? FF 75 0C 8B";
+weird_unk1() = "55 8B EC 56 8B 75 0C 8B CE 8B";
+weird_unk2() = "55 8B EC 8B 45 08 56 8B 75 0C 83";
+write_file_header() = "55 8B EC 56 57 8B 7D 08 BA";
+write_file_trailer() = "55 8B EC BA";
+write_frame_header() = "55 8B EC 51 53 56 8B 75 08 33";
+write_marker_byte() = "55 8B EC 8A 45 0C";
+write_marker_header() = "55 8B EC 56 8B 75 08 57 8B 7D 10";
+write_scan_header() = "55 8B EC 51 53 56 8B 75 08 80";
+write_tables_only() = "55 8B EC 53 56 8B 75 08 BA ? ? ? ? 57 8B CE E8";
+ycc_rgb_convert() = "55 8B EC 83 EC 28 83 6D";
+ycck_cmyk_convert() = "55 8B EC 83 EC 2C 83 6D"AccumulatePose() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1";
+AccumulateWeaponPreviewSettingsFloatValue() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 57 6A";
+AchievementIDCompare() = "55 8B EC 8B 45 08 56";
+AchievementOrderCompare() = "55 8B EC 8B 45 08 56 57 8B 38";
+AddEconItem() = "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 14 53 56 57 8B F9 8B";
+AddSurfacepropFile() = "55 8B EC 83 EC 0C 53 8B 5D 08 56 57 68";
+AddViewModelBobHelper() = "55 8B EC A1 ? ? ? ? 83 EC 18 53 57 8B F9 8B DA";
+AdvancedCrosshairImagePanel::AdvancedCrosshairImagePanel() = "55 8B EC 51 56 68 ? ? ? ? FF";
+AscendingSortFunc() = "55 8B EC 8B 45 08 8B ? ? ? ? ? 56 57";
+BeginViewModelRendering() = "A1 ? ? ? ? 85 C0 0F";
+BuildWorldRenderLists() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B F9 8B";
+CAM_Think() = "55 8B EC 83 E4 F8 81 EC ? ? ? ? 56 8B F1 8B 0D ? ? ? ? 57 85";
+CAM_ToggleSnapto() = "55 8B EC 8B 45 08 BA ? ? ? ? 85";
+CAchievementMgr::OnEvent() = "55 8B EC 53 56 57 8B 7D 08 8B D9 85";
+CAchievementMgr::SaveGlobalState() = "55 8B EC 51 53 56 8B F1 8B 0D";
+CAsyncCaptionResourceManager::Init() = "55 8B EC 83 EC 10 83 79";
+CAvatarImage::SetSize() = "55 8B EC 80 79 3C 00 8B 55";
+CBaseAchievement::EnsureComponentBitSetAndEvaluate() = "55 8B EC 51 56 8B F1 57";
+CBaseAchievement::FireGameEvent() = "55 8B EC 56 8B F1 8B 06";
+CBaseAchievement::IncrementCount() = "56 8B F1 57 8B 46 0C";
+CBaseAchievement::OnComponentEvent() = "55 8B EC 51 8B C1";
+CBaseCSGrenadeProjectile::CreateGrenadeTrail() = "55 8B EC 83 E4 F8 83 EC 68 56 8B F1";
+CBaseEntity::PhysicsSimulate() = "55 8B EC 83 E4 F8 83 EC 0C 56 8B F1 8B ? ? ? ? ? 80";
+CBaseEntityList::AddNonNetworkableEntity() = "55 8B EC 51 53 8B ? ? ? ? ? 89 4D";
+CBaseGameStats::Event_SaveGame() = "83 ? ? ? ? ? ? B8 ? ? ? ? 0F";
+CBaseLesson::CBaseLesson() = "55 8B EC 51 56 8B F1 8D 45 FE";
+CBaseLesson::IsTimedOut() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57";
+CBaseModPanel::CreateGameMenu() = "55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 FF";
+CBaseModPanel::InTeamLobby() = "8B ? ? ? ? ? 85 C9 74 35 8B 01 FF 50 34";
+CBaseModPanel::LoadVersionNumber() = "55 8B EC 8B ? ? ? ? ? 83 EC 08 83";
+CBaseModPanel::LoadVersionNumbers() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 FF";
+CBaseModPanel::OnMakeGamePublic() = "8B ? ? ? ? ? 56 57 8B 01 FF 50 34";
+CBaseModPanel::~CBaseModPanel() = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 83";
+CBasePlayer::CalcViewBob() = "55 8B EC A1 ? ? ? ? 83 EC 10";
+CBasePlayer::PostThink() = "56 8B ? ? ? ? ? 57 8B F9 8B CE 8B 06 FF ? ? ? ? ? 8B";
+CBasePlayerAnimState::ShouldResetMainSequence() = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 8B";
+CBaseSaveGameDialog::OnPanelSelected() = "56 8B F1 6A 01 68";
+CBaseViewport::AddNewPanel() = "55 8B EC 83 EC 08 53 8B 5D 08 89 4D F8 85 DB 75";
+CBaseViewport::CBackGroundPanel::CBackGroundPanel() = "57 51 6A 01 68 ? ? ? ? 6A 00 8B F9 E8 ? ? ? ? C7 ? ? ? ? ? 8B";
+CBaseWorldView::PopView() = "55 8B EC 51 A1 ? ? ? ? 56 8B F1 F3";
+CBenchmarkDialog::RunBenchmark() = "56 8B F1 8B ? ? ? ? ? E8 ? ? ? ? 8B";
+CBenchmarkResultsDialog::Activate() = "55 8B EC 83 E4 C0 83 EC 38 56 57 8B F9";
+CBenchmarkResultsDialog::OnClose() = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 15";
+CBloomAddMaterialProxy::Init() = "55 8B EC 51 56 8B F1 C6";
+CBonusMapsDialog::CreateBonusMapsList() = "A1 ? ? ? ? 56 8B F1 68 ? ? ? ? 8B 08 8B 01 FF 50 04 85 C0 74 0F";
+CBoundedCvar_Predict::GetFloat() = "55 8B EC 51 80 ? ? ? ? ? ? 56 8B F1 75";
+CC4Panel::ApplySchemeSettings() = "55 8B EC 51 53 8B D9 8D 4D 08 56 57";
+CCSBaseAchievement::ApplySettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B";
+CCSEconUI::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B F1";
+CCSEconUI::ApplySettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B F1 57";
+CCSEconUI::OnSelectionReturned() = "55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 8B F9 85";
+CCSGOMapPublishDialog::SetFile() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B 7D";
+CCSGOPlayerAnimState::CacheSequences() = "55 8B EC 83 E4 F8 83 EC 34 53 56 8B F1";
+CCSGOPlayerAnimState::DoProceduralFootPlant() = "55 8B EC 83 E4 F0 83 EC 78 56 8B F1 57 8B";
+CCSGOPlayerAnimState::ModifyEyePosition() = "55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 14";
+CCSGOPlayerAnimState::SetUpAimMatrix() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 8B";
+CCSGOPlayerAnimState::SetUpLean() = "55 8B EC 83 E4 F8 A1 ? ? ? ? 83 EC 20 F3";
+CCSGOPlayerAnimState::SetUpMovement() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 57 8B ? ? ? ? ? 8B F1";
+CCSGOPlayerAnimState::SetUpVelocity() = "55 8B EC 83 E4 F8 83 EC 30 56 57 8B ? ? ? ? ? 8B";
+CCSGOPlayerAnimState::SetUpWeaponAction() = "55 8B EC 51 53 56 57 8B F9 8B 77";
+CCSGOPlayerAnimState::SetUpWholeBodyAction() = "55 8B EC 83 EC 08 56 57 8B F9 8B 77";
+CCSGOPlayerAnimState::Update() = "55 8B EC 83 E4 F8 83 EC 18 56 57 8B F9 F3";
+CCSGOStickerPublishDialog::SetImageFile() = "55 8B EC 53 8B D9 8B 4D 08 56";
+CCSItemSelectionPanel::ApplySchemeSettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 07";
+CCSItemSelectionPanel::ApplySettings() = "55 8B EC 53 8B 5D 08 56 57 53 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 53";
+CCSPlayer::PreThink() = "55 8B EC 83 E4 F8 51 56 8B F1 8B 06";
+CC_CL_Find_Ent() = "55 8B EC 51 57 8B 7D";
+CC_Shake_TestPunch() = "55 8B EC 83 EC 30 56 8B 75 08 8B 06";
+CChangeGameDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75";
+CChoreoEvent::FindRelativeTag() = "55 8B EC 56 8B 75 08 85 F6 74 25";
+CClientLeafSystem::AddShadowToRenderable() = "55 8B EC 8B 45 0C 53 56";
+CClientLeafSystem::ProjectFlashlight() = "55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 5D";
+CClientScoreBoardDialog::AddHeader() = "55 8B EC 51 53 8B D9 56 57 6A 00 8B ? ? ? ? ? 68";
+CClientScoreBoardDialog::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56 8B 01 FF 50 14 68 ? ? ? ? 68 ? ? ? ? 8B CE E8 ? ? ? ? 8B";
+CClientShadowMgr::BuildFlashlight() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89";
+CClientShadowMgr::CalculateRenderTargetsAndSizes() = "55 8B EC 83 EC 08 53 56 8B F1 FF";
+CClientShadowMgr::ComputeShadowDepthTextures() = "8B ? ? ? ? ? 8B ? ? ? ? ? 89 44 24 68";
+CClientShadowMgr::CullReceiver() = "55 8B EC 83 EC 38 53 56 57";
+CClientShadowMgr::DrawDeferredShadows() = "8B ? ? ? ? ? 83 ? ? ? ? ? ? 74 22";
+CClientShadowMgr::InitDepthTextureShadow() = "55 8B EC 83 EC 54 53 8B D9";
+CClientShadowMgr::InitDepthTextureShadows() = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 4E";
+CClientShadowMgr::UpdateBrushShadow() = "8B ? ? ? ? ? 8B ? ? ? ? ? 85 DB 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 57";
+CClientShadowMgr::UpdateProjectedTextureInternal() = "55 8B EC 53 8B 5D 08 56 0F";
+CClientShadowMgr::UpdateProjectionState() = "55 8B EC 83 E4 F8 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 44 24 0C 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 0F";
+CClientSteamContext::Shutdown() = "55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 4B";
+CCollisionProperty::ComputeSurroundingBox() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53";
+CCollisionProperty::MarkSurroundingBoundsDirty() = "56 8B F1 8B 4E 04 83";
+CColorCorrectionMgr::SetColorCorrectionWeight() = "55 8B EC 83 EC 10 8B 45 08 0F";
+CColorOperationListPanel::OnReadFileFromDisk() = "55 8B EC 83 EC 10 56 8B 75 08 57 56";
+CColorPickerButton::OnCancelled() = "55 8B EC 83 EC 08 56 57 8B F9 6A";
+CColorPickerPanel::OnColorSelected() = "55 8B EC 83 EC 14 56 8D 45 FC";
+CColorPickerPanel::SetInitialColor() = "55 8B EC 83 EC 10 8B 45 08 8B D0";
+CCommunityMapRequest::OnError() = "55 8B EC 83 E4 F8 83 EC 08 83 7D";
+CCommunityMapRequest::OnLoaded() = "55 8B EC 83 E4 F8 51 56 8B 75";
+CConcurrentViewBuilder::QueueBuildWorldListJob() = "55 8B EC 83 ? ? ? ? ? ? 75 12";
+CConcurrentViewBuilder::SequentialJobs::SequentialJobs() = "55 8B EC 83 EC 10 53 56 57 8B D9 E8 ? ? ? ? 8B";
+CCoreDispInfo::CalcMinMaxBoundingBoxAtNode() = "55 8B EC 8B 45 08 33 C9 56";
+CCreateMultiplayerGameServerPage::LoadMapList() = "51 56 57 8B F9 8B ? ? ? ? ? 8B";
+CCreateMultiplayerGameServerPage::OnCheckButtonChecked() = "56 57 8B F9 8B ? ? ? ? ? 8B 37 8B";
+CDebugLayout::AppendElementOpenTag() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CDebugLayout::Build() = "55 8B EC 83 E4 F8 83 EC 34 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CDebugOverlay::CDebugOverlay() = "55 8B EC 83 EC 08 53 56 57 68";
+CDebugPanelComputed::Build() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 89 7C 24 28";
+CDebugPanelStyle::AppendAnimations() = "55 8B EC 83 E4 F8 83 EC 4C 53 8B D9 8B";
+CDebugPanelStyle::AppendCascadeStyles() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 5C";
+CDebugPanelStyle::AppendElementStyles() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 F8 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 47";
+CDebugPanelStyle::AppendInheritedStyles() = "55 8B EC 83 EC 54 53 8B D9 8B ? ? ? ? ? 56";
+CDebugPanelStyle::AppendStyleInfoForProperty() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 89 4C 24 58";
+CDebugPanelStyle::Build() = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB";
+CDebugPanelStyle::GetStyleBuffer() = "55 8B EC 83 E4 F8 83 EC 14 53 8B D9 8B ? ? ? ? ? 56 57 89 5C";
+CDebugPanelStyle::OnPanelStyleChanged() = "55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 DB";
+CDescribeData::DescribeFields() = "55 8B EC 53 56 57 8B 7D 14";
+CDetailObjectSystem::RenderTranslucentDetailObjects() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56";
+CDetailObjectSystem::RenderTranslucentDetailObjectsInLeaf() = "55 8B EC 83 E4 F8 83 EC 08 56 57 8B F9 8B";
+CDetailObjectSystem::SortSpritesBackToFront() = "55 8B EC 83 EC 34 53 56 8B F1 8B ? ? ? ? ? 57";
+CDispInfo::GetIntersectingSurfaces() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+CDmxSerializerKeyValues2::UnserializeElement() = "55 8B EC 83 EC 34 83 65 F8";
+CDummyMaterialProxy::Init() = "55 8B EC 8B 4D 08 8B 01 FF";
+CEconColorDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 8B F9 85";
+CEconGraffitiTintDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 6A";
+CEconItem::BAddToMessage::std::string() = "55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6";
+CEconItemDescription::Generate_QualityDesc() = "55 8B EC 56 8B F1 8B 4D 0C 8B";
+CEconItemDescription::Generate_ScorecardDesc_BravoPhoenix() = "55 8B EC 56 57 8B 7D 08 8B F1 83 3F";
+CEconItemDescription::Generate_ScorecardDesc_PostPhoenix() = "55 8B EC 83 E4 F8 83 EC 34 53 56 57 8B D9";
+CEconItemDescription::Generate_ScorecardDesc_PostPhoenix() = "8B 4C 24 0C 56 57";
+CEconItemDetailsRichText::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 8B C1";
+CEconItemView::GetStaticData() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85";
+CEconSharedToolSupport::CanCollect() = "55 8B EC 83 EC 18 57 8B F9 89 55";
+CEconTool_Gift::CEconTool_Gift() = "55 8B EC 56 57 8B 7D 10 8B F1 57 6A 00 6A 00 FF 75 0C FF 75 08 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+CEconTool_StatTrakSwap::SetItems() = "53 56 8B D9 57 8B FA";
+CEconTool_WrappedGift::GetUseCommandLocalizationToken() = "55 8B EC 8B 4D 08 E8 ? ? ? ? 84";
+CEffectsList::AddEffect() = "55 8B EC 8B 55 08 85 D2 74 2D";
+CEffectsList::DrawEffects() = "55 8B EC 83 EC 08 A1 ? ? ? ? 89";
+CEnginePostMaterialProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6";
+CExButton::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 68";
+CExImageButton::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 18 56 8B 75 08 57";
+CExLabel::SetColorStr() = "55 8B EC 8B 45 08 8B D0 56";
+CExRichText::ApplySchemeSettings() = "55 8B EC 53 56 57 8B D9 E8";
+CExRichText::ApplySettings() = "55 8B EC 83 E4 F8 51 53 8B 5D 08 56 57 53";
+CExplanationPopup::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 0E";
+CExpressionEvaluator::MakeExpression() = "55 8B EC 8A 55 0C";
+CExpressionEvaluator::MakeFactor() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 8A";
+CFilePublishDialog::DownloadPreviewImage() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 80 ? ? ? ? ? ? 75";
+CFilePublishDialog::FileExists() = "55 8B EC 81 ? ? ? ? ? 56 8B 75 08 85 F6 74 59";
+CFilePublishDialog::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 75 3B";
+CFlashlightEffect::UpdateDefaultFlashlightState() = "55 8B EC 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF";
+CFlexSceneFileManager::Init() = "56 6A 01 68";
+CGCClient() = "55 8B EC 53 8B D9 8B ? ? ? ? ? 56 8B ? ? ? ? ? 85";
+CGCDev_NewItemRequestResponse::BYieldingRunGCJob() = "55 8B EC 83 E4 F8 51 56 8B 75 08 8B CE 8B";
+CGameMenu::ApplySchemeSettings() = "55 8B EC 53 56 8B 75 08 8B D9 57 56 E8 ? ? ? ? 8B 06 8B CE 8B 3B 68 ? ? ? ? FF 50 04";
+CGameUI::SendConnectedToGameMessage() = "56 57 8B F9 FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 10";
+CGameUI::SetProgressLevelName() = "55 8B EC 83 ? ? ? ? ? ? 74 5F";
+CGamestatsData::AllocData() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 57 8B";
+CGlowObjectManager::AddGlowBox() = "55 8B EC 53 56 8D";
+CGlowObjectManager::RenderGlowBoxes() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 60 56 57 8B F9 89";
+CGlowObjectManager::RenderGlowEffects() = "55 8B EC A1 ? ? ? ? 83 EC 18 57";
+CGrid::CGrid() = "55 8B EC 83 E4 F8 56 57 8B F1 6A 00 FF 75 0C FF 75 08 C7 ? ? ? ? ? A1 ? ? ? ? 89 46 08 A1 ? ? ? ? 6A 00 89 46 0C E8 ? ? ? ? C7 ? ? ? ? ? A1";
+CGrid::EventInputFocusSet() = "55 8B EC 51 51 53";
+CGrid::GetFocusedChildVisibleIndex() = "55 8B EC 83 EC 10 53 56 57 8B F9 8B ? ? ? ? ? 89 7D F8";
+CGrid::GetVisibleChild() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 1C";
+CGrid::MotionTimeout() = "55 8B EC 83 EC 0C 53 56 8B F1 8B ? ? ? ? ? 57 8B";
+CGrid::MoveSelection() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 83";
+CGrid::OnLayoutTraverse() = "55 8B EC 83 E4 F8 83 EC 4C 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89 44 24 34";
+CGrid::SetFocusedChild() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89";
+CGrid::UpdateChildPositions() = "55 8B EC 83 E4 F8 83 EC 78 56 57 8B F9 8B ? ? ? ? ? 89";
+CGrid::UpdateVecVisible() = "55 8B EC 83 EC 0C 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 F4 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? C7";
+CHLClient::FrameStageNotify() = "55 8B EC 8B 0D ? ? ? ? 8B 01 8B 80 ? ? ? ? FF D0 A2";
+CHLClient::OnDemoPlaybackStart() = "FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 5A";
+CHTML::Paint() = "56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? FF";
+CHltvReplaySystem::SetDemoPlaybackFadeBrackets() = "55 8B EC 83 EC 08 56 8B 75 08 8B CE 6A 00 FF 75 0C 8B 06 8B 40 14 FF D0 DD 5D F8 F2 ? ? ? ? 85";
+CHltvReplaySystem::StopHltvReplay() = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 25";
+CHudChatFilterPanel::ApplySchemeSettings() = "55 8B EC 83 EC 0C 53 56 57 8B F9 6A 00 6A";
+CHudScope::Init() = "56 8B F1 8B ? ? ? ? ? 6A 00 8B";
+CIKContext::SolveDependencies() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B ? ? ? ? ? 56 57 89";
+CIKContext::UpdateTargets() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 33 D2 89";
+CIconLesson::Init() = "55 8B EC 51 56 8B F1 8D 45 FE 68 ? ? ? ? 50 B9 ? ? ? ? C7";
+CIconLesson::IsVisible() = "53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 83";
+CImagePanel::SetImage() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 89 45 FC 85 C0 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 4B";
+CInfoDescription::WriteFileHeader() = "55 8B EC 83 EC 68 66 ? ? ? ? ? 66 89 45 FC A0 ? ? ? ? 88 45 FE 8D 45 D8 56 50 FF";
+CInfoDescription::WriteScriptHeader() = "55 8B EC 83 EC 68 66";
+CIronSightController::IncreaseDotBlur() = "55 8B EC 83 EC 18 53 8B D9 E8 ? ? ? ? 83";
+CIronSightController::PrepareScopeEffect() = "55 8B EC 83 EC 38 53 56 57 E8";
+CIronSightController::RenderScopeEffect() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B D9 E8";
+CIronSightController::ShouldHideCrossHair() = "8B 41 3C 85 C0 74 27";
+CItemLevelingDefinition::BInitFromKV() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 8B D9 85 FF 74 1D";
+CItemModelPanelToolTip::ShowTooltip() = "55 8B EC 53 8B D9 83 7B 2C";
+CJobMgr::BResumeSleepingJobs() = "56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 8D";
+CJobMgr::BResumeYieldingJobs() = "55 8B EC 53 56 57 8B F1 FF";
+CKeyBindingsMgr::AddPanelToContext() = "55 8B EC 56 8B 75 0C 8B CE 8B 06 FF 50 48";
+CKeyValuesTokenReader::SeekBackOneToken() = "56 8B F1 8B ? ? ? ? ? 80 7E 0C";
+CLessOrEqualProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68";
+CLessOrEqualProxy::OnBind() = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 76";
+CLoadCommentaryDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B F1 8B 4D 08 E8";
+CLoadGameDialogXbox::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 57 8B 7D 08 8B F1 8B CF E8 ? ? ? ? 85 C0 75 71";
+CLoadGameDialogXbox::UpdateFooterOptions() = "56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8";
+CLoadingDisc::SetFastForwardVisible() = "55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 7B";
+CLoadingDisc::SetPausedVisible() = "55 8B EC 51 8B 55 08 53 8B D9 84 D2 74 69";
+CLoadingDiscPanel::CLoadingDiscPanel() = "55 8B EC 83 EC 18 53 56 57 68";
+CLoadingScreenScaleform::DisplayLoggedInElsewhereError() = "55 8B EC 83 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 74";
+CLocatorPanel::PerformLayout() = "55 8B EC 83 EC 2C 53 8B";
+CMainMenuGameLogo::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 56";
+CMergedMDL::SetupBonesForAttachmentQueries() = "55 8B EC 83 EC 14 83 ? ? ? ? ? ? 53";
+CMergedMDL_Constructor() = "53 8B D9 56 57 8D 4B 04 C7 03 ? ? ? ? E8 ? ? ? ? 6A";
+CMessageCharsPanel::CMessageCharsPanel() = "55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 8B";
+CMessageCharsPanel::GetTextExtents() = "55 8B EC 56 8B 75 08 85 F6 75 25";
+CMessageDialog::ApplySettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B ? ? ? ? ? 8B CF";
+CMessageDialogHandler::CreateMessageDialog() = "55 8B EC 83 EC 08 8B 45 08 53 56 57 8B F9";
+CModelRenderSystem::DrawBrushModels() = "55 8B EC 83 E4 F8 83 EC 24 53 56 57 8B 7D";
+CModelRenderSystem::DrawModels() = "55 8B EC 83 EC 4C 83";
+CMotionBlurMaterialProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 00 8B 06 8D 4D FF 51 68 ? ? ? ? 8B CE FF 50 2C 80";
+CMotionBlurMaterialProxy::OnBind() = "56 8B F1 8B 4E 04 85 C9 74 0C";
+CMoviePanel::Clear() = "55 8B EC 83 EC 10 53 56 8B F1 8B ? ? ? ? ? 57";
+CMoviePanel::Paint() = "55 8B EC 83 EC 18 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve::Clear() = "56 8B F1 8B 46 30 84";
+CMsgSOMultipleObjects::Clear() = "55 8B EC 51 8B 55 08 8B C1";
+CMsgSteamDatagramLinkInstantaneousStats::Clear() = "80 79 2C";
+CMumbleSystem::Init() = "C6 41 34 00 8D";
+CNewParticleEffect::DrawModel() = "55 8B EC 83 E4 F8 83 EC 5C 53 56";
+CNewParticleEffect::SetControlPoint() = "55 8B EC 53 8B 5D 0C 56 8B F1 F6";
+COptionsSubAudio::OnCommand() = "55 8B EC 53 8B 5D 08 BA";
+COptionsSubKeyboard::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA";
+COptionsSubKeyboard::OnKeyCodeTyped() = "55 8B EC 8B 45 08 83 F8 40";
+COptionsSubMultiplayer::ConvertTGAToVTF() = "55 8B EC 83 E4 F8 83 EC 54 53 56 57 68";
+COptionsSubMultiplayer::OnCommand() = "55 8B EC 53 56 8B 75 08 8B D9 BA";
+COptionsSubMultiplayer::RemapLogo() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 8D";
+COptionsSubVoice::OnThink() = "55 8B EC 83 EC 10 53 8B D9 E8";
+COptionsSubVoice::StartTestMicrophone() = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 80";
+CPanel2D::BSetProperty() = "55 8B EC 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 85";
+CPanel2D::Initialize() = "55 8B EC 83 E4 F8 51 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+CParticleCollection::InitializeNewParticles() = "55 8B EC 83 EC 14 53 56 8B F1 8B ? ? ? ? ? 57 8B ? ? ? ? ? 89";
+CParticleCollection::Simulate() = "55 8B EC 83 E4 F8 83 EC 30 56 57 8B F9 0F";
+CParticleEffectBinding::DrawModel() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5C 24 14 8B ? ? ? ? ? 89";
+CParticleEffectBinding::GetActiveParticleList() = "55 8B EC 53 8B D9 66";
+CParticleMSG::UpdateNewEffects() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 F3";
+CParticleSnapshot::ValidateAttributeMapping() = "55 8B EC 51 8B 45 0C 53 8B D9 56 8B";
+CParticleSystemMgr::DrawRenderCache() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89";
+CParticleSystemMgr::ReadParticleConfigFile() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B 75 08 80";
+CPhysicsSystem::PhysicsSimulate() = "55 8B EC 83 EC 7C 8B ? ? ? ? ? 53 56";
+CPlayerInventory::CItemContainers::Add() = "55 8B EC 56 8B F1 F6 46 15";
+CPlayerListDialog::OnItemSelected() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 57 8B F9 E8";
+CPlayerLogoProxy::Init() = "55 8B EC 51 56 8B 75 08 57 8B F9 C6 45 FF 00 6A 01";
+CPostCommentaryDialog::OnFinishedClose() = "56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 74";
+CPotteryWheelPanel::GetWireframeMaterial() = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 57";
+CPrecacheRegister::LevelInitPreEntity() = "56 8B ? ? ? ? ? 68 ? ? ? ? FF D6";
+CPredictedViewModel::AddViewModelBob() = "55 8B EC A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 35";
+CPrediction::RunCommand() = "55 8B EC 83 E4 C0 83 EC 34 53 56 8B 75";
+CPrediction::Update() = "55 8B EC 83 EC 08 53 56 8B F1 8B ? ? ? ? ? 57 8B";
+CProceduralTexturePanel::Init() = "55 8B EC 8B 55 0C 81 ? ? ? ? ? 80";
+CProtoBufMsg::BAsyncSendProto() = "55 8B EC 83 EC 1C 89 4D F8";
+CPublishedFileBrowserDialog::OnRadioButtonChecked() = "56 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+CPupilProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 57 68 ? ? ? ? 8B F9";
+CQueueMatchServerListListener::ShouldPingStartMatchmaking() = "55 8B EC 51 56 8B ? ? ? ? ? 83 7E";
+CRTime::RTime32ToString() = "55 8B EC 83 EC 2C 56 57 8B F1";
+CRTime::UpdateRealTime() = "55 8B EC 83 EC 14 56 8B ? ? ? ? ? 6A";
+CRadioStatus::Init() = "56 8B F1 83 ? ? ? ? ? ? 75 22";
+CRagdollLowViolenceManager::SetLowViolence() = "55 8B EC 56 E8 ? ? ? ? A2";
+CRendering3dView::SetupRenderablesList() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 8B";
+CRopeManager::DrawRenderCache() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 8B D1";
+CRunGameEngine::AddTextCommand() = "55 8B EC 56 8B 75 08 85 F6 74 1F";
+CSGOWorkshopMaps::UnsubscribeFromMap() = "55 8B EC 8B ? ? ? ? ? 56 57 85 C9";
+CSaveBeforeQuitQueryDialog::OnCommand() = "55 8B EC 81 ? ? ? ? ? BA ? ? ? ? 56 8B 75 08 57 8B F9 8B CE E8 ? ? ? ? 85 C0 74";
+CSaveGameBrowserDialog::ShowNoSaveGameUI() = "56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A 00 68";
+CSaveGameDialogXbox::UpdateFooterOptions() = "56 57 8B F9 8B ? ? ? ? ? 8D ? ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 74 2F";
+CScriptedIconLesson::PreReadLessonsFromFile() = "83 EC 34 A1 ? ? ? ? 33 C4";
+CSimpleEmitter_Factory() = "55 8B EC 51 BA";
+CSlideshowDisplayScreen::ApplySchemeSettings() = "55 8B EC 51 53 8B D9 8D";
+CSnowFallManager::CreateSnowParticlesSphere() = "55 8B EC 83 EC 18 56 57 83";
+CSoundControllerImp::SoundPlayEnvelope() = "55 8B EC 83 EC 10 8B 01 0F";
+CSoundEmitterSystem::StopSound() = "55 8B EC 57 8B 7D 10";
+CSplitScreenLetterBox::GetSettings() = "55 8B EC 80 ? ? ? ? ? ? 0F";
+CSprite::DrawModel() = "55 8B EC 81 ? ? ? ? ? 53 8B D9 8B ? ? ? ? ? 56 57 89 5D F8";
+CSprite::GetToolRecordingState() = "8B 45 34 8B 5D 38 89";
+CSteamWorksGameStatsClient::FireGameEvent() = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 0F ? ? ? ? ? 8B 06 8B CE 53 FF 50 04 8B D8 B9 ? ? ? ? 8B D3 E8 ? ? ? ? 85 C0 75 10";
+CSteamWorksGameStatsClient::WriteSessionRow() = "55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89 46 78 85 C0 0F";
+CSteamWorksGameStatsUploader::WriteFloatToTable() = "55 8B EC 83 EC 08 33 C0 56 8B F1";
+CSteamWorksGameStatsUploader::WriteSessionRow() = "55 8B EC 83 E4 F8 51 56 8B F1 E8 ? ? ? ? 89";
+CStickerSelectionProxy::Init() = "55 8B EC 83 EC 0C 56 FF 75 0C 8B F1 FF 75 08 E8 ? ? ? ? 84 C0 75 09";
+CStoreItemControlsPanel::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 36";
+CStorePage::ApplySettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 53";
+CStorePage::UpdateFilterComboBox() = "57 8B F9 8B ? ? ? ? ? 85 C9 74 7C";
+CStorePanel::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B D9 E8 ? ? ? ? 8B 03 8B CB 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B ? ? ? ? ? 6A";
+CStorePanel::ShowPanel() = "55 8B EC 53 8B 5D 08 56 8B F1 C6";
+CStorePreviewItemIcon::ApplySchemeSettings() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? FF ? ? ? ? ? 6A";
+CStorePreviewItemIcon::OnCursorEntered() = "56 8B F1 8B 06 FF ? ? ? ? ? C6 ? ? ? ? ? ? FF";
+CStorePreviewItemIcon::OnCursorExited() = "56 8B F1 80 ? ? ? ? ? ? 8B";
+CStorePreviewItemPanel::OnCommand() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 42";
+CStorePricePanel::ApplySchemeSettings() = "55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B 37";
+CStoreViewCartPanel::ApplySchemeSettings() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B";
+CStoreViewCartPanel::ShowPanel() = "55 8B EC 53 8B 5D 08 57 8B F9 84";
+CStudioHdr::pszNodeName() = "55 8B EC 57 8B F9 8B 4F 04 85 C9 75 18";
+CTextureTransformProxy::Init() = "55 8B EC 83 E4 F8 51 53 8B 5D 0C 56 8B";
+CUiComponent_FriendsList::GetFriendStatusBucket() = "55 8B EC 83 E4 F8 83 EC 14 53 56 8B 75 08 57 8B F9 89";
+CUiComponent_Inventory::UiComponentFunction_SetCraftTarget() = "55 8B EC 83 EC 0C 56 FF 75 14";
+CUiComponent_News::UiComponentFunction_IsNewClientAvailable() = "55 8B EC 51 8B ? ? ? ? ? 56 8B 01 FF 50";
+CUserCmd::GetChecksum() = "55 8B EC 51 56 8B 75 08 8D 45 FF";
+CUtlBuffer::Put() = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 57";
+CUtlRBTree<char const*,int,bool () = "55 8B EC 83 EC 10 53 56 8B D9 57 89 5D F0";
+CUtlStreamBuffer::ReadBytesFromFile() = "55 8B EC 56 57 8B F9 83 7F";
+CVGuiScreenPanel::Init() = "55 8B EC 51 53 56 8B 75 08 8B D9 57 68";
+CVGuiSystemModuleLoader::GetModuleLabel() = "55 8B EC 8B 45 08 68";
+CValueChangeTracker::SetupTracking() = "55 8B EC 80 ? ? ? ? ? ? B9";
+CViewAngleAnimation::SaveAsAnimFile() = "55 8B EC 83 E4 C0 83 EC 74 53 56 57";
+CViewC4Panel::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 89 4D FC 85 DB 74";
+CViewRender::Draw3dSkyboxworld() = "56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83";
+CViewRender::DrawTranslucentWorldAndDetailPropsInLeaves() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 80";
+CViewRender::DrawTranslucentWorldInLeaves() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 56 8B F1 8B ? ? ? ? ? 57 89 74 24 10 8B ? ? ? ? ? 89";
+CViewRender::DrawViewModels() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 ? ? ? ? ? 56 57 FF";
+CViewRender::Init() = "56 8B F1 0F 57 C0 57 68";
+CViewRender::Render() = "F3 ? ? ? ? ? ? ? 56 57 8B F9 8B";
+CViewRender::RenderView() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 53 56 57 8B F9 89";
+CViewRender::Shutdown() = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 08";
+CViewRenderBeams::InitBeams() = "53 56 57 8B D9 FF";
+CVoiceServer::GetClientListening() = "8B 01 83 F8 07";
+CWorkshopFileInfoManager::~CWorkshopFileInfoManager() = "56 8B F1 57 8D ? ? ? ? ? E8 ? ? ? ? 8D 4E";
+C_BaseAnimating::BuildTransformations() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? 56 57 8B F9 8B";
+C_BaseAnimating::DrawModel() = "55 8B EC 83 EC 14 53 56 8B";
+C_BaseAnimating::FindFollowedEntity() = "55 8B EC 83 EC 0C 53 8B D9";
+C_BaseAnimating::MaintainSequenceTransitions() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56";
+C_BaseAnimating::OnNewModel() = "55 8B EC 83 EC 0C 53 57 8B F9";
+C_BaseAnimating::SetupBones() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57";
+C_BaseAnimating::SetupBones_AttachmentHelper() = "55 8B EC 83 EC 48 53 8B";
+C_BaseAnimating::ShouldSkipAnimationFrame() = "57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75";
+C_BaseAnimating::StandardBlendingRules() = "55 8B EC 83 E4 F0 B8";
+C_BaseAnimating::StudioFrameAdvance() = "55 8B EC 83 E4 F8 83 EC 08 56 8B F1 57";
+C_BaseAnimating::ThreadedBoneSetup() = "55 8B EC 8B ? ? ? ? ? 83 EC 24";
+C_BaseAnimating::UpdateClientSideAnimations() = "8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 85";
+C_BaseAnimatingGameSystem::LevelShutdownPostEntity() = "A1 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 85";
+C_BaseCombatWeapon::DrawModel() = "55 8B EC 51 56 8B F1 8B 0D ? ? ? ? 57";
+C_BaseEntity::DrawBrushModel() = "55 8B EC 53 56 57 8B F9 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+C_BaseEntity::EmitSound() = "55 8B EC 81 ? ? ? ? ? 53 8B C1";
+C_BaseEntity::EmitSound() = "55 8B EC 83 EC 4C 53 8B";
+C_BaseEntity::GetSoundDuration() = "56 8B F1 68 ? ? ? ? 56";
+C_BaseEntity::GetToolRecordingState() = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 85";
+C_BaseEntity::ToolRecordEnties() = "8B ? ? ? ? ? 53 8B ? ? ? ? ? 85 DB 74";
+C_BaseFlex::StandardBlendingRules() = "55 8B EC 83 EC 08 8B 45 08 56 57 8B F9 8D";
+C_BasePlayer::GetToolRecordingState() = "55 8B EC 83 EC 50";
+C_BasePlayer::PhysicsSimulate() = "56 8B F1 8B ? ? ? ? ? 83 F9 FF 74 23";
+C_BaseTeamObjectiveResource::OnDataChanged() = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8A ? ? ? ? ? 3A";
+C_CSGameRules::HasHalfTime() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 12";
+C_CSGameRules::IsPlayingCoopGuardian() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 12";
+C_CSGameRules::IsPlayingCoopMission() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 04 75 13 8B ? ? ? ? ? 8B 01 FF 50 24 83";
+C_CSGameRules::IsPlayingGunGameProgressive() = "8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 01 75 13";
+C_CSGameRules::IsWarmupPeriod() = "56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 20 83 F8 02 75 04";
+C_CSPlayer::DoExtraBoneProcessing() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 56 8B F1 57 89 74 24 1C";
+C_CSPlayer::HasC4() = "56 8B F1 85 F6 74 31";
+C_CSPlayer::InvalidatePhysicsRecursive() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B";
+C_CSPlayer::ShouldInterpolate() = "A1 ? ? ? ? 56 57 8B F9 8B";
+C_CSPlayer::UpdateClientsideAnimation() = "55 8B EC 51 56 8B F1 80 BE ? ? ? ? ? 74";
+C_CSPlayer::WeaponShootPosition() = "55 8B EC 56 8B 75 08 57 8B F9 56 8B 07 FF ? ? ? ? ? 80";
+C_CSRagdoll::ApplyRandomTaserForce() = "55 8B EC 83 E4 F8 83 EC 58 56 8B";
+C_EconItemView::GetQualityParticleType() = "55 8B EC 83 E4 F8 51 A1 ? ? ? ? 56 8B F1 A8";
+C_EconItemView::Update() = "55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 BF";
+C_Embers::C_Embers() = "A1 ? ? ? ? 56 57 8B F9 8B 08 68 ? ? ? ? 8B 01 FF 50 04 8B F0 85 F6 74 32";
+C_GameInstructor::DefineLesson() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 81";
+C_GameInstructor::Update() = "55 8B EC 83 EC 10 53 8B D9";
+C_INIT_SequenceLifeTime::InitNewParticlesScalar() = "55 8B EC 53 8B 5D 08 8B CB 56 57 8B";
+C_OP_LerpScalar::Operate() = "55 8B EC 57 8B F9 8B 07 8B";
+C_OP_RenderSprites::InitializeContextData() = "55 8B EC 56 8B 75 0C C7 ? ? ? ? ? C7";
+C_ParticlePerformanceMonitor::~C_ParticlePerformanceMonitor() = "A1 ? ? ? ? 56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+C_PhysPropClientside::ParseAllEntities() = "55 8B EC B8 ? ? ? ? E8 ? ? ? ? 56 57 8D";
+C_RopeKeyframe::CreateFromKeyValues() = "55 8B EC 83 EC 0C 53 56 57 8B C1";
+C_SDK::EngineTrace::DidHit() = "F3 ? ? ? ? ? ? ? 0F 2F 41";
+C_SDK::Hash::CRC32::ProcessBuffer() = "55 8B EC 53 8B D9 56 57 8B 7D 08 8B F2";
+C_SceneEntity::LoadSceneFromFile() = "55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 56 8B F1 B9";
+C_SoundscapeSystem::UpdateAudioParams() = "55 8B EC 56 57 8B 7D 08 8B F1 8B ? ? ? ? ? 3B";
+C_TEExplosion::RecordExplosion() = "55 8B EC 51 57 8B F9 8B ? ? ? ? ? 85";
+C_TEShatterSurface::RecordShatterSurface() = "55 8B EC 83 EC 08 57 8B F9 8B ? ? ? ? ? 85";
+C_TempEntsSystem::Explosion() = "55 8B EC 8B 01 83 EC 18";
+C_WaterExplosionEffect::PlaySound() = "55 8B EC 83 E4 F8 83 EC 24 56 8B F1 F6 46 24 04 75 6D";
+CalcAbsolutePosition() = "55 8B EC 83 E4 F0 83 EC 68";
+CalcAbsoluteVelocity() = "55 8B EC 83 E4 F8 83 EC 1C";
+CalcPlayerView() = "84 C0 75 08 57";
+CalcViewModelBobHelper() = "55 8B EC 83 E4 F8 83 EC 30 A1 ? ? ? ? 56";
+CalculateView() = "55 8B EC 83 EC 14 53 56 57 FF 75 18";
+CallCatchBlock() = "6A 38 68 ? ? ? ? E8";
+CallUnexpected() = "6A 04 B8 ? ? ? ? E8 ? ? ? ? E8";
+CatchIt() = "55 8B EC 83 7D 20";
+ChatPrintf() = "55 8B EC 8B 4D 08 8D";
+Clabel::OnMouseMove() = "55 8B EC F3 ? ? ? ? 83 EC 18";
+ClampBonesInBBox() = "55 8B EC 83 E4 F8 83 EC 70 56 57 8B F9 89 7C 24 38";
+ClearDeathNotices() = "55 8B EC 83 EC 0C 53 56 8B 71";
+ClientModeCSNormal::DoPostScreenSpaceEffects() = "55 8B EC 8B 49 18 56 8B";
+ClientModeShared::FireGameEvent() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B 5D 08 56 57";
+ClientWorldFactory() = "55 8B EC 8B ? ? ? ? ? FF 75";
+ClipRayToHitbox() = "55 8B EC 83 E4 F8 F3 ? ? ? ? 81 ? ? ? ? ? 0F";
+ColumnButton::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 8B F1 53";
+CommentaryShowModelViewer() = "55 8B EC 8B 45 08 83 38";
+CompareFlattenedOffsets() = "55 8B EC 8B 55 08 56 8B 75 0C 8B 42";
+ConVar_Unregister() = "55 8B EC 83 EC 18 53 8B D9 8B";
+CreateAnimationState() = "55 8B EC 56 8B F1 B9 ? ? ? ? C7";
+CreateInterface_0() = "55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 38";
+CreateRagdoll() = "55 8B EC 51 A1 ? ? ? ? 53 8B D9 56 8B 08 57 68";
+CryptoPP::Algorithm::AlgorithmName() = "55 8B EC 56 8B 75 08 8B CE 6A";
+CryptoPP::BitBucket::AlgorithmName() = "51 56 8B 74";
+CryptoPP::ByteQueue::IsolatedInitialize() = "51 56 8B F1 C7 ? ? ? ? ? ? ? 8B 4C";
+CryptoPP::Decrement() = "57 8B 7C 24 08";
+CryptoPP::EvenWordCount() = "8B 44 24 08 85 C0 74 1D";
+CryptoPP::Increment() = "8B 54 24 04 8B 44";
+CryptoPP::RoundupSize() = "8B 44 24 04 83 F8 08";
+CryptoPP::X86_SHA256_HashBlocks() = "55 8B EC 53 56 57 8B 7D 08 8D ? ? ? ? ? 55";
+CryptoPP::_dynamic_initializer_for__AAD_CHANNEL___2() = "B9 ? ? ? ? E8 ? ? ? ? 6A 03";
+CryptoPP::_dynamic_initializer_for__DEFAULT_CHANNEL__() = "B9 ? ? ? ? E8";
+DevMsgRT() = "55 8B EC 8B ? ? ? ? ? 8B 01 8B";
+DisplayZipError() = "56 8B ? ? ? ? ? 57 8B F9 8B C7";
+DllMain() = "55 8B EC 8B 45 0C 83 EC 24";
+DoDepthOfField() = "55 8B EC 83 EC 24 53 56 8B F1";
+DoIncludeScript() = "55 8B EC 8B 55 0C 81";
+DrawMeshCallback() = "55 8B EC 8B 4D 08 6A 00 6A";
+DrawRenderablesInList() = "55 8B EC 83 EC 08 8B 45 08 53 56 8B D9";
+DrawSmokeFogOverlay() = "55 8B EC F3 ? ? ? ? ? ? ? 81 ? ? ? ? ? 0F";
+DrawUnderwaterOverlay() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 28 56 57";
+DumpTGAofRenderTarget() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B DA";
+EconWear_ToIntCategory() = "A1 ? ? ? ? 85 C0 75 49";
+EmitCaptionCompletion() = "55 8B EC 83 EC 0C 57 33";
+EndViewModelRendering() = "55 8B EC 51 A1 ? ? ? ? 85";
+ExFilterRethrow() = "55 8B EC 8B 45 08 8B 00 81";
+ExplainErrorNum() = "83 C1 F7";
+FX_RicochetSound() = "55 8B EC 83 EC 38 F3";
+FastSortFunc() = "55 8B EC 8B 45 0C 8B 4D 10 56";
+FindCompleteObject() = "55 8B EC 8B 55 08 8B 02 8B 48 FC";
+FindHandler() = "55 8B EC 83 EC 44 53 8B 5D 0C 56 57 8B";
+FindHandlerForForeignException() = "55 8B EC 51 51 57";
+FindHudElement() = "55 8B EC 53 8B 5D 08 56 57 8B F9 33";
+FindMITargetTypeInstance() = "55 8B EC 83 EC 14 8B 45 0C 33";
+FindSITargetTypeInstance() = "55 8B EC 51 51 8B 45 08";
+FindVITargetTypeInstance() = "55 8B EC 83 EC 24 8B 45 0C 83";
+FormatZipMessageU() = "83 F9 01 56";
+FrameAdvance() = "55 8B EC 83 E4 C0 83 EC 38";
+GCHost() = "55 8B EC 8B ? ? ? ? ? 56 57 8B ? ? ? ? ? 85 FF 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? E8";
+GCSDK::CGCClientSharedObjectCache::NotifyCreated() = "8B 41 5C BA ? ? ? ? 3B C2 7F 0B 85 C0 79 04 33 C0 EB 06 83 F8 3F 0F 4F C2 89 41 5C 8B 41 68";
+GCSDK::CGCClientSharedObjectTypeCache::BCreateFromMsg() = "55 8B EC 83 EC 50 53 56 57 6A";
+GCSDK::CJobMgr::RecordOrphanedMessage() = "55 8B EC 51 56 57 6A 00 FF ? ? ? ? ? 8B";
+GCSDK::CJobMgr::TimeoutJob() = "55 8B EC 83 EC 08 53 8B 5D 08 56 8B F1 57 83";
+GCSDK::CSharedObjectTypeCache::Dump() = "56 57 8B F9 FF 77 18 FF";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_Lobby__() = "6A 00 68 ? ? ? ? 6A 03";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_Party__() = "6A 00 68 ? ? ? ? 6A 02 B9";
+GCSDK::_dynamic_initializer_for__g_RegisterLock_SteamID__() = "6A 01 68 ? ? ? ? 6A 01";
+GameTypes::GetGameModeAndTypeFromStrings() = "55 8B EC 51 8B 45 10 53";
+GameTypes::GetMap_Internal() = "55 8B EC 83 EC 40 57 8B F9 83";
+GameTypes::SetCustomBotDifficulty() = "55 8B EC 56 8B 75 08 85 F6 78";
+GetBonePosition() = "55 8B EC 83 E4 F8 56 8B F1 57 83";
+GetCustomParticleEffectId() = "55 8B EC 83 EC 08 53 8B 5D 08 56 33";
+GetFullFrameFrameBufferTexture() = "55 8B EC 81 ? ? ? ? ? 56 8B F1 83";
+GetGlyphOutlineA() = "55 8B EC 6A 00 FF 75 20";
+GetMessage() = "55 8B EC 51 8B ? ? ? ? ? 53 56 57 8B ? ? ? ? ? 89 75 FC 85 F6 74 16 6A 04 6A 00 68 ? ? ? ? 6A 00 68 ? ? ? ? FF ? ? ? ? ? 8B 7D 0C";
+GetModEncryptionKey() = "56 8B F1 B9 ? ? ? ? 6A";
+GetParticleManifest() = "55 8B EC 83 E4 F8 83 EC 1C 53 56 8B ? ? ? ? ? 57 89";
+GetSequenceActivity() = "55 8B EC 53 8B 5D 08 56 8B F1 83";
+GetSequenceActivityName() = "85 C9 74 61 85 D2 78 22 8B 41 04 85 C0 75 0A 8B 01 8B ? ? ? ? ? EB 03 8B 40 14 3B D0 7D 0A 52 E8 ? ? ? ? 03 40 08";
+GetSequenceLinearMotion() = "55 8B EC 83 EC 0C 56 8B F1 57 8B FA 85";
+GetSequenceName() = "85 C9 74 61";
+GetShotgunSpread() = "55 8B EC 83 EC 10 56 8B 75 08 8D";
+GetStatForRound() = "55 8B EC 51 56 57 8B FA C7";
+GetToolRecordingState() = "55 8B EC 83 EC 08 53 56 8B F1 8B";
+GetUserCmd() = "55 8B EC 8B 45 08 56 57 8B F9 83";
+GetViewModel() = "55 8B EC 8B 45 08 53 8B D9 56";
+GetWeaponMoveAnimation() = "53 56 57 8B F9 33 F6 8B 4F 60";
+GetWorkshopWorkbenchKeyValuesFromFile() = "53 8B ? ? ? ? ? 56 57 8B F9 FF";
+GlassImpactCallback() = "55 8B EC 81 ? ? ? ? ? 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+GlowEffectSensorGrenade() = "55 8B EC 8B 4D 08 0F 57 C0";
+GloweEffectSpectator() = "55 8B EC 83 EC 14 53 8B 5D 0C 56 57";
+Helper_CanUseSprays() = "55 8B EC 56 8B ? ? ? ? ? 57 85 F6 74 2C";
+Helper_ComputeProPlayerMatchFantasyScore() = "55 8B EC 81 ? ? ? ? ? 56 57 FF";
+Helper_GetMouseEnableBindingName() = "F7 ? ? ? ? ? ? ? ? ? 56 74";
+Helper_TagFromString() = "55 8B EC 51 53 8B 5D 08 56 33 F6 89";
+IClientModeShared::CreateMove() = "55 8B EC 56 8D";
+ImageLoader::A8ToRGBA8888() = "55 8B EC 8B 45 08 56 8B 75 10 03 F0 3B C6 73 26";
+ImageLoader::ARGB8888ToRGBA8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 02 2B F1 83 C6 FE 8D 41 02 0F B6 4A FF";
+ImageLoader::BGR565ToRGBA8888() = "55 8B EC 8B 45 10 33 D2 57";
+ImageLoader::BGR888ToRGBA8888() = "55 8B EC 8B 4D 10 8B 45 08 56 8D 34 48 03 F1 3B C6 73 2F 8B 55 0C 83 C2 02 0F ? ? ? ? ? ? 0F B6 48";
+ImageLoader::BGR888_BLUESCREENToRGBA8888() = "55 8B EC 8B 45 10 57 8B 7D 08 8D 14 47 03 D0 3B FA 73 52";
+ImageLoader::BGRA4444ToRGBA8888() = "55 8B EC 51 8B 45 10 8B 55 08 57 C7 ? ? ? ? ? ? 8D ? ? ? ? ? ? 8D 0C 42 D1 EF 33 C0 3B D1 0F 47 F8 85 FF 74 76";
+ImageLoader::BGRA5551ToRGBA8888() = "55 8B EC 51 8B 45 10 8B";
+ImageLoader::BGRX5551ToRGBA8888() = "55 8B EC 8B 45 10 33 D2 57 8B 7D 08 C7 ? ? ? ? ? ? 8D 0C 47 8D ? ? ? ? ? ? D1 E8 3B F9 0F 47 C2 89 45 10 85 C0 74 5D";
+ImageLoader::BGRX8888ToRGBA8888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 31";
+ImageLoader::I8ToRGBA8888() = "55 8B EC 8B 45 08 56 8B 75 10 03";
+ImageLoader::IA88ToRGBA8888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 48";
+ImageLoader::RGB888ToRGBA8888() = "55 8B EC 8B 4D 10 8B";
+ImageLoader::RGB888_BLUESCREENToRGBA8888() = "55 8B EC 8B 45 10 57 8B 7D 08 8D 14";
+ImageLoader::RGBA16161616ToRGBA8888() = "55 8B EC 8B 45 10 56 57 8B 7D";
+ImageLoader::RGBA8888ToA8() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 13";
+ImageLoader::RGBA8888ToABGR8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D";
+ImageLoader::RGBA8888ToARGB8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 01";
+ImageLoader::RGBA8888ToBGR565() = "55 8B EC 8B 45 08 8B 4D 10 56 8B";
+ImageLoader::RGBA8888ToBGR888() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 2D";
+ImageLoader::RGBA8888ToBGR888_BLUESCREEN() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 3E";
+ImageLoader::RGBA8888ToBGRA4444() = "55 8B EC 8B 4D 08 8B 45 10 57 8B 7D 0C 8D 04 81 3B C8 73 51";
+ImageLoader::RGBA8888ToBGRA5551() = "55 8B EC 8B 4D 08 8B 45 10 57";
+ImageLoader::RGBA8888ToBGRA8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 38 8B 4D 0C 8D 56 01 2B F1 83 C6 FE 8D 41 02 0F B6 4A 01";
+ImageLoader::RGBA8888ToBGRX5551() = "55 8B EC 8B 45 08 8B 4D 10 56 8B 75 0C 57 8D 3C 88 3B C7 73 3E";
+ImageLoader::RGBA8888ToBGRX8888() = "55 8B EC 8B 45 10 56 8B 75 08 57 8D 3C 86 3B F7 73 32";
+ImageLoader::RGBA8888ToI8() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 61";
+ImageLoader::RGBA8888ToIA88() = "55 8B EC 8B 45 10 56 8B 75 08 8D";
+ImageLoader::RGBA8888ToR32F() = "55 8B EC 8B 4D 08 8B 45 10 8B 55 0C 56 8D 34 81 3B CE 0F ? ? ? ? ? F3 ? ? ? ? ? ? ? 8B C6 2B C1 83 C0 03 83 E0 FC 83 F8 10 72";
+ImageLoader::RGBA8888ToRG3232F() = "55 8B EC 8B 4D 08 8B 45 10 8B 55";
+ImageLoader::RGBA8888ToRGB323232F() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73";
+ImageLoader::RGBA8888ToRGB888() = "55 8B EC 8B 45 08 8B 4D 10 56";
+ImageLoader::RGBA8888ToRGB888_BLUESCREEN() = "55 8B EC 8B 4D 08 8B 45 10 56 8D 34 81 3B CE 73 3F";
+ImageLoader::RGBA8888ToRGBA32323232F() = "55 8B EC 8B 45 10 57";
+ImageLoader::RGBA8888ToUV88() = "55 8B EC 8B 45 08 8B 4D 10 56 8D 34 88 3B C6 73 1A";
+ImageLoader::UV88ToRGBA8888() = "55 8B EC 8B 55 08 8B 45 10 56 8D";
+ImageLoader::UVWQ8888ToRGBA8888() = "55 8B EC 8B 45 10 C1";
+InitC_BaseEntityScriptDesc() = "80 ? ? ? ? ? ? 0F ? ? ? ? ? FF";
+InitFunc_158() = "53 68 ? ? ? ? B9";
+InitFunc_267() = "FF ? ? ? ? ? 6A 01";
+InitFunc_388() = "55 8B EC 51 C7";
+InitFunc_882() = "FF ? ? ? ? ? 6A 00 6A 00 6A 00 68 ? ? ? ? FF ? ? ? ? ? 83 C4 14 A3";
+InitPose() = "55 8B EC 83 EC 10 53 8B D9 89 55";
+InterpolateServerEntities() = "55 8B EC 83 EC 1C 8B 0D";
+IntersectRayWithRay() = "55 8B EC 83 EC 1C 8B 55 08";
+InvokeMethod() = "55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 8B CE";
+InvokeMethodTickProgress() = "55 8B EC 83 EC 08 A1 ? ? ? ? 33";
+IsDepthOfFieldEnabled() = "8B ? ? ? ? ? 56 8B 01 FF 50 34";
+IsEntityBreakable() = "55 8B EC 51 56 8B F1 85 F6 74 ? 83";
+IsInExceptionSpec() = "55 8B EC 83 EC 18 53 56 8B 75 0C 57";
+IsInIronsight() = "53 56 8B F1 57 8B 4E 3C";
+IsPreCrouchUpdateDemo() = "8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 75 14 8B ? ? ? ? ? 8B";
+Is_bad_exception_allowed() = "55 8B EC 53 56 57 8B 7D 08 33";
+KeyDown() = "56 57 8B FA 83 C8";
+LineGoesThroughSmoke() = "55 8B EC 83 EC 08 8B 15";
+LoadFile() = "55 8B EC 51 56 57 8B FA";
+LookupBone() = "55 8B EC 53 56 8B F1 57 83";
+Noise() = "55 8B EC 51 56 57 8B 7D 0C 8B F7";
+OnLand() = "55 8B EC 83 E4 F8 81 EC 28 02 00 00 56 8B";
+OnPostRestoreData() = "55 8B EC 51 53 56 6A";
+OpenBSPFile() = "55 8B EC 51 56 68";
+OpenStoreStatusDialog() = "55 8B EC 53 57 6A 00 68 ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+PMDtoOffset() = "55 8B EC 56 8B 75 0C 33";
+PanelJobWrapperFn() = "55 8B EC 83 EC 08 56 FF";
+PerformScreenOverlay() = "55 8B EC 51 A1 ? ? ? ? 53 56 8B";
+PostThinkVPhysics() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53 8B D9";
+PutString() = "55 8B EC 56 57 8B F9 8A";
+Q_stristr() = "55 8B EC 53 57 8B 7D 08 85 FF 0F";
+RecordBloodSprite() = "55 8B EC 83 EC 0C 53 8B D9 89 55";
+RecordGlowSprite() = "55 8B EC 83 EC 0C 53 8B D9 F3 ? ? ? ? 8B";
+RecordSprite() = "55 8B EC 83 EC 08 53 8B D9 F3";
+RecordWorldDecal() = "55 8B EC 83 EC 08 57 8B F9 89 55";
+RecvProxy_HDRColorScale() = "55 8B EC 8B 45 08 8B 48 08 8B 45 0C 89 ? ? ? ? ? 5D";
+RecvProxy_IntDirtySurround() = "55 8B EC 8B 55 10 8B 4D";
+RecvProxy_MoveCollide() = "55 8B EC 8B 45 08 8A";
+RecvProxy_MoveType() = "55 8B EC 8B 45 08 8B 4D 0C 8A";
+RecvProxy_Owner() = "55 8B EC 8B 45 0C 56 8B 75 08";
+RecvProxy_SpriteScale() = "55 8B EC 8B 45 08 8B 4D 0C F3 ? ? ? ? 0F ? ? ? ? ? ? 9F";
+RecvProxy_VectorDirtySurround() = "55 8B EC 8B 45 08 8B 4D 10";
+Register_LOG_WORKSHOP_Tags() = "68 ? ? ? ? FF ? ? ? ? ? 68 ? ? ? ? FF ? ? ? ? ? 83";
+ReslistLogLessFunc() = "55 8B EC 51 56 E8 ? ? ? ? 8B";
+RestoreData() = "55 8B EC 83 E4 F8 83 EC 44 53 56 8B";
+RunSimulation() = "55 8B EC 83 EC 08 53 8B 5D 10";
+SafeRelease() = "56 57 8B F9 8B 37 85 F6 74 2B";
+ScreenWidth() = "55 8B EC 83 EC 08 8B ? ? ? ? ? 8D 55";
+SelectItem() = "55 8B EC 53 8B 5D 08 57";
+SetAbsAngles() = "55 8B EC 83 E4 F8 83 EC 64 53";
+SetCollisionBounds() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 18 56 57 8B 7B";
+SetLastCmd() = "55 8B EC 8B 55 08 3B";
+SetLightmapScaleForWater() = "55 8B EC 8B ? ? ? ? ? 83 EC 18 8B 01 FF";
+SetSequence() = "55 8B EC 53 8B 5D 08 56 8B F1 39";
+SetupMovement() = "55 8B EC 83 E4 F8 83 EC 0C 53 56 57 8B 7D";
+ShouldDrawInWireFrameMode() = "8B ? ? ? ? ? 85 C9 75 1C";
+ShouldDrawViewModel() = "55 8B EC 80 7D 08 00 56 8B F1 75";
+ShowGlobalServerStats() = "55 8B EC 51 56 8B ? ? ? ? ? 57 68";
+Show_Steam_Stats_Session_ID() = "F7 ? ? ? ? ? ? ? ? ? 56 BE";
+SimulatePlayerSimulatedEntities() = "56 8B F1 57 8B ? ? ? ? ? 83 EF";
+SocketWouldBlock() = "55 8B EC 53 56 8B F1 57 FF";
+SortLessFuncExtended() = "55 8B EC 8B 45 08 8B 10 8B 45";
+Spec_Autodirector_Cameraman_Callback() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 75 0C 0F 57 C0 0F ? ? ? ? ? ? 77 0C 6A 00 B9 ? ? ? ? E8 ? ? ? ? C3";
+TE_BeamSpline() = "55 8B EC 8B 01 FF 75 08 8B 40 04 FF D0 84 C0 75 13";
+TestViewAnim() = "55 8B EC 51 8B ? ? ? ? ? 83 ? ? ? ? ? ? 75";
+Test_ProxyToggle_EnsureValue() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83";
+TextToSoundLevel() = "57 8B F9 85 FF 75 05";
+UGCUtil_Init() = "55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 75";
+UTIL_IsLowViolence() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 43";
+UTIL_TraceLine() = "55 8B EC 83 E4 F0 83 EC 7C";
+Unserialize() = "56 8B F1 57 8B FA 80 7E";
+UpdateCollisionBounds() = "56 57 8B F9 8B ? ? ? ? ? F6";
+UpdateRefractIfNeededByList() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 33";
+UpdateScreenEffectTexture() = "55 8B EC 83 E4 F0 83 EC 48 8B 45 08 56 89";
+UpdateVPhysicsPosition() = "55 8B EC 83 EC 10 57";
+UsingStandardWeaponsInVehicle() = "56 57 8B F9 8B ? ? ? ? ? 83 FA FF 74 43";
+VControlsListPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B";
+VControlsListPanel::VControlsListPanel() = "55 8B EC 56 57 68 ? ? ? ? FF 75 08 8B F1";
+VGUI_CreateClientDLLRootPanel() = "A1 ? ? ? ? 56 57 68 ? ? ? ? 8B";
+VScriptRunScript() = "83 ? ? ? ? ? ? 56 57 8B FA 8B F1 0F";
+V_snprintf() = "55 8B EC 51 56 8B 75 0C 8D 45 14 57 8B 7D 08 8B D6 50 51 FF 75 10 8B CF E8 ? ? ? ? 83 C4 0C 85 C0 78 08 85 F6 7E 0C";
+ValidateLocalCookies() = "55 8B EC 56 8B 75 08 57 8B 7D 0C 8B 06";
+ValveJpegErrorHandler() = "55 8B EC 8B 45 08 8D ? ? ? ? ? 81";
+VideoPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 FF 75 08 8B D9";
+WriteUserCmd() = "55 8B EC 83 E4 F8 51 53 56 8B D9";
+WriteUserCmdDeltaToBuffer() = "55 8B EC 83 EC 68 53";
+_B1_1() = "57 8B 7C 24 0C 81";
+_CallSettingFrame(x,x,x) = "55 8B EC 83 EC 04";
+_CodeAlphaBlock() = "81 ? ? ? ? ? 8B ? ? ? ? ? ? 53";
+_CodeRGBBlock() = "55 8B EC 83 E4 F8 81 ? ? ? ? ? 53";
+_CxxThrowException(x,x) = "55 8B EC 83 EC 20 53 8B 5D 08 56 57 6A";
+_DllMainCRTStartup(x,x,x) = "55 8B EC 83 7D 0C 01 75";
+_EH4_CallFilterFunc(x,x) = "55 56 57 53";
+_EH4_GlobalUnwind2(x,x) = "55 8B EC 53 56 57 6A 00 52";
+_EH4_LocalUnwind(x,x,x,x) = "55 8B 6C 24 08 52";
+_EH4_TransferToHandler(x,x) = "8B EA 8B F1";
+_UNITY_png_get_uint_31() = "55 8B EC 8B 4D 0C 0F B6 11 0F";
+__CatchGuardHandler() = "55 8B EC 56 FC";
+__CreateFrameInfo() = "55 8B EC 8B 4D 0C 56 8B";
+__EH_prolog3_catch() = "50 64 ? ? ? ? ? ? 8D 44 24 0C 2B 64 24 0C 53 56 57 89 28 8B E8 A1 ? ? ? ? 33 C5 50 89 65";
+__FindAndUnlinkFrame() = "55 8B EC 56 E8 ? ? ? ? 8B 75 08 3B";
+__Init_thread_footer() = "55 8B EC E8 ? ? ? ? 8B ? ? ? ? ? 8B 45 08 41";
+__Init_thread_header() = "55 8B EC 56 E8 ? ? ? ? 8B 75";
+__Init_thread_notify() = "A1 ? ? ? ? 85 C0 75 24 56";
+__Init_thread_wait() = "55 8B EC 83 ? ? ? ? ? ? 56 75";
+__IsExceptionObjectToBeDestroyed() = "55 8B EC E8 ? ? ? ? 8B 40";
+__MsgFunc_MatchEndConditions() = "55 8B EC 51 8B 45 08 53 56 57 8B 48";
+__MsgFunc_RequestState() = "51 56 8B ? ? ? ? ? 85 F6 74 3B";
+__Mtxinit() = "55 8B EC 6A 00 68 ? ? ? ? FF";
+__NLG_Notify() = "53 51 BB ? ? ? ? 8B";
+__NLG_Notify1() = "53 51 BB";
+__SEH_epilog4() = "8B 4D F0 64 ? ? ? ? ? ? 59 5F 5F";
+__SEH_prolog4() = "68 ? ? ? ? 64 ? ? ? ? ? ? 8B 44";
+__TranslatorGuardHandler() = "55 8B EC 51 53 FC";
+___AdjustPointer() = "55 8B EC 8B 4D 0C 8B 55";
+___BuildCatchObject() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 8B 55";
+___BuildCatchObjectHelper() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 33 DB 8B";
+___CxxFrameHandler3() = "55 8B EC 83 EC 08 53 56 57 FC";
+___DestructExceptionObject() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 8B";
+___FrameUnwindFilter() = "55 8B EC 8B 45 08 8B 00 81 ? ? ? ? ? 74";
+___FrameUnwindToState() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 45";
+___InternalCxxFrameHandler() = "55 8B EC 53 56 57 FF 75 10 E8";
+___RTDynamicCast() = "6A 18 68 ? ? ? ? E8 ? ? ? ? 8B";
+___RTtypeid() = "6A 14 68 ? ? ? ? E8 ? ? ? ? 8B";
+___TypeMatch() = "55 8B EC 8B 55 08 53 56 57 8B 42";
+___acrt_call_reportfault() = "8B FF 55";
+___acrt_initialize_stdio() = "A1 ? ? ? ? 56 6A 03";
+___acrt_iob_func() = "8B FF 55 8B EC 6B";
+___acrt_uninitialize_stdio() = "8B FF 56 E8";
+___common_pi04_reduction_LA() = "55 8B EC 83 E4 F0 56 57 53 83 EC 54 B8 ? ? ? ? 8B 55 0C 8B 5D 10 2B D0 0F ? ? ? ? ? 33 C0 66 ? ? ? ? D9 7C 24 46";
+___common_sacos_cout_rare() = "55 8B EC 83 E4 F8 56 57 53 83 EC 5C";
+___common_sll() = "8B 44 24 04 8B 54 24 08 8B 4C 24 0C 80 F9 40 73 15";
+___common_srl() = "8B 44 24 04 8B 54";
+___crtInitializeCriticalSectionEx() = "55 8B EC 56 8B ? ? ? ? ? 33 ? ? ? ? ? 74 14";
+___libm_sse2_powf() = "F3 ? ? ? ? ? ? ? 83 EC 0C 66 ? ? ? ? ? ? ? 66";
+___longjmp_internal() = "55 8B EC 83 EC 50 8B 5C";
+___raise_securityfailure() = "55 8B EC 6A 00 FF ? ? ? ? ? FF 75 08 FF";
+___report_gsfailure() = "55 8B EC 81 ? ? ? ? ? 6A 17";
+___report_rangecheckfailure() = "55 8B EC 6A 08";
+___report_securityfailure() = "55 8B EC 81 ? ? ? ? ? 6A 17 E8 ? ? ? ? 85 C0 74 05 8B";
+___scrt_acquire_startup_lock() = "E8 ? ? ? ? 85 C0 75 03 32";
+___scrt_dllmain_after_initialize_c() = "E8 ? ? ? ? 85 C0 74 07 E8";
+___scrt_dllmain_before_initialize_c() = "6A 00 E8 ? ? ? ? 84 C0 59";
+___scrt_dllmain_crt_thread_detach() = "E8 ? ? ? ? E8 ? ? ? ? B0 01 C3";
+___scrt_dllmain_exception_filter() = "55 8B EC E8 ? ? ? ? 85 C0 75";
+___scrt_dllmain_uninitialize_c() = "E8 ? ? ? ? 85 C0 74 0C 68 ? ? ? ? E8";
+___scrt_dllmain_uninitialize_critical() = "6A 00 E8 ? ? ? ? 59 E9";
+___scrt_fastfail() = "55 8B EC 81 ? ? ? ? ? 53 56 6A";
+___scrt_initialize_crt() = "55 8B EC 83 7D 08 00 75 07";
+___scrt_initialize_default_local_stdio_options() = "E8 ? ? ? ? 8B 48 04 83";
+___scrt_initialize_onexit_tables() = "55 8B EC 83 EC 0C 56 8B 75 08 85 F6 74 05";
+___scrt_is_nonwritable_in_current_image() = "6A 08 68 ? ? ? ? E8 ? ? ? ? 83";
+___scrt_release_startup_lock() = "55 8B EC E8 ? ? ? ? 85 C0 74 0F";
+___scrt_uninitialize_crt() = "55 8B EC 80 ? ? ? ? ? ? 74 06 80";
+___security_init_cookie() = "55 8B EC 83 EC 14 83 65";
+___sse2_acosf4() = "55 8B EC 83 E4 C0 81 ? ? ? ? ? 0F";
+___sse2_pow2() = "8B C4 81";
+___sse2_sin2() = "8B C4 81 ? ? ? ? ? 83 E4 F0 89 44";
+___std_exception_copy() = "55 8B EC 57 8B 7D 08 80 7F 04";
+___std_exception_destroy() = "55 8B EC 56 8B 75 08 80 7E 04";
+___std_type_info_compare() = "55 8B EC 8B 45 08 8B 4D 0C 3B";
+___std_type_info_destroy_list() = "55 8B EC FF 75 08 FF ? ? ? ? ? 85";
+___std_type_info_name() = "55 8B EC 83 EC 0C 33 C9 33";
+___stdio_common_vfprintf() = "8B FF 55 8B EC 83 EC 2C";
+___unDName() = "6A 64 68 ? ? ? ? E8 ? ? ? ? 8B";
+___vcrt_freeptd() = "55 8B EC A1 ? ? ? ? 83 F8 FF 74 27";
+___vcrt_getptd_noexit() = "83 ? ? ? ? ? ? 75 03 33 C0 C3 53";
+___vcrt_initialize() = "E8 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? 84 C0";
+___vcrt_initialize_locks() = "56 57 BF ? ? ? ? 33 F6 6A";
+___vcrt_initialize_ptd() = "68 ? ? ? ? E8 ? ? ? ? A3 ? ? ? ? 59";
+___vcrt_initialize_pure_virtual_call_handler() = "A1 ? ? ? ? 83 E0 1F 6A 20 59 2B C8 33";
+___vcrt_thread_detach() = "6A 00 E8 ? ? ? ? 59 B0";
+___vcrt_uninitialize() = "55 8B EC 80 7D 08 00 75 12";
+___vcrt_uninitialize_ptd() = "A1 ? ? ? ? 83 F8 FF 74 0E";
+__abnormal_termination() = "33 C0 64";
+__alldiv() = "57 56 53 33";
+__allmul() = "8B 44 24 08 8B 4C 24 10";
+__alloca_probe_16() = "51 8D 4C 24 08";
+__alloca_probe_8() = "51 8D 4C 24 08 2B C8 83 E1 07";
+__aulldiv() = "53 56 8B 44 24";
+__aullshr() = "80 F9 40 73";
+__calloc_base() = "55 8B EC A1 ? ? ? ? 56 57 8B 7D 08 8B 08";
+__chkstk() = "51 8D 4C 24 04";
+__chvalidchk_l() = "8B FF 55 8B EC 8B 45 10";
+__close() = "8B FF 55 8B EC 51 56 8B 75 08";
+__dtol3() = "B9 ? ? ? ? F2 ? ? ? ? ? ? ? 66 0F 6F";
+__except_handler4() = "55 8B EC 83 EC 1C 53 56 8B 75 0C 57";
+__fclose_nolock() = "8B FF 55 8B EC 56";
+__fread_nolock_s() = "8B FF 55 8B EC 83 EC 14";
+__free_base() = "55 8B EC A1 ? ? ? ? FF 75 08 8B 08 8B 01 FF 50 14";
+__freea_crt() = "55 8B EC 8B 45 08 85 C0 74 12 83";
+__ftol2() = "55 8B EC 83 EC 20 83 E4";
+__ftol2_sse() = "83 ? ? ? ? ? ? 74 37 55";
+__ftol2_sse_excpt() = "83 ? ? ? ? ? ? 74 1B 83";
+__ftol3_except() = "83 EC 20 9B";
+__ftoui3() = "B9 ? ? ? ? F2 ? ? ? ? ? ? ? EB";
+__fwrite_nolock() = "8B FF 55 8B EC 83 EC 0C 53 56 8B 75 0C";
+__get_purecall_handler() = "33 C9 BA ? ? ? ? 33";
+__getch() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 6A";
+__global_unwind2() = "55 8B EC 53 56 57 55";
+__invalid_parameter() = "8B FF 55 8B EC 51";
+__invalid_parameter_noinfo() = "33 C0 50 50 50 50";
+__invalid_parameter_noinfo_noreturn() = "8B FF 56 33";
+__invoke_watson() = "6A 17 E8 ? ? ? ? 85 C0 74 05 6A 05";
+__isalnum_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D";
+__ischartype_l() = "8B FF 55 8B EC 8B 4D";
+__iscntrl_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A";
+__isdigit_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 04";
+__isspace_l() = "8B FF 55 8B EC 83 EC 10 FF 75 0C 8D 4D F0 E8 ? ? ? ? 8D 45 F4 50 6A 08";
+__local_unwind2() = "53 56 57 8B 44";
+__local_unwind4() = "53 56 57 8B 54";
+__ltod3() = "0F 57 C9 F2 0F 2A CA 0F";
+__malloc_base() = "55 8B EC A1 ? ? ? ? FF 75 08";
+__onexit() = "55 8B EC A1 ? ? ? ? 8B C8";
+__purecall() = "56 E8 ? ? ? ? 8B F0 85 F6 74 09";
+__raise_invalid() = "66 0F 76 D2";
+__raise_zerodivide() = "66 0F 76 DB";
+__recalloc() = "55 8B EC A1 ? ? ? ? 53 8B 5D 0C 0F";
+__scrt_initialize_thread_safe_statics() = "53 56 57 6A 00 68 ? ? ? ? 68 ? ? ? ? E8";
+__scrt_uninitialize_thread_safe_statics() = "68 ? ? ? ? FF ? ? ? ? ? A1 ? ? ? ? 85";
+__security_check_cookie(x) = "3B ? ? ? ? ? F2 75";
+__set_purecall_handler() = "55 8B EC FF 75 08 E8 ? ? ? ? 8B D0";
+__setjmp3() = "8B 54 24 04 89";
+__snprintf() = "55 8B EC 83 E4 F8 8D 45 14 50 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 8B";
+__tr_flush_block() = "55 8B EC 83 EC 08 53 56 57 8B F9 C7 ? ? ? ? ? ? 8B DA";
+__tr_stored_block() = "55 8B EC 53 57 8B F9 8B DA 8B";
+__ultod3() = "0F 57 C0 F2 0F 2A";
+__unwind_handler() = "8B 4C 24 04 F7 ? ? ? ? ? ? B8 ? ? ? ? 74 32";
+__vcrt_freefls(x) = "55 8B EC 8B 45 08 85 C0 74 0E 3D";
+__vfscanf_l() = "55 8B EC 83 E4 F8 FF";
+__vmldPow_HA_scalar() = "55 8B EC 83 E4 F8 56 57 53";
+_adler32() = "55 8B EC 53 8B 5D 08 56 57 8B F9 8B F2";
+_adler32() = "55 8B EC 56 8B 75 08 57 8B 7D";
+_anonymous_namespace_::CaptionGripPanel::tryToDock() = "55 8B EC 83 EC 10 53 8B D9 56 8B ? ? ? ? ? 8B";
+_anonymous_namespace_::GripPanel::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 89";
+_anonymous_namespace_::GripPanel::OnCursorMoved() = "55 8B EC 83 EC 10 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B";
+_anonymous_namespace_::GripPanel::OnMouseDoublePressed() = "55 8B EC 8B 01 FF ? ? ? ? ? 8B 10";
+_anonymous_namespace_::GripPanel::OnMousePressed() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 83";
+_anonymous_namespace_::GripPanel::OnMouseReleased() = "56 8B F1 6A 00 C6";
+_anonymous_namespace_::ScrollBarButton::OnMouseReleased() = "55 8B EC 56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 4A";
+_anonymous_namespace_::argument_list_wchar_t_::append_0() = "8B FF 55 8B EC 56 57 8B F1";
+_anonymous_namespace_::protobuf_RegisterTypes() = "68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? A1 ? ? ? ? 83 C4 08";
+_atexit() = "55 8B EC FF 75 08 E8 ? ? ? ? F7";
+_crc32() = "55 8B EC 8B 55 0C 85 D2 75 04";
+_dynamic_initializer_for__LOG_SND_EMITTERSYSTEM__() = "FF ? ? ? ? ? 6A 00 6A 01";
+_dynamic_initializer_for__LOG_VScript__() = "FF ? ? ? ? ? 6A 01 6A 01 6A";
+_dynamic_initializer_for____g_C_TEPlayerDecal__() = "B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7";
+_dynamic_initializer_for__dmodels__() = "56 57 BF ? ? ? ? BE";
+_dynamic_initializer_for__dplanes__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 14";
+_dynamic_initializer_for__dtexdata__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 20";
+_dynamic_initializer_for__entities__() = "56 57 BF ? ? ? ? BE ? ? ? ? 0F 1F 40 00 8B CF E8 ? ? ? ? 83 C7 2C";
+_dynamic_initializer_for__g_AsyncCaptionResourceManager__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? C7";
+_dynamic_initializer_for__g_EntityLists__() = "56 BA";
+_dynamic_initializer_for__g_Generated_Texture_Saver__() = "6A 00 B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__g_KeyValueSaver__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C6";
+_dynamic_initializer_for__g_PPInit__() = "0F 57 C0 C6 ? ? ? ? ? ? 0F";
+_dynamic_initializer_for__g_PhysObjSaveRestoreOps__() = "B9 ? ? ? ? B8";
+_dynamic_initializer_for__g_PrecipHack__() = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__g_ProtobufLogHandler__() = "68 ? ? ? ? E8 ? ? ? ? 68";
+_dynamic_initializer_for__g_SteamWorksGameStatsClient__() = "68 ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? B9";
+_dynamic_initializer_for__g_pLessonVariableInfo__() = "B8 ? ? ? ? B9";
+_dynamic_initializer_for__g_staticPlayerNames__() = "68 ? ? ? ? 6A 00 68 ? ? ? ? E8";
+_dynamic_initializer_for__mp_warmuptime__() = "68 ? ? ? ? 51 C7 ? ? ? ? ? ? 6A 00 51 C7 ? ? ? ? ? ? B9 ? ? ? ? 6A 01";
+_dynamic_initializer_for__s_GaussianRandomStream__() = "6A 00 B9 ? ? ? ? FF";
+_dynamic_initializer_for__s_HLTVCamera__() = "B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C6";
+_dynamic_initializer_for__s_ParticleSystemQuery__() = "B9 ? ? ? ? E8 ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? ? ? ? 68 ? ? ? ? 0F ? ? ? ? ? ? E8";
+_dynamic_initializer_for__ss_righthand__() = "6A 01 68 ? ? ? ? B9";
+_dynamic_initializer_for__vgui::Panel::m_MessageMap__() = "55 8B EC 83 EC";
+_fclose() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 8B 75";
+_fopen() = "8B FF 55 8B EC 6A 40";
+_fread() = "8B FF 55 8B EC FF 75 14";
+_fread_s() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 83 7D";
+_fseek() = "8B FF 55 8B EC FF 75 10";
+_fwrite() = "8B FF 55 8B EC 83 EC 10 83";
+_inflate() = "55 8B EC 8B 45 08 83 EC 40 85";
+_inflateInit2_() = "55 8B EC 8B 45 08 56 8B F1 85 C0 0F";
+_inflateInit_() = "55 8B EC FF 75 10 8B 4D 08 FF 75 0C E8 ? ? ? ? 83";
+_inflateReset() = "55 8B EC 8B 45 08 85 C0 0F ? ? ? ? ? 8B";
+_inflateReset2() = "56 57 8B F9 85 FF 74 41";
+_inflate_fast() = "55 8B EC 83 EC 44 53 56 57 8B F9 89 7D";
+_inflate_table() = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B 7D 08 0F";
+_isalnum() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E";
+_iscntrl() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83";
+_isdigit() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 04";
+_isspace() = "8B FF 55 8B EC A1 ? ? ? ? 85 C0 74 0E 6A 00 FF 75 08 E8 ? ? ? ? 59 59 5D C3 8B 4D 08 A1 ? ? ? ? 0F B7 04 48 83 E0 08";
+_jinit_1pass_quantizer() = "56 8B F1 6A 58";
+_jinit_2pass_quantizer() = "56 8B F1 57 6A 2C";
+_jinit_arith_decoder() = "53 8B D9 68 ? ? ? ? 6A";
+_jinit_arith_encoder() = "56 8B F1 68 ? ? ? ? 6A 01 56";
+_jinit_c_coef_controller() = "55 8B EC 83 EC 10 8B 41 04 53";
+_jinit_c_main_controller() = "55 8B EC 51 56 8B F1 6A 40 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? 80";
+_jinit_c_master_control() = "56 8B F1 57 6A 20";
+_jinit_c_prep_controller() = "55 8B EC 51 56 8B F1 6A 40";
+_jinit_color_converter() = "56 8B F1 57 6A 0C";
+_jinit_color_deconverter() = "56 8B F1 57 6A 18";
+_jinit_compress_master() = "56 8B F1 E8 ? ? ? ? 80 ? ? ? ? ? ? 75 15";
+_jinit_d_coef_controller() = "55 8B EC 83 EC 14 53 56 57 8B F9 8A";
+_jinit_d_main_controller() = "55 8B EC 83 EC 08 53 56 8B F1 57 6A";
+_jinit_d_post_controller() = "55 8B EC 83 EC 08 53 57 8B F9 88";
+_jinit_downsampler() = "55 8B EC 83 EC 1C 53 56 8B F1 C6";
+_jinit_forward_dct() = "56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89 ? ? ? ? ? 83 C4 0C C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+_jinit_huff_decoder() = "55 8B EC 51 53 8B D9 56 68";
+_jinit_huff_encoder() = "56 8B F1 68 ? ? ? ? 6A 01 56 8B 46 04 8B 00 FF D0 89";
+_jinit_inverse_dct() = "55 8B EC 51 56 8B F1 57 6A";
+_jinit_marker_reader() = "56 8B F1 68 ? ? ? ? 6A 00 56 8B";
+_jinit_merged_upsampler() = "56 57 8B F9 6A 30 6A 01";
+_jinit_upsampler() = "55 8B EC 83 EC 1C 53 56 8B F1 57 68";
+_jpeg_add_quant_table() = "55 8B EC 53 56 57 8B F9 8B DA 83";
+_jpeg_calc_jpeg_dimensions() = "55 8B EC 51 57 8B F9 8B 47 3C";
+_jpeg_calc_output_dimensions() = "55 8B EC 83 EC 18 56 8B F1 89";
+_jpeg_consume_input() = "56 8B F1 8B 46 14 05";
+_jpeg_core_output_dimensions() = "56 8B F1 57 8B 56 30";
+_jpeg_destroy() = "56 8B F1 8B 46 04 85";
+_jpeg_fdct_10x10() = "55 8B EC 83 EC 74 8B";
+_jpeg_fdct_10x5() = "55 8B EC 83 EC 38 53 8B 5D 08";
+_jpeg_fdct_11x11() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33";
+_jpeg_fdct_12x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57";
+_jpeg_fdct_12x6() = "55 8B EC 83 EC 44 53 8B 5D 08";
+_jpeg_fdct_13x13() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D D4";
+_jpeg_fdct_14x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D D4";
+_jpeg_fdct_14x7() = "55 8B EC 83 EC 54 8B 45";
+_jpeg_fdct_15x15() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 89 4D C0";
+_jpeg_fdct_16x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D CC";
+_jpeg_fdct_16x8() = "55 8B EC 83 EC 5C 8B 45 08 33";
+_jpeg_fdct_1x1() = "55 8B EC 56 8B 75 08 68 ? ? ? ? 6A";
+_jpeg_fdct_1x2() = "55 8B EC 56 57 8B 7D 08 68";
+_jpeg_fdct_2x1() = "55 8B EC 56 8B 75 08 68 ? ? ? ? 6A 00 56 E8 ? ? ? ? 8B 45 0C 83 C4 0C 8B 00";
+_jpeg_fdct_2x2() = "55 8B EC 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 75";
+_jpeg_fdct_2x4() = "55 8B EC 53 8B 5D 08 56 57 68";
+_jpeg_fdct_3x3() = "55 8B EC 53 56 57 68 ? ? ? ? 6A";
+_jpeg_fdct_3x6() = "55 8B EC 83 EC 10 53 56 57 68 ? ? ? ? 6A 00 FF 75 08 E8 ? ? ? ? 8B 5D";
+_jpeg_fdct_4x8() = "55 8B EC 83 EC 1C 8B 4D 08 53";
+_jpeg_fdct_5x10() = "55 8B EC 83 EC 64 53 8B 5D 08 56";
+_jpeg_fdct_5x5() = "55 8B EC 83 EC 08 53 56 57 68 ? ? ? ? 6A 00 FF";
+_jpeg_fdct_6x12() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 68";
+_jpeg_fdct_7x14() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 56 57 68";
+_jpeg_fdct_7x7() = "55 8B EC 83 EC 14 53 56 57 68 ? ? ? ? 6A 00 FF";
+_jpeg_fdct_8x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 33 C9 53 56 57 89 4D DC";
+_jpeg_fdct_8x4() = "55 8B EC 83 EC 2C 53 8B 5D";
+_jpeg_fdct_9x9() = "55 8B EC 83 EC 4C 8B 45 08 33";
+_jpeg_fdct_float() = "55 8B EC 51 53 8B 5D 0C 56 57 8B 1B";
+_jpeg_fdct_ifast() = "55 8B EC 83 EC 10 8B 4D 0C";
+_jpeg_fdct_islow() = "55 8B EC 83 EC 28 8B 45 08 33";
+_jpeg_idct_10x10() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7";
+_jpeg_idct_10x5() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53 8B 45";
+_jpeg_idct_11x11() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83";
+_jpeg_idct_12x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8B";
+_jpeg_idct_12x6() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 53";
+_jpeg_idct_13x13() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8D";
+_jpeg_idct_14x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D";
+_jpeg_idct_14x7() = "55 8B EC 81 ? ? ? ? ? 8B 4D 0C 8B";
+_jpeg_idct_15x15() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 83";
+_jpeg_idct_16x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D";
+_jpeg_idct_1x1() = "55 8B EC 8B 45 0C 56 8B 48";
+_jpeg_idct_1x2() = "55 8B EC 8B 45 08 53 56 8B 75 14";
+_jpeg_idct_2x1() = "55 8B EC 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 45";
+_jpeg_idct_2x2() = "55 8B EC 8B 45 08 8B 4D 10 53";
+_jpeg_idct_2x4() = "55 8B EC 83 EC 10 8B 45 08 53 56 57 8B ? ? ? ? ? 8B";
+_jpeg_idct_3x3() = "55 8B EC 83 EC 14 8B 45 08 8B";
+_jpeg_idct_3x6() = "55 8B EC 83 EC 3C 8B 45 08";
+_jpeg_idct_4x2() = "55 8B EC 83 EC 10 8B 45 08 8B";
+_jpeg_idct_4x4() = "55 8B EC 83 EC 34 8B 45 08 53 56 57 8B ? ? ? ? ? 8B";
+_jpeg_idct_5x10() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 4D 10 53 83 C1 20 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45";
+_jpeg_idct_5x5() = "55 8B EC 83 EC 5C 8B 45 08 53";
+_jpeg_idct_6x12() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 83 C2 20";
+_jpeg_idct_6x3() = "55 8B EC 83 EC 38 8B 45 08 53 56 57";
+_jpeg_idct_6x6() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B";
+_jpeg_idct_7x14() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 C7 ? ? ? ? ? ? 8B ? ? ? ? ? 83 E8 80 89 45 F4";
+_jpeg_idct_7x7() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D 10 56 8B ? ? ? ? ? 83 E8 80 0F";
+_jpeg_idct_8x16() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 8B 7D 10 83 E8 80 89 45 EC";
+_jpeg_idct_8x4() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8B 55 10 53 56 8B ? ? ? ? ? 0F BF 1A 83 E8 80 0F";
+_jpeg_idct_9x9() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 57 8B ? ? ? ? ? 83";
+_jpeg_idct_float() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 8D";
+_jpeg_idct_ifast() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 56 8D";
+_jpeg_idct_islow() = "55 8B EC 81 ? ? ? ? ? 8B 45 08 53 8B 5D";
+_jpeg_resync_to_restart() = "55 8B EC 53 8B 5D 08 56 8B 75";
+_jpeg_stdio_src() = "53 57 8B F9 8B DA 83 7F 18";
+_jpeg_suppress_tables() = "8B 41 58 85 C0 74 07";
+_lambda_4f2c1eaeead2a5fc776db5b62ea0fb9b_::operator() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56";
+_lambda_83425c3f06effba31f387a263a50d5fb_::operator() = "8B FF 56 8B F1 8B ;
+_lambda_af0d5e41dc07595f2c52435db9a0efad_::operator() = "8B FF 56 8B F1 8B 46 04 8B 0E 0F B6";
+_lambda_b163b37eafe0a13f2c371fafeb0365c9_::operator() = "8B FF 55 8B EC 83 EC 14 56 57";
+_lambda_b51c0495177f500e782686251704ae76_::operator() = "8B FF 55 8B EC 51 51 56 8B F1 57 8B";
+_lambda_d9b46f0b07bf76f03656ac7f646b375e_::operator() = "8B FF 56 8B";
+_ldexpf() = "55 8B EC 51 FF 75 0C D9";
+_longjmp() = "55 8B EC FF 75 08 E8 ? ? ? ? 59 5D E9";
+_memchr() = "8B 44 24 0C 53 85";
+_memcmp() = "55 8B EC 53 8B 5D 10 8B";
+_memset() = "8B 4C 24 0C 0F ? ? ? ? 8B D7";
+_png_64bit_product() = "55 8B EC 8B 4D 08 8B C1";
+_png_XYZ_from_xy() = "55 8B EC 8B 4D 0C 83 EC 24";
+_png_XYZ_from_xy_checked() = "55 8B EC 0F 10 45 10";
+_png_build_gamma_table() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 57";
+_png_calculate_crc() = "55 8B EC 53 8B 5D 08 F7";
+_png_calloc() = "55 8B EC 56 FF 75 0C FF 75 08 E8 ? ? ? ? 8B";
+_png_check_IHDR() = "55 8B EC 53 8B 5D 0C 56 8B 75 08 57 33";
+_png_check_cHRM_fixed() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 BE";
+_png_check_chunk_name() = "55 8B EC 53 8B 5D 0C B8";
+_png_check_fp_number() = "55 8B EC 8B 55 10 56 8B";
+_png_check_fp_string() = "55 8B EC 83 EC 08 56 8B 75 08 8D 45 FC 50";
+_png_chunk_error() = "55 8B EC 8B 45 0C 83 EC 54";
+_png_chunk_unknown_handling() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33";
+_png_chunk_warning() = "55 8B EC 83 EC 58 A1";
+_png_combine_row() = "55 8B EC 83 EC 1C 8B 45 08 53 56 57 0F";
+_png_crc_error() = "55 8B EC 56 8B 75 08 57 BF ? ? ? ? F7";
+_png_crc_finish() = "55 8B EC 53 56 8B 75 08 57 8B 7D 0C 8B ? ? ? ? ? 3B";
+_png_crc_read() = "55 8B EC 53 8B 5D 08 85 DB 74 1B";
+_png_create_info_struct() = "55 8B EC 8B 45 08 85 C0 75 02";
+_png_create_struct_2() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08";
+_png_decompress_chunk() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 45 18";
+_png_destroy_gamma_table() = "55 8B EC 53 56 8B 75 08 57 FF ? ? ? ? ? 56";
+_png_destroy_read_struct() = "55 8B EC 83 EC 08 53 8B 5D 08 33";
+_png_destroy_struct_2() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 08 8B";
+_png_do_bgr() = "55 8B EC 8B 4D 08 8A 41 08 A8 02 0F ? ? ? ? ? 8B";
+_png_do_check_palette_indexes() = "55 8B EC 53 56 8B 75 08 BA ? ? ? ? 57 8B 7D";
+_png_do_chop() = "55 8B EC 57 8B 7D 08 80";
+_png_do_compose() = "55 8B EC 83 EC 24 8B 45 10";
+_png_do_encode_alpha() = "55 8B EC 51 8B 55 08 8B 4D";
+_png_do_expand() = "55 8B EC 83 EC 14 53 8B 5D 08 56 8A";
+_png_do_expand_16() = "55 8B EC 56 8B 75 08 80 7E";
+_png_do_expand_palette() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 80";
+_png_do_gamma() = "55 8B EC 83 EC 18 8B 45 10 8B";
+_png_do_gray_to_rgb() = "55 8B EC 53 8B 5D 08 57 8A";
+_png_do_invert() = "55 8B EC 8B 55 08 56 8A";
+_png_do_packswap() = "55 8B EC 53 8B 5D 08 8A 4B";
+_png_do_quantize() = "55 8B EC 83 EC 0C 56 57 8B 7D 08 80 7F 09";
+_png_do_read_filler() = "55 8B EC 51 53 8B 5D 10 8B C3";
+_png_do_read_interlace() = "55 8B EC 83 EC 2C A1 ? ? ? ? 33";
+_png_do_read_invert_alpha() = "55 8B EC 56 8B 75 08 8A";
+_png_do_read_swap_alpha() = "55 8B EC 8B 45 08 53 56 57 8A";
+_png_do_read_transformations() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 85 C9";
+_png_do_rgb_to_gray() = "55 8B EC 83 EC 2C 8B 4D 0C 57";
+_png_do_scale_16_to_8() = "55 8B EC 56 8B 75 08 80 7E 09 10";
+_png_do_strip_channel() = "55 8B EC 51 8B 4D 0C 8B";
+_png_do_swap() = "55 8B EC 8B 4D 08 80";
+_png_do_unpack() = "55 8B EC 51 8B 55 08 8A 42";
+_png_do_unshift() = "55 8B EC 83 EC 18 A1 ? ? ? ? 33";
+_png_error() = "55 8B EC 56 8B 75 08 85 F6 74 10";
+_png_format_number() = "55 8B EC 83 EC 08 8B 4D 0C";
+_png_formatted_warning() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33";
+_png_free() = "55 8B EC 8B 45 08 85 C0 74 26";
+_png_free_data() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 56 8B 75";
+_png_gamma_correct() = "55 8B EC 8B 45 08 FF 75 10 FF 75 0C 80";
+_png_gamma_significant() = "55 8B EC 8B 45 08 B9 ? ? ? ? 05";
+_png_get_IHDR() = "55 8B EC 83 7D 08 00 53 57 0F";
+_png_get_channels() = "55 8B EC 83 7D 08 00 74 0C";
+_png_get_io_ptr() = "55 8B EC 8B 45 08 85 C0 75 02 5D C3 8B";
+_png_get_rowbytes() = "55 8B EC 83 7D 08 00 74 0C 8B 45 0C 85 C0 74 05 8B";
+_png_get_valid() = "55 8B EC 83 7D 08 00 74 0F";
+_png_handle_IEND() = "55 8B EC 56 8B 75 08 8B 4E";
+_png_handle_IHDR() = "55 8B EC 83 EC 28 A1 ? ? ? ? 33";
+_png_handle_PLTE() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56 8B 75 08 57";
+_png_handle_as_unknown() = "55 8B EC 8B 55 08 56 85 D2 74";
+_png_handle_bKGD() = "55 8B EC 83 EC 18 A1 ? ? ? ? 33 C5 89 45 FC 56";
+_png_handle_cHRM() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53";
+_png_handle_hIST() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C";
+_png_handle_iCCP() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 0C 53";
+_png_handle_iTXt() = "55 8B EC 83 EC 0C 56 8B 75 08 8B ? ? ? ? ? 85";
+_png_handle_pCAL() = "55 8B EC 83 EC 14 57 8B 7D 08 8B";
+_png_handle_sBIT() = "55 8B EC 51 56 8B 75 08 C7";
+_png_handle_sCAL() = "55 8B EC 51 56 8B 75 08 8B 46";
+_png_handle_sPLT() = "55 8B EC 83 EC 14 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_handle_tEXt() = "55 8B EC 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_handle_tIME() = "55 8B EC 83 EC 14 A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 0C 56 8B 75 08 8B";
+_png_handle_tRNS() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 53 8B 5D 0C 56 8B 75 08 8B";
+_png_handle_unknown() = "55 8B EC 56 8B 75 08 8B ? ? ? ? ? 85";
+_png_handle_zTXt() = "55 8B EC 51 57 8B 7D 08 8B ? ? ? ? ? 85";
+_png_info_destroy() = "55 8B EC 56 8B 75 08 6A FF";
+_png_info_init_3() = "55 8B EC 56 8B 75 08 8B 06 85";
+_png_init_read_transformations() = "55 8B EC 83 EC 14 53 56 8B 75 08 57 8B ? ? ? ? ? 85";
+_png_longjmp() = "55 8B EC 8B 45 08 85 C0 74 10";
+_png_malloc() = "55 8B EC 56 8B 75 08 85 F6 74 2E 8B 45";
+_png_malloc_default() = "55 8B EC 83 7D 08 00 74 12";
+_png_malloc_warn() = "55 8B EC 57 8B 7D 08 85 FF 75 05";
+_png_muldiv() = "55 8B EC 8B 45 14 83 EC 08";
+_png_read_chunk_header() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 56 57";
+_png_read_data() = "55 8B EC 8B 45 08 8B 48 54";
+_png_read_destroy() = "55 8B EC 8B 45 0C 83 EC 40";
+_png_read_end() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 6A";
+_png_read_filter_row() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 09";
+_png_read_finish_row() = "55 8B EC 51 56 8B 75 08 FF ? ? ? ? ? 8B ? ? ? ? ? 3B ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 53 57 0F ? ? ? ? ? 8B";
+_png_read_image() = "55 8B EC 51 57 8B 7D 08 85 FF 0F ? ? ? ? ? F6";
+_png_read_info() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B 45 0C";
+_png_read_row() = "55 8B EC 83 EC 14 A1 ? ? ? ? 33";
+_png_read_sig() = "55 8B EC 51 53 57 8B 7D 08 8A";
+_png_read_start_row() = "55 8B EC 56 57 8B 7D 08 57 C7";
+_png_read_transform_info() = "55 8B EC 8B 55 08 8B 4D 0C F7";
+_png_read_update_info() = "55 8B EC 56 8B 75 08 85 F6 74 12";
+_png_reciprocal() = "55 8B EC 83 EC 08 66 ? ? ? ? 83 EC 08 F2";
+_png_reciprocal2() = "55 8B EC 83 EC 08 66 ? ? ? ? 83 EC 08 F2 ? ? ? ? ? ? ? F3 0F E6 C0 F2 0F 5E C8 66";
+_png_reset_crc() = "55 8B EC 6A 00 6A 00 6A 00 E8";
+_png_safecat() = "55 8B EC 8B 45 10 56 8B 75 08 85";
+_png_save_int_32() = "55 8B EC 8B 55 0C 8B C2 8B";
+_png_save_uint_32() = "55 8B EC 8B 55 0C 8B C2 8B 4D 08 C1 E8";
+_png_set_IHDR() = "55 8B EC 83 7D 08 00 0F";
+_png_set_PLTE() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 57";
+_png_set_add_alpha() = "55 8B EC 56 8B 75 08 85 F6 74 16";
+_png_set_bKGD() = "55 8B EC 83 7D 08 00 74 1F";
+_png_set_cHRM_fixed() = "55 8B EC 8B 45 08 85 C0 74 7A";
+_png_set_error_fn() = "55 8B EC 8B 4D 08 85 C9 74 12";
+_png_set_filler() = "55 8B EC 8B 4D 08 85 C9 74 4D";
+_png_set_gAMA_fixed() = "55 8B EC 8B 55 08 85 D2 74 2E";
+_png_set_gray_to_rgb() = "55 8B EC 56 8B 75 08 85 F6 74 14";
+_png_set_hIST() = "55 8B EC 57 8B 7D 08 85 FF 0F ? ? ? ? ? 56 8B 75 0C 85 F6 0F ? ? ? ? ? 0F";
+_png_set_iCCP() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 57 8B 7D 0C 85 FF 0F";
+_png_set_interlace_handling() = "55 8B EC 8B 45 08 85 C0 74 14 80 ? ? ? ? ? ? 74";
+_png_set_longjmp_fn() = "55 8B EC 8B 45 08 85 C0 74 0E 83";
+_png_set_mem_fn() = "55 8B EC 8B 4D 08 85 C9 74 1B";
+_png_set_oFFs() = "55 8B EC 83 7D 08 00 74 20";
+_png_set_pCAL() = "55 8B EC 51 57 8B 7D 08 85 FF 0F ? ? ? ? ? 53";
+_png_set_pHYs() = "55 8B EC 83 7D 08 00 74 20 8B 4D 0C 85 C9 74 19 8B 45 10 81 ? ? ? ? ? ? 89 41 70";
+_png_set_read_fn() = "55 8B EC 56 8B 75 08 85 F6 74 3B";
+_png_set_sBIT() = "55 8B EC 83 7D 08 00 74 19";
+_png_set_sCAL_s() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 83";
+_png_set_sPLT() = "55 8B EC 83 EC 08 53 8B 5D 08 85";
+_png_set_sRGB() = "55 8B EC 83 7D 08 00 74 14";
+_png_set_sRGB_gAMA_and_cHRM() = "55 8B EC 56 8B 75 08 85 F6 74 51";
+_png_set_strip_16() = "55 8B EC 8B 45 08 85 C0 74 07";
+_png_set_tIME() = "55 8B EC 8B 45 08 85 C0 74 62";
+_png_set_tRNS() = "55 8B EC 53 8B 5D 08 85 DB 0F ? ? ? ? ? 56 8B 75 0C 85 F6 0F ? ? ? ? ? 83";
+_png_set_text_2() = "55 8B EC 8B 55 08 83 EC 18 53";
+_png_set_unknown_chunks() = "55 8B EC 51 53 8B 5D 08 85 DB 0F";
+_png_sig_cmp() = "55 8B EC 83 EC 0C A1 ? ? ? ? 33 C5 89 45 FC 8B 4D 10";
+_png_start_read_image() = "55 8B EC 8B 45 08 85 C0 74 09";
+_png_user_version_check() = "55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 56";
+_png_warning() = "55 8B EC 8B 55 08 33 C0 8B";
+_png_warning_parameter() = "55 8B EC 8B 4D 0C 8D";
+_png_warning_parameter_signed() = "55 8B EC 83 EC 1C A1 ? ? ? ? 33";
+_png_warning_parameter_unsigned() = "55 8B EC 83 EC 1C A1 ? ? ? ? 33 C5 89 45 FC 8B 45";
+_png_zalloc() = "55 8B EC 83 C8 FF 8B 4D 0C 33 D2 F7 75 10 53";
+_pow_scalar() = "60 8B C4 83";
+_printf() = "55 8B EC 51 8D 45 0C";
+_qsort() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 8B";
+_rand() = "68 ? ? ? ? 6A 00 FF ? ? ? ? ? 83 C4";
+_rt_probe_read4(x) = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 83";
+_seh_longjmp_unwind4(x) = "55 FF 74 24 08";
+_sscanf() = "55 8B EC 83 E4 F8 8D 45 10";
+_strchr() = "83 ? ? ? ? ? ? 72 5F 0F";
+_strrchr() = "55 8B EC 57 83";
+_strstr() = "8B 4C 24 08 8B 44 24 04";
+_swscanf_s() = "55 8B EC 8D 45 10 50";
+_tr_init() = "8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? 8D ? ? ? ? ? 89";
+_unexpected() = "56 E8 ? ? ? ? 8B 70 04";
+_wcschr() = "53 8B DC 51";
+_wcsstr() = "53 8B DC 51 51 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83";
+_zcalloc() = "55 8B EC 8B 45 0C 0F AF";
+add_huff_table() = "55 8B EC 51 53 56 8B F2 8B D9 89 75 FC 83";
+alloc_barray() = "55 8B EC 83 EC 08 53 8B 5D 10 33";
+alloc_fs_workspace() = "55 8B EC 51 53 56 8B F1 33 DB 57 8B";
+alloc_funny_pointers() = "55 8B EC 83 EC 10 53 56 8B F1 57 8B 46";
+alloc_large() = "55 8B EC 51 53 56 8B 75 08 57 8B 7D";
+alloc_sarray() = "55 8B EC 51 53 8B 5D 08 33 D2 56 57";
+alloc_small() = "55 8B EC 53 8B 5D 10 56 8B 75";
+arith_decode() = "55 8B EC 83 EC 08 53 56 8B F1 57 8B FA 89 7D";
+arith_encode() = "55 8B EC 83 EC 08 8B C2 53";
+bi_flush() = "56 8B F1 8B ? ? ? ? ? 83 F8 10";
+bi_windup() = "56 8B F1 8B ? ? ? ? ? 83 F8 08";
+bool CMsgGCMsgSetOptions_Option_IsValid(int) = "55 8B EC 83 7D 08 03 0F";
+bool UseHWMorphVCDs(void) = "8B ? ? ? ? ? 81 ? ? ? ? ? 75 0F A1 ? ? ? ? 8B D0 81 ? ? ? ? ? EB 12 8B 01 FF 50 34 8B ? ? ? ? ? 8B D0 A1 ? ? ? ? 85 D2 75";
+bool VGui_IsSplitScreenPIP(void) = "83 ? ? ? ? ? ? 7C 2A 8B ? ? ? ? ? 81";
+bool __MsgFunc_Fade(class CCSUsrMsg_Fade const near &) = "55 8B EC 83 EC 0C 8B 4D 08 8B";
+bool __MsgFunc_Shake(class CCSUsrMsg_Shake const near &) = "55 8B EC 83 EC 1C 8B 4D";
+bool lessFunc(int const near &,int const near &) = "55 8B EC 8B 45 08 8B 08";
+build_bl_tree() = "56 8B F1 FF ? ? ? ? ? 8D ? ? ? ? ? E8";
+build_tree() = "55 8B EC 83 EC 10 8B C2";
+build_ycc_rgb_table() = "55 8B EC 83 EC 08 53 56 8B F1 57 68";
+build_ycc_rgb_table_0() = "55 8B EC 83 EC 08 53 56 8B F1 57 68 ? ? ? ? 6A 01 8B 46 04 8B ? ? ? ? ? 56 8B 00 FF D0 89 47 08";
+cc_dump_particlemanifest() = "56 57 8B ? ? ? ? ? 68 ? ? ? ? FF D7 8B";
+cc_emit() = "55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68";
+cc_findsound() = "55 8B EC 56 8B 75 08 83 3E 02 74 0F 5E C7 ? ? ? ? ? ? 5D FF ? ? ? ? ? 68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 85 C0 74 18";
+cc_random() = "55 8B EC 56 57 8B 7D 08 BE";
+char near * ParseFile(char near *,char near *,bool near *) = "55 8B EC 6A 00 FF 75 10 FF 75 0C FF 75 08 E8 ? ? ? ? 83";
+cl_dumpsplithacks() = "8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F";
+cl_predictioncopy_describe() = "55 8B EC 83 EC 0C 53 8D";
+cl_predictioncopy_describe() = "55 8B EC 8B 4D 08 8B 01 83 F8 01 7F";
+cl_reloadpostprocessparams() = "55 8B EC 8B 45 08 B9 ? ? ? ? 83 38 02 75";
+cl_sos_test_get_opvar() = "55 8B EC 56 8B 75 08 8B 06 83 F8 02";
+cl_soundemitter_flush() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 0C 8B";
+class IGameResources near * GameResources(void) = "A1 ? ? ? ? 85 C0 74 06";
+cmyk_ycck_convert() = "55 8B EC 83 EC 1C 83 6D";
+color_quantize() = "55 8B EC 83 EC 0C 83 7D 14";
+color_quantize3() = "55 8B EC 83 EC 0C 83 7D 14 00 8B 4D 08 8B";
+common_fseek() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 33";
+common_fseek_binary_mode_read_only_fast_track_nolock() = "8B FF 55 8B EC 83 7D";
+common_fseek_nolock() = "8B FF 55 8B EC 8B 45 08 8B 40";
+common_fsopen_char_() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 33 C0";
+common_get_or_create_environment_nolock_char_() = "A1 ? ? ? ? 85 C0 75 25 39";
+common_strtod_l_float_char_() = "8B FF 55 8B EC 83 EC 18";
+common_vsprintf_s_char_() = "8B FF 55 8B EC 83 7D 18";
+common_vsscanf_char_() = "8B FF 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 FC 57";
+common_vsscanf_wchar_t_() = "8B FF 55 8B EC 83 EC 7C";
+compress_block() = "55 8B EC 83 EC 14 53 56 8B F1 89";
+compress_block() = "55 8B EC 83 EC 14 53 8B DA 8B";
+compress_data() = "55 8B EC 83 EC 30 8B 55 08";
+compress_first_pass() = "55 8B EC 83 EC 2C 53 56 57 8B 7D 08 33";
+compress_output() = "55 8B EC 83 EC 34 53 56 8B 75 08 57 33 FF 8B ? ? ? ? ? 89 5D FC 39 ? ? ? ? ? 7E 46";
+compute_color() = "55 8B EC 83 EC 3C 8B C1";
+consume_data() = "55 8B EC 83 EC 34 53 56 8B 75 08";
+consume_markers() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F";
+copy_block() = "55 8B EC 51 53 56 57 89 55 FC 8B F1";
+crc32_little() = "55 8B EC 51 53 57 8B 7D 08 8B DA";
+create_colorindex() = "55 8B EC 83 EC 1C 53 56 57 8B F9 89 7D E8";
+create_colormap() = "55 8B EC 83 EC 2C 53 56 8B F1 57";
+create_context_buffer() = "55 8B EC 83 EC 28 53 8B D9 56 57 89";
+decode_mcu() = "55 8B EC 83 EC 48 8B 45";
+decode_mcu_0() = "55 8B EC 83 EC 24 53 8B 5D 08 83";
+decode_mcu_AC_first() = "55 8B EC 83 EC 38 8B 45 08 53 83";
+decode_mcu_AC_refine() = "55 8B EC 81 ? ? ? ? ? 53 57 8B 7D 08 83";
+decode_mcu_DC_first() = "55 8B EC 83 EC 3C 53 8B 5D 08";
+decode_mcu_DC_first_0() = "55 8B EC 83 EC 1C 53 57";
+decode_mcu_DC_refine() = "55 8B EC 83 EC 1C 56 57 8B 7D 08 B8";
+decode_mcu_DC_refine_0() = "55 8B EC 53 56 57 8B 7D 08 83";
+decode_mcu_sub() = "55 8B EC 83 EC 50 8B 4D 08 53 83";
+decompress_data() = "55 8B EC 83 EC 24 8B 55";
+decompress_onepass() = "55 8B EC 83 EC 3C 8B 4D";
+decompress_smooth_data() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 08 57 8B ? ? ? ? ? 8B";
+default_decompress_parms() = "56 8B F1 8B 46 24 83 E8 01";
+default_hex() = "53 8B D9 85 DB 79";
+deflateEnd() = "55 8B EC 56 8B 75 08 85 F6 0F ? ? ? ? ? 8B 46";
+deflateInit2_() = "55 8B EC 51 8B 45 20";
+deflate_fast() = "55 8B EC 53 56 8B 75 08 57 8B 5D";
+deflate_slow() = "55 8B EC 83 EC 08 53 56 8B 75 08 57 8B 5D";
+deflate_stored() = "55 8B EC 53 56 8B 75 08 BB ? ? ? ? 57 8B 46";
+detect_data_type() = "56 57 8B F9 B8 ? ? ? ? 33";
+dllmain_crt_dispatch() = "55 8B EC 8B 45 0C 83 E8 00 74 33";
+dllmain_crt_process_attach() = "6A 10 68 ? ? ? ? E8 ? ? ? ? 6A";
+dllmain_crt_process_detach() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? A1";
+dllmain_dispatch() = "6A 0C 68 ? ? ? ? E8 ? ? ? ? 8B 7D";
+dllmain_raw() = "55 8B EC 56 8B ? ? ? ? ? 85 F6 75 05";
+do_barray_io() = "55 8B EC 83 EC 0C 53 56 57 8B FA 89 4D FC 33 DB 8B 47 08 8B 57 18 8B 77 10 C1";
+do_sarray_io() = "55 8B EC 83 EC 0C 53 56 57 8B FA 89";
+drawtextfields() = "55 8B EC 83 E4 F0 81 ? ? ? ? ? A1 ? ? ? ? 56 57 8B F9 B9 ? ? ? ? 8B 40 34 89 7C";
+emit_2bytes() = "53 56 8B F1 8B DA 57 8B CB";
+emit_adobe_app14() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 41";
+emit_bits_e() = "55 8B EC 83 EC 08 53 8B 5D 08 89 55";
+emit_bits_s() = "55 8B EC 51 8B 45 08 89 55";
+emit_dac() = "55 8B EC 83 EC 20 53 56 8B F1";
+emit_dht() = "55 8B EC 83 EC 08 80 7D 08 00 56";
+emit_eobrun() = "57 8B F9 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 56";
+emit_jfif_app0() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA ? ? ? ? 8B CE E8 ? ? ? ? 8B 4E 18 8B 01 C6 00 4A";
+emit_marker() = "53 56 8B F1 8B DA 8B 4E";
+emit_message() = "55 8B EC 8B 45 08 8B 4D 0C 56";
+emit_pseudo_sos() = "56 BA ? ? ? ? 8B F1 E8 ? ? ? ? BA";
+emit_restart() = "55 8B EC 83 EC 0C 53 56 8B F1 8B DA";
+emit_restart_s() = "53 56 8B DA 8B F1 6A";
+emit_sof() = "53 56 57 8B F1 E8 ? ? ? ? 8B 46";
+emit_sos() = "55 8B EC 51 56 BA";
+encode_mcu() = "55 8B EC 83 EC 28 53 8B 5D 08 57";
+encode_mcu_AC_first() = "55 8B EC 83 EC 24 53 8B 5D 08 56";
+encode_mcu_AC_first_0() = "55 8B EC 83 EC 1C 56 57 8B 7D 08 8B 47";
+encode_mcu_AC_refine() = "55 8B EC 83 EC 14 53 56 8B 75 08 57 83";
+encode_mcu_DC_first() = "55 8B EC 83 EC 1C 53 8B 5D 08 56 83 ? ? ? ? ? ? 8B ? ? ? ? ? 89 75 E8";
+encode_mcu_DC_first_0() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B 43";
+encode_mcu_DC_refine() = "55 8B EC 56 8B 75 08 57 83";
+encode_mcu_DC_refine_0() = "55 8B EC 56 57 8B 7D 08 8B 47 18";
+encode_mcu_huff() = "55 8B EC 83 EC 28 56 57 8B 7D 08 89";
+encode_one_block() = "55 8B EC 83 EC 10 53 8B D9 89 55 F4";
+error_exit() = "55 8B EC 56 8B 75 08 56 8B";
+examine_app0() = "55 8B EC 53 8B 5D 0C 56 8B F1 8B 4D";
+examine_app14() = "55 8B EC 83 EC 08 53 8B D9 89 55";
+expand_right_edge() = "55 8B EC 83 EC 08 53 8B 5D 0C 56 8B F1";
+fFMOD() = "D9 C9 D9 F8";
+fill_input_buffer() = "55 8B EC 56 57 8B 7D 08 8B 77";
+fill_inverse_cmap() = "55 8B EC 81 ? ? ? ? ? 53 56 57 89 4D FC 8B";
+fill_window() = "55 8B EC 83 EC 08 53 56 57 8B F9 8B 77";
+find_best_colors() = "55 8B EC 81 ? ? ? ? ? 56 8B F2 B8";
+find_nearby_colors() = "55 8B EC 81 ? ? ? ? ? 53 8B 59";
+find_pe_section() = "55 8B EC 8B 45 08 56 8B 48";
+finish_input_pass() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? 5D";
+finish_output_pass() = "55 8B EC 8B 4D 08 56 80";
+finish_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 48";
+finish_pass1() = "55 8B EC 8B 4D 08 56 8B ? ? ? ? ? 8B 46";
+finish_pass_gather() = "55 8B EC 83 EC 10 53 56 8B 75 08 80";
+finish_pass_huff() = "55 8B EC 83 EC 24 56 8B 75";
+finish_pass_master() = "55 8B EC 56 57 8B 7D 08 57 8B";
+first_marker() = "55 8B EC 83 EC 0C 8B C1 53 56";
+format_message() = "55 8B EC 8B 45 08 56 8B 10 8B 4A";
+forward_DCT() = "55 8B EC 81 ? ? ? ? ? 83 7D 20";
+forward_DCT_float() = "55 8B EC 81 ? ? ? ? ? 83 7D 20 00 8B 45 08 8B 55 0C 53";
+free_pool() = "55 8B EC 53 56 8B 75 0C 57 8B 7D 08 8B 5F";
+fullsize_downsample() = "55 8B EC 51 8B 4D 08 8B 45";
+fullsize_smooth_downsample() = "55 8B EC 83 EC 1C 8B 45 0C 53 8B 5D 08 56 8B";
+fullsize_upsample() = "55 8B EC 8B 4D 14 8B 45 10 89";
+g15_reload() = "FF ? ? ? ? ? 68 ? ? ? ? 8B C8 8B 10 FF 52 2C 85 C0 75";
+gameinstructor_reload_lessons() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 0C";
+gen_bitlen() = "55 8B EC 83 EC 34 8B 42 04";
+gen_codes() = "55 8B EC 83 EC 24 53 56 8B D9 89";
+get_dac() = "55 8B EC 83 EC 10 53 56 8B F1 57 8B 5E";
+get_dht() = "55 8B EC 81 ? ? ? ? ? 53 8B C1 56";
+get_dqt() = "55 8B EC 83 EC 28 8B C1 53";
+get_dri() = "55 8B EC 83 EC 08 8B C1 53 56 57";
+get_interesting_appn() = "55 8B EC 8B 45 08 83 EC 1C 53 8B 58";
+get_sof() = "55 8B EC 51 8A 45 08";
+get_soi() = "56 8B F1 6A 01 56";
+get_sos() = "55 8B EC 83 EC 1C 53 56 8B F1 57 8B 4E";
+getpos() = "55 8B EC 83 E4 C0 83 EC 34 8D";
+google::protobuf::_anonymous_namespace_::DeleteGeneratedPool() = "8B ? ? ? ? ? 85 C9 74 06 8B 01 6A 01 FF 10 56 8B";
+google::protobuf::_anonymous_namespace_::FieldSpaceUsed() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 50 8D 45 F4 64 ? ? ? ? ? 8B";
+google::protobuf::_anonymous_namespace_::FormatLineOptions() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75";
+google::protobuf::_anonymous_namespace_::RetrieveOptions() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81 ? ? ? ? ? A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 5D 10";
+google::protobuf::_anonymous_namespace_::ToCamelCase() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 08 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? C7";
+google::protobuf::internal::SubMessagePrefix() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 24 A1 ? ? ? ? 33 C5 89 45 F0 53 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B 75";
+google::protobuf::internal::ValidateEnumUsingDescriptor() = "55 8B EC FF 75 0C 8B 4D 08 E8 ? ? ? ? F7";
+google::protobuf::internal::_anonymous_namespace_::Register() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 78 A1 ? ? ? ? 33 C5 89 45 F0 56";
+google::protobuf::io::AppendUTF8() = "55 8B EC 51 8B 55 08 C7";
+google::protobuf::io::FetchUnicodePoint() = "55 8B EC 83 EC 08 8B 45 0C 53 8B 5D 08 C7";
+google::protobuf::io::ReadHexDigits() = "55 8B EC 8B 45 0C 56 8B 75 10 C7";
+google::protobuf::io::Tokenizer::NextChar() = "8B D1 8A 42";
+google::protobuf::io::_anonymous_namespace_::DigitValue() = "55 8B EC 8A 4D 08 8D";
+google::protobuf::io::_anonymous_namespace_::TranslateEscape() = "55 8B EC 0F BE 45";
+gray_rgb_convert() = "55 8B EC 8B 45 08 53 8B 5D 18";
+grayscale_convert() = "55 8B EC 51 8B 45 08 53 8B 5D 18";
+grayscale_convert_0() = "55 8B EC 8B 45 08 53 56 8B 75 18";
+h2v1_downsample() = "55 8B EC 51 8B 45 0C 53 8B 5D 10";
+h2v1_merged_upsample() = "55 8B EC 83 EC 1C 53 8B 5D 08 56 57 8B ? ? ? ? ? 8B";
+h2v1_upsample() = "55 8B EC 8B 4D 08 8B 45 14";
+h2v2_downsample() = "55 8B EC 83 EC 0C 8B 45 0C 8B";
+h2v2_merged_upsample() = "55 8B EC 83 EC 28 53 8B 5D 08 56";
+h2v2_smooth_downsample() = "55 8B EC 83 EC 24 8B 45 0C";
+h2v2_upsample() = "55 8B EC 8B 45 14 53 8B 5D 08 57";
+headshot_skull_get() = "55 8B EC 8B 4D 0C 83 F9";
+hidepanel() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 15 8B 55 08 83 3A 02 75 0D 8B 01 6A 00";
+inflateEnd() = "55 8B EC 56 8B 75 08 85 F6 74 38";
+inflate_blocks() = "55 8B EC 83 EC 10 53 56 8B 75 10";
+inflate_trees_dynamic() = "55 8B EC 83 EC 10 53 56 8B 75 20";
+init_block() = "8D ? ? ? ? ? BA ? ? ? ? 56";
+init_destination() = "55 8B EC 8B 4D 08 56 68";
+init_error_limit() = "8B 41 04 56 8B ? ? ? ? ? 57";
+init_source() = "55 8B EC 8B 45 08 8B 40 18";
+initial_setup() = "55 8B EC 83 EC 08 56 8B F1 81";
+initial_setup_0() = "55 8B EC 83 EC 18 53 56 8B F1 57 89";
+initialize_pointers() = "56 68 ? ? ? ? FF ? ? ? ? ? 8B F0";
+int AfxOleRegisterServerClass() = "55 8B EC 6A 00 FF 75 28";
+int CryptoPP::Baseline_Add() = "57 56 8B 44";
+int CryptoPP::Baseline_Sub() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 F7 ? ? ? ? ? 74 05 83 E9 02 EB 17 E3 32 8B 34 88 1B";
+int CryptoPP::SSE2_Add() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F";
+int CryptoPP::SSE2_Sub() = "57 56 8B 44 24 0C 8B 7C 24 10 8D 04 88 8D 3C 8F 8D 14 8A F7 D9 0F EF D2 74 73 F7 ? ? ? ? ? 74 05 83 E9 02 EB 2F 0F 6E 04 88 0F 6E 0C 8F 0F FB";
+int GetSIMDRandContext(void) = "56 57 8B ? ? ? ? ? 0F ? ? ? ? ? ? ? 33 F6";
+int Scaleform::SFstrcmp() = "8A 01 3A 02 75 19";
+int_downsample() = "55 8B EC 83 EC 2C 8B 45 0C 53 56 57 8B";
+int_upsample() = "55 8B EC 83 EC 14 8B 45 14";
+jpeg_fill_bit_buffer() = "55 8B EC 83 EC 0C 8B C1 89 55";
+jpeg_gen_optimal_table() = "55 8B EC 81 ? ? ? ? ? 53 57 68 ? ? ? ? 0F";
+jpeg_huff_decode() = "55 8B EC 53 8B 5D 10 57 8B F9 8B 4D 08";
+jpeg_make_c_derived_tbl() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A C2 88 45 FF 8B D9 57";
+jpeg_make_d_derived_tbl() = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 8A";
+judeg_str() = "55 8B EC 8B 4D 10 85 C9 75";
+latch_quant_tables() = "55 8B EC 83 EC 0C 53 8B D9 33 C0";
+lm_init() = "55 8B EC 56 57 8B FA";
+lm_init() = "56 8B F1 33 C9 8B";
+long LongLongSub(__int64,__int64,__int64 near *) = "8B FF 55 8B EC 53 56 8B 75 08 2B";
+longest_match() = "55 8B EC 83 EC 28 53 56 8B F1 8B";
+make_funny_pointers() = "55 8B EC 83 EC 2C 53 8B D9 57";
+master_selection() = "56 8B F1 57 8B ? ? ? ? ? E8 ? ? ? ? 8B CE";
+median_cut() = "55 8B EC 83 EC 10 53 8B C2";
+memcpy_s() = "55 8B EC 56 8B 75 0C 57 8B FA";
+memcpy_s() = "8B FF 55 8B EC 56 8B 75 14 85 F6 75";
+memcpy_s_0() = "56 8B 74 24 14 85";
+menuselect() = "55 8B EC 8B 4D 08 8B 01 83 F8 02 0F";
+merged_1v_upsample() = "55 8B EC 8B 45 18 8B";
+merged_2v_upsample() = "55 8B EC 8B 4D 1C";
+new_color_map_1_quant() = "55 8B EC 8B 4D 08 8B 01 C7 ? ? ? ? ? ? 8B 01 89";
+new_color_map_2_quant() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C6 40";
+noop_upsample() = "55 8B EC 8B 45 14 C7";
+null_convert() = "55 8B EC 83 EC 08 8B 45 08 8B 55";
+null_convert_0() = "55 8B EC 51 8B 45 08 8B 55";
+output_message() = "55 8B EC 8B 45 08 8D ? ? ? ? ? 81 ? ? ? ? ? 8B";
+pass2_fs_dither() = "55 8B EC 83 EC 6C 83";
+pass_startup() = "55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C6";
+per_scan_setup() = "55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8";
+per_scan_setup_0() = "55 8B EC 83 EC 0C 56 8B F1 57 8B ? ? ? ? ? 83 F8 01 75 64";
+physics_run_think() = "55 8B EC 83 EC 10 53 56 57 8B F9 8B";
+pixelvis_debug() = "0F ? ? ? ? ? ? 8D 0C 80 A1 ? ? ? ? 0F ? ? ? ? 50";
+post_process_1pass() = "55 8B EC 8B 4D 20";
+post_process_2pass() = "55 8B EC 51 8B 55 08 53 56 57 8B";
+post_process_prepass() = "55 8B EC 53 8B 5D 08 56 57 8B ? ? ? ? ? 83";
+pre_process_context() = "55 8B EC 83 EC 1C 8B 4D 20";
+pre_process_data() = "55 8B EC 83 EC 1C 8B 55 10";
+prepare_for_output_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 80 7F 08";
+prepare_for_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 83";
+prepare_range_limit_table() = "53 8B D9 56 57 68 ? ? ? ? 8B 43";
+prescan_quantize() = "55 8B EC 8B 4D 08 53";
+print_achievement_categories() = "55 8B EC 83 EC 08 53 8B ? ? ? ? ? 33";
+print_mapgroup() = "8B ? ? ? ? ? 53 56 57 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B";
+private: UGCFileRequest_t::UGCFileRequest_t(void) = "56 8B F1 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+private: bool CUtlStreamBuffer::StreamGetOverflow(int) = "55 8B EC 56 8B F1 80 7E 14 00 0F ? ? ? ? ? F6 46 15 08 0F ? ? ? ? ? 83";
+private: bool CUtlStreamBuffer::StreamPutOverflow(int) = "55 8B EC 56 8B F1 80 7E 14 00 0F";
+private: bool C_EnvProjectedTexture::IsBBoxVisible(void) = "55 8B EC 83 EC 34 56 8B F1";
+private: bool C_RopeKeyframe::AnyPointsMoved(void) = "56 57 8B ? ? ? ? ? 33 D2 85";
+private: bool GameTypes::LoadMaps(class KeyValues near *) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 39";
+private: float CountdownTimer::Now(void)const = "A1 ? ? ? ? D9 40";
+private: int CRestore::ReadSimple<bool>(bool near *,int,int) = "55 8B EC 51 56 57 8B 7D 10";
+private: int CSave::DataEmpty(char const near *,int) = "55 8B EC 8B 45 0C 8B 4D 08 83";
+private: int CUtlSymbolTable::FindPoolWithSpace(int)const = "55 8B EC 53 56 57 8B 79";
+private: int vgui::TextEntry::GetCurrentLineStart(void) = "80 ? ? ? ? ? ? 75 07 8B ? ? ? ? ? C3";
+private: int vgui::TextEntry::GetCursorLine(void) = "56 8B F1 33 C0 8B ? ? ? ? ? 85 C9 7E";
+private: static class DName UnDecorator::getBasedType(void) = "55 8B EC 83 EC 10 6A 00 E8";
+private: static class DName UnDecorator::getDimension(bool) = "55 8B EC 8B ? ? ? ? ? 83 EC 18 56 33";
+private: static class DName UnDecorator::getEnumType(void) = "55 8B EC 83 EC 18 A1 ? ? ? ? 83";
+private: static class DName UnDecorator::getScope(void) = "55 8B EC 81 ? ? ? ? ? 53 56 8B 75 08 57 C6";
+private: static class DName UnDecorator::getScopedName(void) = "55 8B EC 83 EC 18 53 56 8B 75 08 33 DB 57";
+private: static class DName UnDecorator::getSymbolName(void) = "55 8B EC A1 ? ? ? ? 80";
+private: static class DName UnDecorator::getThisType(void) = "55 8B EC 83 EC 10 83 65";
+private: static class DName UnDecorator::getThrowTypes(void) = "55 8B EC A1 ? ? ? ? 83 EC 18 8A 08 84 C9 74";
+private: static class DName UnDecorator::getZName(bool,bool) = "55 8B EC 83 EC 3C A1 ? ? ? ? 33";
+private: static int UnDecorator::getNumberOfDimensions(void) = "8B ? ? ? ? ? 8A 01 84 C0 75 03";
+private: static int UnDecorator::getTypeEncoding(void) = "55 8B EC 51 8B ? ? ? ? ? 53 56 57 6A";
+private: static void CryptoPP::OID::EncodeValue() = "83 EC 08 53 8B 5C";
+private: virtual bool ConVar::ClampValue(float near &) = "55 8B EC 80 79 34";
+private: virtual int PruneWorldListInfoJob::DoExecute(void) = "55 8B EC 83 EC 0C 8B ? ? ? ? ? 53 56 8B F1";
+private: virtual void CHudMenu::OnThink(void) = "80 ? ? ? ? ? ? 74 22 A1";
+private: virtual void CSOEconItem::SetCachedSize(int)const = "55 8B EC 8B 45 08 89 41 74";
+private: virtual void CSOItemRecipe::SetCachedSize(int)const = "55 8B EC 8B 45 08 89 41 70";
+private: virtual void CViewEffects::ClearAllShakes(void) = "53 56 8B F1 57 33 FF 8B 5E";
+private: virtual void ConVar::InternalSetFloatValue(float) = "55 8B EC 83 EC 28 56 8B F1 F3 ? ? ? ? F3 ? ? ? ? 31";
+private: virtual void ConVar::InternalSetIntValue(int) = "55 8B EC 83 EC 28 56 8B F1 57 8B";
+private: virtual void vgui::Panel::InternalMousePressed(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 18";
+private: virtual void vgui::Panel::Think(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 3B";
+private: virtual void vgui::RichText::MoveScrollBar(int) = "55 8B EC 8B 45 08 8B 11";
+private: virtual void vgui::TextEntry::OnSetState(int) = "55 8B EC 83 EC 40 8D 45 C0 56 FF";
+private: void CAchievementMgr::ClearAchievementData(int) = "55 8B EC 56 57 8B 7D 08 33";
+private: void CBaseEntityList::RemoveEntityAtSlot(int) = "55 8B EC 53 8B 5D 08 8B C3 56 57";
+private: void CBitmapImagePanel::forceUpload(void) = "56 8B F1 80 ? ? ? ? ? ? 57";
+private: void CCSUsrMsg_VoteStart::SharedDtor(void) = "56 57 8B F9 8B 77 10 81";
+private: void CClientShadowMgr::DestroyQueuedShadows(void) = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 1D";
+private: void CClientSteamContext::UpdateLoggedOnState(void) = "55 8B EC 83 EC 0C 53 56 8B F1 8B";
+private: void CDetailObjectSystem::FreeSortBuffers(void) = "56 8B F1 8B ? ? ? ? ? 85 D2 74 1C";
+private: void CEconItemAttribute::Init(void) = "55 8B EC 83 EC 08 53 56 8B F1 BB";
+private: void CFPSPanel::InitAverages(void) = "56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7";
+private: void CGameTimescale::UpdateTimescale(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B";
+private: void CHLClient::UncacheAllMaterials(void) = "53 8B D9 56 57 BE";
+private: void CHudCloseCaption::ClearAsyncWork(void) = "53 8B D9 56 0F";
+private: void CHudCloseCaption::CreateFonts(void) = "53 56 57 8B ? ? ? ? ? 8B D9 68";
+private: void CHudMessage::PaintCharacters(void) = "55 8B EC 83 EC 18 53 57";
+private: void CMovieDisplayScreen::UpdateMovie(void) = "56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? B8 ? ? ? ? 66 ? ? ? ? ? ? 0F";
+private: void CMsgGCHUpdateSession::SharedCtor(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 14";
+private: void CMsgGC_ServerQuestUpdateData::SharedDtor(void) = "56 57 8B F9 8B 77 18 81";
+private: void CNetGraphPanel::ComputeNetgraphHeight(void) = "56 8B F1 8B ? ? ? ? ? 57 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 89";
+private: void CNewGameDialog::ShiftPanelIndices(int) = "55 8B EC 83 7D 08 00 56 57 8B F1";
+private: void COptionsSubKeyboard::Finish(enum ButtonCode_t) = "55 8B EC 53 56 8B F1 57 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B ? ? ? ? ? 8B";
+private: void COptionsSubVoice::EndTestMicrophone(void) = "56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8B";
+private: void COptionsSubVoice::ResetVoiceParameters(void) = "55 8B EC 83 EC 08 56 8B F1 51";
+private: void CParticleCollection::LabelTextureUsage(void) = "56 8B F1 8B 4E 48 85 C9 74 5B";
+private: void CParticleEffectBinding::Term(void) = "55 8B EC 83 EC 0C 56 8B F1 83 ? ? ? ? ? ? 0F";
+private: void CParticleSystemMgr::InitAttributeTable(void) = "56 57 68 ? ? ? ? 6A 00 68";
+private: void CPerfVisualBenchmark::Print(void) = "55 8B EC 83 EC 10 53 57 8B F9 C7";
+private: void CSVCMsg_GameEvent::SharedDtor(void) = "56 8B 71 08 81";
+private: void CSVCMsg_VoiceData::SharedDtor(void) = "56 8B 71 18 81";
+private: void CSave::BufferData(char const near *,int) = "55 8B EC 53 8B D9 56 8B 73";
+private: void CSaveGameBrowserDialog::ShiftPanelIndices(int) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 57";
+private: void CTextureAllocator::AddBlockToLRU(int) = "55 8B EC 51 8B 45 08 53 8B D9 56";
+private: void CVarBitVecBase<int>::ReallocInts(int) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 75 22";
+private: void CViewAngleAnimation::SetAngles(class QAngle) = "55 8B EC 83 EC 14 56 8B F1 F6";
+private: void CViewEffects::ClearAllTilts(void) = "53 56 8B F1 57 33 FF 8B 5E 50";
+private: void C_BaseAnimating::TermRopes(void) = "53 56 57 8B F9 BB ? ? ? ? 0F";
+private: void C_CSPlayer::UpdateFlashBangEffect(void) = "A1 ? ? ? ? 0F 57 D2 F3 ? ? ? ? ? ? ? F3";
+private: void C_GameInstructor::FindErrors(void) = "55 8B EC 83 EC 08 8B C1 33";
+private: void C_Inferno::RecomputeBounds(void) = "56 8B F1 8B 06 FF 50 28 F3 ? ? ? ? ? ? ? 8B CE F3 0F 10";
+private: void C_RopeKeyframe::FinishInit(char const near *) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 6A";
+private: void C_RopeKeyframe::UpdateHolidayLights(void) = "A1 ? ? ? ? B9 ? ? ? ? 8B 40 14 FF D0 84 C0 0F ? ? ? ? ? A1";
+private: void C_SporeTrail::AddParticles(void) = "55 8B EC 83 EC 0C 56 83";
+private: void C_SpriteTrail::ConvertSkybox(void) = "33 D2 39 ? ? ? ? ? 0F ? ? ? ? ? 66";
+private: void C_SpriteTrail::UpdateTrail(void) = "55 8B EC A1 ? ? ? ? 83 EC 10 56 8B F1 F3";
+private: void DName::append(class DNameNode near *) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 2E 6A";
+private: void DName::doPchar(char const near *,int) = "55 8B EC 56 8B F1 57 33 FF 39 3E";
+private: void KeyValues::RemoveEverything(void) = "56 57 8B F9 8B 4F 18 85";
+private: void google::protobuf::UnknownField::DeepCopy(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B";
+private: void google::protobuf::io::Tokenizer::Refresh(void) = "55 8B EC 51 56 8B F1 80 7E 68";
+private: void vgui::FileOpenDialog::BuildFileList(void) = "55 8B EC 81 ? ? ? ? ? 53 56 57 8B F9 8B ? ? ? ? ? 8D";
+private: void vgui::Frame::FinishClose(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 80";
+private: void vgui::Frame::SetupResizeCursors(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 8B ? ? ? ? ? 84 C0 8B";
+private: void vgui::ListViewPanel::FinishKeyPress(int) = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 6A 4F";
+private: void vgui::PropertySheet::ClearPageDropTab(void) = "56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 56";
+private: void vgui::RichText::GotoWordLeft(void) = "56 8B F1 8B ? ? ? ? ? 83 F8 01 7C";
+private: void vgui::RichText::GotoWordRight(void) = "56 8B F1 8B ? ? ? ? ? 40 89";
+private: void vgui::RichText::TruncateTextStream(void) = "56 8B F1 8B ? ? ? ? ? 83 F8 01 0F";
+private: void vgui::TextEntry::CalcBreakIndex(void) = "8B ? ? ? ? ? 3B ? ? ? ? ? 75 10 8B ? ? ? ? ? 83";
+private: void vgui::TextEntry::FlipToLastIME(void) = "56 8B F1 8B ? ? ? ? ? 57 8B 01 FF 50 68";
+private: void vgui::URLButton::Init(void) = "56 8B F1 6A 00 6A 00 66";
+process_data_context_main() = "55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80 7F 30 00 75 25";
+process_data_crank_post() = "55 8B EC FF 75 14 8B 45";
+process_data_simple_main() = "55 8B EC 56 57 8B 7D 08 8B ? ? ? ? ? 8B 46";
+process_data_simple_main_0() = "55 8B EC 53 8B 5D 08 57 8B ? ? ? ? ? 80";
+process_restart() = "53 56 57 8B F9 57";
+process_restart_0() = "55 8B EC 83 EC 0C 53 56 8B F1 56";
+protected: CParticleCollection::CParticleCollection(void) = "55 8B EC 51 56 8B F1 68 ? ? ? ? 6A";
+protected: bool CCSPlayerAnimState::HandleJumping(void) = "55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 0F";
+protected: bool CUtlBuffer::CheckGet(int) = "55 8B EC 56 8B F1 8A 56 14";
+protected: bool CUtlBuffer::CheckPut(int) = "55 8B EC 56 8B F1 F6 46 14 01 75 2C";
+protected: int vgui::Menu::CountVisibleItems(void) = "55 8B EC 51 53 8B D1";
+protected: virtual C_ParticleSystem::~C_ParticleSystem(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 85";
+protected: virtual bool CGameMovement::InWater(void) = "8B 41 04 80 ? ? ? ? ? ? 0F";
+protected: virtual bool CHudSaveStatus::ShouldDraw(void) = "55 8B EC 83 EC 08 0F 57 C9 53";
+protected: virtual bool CHudSubtitles::ShouldDraw(void) = "55 8B EC 51 53 56 8B F1 8B ? ? ? ? ? 8B 01";
+protected: virtual bool CInput::JoyStickActive(void) = "56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 2C";
+protected: virtual bool vgui::TextEntry::DrawCursor(int,int) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 75";
+protected: virtual int vgui::ListPanel::GetStartItem(void) = "55 8B EC 51 56 57 8B F9 8B 07 8B";
+protected: virtual void CBaseViewport::Paint(void) = "8B ? ? ? ? ? 56 81 ? ? ? ? ? 75 0F 8B ? ? ? ? ? 8B C6 35 ? ? ? ? EB 11 8B 01 FF 50 34 8B ? ? ? ? ? 8B ? ? ? ? ? 85";
+protected: virtual void CBaseWorldView::PopView(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B";
+protected: virtual void CBaseWorldView::PushView(float) = "55 8B EC F3 ? ? ? ? 83 EC 08";
+protected: virtual void CCSGameMovement::PlayerMove(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? E8";
+protected: virtual void CGameMovement::AddGravity(void) = "55 8B EC 83 EC 14 0F";
+protected: virtual void CGameMovement::FinishGravity(void) = "55 8B EC 83 EC 08 0F 57 C9";
+protected: virtual void CGameMovement::FullLadderMove(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 46";
+protected: virtual void CGameMovement::FullTossMove(void) = "55 8B EC 81 ? ? ? ? ? 53 8B D9 C7";
+protected: virtual void CGameMovement::ReduceTimers(void) = "A1 ? ? ? ? 8B 51 04 56";
+protected: virtual void CGameMovement::StartGravity(void) = "55 8B EC 83 EC 14 56 57";
+protected: virtual void CHudHintDisplay::OnThink(void) = "55 8B EC 83 EC 08 53 8B D9 8D";
+protected: virtual void CHudSubtitles::Reset(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 0A";
+protected: virtual void CPanelListPanel::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+protected: virtual void ConCommandBase::Init(void) = "8B D1 8B ? ? ? ? ? 85 C9 74 05";
+protected: virtual void VideoPanel::OnVideoOver(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? C7";
+protected: virtual void vgui::BuildModeDialog::OnClose(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B 40 04";
+protected: virtual void vgui::Button::OnSetState(int) = "55 8B EC 83 7D 08 00 56 8B F1 0F";
+protected: virtual void vgui::CConsolePanel::OnThink(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF D0 84 C0 74 1C";
+protected: virtual void vgui::Frame::OnMinimize(void) = "8B 01 56 8B ? ? ? ? ? 57 6A 01 8B";
+protected: virtual void vgui::Frame::PaintBackground(void) = "55 8B EC 83 EC 0C 53 8B D9 56 89";
+protected: virtual void vgui::Image::DrawPrintChar(wchar_t) = "55 8B EC 8B ? ? ? ? ? 6A 00 FF 75 08 8B 01 FF 50 74";
+protected: virtual void vgui::Image::DrawSetTextPos(int,int) = "55 8B EC 8B 41 08 8B";
+protected: virtual void vgui::Image::SetSize(int,int) = "55 8B EC 8B 45 08 89 41 0C 8B";
+protected: virtual void vgui::ListPanel::OnSliderMoved(void) = "56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE 5E";
+protected: virtual void vgui::Menu::AddScrollBar(void) = "56 8B F1 6A 01 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80";
+protected: virtual void vgui::Menu::OnHotKey(wchar_t) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 83 F8";
+protected: virtual void vgui::Menu::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 2E";
+protected: virtual void vgui::Menu::OnSliderMoved(void) = "56 6A 00 8B F1 E8 ? ? ? ? 8B";
+protected: virtual void vgui::Menu::OnTypeAhead(wchar_t) = "55 8B EC 81 ? ? ? ? ? 56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? FF";
+protected: virtual void vgui::Menu::RemoveScrollBar(void) = "56 8B F1 6A 00 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 80";
+protected: virtual void vgui::MenuBar::OnMenuClose(void) = "8B 01 6A 00 FF 50 30 C3";
+protected: virtual void vgui::MenuBar::Paint(void) = "55 8B EC 83 EC 08 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 89";
+protected: virtual void vgui::Panel::OnStartDragging(void) = "57 8B F9 8B ? ? ? ? ? 6A 6B";
+protected: virtual void vgui::RichText::OnSliderMoved(void) = "8B 01 C6 ? ? ? ? ? ? FF 60";
+protected: virtual void vgui::RichText::OnThink(void) = "56 8B F1 80 ? ? ? ? ? ? 74 1D";
+protected: virtual void vgui::ScrollBar::OnSliderMoved(int) = "55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 5E";
+protected: virtual void vgui::ScrollBarSlider::Paint(void) = "55 8B EC 83 EC 0C 56 8B F1 8D 4D F4 51 8D";
+protected: virtual void vgui::Slider::DrawNob(void) = "55 8B EC 83 EC 14 53 56 8B D9 8D";
+protected: virtual void vgui::Slider::DrawTickLabels(void) = "55 8B EC 83 EC 18 56 8B F1 8D 4D F0";
+protected: virtual void vgui::Slider::DrawTicks(void) = "55 8B EC 83 EC 1C 53 56 8B D9 8D";
+protected: virtual void vgui::Slider::Paint(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06 8B CE 5E";
+protected: virtual void vgui::TextEntry::OnKeyTyped(wchar_t) = "55 8B EC 56 8B F1 57 8B 7D 08 57 8A";
+protected: virtual void vgui::TextEntry::PerformLayout(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 80";
+protected: virtual void vgui::TreeView::OnMouseWheeled(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 29";
+protected: virtual void vgui::TreeView::OnSliderMoved(int) = "56 8B F1 6A 00 6A 00 8B 06 FF ? ? ? ? ? 8B";
+protected: void CBaseAchievement::AwardAchievement(void) = "56 8B F1 8B 46 0C 8D 4E 0C 8B";
+protected: void CBaseAchievement::HandleProgressUpdate(void) = "56 8B F1 8B 4E 20 85";
+protected: void COptionsSubMouse::UpdateJoystickPanels(void) = "55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 8B";
+protected: void CRendering3dView::ReleaseLists(void) = "55 8B EC 51 53 56 8B F1 57 8B ? ? ? ? ? 85";
+protected: void CUtlBuffer::AddNullTermination(int) = "55 8B EC 56 8B F1 57 8B 7D 08 3B 7E 1C";
+protected: void CUtlBuffer::GetTypeBin<int>(int near &) = "55 8B EC 56 6A 04";
+protected: void CUtlBuffer::PutTypeBin<char>(char) = "55 8B EC 56 8B F1 F6 46 14 01 75";
+protected: void CUtlMemoryPool::AddNewBlob(void) = "53 8B D9 8B 43 08 83";
+protected: void C_Plasma::Update(void) = "55 8B EC A1 ? ? ? ? 83 EC 0C F3";
+protected: void C_Plasma::UpdateAnimation(void) = "55 8B EC 83 EC 0C A1 ? ? ? ? 53";
+protected: void SFMapOverview::UpdateGrenades(void) = "53 8B D9 57 33 FF 39 ? ? ? ? ? 7C";
+protected: void vgui::Menu::CalculateWidth(void) = "55 8B EC 83 EC 08 56 8B F1 F6";
+protected: void vgui::Menu::MoveAlongMenuItemList(int,int) = "55 8B EC 81 ? ? ? ? ? 57 8B F9 83";
+protected: void vgui::TextEntry::ScrollLeft(void) = "80 ? ? ? ? ? ? 75 39 80";
+public: AlternateIconData_t::~AlternateIconData_t(void) = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 38";
+public: AutoReleaseThreadContext::~AutoReleaseThreadContext() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 09 85";
+public: BMPResData_t::BMPResData_t(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 48";
+public: BaseModUI::CUIGameData::CUIGameData(void) = "55 8B EC 83 EC 10 53 56 8B F1 C7";
+public: BeamInfo_t::BeamInfo_t(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 70";
+public: CAchievement_Meta::CAchievement_Meta(void) = "55 8B EC 83 EC 20 56 8B F1 E8";
+public: CBaseAchievement::CBaseAchievement(void) = "C6 41 08 00 8B";
+public: CBasePlayerAnimState::CBasePlayerAnimState(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CBoneMergeCache::CBoneMergeCache(void) = "56 8B F1 0F 57";
+public: CCSMParallelSplit::CCSMParallelSplit(void) = "56 57 8B F9 8D 4F 40 C6";
+public: CCSUsrMsg_ResetHud::CCSUsrMsg_ResetHud(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C6 46 08 00 C7 ? ? ? ? ? ? 5E";
+public: CClientRenderablesList::CClientRenderablesList(void) = "C7 ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CCollisionProperty::CCollisionProperty(void) = "56 8B F1 33 C0 6A";
+public: CDescription::~CDescription(void) = "57 8B F9 8B 4F 04 C7";
+public: CEconItem::CEconItem(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? C7";
+public: CEconStyleInfo::CEconStyleInfo(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18";
+public: CEffectData::CEffectData(void) = "C7 ? ? ? ? ? ? 33 C0 C7";
+public: CEnvWindShared::CEnvWindShared(void) = "53 56 8B ? ? ? ? ? 57 8B F9 C7";
+public: CGlowOverlay::CGlowOverlay(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? ? ? ? C7";
+public: CHud::CHud(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 1C";
+public: CInput::PerUserInput_t::PerUserInput_t(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: CItemSelectionCriteria::CItemSelectionCriteria(void) = "C6 01 00 C7 ? ? ? ? ? ? C6";
+public: CMatRenderContextPtr::~CMatRenderContextPtr(void) = "56 8B F1 8B 0E";
+public: CMeshBuilder::CMeshBuilder(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C6";
+public: COcclusionQuerySet::~COcclusionQuerySet(void) = "55 8B EC 83 EC 0C 8B ? ? ? ? ? 57";
+public: CPixelVisibilityQuery::CPixelVisibilityQuery(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+public: CPlayerInventory::CPlayerInventory(void) = "56 8B F1 C7 ? ? ? ? ? 8D 4E 2C";
+public: CRagdoll::CRagdoll(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: CRestore::CRestore(class CSaveRestoreData near *) = "55 8B EC 56 8B F1 8B 4D 08 C7 ? ? ? ? ? C7";
+public: CRopeManager::CRopeManager(void) = "56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 46 04";
+public: CSVCMsg_VoiceData::CSVCMsg_VoiceData(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? C7 ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? 66";
+public: CSave::CSave(class CSaveRestoreData near *) = "55 8B EC 8B 55 08 56 8B F1 8B CA";
+public: CSceneEventInfo::CSceneEventInfo(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CSnowFallManager::CSnowFallManager(void) = "56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: CSoundParameters::CSoundParameters(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CThreadSafeMemoryPool::~CThreadSafeMemoryPool(void) = "56 8B F1 8B 06 A9";
+public: CUGCFileRequestManager::CUGCFileRequestManager(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 04";
+public: CUtlBuffer::CUtlBuffer(int,int,int) = "55 8B EC 56 8B F1 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: CUtlBuffer::CUtlBuffer(void const near *,int,int) = "55 8B EC 8B 45 08 56 8B F1 8B 4D 0C 89 06 8B";
+public: CUtlBuffer::~CUtlBuffer(void) = "56 8B F1 83 7E 08";
+public: CUtlStreamBuffer::~CUtlStreamBuffer(void) = "56 8B F1 E8 ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E";
+public: CUtlString::~CUtlString(void) = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 08 00 7C 20 8B 16 85 D2 74 13 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 5E";
+public: CUtlSymbol::CUtlSymbol(char const near *) = "55 8B EC 51 53 56 57 8B D9 E8 ? ? ? ? 8B ? ? ? ? ? 8B 47";
+public: CVTFTexture::CVTFTexture(void) = "C7 ? ? ? ? ? 0F 57 C0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 5C";
+public: CViewSetup::CViewSetup(void) = "80 ? ? ? ? ? ? 8B C1";
+public: CVoiceStatus::CVoiceStatus(void) = "55 8B EC 83 EC 0C 53 56 8B F1 57 89 75 F8 C7";
+public: C_BeamSpotLight::C_BeamSpotLight(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? F3";
+public: C_EnvDOFController::C_EnvDOFController(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: C_EnvProjectedTexture::C_EnvProjectedTexture(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8D ? ? ? ? ? C7";
+public: C_EnvTonemapController::C_EnvTonemapController(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66";
+public: C_FireSmoke::C_FireSmoke(void) = "53 56 57 8B D9 E8 ? ? ? ? C7";
+public: C_FogController::C_FogController(void) = "55 8B EC 83 EC 08 56 57 8B F1 E8 ? ? ? ? 8D";
+public: C_GameInstructor::C_GameInstructor(void) = "56 68 ? ? ? ? 8B F1 E8";
+public: C_PhysPropClientside::C_PhysPropClientside(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? 8B C6 C7 ? ? ? ? ? ? ? ? ? C7";
+public: C_RecipientFilter::C_RecipientFilter(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 08";
+public: C_SlideshowDisplay::C_SlideshowDisplay(void) = "56 57 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7";
+public: C_Sprite::C_Sprite(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: C_SpriteTrail::C_SpriteTrail(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? 0F";
+public: C_TestTraceline::C_TestTraceline(void) = "56 8B F1 E8 ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B";
+public: CryptoPP::Algorithm::Algorithm() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 81";
+public: CryptoPP::BERGeneralDecoder::BERGeneralDecoder() = "53 56 6A 00 8B F1";
+public: DName::DName(__int64) = "55 8B EC 83 EC 2C A1 ? ? ? ? 33 C5 89 45 FC 8B 55 0C 8B C1";
+public: DName::DName(char const near * near &,char) = "55 8B EC 53 56 8B F1 57 8B 7D 08 83 26";
+public: DName::DName(char const near *) = "55 8B EC 56 8B F1 33 C0 8B 4D 08";
+public: DName::DName(class DName near *) = "55 8B EC 53 33 DB";
+public: DName::DName(enum DNameStatus) = "55 8B EC 8B 45 08 56 8B F1 81";
+public: DName::DName(unsigned __int64) = "55 8B EC 83 EC 24 A1 ? ? ? ? 33 C5 89 45 FC 8B";
+public: FlashlightState_t::FlashlightState_t(void) = "C7 ? ? ? ? ? ? ? ? ? 8B C1 C7";
+public: GCSDK::CMessageList::~CMessageList(void) = "A1 ? ? ? ? 8B ? ? ? ? ? 56 33 F6 85 C0 7E 32 57 8B 3C B2 85 FF 74 24 A1";
+public: GameTypes::Map::~Map(void) = "56 57 8B F9 C7 ? ? ? ? ? ? ? ? ? 83 ? ? ? ? ? ? 7C";
+public: IceKey::~IceKey(void) = "56 33 F6 39 71";
+public: ParticleControlPoint_t::ParticleControlPoint_t(void) = "55 8B EC 51 8B D1 C7";
+public: Poco::URIRedirection::~URIRedirection() = "56 8B F1 8B 46 14 83 F8 10 72 0E 6A 01 40 50 FF 36 E8 ? ? ? ? 83 C4 0C C7 ? ? ? ? ? ? 83 7E 14 10 C7 ? ? ? ? ? ? 72 07";
+public: SunLightState_t::SunLightState_t(void) = "53 8B D9 56 57 BF";
+public: UnDecorator::operator char near *(void) = "55 8B EC 83 EC 20 8B 4D";
+public: VMatrix::VMatrix(struct matrix3x4_t const near &) = "55 8B EC 8B 45 08 0F";
+public: _Init_atexit::~_Init_atexit(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? EB";
+public: __int64 CFpsHistogram::Encode(void)const = "55 8B EC 83 EC 2C 53 56 57";
+public: bool CBaseLesson::IsLocked(void)const = "56 8B F1 0F 57 C9 F3";
+public: bool CBaseLesson::ShouldShowSpew(void) = "53 56 57 8B ? ? ? ? ? 8B D9";
+public: bool CBitRead::Seek(int) = "55 8B EC 51 53 56 57 8B 7D 08 8B F1 C6 45 FF 01";
+public: bool CChoreoEvent::GetTrackLookupSet(void) = "8A ? ? ? ? ? C0 E8 03 24";
+public: bool CChoreoEvent::IsProcessing(void)const = "8A ? ? ? ? ? C0 E8 04 24 01 C3";
+public: bool CChoreoEvent::IsResumeCondition(void) = "8A ? ? ? ? ? D0 E8 24";
+public: bool CChoreoEvent::IsUsingRelativeTag(void) = "8A ? ? ? ? ? C0 E8 02 24 01 C3";
+public: bool CChoreoEvent::PreventTagOverlap(void) = "F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 53 57";
+public: bool CClientAlphaProperty::IgnoresZBuffer(void)const = "66 8B 41 0A BA";
+public: bool CDescription::InitFromFile(char near *) = "55 8B EC 51 89 4D";
+public: bool CGlowObject::IsRendering(void)const = "56 57 8B F9 8B 37 E8";
+public: bool CHud::HudDisabled(void) = "83 ? ? ? ? ? ? 0F 9F C0 C3";
+public: bool CIKTarget::IsActive(void) = "F3 ? ? ? ? 33 C0 0F ? ? ? ? ? ? 0F 97";
+public: bool CJob::IsFinished(void)const = "8B 41 0C 83 F8";
+public: bool CLocatorTarget::IsPresenting(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 16";
+public: bool CLocatorTarget::IsStatic(void) = "55 8B EC 51 56 8B F1 F7";
+public: bool CLocatorTarget::IsVisible(void) = "8A 41 1E";
+public: bool CParticleCollection::IsBatchable(void)const = "8A ? ? ? ? ? C0 E8 07 C3";
+public: bool CParticleCollection::IsFinished(void)const = "55 8B EC 51 57 8B F9 8B 47 48";
+public: bool CPoseDebuggerImpl::IsModelShown(int)const = "55 8B EC 8B 55 08 56 8B F1 81";
+public: bool CSaveRestoreSegment::Read(void near *,int) = "55 8B EC 56 8B F1 8B 4E 0C 8B";
+public: bool CSteamID::IsValid(void)const = "56 8B 71 04 8B D6";
+public: bool CUtlBuffer::Get(void near *,int) = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 7E";
+public: bool C_BaseAnimating::IsRagdoll(void)const = "83 ? ? ? ? ? ? 74 0C 80";
+public: bool C_BaseEntity::IsSolid(void)const = "80 ? ? ? ? ? ? 74 0C F6";
+public: bool C_BaseEntity::IsStandable(void)const = "56 8B F1 8B 06 FF ? ? ? ? ? A8";
+public: bool C_BaseEntity::IsVisible(void)const = "B8 ? ? ? ? 66 ? ? ? ? ? ? 75";
+public: bool C_BaseEntity::PhysicsCheckWater(void) = "80 ? ? ? ? ? ? 0F 97 C0 C3";
+public: bool C_BaseEntity::SetModel(char const near *) = "55 8B EC 8B 55 08 57";
+public: bool C_BaseEntity::WillThink(void) = "8B C1 83 ? ? ? ? ? ? 7E";
+public: bool C_BasePlayer::IsSpectator(void)const = "56 8B F1 8B 06 FF ? ? ? ? ? 83 F8 01 75 2D";
+public: bool C_CSGameRules::IsEndMatchVotingForNextMap(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 5A";
+public: bool C_CSGameRules::IsFreezePeriod(void) = "8A 41 20";
+public: bool C_CSGameRules::IsPlayingGunGame(void)const = "8B ? ? ? ? ? 8B 01 FF 50 20 48 F7 D8 1B C0 40 C3";
+public: bool C_CSGameRules::IsPlayingTraining(void)const = "8B ? ? ? ? ? 8B 01 FF 50 20 33";
+public: bool C_CSPlayer::IsHoldingSpecGrenadeKey(void) = "55 8B EC 51 8B ? ? ? ? ? 32";
+public: bool C_HLTVCamera::IsPVSLocked(void) = "8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 09";
+public: bool CryptoPP::Integer::IsUnit() = "8B 41 08 8B 51 0C 85";
+public: bool VMatrix::IsIdentity(void)const = "F3 0F 10 01 F3 ? ? ? ? ? ? ? 0F 2E";
+public: bool google::protobuf::io::Tokenizer::Next(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 34 A1 ? ? ? ? 33 C5 89 45 F0 56 57 50 8D 45 F4 64 ? ? ? ? ? 8B F1 8B";
+public: bool netadr_s::IsLocalhost(void)const = "80 79 04 7F";
+public: bool vgui::ImageList::IsValidIndex(int) = "55 8B EC 8B 45 08 85 C0 78 0B";
+public: bool vgui::Panel::IsBuildModeActive(void) = "8B ? ? ? ? ? 83 F9 FF 74 40 8B D1";
+public: bool vgui::Panel::IsWithin(int,int) = "55 8B EC 83 EC 10 56 8B ? ? ? ? ? 8D";
+public: ceng::CBitMask<int>::~CBitMask<int>() = "55 8B EC 51 56 8B F1 8B 06 50";
+public: char CUtlBuffer::GetChar(void) = "56 6A 01 8B F1 E8 ? ? ? ? 84";
+public: char DName::getLastChar(void)const = "57 8B 39 85";
+public: char const near * CChoreoEvent::GetParameters(void) = "83 C1 18 E9";
+public: char const near * CCommand::operator[](int)const = "55 8B EC 8B 45 08 85 C0 78 0F";
+public: char const near * CModInfo::GetFallbackDir(void) = "8B ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? C3";
+public: char const near * CSteamID::Render(void)const = "A1 ? ? ? ? 8B D1 56";
+public: char const near * CStudioHdr::name(void)const = "8B 11 8B";
+public: char const near * CUtlString::Get(void)const = "83 79 0C";
+public: char const near * C_BasePlayer::GetPlayerName(void) = "56 8B ? ? ? ? ? 85 F6 74 21";
+public: char const near * KeyValues::GetName(void)const = "57 8B F9 85 FF 74 1F";
+public: char const near * studiohdr_t::pszName(void)const = "8B ? ? ? ? ? 85 C0 74 1B";
+public: char near * DName::getString(char near *,int)const = "55 8B EC 53 8B D9 56 8B 75 08 57 83";
+public: class Color ConVar::GetColor(void)const = "55 8B EC 8B 41 1C 83";
+public: class Color vgui::Panel::GetDropFrameColor(void) = "55 8B EC 8B 45 08 8B 49";
+public: class DName Replicator::operator[](int)const = "55 8B EC 8B 55 0C 83 FA 09";
+public: class KeyValues near * KeyValues::FindKey(int)const = "55 8B EC 85 C9 74 1D";
+public: class VMatrix VMatrix::Transpose(void)const = "55 8B EC 8B 55 08 56 8B F1 8B 06";
+public: float C_BaseAnimating::SetPoseParameter(int,float) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 75";
+public: float C_BaseEntity::GetInterpolationAmount(int) = "55 8B EC 56 57 8B F1";
+public: float C_CSGameRules::GetBuyTimeLength(void) = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 8B 01 FF";
+public: float C_CSPlayer::GetFreezeFrameInterpolant(void) = "55 8B EC 83 EC 08 80 ? ? ? ? ? ? A1";
+public: fogparams_t::fogparams_t(void) = "C7 ? ? ? ? ? ? 8B C1 C7";
+public: google::protobuf::TextFormat::Parser::Parser(void) = "C7 ? ? ? ? ? 8B C1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 66";
+public: google::protobuf::TextFormat::Printer::Printer(void) = "C7 ? ? ? ? ? 8B C1 66";
+public: google::protobuf::internal::Mutex::Mutex(void) = "56 6A 18 8B F1";
+public: google::protobuf::internal::Mutex::~Mutex(void) = "56 8B F1 FF 36 FF";
+public: google::protobuf::io::Tokenizer::Token::~Token(void) = "8B 41 18 56 8D 71 04";
+public: google::protobuf::io::Tokenizer::~Tokenizer(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B F9 8B 57 60";
+public: int CAchievementMgr::GetAchievementCount(bool) = "55 8B EC 56 57 0F";
+public: int CAmmoDef::PlrDamage(int) = "55 8B EC 8B 45 08 8B D1";
+public: int CStringRegistry::GetStringID(char const near *) = "55 8B EC 8B 45 08 83 EC 08 56 57";
+public: int CStudioHdr::GetNumAttachments(void)const = "8B 41 04 85 C0 75 09 8B 01 8B ? ? ? ? ? C3 8B 40 3C";
+public: int CStudioHdr::GetNumPoseParameters(void)const = "8B 41 04 85 C0 75 10";
+public: int CStudioHdr::GetNumSeq(void)const = "8B 41 04 85 C0 75 09";
+public: int CStudioHdr::GetSharedPoseParameter(int,int)const = "55 8B EC 56 8B 71 04";
+public: int CStudioHdr::GetTransition(int,int)const = "55 8B EC 83 79 04 00 8B";
+public: int C_BaseEntity::GetSoundSourceIndex(void)const = "8B 01 FF 50 08 8B 00 83";
+public: int C_BasePlayer::GetAssociatedTeamNumber(void)const = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 44";
+public: int C_BaseWeaponWorldModel::GetMuzzleBoneIndex(void) = "56 8B F1 83 ? ? ? ? ? ? 75 10";
+public: int C_CSGameRules::GetNumWinsToClinch(void)const = "57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 6E";
+public: int C_SlideshowDisplay::NumMaterials(void) = "8B ? ? ? ? ? 8B 00 85 C0 75";
+public: int C_Sprite::GetRenderBrightness(void) = "8B D1 F3 ? ? ? ? ? ? ? 0F";
+public: int DName::length(void)const = "57 8B 39 85 FF 75 04 33";
+public: int FourRays::CalculateDirectionSignMask(void)const = "8D 51 30 8B";
+public: int KeyValues::GetInt(char const near *,int) = "55 8B EC 6A 00 FF 75 08 E8 ? ? ? ? 85";
+public: int mstudioseqdesc_t::anim(int,int)const = "55 8B EC 8B 51 44";
+public: int vgui::Panel::GetChildCount(void) = "57 8B ? ? ? ? ? 85 FF 74 10 8B 01 56 8B 37 FF 10 50 8B CF FF 56 44";
+public: int vgui::Panel::GetTall(void) = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B 45";
+public: int vgui::TreeNode::CountVisibleIndex(void) = "55 8B EC 83 EC 14 56 57 8B F9 C7 ? ? ? ? ? ? 8B";
+public: int vgui::TreeNode::CountVisibleNodes(void) = "53 8B D9 56 BE ? ? ? ? 80";
+public: optimized_datamap_t::optimized_datamap_t(void) = "56 8B F1 BA";
+public: pDNameNode::pDNameNode(class DName near *) = "55 8B EC 8B 45 08 C7 ? ? ? ? ? 85";
+public: pcharNode::pcharNode(char const near *,int) = "55 8B EC 53 56 8B F1 57 8B 7D 0C C7";
+public: static int C_CSGameRules::GetMaxPlayers(void) = "8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 74 06 B8";
+public: static void C_BaseEntity::MarkAimEntsDirty(void) = "8B ? ? ? ? ? 33 C0 85 D2 7E 28";
+public: static void C_Sprite::DestroyAllClientside(void) = "83 ? ? ? ? ? ? 7E 20 0F ? ? ? ? ? ? A1 ? ? ? ? 8B 08 8B 41 08 83 C1 08 FF 50 04 83 ? ? ? ? ? ? 7F E7 C3";
+public: static void C_Sprite::RecreateAllClientside(void) = "83 ? ? ? ? ? ? 7E 20 0F";
+public: std::_Fac_node::~_Fac_node(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B 79";
+public: std::_Fac_tidy_reg_t::~_Fac_tidy_reg_t(void) = "56 EB 18";
+public: std::_Init_locks::_Init_locks(void) = "33 C0 57 8B F9 40";
+public: std::_Init_locks::~_Init_locks(void) = "83 C8 FF F0 ? ? ? ? ? ? ? 79";
+public: std::exception::exception() = "55 8B EC 56 8B F1 0F 57";
+public: std::exception::exception() = "55 8B EC 83 EC 08 8B 45 08 0F";
+public: std::runtime_error::runtime_error() = "55 8B EC 83 EC 08 8B 45 08 0F 57 C0 56 8B F1 89 45 F8 8D 56 04 C6 45 FC 01 52 8D 45 F8 C7 ? ? ? ? ? 50 66 0F D6 02 E8 ? ? ? ? 83 C4 08 C7";
+public: struct TSLNodeBase_t near * CTSListBase::Pop(void) = "55 8B EC 83 E4 F8 56 57 8B F9 8B 37";
+public: struct studiohdr_t near * CMDL::GetStudioHdr(void) = "8B C1 8B ? ? ? ? ? 85 C9 75 03 33";
+public: unsigned __int64 C_PlayerResource::GetXuid(int) = "55 8B EC 8B 55 08 8D 42 FF 83 F8 3F 77 12";
+public: unsigned char CUtlBuffer::GetUnsignedChar(void) = "55 8B EC 51 56 8B F1 F6 46 15";
+public: unsigned int CBitRead::ReadVarInt32(void) = "55 8B EC 83 EC 08 53 56 8B C1 33";
+public: unsigned int CDataManagerBase::FlushAll(void) = "55 8B EC 83 EC 30 53 8B D9 56 57";
+public: vgui::DragDrop_t::DragDrop_t(void) = "C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B 41 18";
+public: vgui::ImageList::~ImageList(void) = "56 8B F1 80 7E 14 00 74 22";
+public: virtual CAchievementMgr::~CAchievementMgr(void) = "56 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CAchievement_Meta::~CAchievement_Meta(void) = "56 8B F1 8D ? ? ? ? ? E8 ? ? ? ? F6";
+public: virtual CBaseLesson::~CBaseLesson(void) = "55 8B EC 51 56 8B F1 8B 4E 0C";
+public: virtual CBaseViewport::~CBaseViewport(void) = "53 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CClientEntityList::~CClientEntityList(void) = "56 57 8B F9 C7 ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? E8";
+public: virtual CClientLeafSystem::~CClientLeafSystem(void) = "53 56 57 8B F9 8D ? ? ? ? ? C7";
+public: virtual CDetailModel::~CDetailModel(void) = "55 8B EC 83 EC 08 56 8B F1 8B 46 2C";
+public: virtual CEconItem::~CEconItem(void) = "56 8B F1 8B 4E 18 C7 ? ? ? ? ? C7 ? ? ? ? ? ? 85 C9 74 05 E8 ? ? ? ? C7";
+public: virtual CGameSavePanel::~CGameSavePanel(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual CHltvReplaySystem::~CHltvReplaySystem(void) = "56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8 ? ? ? ? 83";
+public: virtual CMsgHttpRequest::~CMsgHttpRequest(void) = "56 8B F1 57 8B 4E";
+public: virtual CParticleMgr::~CParticleMgr(void) = "56 57 8B F9 6A 00 C7";
+public: virtual CRopeManager::~CRopeManager(void) = "53 8B D9 56 57 C7";
+public: virtual CSOEconCoupon::~CSOEconCoupon(void) = "56 8B F1 8D 4E 04 C7 ? ? ? ? ? E8 ? ? ? ? 8B CE 5E";
+public: virtual CScriptObject::~CScriptObject(void) = "57 8B F9 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C0 74 1C";
+public: virtual CSnowFallManager::~CSnowFallManager(void) = "56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? 8B CF";
+public: virtual CTempEnts::~CTempEnts(void) = "53 56 57 8B F9 8D 4F 04";
+public: virtual CVoiceStatus::~CVoiceStatus(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 05";
+public: virtual C_CSPlayer::~C_CSPlayer(void) = "55 8B EC 51 53 8B D9 56 89";
+public: virtual C_FEPlayerDecal::~C_FEPlayerDecal(void) = "55 8B EC 83 EC 08 56 57 8B F9 C7";
+public: virtual C_FuncSmokeVolume::~C_FuncSmokeVolume(void) = "56 8B F1 FF ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7";
+public: virtual C_RecipientFilter::~C_RecipientFilter(void) = "56 8B F1 8D 4E 08 C7 ? ? ? ? ? E8 ? ? ? ? C7";
+public: virtual C_VoteController::~C_VoteController(void) = "56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7";
+public: virtual C_WeaponCSBase::~C_WeaponCSBase(void) = "55 8B EC 51 53 8B D9 56 57 68";
+public: virtual ClientModeShared::~ClientModeShared(void) = "56 57 8B F9 8D 77 04";
+public: virtual GameTypes::~GameTypes(void) = "53 56 8B F1 57 8D ? ? ? ? ? C7 ? ? ? ? ? E8";
+public: virtual bool CBaseAchievement::IsAchieved(void) = "8A 41 50";
+public: virtual bool CBaseAchievement::ShouldShowOnHUD(void) = "8A 41 78";
+public: virtual bool CBaseLesson::WasDisplayed(void)const = "80 79 64 00 0F";
+public: virtual bool CCSCustomTextureSaver::Init(void) = "C7 ? ? ? ? ? ? B0 01 C6 41 20";
+public: virtual bool CCSGameMovement::LadderMove(void) = "53 56 8B F1 E8 ? ? ? ? 8A D8 84";
+public: virtual bool CCSInventoryManager::Init(void) = "56 8B F1 6A 00 68 ? ? ? ? 68";
+public: virtual bool CClientThinkList::Init(void) = "C7 ? ? ? ? ? ? B0 01 C6";
+public: virtual bool CDebugOverlay::ShouldDraw(void) = "8B ? ? ? ? ? 8B 01 FF 50 38 85";
+public: virtual bool CEconItem::GetInUse(void)const = "B8 ? ? ? ? 66 39 41";
+public: virtual bool CExampleEffect::IsEnabled(void) = "8A 41 04 C3";
+public: virtual bool CFPSPanel::ShouldDraw(void) = "80 ? ? ? ? ? ? 56 8B F1 0F ? ? ? ? ? 8B ? ? ? ? ? 81";
+public: virtual bool CFXLine::IsActive(void) = "F3 ? ? ? ? 0F 2F 41 50 0F";
+public: virtual bool CFXQuad::IsActive(void) = "F3 ? ? ? ? 0F 2F 41";
+public: virtual bool CGameConsole::IsConsoleVisible(void) = "80 79 04 00 75 03";
+public: virtual bool CGameUI::IsInLevel(void) = "8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 85 C0 74 1C 80";
+public: virtual bool CHudGeiger::ShouldDraw(void) = "8B ? ? ? ? ? 85 C0 7E 13 3D";
+public: virtual bool CHudMenu::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 2F";
+public: virtual bool CHudMessage::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 16";
+public: virtual bool CHudVehicle::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 85 C0 74 35";
+public: virtual bool CPDumpPanel::ShouldDraw(void) = "83 ? ? ? ? ? ? 75 03 32";
+public: virtual bool CPrediction::InPrediction(void)const = "8A 41 08";
+public: virtual bool CRefractiveGlassView::AdjustView(float) = "56 57 8B F9 E8 ? ? ? ? 8B F0 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 8B CE 8B 16 FF";
+public: virtual bool CRenderToRTHelper::Init(void) = "83 ? ? ? ? ? ? 57 8B F9 75 04";
+public: virtual bool CRestore::GetPrecacheMode(void) = "8A 41 24";
+public: virtual bool CRunGameEngine::IsInGame(void) = "55 8B EC 51 8B ? ? ? ? ? 8B 01";
+public: virtual bool CSceneTokenProcessor::GetToken(bool) = "55 8B EC 51 56 57 8B F9 8B ? ? ? ? ? 68";
+public: virtual bool CShadowLeafEnum::EnumerateLeaf(int,int) = "55 8B EC 83 C1 04";
+public: virtual bool CSoundEmitterSystem::Init(void) = "8B ? ? ? ? ? 68 ? ? ? ? 8B 01 FF 50 44 A3 ? ? ? ? B0";
+public: virtual bool CSteamWorksGameStatsClient::Init(void) = "E8 ? ? ? ? 6A 01 68 ? ? ? ? B9";
+public: virtual bool CVTFTexture::ConstructLowResImage(void) = "55 8B EC 83 EC 54 56 8B";
+public: virtual bool CVTFTexture::IsCubeMap(void)const = "8B 41 2C C1 E8 0E";
+public: virtual bool CVTFTexture::IsNormalMap(void)const = "8B 41 2C C1 E8 07 83";
+public: virtual bool CVTFTexture::IsVolumeTexture(void)const = "83 79 14 01 0F";
+public: virtual bool C_BaseAnimating::IsSelfAnimating(void) = "80 ? ? ? ? ? ? 74 03";
+public: virtual bool C_BaseCSGrenade::Deploy(void) = "55 8B EC 83 EC 08 80 ? ? ? ? ? ? 74";
+public: virtual bool C_BaseCombatWeapon::CanBeSelected(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75";
+public: virtual bool C_BaseCombatWeapon::HasAnyAmmo(void) = "56 8B F1 8B ? ? ? ? ? C1";
+public: virtual bool C_BaseCombatWeapon::Reload(void) = "56 8B F1 8B 06 FF ? ? ? ? ? FF";
+public: virtual bool C_BaseEntity::CreateLightEffects(void) = "A1 ? ? ? ? 53 56 57 8B 30";
+public: virtual bool C_BaseEntity::IsDormant(void)const = "83 79 5C";
+public: virtual bool C_BaseEntity::PreRender(int) = "8B 01 53 32";
+public: virtual bool C_BaseEntity::VPhysicsIsFlesh(void) = "55 8B EC B8 ? ? ? ? E8 ? ? ? ? 8B 01";
+public: virtual bool C_BasePlayer::CanSetSoundMixer(void) = "8B 01 FF ? ? ? ? ? 33 C9 83";
+public: virtual bool C_BasePlayer::ShouldPredict(void) = "56 8B F1 85 F6 74 1C 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0E 8A ? ? ? ? ? 84 C0 74 04 B0 01 5E C3 32";
+public: virtual bool C_BaseTempEntity::Init(int,int) = "A1 ? ? ? ? 89 41 0C";
+public: virtual bool C_BaseToggle::ShouldPredict(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 0D";
+public: virtual bool C_CHostage::ShouldDraw(void) = "80 ? ? ? ? ? ? 75 19 8B ? ? ? ? ? 83";
+public: virtual bool C_CSGameRules::IsGameRestarting(void) = "8A 41 54";
+public: virtual bool C_CSGameRules::ShouldCollide(int,int) = "55 8B EC 8B 55 08 56 8B 75 0C 3B";
+public: virtual bool C_DEagle::SendWeaponAnim(int) = "55 8B EC 8B 45 08 3D ? ? ? ? 75";
+public: virtual bool C_Embers::Simulate(void) = "55 8B EC 51 56 8B F1 80 ? ? ? ? ? ? 75";
+public: virtual bool C_LightGlow::Simulate(void) = "56 8B F1 8B 06 FF 50 28 8B";
+public: virtual bool C_PhysPropClientside::IsAsleep(void) = "8B ? ? ? ? ? 85 C9 74 07 8B 01 8B 40 08";
+public: virtual bool C_RopeKeyframe::ShouldDraw(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 75";
+public: virtual bool C_ServerRagdoll::Simulate(void) = "56 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? F3 ? ? ? ? ? ? ? F3 ? ? ? ? ? ? ? 0F";
+public: virtual bool C_Team::ContainsPlayer(int) = "55 8B EC 56 8B ? ? ? ? ? 33 D2";
+public: virtual bool C_VGuiScreen::ShouldDraw(void) = "8B ? ? ? ? ? C1 E8 05 F6";
+public: virtual bool C_WeaponCSBaseGun::Deploy(void) = "55 8B EC 83 EC 10 56 8B F1 C7 ? ? ? ? ? ? F3";
+public: virtual bool C_WeaponElite::SendWeaponAnim(int) = "55 8B EC 8B 45 08 3D ? ? ? ? 75 3C";
+public: virtual bool C_World::Init(int,int) = "55 8B EC C7";
+public: virtual bool ConCommand::CanAutoComplete(void) = "8A 41 20 24";
+public: virtual bool ConCommandBase::IsFlagSet(int)const = "55 8B EC 8B 45 08 85 41";
+public: virtual bool ConVar::IsFlagSet(int)const = "55 8B EC 8B 49 1C 8B 45";
+public: virtual bool ConVar::IsRegistered(void)const = "8B 41 1C 8A";
+public: virtual bool CryptoPP::MessageQueue::AnyRetrievable() = "83 EC 0C 8D 04";
+public: virtual bool CryptoPP::MessageQueue::GetNextMessage() = "83 EC 18 56 8B F1 8B 06 FF 50";
+public: virtual bool CryptoPP::PK_Verifier::Verify() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 53";
+public: virtual bool CryptoPP::PK_Verifier::VerifyMessage() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 53 56 57 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 8B";
+public: virtual bool CryptoPP::Store::GetNextMessage() = "56 8B F1 80 7E 10 00 75";
+public: virtual bool SFHudFreezePanel::ShouldDraw(void) = "56 8B F1 80 ? ? ? ? ? ? 74 31";
+public: virtual bool SFHudInfoPanel::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 04";
+public: virtual bool SFHudRadio::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 74 04 32 C0 5E C3 A1 ? ? ? ? B9 ? ? ? ? FF 50 34 85 C0 74 12";
+public: virtual bool SFMapOverview::ShouldDraw(void) = "56 8B F1 E8 ? ? ? ? 84 C0 75 1E";
+public: virtual bool SFWeaponSelection::ShouldDraw(void) = "A1 ? ? ? ? 56 8B F1 B9 ? ? ? ? FF 50 34 85 C0 74 20";
+public: virtual bool std::error_category::equivalent() = "55 8B EC 8B 01 8D 55 F8 83 EC 08 56";
+public: virtual bool std::error_category::equivalent() = "55 8B EC 8B 41 04 56";
+public: virtual bool vgui::Button::IsBlinking(void) = "0F ? ? ? ? ? ? C1 E8 09 83";
+public: virtual bool vgui::ComboBox::IsItemIDValid(int) = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? 5D";
+public: virtual bool vgui::ListPanel::IsItemSelected(int) = "55 8B EC 8B 55 08 56 8B F1 57 85 D2 78";
+public: virtual bool vgui::Panel::HasFocus(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 10";
+public: virtual bool vgui::Panel::HasParent(unsigned int) = "55 8B EC 8B 45 08 85 C0 75 06 32";
+public: virtual bool vgui::Panel::IsAutoDeleteSet(void) = "0F B7 41 64 C1 E8 06";
+public: virtual bool vgui::Panel::IsBuildGroupEnabled(void) = "53 56 8B F1 57 8B ? ? ? ? ? 83 FA FF 0F";
+public: virtual bool vgui::Panel::IsCursorNone(void) = "8B 01 FF ? ? ? ? ? 85 C0 0F 94 C0 C3";
+public: virtual bool vgui::Panel::IsCursorOver(void) = "55 8B EC 83 EC 20 53 56 8B D9 8D";
+public: virtual bool vgui::Panel::IsDragEnabled(void)const = "8B 41 28 8A";
+public: virtual bool vgui::Panel::IsDropEnabled(void)const = "8B 41 28 8A 40 40";
+public: virtual bool vgui::Panel::IsFullyVisible(void) = "8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47";
+public: virtual bool vgui::Panel::IsLayoutInvalid(void) = "0F B7 41 64 C1 E8 07";
+public: virtual bool vgui::Panel::IsOpaque(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 17";
+public: virtual bool vgui::Panel::IsPopup(void) = "8B 01 56 8B ? ? ? ? ? 57 8B 3E FF 10 50 8B 47 60";
+public: virtual bool vgui::Panel::IsProportional(void) = "0F B7 41 64";
+public: virtual bool vgui::Panel::IsVisible(void) = "57 8B ? ? ? ? ? 85 FF 74 12";
+public: virtual bool vgui::TextEntry::IsEditable(void) = "80 ? ? ? ? ? ? 74 11 8B 01 8B";
+public: virtual char DNameStatusNode::getLastChar(void)const = "83 79 04 01 0F 95";
+public: virtual char const near * ConVar::GetName(void)const = "8B 41 1C 8B 40 0C";
+public: virtual char const near * vgui::Panel::GetName(void) = "83 C1 50 E9";
+public: virtual char pDNameNode::getLastChar(void)const = "8B 49 04 85 C9 0F ? ? ? ? ? 32 C0 C3";
+public: virtual char pairNode::getLastChar(void)const = "53 8B D9 56 57 8B 7B 08";
+public: virtual char pcharNode::getLastChar(void)const = "8B 51 08 85 D2 74 08";
+public: virtual class Color BitmapImage::GetColor(void) = "55 8B EC 8B 45 08 8B 49 1C";
+public: virtual class Color CHudChat::GetClientColor(int) = "55 8B EC 8B 55 0C 85";
+public: virtual class Color vgui::Image::GetColor(void) = "55 8B EC 8B 45 08 8B 49 14";
+public: virtual class Vector C_BaseEntity::EarPosition(void) = "55 8B EC 8B 11";
+public: virtual class Vector C_BaseEntity::EyePosition(void) = "55 8B EC 56 8B F1 8B 06 FF";
+public: virtual class Vector C_C4::GetGlowColor(void) = "55 8B EC 8B 45 08 C7 ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 5D";
+public: virtual float CChoreoEvent::GetDuration(void) = "55 8B EC 51 F3 ? ? ? ? 0F ? ? ? ? ? ? F3";
+public: virtual float CInput::GetLookSpring(void) = "55 8B EC 51 8B ? ? ? ? ? 81 ? ? ? ? ? 75 14";
+public: virtual float CVTFTexture::BumpScale(void)const = "D9 41 40";
+public: virtual float CViewRender::GetZNear(void) = "55 8B EC 51 8B ? ? ? ? ? 66";
+public: virtual float C_BasePlayer::GetMinFOV(void)const = "A1 ? ? ? ? 83 78 18 01 75 07";
+public: virtual float C_BasePlayer::GetPlayerMaxSpeed(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 81";
+public: virtual float C_PhysPropClientside::GetMass(void) = "8B ? ? ? ? ? 85 C9 74 07 8B 01 8B";
+public: virtual float ConVar::GetFloat(void)const = "55 8B EC 51 8B 51";
+public: virtual float ConVar_m_pitch::GetFloat(void)const = "55 8B EC 83 EC 08 56 8B F1 8B ? ? ? ? ? 85";
+public: virtual int CBaseAchievement::GetCount(void) = "8B 41 58";
+public: virtual int CCLCMsg_ClientInfo::ByteSize(void)const = "56 8B F1 57 33 FF 8B 4E 2C";
+public: virtual int CCSUsrMsg_HudMsg::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 57 34";
+public: virtual int CCSUsrMsg_RadioText::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 0F ? ? ? ? ? F6 47 28 01 74 26";
+public: virtual int CCSUsrMsg_ReportHit::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 5F 1C 84 DB 74";
+public: virtual int CCSUsrMsg_SayText2::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 28 00 74";
+public: virtual int CCSUsrMsg_Shake::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 1C 00 74 53";
+public: virtual int CCSUsrMsg_VGUIMenu::ByteSize(void)const = "55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 37";
+public: virtual int CCSUsrMsg_VoiceMask::ByteSize(void)const = "55 8B EC 83 EC 08 8B 41 20";
+public: virtual int CClientTools::GetEntIndex(void near *) = "55 8B EC 8B 4D 08 85 C9 74 0D 8B 41";
+public: virtual int CEconItem::GetQuality(void)const = "0F B7 41 22 C1 E8 05";
+public: virtual int CEconItem::GetRarity(void)const = "53 56 8B F1 57 8B 06 FF 50 30";
+public: virtual int CFunctorJob::DoExecute(void) = "8B 49 48";
+public: virtual int CGCMsgGetIPLocation::ByteSize(void)const = "56 57 8B F9 8D 57 04 8B 47 0C 8D 34 80";
+public: virtual int CHLClient::GetInEyeEntity(void)const = "E8 ? ? ? ? 85 C0 74 08 8D";
+public: virtual int CHudChat::GetChatInputOffset(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 08";
+public: virtual int CMsgApplySticker::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 28";
+public: virtual int CMsgGCBannedWord::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 0F ? ? ? ? ? F6 47 18 01 74 1B";
+public: virtual int CMsgGCRoutingInfo::ByteSize(void)const = "55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 8B 46 28";
+public: virtual int CMsgGameServerInfo::ByteSize(void)const = "53 56 57 8B F9 33 F6 8B 57";
+public: virtual int CMsgHttpRequest::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 50 00 0F ? ? ? ? ? F6 47 50 01 74 1B 8B 47 20";
+public: virtual int CMsgInviteToParty::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 1C 84 C9 74 59";
+public: virtual int CMsgSDONoMemcached::ByteSize(void)const = "56 8B F1 8B 4E 04 8D";
+public: virtual int CMsgVector2D::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 14 84 C9 74 18 8A C1 24 01 0F B6 F0 F7 DE 1B F6 D1 E9 83 E6 05 F6 C1 01 74 03 83 C6 05 8B 47";
+public: virtual int CMsgVector::ByteSize(void)const = "56 57 8B F9 33 F6 8B 57 18 84 D2 74 25";
+public: virtual int CMsgWebAPIRequest::ByteSize(void)const = "56 8B F1 57 33 FF 80 7E 28 00 0F ? ? ? ? ? F6 46 28 01 74 25";
+public: virtual int CNETMsg_File::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 7B";
+public: virtual int CNETMsg_SignonState::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C 00 0F ? ? ? ? ? F6 47 2C 01 74 1B";
+public: virtual int CPreMatchInfoData::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 24 00 74 68";
+public: virtual int CRestore::GetReadPos(void)const = "8B 41 18 8B 40";
+public: virtual int CRestore::ReadTick(int near *,int,int) = "55 8B EC 8B 41 1C 53";
+public: virtual int CRestore::ReadTime(float near *,int,int) = "55 8B EC 51 8B 41 1C";
+public: virtual int CRestore::SkipHeader(void) = "55 8B EC 51 8B 01 8D 55 FC";
+public: virtual int CSOEconItem::GetCachedSize(void)const = "8B 41 74";
+public: virtual int CSOItemCriteria::ByteSize(void)const = "55 8B EC 51 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 4F";
+public: virtual int CSOItemRecipe::ByteSize(void)const = "55 8B EC 51 53 56 8B F1 C7 ? ? ? ? ? ? 57 33 FF 80 7E 74";
+public: virtual int CSOItemRecipe::GetCachedSize(void)const = "8B 41 70";
+public: virtual int CSOQuestProgress::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 6E";
+public: virtual int CSVCMsg_Menu::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 14 00 74 5E";
+public: virtual int CSVCMsg_SendTable::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 8B 47 24";
+public: virtual int CSVCMsg_VoiceData::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 34";
+public: virtual int CVTFTexture::ComputeFaceSize(int)const = "55 8B EC FF 71 18 FF 75";
+public: virtual int CVTFTexture::ComputeTotalSize(void)const = "56 8B F1 FF 76 18 6A";
+public: virtual int CVTFTexture::FileSize(int)const = "55 8B EC 57 6A 30";
+public: virtual int CViewRender::GetDrawFlags(void) = "8B ? ? ? ? ? 85 C9 74 05 8B 01 FF 60 08 33";
+public: virtual int C_BaseAnimating::GetRenderFlags(void) = "A1 ? ? ? ? 53 56 8B";
+public: virtual int C_BaseCombatWeapon::GetRandomBurst(void) = "A1 ? ? ? ? 56 8B F1 57";
+public: virtual int C_BaseEntity::GetRenderFlags(void) = "8B 01 FF 50 20 8B D0";
+public: virtual int C_BaseEntity::GetSolidFlags(void)const = "81 ? ? ? ? ? 8B 01";
+public: virtual int C_BaseEntity::GetTracerAttachment(void) = "8B ? ? ? ? ? 56 83 CE";
+public: virtual int C_BaseEntity::Save(class ISave near &) = "55 8B EC 56 8B F1 8B 06 FF 50 3C";
+public: virtual int C_BasePlayer::GetDefaultFOV(void)const = "56 57 8B F9 8B 07 FF ? ? ? ? ? 83";
+public: virtual int C_GameRulesProxy::ObjectCaps(void) = "E8 ? ? ? ? 25 ? ? ? ? C3";
+public: virtual int C_PlayerResource::GetCoachingTeam(int) = "55 8B EC 8B 45 08 8D 50";
+public: virtual int C_Team::GetGGLeader(int) = "55 8B EC 8B 45 08 83 F8 03 75";
+public: virtual int ConVar::GetFlags(void)const = "8B 41 1C 8B 40";
+public: virtual int ConVar::GetInt(void)const = "8B 51 1C";
+public: virtual int ConVar_ServerBounded::GetInt(void)const = "55 8B EC 51 8B 01 8B";
+public: virtual int DataCenterPing::ByteSize(void)const = "56 57 8B F9 33 F6 8B 4F 14 84 C9 74 3C";
+public: virtual int GameServerPing::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 18 00 74 79";
+public: virtual int PlayerRankingInfo::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 1C 00 74 7B";
+public: virtual int TournamentEvent::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 30";
+public: virtual int TournamentPlayer::ByteSize(void)const = "56 8B F1 57 33 FF 80";
+public: virtual int TournamentTeam::ByteSize(void)const = "55 8B EC 51 53 56 57 8B F9 C7 ? ? ? ? ? ? 33 F6 80 7F 2C";
+public: virtual int WatchableMatchInfo::ByteSize(void)const = "53 56 8B F1 57 33 FF 80 7E 58";
+public: virtual int XpProgressData::ByteSize(void)const = "56 57 8B F9 33 F6 80 7F 14 00 74 52";
+public: virtual int pDNameNode::length(void)const = "8B 49 04 85 C9 0F ? ? ? ? ? 33";
+public: virtual int pairNode::length(void)const = "55 8B EC 51 8B C1 89 45 FC 83 78";
+public: virtual int vgui::Label::SetTextImageIndex(int) = "55 8B EC 53 8B 5D 08 57 8B F9 8B ? ? ? ? ? 3B";
+public: virtual int vgui::ListPanel::GetItemCurrentRow(int) = "55 8B EC 8B ? ? ? ? ? 33 C0 56 85 D2 7E 1C 8B ? ? ? ? ? 8B 75 08 0F ? ? ? ? ? ? 39";
+public: virtual int vgui::TreeView::GetChild(int,int) = "55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04";
+public: virtual int vgui::TreeView::GetItemParent(int)const = "55 8B EC 8B 45 08 8D 14 40 8B ? ? ? ? ? 8B 04 90 8B ? ? ? ? ? 5D";
+public: virtual int vgui::TreeView::GetNumChildren(int) = "55 8B EC 8B 45 08 8B D1 83 F8 FF 75";
+public: virtual int vgui::TreeView::GetRootItemIndex(void) = "8B ? ? ? ? ? 85 C0 74 07 8B ? ? ? ? ? C3 83";
+public: virtual std::exception::~exception(void) = "8D 41 04 C7 ? ? ? ? ? 50";
+public: virtual unsigned char CEconItem::GetFlags(void)const = "8A 41 2C";
+public: virtual unsigned int CryptoPP::ByteQueue::Peek() = "8B 41 14 8B 50";
+public: virtual unsigned int CryptoPP::Filter::CopyRangeTo2() = "8B 01 FF ? ? ? ? ? FF 74 24 18 8B C8 FF";
+public: virtual unsigned int vgui::Panel::GetVParent(void) = "57 8B ? ? ? ? ? 85 FF 74 10";
+public: virtual unsigned long vgui::Panel::GetScheme(void) = "53 8B D9 8B ? ? ? ? ? 85 C0 75";
+public: virtual unsigned long vgui::TextImage::GetFont(void) = "F6 41 34 10";
+public: virtual vgui::CConsolePanel::~CConsolePanel(void) = "53 56 57 8B F9 8D ? ? ? ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? E8";
+public: virtual vgui::CFooterPanel::~CFooterPanel(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 D2 74 17 A1 ? ? ? ? 52 8B 08 8B 01 FF 50 14 C7 ? ? ? ? ? ? ? ? ? 8D";
+public: virtual vgui::Frame::~Frame(void) = "56 57 8B F9 8B 77 4C";
+public: virtual vgui::ListPanel::~ListPanel(void) = "53 56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8A";
+public: virtual vgui::ListViewPanel::~ListViewPanel(void) = "56 8B F1 57 C7 ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual vgui::Menu::~Menu(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A";
+public: virtual vgui::Panel::~Panel(void) = "56 8B F1 57 80 7E 38 00 C7";
+public: virtual vgui::PanelListPanel::~PanelListPanel(void) = "56 57 8B F9 C7 ? ? ? ? ? E8 ? ? ? ? 8D";
+public: virtual vgui::TextEntry::~TextEntry(void) = "56 8B F1 8B ? ? ? ? ? C7 ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B ? ? ? ? ? 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8D";
+public: virtual vgui::TreeView::~TreeView(void) = "56 8B F1 57 8B ? ? ? ? ? C7 ? ? ? ? ? 85 FF 74 25";
+public: virtual void BitmapImage::Paint(void) = "55 8B EC 83 EC 08 56 8B F1 8B 56";
+public: virtual void BitmapImage::SetPos(int,int) = "55 8B EC 8B 45 08 89 41 20 8B";
+public: virtual void CAchievementMgr::Shutdown(void) = "53 56 57 8B D9";
+public: virtual void CAchievementMgr::Update(float) = "56 57 8B F9 8B ? ? ? ? ? 85";
+public: virtual void CAsyncCtxSaveGame::Completed(void) = "51 8B ? ? ? ? ? E8 ? ? ? ? C3";
+public: virtual void CAsyncCtxSaveGame::ExecuteAsync(void) = "8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 28";
+public: virtual void CAvatarImage::Paint(void) = "53 56 8B F1 57 80 7E 25";
+public: virtual void CBaseAchievement::SetShowOnHUD(bool) = "55 8B EC 53 8A";
+public: virtual void CBaseAchievement::SetUserSlot(int) = "55 8B EC 8B 45 08 89 41 7C";
+public: virtual void CBaseGameStats_Driver::OnRestore(void) = "8B ? ? ? ? ? 8B 01 FF 60 28";
+public: virtual void CBaseHudChat::SetChatPrompt(int) = "56 8B F1 8B ? ? ? ? ? 83 ? ? ? ? ? ? 8B";
+public: virtual void CBaseModPanel::OnGameUIActivated(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 1E";
+public: virtual void CBaseModPanel::OnSizeChanged(int,int) = "55 8B EC 81 ? ? ? ? ? 5D";
+public: virtual void CBaseModelPanel::OnCursorMoved(int,int) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? 8D";
+public: virtual void CBasePlayerAnimState::Release(void) = "85 C9 74 07 8B 01 6A 01 FF 50 24";
+public: virtual void CBaseViewport::LevelInit(void) = "56 57 8B F9 33 F6 39 77 50";
+public: virtual void CBaseViewport::SetParent(unsigned int) = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A";
+public: virtual void CBaseViewport::ShowBackGround(bool) = "55 8B EC 8B 49 1C";
+public: virtual void CBitmapButton::Paint(void) = "53 56 8B F1 33 DB 8B";
+public: virtual void CBitmapImagePanel::forceReload(void) = "56 8B F1 80 ? ? ? ? ? ? 74 1F";
+public: virtual void CBreakParser::SetDefaults(void near *) = "55 8B EC 8B 55 08 C6";
+public: virtual void CCLCMsg_ClientInfo::Clear(void) = "8B 41 2C 84 C0 74 3E";
+public: virtual void CCLCMsg_FileCRCCheck::Clear(void) = "8B 41 38 84 C0 0F";
+public: virtual void CCLCMsg_RespondCvarValue::Clear(void) = "8B 41 1C 84 C0 74 57";
+public: virtual void CCLCMsg_VoiceData::Clear(void) = "80 79 2C 00 74 4C";
+public: virtual void CCSGameMovement::ReduceTimers(void) = "55 8B EC 83 EC 08 0F 57 D2";
+public: virtual void CCSModeManager::LevelShutdown(void) = "8B ? ? ? ? ? 8B 01 FF 60 68";
+public: virtual void CCSPlayerAnimState::Update(float,float) = "55 8B EC 56 8B F1 57 F3";
+public: virtual void CCSUsrMsg_Damage::Clear(void) = "56 8B F1 8B 46 18 84 C0 74 20 D1 E8 C7 ? ? ? ? ? ? A8";
+public: virtual void CCSUsrMsg_DisplayInventory::Clear(void) = "80 79 14 00 74 0B C6";
+public: virtual void CCSUsrMsg_Fade::Clear(void) = "56 8B F1 8B 46 1C 84 C0 74 28";
+public: virtual void CCSUsrMsg_HudMsg::Clear(void) = "56 8B F1 8B 46 34";
+public: virtual void CCSUsrMsg_QuestProgress::Clear(void) = "80 79 1C 00 74 19";
+public: virtual void CCSUsrMsg_RawAudio::Clear(void) = "8B 41 1C 84";
+public: virtual void CCSUsrMsg_SendAudio::Clear(void) = "80 79 10 00 74 22";
+public: virtual void CCSUsrMsg_ShowMenu::Clear(void) = "8B 41 18 84";
+public: virtual void CCSUsrMsg_VGUIMenu::Clear(void) = "56 8B F1 57 80 7E 24 00 74 26";
+public: virtual void CCSUsrMsg_VoiceMask::Clear(void) = "56 8B F1 57 F7 ? ? ? ? ? ? 74 04";
+public: virtual void CCenterPrint::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 22";
+public: virtual void CCenterStringLabel::Print(char near *) = "55 8B EC 56 FF 75 08 8B F1 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 81";
+public: virtual void CClientScoreBoardDialog::Reset(void) = "56 8B F1 8B 4E 18 8B";
+public: virtual void CClientTools::EnableRecordingMode(bool) = "55 8B EC 8A 45 08 88 41 38";
+public: virtual void CClient_Precipitation::Precache(void) = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 83";
+public: virtual void CDataObjectAccessSystem::Shutdown(void) = "56 57 8D 71";
+public: virtual void CDebugOverlay::Paint(void) = "55 8B EC 83 EC 1C 89";
+public: virtual void CEffectsList::Flush(void) = "55 8B EC 51 56 8B 71";
+public: virtual void CEngineGotvSyncPacket::Clear(void) = "8B 41 34 84 C0 74 3F";
+public: virtual void CExampleEffect::Init(void) = "C6 41 04";
+public: virtual void CFPSPanel::DumpStats(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? A1";
+public: virtual void CFXDiscreetLine::Update(double) = "55 8B EC F3 ? ? ? ? 0F 5A C0 F2 ? ? ? ? 66 0F 5A C0 F3 ? ? ? ? F3";
+public: virtual void CFXLine::Destroy(void) = "56 8B F1 8B 4E 54 85";
+public: virtual void CFXLine::Update(double) = "55 8B EC F3 ? ? ? ? F2";
+public: virtual void CFXQuad::Destroy(void) = "56 8B F1 8B 4E 10 85";
+public: virtual void CFXStaticLine::Destroy(void) = "56 8B F1 8B 4E 0C 85 C9 74 0C";
+public: virtual void CFreezeFrameView::Draw(void) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89";
+public: virtual void CGCMsgMemCachedGetResponse::Clear(void) = "56 8B F1 8D 4E 08 E8";
+public: virtual void CGCMsgSQLStatsResponse::Clear(void) = "8B 41 30 84 C0 74";
+public: virtual void CGameConsole::Activate(void) = "56 8B F1 80 7E 04 00 74";
+public: virtual void CGameConsole::Clear(void) = "80 79 04 00 74 08";
+public: virtual void CGameConsole::SetParent(int) = "55 8B EC 80 79 04 00 74 0C";
+public: virtual void CGameConsole::Shutdown(void) = "56 8B F1 8B 4E 08 85 C9 74 1C";
+public: virtual void CGameMenu::OnKillFocus(void) = "53 56 57 8B F1 E8 ? ? ? ? 8B ? ? ? ? ? 8B CE 8B 06 8B 1F FF 10 50 8B CF FF ? ? ? ? ? 5F";
+public: virtual void CGameUI::SetProgressOnStart(void) = "80 49 08";
+public: virtual void CGammaDialog::OnClose(void) = "56 8B F1 6A 01 F3";
+public: virtual void CGammaDialog::OnOK(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B CE";
+public: virtual void CHLClient::GetStatus(char near *,int) = "55 8B EC FF 75 0C FF 75 08 E8 ? ? ? ? 83";
+public: virtual void CHLClient::HudText(char const near *) = "55 8B EC FF 75 08 E8 ? ? ? ? 83 C4 04 5D";
+public: virtual void CHLClient::RetireAllPlayerDecals(bool) = "55 8B EC E8";
+public: virtual void CHudCloseCaption::LevelInit(void) = "56 8B F1 E8 ? ? ? ? 8D ? ? ? ? ? E8";
+public: virtual void CHudCloseCaption::LevelShutdown(void) = "56 8B F1 8B 06 C6";
+public: virtual void CHudCloseCaption::Reset(void) = "56 8B F1 80 ? ? ? ? ? ? 75 18";
+public: virtual void CHudElement::SetHud(class CHud near *) = "55 8B EC 8B 45 08 89 41 38";
+public: virtual void CHudHintKeyDisplay::Reset(void) = "6A 00 81";
+public: virtual void CHudMessage::Reset(void) = "56 8B F1 68 ? ? ? ? 6A 00";
+public: virtual void CHudMessage::SetDefaultFont(void) = "8B 01 FF ? ? ? ? ? FF 50 10";
+public: virtual void CHudMessage::SetFont(unsigned long) = "55 8B EC 8B 45 08 56 8B F1 8D";
+public: virtual void CHudMessage::SetPosition(int,int) = "55 8B EC 81 ? ? ? ? ? E8";
+public: virtual void CHudWeaponSelection::LevelInit(void) = "8B ? ? ? ? ? 85 C0 79 0B";
+public: virtual void CIPLocationInfo::Clear(void) = "8B 41 24 84 C0 0F";
+public: virtual void CIconLesson::UpdateInactive(void) = "55 8B EC 83 EC 10 A1 ? ? ? ? 56 8B F1 89";
+public: virtual void CInput::ClearInputButton(int) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 75";
+public: virtual void CInput::SetFullscreenMousePos(int,int) = "55 8B EC A1 ? ? ? ? FF 75";
+public: virtual void CLCD::AddChatLine(char const near *) = "55 8B EC 83 EC 10 56 8B F1 83";
+public: virtual void CLCDItem::Wipe(class IG15 near *) = "55 8B EC 56 8B F1 57 33";
+public: virtual void CLCDItemIcon::Create(class IG15 near *) = "55 8B EC 56 8B F1 57 8B 7D 08 8B CF FF";
+public: virtual void CLessOrEqualProxy::OnBind(void near *) = "55 8B EC 83 EC 14 53 8B D9 56 57 8B";
+public: virtual void CLoadingDisc::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 1B 8B 01 6A 00 FF ? ? ? ? ? 8B 4E 04 85 C9 74 0A 8B 01 6A 01 FF ? ? ? ? ? 8B";
+public: virtual void CLocalSpaceEmitter::Update(float) = "8B 01 FF 50 48 C2";
+public: virtual void CMessageChars::Clear(void) = "8B 49 04 85 C9 0F";
+public: virtual void CMessageCharsPanel::Paint(void) = "55 8B EC 51 53 56 8B ? ? ? ? ? 89 4D FC 57";
+public: virtual void CMsgAMAddFreeLicense::Clear(void) = "8B 41 20 84 C0 74 3F C1 E8 03";
+public: virtual void CMsgAMGetUserGameStats::Clear(void) = "80 79 28 00 74 1C";
+public: virtual void CMsgConVarValue::Clear(void) = "80 79 14 00 74 47";
+public: virtual void CMsgGCReportAbuse::Clear(void) = "8B 41 34 84";
+public: virtual void CMsgGCRoutingInfo::Clear(void) = "8B 41 28 A9 ? ? ? ? 74 38";
+public: virtual void CMsgGameServerInfo::Clear(void) = "8B 41 64";
+public: virtual void CMsgHttpResponse::Clear(void) = "56 8B F1 8B 46 24";
+public: virtual void CMsgNotifyWatchdog::Clear(void) = "8B 41 28 84 C0 74 4A";
+public: virtual void CMsgPartyInviteResponse::Clear(void) = "80 79 20 00 74 20";
+public: virtual void CMsgUpdateItemSchema::Clear(void) = "80 79 1C 00 74 75";
+public: virtual void CMsgUseItem::Clear(void) = "80 79 38";
+public: virtual void CMsgWebAPIKey::Clear(void) = "8B 41 20 84 C0 74 3F C1 E8 04";
+public: virtual void CMsgWebAPIRequest::Clear(void) = "56 8B F1 80 7E 28 00 0F";
+public: virtual void CMsg_CVars_CVar::Clear(void) = "80 79 18 00 74 4E";
+public: virtual void CMumbleSystem::PostRender(void) = "55 8B EC 81 ? ? ? ? ? 83 ? ? ? ? ? ? 57";
+public: virtual void CNETMsg_File::Clear(void) = "8B 41 18 84 C0 74 2F";
+public: virtual void CNetGraphPanelInterface::Destroy(void) = "56 8B F1 8B 4E 04 85 C9 74 1B";
+public: virtual void COptionsSubKeyboard::ItemSelected(int) = "55 8B EC 56 8B F1 57 8B 7D 08 57 8B ? ? ? ? ? 8B";
+public: virtual void COptionsSubKeyboard::OnResetData(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 8B ? ? ? ? ? FF";
+public: virtual void COptionsSubVideo::OnResetData(void) = "53 8B D9 56 57 C6";
+public: virtual void COptionsSubVideo::PerformLayout(void) = "56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74";
+public: virtual void COptionsSubVoice::OnApplyChanges(void) = "56 8B F1 83 ? ? ? ? ? ? 0F ? ? ? ? ? 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B";
+public: virtual void CPanelListPanel::DeleteAllItems(void) = "56 8B F1 57 33 FF 39 ? ? ? ? ? 7E 3B";
+public: virtual void CPanelListPanel::RemoveItem(int) = "55 8B EC 53 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 8B";
+public: virtual void CParticleSystemQuery::PreSimulate(void) = "8B D1 33 C0 39 42";
+public: virtual void CPlayerLogoProxy::Release(void) = "56 8B F1 8B 4E 18 85 C9 74 05";
+public: virtual void CPlayerRankManager::Shutdown(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF 50 2C 8B D7";
+public: virtual void CRadioStatus::Shutdown(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 05 8B 01";
+public: virtual void CReflectiveGlassView::PushView(float) = "55 8B EC 83 EC 10 53 8B D9 8B ? ? ? ? ? 56";
+public: virtual void CRefractiveGlassView::Draw(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B CF";
+public: virtual void CRefractiveGlassView::PopView(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 FF ? ? ? ? ? 8B F0 85 F6 74 07 8B 06 8B CE FF 50 08 8B 06 8B CE FF";
+public: virtual void CRefractiveGlassView::PushView(float) = "55 8B EC 83 EC 14 89 4D";
+public: virtual void CRestore::EndBlock(void) = "56 8B F1 57 8B 56 10";
+public: virtual void CRestore::SkipEntityData(void) = "55 8B EC 51 56 8B F1 57 8B 06";
+public: virtual void CRestore::StartBlock(void) = "55 8B EC 8B 01 8D 55 E0";
+public: virtual void CRopeManager::ResetRenderCache(void) = "56 8B F1 8B 56 10";
+public: virtual void CRopeManager::SetHolidayLightMode(bool) = "55 8B EC 8A 45 08 88 41 40";
+public: virtual void CSOEconItem::Clear(void) = "56 8B F1 57 8B 46 78";
+public: virtual void CSOItemCriteria::Clear(void) = "56 8B F1 57 8B 46 38 84 C0 74 26";
+public: virtual void CSOItemCriteriaCondition::Clear(void) = "8B 41 20 84 C0 74 5A";
+public: virtual void CSOItemRecipe::Clear(void) = "56 8B F1 57 8B 46 74";
+public: virtual void CSOLobbyInvite::Clear(void) = "8B 41 20 84 C0 74 3F";
+public: virtual void CSOPersonaDataPublic::Clear(void) = "56 8B F1 8B 46 18 84 C0 74 1D";
+public: virtual void CSVCMsg_BSPDecal::Clear(void) = "56 8B F1 80 7E 20 00 74 2B";
+public: virtual void CSVCMsg_ClassInfo_class_t::Clear(void) = "8B 41 18 84 C0 74 4F";
+public: virtual void CSVCMsg_CreateStringTable::Clear(void) = "80 79 2C 00 74 6F";
+public: virtual void CSVCMsg_EncryptedData::Clear(void) = "80 79 14 00 74 29";
+public: virtual void CSVCMsg_FixAngle::Clear(void) = "56 8B F1 8B 46 14 84 C0 74 16";
+public: virtual void CSVCMsg_GameEvent_key_t::Clear(void) = "8B 41 38 84 C0 74 57";
+public: virtual void CSVCMsg_PacketEntities::Clear(void) = "8B 41 24 84 C0 74 45";
+public: virtual void CSVCMsg_SendTable::Clear(void) = "56 8B F1 57 8B 46 24 84 C0 74 2A";
+public: virtual void CSVCMsg_SetPause::Clear(void) = "80 79 10 00 74 04";
+public: virtual void CSVCMsg_Sounds::Clear(void) = "56 8B F1 57 80 7E 20 00 74 04";
+public: virtual void CSVCMsg_Sounds_sounddata_t::Clear(void) = "8B 41 4C 84";
+public: virtual void CSVCMsg_TempEntities::Clear(void) = "8B 41 18 84 C0 74 2E";
+public: virtual void CSVCMsg_VoiceData::Clear(void) = "8B 41 34 84 C0 74 55";
+public: virtual void CSVCMsg_VoiceInit::Clear(void) = "8B 41 18 84 C0 74 30 D1 E8 C7 ? ? ? ? ? ? A8";
+public: virtual void CSave::EndBlock(void) = "55 8B EC 83 EC 08 53 56 57 8B F9 8B 07";
+public: virtual void CSave::EndLogging(void) = "56 8B F1 8B 56 20";
+public: virtual void CSave::SetWritePos(int) = "55 8B EC 8B 55 08 8B 49";
+public: virtual void CSave::StartBlock(void) = "8B 01 68 ? ? ? ? FF 50 20";
+public: virtual void CSave::StartLogging(char const near *) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 83 C1";
+public: virtual void CSave::WriteInt(int const near *,int) = "55 8B EC 8B 45 0C C1";
+public: virtual void CSave::WriteString(char const near *) = "55 8B EC 8B 55 08 8B C2";
+public: virtual void CSave::WriteTick(int const near *,int) = "55 8B EC 51 53 56 57 8B F9 8B 5D";
+public: virtual void CSaveGameBrowserDialog::Activate(void) = "56 8B F1 0F ? ? ? ? ? ? 50 E8";
+public: virtual void CSaveRestoreBlockSet::PostRestore(void) = "56 8B F1 57 33 FF 39 7E 30 7E 16 0F ? ? ? ? 8B 46 24 8B 0C B8 8B 01 FF 50 20";
+public: virtual void CSaveRestoreBlockSet::PostSave(void) = "56 8B F1 57 33 FF 39 7E 30 7E 16";
+public: virtual void CSaveRestoreBlockSet::PreRestore(void) = "56 57 8B F9 33 F6 39 77 30";
+public: virtual void CShadowModelProxy::OnBind(void near *) = "55 8B EC 56 57 FF ? ? ? ? ? 8B F9";
+public: virtual void CShadowProxy::OnBind(void near *) = "56 FF ? ? ? ? ? 8B F1";
+public: virtual void CSoundControllerImp::Update(float) = "8B 41 FC 83 C1 FC FF 50 04 C2";
+public: virtual void CSpatialEntityMgr::Update(float) = "57 8B F9 83 7F 18";
+public: virtual void CTempEnts::Update(void) = "55 8B EC 83 EC 08 57 8B F9 66";
+public: virtual void CToolFrameworkClient::PostRender(void) = "8B 49 04 85 C9 74 05 8B 01 FF 60 18";
+public: virtual void CToolFrameworkClient::PreRender(void) = "8B 49 04 85 C9 74 05 8B 01 FF 60 14";
+public: virtual void CVTFTexture::ComputeAlphaFlags(void) = "55 8B EC 83 EC 18 56 8B F1 81";
+public: virtual void CViewAngleAnimation::ClientThink(void) = "55 8B EC 83 EC 44 53 56 57 8B F9 80";
+public: virtual void CViewEffects::ClearAllFades(void) = "56 8B F1 57 8B 7E 18";
+public: virtual void CViewEffects::ClearPermanentFades(void) = "53 57 8B F9 8B 5F 18";
+public: virtual void CViewEffects::LevelInit(void) = "56 8B F1 8B 06 FF 50 34";
+public: virtual void CViewEffects::Save(class ISave near *) = "55 8B EC 51 53 56 8B 75 08 8B D9 57 6A";
+public: virtual void CViewRender::FreezeFrame(float) = "55 8B EC F3 ? ? ? ? 0F 57 C0 0F";
+public: virtual void CViewRender::StopPitchDrift(void) = "A1 ? ? ? ? F3 ? ? ? ? 0F 5A C0 C6";
+public: virtual void CViewRenderBeams::ClearBeams(void) = "56 8B F1 57 83 7E 04 00 74";
+public: virtual void C_BaseAnimating::Clear(void) = "56 8B F1 6A 3C";
+public: virtual void C_BaseAnimating::DoMuzzleFlash(void) = "8A ? ? ? ? ? FE C0 24 03 88 ? ? ? ? ? C3";
+public: virtual void C_BaseAnimating::SetPredictable(bool) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B CE";
+public: virtual void C_BaseCombatWeapon::AbortReload(void) = "56 8B F1 6A";
+public: virtual void C_BaseCombatWeapon::Spawn(void) = "56 8B F1 57 8B 06 FF ? ? ? ? ? 6A";
+public: virtual void C_BaseCombatWeapon::WeaponIdle(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0F";
+public: virtual void C_BaseEntity::Clear(void) = "56 8B F1 B8";
+public: virtual void C_BaseEntity::CreateModelInstance(void) = "56 8B F1 B8 ? ? ? ? 66";
+public: virtual void C_BaseEntity::MarkShadowDirty(bool) = "55 8B EC 80 7D 08 00 74";
+public: virtual void C_BaseEntity::OnRestore(void) = "56 6A 07 8B F1";
+public: virtual void C_BaseEntity::ResetLatched(void) = "57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 75 35";
+public: virtual void C_BaseEntity::SUB_Remove(void) = "56 8B F1 83 ? ? ? ? ? ? 7E";
+public: virtual void C_BaseEntity::SetPredictable(bool) = "55 8B EC 8A 45 08 88 ? ? ? ? ? 8D";
+public: virtual void C_BaseEntity::Think(void) = "8B C1 8B 50";
+public: virtual void C_BaseEntity::ValidateModelIndex(void) = "8B 11 0F ? ? ? ? ? ? 50";
+public: virtual void C_BaseFlex::OnThreadedDrawSetup(void) = "83 ? ? ? ? ? ? 7C 39";
+public: virtual void C_BasePlayer::AbortReload(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 85";
+public: virtual void C_BasePlayer::ItemPostFrame(void) = "55 8B EC 83 EC 0C 56 57 8B F9 8B 37";
+public: virtual void C_BasePlayer::ItemPreFrame(void) = "53 8B D9 56 57 8B 03";
+public: virtual void C_BasePlayer::UpdateClientData(void) = "56 57 8B F9 33 F6 8B 07 8B CF 56 FF ? ? ? ? ? 85 C0 74 16";
+public: virtual void C_BasePlayer::UpdateSpeechVOIP(bool) = "55 8B EC 80 7D 08 00 57";
+public: virtual void C_CSPlayer::SetSequence(int) = "55 8B EC 80 ? ? ? ? ? ? 74 16";
+public: virtual void C_ClientRagdoll::ClientThink(void) = "55 8B EC 83 EC 30 56 8B F1 80";
+public: virtual void C_ClientRagdoll::SUB_Remove(void) = "8B 01 51 C6";
+public: virtual void C_EntityDissolve::UpdateOnRemove(void) = "56 8B F1 8B ? ? ? ? ? 85 D2";
+public: virtual void C_EntityFlame::ClientThink(void) = "56 8B F1 8D 4E F4";
+public: virtual void C_EnvScreenOverlay::ClientThink(void) = "F3 ? ? ? ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 1D";
+public: virtual void C_Func_Dust::ClientThink(void) = "55 8B EC 83 EC 1C 56 8B F1 8B ? ? ? ? ? A8";
+public: virtual void C_GameInstructor::Shutdown(void) = "56 57 8B F9 8B ? ? ? ? ? 81 ? ? ? ? ? 75 0C A1 ? ? ? ? 35 ? ? ? ? EB 05 8B 01 FF 50 34 85 C0 7E 21";
+public: virtual void C_Item_Healthshot::WeaponIdle(void) = "A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F";
+public: virtual void C_Knife::WeaponIdle(void) = "A1 ? ? ? ? 56 8B F1 F3 ? ? ? ? ? ? ? 0F 2F 40 10 77 3A";
+public: virtual void C_LightGlow::ClientThink(void) = "55 8B EC 83 EC 0C 56 8B F1 8B 46 F4";
+public: virtual void C_MovieExplosion::Update(float) = "55 8B EC 83 EC 14 53 8B D9 83 ? ? ? ? ? ? 0F ? ? ? ? ? F3";
+public: virtual void C_PhysPropClientside::ClientThink(void) = "55 8B EC 51 F3 ? ? ? ? ? ? ? 0F 57";
+public: virtual void C_PhysPropClientside::OnTakeDamage(int) = "55 8B EC 80 ? ? ? ? ? ? 74 1A";
+public: virtual void C_SoundscapeSystem::OnRestore(void) = "A1 ? ? ? ? 8B 40 04 89 41";
+public: virtual void C_SporeTrail::Update(float) = "55 8B EC 56 8B F1 83 ? ? ? ? ? ? 74 51";
+public: virtual void C_SpriteTrail::ClientThink(void) = "56 8D 71 F4 8B CE";
+public: virtual void C_VoteController::Spawn(void) = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+public: virtual void C_WeaponBaseItem::Spawn(void) = "55 8B EC 83 EC 08 56 8B F1 C7 ? ? ? ? ? ? F3";
+public: virtual void C_WeaponCSBaseGun::DoFireEffects(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 75 16";
+public: virtual void C_WeaponCSBaseGun::Spawn(void) = "55 8B EC 83 EC 08 56 8B F1 E8 ? ? ? ? 80";
+public: virtual void C_World::Release(void) = "83 C1 F8 E9";
+public: virtual void CheckImage::Paint(void) = "55 8B EC 83 EC 14 53 8B D9 56 89";
+public: virtual void ClientModeShared::Update(void) = "A1 ? ? ? ? 53 56 8B F1 B9 ? ? ? ? FF";
+public: virtual void ClientModeShared::VGui_Shutdown(void) = "56 8B F1 8B 4E 18 85";
+public: virtual void ConCommandBase::AddFlags(int) = "55 8B EC 8B 45 08 09";
+public: virtual void ConCommandBase::RemoveFlags(int) = "55 8B EC 8B 45 08 F7";
+public: virtual void ConVar::AddFlags(int) = "55 8B EC 8B 49 1C 8B 45 08 09";
+public: virtual void ConVar::SetValue(char const near *) = "55 8B EC 8B 49 04 8B 01 5D FF 60 38";
+public: virtual void ConVar::SetValue(class Color) = "55 8B EC 8B 49 04 FF 75 08 8B 01 FF 50";
+public: virtual void ConVar::SetValue(float) = "55 8B EC 8B 49 04 F3";
+public: virtual void ConVar::SetValue(int) = "55 8B EC 8B 49 04 8B 01 5D FF 60 40";
+public: virtual void CryptoPP::Integer::BERDecode() = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 2C A1 ? ? ? ? 33 C5 89 45 F0 53 56";
+public: virtual void CryptoPP::SimpleKeyingInterface::SetKey() = "57 FF 74 24 0C";
+public: virtual void Dragger::SetMovable(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8B 06";
+public: virtual void MenuItemCheckImage::Paint(void) = "55 8B EC 51 56 57 8B F9 8B 37 FF";
+public: virtual void ParticleSphereProxy::Release(void) = "85 C9 74 07 8B 01";
+public: virtual void RadioImage::Paint(void) = "55 8B EC 51 57 8B F9 8B 07 FF 77";
+public: virtual void SFHudMoney::SetActive(bool) = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B";
+public: virtual void SFHudRadar::Reset(void) = "8B 01 6A 01 FF 50 3C";
+public: virtual void ScoreLeaderboardData::Clear(void) = "56 8B F1 57 80 7E 38";
+public: virtual void TournamentEvent::Clear(void) = "8B 41 30 84";
+public: virtual void TournamentPlayer::Clear(void) = "8B 41 28 84 C0 0F";
+public: virtual void TournamentTeam::Clear(void) = "56 8B F1 57 8B 46 2C";
+public: virtual void VideoPanel::Activate(void) = "55 8B EC 51 53 8B D9 56 57 6A 01";
+public: virtual void WatchableMatchInfo::Clear(void) = "8B 41 58 84";
+public: virtual void vgui::BaseTooltip::HideTooltip(void) = "8A 41 24 24";
+public: virtual void vgui::Button::NavigateFrom(void) = "56 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 FF";
+public: virtual void vgui::Button::OnCursorEntered(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0B";
+public: virtual void vgui::Button::OnCursorExited(void) = "8A ? ? ? ? ? C0 E8 05 A8 01 75 08";
+public: virtual void vgui::Button::PerformLayout(void) = "55 8B EC 83 EC 0C 56 57 8B F9 0F ? ? ? ? ? ? 8B";
+public: virtual void vgui::Button::SetArmed(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8A";
+public: virtual void vgui::Button::SetBlink(bool) = "55 8B EC 56 8B F1 8A 4D 08 66";
+public: virtual void vgui::ComboBox::HideMenu(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 21";
+public: virtual void vgui::ComboBox::ShowMenu(void) = "56 8B F1 8B ? ? ? ? ? 85 C9 74 15 8B 01 6A";
+public: virtual void vgui::Frame::Activate(void) = "53 8B D9 56 57 8B 03 FF ? ? ? ? ? 8B 03 8B CB 8B";
+public: virtual void vgui::Frame::ActivateMinimized(void) = "53 8B D9 8B 03 8B ? ? ? ? ? FF D0 84 C0 74 10";
+public: virtual void vgui::Frame::FlashWindowStop(void) = "53 8B D9 56 8B ? ? ? ? ? 57 8B 03 6A 00 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 80";
+public: virtual void vgui::Frame::SetSizeable(bool) = "55 8B EC 8A ? ? ? ? ? 32 45";
+public: virtual void vgui::Frame::SetSmallCaption(bool) = "55 8B EC 8A 45 08 C0 E0 03";
+public: virtual void vgui::Frame::SetTitleBarVisible(bool) = "55 8B EC 53 8B 5D 08 8A";
+public: virtual void vgui::HTML::SetViewSourceEnabled(bool) = "55 8B EC 8B ? ? ? ? ? FF 75 08 FF ? ? ? ? ? 8B";
+public: virtual void vgui::Image::SetBkColor(class Color) = "55 8B EC 8B 01 FF 75 08 FF 50 48";
+public: virtual void vgui::Image::SetColor(class Color) = "55 8B EC 8B 45 08 89 41 14 8B 11";
+public: virtual void vgui::Image::SetPos(int,int) = "55 8B EC 8B 45 08 89 41 04 8B 45 0C 89 41 08 5D";
+public: virtual void vgui::Label::SetHotkey(wchar_t) = "55 8B EC 66 8B 45 08 66 ? ? ? ? ? ? 5D";
+public: virtual void vgui::Label::SetImagePreOffset(int,int) = "55 8B EC 8B 45 08 8B D1 85 C0 78 3F";
+public: virtual void vgui::Label::SetText(char const near *) = "55 8B EC 8B 45 08 85 C0 53";
+public: virtual void vgui::ListPanel::ApplyItemChanges(int) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE 6A 00 6A 00 FF";
+public: virtual void vgui::ListPanel::SetFont(unsigned long) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 27";
+public: virtual void vgui::ListViewItem::PerformLayout(void) = "55 8B EC 83 EC 08 53 8B D9 56 57 8B 03 FF ? ? ? ? ? 80";
+public: virtual void vgui::ListViewPanel::RemoveItem(int) = "55 8B EC 51 56 8B 75 08 89 4D FC 57";
+public: virtual void vgui::Menu::ActivateItem(int) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 78 4E";
+public: virtual void vgui::Menu::ActivateItemByRow(int) = "55 8B EC 56 8B 75 08 85 F6 78 19";
+public: virtual void vgui::Menu::MoveMenuItem(int,int) = "55 8B EC 51 8B C1 53 56 33 F6 89 45 FC 8B ? ? ? ? ? 85";
+public: virtual void vgui::Menu::OnKeyTyped(wchar_t) = "55 8B EC 81 ? ? ? ? ? 56 57 8B 7D 08 8B F1 66";
+public: virtual void vgui::Menu::OnKillFocus(void) = "55 8B EC 51 53 8B D9 8B ? ? ? ? ? 56 57 89 5D FC 8B 01 FF 50";
+public: virtual void vgui::Menu::SetFont(unsigned long) = "55 8B EC 8B 55 08 56 8B F1 89";
+public: virtual void vgui::MenuItem::PerformLayout(void) = "55 8B EC 51 56 57 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 85";
+public: virtual void vgui::PageTab::OnCursorEntered(void) = "56 8B F1 8B ? ? ? ? ? 8B 01 FF 50 18 89 ? ? ? ? ? 5E";
+public: virtual void vgui::PageTab::OnThink(void) = "56 8B F1 80 ? ? ? ? ? ? 74 48";
+public: virtual void vgui::Panel::DeletePanel(void) = "66 ? ? ? ? B8 ? ? ? ? 66 21";
+public: virtual void vgui::Panel::MarkForDeletion(void) = "53 8B D9 F6 43 64";
+public: virtual void vgui::Panel::MoveToFront(void) = "53 8B D9 56 57 8B 03 8B ? ? ? ? ? FF D0 84";
+public: virtual void vgui::Panel::NavigateFrom(void) = "55 8B EC 83 EC 08 53 8B D9 33 C0";
+public: virtual void vgui::Panel::OnSizeChanged(int,int) = "8B 01 6A 00 6A 00 FF ? ? ? ? ? C2";
+public: virtual void vgui::Panel::OnThink(void) = "55 8B EC 83 EC 20 53 8B D9 89 5D FC 8B 43";
+public: virtual void vgui::Panel::PaintBackground(void) = "55 8B EC 83 EC 18 8D 45 FC";
+public: virtual void vgui::Panel::PaintBorder(void) = "56 57 8B F9 8B 47 60 8B";
+public: virtual void vgui::Panel::PaintBuildOverlay(void) = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 FC 57 50 8D 45 F8 8B 3E 50 8B 01 FF 10 50 8B CE FF 57 14 8B ? ? ? ? ? 68 ? ? ? ? 6A 00 6A";
+public: virtual void vgui::Panel::PerformLayout(void) = "55 8B EC 83 EC 10 56 8B F1 8B ? ? ? ? ? 85 C9 74";
+public: virtual void vgui::Panel::Repaint(void) = "66 ? ? ? ? 57 8B ? ? ? ? ? 85";
+public: virtual void vgui::Panel::RequestFocus(int) = "56 57 8B F9 6A 00 8B 37";
+public: virtual void vgui::Panel::SetBlockDragChaining(bool) = "55 8B EC 8B 49 28 8A 45 08 88 41 58";
+public: virtual void vgui::Panel::SetDragEnabled(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 8B";
+public: virtual void vgui::Panel::SetDragSTartTolerance(int) = "55 8B EC 8B 49 28 8B";
+public: virtual void vgui::Panel::SetDropEnabled(bool,float) = "55 8B EC 8B 51 28";
+public: virtual void vgui::Panel::SetEnabled(bool) = "55 8B EC 53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 10";
+public: virtual void vgui::Panel::SetMouseInputEnabled(bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57 FF 75 08 8B 3E FF 10 50 8B CE FF ? ? ? ? ? 8B";
+public: virtual void vgui::Panel::SetParent(unsigned int) = "55 8B EC 51 8B 45 08 53 8B D9 89";
+public: virtual void vgui::Panel::SetScheme(unsigned long) = "55 8B EC 8B 45 08 3B ? ? ? ? ? 74 06";
+public: virtual void vgui::Panel::SetShowDragHelper(bool) = "55 8B EC 8B 49 28";
+public: virtual void vgui::Panel::SetVisible(bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57";
+public: virtual void vgui::PanelListPanel::RemoveItem(int) = "55 8B EC 83 EC 08 8B C1 56 8B";
+public: virtual void vgui::ProgressBar::SetProgress(float) = "55 8B EC F3 ? ? ? ? 0F ? ? ? ? ? ? 9F F6 C4 44 7B 20";
+public: virtual void vgui::PropertySheet::RequestFocus(int) = "55 8B EC 8B 55 08 56 8B F1 83 FA";
+public: virtual void vgui::PropertySheet::SetSmallTabs(bool) = "55 8B EC 8A 45 08 53";
+public: virtual void vgui::PropertySheet::SetTabWidth(int) = "55 8B EC 53 8B 5D 08 56 57 8B F9 33 F6 8B";
+public: virtual void vgui::RichText::CutSelected(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE 6A";
+public: virtual void vgui::ScrollBarSlider::SetValue(int) = "55 8B EC 8B 55 08 56 57 8B F9 8B ? ? ? ? ? 2B";
+public: virtual void vgui::Slider::SetRange(int,int) = "55 8B EC 8B 55 08 8B ? ? ? ? ? 56 8B";
+public: virtual void vgui::Slider::SetValue(int,bool) = "55 8B EC 8B 45 08 56 8B F1 57 8B ? ? ? ? ? 8B";
+public: virtual void vgui::TextEntry::Backspace(void) = "55 8B EC 51 56 8B F1 8B 06 8B";
+public: virtual void vgui::TextEntry::CutSelected(void) = "56 8B F1 8B 06 FF ? ? ? ? ? 8B 06 8B CE FF ? ? ? ? ? 8B 06";
+public: virtual void vgui::TextEntry::GotoDown(void) = "55 8B EC 83 EC 08 57 8B F9 6A 00 8B 07 FF ? ? ? ? ? 80 ? ? ? ? ? ? 74 13";
+public: virtual void vgui::TextEntry::GotoFirstOfLine(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B CE";
+public: virtual void vgui::TextEntry::GotoLeft(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 33";
+public: virtual void vgui::TextEntry::GotoTextStart(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B 06 8B CE C7";
+public: virtual void vgui::TextEntry::GotoUp(void) = "55 8B EC 83 EC 08 57 8B F9 6A";
+public: virtual void vgui::TextEntry::GotoWordLeft(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 83";
+public: virtual void vgui::TextEntry::GotoWordRight(void) = "56 8B F1 6A 00 8B 06 FF ? ? ? ? ? 8B ? ? ? ? ? 40";
+public: virtual void vgui::TextEntry::InsertChar(wchar_t) = "55 8B EC 8B 55 08 56 8B F1 66";
+public: virtual void vgui::TextEntry::MoveCursor(int,int) = "55 8B EC 83 EC 1C 8B 45 08 56 8B";
+public: virtual void vgui::TextEntry::SaveUndoState(void) = "8B ? ? ? ? ? 53 8B ? ? ? ? ? 56 8B";
+public: virtual void vgui::TextEntry::SelectNone(void) = "8B 01 C7 ? ? ? ? ? ? ? ? ? FF 60";
+public: virtual void vgui::TextEntry::SetEditable(bool) = "55 8B EC 53 8A 5D 08 56 8B F1 51";
+public: virtual void vgui::TextEntry::SetEnabled(bool) = "55 8B EC 56 FF 75 08 8B F1 E8 ? ? ? ? 8B 06 8B CE FF 50";
+public: virtual void vgui::TextEntry::SetFont(unsigned long) = "55 8B EC 8B 45 08 56 8B F1 6A 00";
+public: virtual void vgui::TextEntry::Undo(void) = "55 8B EC 83 EC 08 53 56 8B F1 57 8D ? ? ? ? ? 89";
+public: virtual void vgui::TextImage::Paint(void) = "55 8B EC 83 EC 28 56 8B F1 8D";
+public: virtual void vgui::TextImage::SetFont(unsigned long) = "55 8B EC 8B 45 08 80 49";
+public: virtual void vgui::ToggleButton::DoClick(void) = "56 57 8B F9 8B 07 8B ? ? ? ? ? FF D0 84 C0 8B";
+public: virtual void vgui::TreeNode::OnSetFocus(void) = "8B ? ? ? ? ? 6A 00 8B 01 FF 50 30 C3";
+public: virtual void vgui::TreeNode::Paint(void) = "56 8B F1 83 ? ? ? ? ? ? 7F";
+public: virtual void vgui::TreeNode::StepInto(bool) = "55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 07 6A";
+public: virtual void vgui::TreeNodeText::OnKillFocus(void) = "56 8B F1 E8 ? ? ? ? 6A";
+public: virtual void vgui::TreeNodeText::OnTextChanged(void) = "8B 01 FF ? ? ? ? ? 6A 00 6A 00 8B C8";
+public: virtual void vgui::TreeView::ExpandItem(int,bool) = "55 8B EC 8B 55 08 56 8B F1 85 D2 78 40";
+public: virtual void vgui::TreeView::MakeItemVisible(int) = "55 8B EC 8B 45 08 53 56 57 8B F9 8D 14";
+public: virtual void vgui::TreeView::RangeSelectItems(int) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 85 D2";
+public: virtual void vgui::TreeView::RemoveAll(void) = "56 57 8B F9 33 F6 39 ? ? ? ? ? 7E 41";
+public: virtual void vgui::TreeView::RemoveSelectedItem(int) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 0F ? ? ? ? ? 3B ? ? ? ? ? 0F";
+public: virtual void vgui::TreeView::SetFont(unsigned long) = "55 8B EC 56 57 8B 7D 08 8B F1 85 FF 74 3C";
+public: virtual void vgui::URLButton::DoClick(void) = "56 8B F1 6A 01 8B 06 FF ? ? ? ? ? 8B";
+public: virtual void vgui::URLButton::OnCursorEntered(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 74 0C 8B";
+public: virtual void vgui::URLButton::OnCursorExited(void) = "8A ? ? ? ? ? C0 E8 05 A8 01 75";
+public: virtual void vgui::URLButton::PerformLayout(void) = "55 8B EC 51 56 57 8B F9 8D 45";
+public: virtual void vgui::URLButton::SetArmed(bool) = "55 8B EC 56 8B F1 8A 4D 08 8A ? ? ? ? ? 24";
+public: void Beam_t::ComputeBounds(void) = "55 8B EC 83 EC 0C 56 8B F1 8B 46 30";
+public: void CAsyncCaptionResourceManager::Clear(void) = "55 8B EC 83 EC 10 8B C1 C7";
+public: void CAttributeManager::ClearCache(void) = "57 8B F9 80 7F 20";
+public: void CAvatarImage::SetAvatarSize(int,int) = "55 8B EC 80 79 3C";
+public: void CBaseModelPanel::SetModelAnim(int,bool) = "55 8B EC 8B D1 8B ? ? ? ? ? 85";
+public: void CBaseRopePhysics::SetNumNodes(int) = "55 8B EC 8B 45 08 8B D1 56";
+public: void CBitRead::ReadBitVec3Coord(class Vector near &) = "55 8B EC 56 57 8B 7D 08 8B F1 C7";
+public: void CBoneSnapshot::Init(void) = "56 8B F1 68 ? ? ? ? 6A 00 8D ? ? ? ? ? C7 ? ? ? ? ? 50";
+public: void CCSInventoryManager::GenerateBaseItems(void) = "55 8B EC 83 EC 0C 53 56 33";
+public: void CChoreoEvent::RemoveAllTracks(void) = "56 8B F1 8B ? ? ? ? ? 85 C0 7E 48";
+public: void CChoreoEvent::SetActive(bool) = "55 8B EC 8A 45 08 C0 E0 06";
+public: void CChoreoEvent::SetPlayOverScript(bool) = "55 8B EC 8A ? ? ? ? ? 8A";
+public: void CChoreoEvent::SetTrackLookupSet(bool) = "55 8B EC 8A 45 08 C0 E0 03 32 ? ? ? ? ? 24 08 30 ? ? ? ? ? 5D";
+public: void CClientEntityList::Release(void) = "53 56 57 8B F9 8B ? ? ? ? ? 85 C0";
+public: void CClientSteamContext::Activate(void) = "56 8B F1 80 ? ? ? ? ? ? 75 3C";
+public: void CCollisionProperty::UpdatePartition(void) = "55 8B EC 83 EC 18 57 8B F9 8B 4F";
+public: void CConcurrentViewData::Purge(void) = "55 8B EC 51 56 8B F1 8B ? ? ? ? ? 85 C9 74 0F";
+public: void CEconItem::SetItemID(unsigned __int64) = "55 8B EC 8B 55 08 53 8B 5D 0C 56 8B";
+public: void CEconItem::SetOriginalID(unsigned __int64) = "55 8B EC 8B 55 08 8B 45 0C";
+public: void CEngineSprite::SetFrame(enum RenderMode_t,int) = "55 8B EC 0F B7 11";
+public: void CEngineSprite::Shutdown(void) = "56 8B F1 57 BF ? ? ? ? 0F B7 16";
+public: void CFlexAnimationTrack::Resort(int) = "55 8B EC 83 EC 24 8B 45 08 56";
+public: void CFmtStrN<256,0>::Append(char) = "55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 7D";
+public: void CGameStringPool::PurgeDeferredDeleteList(void) = "56 8B F1 57 33 FF 39 7E 2C";
+public: void CHud::LevelInit(void) = "55 8B EC 51 53 8B D9 56 33";
+public: void CHudMessage::MessageScanNextChar(void) = "55 8B EC 83 EC 14 53 56 8B F1 33";
+public: void CHudMessage::MessageScanStart(void) = "56 57 8B F9 8B ? ? ? ? ? 8B 01 85";
+public: void CIKContext::ClearTargets(void) = "33 C0 39 ? ? ? ? ? 7E 1B";
+public: void CLocatorTarget::Deactivate(bool) = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C9 74 12";
+public: void CLocatorTarget::SetVisible(bool) = "55 8B EC 8A 45 08 56 8B F1 38";
+public: void CLocatorTarget::StartPresent(void) = "A1 ? ? ? ? 8B 40 10 89 ? ? ? ? ? C3";
+public: void CMemoryStack::Term(void) = "56 8B F1 8B 4E 14 85";
+public: void CNetGraphPanel::DrawHatches(int,int,int) = "55 8B EC 83 EC 24 89";
+public: void CNetGraphPanel::DrawStreamProgress(int,int,int) = "55 8B EC 83 EC 14 8B 45 08 56 8B";
+public: void CNetGraphPanel::InitColors(void) = "55 8B EC 83 EC 20 F3";
+public: void CParticleCollection::ResetParticleCache(void) = "55 8B EC 51 53 8B D9 83 ? ? ? ? ? ? 74";
+public: void CParticleCollection::StartEmission(bool) = "55 8B EC 57 8B F9 8B 47 48";
+public: void CParticleMgr::IncrementFrameCode(void) = "66 ? ? ? ? 75 40";
+public: void CParticleMgr::PostRender(void) = "56 8B F1 57 BF ? ? ? ? 0F B7 46 34";
+public: void CParticleMgr::RemoveAllEffects(void) = "55 8B EC 83 EC 08 56 57 8B F9 89";
+public: void CParticleMgr::SpewInfo(bool) = "53 8B ? ? ? ? ? 57 68";
+public: void CParticleSnapshot::Purge(void) = "56 8B F1 E8 ? ? ? ? 0F ? ? ? ? ? ? C7";
+public: void CPixelVisibilitySystem::DeleteUnusedSets(bool) = "55 8B EC 83 EC 08 57 8B F9 B9";
+public: void CRagdoll::PhysForceRagdollToSleep(void) = "55 8B EC 81 ? ? ? ? ? 53 8B D9 C7 ? ? ? ? ? ? 56";
+public: void CSOAContainer::AllocateData(int,int,int) = "55 8B EC 8B 55 08 8B 45 0C 53";
+public: void CSOAContainer::Purge(void) = "56 8B F1 E8 ? ? ? ? 68 ? ? ? ? 8D ? ? ? ? ? 68";
+public: void CSOAContainer::PurgeData(void) = "56 8B F1 57 8B ? ? ? ? ? 85 D2 74 1C";
+public: void CSceneTokenProcessor::SetBuffer(char near *) = "55 8B EC 8B 45 08 89 41 04";
+public: void CScriptedIconLesson::Init(void) = "55 8B EC 83 EC 0C 8D";
+public: void CSoftbody::InitDefaults(void) = "33 C0 56 8B F1 83";
+public: void CStringPool::FreeAll(void) = "53 56 57 8B F9 BE ? ? ? ? 0F B7 47 10 66 90 66 3B C6 74 16 0F B7 C8 8D 14 49";
+public: void CStudioHdr::setBoneFlags(int,int) = "55 8B EC 51 53 8B 5D 0C 8B C1";
+public: void CSubtitlePanel::Pause(bool) = "55 8B EC 8A 45 08 83";
+public: void CTextLesson::Init(void) = "55 8B EC 51 56 68 ? ? ? ? 8D";
+public: void CTextureAllocator::DeallocateAllTextures(void) = "56 57 8B F9 8D 4F 04 E8 ? ? ? ? 83";
+public: void CUnderWaterView::CRefractionView::Setup(void) = "53 8B D9 B9 ? ? ? ? 56 57 8B FB 8D ? ? ? ? ? 8D 46 08 F7 DE 1B F6 23 F0 F7 DF 8D 43 08 1B FF 23 F8 F3 A5 8B CB E8 ? ? ? ? 80 7B";
+public: void CUtlBinaryBlock::Set(void const near *,int) = "55 8B EC 53 56 33 DB";
+public: void CUtlBuffer::EatWhiteSpace(void) = "56 8B F1 F6 46 15 01 74";
+public: void CUtlBuffer::GetString(char near *,int) = "55 8B EC 51 57 8B F9 80 7F 14";
+public: void CUtlBuffer::Purge(void) = "56 8B F1 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6";
+public: void CUtlDict<class CUtlString,int>::RemoveAll(void) = "53 8B D9 56 8B 73 10 83 FE FF 74 3E 8B 43 04 8D 0C F6";
+public: void CUtlMemoryPool::Clear(void) = "53 8B D9 57 8B 53";
+public: void CUtlStreamBuffer::Close(void) = "56 8B F1 57 F6 46 15";
+public: void CVertexBuilder::AdvanceVertex(void) = "FF ? ? ? ? ? 8B ? ? ? ? ? 3B ? ? ? ? ? 7E";
+public: void CVertexBuilder::Reset(void) = "8B 41 54 89";
+public: void C_AnimationLayer::Reset(void) = "56 8B F1 0F 57 C9";
+public: void C_BaseAnimating::InvalidateBoneCache(void) = "80 ? ? ? ? ? ? 74 16 A1 ? ? ? ? 48 C7 ? ? ? ? ? ? ? ? ? 89 ? ? ? ? ? C3";
+public: void C_BaseAnimating::RagdollMoved(void) = "55 8B EC 83 EC 18 56 8B F1 8B ? ? ? ? ? 8B";
+public: void C_BaseAnimating::ResetSequenceInfo(void) = "56 8B F1 83 ? ? ? ? ? ? 75 0A";
+public: void C_BaseCombatWeapon::ClassifyWeaponModel(void) = "53 56 57 8B F9 8B 47 04";
+public: void C_BaseCombatWeapon::GiveDefaultAmmo(void) = "56 8B F1 8B 06 8B ? ? ? ? ? FF D0 84 C0 8B";
+public: void C_BaseEntity::AddEffects(int) = "55 8B EC 53 8B 5D 08 56 8B F1 09";
+public: void C_BaseEntity::AddToLeafSystem(void) = "0F ? ? ? ? ? ? 50 E8 ? ? ? ? C3";
+public: void C_BaseEntity::CreateShadow(void) = "55 8B EC 83 EC 08 53 56 8B ? ? ? ? ? 57";
+public: void C_BaseEntity::DestroyAllDataObjects(void) = "56 57 8B F9 33 F6 66 ? ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 0F";
+public: void C_BaseEntity::DrawBBoxVisualizations(void) = "55 8B EC 83 EC 18 53 8B D9";
+public: void C_BaseEntity::RemoveFromAimEntsList(void) = "57 8B F9 8B ? ? ? ? ? 83 F8 FF 0F ? ? ? ? ? 8B";
+public: void C_BaseEntity::RemoveVar(void near *,bool) = "55 8B EC 56 8B F1 33 C0 8B";
+public: void C_BaseEntity::SetCollisionGroup(int) = "55 8B EC 8B 45 08 39 ? ? ? ? ? 74 0B";
+public: void C_BaseEntity::ShutdownPredictable(void) = "56 8B ? ? ? ? ? 33 C0 57";
+public: void C_BasePlayer::UpdateFogBlend(void) = "55 8B EC 83 EC 1C 56 8B F1 57";
+public: void C_Beam::SetBeamFlags(int) = "55 8B EC 8B 45 08 39 ? ? ? ? ? 74";
+public: void C_Beam::SetEndEntity(class C_BaseEntity near *) = "55 8B EC 56 8B 75 08 57 8B F9 85 F6 74 0B 8B 06 8B CE FF 50 08 8B 00 EB 03 83 C8 FF 8B ? ? ? ? ? 49";
+public: void C_CSGameRules::CloseBuyMenu(int) = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 0F ? ? ? ? ? 8B ? ? ? ? ? 8B";
+public: void C_CSPlayer::ClearAllBulletHitModels(void) = "57 8B F9 8B ? ? ? ? ? 85 C0 74 2D";
+public: void C_CSPlayer::HandleTaserAnimation(void) = "55 8B EC 83 EC 08 56 8B F1 80 ? ? ? ? ? ? 0F ? ? ? ? ? 80 ? ? ? ? ? ? 0F ? ? ? ? ? A1";
+public: void C_ColorCorrection::EnableOnClient(bool,bool) = "55 8B EC 56 8B F1 80 ? ? ? ? ? ? 75 15";
+public: void C_EconItemView::ClearInventoryImageRgba(void) = "55 8B EC 81 ? ? ? ? ? 57 8B F9 C7 ? ? ? ? ? ? C7";
+public: void C_EconItemView::Invalidate(void) = "56 8B F1 80 ? ? ? ? ? ? 57 8D ? ? ? ? ? 74 13";
+public: void C_EconItemView::SetItemID(unsigned __int64) = "55 8B EC 8B 45 08 53 8B 5D 0C 56 57";
+public: void C_EnvScreenOverlay::StartCurrentOverlay(void) = "56 8B F1 8B ? ? ? ? ? 83 F9 0A";
+public: void C_EnvScreenOverlay::StartOverlays(void) = "56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 C7";
+public: void C_EnvScreenOverlay::StopOverlays(void) = "56 8B F1 51 C7 ? ? ? ? ? ? 8B 06 FF ? ? ? ? ? 80";
+public: void C_SoundscapeSystem::OnStopAllSounds(void) = "56 8B F1 83 ? ? ? ? ? ? 57";
+public: void ConVarRef::Init(char const near *,bool) = "55 8B EC 57 8B F9 8B ? ? ? ? ? 85 C9 74 0C";
+public: void CountdownTimer::Invalidate(void) = "55 8B EC 83 EC 08 F3";
+public: void KeyValues::AddSubKey(class KeyValues near *) = "55 8B EC 8B 41 18 85 C0 75";
+public: void KeyValues::RemoveSubKey(class KeyValues near *) = "55 8B EC 56 8B 75 08 85 F6 74 4D 8B 51";
+public: void KeyValues::SetInt(char const near *,int) = "55 8B EC 6A 01 FF 75 08 E8 ? ? ? ? 85 C0 74 0A 8B";
+public: void KeyValues::SetName(char const near *) = "55 8B EC 51 56 8B F1 C7 ? ? ? ? ? ? FF";
+public: void KeyValues::deleteThis(void) = "56 8B F1 85 F6 74 13";
+public: void _HeapManager::Destructor(void) = "57 8B F9 83 7F 04 00 74 2E";
+public: void bf_write::WriteShort(int) = "55 8B EC 6A 10";
+public: void bf_write::WriteUBitLong(unsigned int,int,bool) = "55 8B EC 53 8B 5D 0C 57 8B";
+public: void ceng::ui::CWindowWidget::OnDragBy() = "55 8B EC F3 ? ? ? ? 83 EC 08 F3";
+public: void const near * CUtlBuffer::PeekGet(int,int) = "55 8B EC 56 8B F1 57 F6 46 14 02";
+public: void constraint_ballsocketparams_t::Defaults(void) = "C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C6 41 2C";
+public: void fourplanes_t::ComputeSignbits(void) = "0F 28 01 0F";
+public: void near * CUtlMemoryPool::AllocZero(unsigned int) = "55 8B EC 53 8B 5D 08 56 8B F1 3B 1E";
+public: void near * C_BaseEntity::GetPredictedFrame(int) = "55 8B EC 57 8B F9 83";
+public: void netadr_s::SetIP(unsigned int) = "55 8B EC 8B 45 08 0F C8";
+public: void netadr_s::SetPort(unsigned short) = "55 8B EC 66 8B 45 08 86";
+public: void vgui::CItemButton::SetSectionID(int) = "55 8B EC 53 8B 5D 08 56 8B F1 3B ? ? ? ? ? 74";
+public: void vgui::Menu::ClearCurrentlyHighlightedItem(void) = "56 8B F1 8B ? ? ? ? ? 85 D2 78";
+public: void vgui::Menu::DeleteAllItems(void) = "53 56 57 8B F9 8B ? ? ? ? ? 83 F8 FF 74 23";
+public: void vgui::Panel::MakePopup(bool,bool) = "55 8B EC 8B 01 56 8B ? ? ? ? ? 57 6A";
+public: void vgui::Panel::SetAlpha(int) = "55 8B EC 66 ? ? ? ? 0F 5B C0 F3";
+public: void vgui::Panel::SetBounds(int,int,int,int) = "55 8B EC 53 56 8B ? ? ? ? ? 8B D9 57 FF";
+public: void vgui::RichText::GetText(int,wchar_t near *,int) = "55 8B EC 56 57 8B 7D 0C 8B F1 85 FF 74 4C";
+public: void vgui::RichText::GotoTextEnd(void) = "55 8B EC 83 EC 08 56 8B F1 8D 55";
+public: void vgui::RichText::GotoTextStart(void) = "56 8B F1 6A 00 8B ? ? ? ? ? C7";
+public: void vgui::SectionedListPanel::MoveSelectionUp(void) = "53 57 8B F9 8B 07 FF ? ? ? ? ? 8B D8 83 FB FF 74 66";
+public: void vgui::TreeNode::RemoveChildren(void) = "56 57 8B F9 8B ? ? ? ? ? 83 EE 01 78 27";
+public: void vgui::TreeNode::SetFont(unsigned long) = "55 8B EC 53 8B 5D 08 57 8B F9 85 DB 74 50";
+public: void vgui::TreeNode::SetNodeExpanded(bool) = "55 8B EC 8A 45 08 56 8B F1 88 ? ? ? ? ? 84 C0 74 51";
+public: wchar_t const near * CModInfo::GetGameTitle(void) = "56 8B F1 66 83 3E";
+putShortMSB() = "56 57 8B F9 8B CA";
+quantize3_ord_dither() = "55 8B EC 83 EC 28 83";
+quantize_fs_dither() = "55 8B EC 83 EC 40 83";
+quantize_ord_dither() = "55 8B EC 83 EC 20 83 7D 14";
+r_cheapwaterend() = "55 8B EC 51 8B 45 08 83 38 02 75 27 FF ? ? ? ? ? E8 ? ? ? ? 8B ? ? ? ? ? D9 5D 08 F3 ? ? ? ? F3 ? ? ? ? 8B 01 FF 50 44";
+r_cheapwaterstart() = "55 8B EC 51 8B 45 08 83";
+r_shadowcolor() = "55 8B EC 56 8B 75 08 8B 06";
+read_markers() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 1E";
+read_restart_marker() = "55 8B EC 56 8B 75 08 83 ? ? ? ? ? ? 75 10";
+realize_virt_arrays() = "55 8B EC 51 53 56 57 8B 7D 08 33";
+reduce_script() = "53 8B D9 33 D2 56 33";
+reset_error_mgr() = "55 8B EC 8B 4D 08 8B 01 C7";
+reset_input_controller() = "55 8B EC 56 8B 75 08 56 8B ? ? ? ? ? C7";
+reset_marker_reader() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C7 ? ? ? ? ? ? ? ? ? C7";
+rgb_gray_convert() = "55 8B EC 83 EC 0C 8B 4D 08 53 8B ? ? ? ? ? 8B";
+rgb_ycc_convert() = "55 8B EC 83 EC 18 83 6D";
+rgb_ycc_start() = "53 8B DC 83 EC 08 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 8B 4B";
+script_execute_client() = "55 8B EC 8B ? ? ? ? ? 8B 01 8B ? ? ? ? ? FF D0 84 C0 74 7C";
+script_help_client() = "55 8B EC 8B ? ? ? ? ? 81 ? ? ? ? ? 8B 01 8B";
+select_colors() = "55 8B EC 51 53 56 8B 71 04";
+select_ncolors() = "55 8B EC 83 EC 18 53 89";
+select_scan_parameters() = "53 56 8B F1 57 8B ? ? ? ? ? 85 C9 74 6F";
+send_all_trees() = "55 8B EC 51 53 56 8B F1 8B C2";
+send_bits() = "55 8B EC 51 53 8B 5D 08 57 89";
+send_tree() = "55 8B EC 83 EC 1C 53 56 57 8B FA";
+sep_downsample() = "55 8B EC 83 EC 08 53 56 8B 75 08 C7";
+sep_upsample() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B ? ? ? ? ? 89";
+set_bottom_pointers() = "55 8B EC 83 EC 0C 53 56 8B F1 57 33 FF 89";
+set_next_think() = "55 8B EC 56 57 8B F9 8B ? ? ? ? ? 8B C6";
+set_wraparound_pointers() = "55 8B EC 83 EC 18 53 8B D9 56 33";
+setuiname() = "68 ? ? ? ? 51 68 ? ? ? ? E8";
+shortsort() = "8B FF 55 8B EC 51 A1 ? ? ? ? 33 C5 89 45 FC 8B";
+showinfo() = "55 8B EC 51 8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? 56";
+showpanel() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 15";
+skip_input_data() = "55 8B EC 53 8B 5D 08 56 57 8B 7D 0C 8B 73";
+skip_variable() = "55 8B EC 51 53 56 57 8B 7D 08 8B 77";
+spec_pos() = "55 8B EC 83 E4 C0 83 EC 40";
+start_iMCU_row() = "83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C3 8B ? ? ? ? ? 48 39 42";
+start_iMCU_row_0() = "83 ? ? ? ? ? ? 8B ? ? ? ? ? 7E 16";
+start_input_pass() = "55 8B EC 56 8B 75 08 8B CE E8";
+start_input_pass_0() = "55 8B EC 8B 4D 08 C7";
+start_output_pass() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 83 7F";
+start_pass() = "55 8B EC 83 EC 08 80 7D 0C 00 56 8B";
+start_pass_0() = "55 8B EC 83 EC 0C 53 56 8B 75 08 57 80 ? ? ? ? ? ? 8B ? ? ? ? ? 89 5D 08";
+start_pass_1() = "55 8B EC 83 EC 14 53 8B 5D 08 33";
+start_pass_1_quant() = "55 8B EC 56 8B 75 08 57 8B ? ? ? ? ? 8B 47 10 89";
+start_pass_2_quant() = "55 8B EC 53 56 8B 75 08 57 83 7E";
+start_pass_coef() = "55 8B EC 8B 4D 08 56 8B ? ? ? ? ? C7";
+start_pass_dpost() = "55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83 E8 00 0F";
+start_pass_fdctmgr() = "55 8B EC 83 EC 18 8B 55 08 53 56 57 8B ? ? ? ? ? 33";
+start_pass_huff() = "55 8B EC 8A 4D";
+start_pass_huff_decoder() = "55 8B EC 83 EC 0C 53 56 8B 75 08 57 80";
+start_pass_main() = "55 8B EC 8B 55 08 80 ? ? ? ? ? ? 8B";
+start_pass_main_0() = "55 8B EC 8B 4D 08 8B 45 0C 56 8B ? ? ? ? ? 83";
+start_pass_merged_upsample() = "55 8B EC 8B 45 08 8B ? ? ? ? ? C6";
+start_pass_prep() = "55 8B EC 83 7D 0C 00 56";
+start_pass_upsample() = "55 8B EC 8B 4D 08 8B ? ? ? ? ? 8B ? ? ? ? ? 89";
+static_attrib_t::BInitFromKV_MultiLine() = "55 8B EC 81 ? ? ? ? ? 53 8B 5D 0C 89";
+stb__InitDXT() = "33 D2 8B CA";
+stopvideos() = "56 33 F6 39 ? ? ? ? ? 7E 2D";
+string_operation() = "55 8B EC 53 8B 5D 08 56 8B F1 8B";
+team_color() = "55 8B EC 83 EC 10 C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 83";
+term_destination() = "55 8B EC 8B 45 08 8B 48 18";
+testfreezeframe_f() = "8B ? ? ? ? ? 51 C7 ? ? ? ? ? ? 8B 01 FF 50 7C C3";
+toggleRdrOpt() = "80 ? ? ? ? ? ? 8B ? ? ? ? ? 0F 94";
+toggleThreadedBuildRWList() = "A1 ? ? ? ? B9 ? ? ? ? 53 FF 50 34 8B ? ? ? ? ? 85 C0 0F 94";
+und_strncmp() = "55 8B EC 8B 45 10 85 C0 75 02";
+unsigned int CryptoPP::BitPrecision<unsigned int>() = "8B 44 24 04 57";
+unsigned int CryptoPP::BytePrecision<unsigned __int64>() = "8B 44 24 04 55";
+unsigned int CryptoPP::BytePrecision<unsigned int>() = "8B 44 24 04 57 8B 38 85 FF 75 04 33 C0 5F C3 56 33 F6 BA ? ? ? ? 8D 0C 32 8B C7 D1 E9 D3 E8 85 C0 74 04 8B F1 EB 02 8B D1 8B CA 2B CE 83 F9 08";
+unsigned int HashString(char const near *) = "0F B6 01 33";
+unsigned int HashStringCaseless(char const near *) = "53 56 8B F1 33 DB 57 33 FF 0F";
+unsigned int ThreadedLoadLibraryFunc(void near *) = "55 8B EC 56 8B 75 08 6A";
+unsigned int google::protobuf::ghtonl(unsigned int) = "55 8B EC 8B 4D 08 8B C1 C1 E8";
+update_box() = "55 8B EC 83 EC 2C 8B ? ? ? ? ? 53 8B DA";
+updatewindow() = "55 8B EC 51 53 8B D9 B8";
+use_merged_upsample() = "80 79 48 00 0F";
+usrCmd_Start() = "A1 ? ? ? ? B9 ? ? ? ? FF 50 34 8B ? ? ? ? ? 85 C0 6A";
+validate_script() = "55 8B EC 81 ? ? ? ? ? 53 56 8B F1 57 83 ? ? ? ? ? ? 7F";
+vgui::AnimationController::LoadScriptFile() = "55 8B EC 83 EC 08 89 4D FC 8B ? ? ? ? ? 56";
+vgui::BuildGroup::SaveControlSettings() = "55 8B EC 81 ? ? ? ? ? 32 C0 56";
+vgui::BuildModeDialog::OnCommand() = "55 8B EC A1 ? ? ? ? 81 ? ? ? ? ? 53 56 57 8B D9";
+vgui::BuildModeDialog::OnCreateNewControl() = "55 8B EC 56 57 8B 7D 08 8B F1 BA ? ? ? ? 8B CF E8 ? ? ? ? 85 C0 74 52";
+vgui::Button::ApplySchemeSettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 06 8B CE 68";
+vgui::Button::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 08 56 57 8B 7D 08 8B F1 57 E8 ? ? ? ? 68";
+vgui::Button::Init() = "56 57 8B F9 B8 ? ? ? ? 6A";
+vgui::CConsolePanel::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 8B F9 53";
+vgui::CItemButton::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03";
+vgui::CItemButton::OnMouseDoublePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F ? ? ? ? ? 80 ? ? ? ? ? ? 74";
+vgui::CItemButton::OnMousePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 85 C0 0F";
+vgui::CheckButton::ApplySchemeSettings() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 8B F1 53 89 75 FC";
+vgui::ComboBox::OnMenuItemSelected() = "55 8B EC 51 56 8B F1 81";
+vgui::ContextLabel::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 56 8B 75 08 8B D9 56";
+vgui::ExpandButton::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D 4D 08 57";
+vgui::FileData_t::FileData_t() = "55 8B EC 53 8B 5D 0C 8B CB 56 57 8B 03 FF 50 44";
+vgui::FileData_t::~FileData_t() = "56 8B F1 C7 ? ? ? ? ? ? 83 7E 70";
+vgui::FileOpenDialog::ApplySchemeSettings() = "55 8B EC 56 57 FF 75 08 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 8B";
+vgui::Frame::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 8B D9 57 6A 01";
+vgui::Frame::Frame() = "55 8B EC 56 8B 75 08 57 68";
+vgui::Frame::GetSysMenu() = "53 56 57 8B F9 83 ? ? ? ? ? ? 0F ? ? ? ? ? A1";
+vgui::FrameButton::ApplySchemeSettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8D 4D 08 56 68";
+vgui::ListPanel::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B F9 6A";
+vgui::ListPanel::RBTreeLessFunc() = "55 8B EC 56 8B 75 0C 57 8B 7D 08 FF";
+vgui::ListViewItem::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03 8D";
+vgui::ListViewPanel::ApplySchemeSettings() = "55 8B EC 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 33 8D 45 08 57 68 ? ? ? ? 50 8B CB FF ? ? ? ? ? 8B CB FF 30 FF ? ? ? ? ? 8B 07";
+vgui::Menu::ApplySchemeSettings() = "55 8B EC 83 EC 10 53 8B 5D 08 56 57 53";
+vgui::Menu::LayoutMenuBorder() = "53 8B D9 56 8B ? ? ? ? ? 57 8B 03 8B 3E FF 50 50 50 8B CE FF 57 20 68";
+vgui::Menu::SetCurrentlyHighlightedItem() = "55 8B EC 53 8B 5D 08 56 57 53 8B F9 E8 ? ? ? ? 8B ? ? ? ? ? 33";
+vgui::Menu::SetCurrentlySelectedItem() = "55 8B EC 56 8B F1 57 8B 7D 08 8B ? ? ? ? ? 3B FA";
+vgui::MenuBar::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B";
+vgui::MenuButton::OnKillFocus() = "55 8B EC 56 57 6A 00 8B F1 8B 4D 08 68 ? ? ? ? E8 ? ? ? ? 85 C0 74 0B 80 78 10 04 75 05 8B 78";
+vgui::MenuItem::ApplySchemeSettings() = "55 8B EC 83 EC 14 53 56 57 8B 7D";
+vgui::PageTab::ApplySettings() = "55 8B EC 83 E4 F8 83 EC 0C 53 8B 5D 08 8B C1";
+vgui::Panel::AddPropertyConverter() = "55 8B EC 83 EC 10 56 57 89";
+vgui::Panel::GetWide() = "55 8B EC 83 EC 08 56 8B ? ? ? ? ? 8D 45 F8";
+vgui::Panel::Init() = "53 56 57 8B D9 6A 01";
+vgui::Panel::InitPropertyConverters() = "51 80 ? ? ? ? ? ? 0F ? ? ? ? ? BA";
+vgui::Panel::InternalMouseFocusTicked() = "55 8B EC 53 8B D9 83 ? ? ? ? ? ? 75 5D";
+vgui::Panel::OnContinueDragging() = "55 8B EC 83 EC 10 53 8B D9 8B 43 28";
+vgui::Panel::OnKeyCodePressed() = "55 8B EC 56 8B F1 8B ? ? ? ? ? 6A 53";
+vgui::PanelListPanel::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 01 68";
+vgui::PropertyDialog::ActivateBuildMode() = "55 8B EC 83 EC 10 53 8B D9 80 ? ? ? ? ? ? 74";
+vgui::PropertySheet::OnThink() = "56 8B F1 E8 ? ? ? ? 83 ? ? ? ? ? ? 74 20";
+vgui::QueryBox::OnKeyCodeTyped() = "55 8B EC 8B 45 08 83 F8 46 75 10";
+vgui::RadioButton::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 07";
+vgui::RadioButton::ApplySettings() = "55 8B EC 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 8B 07 8B";
+vgui::RadioButton::GetDescription() = "68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 68";
+vgui::RichText::ApplySchemeSettings() = "55 8B EC 51 53 56 57 8B 7D 08 8B D9 57 E8 ? ? ? ? 8B 03";
+vgui::ScrollBar::ApplySchemeSettings() = "55 8B EC 83 EC 0C 53 56 8B 75 08 8B D9 57 56 E8";
+vgui::ScrollBar::SetButton() = "55 8B EC 56 57 8B 7D 0C 8B F1 8B ? ? ? ? ? ? 85";
+vgui::ScrollBarSlider::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 37";
+vgui::SectionedListPanel::ApplySettings() = "55 8B EC 53 56 8B 75 08 8B D9 56 E8 ? ? ? ? 6A";
+vgui::Slider::ApplySettings() = "55 8B EC 83 E4 F8 51 53 56 8B 75 08 57 56 8B F9 E8 ? ? ? ? 6A 00";
+vgui::Slider::RecomputeNobPosFromValue() = "55 8B EC 83 EC 10 53 56 8B F1 8D";
+vgui::TextEntry::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 56 57 53";
+vgui::TextEntry::GetDropContextMenu() = "55 8B EC 56 57 8B 7D 08 8B F1 6A 00 56";
+vgui::TextImage::SetUseAsianWordWrapping() = "80 ? ? ? ? ? ? 56 57 8B F9 75";
+vgui::TextTooltip::TextTooltip() = "55 8B EC 83 EC 14 53 8B D9 56 57 6A";
+vgui::ToggleButton::ApplySchemeSettings() = "55 8B EC 57 FF 75 08 8B F9 E8 ? ? ? ? FF 75 08 8B 07";
+vgui::ToggleButton::DoClick() = "53 56 57 8B F9 8B 07 8B ? ? ? ? ? FF";
+vgui::TreeView::ApplySchemeSettings() = "55 8B EC 83 EC 08 53 8B 5D 08 56 57 8B F9 53 89 7D FC E8 ? ? ? ? 8B 03 8B CB 8B 37 68 ? ? ? ? FF 50 08 50 8B CF FF ? ? ? ? ? 8B 37";
+vgui::TreeView::ClearSelection() = "56 8B F1 C7 ? ? ? ? ? ? ? ? ? FF ? ? ? ? ? 6A 24 8B C8 8B 10 FF 52 04 85 C0 74 1B";
+vgui::URLLabel::ApplySchemeSettings() = "55 8B EC 51 53 8B 5D 08 8B C1 56 57 89 45 FC 8B";
+vgui::URLLabel::OnMousePressed() = "55 8B EC 83 7D 08 6B 75 1B";
+viewanim_addkeyframe() = "55 8B EC 83 EC 1C 83 ? ? ? ? ? ? 0F";
+viewanim_create() = "55 8B EC 8B ? ? ? ? ? 85 C9 74 10";
+void CC_CL_Find_Ent_Index(class CCommand const near &) = "55 8B EC 8B 4D 08 8B 01";
+void ClientVoiceMgr_LevelInit(void) = "8B ? ? ? ? ? 85 C9 0F ? ? ? ? ? C3";
+void CreateStuckTable(void) = "55 8B EC 83 EC 0C 83 ? ? ? ? ? ? 0F ? ? ? ? ? 68";
+void CryptoPP::BERDecodeNull() = "51 56 8B 74 24 0C 8D";
+void CryptoPP::Baseline_Multiply2() = "53 55 8B 6C 24 14";
+void CryptoPP::Baseline_Multiply4() = "53 55 8B 6C 24 14 56";
+void CryptoPP::Baseline_Multiply8() = "53 8B 5C 24 0C 55";
+void CryptoPP::Baseline_MultiplyBottom2() = "53 8B 5C 24 0C 56 8B 74";
+void CryptoPP::Baseline_MultiplyTop2() = "53 8B 5C 24 0C 55 56";
+void CryptoPP::Baseline_MultiplyTop4() = "83 EC 08 8B 44 24 14";
+void CryptoPP::Baseline_MultiplyTop8() = "83 EC 08 8B 44 24 14 53 8B 5C 24 14 55 8B 28 56 8B 43 18";
+void CryptoPP::DEREncodeNull() = "51 56 8B 74 24 0C 8D 4C 24 04";
+void CryptoPP::RecursiveMultiplyBottom() = "57 8B 7C 24 18 3B";
+void CryptoPP::RecursiveSquare() = "51 8B 44 24 14";
+void CryptoPP::SSE2_Square4() = "55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C";
+void CryptoPP::SSE2_Square8() = "55 8B EC 53 56 57 8B 45 0C 8B 4D 08 8D ? ? ? ? ? 8B F4 83 E4 F0 8D 7C 24 80";
+void DefaultConditionalErrorProc(char const near *) = "55 8B EC FF 75 08 68 ? ? ? ? FF";
+void DisconnectInterfaces(void) = "8B ? ? ? ? ? 83 EA 01 89 ? ? ? ? ? 78";
+void GameInstructor_Init(void) = "8B ? ? ? ? ? 85 C9 74 57";
+void IN_Impulse(class CCommand const near &) = "55 8B EC 8B 45 08 83 38 01";
+void InitSinCosTable(void) = "56 33 F6 66 0F 6E";
+void InitSmokeFogOverlay(void) = "8B ? ? ? ? ? 85 C9 74 0F 8B 01 FF 50 34";
+void OnPlayerDecalsLevelShutdown(void) = "8B ? ? ? ? ? 56 8B ? ? ? ? ? 0F 1F 00 83 FE FF 74 4D";
+void PurgeOnDataChangedEvents(void) = "0F ? ? ? ? ? ? 85 C0 74 0F";
+void RecvProxyArrayLength_PlayerArray(void near *,int,int) = "55 8B EC 8B 4D 08 8B 45 10";
+void ResetWindspeed(void) = "0F ? ? ? ? ? ? BA ? ? ? ? 66";
+void ShakeRopesCallback(class CEffectData const near &) = "55 8B EC 83 EC 10 8B 4D";
+void UGCUtil_Shutdown(void) = "8B ? ? ? ? ? 85 C9 74 20 8B 01 6A";
+void UpdateDirtySpatialPartitionEntities(void) = "68 ? ? ? ? B9 ? ? ? ? E8 ? ? ? ? 83 ? ? ? ? ? ? 75";
+void VGui_ClearVideoPanels(void) = "56 8B ? ? ? ? ? 83 C6 FF";
+void __CreateGameRules_CCSGameRules(void) = "A1 ? ? ? ? 56 68 ? ? ? ? 8B 08 8B 01 FF 50 04 68 ? ? ? ? 8B F0 6A 00 56 E8 ? ? ? ? 83 C4 0C 85 F6 74 08";
+void google::protobuf::DelocalizeRadix(char near *) = "55 8B EC 56 8B 75 08 6A 2E";
+void google::protobuf::internal::InitLogSilencerCount(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 04";
+void google::protobuf::internal::InitShutdownFunctions(void) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 51 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? 6A 0C";
+void google::protobuf::internal::OnShutdown(void (*)(void)) = "55 8B EC 6A FF 68 ? ? ? ? 64 ? ? ? ? ? 50 83 EC 10 56 A1 ? ? ? ? 33 C5 50 8D 45 F4 64 ? ? ? ? ? A1";
+void near * zcalloc(void near *,unsigned int,unsigned int) = "55 8B EC A1 ? ? ? ? 56 57 8B 7D 0C";
+void operator delete[](void near *,unsigned int) = "55 8B EC FF 75 08 E8 ? ? ? ? 59";
+void protobuf_AddDesc_cstrike15_5fgcmessages_2eproto(void) = "80 ? ? ? ? ? ? 0F ? ? ? ? ? 56";
+void protobuf_AddDesc_cstrike15_5fusermessages_2eproto(void) = "80 ? ? ? ? ? ? 0F ? ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? 68 ? ? ? ? C6 ? ? ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? E8";
+void protobuf_AddDesc_network_5fconnection_2eproto(void) = "80 ? ? ? ? ? ? 75 64";
+void protobuf_AssignDesc_steammessages_2eproto(void) = "55 8B EC 83 E4 F8 83 EC 44 53 56 33 DB 57 89 5C 24 10 E8 ? ? ? ? 6A 13";
+void zcfree(void near *,void near *) = "55 8B EC A1 ? ? ? ? FF 75 0C 8B";
+weird_unk1() = "55 8B EC 56 8B 75 0C 8B CE 8B";
+weird_unk2() = "55 8B EC 8B 45 08 56 8B 75 0C 83";
+write_file_header() = "55 8B EC 56 57 8B 7D 08 BA";
+write_file_trailer() = "55 8B EC BA";
+write_frame_header() = "55 8B EC 51 53 56 8B 75 08 33";
+write_marker_byte() = "55 8B EC 8A 45 0C";
+write_marker_header() = "55 8B EC 56 8B 75 08 57 8B 7D 10";
+write_scan_header() = "55 8B EC 51 53 56 8B 75 08 80";
+write_tables_only() = "55 8B EC 53 56 8B 75 08 BA ? ? ? ? 57 8B CE E8";
+ycc_rgb_convert() = "55 8B EC 83 EC 28 83 6D";
+ycck_cmyk_convert() = "55 8B EC 83 EC 2C 83 6D";
