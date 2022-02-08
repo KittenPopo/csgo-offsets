@@ -58,6 +58,8 @@ h3 {
   background-color: #1F1F1F; /* Add a hover effect to all links, except for headers */
 }
 
+/* This is mega dumb lol */
+/* I dont know how to do like style inheritance shit and I dont really feel like learning right now sooo */
 .code_Green {
 	color: #b1eb34;
 	font-size: 15px;
@@ -66,7 +68,7 @@ h3 {
 }
 
 .code_Gray {
-	color: #7a7a7a;
+	color: #9a9a9a;
 	font-size: 15px;
 	background-color: #1C1C1C;
 	display: inline;
@@ -74,6 +76,27 @@ h3 {
 
 .code_Red {
 	color: #ff5233;
+	font-size: 15px;
+	background-color: #1C1C1C;
+	display: inline;
+}
+
+.code_Yellow {
+	color: yellow;
+	font-size: 15px;
+	background-color: #1C1C1C;
+	display: inline;
+}
+
+.code_Orange {
+	color: orange;
+	font-size: 15px;
+	background-color: #1C1C1C;
+	display: inline;
+}
+
+.code_White {
+	color: white;
 	font-size: 15px;
 	background-color: #1C1C1C;
 	display: inline;
