@@ -1,7 +1,7 @@
 // NOTICE:
 // i, kittenpopo, am not a web developer
 // i do c++/c#/java and dont really know how js works or what the fuck im doing
-// so keep in mind that this code kinda bad and i know its bad
+// so keep in mind that this code is bad and i know its bad
 
 funcLoadedCount = 0
 
