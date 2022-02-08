@@ -1,21 +1,44 @@
 // NOTICE:
 // i, kittenpopo, am not a web developer
-// i dont really know how js works or what the fuck im doing
-// but it works soooo
+// i do c++/c#/java and dont really know how js works or what the fuck im doing
+// so keep in mind that this code kinda bad and i know its bad
 
 funcLoadedCount = 0
 
-function CreateSearchResult(lineNum, funcName, funcSig, dllName) {
+function CreateSearchResult(lineNum, funcName, funcSig, dllName, originTag, vtableName, vtableIndex) {
 	var searchResultDiv = document.createElement("div");
 	searchResultDiv.classList.add("searchResult");
 	
-	searchResultDiv.innerHTML = funcName + "\n<br>\n";
+	searchResultDiv.innerHTML = funcName;
+	if (originTag != null) {
+		console.log("among us");
+		searchResultDiv.innerHTML += "<div class=\"code_Gray\"> from </div>";
+		searchResultDiv.innerHTML += "<div class=\"code_White\">" + originTag + "</div>";
+	}
+	
+	searchResultDiv.innerHTML += "\n<br>\n";
 	searchResultDiv.innerHTML += "<div class=\"code_Red\">" + dllName + ".dll</div>";
 	searchResultDiv.innerHTML += "<div class=\"code_Gray\"> -> </div>";
-	searchResultDiv.innerHTML += "<div class=\"code_Green\">" + funcSig + "</div>";
+	searchResultDiv.innerHTML += "<div class=\"code_Green\">\"" + funcSig + "\"</div>";
+	
+	if (vtableName != null && vtableIndex != null) {
+		searchResultDiv.innerHTML += "\n<br>\n";
+		searchResultDiv.innerHTML += "<div class=\"code_Gray\">Virtual Class: </div>";
+		searchResultDiv.innerHTML += "<div class=\"code_Orange\">" + vtableName + "</div>";
+		searchResultDiv.innerHTML += "<div class=\"code_Gray\">, table index: </div>";
+		searchResultDiv.innerHTML += "<div class=\"code_Orange\">" + vtableIndex + "</div>";
+	}
 	
 	g_SearchUL.appendChild(searchResultDiv);
 	funcLoadedCount++;
+}
+
+function TryGetLinePart(parts, index) {
+	if (parts.length > index) {
+		return parts[index];
+	} else {
+		return null;
+	}
 }
 
 function HandleSigsText(text, dllName) {
@@ -28,15 +51,16 @@ function HandleSigsText(text, dllName) {
 			continue;
 		}
 		
-		var lineParts = lines[i].split(" = ");
-		if (lineParts.length != 2) {
+		var lineParts = lines[i].split("=");
+		if (lineParts.length < 2) {
 			console.warn(" -> INVALID LINE: " +  lines[i]);
 			continue;
 		}
 		
 		var funcName = lineParts[0];
-		var funcSig = lineParts[1].replace(";","");
-		CreateSearchResult(i, funcName, funcSig, dllName);
+		var funcSig = lineParts[1]
+		CreateSearchResult(i, funcName, funcSig, dllName, 
+			TryGetLinePart(lineParts, 2), TryGetLinePart(lineParts, 3), TryGetLinePart(lineParts, 4));
 	}
 	
 	g_FuncCountText.innerHTML = "Functions loaded: " + funcLoadedCount;
@@ -86,7 +110,11 @@ function Init() {
 	g_SearchResults = document.getElementById("searchUL").getElementsByClassName("searchResult");
 	g_FuncCountText = document.getElementById("funcCount");
 	
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/client_functions.c", "client");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/engine_functions.c", "engine");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/master/signatures/server_functions.c", "server");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/client_funcs.c", "client");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/engine_funcs.c", "engine");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/server_funcs.c", "server");
+	
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/filesystem_stdio_funcs.c", "filesystem_stdio");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panorama_funcs.c", "panorama");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panoramauiclient_funcs.c", "panoramauiclient");
 }
