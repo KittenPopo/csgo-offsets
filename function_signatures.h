@@ -1,4 +1,11 @@
 namespace "CLIENT.dll" {
+	CCasecadeLightManager::GetShadowDirection() = "53 8B DC 83 EC 08 83 E4 F8 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 83 EC 2C";
+	CClientShadowMgr::SetShadowDirection() = "55 8B EC 51 8B 55 08 8B 02";
+	CClientShadowMgr::SetShadowColor() = "55 8B EC 51 F3 0F 10 05 ? ? ? ? 53";
+	CClientShadowMgr::SetShadowDistance() = "55 8B EC F3 0F 10 45 08 F3 0F 11 81 DC 00 00 00";
+	CInput::CreateMove() = "55 8B EC 83 EC 18 53 56 8B F1 8B 4D 04";
+	C_CSPlayer::GetDataDescMap() = "E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC B9 ? ? ? ? E8 ? ? ? ? 68 ? ? ? ? C6 05";
+	C_CSPlayer::GetPredDescMap() = "B8 ? ? ? ? C3 CC CC CC CC CC CC CC CC CC CC B8 ? ? ? ? C3 CC CC CC CC CC CC CC CC CC CC 55 8B EC A1 ? ? ? ? 56 68 83 2A 00 00";
 	C_BaseViewModel::ShouldFlipModel() = "8B 89 ? ? ? ? 56 57 83 F9 FF";
 	CSequenceTransitioner::CheckForSequenceChange() = "55 8B EC 51 53 8B 5D 08 ? ? ? 57 85 DB 0F 84";
 	AccumulatePose() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? A1";
