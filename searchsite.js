@@ -1,7 +1,7 @@
 // NOTICE:
 // i, kittenpopo, am not a web developer
-// i do c++/c#/java and dont really know how js works or what the fuck im doing
-// so keep in mind that this code is bad and i know its bad
+// i dont really know how js works or what the fuck im doing
+// but it works soooo
 
 funcLoadedCount = 0
 
@@ -9,26 +9,26 @@ function CreateSearchResult(lineNum, funcName, funcSig, dllName, originTag, vtab
 	var searchResultDiv = document.createElement("div");
 	searchResultDiv.classList.add("searchResult");
 	
-	searchResultDiv.innerHTML = funcName;
+	innerHTMLData = funcName;
 	if (originTag != null) {
-		console.log("among us");
-		searchResultDiv.innerHTML += "<div class=\"code_Gray\"> from </div>";
-		searchResultDiv.innerHTML += "<div class=\"code_White\">" + originTag + "</div>";
+		innerHTMLData += "<div class=\"code_Gray\"> from </div>";
+		innerHTMLData += "<div class=\"code_White\">" + originTag + "</div>";
 	}
 	
-	searchResultDiv.innerHTML += "\n<br>\n";
-	searchResultDiv.innerHTML += "<div class=\"code_Red\">" + dllName + ".dll</div>";
-	searchResultDiv.innerHTML += "<div class=\"code_Gray\"> -> </div>";
-	searchResultDiv.innerHTML += "<div class=\"code_Green\">\"" + funcSig + "\"</div>";
+	innerHTMLData += "\n<br>\n";
+	innerHTMLData += "<div class=\"code_Red\">" + dllName + ".dll</div>";
+	innerHTMLData += "<div class=\"code_Gray\"> -> </div>";
+	innerHTMLData += "<div class=\"code_Green\">\"" + funcSig + "\"</div>";
 	
 	if (vtableName != null && vtableIndex != null) {
-		searchResultDiv.innerHTML += "\n<br>\n";
-		searchResultDiv.innerHTML += "<div class=\"code_Gray\">Virtual Class: </div>";
-		searchResultDiv.innerHTML += "<div class=\"code_Orange\">" + vtableName + "</div>";
-		searchResultDiv.innerHTML += "<div class=\"code_Gray\">, table index: </div>";
-		searchResultDiv.innerHTML += "<div class=\"code_Orange\">" + vtableIndex + "</div>";
+		innerHTMLData+= "\n<br>\n";
+		innerHTMLData += "<div class=\"code_Gray\">Virtual Class: </div>";
+		innerHTMLData += "<div class=\"code_Orange\">" + vtableName + "</div>";
+		innerHTMLData += "<div class=\"code_Gray\">, table index: </div>";
+		innerHTMLData += "<div class=\"code_Orange\">" + vtableIndex + "</div>";
 	}
 	
+	searchResultDiv.innerHTML = innerHTMLData;
 	g_SearchUL.appendChild(searchResultDiv);
 	funcLoadedCount++;
 }
@@ -102,6 +102,18 @@ function UpdateSearch() {
 
 ///////////////////////////////
 
+async function LoadSigs() {
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/client_funcs.c", "client");
+	await new Promise(r => setTimeout(r, 100));
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/engine_funcs.c", "engine");
+	await new Promise(r => setTimeout(r, 100));
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/server_funcs.c", "server");
+		
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/filesystem_stdio_funcs.c", "filesystem_stdio");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panorama_funcs.c", "panorama");
+	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panoramauiclient_funcs.c", "panoramauiclient");
+}
+
 function Init() {
 	console.log("Init() searchsite.js!");
 	
@@ -110,11 +122,5 @@ function Init() {
 	g_SearchResults = document.getElementById("searchUL").getElementsByClassName("searchResult");
 	g_FuncCountText = document.getElementById("funcCount");
 	
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/client_funcs.c", "client");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/engine_funcs.c", "engine");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/server_funcs.c", "server");
-	
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/filesystem_stdio_funcs.c", "filesystem_stdio");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panorama_funcs.c", "panorama");
-	LoadHandleSigsFile("https://raw.githubusercontent.com/KittenPopo/csgo-offsets/site/rawsigdata/panoramauiclient_funcs.c", "panoramauiclient");
+	LoadSigs();
 }
