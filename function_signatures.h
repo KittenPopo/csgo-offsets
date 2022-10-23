@@ -2686,7 +2686,7 @@ namespace "ENGINE.dll" {
 	CModelRender::FindOrCreateStaticPropColorData() = "55 8B EC 66 8B 45";
 	CMsgSteamDatagramLinkInstantaneousStats::Clear() = "80 79 2C 00 74 38";
 	CMsg_CVars::Clear() = "55 8B EC 56 8B 75 08 8B 06 3D";
-	CNetChan::SendDatagram() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57 8B F9 89 7C 24 18";
+	CNetChan::SendDatagram() = "55 8B EC 83 E4 F0 B8 ? ? ? ? E8 ? ? ? ? 56 57 8B F9 89 7C 24 14";
 	CNetSupportImpl::Connect() = "55 8B EC 8B 45 08 8D 4D";
 	CNetSupportImpl::UpdateServerReservation() = "55 8B EC 83 E4 F8 68";
 	CNetchanParanoidMode::MessageItem_t::Dump() = "53 56 8B F1 57 8B ? ? ? ? ? 83 3E";
